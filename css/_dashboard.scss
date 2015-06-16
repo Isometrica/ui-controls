@@ -1,3 +1,59 @@
+/* Navbar */
+
+.resilify-dashboard-page {
+  .navbar {
+    .navbar-nav {
+      margin: 0;
+      
+      .btn {
+        //padding-top: 12px;
+        //padding-bottom: 12px;
+        
+        i {
+          font-size: 24px;
+        }
+        
+        &[aria-expanded="true"] {
+          color: white;
+        }
+      }
+    }
+    .navbar-right {
+      float: right;
+      margin-right: -15px;
+    }
+    
+    .navbar-collapse {
+      &[aria-expanded="true"] {
+        display: block !important;
+        background: #444;
+      }
+      
+      .navbar-nav {
+        float: none;
+        margin: 0 -15px;        
+        position: static !important;
+      }
+    }
+  }
+}
+
+.desktop.resilify-dashboard-page {
+  @media (max-width:767px) {
+    padding-top: 50px !important;
+  }
+}
+
+.ios.resilify-dashboard-page {
+  .navbar {
+    .navbar-collapse {
+      .navbar-nav {
+        margin: 0;
+      }
+    }
+  }  
+}
+
 /* Scrolling Area */
 
 .ios.resilify-dashboard-page {
@@ -20,7 +76,26 @@
   left: auto;
   right: auto;
   bottom: auto;
-  //height: 74px !important;
+  
+  @media (max-width: 767px) {
+    .row {
+      padding-bottom: 5px;
+    }
+    
+    h4 { 
+      font-size: 14px; 
+      line-height: 1.4;
+    }
+    .btn-group {
+      text-align: center;
+      float: none !important;
+      
+      .btn {
+        float: none;
+        font-size: 14px; 
+      }
+    }
+  }
 }
 
 /* Tabs */
@@ -116,6 +191,10 @@
     margin-bottom: 20px;
     font-size: 18px;
     font-weight: 500;
+    
+    @media (max-width:767px) {
+      text-align: center;
+    }
   }
 }
 
@@ -151,6 +230,10 @@
 	cursor: pointer;
 	border-color: #bbb;
 	margin-bottom: 30px;
+	
+	@media (max-width:767px) {
+    margin-bottom: 15px;	
+  }
 	
 	&:hover, &:focus, &:active {
 		border-color: #5bc0de;

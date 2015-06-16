@@ -11,9 +11,9 @@
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
-	<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-	<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="../assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
 	
 	<!-- Chartlets JS -->
 	<script src="js/chartlets.min.js"></script>
@@ -22,25 +22,25 @@
 	<script src="js/bootstrap3-typeahead.min.js"></script>
 	
 	<!-- Bootcards CSS for desktop: -->
-	<link rel="stylesheet" href="../assets/libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 	
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
 			$("head").append(cssLink);	
 			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
 			$("head").append(cssLink);
 			$('body').addClass('android');
 		}
 		else
 		{
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
 			$("head").append(cssLink);
 			$('body').addClass('desktop');
 		}
@@ -71,7 +71,7 @@
   </div>   
 
   <!-- Guidance Bar -->
-  <div class="navbar navbar-inverse guidance-bar">
+  <div class="navbar navbar-inverse guidance-bar hidden-xs">
     <div class="container-fluid">
       <div class="row">
         <div class="col-sm-2">
@@ -104,8 +104,43 @@
       </div> 
     </div>
   </div>
-
-  <div class="row canvas-row">
+  
+  <!-- Canvas - mobile -->
+  <div class="container bootcards-container resilify-mobile-list-view-container visible-xs">
+    <div class="bootcards-list">
+      <div class="panel panel-default">
+        <div class="list-group">
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Business impact analysis (part 1)</h4>
+            <p class="list-group-item-text"><span class="label label-info">3 items</span> <span class="label label-success">1 new</span></p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Business impact analysis (part 2)</h4>
+            <p class="list-group-item-text"><span class="label label-info">2 items</span></p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Risks &amp; types of disruptions</h4>
+            <p class="list-group-item-text"><span class="label label-info">1 items</span> <span class="label label-success">1 new</span></p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Strategy options</h4>
+            <p class="list-group-item-text"><span class="label label-default">No items</span></p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Recovery procedures</h4>
+            <p class="list-group-item-text"><span class="label label-default">No items</span></p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Log incidents, exercises &amp; reports</h4>
+            <p class="list-group-item-text"><span class="label label-default">No items</span></p>
+          </a>
+        </div>
+      </div>    
+    </div>
+  </div>  
+  
+  <!-- Canvas - desktop/tablet -->
+  <div class="row canvas-row hidden-xs">
     <div class="col-sm-2 canvas-column">
       <div class="canvas-column-header clearfix">
         <button class="btn btn-link pull-left" data-toggle="modal" data-target="#businessImpact1Modal">

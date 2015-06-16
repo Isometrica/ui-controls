@@ -10,30 +10,30 @@
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
-	<script src="../assets/libs/jquery/dist/jquery.min.js"></script>
-	<script src="../assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
-	<script src="../assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
 	
 	<!-- Bootcards CSS for desktop: -->
-	<link rel="stylesheet" href="../assets/libs/font-awesome/css/font-awesome.min.css">
-	<link rel="stylesheet" href="../assets/libs/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 	
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
 			$("head").append(cssLink);	
 			$('body').addClass('ios');	
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
 			$("head").append(cssLink);
 			$('body').addClass('android');
 		}
 		else
 		{
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='../assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
 			$("head").append(cssLink);
 			$('body').addClass('desktop');
 		}
@@ -48,25 +48,15 @@
 
   <!-- fixed top navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
-    <div class="container">
-      <ul class="nav navbar-nav navbar-left bootcards-hidden-desktop">
+    <div class="container">  
+      <ul class="nav navbar-nav navbar-right visible-xs">
         <li>
-          <a href="#" class="btn btn-link btn-menu icon-only">
-      			<i class="fa fa-lg fa-bars"></i> 
-      		</a>
-        </li>
-      </ul>   
-      <ul class="nav navbar-nav navbar-right bootcards-hidden-desktop">
-        <li>
-          <a href="#" class="btn btn-link btn-menu icon-only">
-      			<i class="fa fa-lg fa-refresh"></i> 
-      		</a>
+          <a href="#" class="btn btn-link icon-only" data-toggle="collapse" data-target=".navbar-collapse">
+          	<i class="fa fa-lg fa-bars"></i>
+          </a>
         </li>
       </ul>        
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <i class="fa fa-bars"></i>
-        </button>      
+      <div class="navbar-header">     
         <span class="navbar-brand">Isometrica</span>
       </div>   
       <div class="navbar-collapse collapse">
@@ -136,7 +126,7 @@
               Support
             </a>
             <a href="" class="btn btn-link">
-              <i class="fa fa-times-circle"></i>
+              <i class="fa fa-times-circle no-margin"></i>
             </a>
           </div>
         </div>
@@ -182,6 +172,8 @@
       	<i class="fa fa-plus-circle"></i>
       	New document or organization
     	</a>
+    	
+    	<hr class="visible-xs"/>
     	
     	<h2 class="resilify-org-heading">IBM Corp</h2>
     	
@@ -311,7 +303,7 @@
         
 			</div>	
 			
-			<hr class="resilify-org-divider"/>
+			<hr class="resilify-org-divider hidden-xs"/>
 			
   		<h2 class="resilify-org-heading">Smith Company</h2>
 					

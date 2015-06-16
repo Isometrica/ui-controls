@@ -55,7 +55,8 @@ body.desktop.has-bootcards-navbar-double {
   
   .navbar-nav {
   	@media (max-width: 767px) {
-  		margin: 4px 0;
+  		//margin: 4px 0;
+  		margin: 0;
   	}
   	
   	&.navbar-left {
@@ -69,6 +70,8 @@ body.desktop.has-bootcards-navbar-double {
   	}
   }
 }
+
+
 
 .desktop {
   .navbar-inverse {
@@ -100,6 +103,30 @@ body.desktop.has-bootcards-navbar-double {
 .android .navbar .btn {
   line-height: 50px;
 }
+
+
+/* MOBILE LIST VIEWS */
+
+.resilify-mobile-list-view-container {
+  padding-top: 15px;
+  
+  .bootcards-list {
+    height: auto !important;
+  }
+  
+  .list-group-item {
+    .label {
+      display: inline-block;
+      padding: .3em .6em .3em;
+    }    
+  }
+
+}
+
+.ios .resilify-mobile-list-view-container {
+  padding: 0;  
+}
+
 
 
 /* GUIDANCE BAR */
