@@ -189,7 +189,7 @@
 
 		
 			<div class="col-sm-7 bootcards-cards hidden-xs">				
-				<div class="panel panel-default bootcards-wiki-panel">
+				<div class="panel panel-default">
 					<div class="panel-heading clearfix">	
 						<div class="btn-group pull-right">
 							<a class="btn btn-default">
@@ -213,36 +213,66 @@
               <p class="list-group-item-text">Email</p>
               <h4 class="list-group-item-heading"><a href="mailto:">dan_colbert@teamstudio.com</a></h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Password</p>
-              <h4 class="list-group-item-heading">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h4>
+            <div class="list-group-item phone-numbers">
+              <p class="list-group-item-text">Phone number(s)</p>
+              <h4 class="list-group-item-heading"><a href="tel:">+1 750 123 4567</a> Work</h4>
             </div>
             <div class="list-group-item phone-numbers">
-              <p class="list-group-item-text">Phone numbers</p>
-              <div class="row">
-                <div class="col-sm-6">
-                  <h4 class="list-group-item-heading"><a href="tel:">+1 750 123 4567</a></h4>
-                </div>
-                <div class="col-sm-6">
-                  <h4 class="list-group-item-heading">Work</h4>
-                </div>
-              </div>
+              <h4 class="list-group-item-heading"><a href="tel:">+1 609 234 5678</a> Mobile</h4>
             </div>
             <div class="list-group-item">
-              <div class="row">
-                <div class="col-sm-6">
-                  <h4 class="list-group-item-heading"><a href="tel:">+1 609 234 5678</a></h4>
-                </div>
-                <div class="col-sm-6">
-                  <h4 class="list-group-item-heading">Mobile</h4>
-                </div>
-              </div>
+              <p class="list-group-item-text">Address</p>
+              <h4 class="list-group-item-heading">387 Cummings Center, Beverley Hills, CA 90902</h4>
             </div>
           </div>
+  				<div class="list-group bootcards-accordion">		
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse1">
+  						User admin
+  					</a>
+  					<div id="collapse1" class="collapse in">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Type of person</p>
+                <h4 class="list-group-item-heading">System user</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Password</p>
+                <h4 class="list-group-item-heading">&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;&#9679;</h4>
+              </div>
+              <div class="list-group-item permissions">
+                <p class="list-group-item-text">Permissions</p>
+                <h4 class="list-group-item-heading text-success">
+                  <i class="fa fa-check"></i> Create new projects &amp; documents
+                </h4>
+              </div>
+              <div class="list-group-item permissions">
+                <h4 class="list-group-item-heading text-success">
+                  <i class="fa fa-check"></i> Edit new projects &amp; documents
+                </h4>
+              </div>
+              <div class="list-group-item permissions">
+                <h4 class="list-group-item-heading text-danger">
+                  <i class="fa fa-times"></i> Read and sign
+                </h4>
+              </div>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse2">
+  						Call tree
+  					</a>
+  					<div id="collapse2" class="collapse">
+              <div class="list-group-item call-tree">
+                <p class="list-group-item-text">In an emergency I will call</p>
+                <h4 class="list-group-item-heading">John Smith <a href="tel:">+1 609 234 5678</a></h4>
+              </div>
+              <div class="list-group-item call-tree">
+                <h4 class="list-group-item-heading">Jane Jones <a href="tel:">+1 750 123 4567</a></h4>
+              </div>
+  					</div>
+  				</div>
 				</div>
 			</div>
 		</div>
   </div>
+  
 
 <script>
   $('.btn[data-toggle="collapse"]').click(function(){

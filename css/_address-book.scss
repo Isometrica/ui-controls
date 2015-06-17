@@ -55,7 +55,41 @@
     .list-group-item-text {
       margin-bottom: 10px;
     }
+    
+    a {
+      margin-right: 15px;
+    }
   }
+  
+  .permissions {
+    .list-group-item-text {
+      margin-bottom: 10px;
+    }
+    
+    .list-group-item-heading {
+      font-size: 14px !important;
+      
+      &.text-success { color: #5cb85c; }
+      &.text-danger { color: #d9534f; }
+    }
+    
+    i {
+      opacity: 1;
+      width: 20px;
+      margin-right: 10px;
+    }
+  }
+  
+  .call-tree {
+    .list-group-item-text {
+      margin-bottom: 10px;
+    }
+    
+    a {
+      margin-left: 15px;
+    }
+  }
+
 }
 
 .ios.resilify-address-book {
@@ -65,6 +99,11 @@
     select {
       padding-left: 12px;
     }
+  }
+  
+  .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0;
   }
 }
 
