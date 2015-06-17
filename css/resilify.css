@@ -4,9 +4,8 @@ body {
 
 body.desktop {
   padding-top: 50px !important; }
-
-body.desktop.has-bootcards-navbar-double {
-  padding-top: 80px !important; }
+  body.desktop.has-bootcards-navbar-double {
+    padding-top: 80px !important; }
 
 .desktop .bootcards-hidden-desktop {
   display: none; }
@@ -16,6 +15,10 @@ body.desktop.has-bootcards-navbar-double {
 
 .btn i.no-margin {
   margin: 0; }
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: auto; } }
 
 /* NAV */
 .desktop .resilify-navbar-centered .navbar-brand {
@@ -75,44 +78,43 @@ body.desktop.has-bootcards-navbar-double {
 
 /* GUIDANCE BAR */
 .guidance-bar {
-  background: #337ab7 !important;
+  background: #337ab7;
   border: 0;
-  height: auto !important;
+  height: auto;
   margin: 0;
   position: fixed;
   top: 50px;
   left: 0;
   right: 0;
   z-index: 10;
-  border-radius: 0; }
-  .guidance-bar .row {
-    padding: 15px 0; }
-    .guidance-bar .row i.fa-long-arrow-right {
-      position: absolute;
-      right: -8px;
-      top: 0;
-      font-size: 21px;
-      line-height: 21px;
-      color: white; }
-    .guidance-bar .row h4 {
-      color: white;
-      margin: 0;
-      font-weight: 300;
-      line-height: 1.3;
-      font-size: 17px; }
-      .guidance-bar .row h4 .badge {
-        position: relative;
-        top: -1px;
-        margin-right: 3px;
-        background: #5bc0de; }
-    .guidance-bar .row .btn-group .btn {
-      color: white;
-      opacity: 0.7;
-      text-decoration: none;
-      transition: all 0.3s ease;
-      font-size: 17px; }
-      .guidance-bar .row .btn-group .btn:hover, .guidance-bar .row .btn-group .btn:active {
-        opacity: 1; }
+  border-radius: 0;
+  padding: 15px 0; }
+  .guidance-bar .row i.fa-long-arrow-right {
+    position: absolute;
+    right: -8px;
+    top: 0;
+    font-size: 21px;
+    line-height: 21px;
+    color: white; }
+  .guidance-bar h4 {
+    color: white;
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 17px; }
+    .guidance-bar h4 .badge {
+      position: relative;
+      top: -1px;
+      margin-right: 3px;
+      background: #5bc0de; }
+  .guidance-bar .btn-group .btn {
+    color: white;
+    opacity: 0.7;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    font-size: 17px; }
+    .guidance-bar .btn-group .btn:hover, .guidance-bar .btn-group .btn:active {
+      opacity: 1; }
 
 .ios .guidance-bar {
   top: 44px; }
@@ -120,8 +122,6 @@ body.desktop.has-bootcards-navbar-double {
 .android .guidance-bar {
   -webkit-box-shadow: none;
   border: 0; }
-  .android .guidance-bar .btn {
-    line-height: 20px; }
 
 /* MODALS */
 .ios .modal-dialog .modal-content {
@@ -694,7 +694,7 @@ body.desktop.has-bootcards-navbar-double {
   position: static !important; }
 
 @media (max-width: 767px) {
-  .desktop.resilify-dashboard-page {
+  body.desktop.resilify-dashboard-page {
     padding-top: 50px !important; } }
 
 .ios.resilify-dashboard-page .navbar .navbar-collapse .navbar-nav {
@@ -723,10 +723,12 @@ body.desktop.has-bootcards-navbar-double {
       line-height: 1.4; }
     .resilify-dashboard-page .guidance-bar .btn-group {
       text-align: center;
-      float: none !important; }
+      float: none !important;
+      display: block; }
       .resilify-dashboard-page .guidance-bar .btn-group .btn {
         float: none;
-        font-size: 14px; } }
+        font-size: 14px;
+        font-weight: 500; } }
 
 /* Tabs */
 .resilify-dashboard-tabs {
@@ -776,6 +778,10 @@ body.desktop.has-bootcards-navbar-double {
     clear: both;
     border-color: #ddd;
     margin: 0 0 20px; }
+    @media (max-width: 767px) {
+      .resilify-dashboard-items hr {
+        margin-left: -15px;
+        margin-right: -15px; } }
     .resilify-dashboard-items hr.resilify-org-divider {
       border-width: 3px; }
   .resilify-dashboard-items .resilify-org-heading {
@@ -1237,6 +1243,11 @@ body.desktop.has-bootcards-navbar-double {
 .ios.bootcards-wiki .bootcards-wiki-panel .bootcards-panel-tips {
   padding-top: 10px;
   padding-bottom: 10px; }
+.ios.bootcards-wiki .control-label {
+  padding-left: 15px !important; }
+@media (max-width: 767px) {
+  .ios.bootcards-wiki .panel-footer small {
+    float: none !important; } }
 
 /* Android */
 .android.bootcards-wiki .panel-heading {
@@ -1279,8 +1290,12 @@ body.desktop.has-bootcards-navbar-double {
 .resilify-address-book .guidance-bar {
   height: 52px;
   overflow: hidden; }
+  @media (max-width: 767px) {
+    .resilify-address-book .guidance-bar h4 {
+      font-size: 14px; } }
   .resilify-address-book .guidance-bar .btn-group {
-    margin: -13px 0; }
+    margin: -13px 0;
+    margin-right: -15px; }
 .resilify-address-book .resilify-address-book-select {
   border-bottom: 1px solid #ddd; }
   .resilify-address-book .resilify-address-book-select .list-group-item i {
@@ -1302,6 +1317,9 @@ body.desktop.has-bootcards-navbar-double {
   padding-top: 52px; }
   .ios.resilify-address-book .bootcards-container select {
     padding-left: 12px; }
+
+.android.resilify-address-book .bootcards-container {
+  padding-top: 52px; }
 
 /* USERS */
 .ios .resilify-users-invite .form-group {

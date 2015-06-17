@@ -38,7 +38,7 @@
   }
 }
 
-.desktop.resilify-dashboard-page {
+body.desktop.resilify-dashboard-page {
   @media (max-width:767px) {
     padding-top: 50px !important;
   }
@@ -89,10 +89,12 @@
     .btn-group {
       text-align: center;
       float: none !important;
+      display: block;
       
       .btn {
         float: none;
         font-size: 14px; 
+        font-weight: 500;
       }
     }
   }
@@ -179,6 +181,11 @@
     clear: both;
     border-color: #ddd;
     margin: 0 0 20px;
+    
+    @media (max-width: 767px) {
+      margin-left: -15px;
+      margin-right: -15px;
+    }
     
     &.resilify-org-divider {
       border-width: 3px;

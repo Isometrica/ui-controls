@@ -119,6 +119,17 @@
     } 
   }
   
+  .control-label {
+    padding-left: 15px !important;
+  }
+  
+  .panel-footer {
+    small {
+      @media (max-width:767px) {
+        float: none !important;
+      }
+    }
+  }
  
 }
 
