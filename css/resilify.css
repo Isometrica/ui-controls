@@ -854,6 +854,9 @@ body.desktop {
     line-height: 20px;
     height: 40px;
     overflow: hidden; }
+    @media (max-width: 767px) {
+      .resilify-dashboard-item .panel-body .description {
+        height: auto; } }
   .resilify-dashboard-item .panel-body .status {
     margin-bottom: 15px;
     border-top: 1px solid #ddd;

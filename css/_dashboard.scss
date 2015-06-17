@@ -287,6 +287,10 @@ body.desktop.resilify-dashboard-page {
   		line-height: 20px;
   		height: 40px;
   		overflow: hidden;
+  		
+  		@media (max-width: 767px) {
+    		height: auto;
+  		}
 		}
 		
 		.status {
