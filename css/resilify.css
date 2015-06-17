@@ -716,19 +716,19 @@ body.desktop {
   right: auto;
   bottom: auto; }
   @media (max-width: 767px) {
-    .resilify-dashboard-page .guidance-bar .row {
+    .resilify-dashboard-page .guidance-bar {
       padding-bottom: 5px; }
-    .resilify-dashboard-page .guidance-bar h4 {
-      font-size: 14px;
-      line-height: 1.4; }
-    .resilify-dashboard-page .guidance-bar .btn-group {
-      text-align: center;
-      float: none !important;
-      display: block; }
-      .resilify-dashboard-page .guidance-bar .btn-group .btn {
-        float: none;
+      .resilify-dashboard-page .guidance-bar h4 {
         font-size: 14px;
-        font-weight: 500; } }
+        line-height: 1.4; }
+      .resilify-dashboard-page .guidance-bar .btn-group {
+        text-align: center;
+        float: none !important;
+        display: block; }
+        .resilify-dashboard-page .guidance-bar .btn-group .btn {
+          float: none;
+          font-size: 14px;
+          font-weight: 500; } }
 
 /* Tabs */
 .resilify-dashboard-tabs {
