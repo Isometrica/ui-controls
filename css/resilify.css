@@ -1230,6 +1230,10 @@ body.desktop {
 /* iOS */
 .ios.bootcards-wiki .bootcards-container {
   padding-top: 0; }
+@media (max-width: 767px) {
+  .ios.bootcards-wiki .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; } }
 .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading {
   min-height: 44px; }
   .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn {
@@ -1339,9 +1343,10 @@ body.desktop {
   padding-top: 52px; }
   .ios.resilify-address-book .bootcards-container select {
     padding-left: 12px; }
-.ios.resilify-address-book .bootcards-cards {
-  padding-left: 0;
-  padding-right: 0; }
+@media (max-width: 767px) {
+  .ios.resilify-address-book .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; } }
 
 .android.resilify-address-book .bootcards-container {
   padding-top: 52px; }
