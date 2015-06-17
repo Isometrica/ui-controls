@@ -232,6 +232,13 @@ body.desktop {
 				font-size: 14px;
 			}
 		}
+		
+		&.subheader {
+  		padding: 10px 15px;
+  		height: auto !important;
+  		font-size: 12px;
+  		line-height: 20px;
+		}
 	}  
   
   .modal-body {

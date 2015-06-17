@@ -1,0 +1,494 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  
+  <title>BCM Workbook</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+	
+	<!-- Chartlets JS -->
+	<script src="js/chartlets.min.js"></script>
+	
+	<!-- Typeahead JS -->
+	<script src="js/bootstrap3-typeahead.min.js"></script>
+	
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+	
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);	
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script> 
+
+	<link rel="stylesheet" href="css/resilify.css">
+	
+</head>
+<body class="resilify-canvas-page">
+  
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top resilify-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-calendar"></i>
+          </a>
+        </li>
+      </ul>  
+      <div class="navbar-header">
+        <span class="navbar-brand">
+        	BIA part 1
+        </span>  
+      </div>        
+    </div>
+  </div>   
+  
+  <!-- Canvas - desktop/tablet -->
+  <div class="row canvas-row">
+    <div class="col-sm-2 canvas-column">
+      <div class="canvas-column-header clearfix">
+        <button class="btn btn-link pull-left" data-toggle="modal" data-target="#businessImpact1Modal">
+          <i class="fa fa-plus"></i>
+        </button>
+        <button class="btn btn-link pull-right" data-toggle="modal" data-target="#businessImpact1WorksheetModal">
+          <i class="fa fa-table"></i>
+        </button>
+      </div>
+      <div class="canvas-items">
+        <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+          <h4 class="canvas-item-title">Extrusion</h4>
+          <div class="canvas-item-clock text-warning">
+            <span>RTO</span> 4 days
+          </div>
+        </div>
+        <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+          <h4 class="canvas-item-title">Thermoforming</h4>
+          <div class="canvas-item-clock text-danger">
+            <span>RTO</span> 1 day
+          </div>
+        </div>
+        <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+          <h4 class="canvas-item-title">Delivery &amp; dispatch</h4>
+          <div class="canvas-item-clock text-success">
+            <span>RTO</span> 1 week
+          </div>
+        </div>
+        <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+          <h4 class="canvas-item-title">Customer services</h4>
+          <div class="canvas-item-clock text-warning">
+            <span>RTO</span> 2 days
+          </div>
+        </div>
+        <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+          <h4 class="canvas-item-title">Payroll</h4>
+          <div class="canvas-item-clock text-warning">
+            <span>RTO</span> 3 days
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business Impact Analysis Part 1 -->
+  <div class="modal fade resilify-canvas-modal" id="businessImpact1Modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  	    <div class="modal-header clearfix">
+  		    <div class="btn-group pull-left">
+  			    <button type="button" class="btn btn-danger btn-back" data-dismiss="modal">
+  		      	Cancel
+  		      </button>
+  		    </div>
+  		    <div class="btn-group pull-right">
+  			    <button type="button" class="btn btn-success" data-dismiss="modal">
+  		      	Save
+  		      </button>
+  		    </div>		    
+  	      <h4 class="modal-title">BIA part 1</h4>
+  	    </div>
+  	    <div class="modal-header subheader">
+          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-4 col-xs-5">Activity or process</label>
+              <div class="col-sm-8 col-xs-7">
+                <input type="text" class="form-control typeahead" placeholder="Activity"/>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="modal-body">
+          <h4 class="resilify-canvas-modal-subheading text-center">Individual Impact Analysis</h4>
+
+          <div class="panel panel-default bootcards-panel-collapsing">
+            <div class="panel-heading clearfix" href="#bia1-impacts-1" data-toggle="collapse">
+              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+    	        <h4 class="panel-title">Financial impacts of disruption</h4>
+            </div>
+            <div class="collapse in" id="bia1-impacts-1">
+              <div class="panel-body resilify-impacts">
+      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+        	        <li><a class="impact-vlow" href="#">1h</a></li>
+        	        <li><a class="impact-low" href="#">2h</a></li>
+        	        <li><a class="impact-low" href="#">1d</a></li>
+        	        <li><a class="impact-medium" href="#">2d</a></li>
+        	        <li><a class="impact-medium" href="#">3d</a></li>
+        	        <li><a class="impact-high" href="#">1w</a></li>
+        	        <li><a class="impact-high" href="#">2w</a></li>
+        	        <li><a class="impact-vhigh" href="#">4w</a></li>
+      	        </ul>
+      	        <h4 class="resilify-impacts-subheading">Mitigated by split site operations</h4>
+      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+        	        <li><a class="impact-vlow" href="#">1h</a></li>
+        	        <li><a class="impact-vlow" href="#">2h</a></li>
+        	        <li><a class="impact-vlow" href="#">1d</a></li>
+        	        <li><a class="impact-low" href="#">2d</a></li>
+        	        <li><a class="impact-low" href="#">3d</a></li>
+        	        <li><a class="impact-medium" href="#">1w</a></li>
+        	        <li><a class="impact-medium" href="#">2w</a></li>
+        	        <li><a class="impact-high" href="#">4w</a></li>
+      	        </ul>
+      	        <h4 class="resilify-impacts-subheading">Mitigated by insurance</h4>
+      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+        	        <li><a class="impact-vlow" href="#">1h</a></li>
+        	        <li><a class="impact-vlow" href="#">2h</a></li>
+        	        <li><a class="impact-vlow" href="#">1d</a></li>
+        	        <li><a class="impact-vlow" href="#">2d</a></li>
+        	        <li><a class="impact-vlow" href="#">3d</a></li>
+        	        <li><a class="impact-vlow" href="#">1w</a></li>
+        	        <li><a class="impact-low" href="#">2w</a></li>
+        	        <li><a class="impact-low" href="#">4w</a></li>
+      	        </ul>
+    	        </div>
+    	        <div class="panel-footer text-center">
+    	          <button type="button" class="btn btn-primary">
+    	            <i class="fa fa-plus"></i>
+    	            Add a Mitigation Opportunity
+    	          </button>
+    	        </div>              
+            </div>
+          </div>
+          
+          <div class="panel panel-default bootcards-panel-collapsing">
+            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-2" data-toggle="collapse">
+              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+    	        <h4 class="panel-title">Operational impacts of disruption</h4>
+            </div>
+            <div class="collapse" id="bia1-impacts-2">
+              <div class="panel-body resilify-impacts">
+      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+        	        <li><a href="#">1h</a></li>
+        	        <li><a href="#">2h</a></li>
+        	        <li><a href="#">1d</a></li>
+        	        <li><a href="#">2d</a></li>
+        	        <li><a href="#">3d</a></li>
+        	        <li><a href="#">1w</a></li>
+        	        <li><a href="#">2w</a></li>
+        	        <li><a href="#">4w</a></li>
+      	        </ul>
+    	        </div>
+    	        <div class="panel-footer text-center">
+    	          <button type="button" class="btn btn-primary">
+    	            <i class="fa fa-plus"></i>
+    	            Add a Mitigation Opportunity
+    	          </button>
+    	        </div>              
+            </div>
+          </div>
+          
+          <div class="panel panel-default bootcards-panel-collapsing last">
+            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-3" data-toggle="collapse">
+              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+    	        <h4 class="panel-title">Reputational impacts of disruption</h4>
+            </div>
+            <div class="collapse" id="bia1-impacts-3">
+              <div class="panel-body resilify-impacts">
+      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+        	        <li><a href="#">1h</a></li>
+        	        <li><a href="#">2h</a></li>
+        	        <li><a href="#">1d</a></li>
+        	        <li><a href="#">2d</a></li>
+        	        <li><a href="#">3d</a></li>
+        	        <li><a href="#">1w</a></li>
+        	        <li><a href="#">2w</a></li>
+        	        <li><a href="#">4w</a></li>
+      	        </ul>
+    	        </div>
+    	        <div class="panel-footer text-center">
+    	          <button type="button" class="btn btn-primary">
+    	            <i class="fa fa-plus"></i>
+    	            Add a Mitigation Opportunity
+    	          </button>
+    	        </div>              
+            </div>
+          </div>
+          
+          <div class="text-center">
+            <button type="button" class="btn btn-primary add-type">
+              <i class="fa fa-plus"></i>
+              Add an Impacts type
+            </button>
+          </div>
+        </div>
+        <div class="modal-body overall-analysis">
+          <h4 class="resilify-canvas-modal-subheading text-center">Overall analysis</h4>
+          <form class="form-horizontal">
+            <div class="form-group">
+              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <label class="control-label col-sm-3 col-xs-4">
+                MTPD
+              </label>
+              <div class="col-sm-9 col-xs-8">
+                <input type="text" class="form-control" placeholder="Time"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <label class="control-label col-sm-3 col-xs-4">
+                RTO
+              </label>
+              <div class="col-sm-9 col-xs-8">
+                <input type="text" class="form-control" placeholder="Time"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <label class="control-label col-sm-3 col-xs-4">
+                IT system
+              </label>
+              <div class="col-sm-6 col-xs-8">
+                <input type="text" class="form-control" placeholder="IT system name"/>
+              </div>
+              <div class="col-sm-3 col-xs-8 col-xs-offset-4">
+                <input type="text" class="form-control" placeholder="RPO"/>
+              </div>
+            </div>
+            <div class="form-group text-center add-system">
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-plus"></i>
+                Add an IT system
+              </button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger">
+            Delete
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Business Impact Analysis Part 1: Impact grading tool -->
+  <div class="modal fade resilify-canvas-modal" id="impactGradingModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  	    <div class="modal-header clearfix">
+  		    <div class="pull-right">
+  			    <button type="button" class="btn btn-link hidden-xs">
+	  	      	More Help
+            </button>    		    
+  			    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingCustomizeModal">
+  		      	Customize
+  		      </button>
+  		    </div>		    
+  	      <h4 class="modal-title text-left">Financial impacts - 1 day</h4>
+  	    </div>
+  	    <div class="modal-header subheader">
+          <span class="text-muted">Guidance panel telling user what to do.</span>
+        </div>
+        <div class="modal-body resilify-impacts-grading">
+          <ul>
+  	        <li class="impact-vlow" data-dismiss="modal">V.low</li>
+  	        <li class="impact-low" data-dismiss="modal">Low</li>
+  	        <li class="impact-medium" data-dismiss="modal">Medium</li>
+  	        <li class="impact-high" data-dismiss="modal">High</li>
+  	        <li class="impact-vhigh" data-dismiss="modal">V.high</li>
+	        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Business Impact Analysis Part 1: Impact grading tool: Customize -->
+  <div class="modal fade resilify-canvas-modal" id="impactGradingCustomizeModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  	    <div class="modal-header clearfix">
+  		    <div class="pull-right">
+  			    <button type="button" class="btn btn-link hidden-xs">
+  		      	More Help
+  		      </button>
+  			    <button type="button" class="btn btn-success" data-dismiss="modal">
+  		      	Done
+  		      </button>
+  		    </div>	    
+  	      <h4 class="modal-title text-left">Financial impacts - definitions</h4>
+  	    </div>
+  	    <div class="modal-header subheader">
+          <span class="text-muted">Guidance panel telling user what to do.</span>
+        </div>
+        <div class="modal-body resilify-impacts-grading">
+          <ul>
+  	        <li class="impact-vlow">
+  	          <label>V.low</label>
+              <textarea class="form-control"><£5k</textarea>
+            </li>
+  	        <li class="impact-low">
+  	          <label>Low</label>
+  	          <textarea class="form-control">£6k - 50k</textarea>
+            </li>
+  	        <li class="impact-medium">
+  	          <label>Medium</label>
+  	          <textarea class="form-control">£51k - 100k</textarea>
+            </li>
+  	        <li class="impact-high">
+  	          <label>High</label>
+  	          <textarea class="form-control">£100k - 500k</textarea>
+            </li>
+  	        <li class="impact-vhigh">
+  	          <label>V.high</label>
+  	          <textarea class="form-control">>£500k</textarea>
+            </li>
+	        </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business Impact Analysis Part 1: Worksheet -->
+  <div class="modal fade resilify-worksheet-modal" id="businessImpact1WorksheetModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="modal-content">
+  	    <div class="modal-header">
+  		    <div class="btn-group pull-right">
+  			    <button class="btn btn-link icon-only" data-dismiss="modal">
+  		      	<i class="fa fa-lg fa-times"></i>
+  		      </button>
+  		    </div>
+  		    <h4 class="modal-title">Business impact analysis - part 1</h4>
+  	    </div>
+        <div class="modal-body">				          
+  				<div class="table-responsive">
+  					<table class="table resilify-table">
+  						<thead>
+  							<tr>
+  								<th>Activity</th>
+  								<th>Impact type</th>
+  								<th class="text-center narrow">1hr</th>
+  								<th class="text-center narrow">4hrs</th>
+  								<th class="text-center narrow">1d</th>
+  								<th class="text-center narrow">2d</th>
+  								<th class="text-center narrow">4d</th>
+  								<th class="text-center narrow">1w</th>
+  								<th class="text-center narrow">2w</th>
+  								<th class="text-center narrow">4w</th>
+  								<th class="text-center">MTPD</th>
+  								<th class="text-center">RTO</th>
+  							</tr>
+  						</thead>
+  						<tbody>
+  							<tr>
+  								<td rowspan="6" class="subheading">
+    								Customer service
+  								</td>
+  								<td><strong>Finance</strong></td>
+  								<td><div class="label impact impact-high">&nbsp;</div></td>
+  								<td colspan="7"><div class="arrow"></div></td>
+  								<td rowspan="6" class="text-center">4 hrs</td>
+  								<td rowspan="6" class="text-center">2 hrs</td>
+  							</tr>
+  							<tr>
+  								<td><strong>Reputation</strong></td>
+  								<td><div class="label impact impact-medium">&nbsp;</div></td>
+  								<td><div class="label impact impact-high">&nbsp;</div></td>
+  								<td colspan="6"><div class="arrow"></div></td>
+  							</tr>
+  							<tr>
+  								<td><strong>Legal &amp; regulatory</strong></td>
+  								<td><div class="label impact-low">&nbsp;</div></td>
+  								<td><div class="arrow"></div></td>
+  								<td><div class="label impact impact-medium">&nbsp;</div></td>
+  								<td><div class="arrow"></div></td>
+  								<td><div class="label impact impact-high">&nbsp;</div></td>
+  								<td colspan="3"><div class="arrow"></div></td>
+  							</tr>
+  							<tr>
+  								<td><strong>Business objectives</strong></td>
+  								<td><div class="label impact-high">&nbsp;</div></td>
+  								<td colspan="7"><div class="arrow"></div></td>
+  							</tr>
+  							<tr>
+  								<td><strong>Operational</strong></td>
+  								<td><div class="label impact impact-medium">&nbsp;</div></td>
+  								<td><div class="label impact impact-high">&nbsp;</div></td>
+  								<td colspan="6"><div class="arrow"></div></td>
+  							</tr>
+  							<tr>
+  								<td><strong>Other</strong></td>
+  								<td><div class="label impact impact-low">&nbsp;</div></td>
+  								<td><div class="arrow"></div></td>
+  								<td><div class="label impact impact-medium">&nbsp;</div></td>
+  								<td><div class="arrow"></div></td>
+  								<td><div class="label impact impact-high">&nbsp;</div></td>
+  								<td colspan="3"><div class="arrow"></div></td>
+  							</tr>
+  						</tbody>
+  					</table>
+  				</div>				
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    
+    // Charts
+    Chartlets.render()
+  	
+  	// TYPEAHEAD FIELDS
+    var typeaheadData = ['Sales', 'Thermoforming', 'Manufacturing', 'IT'];
+    $(".typeahead").typeahead({ source:typeaheadData });
+  	
+  
+  </script>
+
+</body>
+</html>
