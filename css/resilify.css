@@ -837,7 +837,8 @@ body.desktop {
       margin-top: 0;
       padding: 0;
       margin-bottom: 5px;
-      line-height: 20px; }
+      line-height: 20px;
+      font-size: 16px; }
     .resilify-dashboard-item .panel-body .resilify-dashboard-item-heading .org-name {
       margin-bottom: 5px;
       line-height: 20px;
