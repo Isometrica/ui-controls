@@ -413,55 +413,55 @@ body.desktop {
   .resilify-canvas-modal .resilify-rich-text-control .resilify-rich-text-input {
     height: 300px; }
 
-#businessImpact1Modal .panel-body.resilify-impacts {
+.resilify-canvas-bia1-modal .panel-body.resilify-impacts {
   padding: 0; }
-  #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-subheading {
+  .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-subheading {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     margin: 0;
     font-size: 16px;
     font-weight: 500; }
-  #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row {
+  .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row {
     list-style: none;
     padding: 0;
     margin: 0;
     overflow: hidden; }
-    #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li {
+    .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li {
       float: left;
       width: 12.5%; }
-      #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a {
+      .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a {
         display: block;
         text-align: center;
         padding: 15px 0;
         border-right: 1px solid #ddd;
         transition: all 0.3s ease;
         font-weight: bold; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a:hover, #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a:focus, #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a:active {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a:hover, .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a:focus, .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a:active {
           text-decoration: none;
           background: #5bc0de;
           color: white; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-vlow {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-vlow {
           background: #29aa50; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-low {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-low {
           background: #5cb85c; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-medium {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-medium {
           background: #f0ad4e; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-high {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-high {
           background: #d9534f; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-vhigh {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a.impact-vhigh {
           background: #a60200; }
-        #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li a[class^="impact-"] {
+        .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li a[class^="impact-"] {
           color: white;
           border: 0; }
-      #businessImpact1Modal .panel-body.resilify-impacts .resilify-impacts-row li:last-child a {
+      .resilify-canvas-bia1-modal .panel-body.resilify-impacts .resilify-impacts-row li:last-child a {
         border-right: 0; }
-#businessImpact1Modal .btn.add-type {
+.resilify-canvas-bia1-modal .btn.add-type {
   margin-bottom: 15px; }
-#businessImpact1Modal .overall-analysis .form-group {
+.resilify-canvas-bia1-modal .overall-analysis .form-group {
   padding-left: 50px;
   position: relative; }
-#businessImpact1Modal .overall-analysis .resilify-canvas-modal-help-icon {
+.resilify-canvas-bia1-modal .overall-analysis .resilify-canvas-modal-help-icon {
   line-height: 20px;
   font-size: 24px;
   width: 24px;
@@ -474,34 +474,36 @@ body.desktop {
   margin-top: -12px;
   transition: all 0.3s ease;
   cursor: pointer; }
-  #businessImpact1Modal .overall-analysis .resilify-canvas-modal-help-icon:hover, #businessImpact1Modal .overall-analysis .resilify-canvas-modal-help-icon:focus, #businessImpact1Modal .overall-analysis .resilify-canvas-modal-help-icon:active {
+  .resilify-canvas-bia1-modal .overall-analysis .resilify-canvas-modal-help-icon:hover, .resilify-canvas-bia1-modal .overall-analysis .resilify-canvas-modal-help-icon:focus, .resilify-canvas-bia1-modal .overall-analysis .resilify-canvas-modal-help-icon:active {
     color: #23527c; }
 
-.ios #businessImpact1Modal .modal-body {
+.ios .resilify-canvas-bia1-modal .modal-body {
   padding-bottom: 15px; }
-.ios #businessImpact1Modal .form-group {
+.ios .resilify-canvas-bia1-modal .form-group {
   padding-left: 15px !important; }
-.ios #businessImpact1Modal .resilify-canvas-modal-subheading {
+.ios .resilify-canvas-bia1-modal .resilify-canvas-modal-subheading {
   text-align: left !important; }
-.ios #businessImpact1Modal .overall-analysis .resilify-canvas-modal-help-icon {
+.ios .resilify-canvas-bia1-modal .resilify-impacts .resilify-impacts-row li a {
+  padding: 11px 0 !important; }
+.ios .resilify-canvas-bia1-modal .overall-analysis .resilify-canvas-modal-help-icon {
   top: 0;
   margin-top: 12px; }
-.ios #businessImpact1Modal .overall-analysis .form-group {
+.ios .resilify-canvas-bia1-modal .overall-analysis .form-group {
   padding-left: 30px !important; }
-.ios #businessImpact1Modal .overall-analysis .add-system {
+.ios .resilify-canvas-bia1-modal .overall-analysis .add-system {
   padding-left: 15px !important; }
-.ios #businessImpact1Modal .bootcards-panel-collapsing {
+.ios .resilify-canvas-bia1-modal .bootcards-panel-collapsing {
   margin-left: -15px;
   margin-right: -15px;
   border-top: 1px solid #ddd;
   margin-bottom: 0; }
-  .ios #businessImpact1Modal .bootcards-panel-collapsing.last {
+  .ios .resilify-canvas-bia1-modal .bootcards-panel-collapsing.last {
     border-bottom: 1px solid #ddd; }
-  .ios #businessImpact1Modal .bootcards-panel-collapsing .panel-heading {
+  .ios .resilify-canvas-bia1-modal .bootcards-panel-collapsing .panel-heading {
     background: #f5f5f5; }
-  .ios #businessImpact1Modal .bootcards-panel-collapsing .resilify-impacts-subheading {
+  .ios .resilify-canvas-bia1-modal .bootcards-panel-collapsing .resilify-impacts-subheading {
     font-weight: 400; }
-.ios #businessImpact1Modal .add-type {
+.ios .resilify-canvas-bia1-modal .add-type {
   margin-top: 10px;
   margin-bottom: 0; }
 

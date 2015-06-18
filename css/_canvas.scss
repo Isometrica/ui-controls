@@ -331,7 +331,7 @@
 }
 
 
-#businessImpact1Modal {
+.resilify-canvas-bia1-modal {
   .panel-body.resilify-impacts {
     padding: 0;
     
@@ -417,7 +417,7 @@
   }
 }
 
-.ios #businessImpact1Modal {
+.ios .resilify-canvas-bia1-modal {
   .modal-body {
     padding-bottom: 15px;
   }
@@ -434,6 +434,9 @@
     text-align: left !important;
   }
 
+  .resilify-impacts .resilify-impacts-row li a {
+    padding: 11px 0 !important;
+  }
   
   .overall-analysis {
     .resilify-canvas-modal-help-icon {
