@@ -694,8 +694,28 @@
   
   .risk-analysis-linked-items {
     margin-bottom: 10px;
+    
     .btn {
       margin-bottom: 5px;
+      padding-left: 12px;
+      padding-right: 12px;
+      color: white;
+    }
+    
+    .btn-info {
+      background-color: #5bc0de;
+      
+      &:hover, &:focus, &:active {
+        background-color: #31b0d5;
+      }
+    }
+    
+    .btn-primary {
+      background-color: #337ab7;
+      
+      &:hover, &:focus, &:active {
+        background-color: #286090;
+      }
     }
   }
   
@@ -720,6 +740,20 @@
     .btn {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
+      color: white;
+      
+      &.btn-success {
+        background-color: #5cb85c;
+        &:hover, &:focus, &:active { background-color: #449d44; }
+      }
+      &.btn-warning {
+        background-color: #f0ad4e;
+        &:hover, &:focus, &:active { background-color: #ec971f; }
+      }
+      &.btn-danger {
+        background-color: #d9534f;
+        &:hover, &:focus, &:active { background-color: #c9302c; }
+      }
     }
   }
   
@@ -731,6 +765,61 @@
       position: relative;
       top: -8px;
       right: -8px;
+    }
+  }
+}
+
+.ios #riskAnalysisModal {
+  .form-group {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+  
+  .modal-body {
+    padding-top: 0;
+  }
+  
+  .control-label {
+    padding-left: 15px !important;
+  }
+  .risk-analysis-linked-items {
+    padding-bottom: 0;  
+    margin-bottom: 0;
+    
+    .btn-info:first-child {
+      padding-right: 0;
+    }
+  }
+  
+  .risk-analysis-impacts,
+  .risk-analysis-likelihood {
+    border-bottom: 0;
+    padding-bottom: 0;
+    
+    .btn {
+      border-color: #ddd;
+      color: black;
+    }
+  }
+  
+  .risk-analysis-likelihood,
+  .risk-analysis-score {
+    padding-top: 0;
+  }
+  
+  .risk-analysis-mitigation-header {
+    padding: 15px;
+    padding-right: 40px;
+    
+    .resilify-canvas-modal-subheading {
+      margin: 0;
+    }
+    
+    .btn {
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      margin-top: -17px;
     }
   }
 }

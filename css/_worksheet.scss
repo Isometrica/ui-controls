@@ -167,6 +167,16 @@
 .ios .resilify-worksheet-modal {
   .modal-dialog {
   	margin: 0;
+  	
+  	.modal-header {
+    	.btn-group {
+      	&.pull-right {
+        	position: absolute;
+        	top: 0;
+        	right: 0;
+      	}
+    	}
+  	}
   }  
 } 
 

@@ -656,7 +656,18 @@ body.desktop {
 #riskAnalysisModal .risk-analysis-linked-items {
   margin-bottom: 10px; }
   #riskAnalysisModal .risk-analysis-linked-items .btn {
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    padding-left: 12px;
+    padding-right: 12px;
+    color: white; }
+  #riskAnalysisModal .risk-analysis-linked-items .btn-info {
+    background-color: #5bc0de; }
+    #riskAnalysisModal .risk-analysis-linked-items .btn-info:hover, #riskAnalysisModal .risk-analysis-linked-items .btn-info:focus, #riskAnalysisModal .risk-analysis-linked-items .btn-info:active {
+      background-color: #31b0d5; }
+  #riskAnalysisModal .risk-analysis-linked-items .btn-primary {
+    background-color: #337ab7; }
+    #riskAnalysisModal .risk-analysis-linked-items .btn-primary:hover, #riskAnalysisModal .risk-analysis-linked-items .btn-primary:focus, #riskAnalysisModal .risk-analysis-linked-items .btn-primary:active {
+      background-color: #286090; }
 #riskAnalysisModal .risk-analysis-impacts {
   margin-bottom: 0; }
   #riskAnalysisModal .risk-analysis-impacts .btn {
@@ -670,7 +681,20 @@ body.desktop {
     border-bottom: 0; }
 #riskAnalysisModal .risk-analysis-score .btn {
   border-top-left-radius: 0;
-  border-top-right-radius: 0; }
+  border-top-right-radius: 0;
+  color: white; }
+  #riskAnalysisModal .risk-analysis-score .btn.btn-success {
+    background-color: #5cb85c; }
+    #riskAnalysisModal .risk-analysis-score .btn.btn-success:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-success:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-success:active {
+      background-color: #449d44; }
+  #riskAnalysisModal .risk-analysis-score .btn.btn-warning {
+    background-color: #f0ad4e; }
+    #riskAnalysisModal .risk-analysis-score .btn.btn-warning:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-warning:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-warning:active {
+      background-color: #ec971f; }
+  #riskAnalysisModal .risk-analysis-score .btn.btn-danger {
+    background-color: #d9534f; }
+    #riskAnalysisModal .risk-analysis-score .btn.btn-danger:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-danger:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-danger:active {
+      background-color: #c9302c; }
 #riskAnalysisModal .risk-analysis-mitigation-header {
   border-bottom: 1px solid #ddd;
   background: #eee; }
@@ -678,6 +702,40 @@ body.desktop {
     position: relative;
     top: -8px;
     right: -8px; }
+
+.ios #riskAnalysisModal .form-group {
+  margin-top: 0;
+  margin-bottom: 0; }
+.ios #riskAnalysisModal .modal-body {
+  padding-top: 0; }
+.ios #riskAnalysisModal .control-label {
+  padding-left: 15px !important; }
+.ios #riskAnalysisModal .risk-analysis-linked-items {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+  .ios #riskAnalysisModal .risk-analysis-linked-items .btn-info:first-child {
+    padding-right: 0; }
+.ios #riskAnalysisModal .risk-analysis-impacts,
+.ios #riskAnalysisModal .risk-analysis-likelihood {
+  border-bottom: 0;
+  padding-bottom: 0; }
+  .ios #riskAnalysisModal .risk-analysis-impacts .btn,
+  .ios #riskAnalysisModal .risk-analysis-likelihood .btn {
+    border-color: #ddd;
+    color: black; }
+.ios #riskAnalysisModal .risk-analysis-likelihood,
+.ios #riskAnalysisModal .risk-analysis-score {
+  padding-top: 0; }
+.ios #riskAnalysisModal .risk-analysis-mitigation-header {
+  padding: 15px;
+  padding-right: 40px; }
+  .ios #riskAnalysisModal .risk-analysis-mitigation-header .resilify-canvas-modal-subheading {
+    margin: 0; }
+  .ios #riskAnalysisModal .risk-analysis-mitigation-header .btn {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -17px; }
 
 #riskGradingModal .resilify-risk-grading table {
   margin-bottom: 10px; }
@@ -1596,6 +1654,10 @@ body.desktop {
 
 .ios .resilify-worksheet-modal .modal-dialog {
   margin: 0; }
+  .ios .resilify-worksheet-modal .modal-dialog .modal-header .btn-group.pull-right {
+    position: absolute;
+    top: 0;
+    right: 0; }
 
 .android .resilify-worksheet-modal .modal-dialog {
   margin: 0; }
