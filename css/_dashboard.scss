@@ -53,4 +53,30 @@
       margin: 0;
     }
   }
+
+
+
+  .isometrica-mobile-list-view-container {
+    overflow: scroll;
+  }
+
+  .list-group {
+    .list-group-item {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      padding-left: 48px;
+      overflow: hidden;
+      margin-left: 15px;
+
+      i {
+        font-size: 28px;
+        line-height: 1;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-top: -14px;
+      }
+    }
+  }
+
 }

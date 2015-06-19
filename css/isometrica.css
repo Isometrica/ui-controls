@@ -1833,3 +1833,20 @@ body.desktop {
     color: #333;
     text-align: center;
     margin: 0; }
+
+.isometrica-dashboard-page .isometrica-mobile-list-view-container {
+  overflow: scroll; }
+
+.isometrica-dashboard-page .list-group .list-group-item {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 48px;
+  overflow: hidden;
+  margin-left: 15px; }
+  .isometrica-dashboard-page .list-group .list-group-item i {
+    font-size: 28px;
+    line-height: 1;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    margin-top: -14px; }
