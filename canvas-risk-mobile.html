@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  
+
   <title>BCM Workbook</title>
   <!-- 1.0.0 -->
 
@@ -14,23 +14,23 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
-	
+
 	<!-- Chartlets JS -->
 	<script src="js/chartlets.min.js"></script>
-	
+
 	<!-- Typeahead JS -->
 	<script src="js/bootstrap3-typeahead.min.js"></script>
-	
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-	
+
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);	
+			$("head").append(cssLink);
 			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
@@ -45,15 +45,15 @@
 			$('body').addClass('desktop');
 		}
 	});
-	</script> 
+	</script>
 
-	<link rel="stylesheet" href="css/resilify.css">
-	
+	<link rel="stylesheet" href="css/isometrica.css">
+
 </head>
-<body class="resilify-canvas-page">
-  
+<body class="isometrica-canvas-page">
+
   <!-- fixed top navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top resilify-navbar-centered" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
@@ -68,15 +68,15 @@
           	<i class="fa fa-lg fa-calendar"></i>
           </a>
         </li>
-      </ul>  
+      </ul>
       <div class="navbar-header">
         <span class="navbar-brand">
         	Risk Analysis
-        </span>  
-      </div>        
+        </span>
+      </div>
     </div>
-  </div>   
-  
+  </div>
+
   <!-- Canvas - desktop/tablet -->
   <div class="row canvas-row">
     <div class="col-sm-2 canvas-column">
@@ -102,11 +102,11 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>          
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#risk-type-2" aria-expanded="true">
           <div class="panel-heading">
@@ -121,11 +121,11 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>             
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#risk-type-3" aria-expanded="true">
           <div class="panel-heading">
@@ -140,18 +140,18 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>              
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Risk Analysis -->
-  <div class="modal fade resilify-canvas-modal" id="riskAnalysisModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="riskAnalysisModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -164,7 +164,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">Risk Analysis</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -240,11 +240,11 @@
           </form>
         </div>
         <div class="modal-body risk-analysis-mitigation-header clearfix">
-          <h4 class="resilify-canvas-modal-subheading pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
+          <h4 class="isometrica-canvas-modal-subheading pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
           <button type="button" class="btn btn-link pull-right">
             <i class="fa fa-minus-circle fa-lg no-margin"></i>
           </button>
-        </div>        
+        </div>
         <div class="modal-body">
           <form class="form-horizontal">
             <div class="form-group risk-analysis-impacts">
@@ -265,7 +265,7 @@
                 <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#riskGradingModal">Low</button>
               </div>
             </div>
-            
+
           </form>
         </div>
         <div class="modal-body">
@@ -288,15 +288,15 @@
 
 
   <script>
-    
+
     // Charts
     Chartlets.render()
-  	
+
   	// TYPEAHEAD FIELDS
     var typeaheadData = ['Sales', 'Thermoforming', 'Manufacturing', 'IT'];
     $(".typeahead").typeahead({ source:typeaheadData });
-  	
-  
+
+
   </script>
 
 </body>

@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  
+
   <title>BCM Workbook</title>
   <!-- 1.0.0 -->
 
@@ -14,23 +14,23 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
-	
+
 	<!-- Chartlets JS -->
 	<script src="js/chartlets.min.js"></script>
-	
+
 	<!-- Typeahead JS -->
 	<script src="js/bootstrap3-typeahead.min.js"></script>
-	
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-	
+
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);	
+			$("head").append(cssLink);
 			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
@@ -45,15 +45,15 @@
 			$('body').addClass('desktop');
 		}
 	});
-	</script> 
+	</script>
 
-	<link rel="stylesheet" href="css/resilify.css">
-	
+	<link rel="stylesheet" href="css/isometrica.css">
+
 </head>
-<body class="resilify-canvas-page">
-  
+<body class="isometrica-canvas-page">
+
   <!-- fixed top navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top resilify-navbar-centered" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
@@ -68,14 +68,14 @@
           	<i class="fa fa-lg fa-calendar"></i>
           </a>
         </li>
-      </ul>  
+      </ul>
       <div class="navbar-header">
         <span class="navbar-brand">
         	BCM Workbook - IBM Corp
-        </span>  
-      </div>        
+        </span>
+      </div>
     </div>
-  </div>   
+  </div>
 
   <!-- Guidance Bar -->
   <div class="guidance-bar hidden-xs">
@@ -108,12 +108,12 @@
             <button type="button" class="btn btn-sm btn-link"><i class="fa fa-times-circle"></i></a>
           </div>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
-  
+
   <!-- Canvas - mobile -->
-  <div class="container bootcards-container resilify-mobile-list-view-container visible-xs">
+  <div class="container bootcards-container isometrica-mobile-list-view-container visible-xs">
     <div class="bootcards-list">
       <div class="panel panel-default">
         <div class="list-group">
@@ -142,10 +142,10 @@
             <p class="list-group-item-text"><span class="label label-default">No items</span></p>
           </a>
         </div>
-      </div>    
+      </div>
     </div>
-  </div>  
-  
+  </div>
+
   <!-- Canvas - desktop/tablet -->
   <div class="row canvas-row hidden-xs">
     <div class="col-sm-2 canvas-column">
@@ -231,11 +231,11 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>          
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#risk-type-2" aria-expanded="true">
           <div class="panel-heading">
@@ -250,11 +250,11 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>             
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#risk-type-3" aria-expanded="true">
           <div class="panel-heading">
@@ -269,11 +269,11 @@
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of fire</h4>
             <span class="canvas-item-label label label-warning">Medium</span>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#riskAnalysisModal">
             <h4 class="canvas-item-title">Risk of earthquake</h4>
             <span class="canvas-item-label label label-success">Low</span>
-          </div>              
+          </div>
         </div>
       </div>
     </div>
@@ -292,7 +292,7 @@
             <h3>Extrusion</h3>
           </div>
         </div>
-        <div class="collapse" id="strategy-type-1">        
+        <div class="collapse" id="strategy-type-1">
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#strategyEvaluationModal">
             <h4 class="canvas-item-title">Spare machine</h4>
             <i class="canvas-item-icon fa fa-thumbs-o-up fa-2x"></i>
@@ -315,7 +315,7 @@
             <h3>Thermoforming</h3>
           </div>
         </div>
-        <div class="collapse in" id="strategy-type-2">        
+        <div class="collapse in" id="strategy-type-2">
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#strategyEvaluationModal">
             <h4 class="canvas-item-title">Spare machine</h4>
             <i class="canvas-item-icon fa fa-thumbs-o-up fa-2x"></i>
@@ -350,7 +350,7 @@
             <h3>Business continuity</h3>
           </div>
         </div>
-        <div class="collapse" id="recovery-type-1">        
+        <div class="collapse" id="recovery-type-1">
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#recoveryProcedureModal">
             <h4 class="canvas-item-title">Invocation procedure</h4>
             <div class="canvas-item-progress progress">
@@ -389,7 +389,7 @@
             <h3>Crisis communication</h3>
           </div>
         </div>
-        <div class="collapse in" id="recovery-type-2">        
+        <div class="collapse in" id="recovery-type-2">
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#recoveryProcedureModal">
             <h4 class="canvas-item-title">Invocation procedure</h4>
             <div class="canvas-item-progress progress">
@@ -452,13 +452,13 @@
             <div class="canvas-item-checkbox">
               0
             </div>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#logEntryModal">
             <h4 class="canvas-item-title">Flood in basement</h4>
             <div class="canvas-item-checkbox text-danger">
               5
             </div>
-          </div>              
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#exercises-type-2" aria-expanded="false">
           <div class="panel-heading">
@@ -477,13 +477,13 @@
             <div class="canvas-item-checkbox">
               0
             </div>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#logEntryModal">
             <h4 class="canvas-item-title">Flood in basement</h4>
             <div class="canvas-item-checkbox text-danger">
               5
             </div>
-          </div>             
+          </div>
         </div>
         <div class="canvas-item-heading panel panel-default" data-toggle="collapse" href="#exercises-type-3" aria-expanded="true">
           <div class="panel-heading">
@@ -502,20 +502,20 @@
             <div class="canvas-item-checkbox">
               0
             </div>
-          </div> 
+          </div>
           <div class="canvas-item panel panel-default" data-toggle="modal" data-target="#logEntryModal">
             <h4 class="canvas-item-title">Flood in basement</h4>
             <div class="canvas-item-checkbox text-danger">
               5
             </div>
-          </div>              
+          </div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Business Impact Analysis Part 1 -->
-  <div class="modal fade resilify-canvas-modal resilify-canvas-bia1-modal" id="businessImpact1Modal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal isometrica-canvas-bia1-modal" id="businessImpact1Modal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -528,7 +528,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">BIA part 1</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -545,7 +545,7 @@
           </form>
         </div>
         <div class="modal-body">
-          <h4 class="resilify-canvas-modal-subheading text-center">Individual Impact Analysis</h4>
+          <h4 class="isometrica-canvas-modal-subheading text-center">Individual Impact Analysis</h4>
 
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix" href="#bia1-impacts-1" data-toggle="collapse">
@@ -553,8 +553,8 @@
     	        <h4 class="panel-title">Financial impacts of disruption</h4>
             </div>
             <div class="collapse in" id="bia1-impacts-1">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a class="impact-vlow" href="#">1h</a></li>
         	        <li><a class="impact-low" href="#">2h</a></li>
         	        <li><a class="impact-low" href="#">1d</a></li>
@@ -570,18 +570,18 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix collapsed" href="#bia1-impacts-2" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Operational impacts of disruption</h4>
             </div>
             <div class="collapse" id="bia1-impacts-2">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a href="#">1h</a></li>
         	        <li><a href="#">2h</a></li>
         	        <li><a href="#">1d</a></li>
@@ -597,18 +597,18 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing last">
             <div class="panel-heading clearfix collapsed" href="#bia1-impacts-3" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Reputational impacts of disruption</h4>
             </div>
             <div class="collapse" id="bia1-impacts-3">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a href="#">1h</a></li>
         	        <li><a href="#">2h</a></li>
         	        <li><a href="#">1d</a></li>
@@ -624,10 +624,10 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="text-center">
             <button type="button" class="btn btn-primary add-type">
               <i class="fa fa-plus"></i>
@@ -636,10 +636,10 @@
           </div>
         </div>
         <div class="modal-body overall-analysis">
-          <h4 class="resilify-canvas-modal-subheading text-center">Overall analysis</h4>
+          <h4 class="isometrica-canvas-modal-subheading text-center">Overall analysis</h4>
           <form class="form-horizontal">
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 MTPD
               </label>
@@ -648,7 +648,7 @@
               </div>
             </div>
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 RTO
               </label>
@@ -657,7 +657,7 @@
               </div>
             </div>
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 IT system
               </label>
@@ -686,7 +686,7 @@
   </div>
 
   <!-- Business Impact Analysis Part 1 (with Mitigation) -->
-  <div class="modal fade resilify-canvas-modal resilify-canvas-bia1-modal" id="businessImpact1MitigationModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal isometrica-canvas-bia1-modal" id="businessImpact1MitigationModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -699,7 +699,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">BIA part 1</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -716,7 +716,7 @@
           </form>
         </div>
         <div class="modal-body">
-          <h4 class="resilify-canvas-modal-subheading text-center">Individual Impact Analysis</h4>
+          <h4 class="isometrica-canvas-modal-subheading text-center">Individual Impact Analysis</h4>
 
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix" href="#bia1-impacts-1" data-toggle="collapse">
@@ -724,8 +724,8 @@
     	        <h4 class="panel-title">Financial impacts of disruption</h4>
             </div>
             <div class="collapse in" id="bia1-impacts-1">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a class="impact-vlow" href="#">1h</a></li>
         	        <li><a class="impact-low" href="#">2h</a></li>
         	        <li><a class="impact-low" href="#">1d</a></li>
@@ -735,8 +735,8 @@
         	        <li><a class="impact-high" href="#">2w</a></li>
         	        <li><a class="impact-vhigh" href="#">4w</a></li>
       	        </ul>
-      	        <h4 class="resilify-impacts-subheading">Mitigated by split site operations</h4>
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+      	        <h4 class="isometrica-impacts-subheading">Mitigated by split site operations</h4>
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a class="impact-vlow" href="#">1h</a></li>
         	        <li><a class="impact-vlow" href="#">2h</a></li>
         	        <li><a class="impact-vlow" href="#">1d</a></li>
@@ -746,8 +746,8 @@
         	        <li><a class="impact-medium" href="#">2w</a></li>
         	        <li><a class="impact-high" href="#">4w</a></li>
       	        </ul>
-      	        <h4 class="resilify-impacts-subheading">Mitigated by insurance</h4>
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+      	        <h4 class="isometrica-impacts-subheading">Mitigated by insurance</h4>
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a class="impact-vlow" href="#">1h</a></li>
         	        <li><a class="impact-vlow" href="#">2h</a></li>
         	        <li><a class="impact-vlow" href="#">1d</a></li>
@@ -763,18 +763,18 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix collapsed" href="#bia1-impacts-2" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Operational impacts of disruption</h4>
             </div>
             <div class="collapse" id="bia1-impacts-2">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a href="#">1h</a></li>
         	        <li><a href="#">2h</a></li>
         	        <li><a href="#">1d</a></li>
@@ -790,18 +790,18 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing last">
             <div class="panel-heading clearfix collapsed" href="#bia1-impacts-3" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Reputational impacts of disruption</h4>
             </div>
             <div class="collapse" id="bia1-impacts-3">
-              <div class="panel-body resilify-impacts">
-      	        <ul class="resilify-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+              <div class="panel-body isometrica-impacts">
+      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
         	        <li><a href="#">1h</a></li>
         	        <li><a href="#">2h</a></li>
         	        <li><a href="#">1d</a></li>
@@ -817,10 +817,10 @@
     	            <i class="fa fa-plus"></i>
     	            Add a Mitigation Opportunity
     	          </button>
-    	        </div>              
+    	        </div>
             </div>
           </div>
-          
+
           <div class="text-center">
             <button type="button" class="btn btn-primary add-type">
               <i class="fa fa-plus"></i>
@@ -829,10 +829,10 @@
           </div>
         </div>
         <div class="modal-body overall-analysis">
-          <h4 class="resilify-canvas-modal-subheading text-center">Overall analysis</h4>
+          <h4 class="isometrica-canvas-modal-subheading text-center">Overall analysis</h4>
           <form class="form-horizontal">
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 MTPD
               </label>
@@ -841,7 +841,7 @@
               </div>
             </div>
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 RTO
               </label>
@@ -850,7 +850,7 @@
               </div>
             </div>
             <div class="form-group">
-              <i class="fa fa-question-circle resilify-canvas-modal-help-icon"></i>
+              <i class="fa fa-question-circle isometrica-canvas-modal-help-icon"></i>
               <label class="control-label col-sm-3 col-xs-4">
                 IT system
               </label>
@@ -877,26 +877,26 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Business Impact Analysis Part 1: Impact grading tool -->
-  <div class="modal fade resilify-canvas-modal" id="impactGradingModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="impactGradingModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
   		    <div class="pull-right">
   			    <button type="button" class="btn btn-link">
 	  	      	More Help
-            </button>    		    
+            </button>
   			    <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingCustomizeModal">
   		      	Customize
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title text-left">Financial impacts - 1 day</h4>
   	    </div>
   	    <div class="modal-header subheader">
           <span class="text-muted">Guidance panel telling user what to do.</span>
         </div>
-        <div class="modal-body resilify-impacts-grading">
+        <div class="modal-body isometrica-impacts-grading">
           <ul>
   	        <li class="impact-vlow" data-dismiss="modal">V.low</li>
   	        <li class="impact-low" data-dismiss="modal">Low</li>
@@ -908,9 +908,9 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Business Impact Analysis Part 1: Impact grading tool: Customize -->
-  <div class="modal fade resilify-canvas-modal" id="impactGradingCustomizeModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="impactGradingCustomizeModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -921,13 +921,13 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Done
   		      </button>
-  		    </div>	    
+  		    </div>
   	      <h4 class="modal-title text-left">Financial impacts - definitions</h4>
   	    </div>
   	    <div class="modal-header subheader">
           <span class="text-muted">Guidance panel telling user what to do.</span>
         </div>
-        <div class="modal-body resilify-impacts-grading">
+        <div class="modal-body isometrica-impacts-grading">
           <ul>
   	        <li class="impact-vlow">
   	          <label>V.low</label>
@@ -956,7 +956,7 @@
   </div>
 
   <!-- Business Impact Analysis Part 1: Worksheet -->
-  <div class="modal fade resilify-worksheet-modal" id="businessImpact1WorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-worksheet-modal" id="businessImpact1WorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -967,9 +967,9 @@
   		    </div>
   		    <h4 class="modal-title">BIA part 1</h4>
   	    </div>
-        <div class="modal-body">				          
+        <div class="modal-body">
   				<div class="table-responsive">
-  					<table class="table resilify-table">
+  					<table class="table isometrica-table">
   						<thead>
   							<tr>
   								<th>Activity</th>
@@ -1034,14 +1034,14 @@
   							</tr>
   						</tbody>
   					</table>
-  				</div>				
+  				</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Business Impact Analysis Part 2 -->
-  <div class="modal fade resilify-canvas-modal" id="businessImpact2Modal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="businessImpact2Modal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1054,7 +1054,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">BIA part 2</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -1087,7 +1087,7 @@
           </form>
         </div>
         <div class="modal-body">
-          <h4 class="resilify-canvas-modal-subheading text-center">Individual resource analysis</h4>
+          <h4 class="isometrica-canvas-modal-subheading text-center">Individual resource analysis</h4>
 
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix" href="#bia2-resource-1" data-toggle="collapse">
@@ -1095,7 +1095,7 @@
     	        <h4 class="panel-title">Sales reps <span class="text-muted">- when needed and how many?</span></h4>
             </div>
             <div class="collapse in" id="bia2-resource-1">
-    	        <table class="table table-bordered resilify-resource-analysis-table">
+    	        <table class="table table-bordered isometrica-resource-analysis-table">
       	        <thead>
         	        <tr>
           	        <th>1h</th>
@@ -1121,7 +1121,7 @@
         	        </tr>
       	        </tbody>
     	        </table>
-    	        <div class="panel-footer clearfix resilify-resource-analysis-totals">
+    	        <div class="panel-footer clearfix isometrica-resource-analysis-totals">
     	          <div class="form-inline pull-left">
       	          <div class="form-group">
                     <label>Normal level</label>
@@ -1134,17 +1134,17 @@
                     <input type="text" class="form-control" value="11" disabled="disabled">
                   </div>
     	          </div>
-    	        </div>          
+    	        </div>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix" href="#bia2-resource-2" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Salesforce.com</h4>
             </div>
             <div class="collapse in" id="bia2-resource-2">
-    	        <table class="table table-bordered resilify-resource-analysis-table">
+    	        <table class="table table-bordered isometrica-resource-analysis-table">
       	        <tbody>
         	        <tr>
           	        <th>RTO</th>
@@ -1158,14 +1158,14 @@
     	        </table>
             </div>
           </div>
-          
+
           <div class="panel panel-default bootcards-panel-collapsing">
             <div class="panel-heading clearfix" href="#bia2-resource-3" data-toggle="collapse">
               <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
     	        <h4 class="panel-title">Dependency 1 - BT</h4>
             </div>
             <div class="collapse in" id="bia2-resource-3">
-    	        <table class="table table-bordered resilify-resource-analysis-table">
+    	        <table class="table table-bordered isometrica-resource-analysis-table">
       	        <tbody>
         	        <tr>
           	        <td><textarea class="form-control">BT service into Harlow site needs to be working. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea></td>
@@ -1192,7 +1192,7 @@
   </div>
 
   <!-- Business Impact Analysis Part 2: Worksheet -->
-  <div class="modal fade resilify-worksheet-modal" id="businessImpact2WorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-worksheet-modal" id="businessImpact2WorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -1203,9 +1203,9 @@
   		    </div>
   		    <h4 class="modal-title">Business impact analysis - part 2</h4>
   	    </div>
-        <div class="modal-body">				          
+        <div class="modal-body">
   				<div class="table-responsive">
-  					<table class="table resilify-table">
+  					<table class="table isometrica-table">
   						<thead>
   							<tr>
   								<th class="wide" rowspan="2">Department</th>
@@ -1316,14 +1316,14 @@
   							</tr>
   						</tbody>
   					</table>
-  				</div>				
+  				</div>
         </div>
       </div>
     </div>
   </div>
 
   <!-- Risk Analysis -->
-  <div class="modal fade resilify-canvas-modal" id="riskAnalysisModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="riskAnalysisModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1336,7 +1336,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">Risk Analysis</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -1412,11 +1412,11 @@
           </form>
         </div>
         <div class="modal-body risk-analysis-mitigation-header clearfix">
-          <h4 class="resilify-canvas-modal-subheading pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
+          <h4 class="isometrica-canvas-modal-subheading pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
           <button type="button" class="btn btn-link pull-right">
             <i class="fa fa-minus-circle fa-lg no-margin"></i>
           </button>
-        </div>        
+        </div>
         <div class="modal-body">
           <form class="form-horizontal">
             <div class="form-group risk-analysis-impacts">
@@ -1437,7 +1437,7 @@
                 <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target="#riskGradingModal">Low</button>
               </div>
             </div>
-            
+
           </form>
         </div>
         <div class="modal-body">
@@ -1458,16 +1458,16 @@
   </div>
 
   <!-- Risk Analysis: Risk grading tool -->
-  <div class="modal fade resilify-canvas-modal" id="riskGradingModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="riskGradingModal" tabindex="-1" role="dialog">
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
-  	    <div class="modal-header clearfix">		    
+  	    <div class="modal-header clearfix">
   	      <h4 class="modal-title pull-left">Select risk level</h4>
   	      <button type="button" class="btn btn-link pull-right icon-only">
   	        <i class="fa fa-lg fa-times"></i>
   	      </button>
   	    </div>
-  	    <div class="resilify-risk-grading">
+  	    <div class="isometrica-risk-grading">
     	    <table class="table">
       	    <tbody>
         	    <tr>
@@ -1533,7 +1533,7 @@
   </div>
 
   <!-- Risk Analysis: Worksheet -->
-  <div class="modal fade resilify-worksheet-modal" id="riskAnalysisWorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-worksheet-modal" id="riskAnalysisWorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -1547,9 +1547,9 @@
   		    </div>
   		    <h4 class="modal-title">Risk register</h4>
   	    </div>
-        <div class="modal-body">				          
+        <div class="modal-body">
   				<div class="table-responsive">
-  					<table class="table resilify-table">
+  					<table class="table isometrica-table">
   						<thead>
   							<tr>
   								<th rowspan="2">Ref #</th>
@@ -1628,14 +1628,14 @@
   							</tr>
   						</tbody>
   					</table>
-  				</div>				
+  				</div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Strategy evaluation -->
-  <div class="modal fade resilify-canvas-modal" id="strategyEvaluationModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="strategyEvaluationModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1648,7 +1648,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">Strategy evaluation</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -1686,7 +1686,7 @@
             </div>
           </div>
           <div class="modal-body">
-            <h4 class="resilify-canvas-modal-subheading text-left">Evaluation</h4>
+            <h4 class="isometrica-canvas-modal-subheading text-left">Evaluation</h4>
             <div class="form-group">
               <label class="control-label col-sm-4">Financial</label>
               <div class="col-sm-2 evaluation-rating">
@@ -1733,7 +1733,7 @@
   </div>
 
   <!-- Strategy evaluation: Worksheet -->
-  <div class="modal fade resilify-worksheet-modal" id="strategyEvaluationWorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-worksheet-modal" id="strategyEvaluationWorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -1744,9 +1744,9 @@
   		    </div>
   		    <h4 class="modal-title">Risk register</h4>
   	    </div>
-        <div class="modal-body">				          
+        <div class="modal-body">
   				<div class="table-responsive">
-  					<table class="table resilify-table">
+  					<table class="table isometrica-table">
   						<thead>
   							<tr>
   								<th rowspan="2">Activity</th>
@@ -1812,14 +1812,14 @@
   							</tr>
   						</tbody>
   					</table>
-  				</div>				
+  				</div>
         </div>
       </div>
     </div>
   </div>
-  
+
   <!-- Recovery procedure -->
-  <div class="modal fade resilify-canvas-modal" id="recoveryProcedureModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="recoveryProcedureModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1832,7 +1832,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">Recovery procedure</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -1863,17 +1863,17 @@
               </div>
             </div>
           </div>
-          <div class="modal-body resilify-rich-text-control">
-            <div class="resilify-rich-text-controls clearfix">
+          <div class="modal-body isometrica-rich-text-control">
+            <div class="isometrica-rich-text-controls clearfix">
               <div class="ql-toolbar-container" id="formatting-container">
                 <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
                 <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
                 <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
                 <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
                 <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-              </div>            
+              </div>
             </div>
-            <div class="ql-container resilify-rich-text-input" id="editor-container">
+            <div class="ql-container isometrica-rich-text-input" id="editor-container">
               <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
             </div>
           </div>
@@ -1885,9 +1885,9 @@
       </div>
     </div>
   </div>
-  
+
   <!-- Log entry -->
-  <div class="modal fade resilify-canvas-modal" id="logEntryModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-canvas-modal" id="logEntryModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1900,7 +1900,7 @@
   			    <button type="button" class="btn btn-success" data-dismiss="modal">
   		      	Save
   		      </button>
-  		    </div>		    
+  		    </div>
   	      <h4 class="modal-title">Log entry</h4>
   	    </div>
   	    <div class="modal-header subheader">
@@ -1932,24 +1932,24 @@
               <div class="col-sm-12 text-center">
                 <small>Logged by John Smith 23 Mar 2015</small>
               </div>
-            </div>             
-          </div>         
-          <div class="modal-body resilify-rich-text-control">
-            <div class="resilify-rich-text-controls clearfix">
+            </div>
+          </div>
+          <div class="modal-body isometrica-rich-text-control">
+            <div class="isometrica-rich-text-controls clearfix">
               <div class="ql-toolbar-container" id="formatting-container">
                 <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
                 <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
                 <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
                 <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
                 <a class="ql-image btn btn-default icon-only" href="#" title="Image"><i class="fa fa-image"></i></a>
-              </div>            
+              </div>
             </div>
-            <div class="ql-container resilify-rich-text-input" id="editor-container">
+            <div class="ql-container isometrica-rich-text-input" id="editor-container">
               <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
             </div>
           </div>
           <div class="modal-body clearfix problems-nonconformities">
-            <h4 class="resilify-canvas-modal-subheading text-left pull-left">Identified problems/non-conformities</h4>
+            <h4 class="isometrica-canvas-modal-subheading text-left pull-left">Identified problems/non-conformities</h4>
             <button type="button" class="btn btn-link pull-right">
               <i class="fa fa-plus-circle fa-lg no-margin"></i>
             </button>
@@ -1971,14 +1971,14 @@
                 <td>Response time too long</td>
               </tr>
             </tbody>
-          </table>          
+          </table>
         </form>
       </div>
     </div>
   </div>
-  
+
   <!-- Log entry: Worksheet -->
-  <div class="modal fade resilify-worksheet-modal" id="logEntryWorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-worksheet-modal" id="logEntryWorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -1989,9 +1989,9 @@
   		    </div>
   		    <h4 class="modal-title">Log entries</h4>
   	    </div>
-        <div class="modal-body">				          
+        <div class="modal-body">
   				<div class="table-responsive">
-  					<table class="table resilify-table">
+  					<table class="table isometrica-table">
   						<thead>
   							<tr>
   								<th>Event description</th>
@@ -2026,22 +2026,22 @@
   							</tr>
   						</tbody>
   					</table>
-  				</div>				
+  				</div>
         </div>
       </div>
     </div>
   </div>
 
   <script>
-    
+
     // Charts
     Chartlets.render()
-  	
+
   	// TYPEAHEAD FIELDS
     var typeaheadData = ['Sales', 'Thermoforming', 'Manufacturing', 'IT'];
     $(".typeahead").typeahead({ source:typeaheadData });
-  	
-  
+
+
   </script>
 
 </body>

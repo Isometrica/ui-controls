@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Dashboard</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+
+</head>
+<body class="bootcards-nofooter isometrica-dashboard-page">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-question-circle"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand">
+        	Dashboard - IBM Corp
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Business overview guidance -->
+  <div class="guidance-bar hidden-xs">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4">
+          <h4 class="text-center"><span class="badge">1</span> First define your organization in the Setup screen</h4>
+          <i class="fa fa-long-arrow-right"></i>
+        </div>
+        <div class="col-sm-4">
+          <h4 class="text-center"><span class="badge">2</span> Return to Overview to create ISO documents and workbooks</h4>
+          <i class="fa fa-long-arrow-right"></i>
+        </div>
+        <div class="col-sm-4">
+          <h4 class="text-center"><span class="badge">3</span> Show evidence of ISO compliance via Dashboard screens</h4>
+        </div>
+      </div>
+      <button type="button" class="btn btn-link guidance-bar-dismiss">
+        <i class="fa fa-times-circle no-margin"></i>
+      </button>
+    </div>
+  </div>
+
+
+  <div class="container scroll">
+  	<div class="isometrica-dashboard-items">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-building-o"></i>
+                <h3>Organization setup</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-calendar"></i>
+                <h3>Calendar</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-users"></i>
+                <h3>Meetings</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-comments-o"></i>
+                <h3>Communications log</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-line-chart"></i>
+                <h3>Performance evaluation metrics</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-exclamation-triangle"></i>
+                <h3>Risk register</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-question-circle"></i>
+                <h3>Non-conformities</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-check-square-o"></i>
+                <h3>Actions</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-thumbs-o-up"></i>
+                <h3>Competencies</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-fire-extinguisher"></i>
+                <h3>Incidents</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-flag-checkered"></i>
+                <h3>Audits, exercises &amp; tests</h3>
+						</div>
+					</div>
+				</div>
+				<div class="col-sm-3">
+					<div class="panel panel-default isometrica-dashboard-item">
+						<div class="panel-body">
+							  <i class="fa fa-list-alt"></i>
+                <h3>Survey results</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+    </div>
+  </div>
+
+<script>
+
+  /* Tooltips */
+
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  })
+
+  /* Add/Edit Users */
+
+	/*$( "a.add-user" ).click(function() {
+		$('#addUsersModal').modal('show');
+	});*/
+
+</script>
+
+</body>
+</html>

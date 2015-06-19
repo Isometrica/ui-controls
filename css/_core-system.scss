@@ -1,11 +1,11 @@
 /* CORE SYSTEM */
 
-.resilify-core-page {
+.isometrica-core-page {
   background: white;
-  
+
   .guidance-bar {
     position: static;
-    
+
     .container-fluid {
       max-width: 1200px;
     }
@@ -17,22 +17,22 @@
   padding: 0 180px;
   padding-top: 30px;
   max-width: 1200px;
-  
+
   @media (max-width: 991px) {
-    padding: 0 15px; 
+    padding: 0 15px;
   }
-  
+
   .core-panel {
     margin-bottom: 125px;
     border-color: #bbb;
-    
+
     .panel {
       margin-bottom: 15px;
       position: relative;
       border-color: #bbb;
       background: #e5e5e5;
     }
-        
+
     h2 {
       text-align: center;
       margin: 0;
@@ -49,37 +49,39 @@
       border-color: #bbb;
       background: #eee;
       position: relative;
-            
+
       &.first {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px;
       }
-      
+
       &.last {
         border-bottom: 0;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px;
       }
-      
-      &:hover, 
+
+      &:hover,
       &:active {
         background: #f5f5f5;
-        
+
         &:after {
           border-left-color: rgba(0,0,0,0.2);
         }
       }
-      
 
-      
+
+
       &.panel-heading-activities {
         //padding-bottom: 0;
-        padding-top: 15px;
+        @media (min-width:768px) {
+          padding-top: 15px;
+        }
       }
-      
+
       .panel-title {
         line-height: 1.3;
-        
+
         .badge {
           position: relative;
           top: -1px;
@@ -89,7 +91,7 @@
         }
       }
     }
-    
+
     .panel-body {
       //border-width: 2px;
       border-bottom: 1px solid #bbb;
@@ -100,37 +102,40 @@
       margin: 0;
       > div {
         padding: 0;
-        
+
         .panel-heading {
-          border-left: 1px solid #bbb;
           border-radius: 0;
+
+          @media (min-width:768px) {
+            border-left: 1px solid #bbb;
+          }
         }
         &:first-child .panel-heading {
           border-left: 0;
         }
       }
     }
-    
+
     .activities-and-dependencies {
       position: relative;
     }
-    
+
     .core-activities {
       h3 {
         margin-bottom: 15px;
       }
     }
-    
+
     .core-items {
       list-style: none;
       padding: 0;
       margin: 0 -7px;
-      
+
       li {
         float: left;
         width: 20%;
         margin-bottom: 15px;
-        
+
         .core-item {
           margin: 0 7px;
           background: white;
@@ -140,43 +145,43 @@
           cursor: pointer;
           transition: all 0.3s ease;
           color: #337ab7;
-          
+
           &:hover, &:focus, &:active {
         		border-color: #5bc0de;
         	}
-          
+
           .panel-body {
             height: 130px;
             border: 0;
           }
-    
+
           i {
             font-size: 48px;
             margin-bottom: 10px;
             opacity: 0.3;
           }
-    
+
           .core-item-title {
             text-align: center;
             font-size: 14px;
             line-height: 18px;
             margin: 0;
-          } 
-    
+          }
+
           &.core-item-empty {
             color: #aaa;
             background: white;
           }
-        }        
+        }
       }
-    }    
-    
+    }
+
     .offset {
       position: absolute;
       top: 0;
       bottom: 0;
       width: 120px;
-      
+
       @media (max-width: 991px) {
         display: none;
       }
@@ -184,11 +189,11 @@
       &.left {
         left: -165px;
       }
-      
+
       &.right {
         right: -180px;
       }
-      
+
       .panel {
         position: absolute;
         left: 0;
@@ -197,7 +202,7 @@
         right: 0;
         margin: 0;
         text-align: center;
-        
+
         .panel-heading {
           position: absolute;
           left: 0;
@@ -208,19 +213,19 @@
           border: 0;
         }
       }
-      
+
       .left-arrow,
       .right-arrow {
         position: absolute;
         font-size: 24px;
         color: #ccc;
       }
-      
+
       &#interested-parties {
         .left-arrow,
         .right-arrow {
           right: 130px;
-        }        
+        }
         .left-arrow {
           top: 15px;
         }
@@ -228,12 +233,12 @@
           bottom: 15px;
         }
       }
-      
+
       &#suppliers {
         .left-arrow,
         .right-arrow {
           left: 130px;
-        }        
+        }
         .left-arrow {
           bottom: 15px;
         }
@@ -241,76 +246,87 @@
           top: 15px;
         }
       }
-    }    
+    }
   }
 }
 
-.ios.resilify-core-page {
-  
+.ios.isometrica-core-page {
+
   .core-container {
     padding-top: 30px;
     overflow: scroll;
+
+    @media (max-width:767px) {
+      padding-top: 15px;
+    }
   }
 
   .core-panel {
     border: 1px solid #bbb !important;
-    
+
     .panel-title {
       color: #333 !important;
       text-transform: none !important;
       font-weight: 500 !important;
     }
-    
+
     .panel {
       border: 1px solid #bbb !important;
     }
   }
-  
+
   .modal {
     .modal-header {
-      .btn-group.pull-right {
+      .pull-left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: 1;
+      }
+      .pull-right {
         position: absolute;
         right: 0;
         top: 0;
+        z-index: 1;
       }
     }
-    
+
     .subheader {
       height: auto;
-    }    
+    }
 
     .panel {
       border: 1px solid #bbb;
     }
-    
+
     .form-group {
       margin-top: 0;
       margin-right: 0;
       border: 0;
-      
+
       .form-control {
         padding-left: 10px;
       }
     }
   }
-  
+
   //.modal.edit-item-details .panel .panel-heading > .form-group:first-child label:before {
   //  margin-top: 4px;
   //}
 }
 
-.android.resilify-core-page {
+.android.isometrica-core-page {
   .core-container {
     padding-top: 15px;
   }
-  
+
   .core-panel {
     .panel-heading {
       padding-top: 6px;
       padding-bottom: 6px;
     }
   }
-  
+
   .subheader {
     background: transparent;
     box-shadow: none;
@@ -318,7 +334,7 @@
     height: auto;
     border-bottom: 1px solid #ddd;
   }
-  
+
   .modal-header {
     .pull-right {
       position: absolute;
@@ -326,7 +342,7 @@
       top: 0 !important;
     }
   }
-  
+
   //.modal.edit-item-details .panel .panel-heading > .form-group:first-child label:before {
   //  left: 0;
   //  margin-top: 2px;
@@ -338,50 +354,50 @@
 
 .modal.edit-item-details {
 	z-index: 1051;
-	
+
 	.modal-header {
   	padding: 10px;
-  	
+
   	.pull-left {
     	position: absolute;
       left: 15px;
-      top: 10px;    	
+      top: 10px;
   	}
-  	
+
   	.pull-right {
     	position: absolute;
       right: 15px;
-      top: 10px;    	
+      top: 10px;
   	}
 	}
-	
+
 	.subheader {
   	font-size: 14px;
   	line-height: 1.5;
   	padding: 12px 15px;
   	color: #777;
-  	
+
   	p {
     	margin: 0;
   	}
 	}
-	
+
 	.bootcards-panel-collapsing {
   	.panel-heading {
     	.form-group {
       	margin-bottom: 0;
     	}
-    	
+
     	label {
       	cursor: pointer;
     	}
   	}
-  	
+
   	.panel-body {
     	padding-left: 50px;
     	padding-top: 10px;
     	padding-bottom: 0;
-    	
+
     	.form-group {
         margin-bottom: 10px;
       }
@@ -396,19 +412,69 @@
     	color: #bbb;
     	transition: all 0.3s ease;
     	border: 0;
-    	
+
     	&:hover {
       	color: #99130f;
     	}
-    	
+
     	i {
       	margin: 0;
     	}
   	}
-  	
+
   	.typeahead.dropdown-menu {
     	right: 15px;
-  	}  	
+  	}
 	}
 
+}
+
+.ios .modal.edit-item-details {
+  .bootcards-panel-collapsing {
+    .panel-heading {
+      padding:0;
+      background: transparent;
+    }
+
+    .panel-heading,
+    .panel-body {
+      padding-left: 40px;
+    }
+
+    .form-group {
+      margin-left: 0;
+
+      > label {
+        padding-left: 0;
+      }
+      > div {
+        padding-left: 15px;
+        padding-right: 30px;
+      }
+
+      .form-control {
+        padding-left: 0;
+
+      }
+    }
+
+    .panel-body {
+      padding-top: 0;
+      padding-right: 0;
+
+      .form-group {
+        border-bottom: 1px solid #ddd;
+        margin-bottom: 0;
+
+        .form-control {
+          resize: none;
+          padding-right: 30px;
+        }
+
+        &:last-child {
+          border-bottom: 0;
+        }
+      }
+    }
+  }
 }

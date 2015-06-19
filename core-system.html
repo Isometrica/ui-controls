@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  
+
   <title>Organization Setup</title>
   <!-- 1.0.0 -->
 
@@ -14,21 +14,21 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
-	
+
 	<!-- Typeahead JS -->
 	<script src="js/bootstrap3-typeahead.min.js"></script>
-	
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-	
+
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);	
-			$('body').addClass('ios');	
+			$("head").append(cssLink);
+			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
@@ -42,15 +42,15 @@
 			$('body').addClass('desktop');
 		}
 	});
-	</script> 
+	</script>
 
-	<link rel="stylesheet" href="css/resilify.css">
-	
+	<link rel="stylesheet" href="css/isometrica.css">
+
 </head>
-<body class="bootcards-fullheight resilify-core-page">
-  
+<body class="bootcards-fullheight isometrica-core-page">
+
   <!-- fixed top navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top resilify-navbar-centered" role="navigation">
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
@@ -58,22 +58,22 @@
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
-      </ul>  
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         <li>
           <a class="btn btn-link icon-only" href="#">
           	<i class="fa fa-lg fa-file-text"></i>
           </a>
         </li>
-      </ul>  
-        
+      </ul>
+
       <div class="navbar-header">
         <span class="navbar-brand">
         	Organization Setup
-        </span>  
-      </div>        
+        </span>
+      </div>
     </div>
-  </div>   
+  </div>
 
   <!-- Business overview guidance -->
   <div class="guidance-bar hidden-xs">
@@ -94,7 +94,7 @@
         <div class="col-sm-3">
           <h4 class="text-center"><span class="badge">4</span> Define dependencies</h4>
         </div>
-      </div> 
+      </div>
     </div>
   </div>
 
@@ -109,7 +109,7 @@
             <i class="fa fa-long-arrow-right right-arrow"></i>
             <div class="panel panel-default">
               <div class="panel-heading first last">
-                <h4 class="panel-title">Interested parties <span class="badge">12</span></h4>
+                <h4 class="panel-title">Interested parties (e.g. customers) <span class="badge">12</span></h4>
               </div>
             </div>
           </div>
@@ -144,7 +144,7 @@
           </div>
         </div>
         <div class="panel-heading panel-heading-activities" data-toggle="modal" data-target="#editActivities">
-          <ul class="core-items">
+          <ul class="core-items hidden-xs">
             <li>
               <div class="core-item panel panel-default">
                 <div class="panel-body">
@@ -186,8 +186,8 @@
               </div>
             </li>
           </ul>
-          <h3 class="panel-title">Activities &amp; processes <span class="badge">6</span></h3>          
-        </div>      
+          <h3 class="panel-title">Activities &amp; processes <span class="badge">6</span></h3>
+        </div>
         <div class="panel-heading">
           <h3 class="panel-title">Dependencies <span class="badge">3</span></h3>
         </div>
@@ -205,17 +205,25 @@
   <!-- Edit Departments -->
   <div class="modal fade edit-item-details" id="editDepartments">
     <div class="modal-dialog">
-      <div class="modal-content">	
+      <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="btn-group pull-right">
-      			<button class="btn btn-primary" data-dismiss="modal">
-      				<i class="fa fa-check"></i>Done
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
       			</button>
-          </div>    
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
           <h4 class="modal-title">Departments</h4>
         </div>
         <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
         </div>
         <div class="modal-body">
           <form class="form-horizontal">
@@ -223,8 +231,8 @@
               <div class="panel-heading clearfix collapsed" href="#departments-1" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Lorem">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -235,26 +243,32 @@
      	        <div class="collapse" id="departments-1">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Manager</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Manager</label>
+        		        <div class="col-xs-9">
         			        <input class="form-control" type="text" placeholder="optional">
-        		        </div>
-        	        </div> 
-        	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Related to</label>
-        		        <div class="col-sm-9">
-                      <input class="form-control typeahead" type="text" placeholder="optional">
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
         	        </div>
-      	        </div>              
+        	        <div class="form-group">
+        		        <label class="control-label col-xs-3">Related to</label>
+        		        <div class="col-xs-9">
+                      <input class="form-control typeahead" type="text" placeholder="optional">
+                      <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
+        		        </div>
+        	        </div>
+      	        </div>
               </div>
             </div>
             <div class="panel panel-default bootcards-panel-collapsing">
               <div class="panel-heading clearfix collapsed" href="#departments-2" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Ipsum">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -265,18 +279,24 @@
      	        <div class="collapse" id="departments-2">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Manager</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Manager</label>
+        		        <div class="col-xs-9">
         			        <input class="form-control" type="text" placeholder="optional">
-        		        </div>
-        	        </div> 
-        	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Related to</label>
-        		        <div class="col-sm-9">
-                      <input class="form-control typeahead" type="text" placeholder="optional">
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
         	        </div>
-      	        </div>              
+        	        <div class="form-group">
+        		        <label class="control-label col-xs-3">Related to</label>
+        		        <div class="col-xs-9">
+                      <input class="form-control typeahead" type="text" placeholder="optional">
+                      <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
+        		        </div>
+        	        </div>
+      	        </div>
               </div>
             </div>
             <button type="button" class="btn btn-link btn-block">
@@ -285,7 +305,7 @@
           </form>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 
 
@@ -293,13 +313,21 @@
   <!-- Edit Roles -->
   <div class="modal fade edit-item-details" id="editRoles">
     <div class="modal-dialog">
-      <div class="modal-content">	      
+      <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="btn-group pull-right">
-      	    <button class="btn btn-primary" data-dismiss="modal">
-      				<i class="fa fa-check"></i>Done
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
       			</button>
-          </div>    
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
           <h4 class="modal-title">Roles</h4>
         </div>
         <div class="modal-header subheader">
@@ -311,8 +339,8 @@
               <div class="panel-heading clearfix collapsed" href="#roles-1" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Role Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Role</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Customer service">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -323,20 +351,23 @@
               <div class="collapse" id="roles-1">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
-        	        </div> 
-      	        </div>              
+        	        </div>
+      	        </div>
               </div>
             </div>
             <div class="panel panel-default bootcards-panel-collapsing">
               <div class="panel-heading clearfix collapsed" href="#roles-2" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Role Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Role</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Another role">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -347,35 +378,46 @@
               <div class="collapse" id="roles-2">
         	      <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
-        	        </div> 
-      	        </div>              
+        	        </div>
+      	        </div>
               </div>
             </div>
             <button type="button" class="btn btn-link btn-block">
               Add another role
             </button>
-          </form> 
-        </div>             
+          </form>
+        </div>
       </div>
-    </div>  
+    </div>
   </div>
-  
-  
-  
+
+
+
   <!-- Edit Products -->
   <div class="modal fade edit-item-details" id="editProducts">
     <div class="modal-dialog">
-      <div class="modal-content">	        
+      <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="btn-group pull-right">
-      	    <button class="btn btn-primary" data-dismiss="modal">
-      				<i class="fa fa-check"></i>Done
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
       			</button>
-          </div>    
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
           <h4 class="modal-title">Products &amp; services</h4>
         </div>
         <div class="modal-header subheader">
@@ -387,8 +429,8 @@
               <div class="panel-heading clearfix collapsed" href="#products-1" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Lorem">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -399,20 +441,23 @@
               <div class="collapse" id="products-1">
         	      <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
-        	        </div> 
-      	        </div>              
+        	        </div>
+      	        </div>
               </div>
             </div>
             <div class="panel panel-default bootcards-panel-collapsing">
               <div class="panel-heading clearfix collapsed" href="#products-2" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Ipsum">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -423,21 +468,24 @@
      	        <div class="collapse" id="products-2">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
-        	        </div> 
-      	        </div>              
+        	        </div>
+      	        </div>
               </div>
             </div>
             <button type="button" class="btn btn-link btn-block">
               Add another product or service
             </button>
           </form>
-        </div>                
+        </div>
       </div>
-    </div>  
+    </div>
   </div>
 
 
@@ -445,13 +493,21 @@
   <!-- Edit Activities -->
   <div class="modal fade edit-item-details" id="editActivities">
     <div class="modal-dialog">
-      <div class="modal-content">	  
+      <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="btn-group pull-right">
-      	    <button class="btn btn-primary" data-dismiss="modal">
-      				<i class="fa fa-check"></i>Done
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
       			</button>
-          </div>    
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
           <h4 class="modal-title">Activities &amp; processes</h4>
         </div>
         <div class="modal-header subheader">
@@ -463,8 +519,8 @@
               <div class="panel-heading clearfix collapsed" href="#activities-1" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Lorem">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -475,26 +531,32 @@
      	        <div class="collapse" id="activities-1">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
-        		        </div>
-        	        </div> 
-        	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Related to</label>
-        		        <div class="col-sm-9">
-          			     <input class="form-control typeahead" type="text" placeholder="optional">
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
         	        </div>
-      	        </div>              
+        	        <div class="form-group">
+        		        <label class="control-label col-xs-3">Related to</label>
+        		        <div class="col-xs-9">
+          			     <input class="form-control typeahead" type="text" placeholder="optional">
+          			     <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
+        		        </div>
+        	        </div>
+      	        </div>
               </div>
             </div>
             <div class="panel panel-default bootcards-panel-collapsing">
               <div class="panel-heading clearfix collapsed" href="#activities-2" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
       	        <div class="form-group">
-      		        <label class="control-label col-sm-3">Name</label>
-      		        <div class="col-sm-9">
+      		        <label class="control-label col-xs-3">Name</label>
+      		        <div class="col-xs-9">
       			        <input class="form-control" type="text" value="Ipsum">
       			        <button type="button" class="btn btn-link clear-field">
       			          <i class="fa fa-times-circle"></i>
@@ -505,39 +567,45 @@
      	        <div class="collapse" id="activities-2">
                 <div class="panel-body">
         	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Notes</label>
-        		        <div class="col-sm-9">
+        		        <label class="control-label col-xs-3">Notes</label>
+        		        <div class="col-xs-9">
         			        <textarea class="form-control" placeholder="optional"></textarea>
-        		        </div>
-        	        </div> 
-        	        <div class="form-group">
-        		        <label class="control-label col-sm-3">Related to</label>
-        		        <div class="col-sm-9">
-                      <input class="form-control typeahead" type="text" placeholder="optional">
+        			        <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
         		        </div>
         	        </div>
-      	        </div>              
+        	        <div class="form-group">
+        		        <label class="control-label col-xs-3">Related to</label>
+        		        <div class="col-xs-9">
+                      <input class="form-control typeahead" type="text" placeholder="optional">
+                      <button type="button" class="btn btn-link clear-field">
+        			          <i class="fa fa-times-circle"></i>
+        			        </button>
+        		        </div>
+        	        </div>
+      	        </div>
               </div>
             </div>
             <button type="button" class="btn btn-link btn-block">
               Add another key activity or process
             </button>
-          </form> 
+          </form>
         </div>
       </div>
-    </div>  
+    </div>
   </div>
 
 
   <script>
-    
+
     /*
   	$( ".core-item" ).click(function() {
   		event.stopPropagation();
   		$('#editCoreItem').modal('show');
   	});
   	*/
-  	
+
   	/* Prevent form clicks from expanding/contracting accordion */
   	$( ".edit-item-details .form-control").click(function() {
   		event.stopPropagation();
@@ -545,8 +613,8 @@
   	$( ".edit-item-details .clear-field").click(function() {
   		event.stopPropagation();
   	});
-  	
-  	
+
+
   	// TYPEAHEAD FIELDS
     var typeaheadData = ['Alabama', 'Alaska', 'Arizona', 'Arkansas', 'California',
       'Colorado', 'Connecticut', 'Delaware', 'Florida', 'Georgia', 'Hawaii',
@@ -559,8 +627,8 @@
       'Virginia', 'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'
     ];
     $(".typeahead").typeahead({ source:typeaheadData });
-  	
-  
+
+
   </script>
 
 

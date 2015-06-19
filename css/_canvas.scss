@@ -2,7 +2,7 @@
 
 /* Guidance bar */
 
-.resilify-canvas-page {
+.isometrica-canvas-page {
   .guidance-bar {
     height: 100px !important;
     overflow: hidden;
@@ -19,7 +19,7 @@
   }
 }
 
-.android.resilify-canvas-page {
+.android.isometrica-canvas-page {
   .guidance-bar {
     h4 {
       font-size: 15px;
@@ -279,14 +279,14 @@
 
 /* CANVAS ITEM MODAL */
 
-.resilify-canvas-modal {
+.isometrica-canvas-modal {
   .subheader {
     font-size: 14px;
     line-height: 1.5;
     padding: 12px 15px;
   }
   
-  .resilify-canvas-modal-subheading {
+  .isometrica-canvas-modal-subheading {
     margin: 0 0 15px;
     font-size: 16px;
   }
@@ -309,10 +309,10 @@
     }
   }
   
-  .resilify-rich-text-control {
+  .isometrica-rich-text-control {
     padding: 0;
     
-    .resilify-rich-text-controls {
+    .isometrica-rich-text-controls {
       border-bottom: 1px solid #ddd;
       padding: 5px 10px;
       text-align: center;
@@ -323,7 +323,7 @@
       }
     }
     
-    .resilify-rich-text-input {
+    .isometrica-rich-text-input {
       height: 300px;
     }
   }  
@@ -331,11 +331,11 @@
 }
 
 
-.resilify-canvas-bia1-modal {
-  .panel-body.resilify-impacts {
+.isometrica-canvas-bia1-modal {
+  .panel-body.isometrica-impacts {
     padding: 0;
     
-    .resilify-impacts-subheading {
+    .isometrica-impacts-subheading {
       padding: 15px;
       border-bottom: 1px solid #ddd;
       border-top: 1px solid #ddd;
@@ -344,7 +344,7 @@
       font-weight: 500;
     }
     
-    .resilify-impacts-row {
+    .isometrica-impacts-row {
       list-style: none;
       padding: 0;
       margin: 0;
@@ -396,7 +396,7 @@
       padding-left: 50px;
       position: relative;
     }
-    .resilify-canvas-modal-help-icon {
+    .isometrica-canvas-modal-help-icon {
       line-height: 20px;
       font-size: 24px;
       width: 24px;
@@ -417,7 +417,7 @@
   }
 }
 
-.ios .resilify-canvas-bia1-modal {
+.ios .isometrica-canvas-bia1-modal {
   .modal-body {
     padding-bottom: 15px;
   }
@@ -430,16 +430,16 @@
     padding-left: 15px !important;
   }
   
-  .resilify-canvas-modal-subheading {
+  .isometrica-canvas-modal-subheading {
     text-align: left !important;
   }
 
-  .resilify-impacts .resilify-impacts-row li a {
+  .isometrica-impacts .isometrica-impacts-row li a {
     padding: 11px 0 !important;
   }
   
   .overall-analysis {
-    .resilify-canvas-modal-help-icon {
+    .isometrica-canvas-modal-help-icon {
       top: 0;
       margin-top: 12px;
     }  
@@ -466,7 +466,7 @@
       background: #f5f5f5;
     }
     
-    .resilify-impacts-subheading {
+    .isometrica-impacts-subheading {
       font-weight: 400;
     }
   }
@@ -486,7 +486,7 @@
     text-align: left;
   }
   
-  .resilify-impacts-grading {
+  .isometrica-impacts-grading {
     padding: 0;
     
     ul {
@@ -523,7 +523,7 @@
     padding-left: 15px;
   }
   
-  .resilify-impacts-grading ul li {
+  .isometrica-impacts-grading ul li {
     float: none;
     width: auto;
     height: auto;
@@ -541,7 +541,7 @@
     text-align: left;
   }
   
-  .resilify-impacts-grading {
+  .isometrica-impacts-grading {
     padding: 0;
     
     ul {
@@ -604,7 +604,7 @@
     position: static;
   }
   
-  .resilify-impacts-grading ul li {
+  .isometrica-impacts-grading ul li {
     float: none;
     width: auto;
     height: auto;
@@ -626,7 +626,7 @@
     }
   }
   
-  .resilify-resource-analysis-table {
+  .isometrica-resource-analysis-table {
     margin: 0;
     border-top: 1px solid #ddd;
     border-left: 0;
@@ -676,7 +676,7 @@
     }
   }  
   
-  .resilify-resource-analysis-totals {
+  .isometrica-resource-analysis-totals {
     input {
       width: 50px;
       margin-left: 10px;
@@ -811,7 +811,7 @@
     padding: 15px;
     padding-right: 40px;
     
-    .resilify-canvas-modal-subheading {
+    .isometrica-canvas-modal-subheading {
       margin: 0;
     }
     
@@ -826,7 +826,7 @@
 
 #riskGradingModal {
   
-  .resilify-risk-grading {
+  .isometrica-risk-grading {
     //margin-right: 18px;
     //margin-top: 15px;
     
