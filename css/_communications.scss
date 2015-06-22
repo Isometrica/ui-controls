@@ -1,0 +1,61 @@
+.isometrica-communications-log {
+
+  .bootcards-container {
+    padding-top: 80px;
+  }
+
+  .guidance-bar {
+    height: 52px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      h4 {
+        font-size: 14px;
+      }
+    }
+
+    .btn-group {
+      margin: -13px 0;
+      margin-right: -15px;
+    }
+  }
+
+
+  .bootcards-list {
+    .panel-body:first-child {
+      border-bottom: 1px solid #ddd;
+
+      select {
+        padding-left: 12px;
+      }
+    }
+
+    .list-group-item-content {
+      overflow: hidden;
+    }
+
+    .list-group-item {
+      i {
+        font-size: 36px;
+        top: 2px;
+        position: relative;
+      }
+    }
+  }
+
+  .bootcards-cards {
+    .list-group-item {
+      i {
+        width: auto;
+        opacity: 1;
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+.ios.isometrica-communications-log {
+  .bootcards-container {
+    padding-top: 52px;
+  }
+}

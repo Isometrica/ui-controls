@@ -1,0 +1,226 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Communications log</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+</head>
+<body class="bootcards-fullheight bootcards-nofooter isometrica-communications-log">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand">
+        	Communications log
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container bootcards-container" id="main">
+
+    <!-- Guidance Bar -->
+    <div class="guidance-bar">
+      <div class="container">
+        <h4 class="pull-left">Guidance goes here lorem ipsum</h4>
+        <div class="btn-group btn-group-lg pull-right">
+          <a href="" class="btn btn-link icon-only">
+            <i class="fa fa-times-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+		<div class="row">
+
+      <div class="col-sm-5 bootcards-list" id="list">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<div class="search-form">
+  						<div class="row">
+  						    <div class="col-xs-8">
+  						      <div class="form-group">
+  							      <select class="form-control">
+  							        <option>All by date</option>
+  							        <option>Customers</option>
+  							        <option>Suppliers</option>
+  							        <option>Regulators</option>
+  							        <option>Local community</option>
+  							        <option>Trade unions</option>
+  							        <option>Employees</option>
+  							        <option>Trade associations</option>
+  							        <option>Other</option>
+  							      </select>
+  						      </div>
+  						    </div>
+  						    <div class="col-xs-4">
+  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target="#editModal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</a>
+  						    </div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="panel-body">
+  					<div class="search-form">
+				      <div class="form-group">
+					      <input type="text" class="form-control" placeholder="Search Communications...">
+					      <i class="fa fa-search"></i>
+				      </div>
+  					</div>
+  				</div>
+  				<div class="list-group">
+  				  <a class="list-group-item active">
+  						<i class="fa fa-exclamation-circle fa-3x pull-left"></i>
+							<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Customer complaint about XYZ extrusion</h4>
+                <p class="list-group-item-text">20 June 2015</p>
+							</div>
+						</a>
+						<a class="list-group-item">
+  						<i class="fa fa-file-text-o fa-3x pull-left"></i>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Letter to IBM UK</h4>
+  							<p class="list-group-item-text">19 June 2015</p>
+  						</div>
+						</a>
+						<a class="list-group-item">
+  						<i class="fa fa-file-text-o fa-3x pull-left"></i>
+							<div class="list-group-item-content">
+							  <h4 class="list-group-item-heading">Letter from Residents</h4>
+                <p class="list-group-item-text">18 June 2015</p>
+							</div>
+						</a>
+						<a class="list-group-item">
+  						<i class="fa fa-exclamation-circle fa-3x pull-left"></i>
+							<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Customer complaint about delivery times</h4>
+                <p class="list-group-item-text">17 June 2015</p>
+							</div>
+						</a>
+						<a class="list-group-item">
+  						<i class="fa fa-file-text-o fa-3x pull-left"></i>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Letter to IBM UK</h4>
+  							<p class="list-group-item-text">16 June 2015</p>
+  						</div>
+						</a>
+						<a class="list-group-item">
+  						<i class="fa fa-file-text-o fa-3x pull-left"></i>
+							<div class="list-group-item-content">
+							  <h4 class="list-group-item-heading">Letter from Residents</h4>
+                <p class="list-group-item-text">15 June 2015</p>
+							</div>
+						</a>
+  				</div>
+  			</div>
+  		</div>
+
+
+			<div class="col-sm-7 bootcards-cards hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-right">
+							<a class="btn btn-default">
+								<i class="fa fa-pencil"></i>
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title">Communication CN136</h3>
+					</div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <p class="list-group-item-text">Description</p>
+              <h4 class="list-group-item-heading">Customer complaint about XYZ extrusion</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Category</p>
+              <h4 class="list-group-item-heading">Customer</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Logged by</p>
+              <h4 class="list-group-item-heading">John Smith on 20 June 2015</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes</p>
+              <h4 class="list-group-item-heading">Customer sent an email stating that product they had purchased last week is too long</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">File attachment(s)</p>
+              <h4 class="list-group-item-heading"><a href=""><i class="fa fa-file"></i> Alvca_letter_June_15.docx</a></h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Identified non-conformities</p>
+              <h4 class="list-group-item-heading"><span class="label label-info"></span> Products out of spec</h4>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small class="pull-left">Last edited by J.Smith</small>
+            <small class="pull-right">20 Jan 2015</small>
+          </div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+<script>
+  $('.btn[data-toggle="collapse"]').click(function(){
+    $(this).toggleClass("active");
+  });
+</script>
+
+</body>
+</html>

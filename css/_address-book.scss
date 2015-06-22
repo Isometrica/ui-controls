@@ -1,90 +1,90 @@
 /* ADDRESS BOOK */
 
 .isometrica-address-book {
-  
+
   .bootcards-container {
     padding-top: 80px;
   }
-  
+
   .guidance-bar {
     height: 52px;
     overflow: hidden;
-    
+
     @media (max-width: 767px) {
       h4 {
         font-size: 14px;
       }
     }
-    
+
     .btn-group {
       margin: -13px 0;
       margin-right: -15px;
     }
   }
-  
+
   .isometrica-address-book-select {
     border-bottom: 1px solid #ddd;
-    
+
     .list-group-item {
       i {
         position: absolute;
         left: 0;
         width: auto;
       }
-      
+
       .list-group-item-heading {
         padding-left: 34px;
         position: relative;
       }
-    }     
-    
+    }
+
     .collapse {
       .list-group-item {
         &:before {
           display: none; /* Hide disclosure indicators */
         }
       }
-    } 
+    }
   }
 
   .panel-body:first-child {
     border-bottom: 1px solid #ddd;
   }
-  
+
   .phone-numbers {
     .list-group-item-text {
       margin-bottom: 10px;
     }
-    
+
     a {
       margin-right: 15px;
     }
   }
-  
+
   .permissions {
     .list-group-item-text {
       margin-bottom: 10px;
     }
-    
+
     .list-group-item-heading {
       font-size: 14px !important;
-      
+
       &.text-success { color: #5cb85c; }
       &.text-danger { color: #d9534f; }
     }
-    
+
     i {
       opacity: 1;
       width: 20px;
       margin-right: 10px;
     }
   }
-  
+
   .call-tree {
     .list-group-item-text {
       margin-bottom: 10px;
     }
-    
+
     a {
       margin-left: 15px;
     }
@@ -95,12 +95,12 @@
 .ios.isometrica-address-book {
   .bootcards-container {
     padding-top: 52px;
-    
+
     select {
       padding-left: 12px;
     }
   }
-  
+
   .bootcards-cards {
     @media (max-width: 767px) {
       padding-left: 0;
@@ -112,5 +112,5 @@
 .android.isometrica-address-book {
   .bootcards-container {
     padding-top: 52px;
-  }  
+  }
 }

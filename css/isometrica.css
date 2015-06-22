@@ -1850,3 +1850,37 @@ body.desktop {
     left: 0;
     top: 50%;
     margin-top: -14px; }
+
+.isometrica-communications-log .bootcards-container {
+  padding-top: 80px; }
+
+.isometrica-communications-log .guidance-bar {
+  height: 52px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .isometrica-communications-log .guidance-bar h4 {
+      font-size: 14px; } }
+  .isometrica-communications-log .guidance-bar .btn-group {
+    margin: -13px 0;
+    margin-right: -15px; }
+
+.isometrica-communications-log .bootcards-list .panel-body:first-child {
+  border-bottom: 1px solid #ddd; }
+  .isometrica-communications-log .bootcards-list .panel-body:first-child select {
+    padding-left: 12px; }
+
+.isometrica-communications-log .bootcards-list .list-group-item-content {
+  overflow: hidden; }
+
+.isometrica-communications-log .bootcards-list .list-group-item i {
+  font-size: 36px;
+  top: 2px;
+  position: relative; }
+
+.isometrica-communications-log .bootcards-cards .list-group-item i {
+  width: auto;
+  opacity: 1;
+  margin-right: 5px; }
+
+.ios.isometrica-communications-log .bootcards-container {
+  padding-top: 52px; }
