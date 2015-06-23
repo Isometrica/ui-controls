@@ -1426,25 +1426,32 @@ body.desktop {
       border-bottom: 0; }
 
 /* WIKI MODULE */
-.bootcards-wiki .bootcards-wiki-panel .panel-heading .btn {
-  font-size: 14px;
-  line-height: 20px; }
-  .bootcards-wiki .bootcards-wiki-panel .panel-heading .btn .hide-text {
+.bootcards-wiki .bootcards-wiki-panel .panel-heading {
+  /* Show/Hide Details */
+  /* Read/Edit */ }
+  .bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn .hide-text {
     display: none; }
-  .bootcards-wiki .bootcards-wiki-panel .panel-heading .btn.active .show-text {
+  .bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn.active .show-text {
     display: none; }
-  .bootcards-wiki .bootcards-wiki-panel .panel-heading .btn.active .hide-text {
+  .bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn.active .hide-text {
     display: inline; }
+  .bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-right .btn[aria-expanded="true"] {
+    display: none; }
 
 .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-controls .btn {
   font-size: 14px;
   line-height: 20px; }
 
-.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-editing {
+.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 25px; }
+
+.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-edit {
   padding: 0;
   position: relative;
   font-size: 0; }
-  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-editing iframe {
+  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-edit iframe {
     min-height: 300px; }
 
 .bootcards-wiki-accordion h5.list-group-item-heading {

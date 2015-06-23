@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  
+
   <title>Quality Manual 2015</title>
   <!-- 1.0.0 -->
 
@@ -14,18 +14,18 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
-	
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-	
+
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);	
-			$('body').addClass('ios');	
+			$("head").append(cssLink);
+			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
@@ -39,13 +39,13 @@
 			$('body').addClass('desktop');
 		}
 	});
-	</script> 
+	</script>
 
 	<link rel="stylesheet" href="css/isometrica.css">
-	
+
 </head>
 <body class="bootcards-fullheight bootcards-nofooter bootcards-wiki isometrica-wiki">
-  
+
   <!-- fixed top navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
     <div class="container-fluid">
@@ -55,7 +55,7 @@
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
-      </ul> 
+      </ul>
       <ul class="nav navbar-nav navbar-right hidden-xs">
         <li>
           <a class="btn btn-link" href="#">
@@ -72,7 +72,7 @@
           	<i class="fa fa-lg fa-refresh"></i>
           </a>
         </li>
-      </ul>  
+      </ul>
       <ul class="nav navbar-nav navbar-right visible-xs">
         <li>
           <a class="btn btn-link" href="#">
@@ -83,18 +83,18 @@
       <div class="navbar-header">
         <span class="navbar-brand">
         	Quality Manual 2015
-        </span>  
-      </div>        
+        </span>
+      </div>
     </div>
-  </div>   
+  </div>
 
 
 
-  <div class="container bootcards-container" id="main">   
+  <div class="container bootcards-container" id="main">
 		<div class="row">
 
-      <div class="col-sm-5 bootcards-list" id="list">			
-  			<div class="panel panel-default">				
+      <div class="col-sm-5 bootcards-list" id="list">
+  			<div class="panel panel-default">
   				<div class="panel-body">
   					<div class="search-form">
   						<div class="row">
@@ -106,14 +106,14 @@
   						    </div>
   						    <div class="col-xs-3">
   								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target="#editModal">
-  									<i class="fa fa-plus"></i> 
+  									<i class="fa fa-plus"></i>
   									<span>Add</span>
   								</a>
   						    </div>
-  						</div>						    
-  					</div>					
+  						</div>
+  					</div>
   				</div>
-  				<div class="list-group bootcards-accordion" id="accordion">		
+  				<div class="list-group bootcards-accordion" id="accordion">
   					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse1">
   						Sections
   					</a>
@@ -209,83 +209,123 @@
   						</a>
   					</div>
   				</div>
-  			</div>				
+  			</div>
   		</div>
 
-		
-			<div class="col-sm-7 bootcards-cards hidden-xs">				
+
+			<div class="col-sm-7 bootcards-cards hidden-xs">
 				<div class="panel panel-default bootcards-wiki-panel">
 					<div class="panel-heading clearfix">
 						<div class="btn-group pull-left hidden-xs">
-							<a class="btn btn-default active" data-toggle="collapse" href="#metadata">
+							<a class="btn btn-default active" data-toggle="collapse" href=".bootcards-wiki-panel-metadata-wrapper">
 								<span class="show-text">Show </span>
 								<span class="hide-text">Hide </span>
 								Details
 							</a>
-						</div>	
-						<div class="btn-group pull-right hidden-xs">
-							<a class="btn btn-default" data-toggle="collapse" href="#help">
-								<span class="show-text">Show </span>
-								<span class="hide-text">Hide </span>
-								Tips
+						</div>
+						<div class="pull-right">
+							<a class="btn btn-default" data-toggle="collapse" data-target=".wiki-accordion-wrapper" aria-expanded="false">
+								Edit
 							</a>
 						</div>
 						<h3 class="panel-title text-center">1. Overview</h3>
 					</div>
-          
-          <div class="collapse" id="help">
-            <div class="panel-heading bootcards-panel-tips">
-              <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condimentum, tristique mi eget, volutpat ante. Integer at porttitor purus, sed faucibus enim.</span>
+
+          <div class="collapse in wiki-accordion-wrapper">
+            <div role="tabpanel" class="tab-pane active" id="wiki-read">
+              <div class="collapse in bootcards-wiki-panel-metadata-wrapper">
+                <div class="panel-body bootcards-wiki-panel-metadata">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Subject</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="Subject goes here" disabled=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Section</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="1" disabled=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Tag</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="Tag goes here" disabled=""/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Files</label>
+                      <div class="col-sm-9 col-xs-8">
+                        <button type="button" class="btn btn-info"><i class="fa fa-file"></i> document_title_here.docx</button>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+              <div class="panel-body bootcards-wiki-panel-text-read">
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              </div>
             </div>
           </div>
-          
-          <div class="collapse in" id="metadata">
-            <div class="panel-body bootcards-wiki-panel-metadata">
-              <form class="form-horizontal">
-                <div class="form-group">
-                  <label class="control-label col-sm-3 col-xs-4">Subject</label>
-                  <div class="col-sm-6 col-xs-8">
-                    <input type="text" class="form-control" value="Subject goes here"/>
-                  </div>
+          <div class="collapse wiki-accordion-wrapper">
+            <div role="tabpanel" class="tab-pane" id="wiki-edit">
+              <div class="collapse in bootcards-wiki-panel-metadata-wrapper">
+                <div class="panel-body bootcards-wiki-panel-metadata">
+                  <form class="form-horizontal">
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Subject</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="Subject goes here"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Section</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="1"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Tag</label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" value="Tag goes here"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">Files</label>
+                      <div class="col-sm-9 col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info"><i class="fa fa-file"></i> document_title_here.docx</button>
+                          <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
+                        </div>
+                        <button type="button" class="btn btn-primary">Attach Files</button>
+                      </div>
+                    </div>
+                  </form>
                 </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-3 col-xs-4">Section</label>
-                  <div class="col-sm-6 col-xs-8">
-                    <input type="text" class="form-control" value="1"/>
-                  </div>
+              </div>
+
+              <div class="panel-heading clearfix bootcards-wiki-panel-controls">
+                <div class="ql-toolbar-container btn-group pull-left" id="formatting-container">
+                  <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                  <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                  <!--<a class="ql-underline btn btn-default icon-only" href="#" title="Underline"><i class="fa fa-underline"></i></a>-->
+                  <!--<a class="ql-strike btn btn-default icon-only" href="#" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>-->
+                  <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                  <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                  <a class="ql-list btn btn-default icon-only" href="#" title="Table"><i class="fa fa-table"></i></a>
                 </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-3 col-xs-4">Tag</label>
-                  <div class="col-sm-6 col-xs-8">
-                    <input type="text" class="form-control" value="Tag goes here"/>
-                  </div>
+              </div>
+              <div class="panel-body bootcards-wiki-panel-text-edit">
+                <div class="ql-container" id="editor-container">
+                  <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
                 </div>
-                <div class="form-group">
-                  <label class="control-label col-sm-3 col-xs-4">Files</label>
-                  <div class="col-sm-6 col-xs-8">
-                    <button type="button" class="btn btn-primary">Attach Files</button>
-                  </div>
-                </div>
-              </form>
+              </div>
             </div>
           </div>
-          
-          <div class="panel-heading clearfix bootcards-wiki-panel-controls">
-            <div class="ql-toolbar-container btn-group pull-left" id="formatting-container">
-              <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-              <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-              <!--<a class="ql-underline btn btn-default icon-only" href="#" title="Underline"><i class="fa fa-underline"></i></a>-->
-              <!--<a class="ql-strike btn btn-default icon-only" href="#" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>-->
-              <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-              <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-              <a class="ql-list btn btn-default icon-only" href="#" title="Table"><i class="fa fa-table"></i></a>
-            </div>            
-          </div>
-          <div class="panel-body bootcards-wiki-panel-editing">
-            <div class="ql-container" id="editor-container">
-              <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-            </div>
-          </div>	
+
           <div class="panel-footer">
             <small class="pull-left">Created by Jack Herbert</small>
             <small class="pull-right">Last edited on 21/04/2015 at 15:39 </small>
@@ -294,6 +334,8 @@
 			</div>
 		</div>
   </div>
+
+
 
 <script>
   $('.btn[data-toggle="collapse"]').click(function(){
