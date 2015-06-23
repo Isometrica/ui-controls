@@ -219,27 +219,27 @@ body.desktop {
     font-size: 18px;
     margin-top: -10px; } }
 
-/* CANVAS */
+/* workbook */
 /* Guidance bar */
-.isometrica-canvas-page .guidance-bar {
+.isometrica-workbook-page .guidance-bar {
   height: 100px !important;
   overflow: hidden; }
-  .isometrica-canvas-page .guidance-bar .btn-group {
+  .isometrica-workbook-page .guidance-bar .btn-group {
     margin-top: -5px;
     margin-bottom: -10px; }
-    .isometrica-canvas-page .guidance-bar .btn-group .btn {
+    .isometrica-workbook-page .guidance-bar .btn-group .btn {
       padding-left: 10px;
       padding-right: 10px; }
 
-.android.isometrica-canvas-page .guidance-bar h4 {
+.android.isometrica-workbook-page .guidance-bar h4 {
   font-size: 15px;
   line-height: 22px; }
 
-.android.isometrica-canvas-page .guidance-bar .btn {
+.android.isometrica-workbook-page .guidance-bar .btn {
   font-size: 15px; }
 
 /* Rows */
-.canvas-row {
+.workbook-row {
   position: fixed;
   left: 0;
   right: 0;
@@ -248,37 +248,37 @@ body.desktop {
   bottom: 0;
   margin: 0;
   background: #eee; }
-  .canvas-row .canvas-column {
+  .workbook-row .workbook-column {
     height: 100%;
     overflow-y: auto;
     overflow-x: hidden;
     padding: 0;
     border-right: 1px solid #ccc; }
-    .canvas-row .canvas-column .canvas-column-header {
+    .workbook-row .workbook-column .workbook-column-header {
       padding: 10px 0; }
-      .canvas-row .canvas-column .canvas-column-header .btn {
+      .workbook-row .workbook-column .workbook-column-header .btn {
         padding: 0;
         font-size: 24px;
         margin: 0 15px; }
-        .canvas-row .canvas-column .canvas-column-header .btn i {
+        .workbook-row .workbook-column .workbook-column-header .btn i {
           margin: 0; }
-    .canvas-row .canvas-column .canvas-item-heading {
+    .workbook-row .workbook-column .workbook-item-heading {
       cursor: pointer;
       transition: all 0.3s ease;
       margin: 0 15px 15px 15px;
       border-color: #bbb;
       overflow: hidden; }
-      .canvas-row .canvas-column .canvas-item-heading:hover, .canvas-row .canvas-column .canvas-item-heading:focus, .canvas-row .canvas-column .canvas-item-heading:active {
+      .workbook-row .workbook-column .workbook-item-heading:hover, .workbook-row .workbook-column .workbook-item-heading:focus, .workbook-row .workbook-column .workbook-item-heading:active {
         border-color: #5bc0de; }
-      .canvas-row .canvas-column .canvas-item-heading .panel-heading {
+      .workbook-row .workbook-column .workbook-item-heading .panel-heading {
         border: 0;
         position: relative;
         padding-left: 40px;
         background: #eee;
         transition: all 0.3s ease; }
-        .canvas-row .canvas-column .canvas-item-heading .panel-heading:hover, .canvas-row .canvas-column .canvas-item-heading .panel-heading:focus, .canvas-row .canvas-column .canvas-item-heading .panel-heading:active {
+        .workbook-row .workbook-column .workbook-item-heading .panel-heading:hover, .workbook-row .workbook-column .workbook-item-heading .panel-heading:focus, .workbook-row .workbook-column .workbook-item-heading .panel-heading:active {
           background: #fafafa; }
-        .canvas-row .canvas-column .canvas-item-heading .panel-heading:after {
+        .workbook-row .workbook-column .workbook-item-heading .panel-heading:after {
           content: "\f138";
           display: block;
           font-family: "FontAwesome";
@@ -292,15 +292,15 @@ body.desktop {
           top: 50%;
           margin-top: -10px;
           transition: all 0.3s ease; }
-        .canvas-row .canvas-column .canvas-item-heading .panel-heading h3 {
+        .workbook-row .workbook-column .workbook-item-heading .panel-heading h3 {
           font-size: 14px;
           line-height: 20px;
           margin: 0; }
-      .canvas-row .canvas-column .canvas-item-heading[aria-expanded="true"] {
+      .workbook-row .workbook-column .workbook-item-heading[aria-expanded="true"] {
         margin-bottom: 15px; }
-        .canvas-row .canvas-column .canvas-item-heading[aria-expanded="true"] .panel-heading:after {
+        .workbook-row .workbook-column .workbook-item-heading[aria-expanded="true"] .panel-heading:after {
           transform: rotate(90deg); }
-    .canvas-row .canvas-column .canvas-item {
+    .workbook-row .workbook-column .workbook-item {
       padding: 15px;
       overflow: hidden;
       text-align: center;
@@ -317,20 +317,20 @@ body.desktop {
       /* Clock */
       /* Icon */
       /* Label */ }
-      .canvas-row .canvas-column .canvas-item:hover, .canvas-row .canvas-column .canvas-item:focus, .canvas-row .canvas-column .canvas-item:active {
+      .workbook-row .workbook-column .workbook-item:hover, .workbook-row .workbook-column .workbook-item:focus, .workbook-row .workbook-column .workbook-item:active {
         border-color: #5bc0de; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-title {
+      .workbook-row .workbook-column .workbook-item .workbook-item-title {
         text-align: center;
         font-size: 14px;
         line-height: 20px;
         margin: 0 0 15px 0; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-chart {
+      .workbook-row .workbook-column .workbook-item .workbook-item-chart {
         font-size: 0;
         margin: 0 -15px -15px; }
-        .canvas-row .canvas-column .canvas-item .canvas-item-chart canvas {
+        .workbook-row .workbook-column .workbook-item .workbook-item-chart canvas {
           width: 100% !important;
           height: 50px !important; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-checkbox {
+      .workbook-row .workbook-column .workbook-item .workbook-item-checkbox {
         width: 32px;
         height: 32px;
         margin: 0 auto;
@@ -341,29 +341,29 @@ body.desktop {
         line-height: 28px;
         text-align: center;
         font-size: 18px; }
-        .canvas-row .canvas-column .canvas-item .canvas-item-checkbox.text-danger {
+        .workbook-row .workbook-column .workbook-item .workbook-item-checkbox.text-danger {
           border-color: #d9534f; }
-        .canvas-row .canvas-column .canvas-item .canvas-item-checkbox.text-success {
+        .workbook-row .workbook-column .workbook-item .workbook-item-checkbox.text-success {
           border-color: #5cb85c; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-progress {
+      .workbook-row .workbook-column .workbook-item .workbook-item-progress {
         margin-bottom: 0; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-clock {
+      .workbook-row .workbook-column .workbook-item .workbook-item-clock {
         color: #777;
         font-size: 15px;
         font-weight: 500; }
-        .canvas-row .canvas-column .canvas-item .canvas-item-clock span {
+        .workbook-row .workbook-column .workbook-item .workbook-item-clock span {
           display: block;
           font-size: 11px;
           font-weight: 500; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-icon {
+      .workbook-row .workbook-column .workbook-item .workbook-item-icon {
         color: #999; }
-      .canvas-row .canvas-column .canvas-item .text-danger {
+      .workbook-row .workbook-column .workbook-item .text-danger {
         color: #d9534f; }
-      .canvas-row .canvas-column .canvas-item .text-warning {
+      .workbook-row .workbook-column .workbook-item .text-warning {
         color: #f0ad4e; }
-      .canvas-row .canvas-column .canvas-item .text-success {
+      .workbook-row .workbook-column .workbook-item .text-success {
         color: #5cb85c; }
-      .canvas-row .canvas-column .canvas-item .canvas-item-label {
+      .workbook-row .workbook-column .workbook-item .workbook-item-label {
         position: absolute;
         left: 0;
         right: 0;
@@ -372,116 +372,116 @@ body.desktop {
         padding: 0;
         line-height: 20px; }
 
-.ios .canvas-row {
+.ios .workbook-row {
   top: 144px; }
   @media (max-width: 767px) {
-    .ios .canvas-row {
+    .ios .workbook-row {
       top: 44px; } }
-  .ios .canvas-row .canvas-item-heading {
+  .ios .workbook-row .workbook-item-heading {
     background: transparent; }
-    .ios .canvas-row .canvas-item-heading .panel-heading {
+    .ios .workbook-row .workbook-item-heading .panel-heading {
       padding-left: 30px;
       padding-right: 0;
       background: transparent !important; }
-      .ios .canvas-row .canvas-item-heading .panel-heading:after {
+      .ios .workbook-row .workbook-item-heading .panel-heading:after {
         left: 0; }
 
-.android .canvas-row .canvas-item-heading {
+.android .workbook-row .workbook-item-heading {
   background: transparent;
   border: 0; }
-  .android .canvas-row .canvas-item-heading .panel-heading {
+  .android .workbook-row .workbook-item-heading .panel-heading {
     padding-left: 30px;
     padding-right: 0;
     background: transparent !important; }
-    .android .canvas-row .canvas-item-heading .panel-heading:after {
+    .android .workbook-row .workbook-item-heading .panel-heading:after {
       left: 0; }
 
-/* CANVAS ITEM MODAL */
-.isometrica-canvas-modal .subheader {
+/* workbook ITEM MODAL */
+.isometrica-workbook-modal .subheader {
   font-size: 14px;
   line-height: 1.5;
   padding: 12px 15px; }
 
-.isometrica-canvas-modal .isometrica-canvas-modal-subheading {
+.isometrica-workbook-modal .isometrica-workbook-modal-subheading {
   margin: 0 0 15px;
   font-size: 16px; }
 
-.isometrica-canvas-modal .modal-body {
+.isometrica-workbook-modal .modal-body {
   border-bottom: 1px solid #ddd;
   padding-bottom: 0; }
-  .isometrica-canvas-modal .modal-body:last-child {
+  .isometrica-workbook-modal .modal-body:last-child {
     border-bottom: 0; }
 
-.isometrica-canvas-modal .modal-footer {
+.isometrica-workbook-modal .modal-footer {
   border-top: 0;
   text-align: center; }
-  .isometrica-canvas-modal .modal-footer .btn {
+  .isometrica-workbook-modal .modal-footer .btn {
     float: none; }
 
-.isometrica-canvas-modal .isometrica-rich-text-control {
+.isometrica-workbook-modal .isometrica-rich-text-control {
   padding: 0; }
-  .isometrica-canvas-modal .isometrica-rich-text-control .isometrica-rich-text-controls {
+  .isometrica-workbook-modal .isometrica-rich-text-control .isometrica-rich-text-controls {
     border-bottom: 1px solid #ddd;
     padding: 5px 10px;
     text-align: center; }
-    .isometrica-canvas-modal .isometrica-rich-text-control .isometrica-rich-text-controls .btn {
+    .isometrica-workbook-modal .isometrica-rich-text-control .isometrica-rich-text-controls .btn {
       border: 0;
       border-radius: 0; }
-  .isometrica-canvas-modal .isometrica-rich-text-control .isometrica-rich-text-input {
+  .isometrica-workbook-modal .isometrica-rich-text-control .isometrica-rich-text-input {
     height: 300px; }
 
-.isometrica-canvas-bia1-modal .panel-body.isometrica-impacts {
+.isometrica-workbook-bia1-modal .panel-body.isometrica-impacts {
   padding: 0; }
-  .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-subheading {
+  .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-subheading {
     padding: 15px;
     border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     margin: 0;
     font-size: 16px;
     font-weight: 500; }
-  .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row {
+  .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row {
     list-style: none;
     padding: 0;
     margin: 0;
     overflow: hidden; }
-    .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li {
+    .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li {
       float: left;
       width: 12.5%; }
-      .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a {
+      .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a {
         display: block;
         text-align: center;
         padding: 15px 0;
         border-right: 1px solid #ddd;
         transition: all 0.3s ease;
         font-weight: bold; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:hover, .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:focus, .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:active {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:hover, .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:focus, .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a:active {
           text-decoration: none;
           background: #5bc0de;
           color: white; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-vlow {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-vlow {
           background: #29aa50; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-low {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-low {
           background: #5cb85c; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-medium {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-medium {
           background: #f0ad4e; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-high {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-high {
           background: #d9534f; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-vhigh {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a.impact-vhigh {
           background: #a60200; }
-        .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a[class^="impact-"] {
+        .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li a[class^="impact-"] {
           color: white;
           border: 0; }
-      .isometrica-canvas-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li:last-child a {
+      .isometrica-workbook-bia1-modal .panel-body.isometrica-impacts .isometrica-impacts-row li:last-child a {
         border-right: 0; }
 
-.isometrica-canvas-bia1-modal .btn.add-type {
+.isometrica-workbook-bia1-modal .btn.add-type {
   margin-bottom: 15px; }
 
-.isometrica-canvas-bia1-modal .overall-analysis .form-group {
+.isometrica-workbook-bia1-modal .overall-analysis .form-group {
   padding-left: 50px;
   position: relative; }
 
-.isometrica-canvas-bia1-modal .overall-analysis .isometrica-canvas-modal-help-icon {
+.isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon {
   line-height: 20px;
   font-size: 24px;
   width: 24px;
@@ -494,44 +494,44 @@ body.desktop {
   margin-top: -12px;
   transition: all 0.3s ease;
   cursor: pointer; }
-  .isometrica-canvas-bia1-modal .overall-analysis .isometrica-canvas-modal-help-icon:hover, .isometrica-canvas-bia1-modal .overall-analysis .isometrica-canvas-modal-help-icon:focus, .isometrica-canvas-bia1-modal .overall-analysis .isometrica-canvas-modal-help-icon:active {
+  .isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon:hover, .isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon:focus, .isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon:active {
     color: #23527c; }
 
-.ios .isometrica-canvas-bia1-modal .modal-body {
+.ios .isometrica-workbook-bia1-modal .modal-body {
   padding-bottom: 15px; }
 
-.ios .isometrica-canvas-bia1-modal .form-group {
+.ios .isometrica-workbook-bia1-modal .form-group {
   padding-left: 15px !important; }
 
-.ios .isometrica-canvas-bia1-modal .isometrica-canvas-modal-subheading {
+.ios .isometrica-workbook-bia1-modal .isometrica-workbook-modal-subheading {
   text-align: left !important; }
 
-.ios .isometrica-canvas-bia1-modal .isometrica-impacts .isometrica-impacts-row li a {
+.ios .isometrica-workbook-bia1-modal .isometrica-impacts .isometrica-impacts-row li a {
   padding: 11px 0 !important; }
 
-.ios .isometrica-canvas-bia1-modal .overall-analysis .isometrica-canvas-modal-help-icon {
+.ios .isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon {
   top: 0;
   margin-top: 12px; }
 
-.ios .isometrica-canvas-bia1-modal .overall-analysis .form-group {
+.ios .isometrica-workbook-bia1-modal .overall-analysis .form-group {
   padding-left: 30px !important; }
 
-.ios .isometrica-canvas-bia1-modal .overall-analysis .add-system {
+.ios .isometrica-workbook-bia1-modal .overall-analysis .add-system {
   padding-left: 15px !important; }
 
-.ios .isometrica-canvas-bia1-modal .bootcards-panel-collapsing {
+.ios .isometrica-workbook-bia1-modal .bootcards-panel-collapsing {
   margin-left: -15px;
   margin-right: -15px;
   border-top: 1px solid #ddd;
   margin-bottom: 0; }
-  .ios .isometrica-canvas-bia1-modal .bootcards-panel-collapsing.last {
+  .ios .isometrica-workbook-bia1-modal .bootcards-panel-collapsing.last {
     border-bottom: 1px solid #ddd; }
-  .ios .isometrica-canvas-bia1-modal .bootcards-panel-collapsing .panel-heading {
+  .ios .isometrica-workbook-bia1-modal .bootcards-panel-collapsing .panel-heading {
     background: #f5f5f5; }
-  .ios .isometrica-canvas-bia1-modal .bootcards-panel-collapsing .isometrica-impacts-subheading {
+  .ios .isometrica-workbook-bia1-modal .bootcards-panel-collapsing .isometrica-impacts-subheading {
     font-weight: 400; }
 
-.ios .isometrica-canvas-bia1-modal .add-type {
+.ios .isometrica-workbook-bia1-modal .add-type {
   margin-top: 10px;
   margin-bottom: 0; }
 
@@ -776,7 +776,7 @@ body.desktop {
 .ios #riskAnalysisModal .risk-analysis-mitigation-header {
   padding: 15px;
   padding-right: 40px; }
-  .ios #riskAnalysisModal .risk-analysis-mitigation-header .isometrica-canvas-modal-subheading {
+  .ios #riskAnalysisModal .risk-analysis-mitigation-header .isometrica-workbook-modal-subheading {
     margin: 0; }
   .ios #riskAnalysisModal .risk-analysis-mitigation-header .btn {
     position: absolute;
@@ -1010,7 +1010,7 @@ body.desktop {
   .isometrica-overview-item .panel-body .isometrica-overview-item-heading {
     overflow: hidden;
     height: 75px; }
-    .isometrica-overview-item .panel-body .isometrica-overview-item-heading .canvas-icon {
+    .isometrica-overview-item .panel-body .isometrica-overview-item-heading .workbook-icon {
       float: left;
       margin: 3px 15px 0 3px;
       height: 60px; }
