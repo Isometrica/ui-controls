@@ -1128,35 +1128,35 @@ body.desktop {
     padding-right: 15px; }
 
 /* CORE SYSTEM */
-.isometrica-core-page {
+.isometrica-org-setup-page {
   background: white; }
-  .isometrica-core-page .guidance-bar {
+  .isometrica-org-setup-page .guidance-bar {
     position: static; }
-    .isometrica-core-page .guidance-bar .container-fluid {
+    .isometrica-org-setup-page .guidance-bar .container-fluid {
       max-width: 1200px; }
 
-.core-container {
+.org-setup-container {
   width: auto;
   padding: 0 180px;
   padding-top: 30px;
   max-width: 1200px; }
   @media (max-width: 991px) {
-    .core-container {
+    .org-setup-container {
       padding: 0 15px; } }
-  .core-container .core-panel {
+  .org-setup-container .org-setup-panel {
     margin-bottom: 125px;
     border-color: #bbb; }
-    .core-container .core-panel .panel {
+    .org-setup-container .org-setup-panel .panel {
       margin-bottom: 15px;
       position: relative;
       border-color: #bbb;
       background: #e5e5e5; }
-    .core-container .core-panel h2 {
+    .org-setup-container .org-setup-panel h2 {
       text-align: center;
       margin: 0;
       font-size: 24px;
       margin-bottom: 15px; }
-    .core-container .core-panel .panel-heading {
+    .org-setup-container .org-setup-panel .panel-heading {
       cursor: pointer;
       text-align: center;
       overflow: hidden;
@@ -1165,57 +1165,57 @@ body.desktop {
       border-color: #bbb;
       background: #eee;
       position: relative; }
-      .core-container .core-panel .panel-heading.first {
+      .org-setup-container .org-setup-panel .panel-heading.first {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px; }
-      .core-container .core-panel .panel-heading.last {
+      .org-setup-container .org-setup-panel .panel-heading.last {
         border-bottom: 0;
         border-bottom-left-radius: 3px;
         border-bottom-right-radius: 3px; }
-      .core-container .core-panel .panel-heading:hover,
-      .core-container .core-panel .panel-heading:active {
+      .org-setup-container .org-setup-panel .panel-heading:hover,
+      .org-setup-container .org-setup-panel .panel-heading:active {
         background: #f5f5f5; }
-        .core-container .core-panel .panel-heading:hover:after,
-        .core-container .core-panel .panel-heading:active:after {
+        .org-setup-container .org-setup-panel .panel-heading:hover:after,
+        .org-setup-container .org-setup-panel .panel-heading:active:after {
           border-left-color: rgba(0, 0, 0, 0.2); }
       @media (min-width: 768px) {
-        .core-container .core-panel .panel-heading.panel-heading-activities {
+        .org-setup-container .org-setup-panel .panel-heading.panel-heading-activities {
           padding-top: 15px; } }
-      .core-container .core-panel .panel-heading .panel-title {
+      .org-setup-container .org-setup-panel .panel-heading .panel-title {
         line-height: 1.3; }
-        .core-container .core-panel .panel-heading .panel-title .badge {
+        .org-setup-container .org-setup-panel .panel-heading .panel-title .badge {
           position: relative;
           top: -1px;
           margin-left: 5px;
           margin-right: 5px;
           background-color: #d9534f; }
-    .core-container .core-panel .panel-body {
+    .org-setup-container .org-setup-panel .panel-body {
       border-bottom: 1px solid #bbb;
       padding-bottom: 0; }
-    .core-container .core-panel .core-split-sections {
+    .org-setup-container .org-setup-panel .org-setup-split-sections {
       margin: 0; }
-      .core-container .core-panel .core-split-sections > div {
+      .org-setup-container .org-setup-panel .org-setup-split-sections > div {
         padding: 0; }
-        .core-container .core-panel .core-split-sections > div .panel-heading {
+        .org-setup-container .org-setup-panel .org-setup-split-sections > div .panel-heading {
           border-radius: 0; }
           @media (min-width: 768px) {
-            .core-container .core-panel .core-split-sections > div .panel-heading {
+            .org-setup-container .org-setup-panel .org-setup-split-sections > div .panel-heading {
               border-left: 1px solid #bbb; } }
-        .core-container .core-panel .core-split-sections > div:first-child .panel-heading {
+        .org-setup-container .org-setup-panel .org-setup-split-sections > div:first-child .panel-heading {
           border-left: 0; }
-    .core-container .core-panel .activities-and-dependencies {
+    .org-setup-container .org-setup-panel .activities-and-dependencies {
       position: relative; }
-    .core-container .core-panel .core-activities h3 {
+    .org-setup-container .org-setup-panel .org-setup-activities h3 {
       margin-bottom: 15px; }
-    .core-container .core-panel .core-items {
+    .org-setup-container .org-setup-panel .org-setup-items {
       list-style: none;
       padding: 0;
       margin: 0 -7px; }
-      .core-container .core-panel .core-items li {
+      .org-setup-container .org-setup-panel .org-setup-items li {
         float: left;
         width: 20%;
         margin-bottom: 15px; }
-        .core-container .core-panel .core-items li .core-item {
+        .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item {
           margin: 0 7px;
           background: white;
           overflow: hidden;
@@ -1224,36 +1224,36 @@ body.desktop {
           cursor: pointer;
           transition: all 0.3s ease;
           color: #337ab7; }
-          .core-container .core-panel .core-items li .core-item:hover, .core-container .core-panel .core-items li .core-item:focus, .core-container .core-panel .core-items li .core-item:active {
+          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:hover, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:focus, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:active {
             border-color: #5bc0de; }
-          .core-container .core-panel .core-items li .core-item .panel-body {
+          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .panel-body {
             height: 130px;
             border: 0; }
-          .core-container .core-panel .core-items li .core-item i {
+          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item i {
             font-size: 48px;
             margin-bottom: 10px;
             opacity: 0.3; }
-          .core-container .core-panel .core-items li .core-item .core-item-title {
+          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .org-setup-item-title {
             text-align: center;
             font-size: 14px;
             line-height: 18px;
             margin: 0; }
-          .core-container .core-panel .core-items li .core-item.core-item-empty {
+          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item.org-setup-item-empty {
             color: #aaa;
             background: white; }
-    .core-container .core-panel .offset {
+    .org-setup-container .org-setup-panel .offset {
       position: absolute;
       top: 0;
       bottom: 0;
       width: 120px; }
       @media (max-width: 991px) {
-        .core-container .core-panel .offset {
+        .org-setup-container .org-setup-panel .offset {
           display: none; } }
-      .core-container .core-panel .offset.left {
+      .org-setup-container .org-setup-panel .offset.left {
         left: -165px; }
-      .core-container .core-panel .offset.right {
+      .org-setup-container .org-setup-panel .offset.right {
         right: -180px; }
-      .core-container .core-panel .offset .panel {
+      .org-setup-container .org-setup-panel .offset .panel {
         position: absolute;
         left: 0;
         top: 0;
@@ -1261,7 +1261,7 @@ body.desktop {
         right: 0;
         margin: 0;
         text-align: center; }
-        .core-container .core-panel .offset .panel .panel-heading {
+        .org-setup-container .org-setup-panel .offset .panel .panel-heading {
           position: absolute;
           left: 0;
           top: 0;
@@ -1269,82 +1269,82 @@ body.desktop {
           right: 0;
           margin: 0;
           border: 0; }
-      .core-container .core-panel .offset .left-arrow,
-      .core-container .core-panel .offset .right-arrow {
+      .org-setup-container .org-setup-panel .offset .left-arrow,
+      .org-setup-container .org-setup-panel .offset .right-arrow {
         position: absolute;
         font-size: 24px;
         color: #ccc; }
-      .core-container .core-panel .offset#interested-parties .left-arrow,
-      .core-container .core-panel .offset#interested-parties .right-arrow {
+      .org-setup-container .org-setup-panel .offset#interested-parties .left-arrow,
+      .org-setup-container .org-setup-panel .offset#interested-parties .right-arrow {
         right: 130px; }
-      .core-container .core-panel .offset#interested-parties .left-arrow {
+      .org-setup-container .org-setup-panel .offset#interested-parties .left-arrow {
         top: 15px; }
-      .core-container .core-panel .offset#interested-parties .right-arrow {
+      .org-setup-container .org-setup-panel .offset#interested-parties .right-arrow {
         bottom: 15px; }
-      .core-container .core-panel .offset#suppliers .left-arrow,
-      .core-container .core-panel .offset#suppliers .right-arrow {
+      .org-setup-container .org-setup-panel .offset#suppliers .left-arrow,
+      .org-setup-container .org-setup-panel .offset#suppliers .right-arrow {
         left: 130px; }
-      .core-container .core-panel .offset#suppliers .left-arrow {
+      .org-setup-container .org-setup-panel .offset#suppliers .left-arrow {
         bottom: 15px; }
-      .core-container .core-panel .offset#suppliers .right-arrow {
+      .org-setup-container .org-setup-panel .offset#suppliers .right-arrow {
         top: 15px; }
 
-.ios.isometrica-core-page .core-container {
+.ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;
   overflow: scroll; }
   @media (max-width: 767px) {
-    .ios.isometrica-core-page .core-container {
+    .ios.isometrica-org-setup-page .org-setup-container {
       padding-top: 15px; } }
 
-.ios.isometrica-core-page .core-panel {
+.ios.isometrica-org-setup-page .org-setup-panel {
   border: 1px solid #bbb !important; }
-  .ios.isometrica-core-page .core-panel .panel-title {
+  .ios.isometrica-org-setup-page .org-setup-panel .panel-title {
     color: #333 !important;
     text-transform: none !important;
     font-weight: 500 !important; }
-  .ios.isometrica-core-page .core-panel .panel {
+  .ios.isometrica-org-setup-page .org-setup-panel .panel {
     border: 1px solid #bbb !important; }
 
-.ios.isometrica-core-page .modal .modal-header .pull-left {
+.ios.isometrica-org-setup-page .modal .modal-header .pull-left {
   position: absolute;
   left: 0;
   top: 0;
   z-index: 1; }
 
-.ios.isometrica-core-page .modal .modal-header .pull-right {
+.ios.isometrica-org-setup-page .modal .modal-header .pull-right {
   position: absolute;
   right: 0;
   top: 0;
   z-index: 1; }
 
-.ios.isometrica-core-page .modal .subheader {
+.ios.isometrica-org-setup-page .modal .subheader {
   height: auto; }
 
-.ios.isometrica-core-page .modal .panel {
+.ios.isometrica-org-setup-page .modal .panel {
   border: 1px solid #bbb; }
 
-.ios.isometrica-core-page .modal .form-group {
+.ios.isometrica-org-setup-page .modal .form-group {
   margin-top: 0;
   margin-right: 0;
   border: 0; }
-  .ios.isometrica-core-page .modal .form-group .form-control {
+  .ios.isometrica-org-setup-page .modal .form-group .form-control {
     padding-left: 10px; }
 
-.android.isometrica-core-page .core-container {
+.android.isometrica-org-setup-page .org-setup-container {
   padding-top: 15px; }
 
-.android.isometrica-core-page .core-panel .panel-heading {
+.android.isometrica-org-setup-page .org-setup-panel .panel-heading {
   padding-top: 6px;
   padding-bottom: 6px; }
 
-.android.isometrica-core-page .subheader {
+.android.isometrica-org-setup-page .subheader {
   background: transparent;
   box-shadow: none;
   padding: 10px 15px;
   height: auto;
   border-bottom: 1px solid #ddd; }
 
-.android.isometrica-core-page .modal-header .pull-right {
+.android.isometrica-org-setup-page .modal-header .pull-right {
   position: absolute;
   right: 0 !important;
   top: 0 !important; }

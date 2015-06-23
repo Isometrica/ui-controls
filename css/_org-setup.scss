@@ -1,6 +1,6 @@
 /* CORE SYSTEM */
 
-.isometrica-core-page {
+.isometrica-org-setup-page {
   background: white;
 
   .guidance-bar {
@@ -12,7 +12,7 @@
   }
 }
 
-.core-container {
+.org-setup-container {
   width: auto;
   padding: 0 180px;
   padding-top: 30px;
@@ -22,7 +22,7 @@
     padding: 0 15px;
   }
 
-  .core-panel {
+  .org-setup-panel {
     margin-bottom: 125px;
     border-color: #bbb;
 
@@ -98,7 +98,7 @@
       padding-bottom: 0;
     }
 
-    .core-split-sections {
+    .org-setup-split-sections {
       margin: 0;
       > div {
         padding: 0;
@@ -120,13 +120,13 @@
       position: relative;
     }
 
-    .core-activities {
+    .org-setup-activities {
       h3 {
         margin-bottom: 15px;
       }
     }
 
-    .core-items {
+    .org-setup-items {
       list-style: none;
       padding: 0;
       margin: 0 -7px;
@@ -136,7 +136,7 @@
         width: 20%;
         margin-bottom: 15px;
 
-        .core-item {
+        .org-setup-item {
           margin: 0 7px;
           background: white;
           overflow: hidden;
@@ -161,14 +161,14 @@
             opacity: 0.3;
           }
 
-          .core-item-title {
+          .org-setup-item-title {
             text-align: center;
             font-size: 14px;
             line-height: 18px;
             margin: 0;
           }
 
-          &.core-item-empty {
+          &.org-setup-item-empty {
             color: #aaa;
             background: white;
           }
@@ -250,9 +250,9 @@
   }
 }
 
-.ios.isometrica-core-page {
+.ios.isometrica-org-setup-page {
 
-  .core-container {
+  .org-setup-container {
     padding-top: 30px;
     overflow: scroll;
 
@@ -261,7 +261,7 @@
     }
   }
 
-  .core-panel {
+  .org-setup-panel {
     border: 1px solid #bbb !important;
 
     .panel-title {
@@ -315,12 +315,12 @@
   //}
 }
 
-.android.isometrica-core-page {
-  .core-container {
+.android.isometrica-org-setup-page {
+  .org-setup-container {
     padding-top: 15px;
   }
 
-  .core-panel {
+  .org-setup-panel {
     .panel-heading {
       padding-top: 6px;
       padding-bottom: 6px;
