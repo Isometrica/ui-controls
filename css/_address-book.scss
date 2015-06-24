@@ -114,3 +114,36 @@
     padding-top: 52px;
   }
 }
+
+
+/* Edit MOdal */
+
+.isometrica-addressbook-edit-modal {
+  .modal-content {
+    overflow: hidden;
+  }
+  .list-group-item {
+    border-radius: 0;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  div.checkbox {
+    padding-top: 7px !important;
+  }
+
+  input[type="checkbox"] {
+    margin-top: 4px;
+  }
+
+}
+
+.ios .isometrica-addressbook-edit-modal {
+  .control-label {
+    padding-left: 15px !important;
+  }
+
+  div.checkbox {
+    padding-bottom: 7px;
+  }
+}

@@ -3,10 +3,10 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
-  
+
   <title>Address Book</title>
   <!-- 1.0.0 -->
 
@@ -14,18 +14,18 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
-	
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
-	
+
 	<script>
 	// Platform Detection (testing only)
 	$( document ).ready(function() {
 		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);	
-			$('body').addClass('ios');	
+			$("head").append(cssLink);
+			$('body').addClass('ios');
      	}
 		else if( navigator.userAgent.match(/Android/i) ) {
 			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
@@ -39,13 +39,13 @@
 			$('body').addClass('desktop');
 		}
 	});
-	</script> 
+	</script>
 
 	<link rel="stylesheet" href="css/isometrica.css">
-	
+
 </head>
 <body class="bootcards-fullheight bootcards-nofooter isometrica-address-book">
-  
+
   <!-- fixed top navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
     <div class="container-fluid">
@@ -55,19 +55,19 @@
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
-      </ul>  
+      </ul>
       <div class="navbar-header">
         <span class="navbar-brand">
         	Address book - IBM Corp - Users
-        </span>  
-      </div>        
+        </span>
+      </div>
     </div>
-  </div>   
+  </div>
 
 
 
 
-  <div class="container bootcards-container" id="main">   
+  <div class="container bootcards-container" id="main">
 
     <!-- Guidance Bar -->
     <div class="guidance-bar">
@@ -84,8 +84,8 @@
 
 		<div class="row">
 
-      <div class="col-sm-5 bootcards-list" id="list">			
-  			<div class="panel panel-default">				
+      <div class="col-sm-5 bootcards-list" id="list">
+  			<div class="panel panel-default">
   				<div class="panel-body">
   					<div class="search-form">
   						<div class="row">
@@ -101,8 +101,8 @@
   						      </div>
   						    </div>
   						    <div class="col-xs-4">
-  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target="#editModal">
-  									<i class="fa fa-plus"></i> 
+  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target=".isometrica-addressbook-edit-modal">
+  									<i class="fa fa-plus"></i>
   									<span>Add</span>
   								</a>
   						    </div>
@@ -184,21 +184,21 @@
 							<p class="list-group-item-text">Exec assistant</p>
 						</a>
   				</div>
-  			</div>				
+  			</div>
   		</div>
 
-		
-			<div class="col-sm-7 bootcards-cards hidden-xs">				
+
+			<div class="col-sm-7 bootcards-cards hidden-xs">
 				<div class="panel panel-default">
-					<div class="panel-heading clearfix">	
+					<div class="panel-heading clearfix">
 						<div class="btn-group pull-right">
-							<a class="btn btn-default">
+							<a class="btn btn-default" data-toggle="modal" data-target=".isometrica-addressbook-edit-modal">
 								<i class="fa fa-pencil"></i>
 								Edit
 							</a>
 						</div>
 						<h3 class="panel-title">User details</h3>
-					</div>         
+					</div>
           <div class="list-group">
             <div class="list-group-item">
               <img class="img-circle pull-left" src="img/avatar-mark.gif">
@@ -225,8 +225,8 @@
               <h4 class="list-group-item-heading">387 Cummings Center, Beverley Hills, CA 90902</h4>
             </div>
           </div>
-  				<div class="list-group bootcards-accordion">		
-  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse1">
+  				<div class="list-group bootcards-accordion">
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse1" aria-expanded="true">
   						User admin
   					</a>
   					<div id="collapse1" class="collapse in">
@@ -246,7 +246,7 @@
               </div>
               <div class="list-group-item permissions">
                 <h4 class="list-group-item-heading text-success">
-                  <i class="fa fa-check"></i> Edit new projects &amp; documents
+                  <i class="fa fa-check"></i> Edit existing projects &amp; documents
                 </h4>
               </div>
               <div class="list-group-item permissions">
@@ -255,7 +255,7 @@
                 </h4>
               </div>
   					</div>
-  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse2">
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse2" aria-expanded="false">
   						Call tree
   					</a>
   					<div id="collapse2" class="collapse">
@@ -272,7 +272,191 @@
 			</div>
 		</div>
   </div>
-  
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-addressbook-edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Edit User</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-4">Photo</label>
+              <div class="col-xs-8">
+                <img class="img-circle" src="img/avatar-mark.gif">
+                <button type="button" class="btn btn-default">Change</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Name</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Name"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Title or Role</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Title or Role"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Email</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Email"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Phone number</label>
+              <div class="col-xs-5">
+                <input type="text" class="form-control" placeholder="Number"/>
+              </div>
+              <div class="col-xs-3">
+                <select class="form-control">
+                  <option>Work</option>
+                  <option>Home</option>
+                  <option>Mobile</option>
+                </select>
+              </div>
+              <div class="col-xs-8 col-xs-offset-4">
+                <button type="button" class="btn btn-link">Add another phone number</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Address</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Address"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">City</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="City"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">State</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="State"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Postcode</label>
+              <div class="col-xs-4">
+                <input type="text" class="form-control" placeholder="Postcode"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Country</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option>Country</option>
+                  <option>France</option>
+                  <option>Japan</option>
+                  <option>United Kingdom</option>
+                  <option>United States</option>
+                </select>
+              </div>
+            </div>
+          </div>
+  				<div class="bootcards-accordion">
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href=".isometrica-addressbook-edit-useradmin" aria-expanded="false">
+  						User admin
+  					</a>
+  					<div class="collapse isometrica-addressbook-edit-useradmin">
+    					<div class="modal-body">
+                <div class="form-group">
+                  <label class="control-label col-xs-4">Type of person</label>
+                  <div class="col-xs-8">
+                    <select class="form-control">
+                      <option>Type</option>
+                      <option>User</option>
+                      <option>Customer</option>
+                      <option>Supplier</option>
+                      <option>Supplier-approved</option>
+                      <option>Business partner</option>
+                      <option>Consultant</option>
+                      <option>Other</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-4">Password</label>
+                  <div class="col-xs-8">
+                    <input type="password" class="form-control" placeholder="Password"/>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-4">Permissions</label>
+                  <div class="col-xs-8">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="checkbox"/>
+                        Create new projects &amp; documents
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-4">&nbsp;</label>
+                  <div class="col-xs-8">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="checkbox"/>
+                        Edit existing projects &amp; documents
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label class="control-label col-xs-4">&nbsp;</label>
+                  <div class="col-xs-8">
+                    <div class="checkbox">
+                      <label>
+                        <input type="checkbox" class="checkbox"/>
+                        Read and sign
+                      </label>
+                    </div>
+                  </div>
+                </div>
+    					</div>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href=".isometrica-addressbook-edit-calltree" aria-expanded="false">
+  						Call tree
+  					</a>
+  					<div class="collapse isometrica-addressbook-edit-calltree">
+              <div class="panel-body">
+                <div class="form-group">
+                  <label class="control-label col-xs-4">Call tree</label>
+                  <div class="col-xs-5">
+                    <input type="text" class="form-control" placeholder="Name"/>
+                  </div>
+                  <div class="col-xs-3">
+                    <input type="text" class="form-control" placeholder="Number"/>
+                  </div>
+                  <div class="col-xs-8 col-xs-offset-4">
+                    <button type="button" class="btn btn-link">Add another</button>
+                  </div>
+                </div>
+              </div>
+  					</div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
 <script>
   $('.btn[data-toggle="collapse"]').click(function(){

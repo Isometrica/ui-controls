@@ -152,9 +152,6 @@ input[type="text"][disabled] {
     font-size: 12px;
     line-height: 20px; }
 
-.ios .modal-dialog .modal-body {
-  z-index: -1; }
-
 .android .table-view-modal .modal-dialog {
   margin: 0; }
 
@@ -173,18 +170,16 @@ input[type="text"][disabled] {
   line-height: 34px; }
 
 /* ACCORDION */
-.bootcards-accordion .list-group-item.bootcards-list-subheading {
-  background: #f5f5f5 !important;
+.bootcards-accordion .bootcards-list-subheading {
+  background-color: #f5f5f5 !important;
   padding-left: 48px; }
-  .bootcards-accordion .list-group-item.bootcards-list-subheading:before {
-    font-size: 24px;
-    width: 20px;
-    color: #337ab7;
+  .bootcards-accordion .bootcards-list-subheading:before {
+    color: #337ab7 !important;
     transition: all 0.3s ease; }
-  .bootcards-accordion .list-group-item.bootcards-list-subheading .list-group-item-heading {
+  .bootcards-accordion .bootcards-list-subheading .list-group-item-heading {
     font-size: 16px;
     font-weight: 500; }
-  .bootcards-accordion .list-group-item.bootcards-list-subheading .list-group-item-text {
+  .bootcards-accordion .bootcards-list-subheading .list-group-item-text {
     font-weight: normal; }
 
 .bootcards-panel-collapsing {
@@ -1620,6 +1615,27 @@ input[type="text"][disabled] {
 
 .android.isometrica-address-book .bootcards-container {
   padding-top: 52px; }
+
+/* Edit MOdal */
+.isometrica-addressbook-edit-modal .modal-content {
+  overflow: hidden; }
+
+.isometrica-addressbook-edit-modal .list-group-item {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0; }
+
+.isometrica-addressbook-edit-modal div.checkbox {
+  padding-top: 7px !important; }
+
+.isometrica-addressbook-edit-modal input[type="checkbox"] {
+  margin-top: 4px; }
+
+.ios .isometrica-addressbook-edit-modal .control-label {
+  padding-left: 15px !important; }
+
+.ios .isometrica-addressbook-edit-modal div.checkbox {
+  padding-bottom: 7px; }
 
 /* USERS */
 .ios .isometrica-users-invite .form-group {
