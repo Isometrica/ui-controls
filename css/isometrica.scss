@@ -31,6 +31,13 @@ body.desktop {
   }
 }
 
+input[type="text"][disabled] {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  padding-left: 0;
+}
+
 .container {
   @media (min-width:768px) and (max-width: 991px) {
     width: auto;

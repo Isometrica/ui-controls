@@ -105,7 +105,7 @@
   						      </div>
   						    </div>
   						    <div class="col-xs-4">
-  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target="#editModal">
+  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target=".isometrica-communications-edit-modal">
   									<i class="fa fa-plus"></i>
   									<span>Add</span>
   								</a>
@@ -173,7 +173,7 @@
 				<div class="panel panel-default">
 					<div class="panel-heading clearfix">
 						<div class="btn-group pull-right">
-							<a class="btn btn-default">
+							<a class="btn btn-default" data-toggle="modal" data-target=".isometrica-communications-edit-modal">
 								<i class="fa fa-pencil"></i>
 								Edit
 							</a>
@@ -215,6 +215,125 @@
 		</div>
   </div>
 
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-communications-edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Communication</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-5">Ref</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" disabled="" value="CN136"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Description</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Type</label>
+              <div class="col-xs-7">
+                <select class="form-control">
+                  <option></option>
+                  <option>Customer</option>
+                  <option>Supplier</option>
+                  <option>Regulator</option>
+                  <option>Local community</option>
+                  <option>Trade union</option>
+                  <option>Employee</option>
+                  <option>Trade association</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Contact email</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Contact number</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Logged by</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" disabled="" value="John Smith on 6 June 2015"/>
+              </div>
+            </div>
+            <div class="form-group linked-items">
+              <label class="control-label col-xs-5">Files</label>
+              <div class="col-xs-7">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-info"><i class="fa fa-file"></i> Example.doc</button>
+                  <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
+                </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="modal-body isometrica-rich-text-control">
+            <div class="isometrica-rich-text-controls clearfix">
+              <div class="ql-toolbar-container" id="formatting-container">
+                <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                <a class="ql-image btn btn-default icon-only" href="#" title="Image"><i class="fa fa-image"></i></a>
+              </div>
+            </div>
+            <div class="ql-container isometrica-rich-text-input" id="editor-container">
+              <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+            </div>
+          </div>
+          <div class="modal-body clearfix problems-nonconformities">
+            <h4 class="isometrica-workbook-modal-subheading text-left pull-left">Identified problems/non-conformities</h4>
+            <button type="button" class="btn btn-link pull-right">
+              <i class="fa fa-plus-circle fa-lg no-margin"></i>
+            </button>
+          </div>
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Ref</th>
+                <th>Description</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><span class="label label-info">503</span></td>
+                <td>Car park too near building</td>
+              </tr>
+              <tr>
+                <td><span class="label label-info">504</span></td>
+                <td>Response time too long</td>
+              </tr>
+            </tbody>
+          </table>
+        </form>
+      </div>
+    </div>
+  </div>
 
 <script>
   $('.btn[data-toggle="collapse"]').click(function(){

@@ -59,3 +59,126 @@
     padding-top: 52px;
   }
 }
+
+/* Edit MOdal */
+
+.isometrica-communications-edit-modal {
+  .modal-header {
+    .pull-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .pull-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+  }
+
+  .isometrica-workbook-modal-subheading {
+    margin: 0 0 15px;
+    font-size: 16px;
+  }
+
+  .modal-body {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 0;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+
+  .linked-items {
+    margin-bottom: 10px;
+
+    .btn {
+      margin-bottom: 5px;
+      color: white;
+    }
+
+    .btn-info {
+      background-color: #5bc0de;
+
+      &:hover, &:focus, &:active {
+        background-color: #31b0d5;
+      }
+    }
+
+    .btn-primary {
+      background-color: #337ab7;
+
+      &:hover, &:focus, &:active {
+        background-color: #286090;
+      }
+    }
+  }
+
+  .isometrica-rich-text-control {
+    padding: 0;
+
+    .isometrica-rich-text-controls {
+      border-bottom: 1px solid #ddd;
+      padding: 5px 10px;
+      text-align: center;
+
+      .btn {
+        border: 0;
+        border-radius: 0;
+      }
+    }
+
+    .isometrica-rich-text-input {
+      height: 300px;
+    }
+  }
+
+  .problems-nonconformities {
+    background: #eee;
+    .btn.pull-right {
+      position: relative;
+      top: -8px;
+      margin-right: -8px;
+    }
+  }
+
+  .table {
+    margin-bottom: 0;
+
+    th {
+      background: #eee;
+    }
+
+    .label {
+      font-size: 14px;
+    }
+  }
+}
+
+.ios .isometrica-communications-edit-modal {
+  .control-label {
+    padding-left: 15px !important;
+  }
+
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .linked-items {
+    padding-bottom: 0;
+    margin-bottom: 0;
+
+    .btn {
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+
+    .btn-info:first-child {
+      padding-right: 0;
+    }
+  }
+}

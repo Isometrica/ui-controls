@@ -16,6 +16,12 @@ body.desktop {
 .btn i.no-margin {
   margin: 0; }
 
+input[type="text"][disabled] {
+  background: transparent !important;
+  border-color: transparent !important;
+  box-shadow: none !important;
+  padding-left: 0; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: auto; } }
@@ -1891,3 +1897,81 @@ body.desktop {
 
 .ios.isometrica-communications-log .bootcards-container {
   padding-top: 52px; }
+
+/* Edit MOdal */
+.isometrica-communications-edit-modal .modal-header .pull-left {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1; }
+
+.isometrica-communications-edit-modal .modal-header .pull-right {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 1; }
+
+.isometrica-communications-edit-modal .isometrica-workbook-modal-subheading {
+  margin: 0 0 15px;
+  font-size: 16px; }
+
+.isometrica-communications-edit-modal .modal-body {
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0; }
+  .isometrica-communications-edit-modal .modal-body:last-child {
+    border-bottom: 0; }
+
+.isometrica-communications-edit-modal .linked-items {
+  margin-bottom: 10px; }
+  .isometrica-communications-edit-modal .linked-items .btn {
+    margin-bottom: 5px;
+    color: white; }
+  .isometrica-communications-edit-modal .linked-items .btn-info {
+    background-color: #5bc0de; }
+    .isometrica-communications-edit-modal .linked-items .btn-info:hover, .isometrica-communications-edit-modal .linked-items .btn-info:focus, .isometrica-communications-edit-modal .linked-items .btn-info:active {
+      background-color: #31b0d5; }
+  .isometrica-communications-edit-modal .linked-items .btn-primary {
+    background-color: #337ab7; }
+    .isometrica-communications-edit-modal .linked-items .btn-primary:hover, .isometrica-communications-edit-modal .linked-items .btn-primary:focus, .isometrica-communications-edit-modal .linked-items .btn-primary:active {
+      background-color: #286090; }
+
+.isometrica-communications-edit-modal .isometrica-rich-text-control {
+  padding: 0; }
+  .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-controls {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center; }
+    .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-controls .btn {
+      border: 0;
+      border-radius: 0; }
+  .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-input {
+    height: 300px; }
+
+.isometrica-communications-edit-modal .problems-nonconformities {
+  background: #eee; }
+  .isometrica-communications-edit-modal .problems-nonconformities .btn.pull-right {
+    position: relative;
+    top: -8px;
+    margin-right: -8px; }
+
+.isometrica-communications-edit-modal .table {
+  margin-bottom: 0; }
+  .isometrica-communications-edit-modal .table th {
+    background: #eee; }
+  .isometrica-communications-edit-modal .table .label {
+    font-size: 14px; }
+
+.ios .isometrica-communications-edit-modal .control-label {
+  padding-left: 15px !important; }
+
+.ios .isometrica-communications-edit-modal .form-group:last-child {
+  margin-bottom: 0; }
+
+.ios .isometrica-communications-edit-modal .linked-items {
+  padding-bottom: 0;
+  margin-bottom: 0; }
+  .ios .isometrica-communications-edit-modal .linked-items .btn {
+    padding-left: 12px;
+    padding-right: 12px; }
+  .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
+    padding-right: 0; }
