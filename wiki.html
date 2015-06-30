@@ -218,13 +218,11 @@
 					<div class="panel-heading clearfix">
 						<div class="btn-group pull-left hidden-xs">
 							<a class="btn btn-default active" data-toggle="collapse" href=".bootcards-wiki-panel-metadata-wrapper">
-								<span class="show-text">Show </span>
-								<span class="hide-text">Hide </span>
 								Details
 							</a>
 						</div>
 						<div class="pull-right">
-							<a class="btn btn-default" data-toggle="collapse" data-target=".wiki-accordion-wrapper" aria-expanded="false">
+							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-wiki-edit-modal">
 								Edit
 							</a>
 						</div>
@@ -233,6 +231,12 @@
 
           <div class="collapse in wiki-accordion-wrapper">
             <div role="tabpanel" class="tab-pane active" id="wiki-read">
+
+              <div class="panel-body bootcards-wiki-panel-text-read">
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+              </div>
               <div class="collapse in bootcards-wiki-panel-metadata-wrapper">
                 <div class="panel-body bootcards-wiki-panel-metadata">
                   <form class="form-horizontal">
@@ -262,11 +266,6 @@
                     </div>
                   </form>
                 </div>
-              </div>
-              <div class="panel-body bootcards-wiki-panel-text-read">
-                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-                <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
               </div>
             </div>
           </div>
@@ -335,6 +334,78 @@
 		</div>
   </div>
 
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-wiki-edit-modal">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Edit</h4>
+        </div>
+        <div class="panel-heading clearfix bootcards-wiki-panel-controls">
+          <div class="ql-toolbar-container btn-group" id="formatting-container">
+            <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+            <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+            <!--<a class="ql-underline btn btn-default icon-only" href="#" title="Underline"><i class="fa fa-underline"></i></a>-->
+            <!--<a class="ql-strike btn btn-default icon-only" href="#" title="Strikethrough"><i class="fa fa-strikethrough"></i></a>-->
+            <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+            <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+            <a class="ql-list btn btn-default icon-only" href="#" title="Table"><i class="fa fa-table"></i></a>
+          </div>
+        </div>
+        <div class="panel-body bootcards-wiki-panel-text-edit">
+          <div class="ql-container" id="editor-container">
+            <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+          </div>
+        </div>
+        <div class="bootcards-wiki-panel-metadata-wrapper">
+          <div class="panel-body bootcards-wiki-panel-metadata">
+            <form class="form-horizontal">
+              <div class="form-group">
+                <label class="control-label col-sm-3 col-xs-4">Subject</label>
+                <div class="col-sm-6 col-xs-8">
+                  <input type="text" class="form-control" value="Subject goes here"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3 col-xs-4">Section</label>
+                <div class="col-sm-6 col-xs-8">
+                  <input type="text" class="form-control" value="1"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3 col-xs-4">Tag</label>
+                <div class="col-sm-6 col-xs-8">
+                  <input type="text" class="form-control" value="Tag goes here"/>
+                </div>
+              </div>
+              <div class="form-group">
+                <label class="control-label col-sm-3 col-xs-4">Files</label>
+                <div class="col-sm-9 col-xs-8">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-info"><i class="fa fa-file"></i> document_title_here.docx</button>
+                    <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
+                  </div>
+                  <button type="button" class="btn btn-primary">Attach Files</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 <script>
