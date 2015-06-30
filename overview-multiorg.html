@@ -147,19 +147,19 @@
         <li role="presentation">
           <a href="#">
             <i class="fa fa-files-o visible-xs"></i>
-            <span class="hidden-xs">Templates</span>
+            <span class="hidden-xs">Smart templates</span>
+          </a>
+        </li>
+        <li role="presentation">
+          <a href="#">
+            <i class="fa fa-wrench visible-xs"></i>
+            <span class="hidden-xs">Services</span>
           </a>
         </li>
         <li role="presentation">
           <a href="#">
             <i class="fa fa-archive visible-xs"></i>
-            <span class="hidden-xs">Archive</span>
-          </a>
-        </li>
-        <li role="presentation">
-          <a href="#">
-            <i class="fa fa-trash-o visible-xs"></i>
-            <span class="hidden-xs">Trash</span>
+            <span class="hidden-xs">Archive &amp; Deleted</span>
           </a>
         </li>
       </ul>
@@ -170,7 +170,7 @@
   	<div class="isometrica-overview-items">
     	<a href="" class="isometrica-overview-add">
       	<i class="fa fa-plus-circle"></i>
-      	New document or organization
+      	Add new smart template
     	</a>
 
     	<hr class="visible-xs"/>
@@ -188,7 +188,7 @@
                 <p class="org-name text-muted">IBM Corp</p>
 							</div>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
-						  <p class="status text-muted text-center">27 actions, 5 new</p>
+						  <p class="status text-muted text-center">27 actions <span class="label label-danger">5 new</span></p>
 							<ul class="users">
 								<li>
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
@@ -215,7 +215,7 @@
                 <p class="org-name text-muted">IBM Corp</p>
 							</div>
 							<p class="description">Consectetur adipiscing elit suspendisse.</p>
-							<p class="status text-muted text-center">1 person, 1 new</p>
+							<p class="status text-muted text-center">1 person</p>
 							<div class="text-center">
   							<a href="users.html" class="btn btn-primary">
 	  						  Invite users
@@ -237,7 +237,7 @@
                 <p class="org-name text-muted">IBM Corp</p>
 							</div>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
-              <p class="status text-muted text-center">60 pages, 6 new</p>
+              <p class="status text-muted text-center">60 pages</p>
 							<ul class="users">
 								<li>
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
@@ -264,7 +264,7 @@
                 <p class="org-name text-muted">IBM Corp</p>
 							</div>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
-						  <p class="status text-muted text-center">56 pages, 3 new</p>
+						  <p class="status text-muted text-center">56 pages <span class="label label-danger">3 new</span></p>
 							<span class="no-activity text-muted">No activity yet</span>
 						</div>
 					</div>
@@ -317,7 +317,7 @@
                 <p class="org-name text-muted">Smith Company</p>
 							</div>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
-						  <p class="status text-muted text-center">27 actions, 5 new</p>
+						  <p class="status text-muted text-center">27 actions</p>
 							<ul class="users">
 								<li>
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
@@ -344,7 +344,7 @@
                 <p class="org-name text-muted">Smith Company</p>
 							</div>
 							<p class="description">Consectetur adipiscing elit suspendisse.</p>
-							<p class="status text-muted text-center">1 person, 1 new</p>
+							<p class="status text-muted text-center">1 person</p>
 							<div class="text-center">
   							<a href="users.html" class="btn btn-primary">
 	  						  Invite users
@@ -366,7 +366,7 @@
                 <p class="org-name text-muted">Smith Company</p>
 							</div>
 							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
-              <p class="status text-muted text-center">60 pages, 6 new</p>
+              <p class="status text-muted text-center">60 pages <span class="label label-danger">6 new</span></p>
 							<ul class="users">
 								<li>
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
@@ -386,6 +386,10 @@
 
 
 			</div>
+
+			<hr class="isometrica-org-divider"/>
+
+			<button type="button" class="btn btn-primary btn-add-org"><i class="fa fa-plus"></i> Add new organization</button>
 
     </div>
   </div>
@@ -452,13 +456,7 @@
 
   $(function () {
     $('[data-toggle="tooltip"]').tooltip()
-  })
-
-  /* Add/Edit Users */
-
-	/*$( "a.add-user" ).click(function() {
-		$('#addUsersModal').modal('show');
-	});*/
+  });
 
 </script>
 
