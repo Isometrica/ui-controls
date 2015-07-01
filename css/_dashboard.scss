@@ -101,6 +101,13 @@
 .ios.isometrica-dashboard-page {
   //overflow-y: visible;
 
+  .guidance-bar {
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+  }
+
   .isometrica-dashboard-container {
     position: fixed;
     top: 118px;
