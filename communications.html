@@ -51,7 +51,7 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
-          <a class="btn btn-link icon-only" href="#">
+          <a class="btn btn-link icon-only" href="dashboard.html">
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
@@ -335,11 +335,23 @@
     </div>
   </div>
 
-<script>
-  $('.btn[data-toggle="collapse"]').click(function(){
-    $(this).toggleClass("active");
-  });
-</script>
+  <script>
+    $('.btn[data-toggle="collapse"]').click(function(){
+      $(this).toggleClass("active");
+    });
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .list-group a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+  </script>
 
 </body>
 </html>

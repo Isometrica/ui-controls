@@ -29,7 +29,7 @@
 
   .isometrica-dashboard-item {
     min-height: 160px;
-    border-color: #bbb;
+    border: 1px solid #bbb;
     margin-bottom: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
@@ -96,4 +96,11 @@
     }
   }
 
+}
+
+.ios.isometrica-dashboard-page {
+  .isometrica-dashboard-items {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }

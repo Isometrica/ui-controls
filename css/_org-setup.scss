@@ -276,20 +276,7 @@
   }
 
   .modal {
-    .modal-header {
-      .pull-left {
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 1;
-      }
-      .pull-right {
-        position: absolute;
-        right: 0;
-        top: 0;
-        z-index: 1;
-      }
-    }
+
 
     .subheader {
       height: auto;
@@ -430,6 +417,18 @@
 }
 
 .ios .modal.edit-item-details {
+
+  .modal-header {
+    .pull-left {
+      left: 0;
+      top: 0;
+    }
+    .pull-right {
+      right: 0;
+      top: 0;
+    }
+  }
+
   .bootcards-panel-collapsing {
     .panel-heading {
       padding:0;

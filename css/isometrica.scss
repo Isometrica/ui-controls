@@ -234,6 +234,20 @@ input.form-value {
 	.modal-header {
 		padding: 0;
 
+    .pull-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+      z-index: 1;
+    }
+
+    .pull-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 1;
+    }
+
 		.btn {
 			padding: 0 15px;
 			line-height: 44px;

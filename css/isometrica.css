@@ -143,6 +143,16 @@ input.form-value {
 
 .ios .modal-dialog .modal-header {
   padding: 0; }
+  .ios .modal-dialog .modal-header .pull-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1; }
+  .ios .modal-dialog .modal-header .pull-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    z-index: 1; }
   .ios .modal-dialog .modal-header .btn {
     padding: 0 15px;
     line-height: 44px; }
@@ -300,7 +310,7 @@ input.form-value {
     cursor: pointer;
     transition: all 0.3s ease;
     margin: 0 15px 15px 15px;
-    border-color: #bbb;
+    border: 1px solid #bbb;
     overflow: hidden; }
     .workbook-column .workbook-item-heading:hover, .workbook-column .workbook-item-heading:focus, .workbook-column .workbook-item-heading:active {
       border-color: #5bc0de; }
@@ -344,7 +354,7 @@ input.form-value {
     color: #333;
     margin: 0 15px 15px 15px;
     min-height: 100px;
-    border-color: #bbb;
+    border: 1px solid #bbb;
     /* Chart */
     /* Checkbox */
     /* Progress */
@@ -406,29 +416,37 @@ input.form-value {
       padding: 0;
       line-height: 20px; }
 
-.ios .workbook-row {
+.ios .workbook {
   top: 144px; }
   @media (max-width: 767px) {
-    .ios .workbook-row {
+    .ios .workbook {
       top: 44px; } }
-  .ios .workbook-row .workbook-item-heading {
+  .ios .workbook .workbook-item-heading {
     background: transparent; }
-    .ios .workbook-row .workbook-item-heading .panel-heading {
-      padding-left: 30px;
-      padding-right: 0;
-      background: transparent !important; }
-      .ios .workbook-row .workbook-item-heading .panel-heading:after {
-        left: 0; }
+    .ios .workbook .workbook-item-heading .panel-heading {
+      padding: 10px 5px 10px 36px; }
+      .ios .workbook .workbook-item-heading .panel-heading:after {
+        left: 8px; }
 
-.android .workbook-row .workbook-item-heading {
-  background: transparent;
-  border: 0; }
-  .android .workbook-row .workbook-item-heading .panel-heading {
-    padding-left: 30px;
-    padding-right: 0;
-    background: transparent !important; }
-    .android .workbook-row .workbook-item-heading .panel-heading:after {
-      left: 0; }
+.android .workbook .workbook-item-heading {
+  background: transparent; }
+  .android .workbook .workbook-item-heading .panel-heading {
+    padding: 10px 5px 10px 36px; }
+    .android .workbook .workbook-item-heading .panel-heading:after {
+      left: 8px; }
+
+/* Modals */
+.ios.isometrica-workbook-page .modal .form-horizontal .form-group:last-child {
+  margin-bottom: 0; }
+
+.ios.isometrica-workbook-page .modal .form-horizontal .form-group .control-label {
+  padding-left: 15px; }
+
+.ios.isometrica-workbook-page .modal .bootcards-panel-collapsing .panel-heading {
+  background-color: rgba(247, 247, 247, 0.98); }
+
+.ios.isometrica-workbook-page .modal .btn-warning {
+  color: #f0ad4e; }
 
 /* workbook ITEM MODAL */
 .isometrica-workbook-modal .subheader {
@@ -711,11 +729,9 @@ input.form-value {
     text-align: center;
     box-shadow: none;
     height: auto;
-    color: #337ab7;
     resize: none;
     padding-left: 0;
-    padding-right: 0;
-    font-weight: bold; }
+    padding-right: 0; }
   #businessImpact2Modal .isometrica-resource-analysis-table textarea {
     text-align: left !important; }
 
@@ -728,6 +744,18 @@ input.form-value {
 
 #businessImpact2Modal .btn.add-type {
   margin-bottom: 15px; }
+
+.ios #businessImpact2Modal .modal-body .panel {
+  margin: 0 -15px; }
+  .ios #businessImpact2Modal .modal-body .panel .panel-heading {
+    border-top: 1px solid #ddd; }
+
+.ios #businessImpact2Modal .modal-body > div:last-child {
+  border-top: 1px solid #ddd;
+  margin: 0 -15px;
+  padding: 10px 0; }
+  .ios #businessImpact2Modal .modal-body > div:last-child .btn {
+    margin: 0; }
 
 #riskAnalysisModal .risk-analysis-linked-items {
   margin-bottom: 10px; }
@@ -878,19 +906,13 @@ input.form-value {
 #strategyEvaluationModal .is-selected label {
   margin-right: 15px; }
 
-#logEntryModal .problems-nonconformities {
-  background: #eee; }
-  #logEntryModal .problems-nonconformities .btn.pull-right {
-    position: relative;
-    top: -8px;
-    margin-right: -8px; }
+.ios #strategyEvaluationModal .is-selected label {
+  margin-right: 0;
+  padding-right: 0; }
 
-#logEntryModal .table {
-  margin-bottom: 0; }
-  #logEntryModal .table th {
-    background: #eee; }
-  #logEntryModal .table .label {
-    font-size: 14px; }
+.ios #strategyEvaluationModal .is-selected button {
+  padding-left: 15px;
+  padding-right: 15px; }
 
 /* Navbar */
 .isometrica-overview-page .navbar .navbar-nav {
@@ -1041,7 +1063,7 @@ input.form-value {
 
 .isometrica-overview-item {
   cursor: pointer;
-  border-color: #bbb;
+  border: 1px solid #bbb !important;
   margin-bottom: 30px; }
   @media (max-width: 767px) {
     .isometrica-overview-item {
@@ -1356,18 +1378,6 @@ input.form-value {
   .ios.isometrica-org-setup-page .org-setup-panel .panel {
     border: 1px solid #bbb !important; }
 
-.ios.isometrica-org-setup-page .modal .modal-header .pull-left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1; }
-
-.ios.isometrica-org-setup-page .modal .modal-header .pull-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1; }
-
 .ios.isometrica-org-setup-page .modal .subheader {
   height: auto; }
 
@@ -1445,6 +1455,14 @@ input.form-value {
       margin: 0; }
   .modal.edit-item-details .bootcards-panel-collapsing .typeahead.dropdown-menu {
     right: 15px; }
+
+.ios .modal.edit-item-details .modal-header .pull-left {
+  left: 0;
+  top: 0; }
+
+.ios .modal.edit-item-details .modal-header .pull-right {
+  right: 0;
+  top: 0; }
 
 .ios .modal.edit-item-details .bootcards-panel-collapsing .panel-heading {
   padding: 0;
@@ -1924,7 +1942,7 @@ input.form-value {
 
 .isometrica-dashboard-page .isometrica-dashboard-item {
   min-height: 160px;
-  border-color: #bbb;
+  border: 1px solid #bbb;
   margin-bottom: 30px;
   transition: all 0.3s ease;
   cursor: pointer; }
@@ -1973,6 +1991,10 @@ input.form-value {
     top: -1px;
     left: 3px; }
 
+.ios.isometrica-dashboard-page .isometrica-dashboard-items {
+  padding-left: 15px;
+  padding-right: 15px; }
+
 .isometrica-communications-log .bootcards-container {
   padding-top: 80px; }
 
@@ -2007,19 +2029,12 @@ input.form-value {
 .ios.isometrica-communications-log .bootcards-container {
   padding-top: 52px; }
 
+@media (max-width: 767px) {
+  .ios.isometrica-communications-log .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; } }
+
 /* Edit MOdal */
-.isometrica-communications-edit-modal .modal-header .pull-left {
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: 1; }
-
-.isometrica-communications-edit-modal .modal-header .pull-right {
-  position: absolute;
-  right: 0;
-  top: 0;
-  z-index: 1; }
-
 .isometrica-communications-edit-modal .isometrica-workbook-modal-subheading {
   margin: 0 0 15px;
   font-size: 16px; }
@@ -2072,6 +2087,9 @@ input.form-value {
 
 .ios .isometrica-communications-edit-modal .control-label {
   padding-left: 15px !important; }
+
+.ios .isometrica-communications-edit-modal input[disabled] {
+  background: transparent; }
 
 .ios .isometrica-communications-edit-modal .form-group:last-child {
   margin-bottom: 0; }

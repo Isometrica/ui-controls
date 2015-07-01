@@ -58,31 +58,26 @@
   .bootcards-container {
     padding-top: 52px;
   }
+
+  @media (max-width: 767px) {
+    .bootcards-cards {
+      padding-left: 0;
+      padding-right: 0;
+    }
+  }
 }
 
 /* Edit MOdal */
 
 .isometrica-communications-edit-modal {
-  .modal-header {
-    .pull-left {
-      position: absolute;
-      left: 0;
-      top: 0;
-      z-index: 1;
-    }
 
-    .pull-right {
-      position: absolute;
-      right: 0;
-      top: 0;
-      z-index: 1;
-    }
-  }
 
   .isometrica-workbook-modal-subheading {
     margin: 0 0 15px;
     font-size: 16px;
   }
+
+
 
   .modal-body {
     border-bottom: 1px solid #ddd;
@@ -162,6 +157,10 @@
 .ios .isometrica-communications-edit-modal {
   .control-label {
     padding-left: 15px !important;
+  }
+
+  input[disabled] {
+    background: transparent;
   }
 
   .form-group:last-child {
