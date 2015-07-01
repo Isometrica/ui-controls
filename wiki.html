@@ -408,11 +408,23 @@
   </div>
 
 
-<script>
-  $('.btn[data-toggle="collapse"]').click(function(){
-    $(this).toggleClass("active");
-  });
-</script>
+  <script>
+    $('.btn[data-toggle="collapse"]').click(function(){
+      $(this).toggleClass("active");
+    });
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .collapse a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+  </script>
 
 </body>
 </html>

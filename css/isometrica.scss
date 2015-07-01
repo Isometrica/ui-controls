@@ -31,7 +31,13 @@ body.desktop {
   }
 }
 
-
+input.form-value {
+  border-color: transparent !important;
+  background: transparent !important;
+  color: #333 !important;
+  box-shadow: none !important;
+  padding-left: 0;
+}
 
 .container {
   @media (min-width:768px) and (max-width: 991px) {
@@ -212,6 +218,12 @@ body.desktop {
 
 
 /* MODALS */
+
+.desktop .modal-dialog {
+  .modal-header {
+    border-color: #ddd;
+  }
+}
 
 .ios .modal-dialog {
 

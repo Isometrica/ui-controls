@@ -16,6 +16,13 @@ body.desktop {
 .btn i.no-margin {
   margin: 0; }
 
+input.form-value {
+  border-color: transparent !important;
+  background: transparent !important;
+  color: #333 !important;
+  box-shadow: none !important;
+  padding-left: 0; }
+
 @media (min-width: 768px) and (max-width: 991px) {
   .container {
     width: auto; } }
@@ -128,6 +135,9 @@ body.desktop {
   border: 0; }
 
 /* MODALS */
+.desktop .modal-dialog .modal-header {
+  border-color: #ddd; }
+
 .ios .modal-dialog .modal-content {
   z-index: 1; }
 
@@ -220,12 +230,23 @@ body.desktop {
 .isometrica-workbook-page .guidance-bar {
   height: 100px !important;
   overflow: hidden; }
+  .isometrica-workbook-page .guidance-bar .col {
+    width: 20%;
+    float: left;
+    position: relative;
+    padding: 0 15px; }
+    @media (max-width: 991px) {
+      .isometrica-workbook-page .guidance-bar .col:nth-child(5) {
+        padding-right: 40px; } }
   .isometrica-workbook-page .guidance-bar .btn-group {
-    margin-top: -5px;
-    margin-bottom: -10px; }
+    position: absolute;
+    right: 10px;
+    top: 10px; }
     .isometrica-workbook-page .guidance-bar .btn-group .btn {
-      padding-left: 10px;
-      padding-right: 10px; }
+      display: block;
+      clear: both;
+      font-size: 24px;
+      padding: 0 7px; }
 
 .android.isometrica-workbook-page .guidance-bar h4 {
   font-size: 15px;
@@ -235,138 +256,155 @@ body.desktop {
   font-size: 15px; }
 
 /* Rows */
-.workbook-row {
+.workbook {
   position: fixed;
   left: 0;
   right: 0;
-  top: 150px;
-  /* Space for navbar & guidance bar */
   bottom: 0;
-  margin: 0;
   background: #eee; }
-  .workbook-row .workbook-column {
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
-    border-right: 1px solid #ccc; }
-    .workbook-row .workbook-column .workbook-column-header {
-      padding: 10px 0; }
-      .workbook-row .workbook-column .workbook-column-header .btn {
-        padding: 0;
-        font-size: 24px;
-        margin: 0 15px; }
-        .workbook-row .workbook-column .workbook-column-header .btn i {
-          margin: 0; }
-    .workbook-row .workbook-column .workbook-item-heading {
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin: 0 15px 15px 15px;
-      border-color: #bbb;
-      overflow: hidden; }
-      .workbook-row .workbook-column .workbook-item-heading:hover, .workbook-row .workbook-column .workbook-item-heading:focus, .workbook-row .workbook-column .workbook-item-heading:active {
-        border-color: #5bc0de; }
-      .workbook-row .workbook-column .workbook-item-heading .panel-heading {
-        border: 0;
-        position: relative;
-        padding-left: 40px;
-        background: #eee;
-        transition: all 0.3s ease; }
-        .workbook-row .workbook-column .workbook-item-heading .panel-heading:hover, .workbook-row .workbook-column .workbook-item-heading .panel-heading:focus, .workbook-row .workbook-column .workbook-item-heading .panel-heading:active {
-          background: #fafafa; }
-        .workbook-row .workbook-column .workbook-item-heading .panel-heading:after {
-          content: "\f138";
-          display: block;
-          font-family: "FontAwesome";
-          line-height: 20px;
-          font-size: 18px;
-          width: 24px;
-          text-align: center;
-          color: #337ab7;
-          position: absolute;
-          left: 10px;
-          top: 50%;
-          margin-top: -10px;
-          transition: all 0.3s ease; }
-        .workbook-row .workbook-column .workbook-item-heading .panel-heading h3 {
-          font-size: 14px;
-          line-height: 20px;
-          margin: 0; }
-      .workbook-row .workbook-column .workbook-item-heading[aria-expanded="true"] {
-        margin-bottom: 15px; }
-        .workbook-row .workbook-column .workbook-item-heading[aria-expanded="true"] .panel-heading:after {
-          transform: rotate(90deg); }
-    .workbook-row .workbook-column .workbook-item {
-      padding: 15px;
-      overflow: hidden;
-      text-align: center;
+  @media (max-width: 767px) {
+    .workbook {
+      top: 50px;
+      /* Space for navbar */ } }
+  @media (min-width: 768px) {
+    .workbook {
+      top: 150px;
+      /* Space for navbar & guidance bar */ } }
+
+.workbook-container {
+  height: 100%;
+  position: relative;
+  padding: 0; }
+
+.workbook-column {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0; }
+  @media (min-width: 768px) {
+    .workbook-column {
+      width: 20%;
+      float: left;
+      border-right: 1px solid #ccc; } }
+  .workbook-column:last-child {
+    border-right: 0; }
+  .workbook-column .workbook-column-header {
+    padding: 10px 0; }
+    .workbook-column .workbook-column-header .btn {
+      padding: 0;
+      font-size: 24px;
+      margin: 0 15px; }
+      .workbook-column .workbook-column-header .btn i {
+        margin: 0; }
+  .workbook-column .workbook-item-heading {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 15px 15px 15px;
+    border-color: #bbb;
+    overflow: hidden; }
+    .workbook-column .workbook-item-heading:hover, .workbook-column .workbook-item-heading:focus, .workbook-column .workbook-item-heading:active {
+      border-color: #5bc0de; }
+    .workbook-column .workbook-item-heading .panel-heading {
+      border: 0;
       position: relative;
-      cursor: pointer;
-      transition: all 0.3s ease;
-      color: #333;
-      margin: 0 15px 15px 15px;
-      min-height: 100px;
-      border-color: #bbb;
-      /* Chart */
-      /* Checkbox */
-      /* Progress */
-      /* Clock */
-      /* Icon */
-      /* Label */ }
-      .workbook-row .workbook-column .workbook-item:hover, .workbook-row .workbook-column .workbook-item:focus, .workbook-row .workbook-column .workbook-item:active {
-        border-color: #5bc0de; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-title {
+      padding-left: 40px;
+      background: #eee;
+      transition: all 0.3s ease; }
+      .workbook-column .workbook-item-heading .panel-heading:hover, .workbook-column .workbook-item-heading .panel-heading:focus, .workbook-column .workbook-item-heading .panel-heading:active {
+        background: #fafafa; }
+      .workbook-column .workbook-item-heading .panel-heading:after {
+        content: "\f138";
+        display: block;
+        font-family: "FontAwesome";
+        line-height: 20px;
+        font-size: 18px;
+        width: 24px;
         text-align: center;
+        color: #337ab7;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -10px;
+        transition: all 0.3s ease; }
+      .workbook-column .workbook-item-heading .panel-heading h3 {
         font-size: 14px;
         line-height: 20px;
-        margin: 0 0 15px 0; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-chart {
-        font-size: 0;
-        margin: 0 -15px -15px; }
-        .workbook-row .workbook-column .workbook-item .workbook-item-chart canvas {
-          width: 100% !important;
-          height: 50px !important; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-checkbox {
-        width: 32px;
-        height: 32px;
-        margin: 0 auto;
-        margin-top: -5px;
-        border-radius: 4px;
-        border: 2px solid #999;
-        color: #999;
-        line-height: 28px;
-        text-align: center;
-        font-size: 18px; }
-        .workbook-row .workbook-column .workbook-item .workbook-item-checkbox.text-danger {
-          border-color: #d9534f; }
-        .workbook-row .workbook-column .workbook-item .workbook-item-checkbox.text-success {
-          border-color: #5cb85c; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-progress {
-        margin-bottom: 0; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-clock {
-        color: #777;
-        font-size: 15px;
+        margin: 0; }
+    .workbook-column .workbook-item-heading[aria-expanded="true"] {
+      margin-bottom: 15px; }
+      .workbook-column .workbook-item-heading[aria-expanded="true"] .panel-heading:after {
+        transform: rotate(90deg); }
+  .workbook-column .workbook-item {
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    margin: 0 15px 15px 15px;
+    min-height: 100px;
+    border-color: #bbb;
+    /* Chart */
+    /* Checkbox */
+    /* Progress */
+    /* Clock */
+    /* Icon */
+    /* Label */ }
+    .workbook-column .workbook-item:hover, .workbook-column .workbook-item:focus, .workbook-column .workbook-item:active {
+      border-color: #5bc0de; }
+    .workbook-column .workbook-item .workbook-item-title {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 0 15px 0; }
+    .workbook-column .workbook-item .workbook-item-chart {
+      font-size: 0;
+      margin: 0 -15px -15px; }
+      .workbook-column .workbook-item .workbook-item-chart canvas {
+        width: 100% !important;
+        height: 50px !important; }
+    .workbook-column .workbook-item .workbook-item-checkbox {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto;
+      margin-top: -5px;
+      border-radius: 4px;
+      border: 2px solid #999;
+      color: #999;
+      line-height: 28px;
+      text-align: center;
+      font-size: 18px; }
+      .workbook-column .workbook-item .workbook-item-checkbox.text-danger {
+        border-color: #d9534f; }
+      .workbook-column .workbook-item .workbook-item-checkbox.text-success {
+        border-color: #5cb85c; }
+    .workbook-column .workbook-item .workbook-item-progress {
+      margin-bottom: 0; }
+    .workbook-column .workbook-item .workbook-item-clock {
+      color: #777;
+      font-size: 15px;
+      font-weight: 500; }
+      .workbook-column .workbook-item .workbook-item-clock span {
+        display: block;
+        font-size: 11px;
         font-weight: 500; }
-        .workbook-row .workbook-column .workbook-item .workbook-item-clock span {
-          display: block;
-          font-size: 11px;
-          font-weight: 500; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-icon {
-        color: #999; }
-      .workbook-row .workbook-column .workbook-item .text-danger {
-        color: #d9534f; }
-      .workbook-row .workbook-column .workbook-item .text-warning {
-        color: #f0ad4e; }
-      .workbook-row .workbook-column .workbook-item .text-success {
-        color: #5cb85c; }
-      .workbook-row .workbook-column .workbook-item .workbook-item-label {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        padding: 0;
-        line-height: 20px; }
+    .workbook-column .workbook-item .workbook-item-icon {
+      color: #999; }
+    .workbook-column .workbook-item .text-danger {
+      color: #d9534f; }
+    .workbook-column .workbook-item .text-warning {
+      color: #f0ad4e; }
+    .workbook-column .workbook-item .text-success {
+      color: #5cb85c; }
+    .workbook-column .workbook-item .workbook-item-label {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      padding: 0;
+      line-height: 20px; }
 
 .ios .workbook-row {
   top: 144px; }
@@ -476,6 +514,8 @@ body.desktop {
 .isometrica-workbook-bia1-modal .overall-analysis .form-group {
   padding-left: 50px;
   position: relative; }
+  .isometrica-workbook-bia1-modal .overall-analysis .form-group.add-system {
+    padding-left: 0; }
 
 .isometrica-workbook-bia1-modal .overall-analysis .isometrica-workbook-modal-help-icon {
   line-height: 20px;
@@ -674,14 +714,17 @@ body.desktop {
     color: #337ab7;
     resize: none;
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    font-weight: bold; }
   #businessImpact2Modal .isometrica-resource-analysis-table textarea {
     text-align: left !important; }
 
 #businessImpact2Modal .isometrica-resource-analysis-totals input {
   width: 50px;
   margin-left: 10px;
-  text-align: center; }
+  text-align: center;
+  padding-left: 0;
+  padding-right: 0; }
 
 #businessImpact2Modal .btn.add-type {
   margin-bottom: 15px; }

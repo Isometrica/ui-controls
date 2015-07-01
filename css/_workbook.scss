@@ -7,13 +7,29 @@
     height: 100px !important;
     overflow: hidden;
 
+    .col {
+      width: 20%;
+      float: left;
+      position: relative;
+      padding: 0 15px;
+
+      &:nth-child(5) {
+        @media (max-width: 991px) {
+          padding-right: 40px;
+        }
+      }
+    }
+
     .btn-group {
-      margin-top: -5px;
-      margin-bottom: -10px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
 
       .btn {
-        padding-left: 10px;
-        padding-right: 10px;
+        display: block;
+        clear: both;
+        font-size: 24px;
+        padding: 0 7px;
       }
     }
   }
@@ -34,204 +50,223 @@
 
 /* Rows */
 
-.workbook-row {
+.workbook {
   position: fixed;
   left: 0;
   right: 0;
-  top: 150px; /* Space for navbar & guidance bar */
   bottom: 0;
-  margin: 0;
   background: #eee;
-  //height: 100%;
 
-  .workbook-column {
-    height: 100%;
-    overflow-y: auto;
-    overflow-x: hidden;
-    padding: 0;
+  @media (max-width: 767px) {
+    top: 50px; /* Space for navbar */
+  }
+  @media (min-width: 768px) {
+    top: 150px; /* Space for navbar & guidance bar */
+  }
+}
+
+.workbook-container {
+  height: 100%;
+  position: relative;
+  padding: 0;
+}
+
+.workbook-column {
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  padding: 0;
+
+  @media (min-width: 768px) {
+    width: 20%;
+    float: left;
     border-right: 1px solid #ccc;
+  }
 
-    .workbook-column-header {
-      padding: 10px 0;
+  &:last-child {
+    border-right: 0;
+  }
 
-      .btn {
-        padding: 0;
-        font-size: 24px;
-        margin: 0 15px;
+  .workbook-column-header {
+    padding: 10px 0;
 
-        i {
-          margin: 0;
-        }
+    .btn {
+      padding: 0;
+      font-size: 24px;
+      margin: 0 15px;
+
+      i {
+        margin: 0;
       }
     }
+  }
 
-    .workbook-items {
-      //margin-bottom: 30px;
-    }
+  .workbook-items {
+    //margin-bottom: 30px;
+  }
 
-    .workbook-item-heading {
-      cursor: pointer;
-      transition: all 0.3s ease;
-      margin: 0 15px 15px 15px;
-      border-color: #bbb;
-      overflow: hidden;
+  .workbook-item-heading {
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin: 0 15px 15px 15px;
+    border-color: #bbb;
+    overflow: hidden;
 
-      &:hover, &:focus, &:active {
-    		border-color: #5bc0de;
-    	}
+    &:hover, &:focus, &:active {
+  		border-color: #5bc0de;
+  	}
 
-      .panel-heading {
-        border: 0;
-        position: relative;
-        padding-left: 40px;
-        background: #eee;
-        transition: all 0.3s ease;
-
-        &:hover, &:focus, &:active {
-          background: #fafafa;
-        }
-
-         &:after {
-          content: "\f138";
-          display: block;
-          font-family: "FontAwesome";
-          line-height: 20px;
-          font-size: 18px;
-          width: 24px;
-          text-align: center;
-          color: #337ab7;
-          position: absolute;
-          left: 10px;
-          top: 50%;
-          margin-top: -10px;
-          transition: all 0.3s ease;
-        }
-
-        h3 {
-          font-size: 14px;
-          line-height: 20px;
-          margin: 0;
-        }
-      }
-
-      &[aria-expanded="true"] {
-        margin-bottom: 15px;
-
-        .panel-heading:after {
-          transform: rotate(90deg);
-        }
-      }
-
-    }
-
-    .workbook-item {
-      padding: 15px;
-      //background: white;
-      overflow: hidden;
-      text-align: center;
+    .panel-heading {
+      border: 0;
       position: relative;
-      cursor: pointer;
+      padding-left: 40px;
+      background: #eee;
       transition: all 0.3s ease;
-      color: #333;
-      margin: 0 15px 15px 15px;
-      min-height: 100px;
-      border-color: #bbb;
 
       &:hover, &:focus, &:active {
-    		border-color: #5bc0de;
-    	}
+        background: #fafafa;
+      }
 
-      .workbook-item-title {
+       &:after {
+        content: "\f138";
+        display: block;
+        font-family: "FontAwesome";
+        line-height: 20px;
+        font-size: 18px;
+        width: 24px;
         text-align: center;
+        color: #337ab7;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        margin-top: -10px;
+        transition: all 0.3s ease;
+      }
+
+      h3 {
         font-size: 14px;
         line-height: 20px;
-        margin: 0 0 15px 0;
+        margin: 0;
+      }
+    }
+
+    &[aria-expanded="true"] {
+      margin-bottom: 15px;
+
+      .panel-heading:after {
+        transform: rotate(90deg);
+      }
+    }
+
+  }
+
+  .workbook-item {
+    padding: 15px;
+    //background: white;
+    overflow: hidden;
+    text-align: center;
+    position: relative;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color: #333;
+    margin: 0 15px 15px 15px;
+    min-height: 100px;
+    border-color: #bbb;
+
+    &:hover, &:focus, &:active {
+  		border-color: #5bc0de;
+  	}
+
+    .workbook-item-title {
+      text-align: center;
+      font-size: 14px;
+      line-height: 20px;
+      margin: 0 0 15px 0;
+    }
+
+    /* Chart */
+
+    .workbook-item-chart {
+      font-size: 0;
+      margin: 0 -15px -15px;
+
+      canvas {
+        width: 100% !important;
+        height: 50px !important;
+      }
+    }
+
+    /* Checkbox */
+
+    .workbook-item-checkbox {
+      width: 32px;
+      height: 32px;
+      margin: 0 auto;
+      margin-top: -5px;
+      border-radius: 4px;
+      border: 2px solid #999;
+      color: #999;
+      line-height: 28px;
+      text-align: center;
+      font-size: 18px;
+
+      &.text-danger {
+        border-color: $red-color;
       }
 
-      /* Chart */
-
-      .workbook-item-chart {
-        font-size: 0;
-        margin: 0 -15px -15px;
-
-        canvas {
-          width: 100% !important;
-          height: 50px !important;
-        }
+      &.text-success {
+        border-color: $green-color;
       }
+    }
 
-      /* Checkbox */
+    /* Progress */
 
-      .workbook-item-checkbox {
-        width: 32px;
-        height: 32px;
-        margin: 0 auto;
-        margin-top: -5px;
-        border-radius: 4px;
-        border: 2px solid #999;
-        color: #999;
-        line-height: 28px;
-        text-align: center;
-        font-size: 18px;
+    .workbook-item-progress {
+      margin-bottom: 0;
+    }
 
-        &.text-danger {
-          border-color: $red-color;
-        }
+    /* Clock */
 
-        &.text-success {
-          border-color: $green-color;
-        }
-      }
+    .workbook-item-clock {
+      color: #777;
+      font-size: 15px;
+      font-weight: 500;
 
-      /* Progress */
-
-      .workbook-item-progress {
-        margin-bottom: 0;
-      }
-
-      /* Clock */
-
-      .workbook-item-clock {
-        color: #777;
-        font-size: 15px;
+      span {
+        display: block;
+        font-size: 11px;
         font-weight: 500;
-
-        span {
-          display: block;
-          font-size: 11px;
-          font-weight: 500;
-        }
       }
+    }
 
-      /* Icon */
+    /* Icon */
 
-      .workbook-item-icon {
-        color: #999;
-      }
+    .workbook-item-icon {
+      color: #999;
+    }
 
-      .text-danger {
-        color: $red-color;
-      }
+    .text-danger {
+      color: $red-color;
+    }
 
-      .text-warning {
-        color: $amber-color;
-      }
+    .text-warning {
+      color: $amber-color;
+    }
 
-      .text-success {
-        color: $green-color;
-      }
+    .text-success {
+      color: $green-color;
+    }
 
-      /* Label */
+    /* Label */
 
-      .workbook-item-label {
-        position: absolute;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        border-radius: 0;
-        padding: 0;
-        line-height: 20px;
-      }
+    .workbook-item-label {
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      border-radius: 0;
+      padding: 0;
+      line-height: 20px;
     }
   }
 }
@@ -395,6 +430,10 @@
     .form-group {
       padding-left: 50px;
       position: relative;
+
+      &.add-system {
+        padding-left: 0;
+      }
     }
     .isometrica-workbook-modal-help-icon {
       line-height: 20px;
@@ -669,6 +708,7 @@
       resize: none;
       padding-left: 0;
       padding-right: 0;
+      font-weight: bold;
     }
 
     textarea {
@@ -681,6 +721,9 @@
       width: 50px;
       margin-left: 10px;
       text-align: center;
+      padding-left: 0;
+      padding-right: 0;
+
     }
   }
 
