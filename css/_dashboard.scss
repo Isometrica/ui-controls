@@ -99,7 +99,19 @@
 }
 
 .ios.isometrica-dashboard-page {
-  overflow-y: scroll;
+  //overflow-y: visible;
+
+  .isometrica-dashboard-container {
+    position: fixed;
+    top: 118px;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: scroll;
+    -webkit-overflow-scrolling: touch;
+    height: auto;
+  }
 
   .isometrica-dashboard-items {
     padding-left: 15px;
