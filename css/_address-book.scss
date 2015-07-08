@@ -102,6 +102,11 @@
 .ios.isometrica-address-book {
   .bootcards-container {
     padding-top: 52px;
+    position: fixed;
+    top: 44px;
+    left: 0;
+    right: 0;
+    bottom: 0;
 
     select {
       padding-left: 12px;

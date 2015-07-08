@@ -1570,7 +1570,12 @@ input.form-value {
 
 /* iOS */
 .ios.bootcards-wiki .bootcards-container {
-  padding-top: 0; }
+  padding-top: 0;
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
 
 @media (max-width: 767px) {
   .ios.bootcards-wiki .bootcards-cards {
@@ -1591,7 +1596,7 @@ input.form-value {
     color: #007aff; }
 
 .ios.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-metadata {
-  border-bottom: 1px solid #ddd; }
+  border-top: 1px solid #ddd; }
 
 .ios.bootcards-wiki .bootcards-wiki-panel .bootcards-panel-tips {
   padding-top: 10px;
@@ -1703,7 +1708,12 @@ input.form-value {
   margin-left: 15px; }
 
 .ios.isometrica-address-book .bootcards-container {
-  padding-top: 52px; }
+  padding-top: 52px;
+  position: fixed;
+  top: 44px;
+  left: 0;
+  right: 0;
+  bottom: 0; }
   .ios.isometrica-address-book .bootcards-container select {
     padding-left: 12px; }
 
@@ -2043,7 +2053,12 @@ input.form-value {
   margin-right: 5px; }
 
 .ios.isometrica-communications-log .bootcards-container {
-  padding-top: 52px; }
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0; }
 
 @media (max-width: 767px) {
   .ios.isometrica-communications-log .bootcards-cards {
