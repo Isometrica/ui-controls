@@ -1,0 +1,895 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Meetings</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+</head>
+<body class="bootcards-fullheight bootcards-nofooter isometrica-communications-log">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="dashboard.html">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link icon-only" href="dashboard.html">
+          	<i class="fa fa-lg fa-question-circle"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand">
+        	Meetings
+        </span>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container bootcards-container" id="main">
+
+    <!-- Guidance Bar -->
+    <div class="guidance-bar">
+      <div class="container">
+        <h4 class="pull-left">Guidance goes here lorem ipsum</h4>
+        <div class="btn-group btn-group-lg pull-right">
+          <a href="" class="btn btn-link icon-only">
+            <i class="fa fa-times-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+		<div class="row">
+
+      <div class="col-sm-5 bootcards-list" id="list">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<div class="search-form">
+  						<div class="row">
+  						    <div class="col-xs-8">
+  						      <div class="form-group">
+  							      <select class="form-control">
+  							        <option>Meetings</option>
+  							        <option>Actions</option>
+  							        <option>Topics</option>
+  							      </select>
+  						      </div>
+  						    </div>
+  						    <div class="col-xs-4">
+  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target=".isometrica-communications-edit-modal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</a>
+  						    </div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="panel-body">
+  					<div class="search-form">
+				      <div class="form-group">
+					      <input type="text" class="form-control" placeholder="Search Meetings...">
+					      <i class="fa fa-search"></i>
+				      </div>
+  					</div>
+  				</div>
+  				<div class="list-group">
+  				  <a class="list-group-item">
+							<h4 class="list-group-item-heading">Weekly operations</h4>
+              <p class="list-group-item-text">March 6th 2015</p>
+              <p class="list-group-item-text">12 comments, 3 actions</p>
+						</a>
+						<a class="list-group-item">
+							<h4 class="list-group-item-heading">Weekly sales</h4>
+              <p class="list-group-item-text">March 6th 2015</p>
+              <p class="list-group-item-text">9 comments, 5 actions</p>
+						</a>
+						<a class="list-group-item active">
+							<h4 class="list-group-item-heading">Weekly support</h4>
+              <p class="list-group-item-text">March 6th 2015</p>
+              <p class="list-group-item-text">2 comments, 2 actions</p>
+						</a>
+						<a class="list-group-item">
+							<h4 class="list-group-item-heading">Weekly management</h4>
+              <p class="list-group-item-text">March 6th 2015</p>
+              <p class="list-group-item-text">12 comments, 3 actions</p>
+						</a>
+						<a class="list-group-item">
+							<h4 class="list-group-item-heading">Ad hoc</h4>
+              <p class="list-group-item-text">March 3rd 2015</p>
+              <p class="list-group-item-text">1 comment, 5 actions</p>
+						</a>
+  				</div>
+  			</div>
+  		</div>
+
+
+			<div class="col-sm-7 bootcards-cards hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-right">
+							<a class="btn btn-default" data-toggle="modal" data-target=".isometrica-meetings-edit-modal">
+								<i class="fa fa-pencil"></i>
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title">Meeting</h3>
+					</div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p class="list-group-item-text">Type</p>
+                  <h4 class="list-group-item-heading">Weekly support</h4>
+                </div>
+                <div class="col-xs-6">
+                  <p class="list-group-item-text">Date</p>
+                  <h4 class="list-group-item-heading">30/03/2015</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <div class="row">
+                <div class="col-xs-6">
+                  <p class="list-group-item-text">Apologies</p>
+                  <h4 class="list-group-item-heading">John Smith</h4>
+                </div>
+                <div class="col-xs-6">
+                  <p class="list-group-item-text">Minuted completed by</p>
+                  <h4 class="list-group-item-heading">Jack Jones</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Agenda</p>
+              <h4 class="list-group-item-heading">1. Review open support issues</h4>
+              <h4 class="list-group-item-heading">2. Review non-conformities</h4>
+              <h4 class="list-group-item-heading">3. Review corrective actions</h4>
+              <h4 class="list-group-item-heading">4. AOB</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Topics</p>
+              <h4 class="list-group-item-heading">Server checklists</h4>
+              <h4 class="list-group-item-heading">Windows &amp; Linux server updates</h4>
+              <h4 class="list-group-item-heading">Problems over the weekend</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Meeting actions</p>
+              <h4 class="list-group-item-heading">Action goes here lorem ipsum</h4>
+              <h4 class="list-group-item-heading">Another action</h4>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <small class="pull-left">Last edited by J.Smith</small>
+            <small class="pull-right">20 Jan 2015</small>
+          </div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-meetings-edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-danger" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Meeting record</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-5">Type</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" value="Monthly management"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Date</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" value="20 May 2015"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">Normal attendees</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" value="MD, NC, SI"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-5">New attendees</label>
+              <div class="col-xs-7">
+                <input type="text" class="form-control" value="DC"/>
+              </div>
+            </div>
+
+            <hr>
+
+            <h4>Agenda items</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#agenda-item-1" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-9">
+                      1. Previous minutes
+                    </div>
+                    <div class="col-xs-2">
+                      NC
+                    </div>
+                    <div class="col-xs-1">
+                      R
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="agenda-item-1">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Number</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="1">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Previous minutes">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Who submitted</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Recurring</label>
+          		        <div class="col-xs-9">
+          			        <div class="btn-group">
+            			        <a class="btn btn-primary active">Y</a>
+            			        <a class="btn btn-default">N</a>
+          			        </div>
+          		        </div>
+          	        </div>
+                    <hr>
+                    <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#agenda-item-2" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-9">
+                      2. FY plan
+                    </div>
+                    <div class="col-xs-2">
+                      NC
+                    </div>
+                    <div class="col-xs-1">
+                      R
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="agenda-item-2">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Number</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="1">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Previous minutes">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Who submitted</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Recurring</label>
+          		        <div class="col-xs-9">
+          			        <div class="btn-group">
+            			        <a class="btn btn-primary active">Y</a>
+            			        <a class="btn btn-default">N</a>
+          			        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#agenda-item-3" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-9">
+                      3. Teamstudio Business Reports
+                    </div>
+                    <div class="col-xs-2">
+                      NC
+                    </div>
+                    <div class="col-xs-1">
+                      R
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="agenda-item-3">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Number</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="1">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Previous minutes">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Who submitted</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Recurring</label>
+          		        <div class="col-xs-9">
+          			        <div class="btn-group">
+            			        <a class="btn btn-primary active">Y</a>
+            			        <a class="btn btn-default">N</a>
+          			        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#agenda-item-4" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-9">
+                      4. Isometrica update
+                    </div>
+                    <div class="col-xs-2">
+                      SI
+                    </div>
+                    <div class="col-xs-1">
+                      &nbsp;
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="agenda-item-4">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Number</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="1">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Previous minutes">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Who submitted</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Recurring</label>
+          		        <div class="col-xs-9">
+          			        <div class="btn-group">
+            			        <a class="btn btn-primary active">Y</a>
+            			        <a class="btn btn-default">N</a>
+          			        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+            <button type="button" class="btn btn-link btn-block btn-add">Add agenda item</button>
+
+            <hr>
+
+            <h4>Actions from last meeting - closed</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MA129
+                    </div>
+                    <div class="col-xs-6">
+                      Arrange briefing session for Michael Hamilton
+                    </div>
+                    <div class="col-xs-2">
+                      MD
+                    </div>
+                    <div class="col-xs-2">
+                      20 May 2015
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-1">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Ref</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control disabled" value="MA135" disabled="">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Investigate Japan pricing">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Agenda item</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="FY plan">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Owner</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Target date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="20 June 2015">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>Open</option>
+            			        <option>Closed</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MA130
+                    </div>
+                    <div class="col-xs-6">
+                      Check on how up-to-date we are on R&amp;D tax credits
+                    </div>
+                    <div class="col-xs-2">
+                      SI
+                    </div>
+                    <div class="col-xs-2">
+                      20 May 2015
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-2">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Ref</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control disabled" value="MA135" disabled="">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Investigate Japan pricing">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Agenda item</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="FY plan">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Owner</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Target date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="20 June 2015">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>Open</option>
+            			        <option>Closed</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <h4>Actions from last meeting - open</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-3" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MA110
+                    </div>
+                    <div class="col-xs-6">
+                      Ask Lyndsey to change DSO calculator
+                    </div>
+                    <div class="col-xs-2">
+                      NC
+                    </div>
+                    <div class="col-xs-2">
+                      20 May 2015
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-3">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Ref</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control disabled" value="MA135" disabled="">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Investigate Japan pricing">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Agenda item</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="FY plan">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Owner</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Target date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="20 June 2015">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>Open</option>
+            			        <option>Closed</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <h4>New meeting actions</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-4" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MA135
+                    </div>
+                    <div class="col-xs-6">
+                      Investigate Japan pricing
+                    </div>
+                    <div class="col-xs-2">
+                      DC
+                    </div>
+                    <div class="col-xs-2">
+                      20 June 2015
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-4">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Ref</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control disabled" value="MA135" disabled="">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Investigate Japan pricing">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Agenda item</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="FY plan">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Owner</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Target date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="20 June 2015">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>Open</option>
+            			        <option>Closed</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-5" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-2">
+                      MA136
+                    </div>
+                    <div class="col-xs-6">
+                      Renew EMEA prices
+                    </div>
+                    <div class="col-xs-2">
+                      DC
+                    </div>
+                    <div class="col-xs-2">
+                      20 June 2015
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-5">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Ref</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control disabled" value="MA135" disabled="">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Title</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Investigate Japan pricing">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Agenda item</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="FY plan">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Owner</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="NC">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Target date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="20 June 2015">
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>Open</option>
+            			        <option>Closed</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-success pull-left" disabled="">Save Changes</button>
+                        <button type="button" class="btn btn-danger pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-link btn-add">Add new action</button>
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-danger">Delete</button>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-sm-6">
+                <small class="text-left">Recorded by: Nigel Cheshire</small>
+                <small class="text-left">Date: 20 May 2015</small>
+              </div>
+              <div class="col-sm-6">
+                <small class="text-right">Last edited by: Nigel Cheshire</small>
+                <small class="text-right">Date: 21 May 2015</small>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .list-group a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+  </script>
+
+</body>
+</html>

@@ -2133,3 +2133,42 @@ input.form-value {
     padding-right: 12px; }
   .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
     padding-right: 0; }
+
+.isometrica-meetings-edit-modal .modal-content {
+  overflow: hidden; }
+
+.isometrica-meetings-edit-modal .modal-body h4 {
+  margin: 15px 0; }
+
+.isometrica-meetings-edit-modal .modal-body hr {
+  border-color: #ddd;
+  margin: 15px -15px; }
+
+.isometrica-meetings-edit-modal .modal-body .btn-add {
+  margin-top: 15px; }
+
+.isometrica-meetings-edit-modal .bootcards-panel-collapsing {
+  clear: both;
+  margin-bottom: 0; }
+  .isometrica-meetings-edit-modal .bootcards-panel-collapsing:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .isometrica-meetings-edit-modal .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0; }
+  .isometrica-meetings-edit-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
+    font-size: 18px;
+    left: 10px;
+    margin-top: -11px; }
+  .isometrica-meetings-edit-modal .bootcards-panel-collapsing .panel-body hr {
+    border-color: #ddd;
+    margin: 15px -15px; }
+
+.isometrica-meetings-edit-modal .modal-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd; }
+  .isometrica-meetings-edit-modal .modal-footer small.text-left {
+    text-align: left; }
+  .isometrica-meetings-edit-modal .modal-footer small.text-right {
+    text-align: right; }
