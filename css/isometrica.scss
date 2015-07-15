@@ -45,6 +45,32 @@ input.form-value {
   }
 }
 
+.clear-field {
+	position: absolute;
+	right: 12px;
+	top: 0;
+	font-size: 18px;
+	line-height: 22px;
+	color: #bbb;
+	transition: all 0.3s ease;
+	border: 0;
+
+	&:hover {
+  	color: #99130f;
+	}
+
+	i {
+  	margin: 0;
+	}
+}
+
+.help-icon {
+  margin-left: 5px;
+  color: #bbb;
+
+  &:hover, &:focus, &:active { color: #23527c; }
+}
+
 /* NAV */
 
 .desktop .isometrica-navbar-centered {

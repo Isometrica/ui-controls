@@ -27,6 +27,26 @@ input.form-value {
   .container {
     width: auto; } }
 
+.clear-field {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  font-size: 18px;
+  line-height: 22px;
+  color: #bbb;
+  transition: all 0.3s ease;
+  border: 0; }
+  .clear-field:hover {
+    color: #99130f; }
+  .clear-field i {
+    margin: 0; }
+
+.help-icon {
+  margin-left: 5px;
+  color: #bbb; }
+  .help-icon:hover, .help-icon:focus, .help-icon:active {
+    color: #23527c; }
+
 /* NAV */
 .desktop .isometrica-navbar-centered .navbar-brand {
   text-align: center;
@@ -2134,41 +2154,116 @@ input.form-value {
   .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
     padding-right: 0; }
 
-.isometrica-meetings-edit-modal .modal-content {
+.isometrica-meetings .bootcards-container {
+  padding-top: 80px; }
+
+.isometrica-meetings .guidance-bar {
+  height: 52px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .isometrica-meetings .guidance-bar h4 {
+      font-size: 14px; } }
+  .isometrica-meetings .guidance-bar .btn-group {
+    margin: -13px 0;
+    margin-right: -15px; }
+
+.isometrica-meetings .bootcards-list .panel-body:first-child {
+  border-bottom: 1px solid #ddd; }
+  .isometrica-meetings .bootcards-list .panel-body:first-child select {
+    padding-left: 12px; }
+
+.isometrica-meetings .bootcards-list .list-group-item-content {
   overflow: hidden; }
 
-.isometrica-meetings-edit-modal .modal-body h4 {
-  margin: 15px 0; }
+.isometrica-meetings .bootcards-cards .avatar {
+  border-radius: 50%;
+  margin-right: 5px;
+  height: 32px;
+  width: 32px; }
 
-.isometrica-meetings-edit-modal .modal-body hr {
+.meetings-icon {
+  border-radius: 2px;
+  text-align: center;
+  width: 42px;
+  height: 42px;
+  margin-right: 12px;
+  color: white;
+  font-size: 10px;
+  font-weight: 500; }
+  .meetings-icon.meetings-icon-operations {
+    background: #5dc1dd; }
+  .meetings-icon.meetings-icon-sales {
+    background: #f69d55; }
+  .meetings-icon.meetings-icon-support {
+    background: #f483b3; }
+  .meetings-icon.meetings-icon-planning {
+    background: #ae7bda; }
+  .meetings-icon.meetings-icon-management {
+    background: #8dda7b; }
+  .meetings-icon.meetings-icon-adhoc {
+    background: #81a9c8;
+    padding-top: 6px; }
+  .meetings-icon i {
+    font-size: 28px;
+    opacity: 1 !important;
+    color: white !important;
+    display: block;
+    text-align: center;
+    margin: 2px auto -2px auto !important; }
+
+.ios.isometrica-communications-log .bootcards-container {
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0; }
+
+@media (max-width: 767px) {
+  .ios.isometrica-communications-log .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; } }
+
+.isometrica-meetings-modal .modal-content {
+  overflow: hidden; }
+
+.isometrica-meetings-modal .modal-body h4 {
+  margin: 15px 0 0; }
+
+.isometrica-meetings-modal .modal-body hr {
   border-color: #ddd;
   margin: 15px -15px; }
 
-.isometrica-meetings-edit-modal .modal-body .btn-add {
-  margin-top: 15px; }
+.isometrica-meetings-modal .modal-body .long-label {
+  padding-top: 0;
+  margin-bottom: -4px;
+  margin-top: -2px; }
 
-.isometrica-meetings-edit-modal .bootcards-panel-collapsing {
+.isometrica-meetings-modal .bootcards-panel-collapsing {
   clear: both;
   margin-bottom: 0; }
-  .isometrica-meetings-edit-modal .bootcards-panel-collapsing:not(:first-child) {
+  .isometrica-meetings-modal .bootcards-panel-collapsing:not(:first-child) {
     border-top-left-radius: 0;
     border-top-right-radius: 0; }
-  .isometrica-meetings-edit-modal .bootcards-panel-collapsing:not(:last-child) {
+  .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
     border-bottom-width: 0; }
-  .isometrica-meetings-edit-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-    font-size: 18px;
+  .isometrica-meetings-modal .bootcards-panel-collapsing:first-child {
+    margin-top: 15px; }
+  .isometrica-meetings-modal .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
     left: 10px;
     margin-top: -11px; }
-  .isometrica-meetings-edit-modal .bootcards-panel-collapsing .panel-body hr {
+  .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
     border-color: #ddd;
     margin: 15px -15px; }
 
-.isometrica-meetings-edit-modal .modal-footer {
+.isometrica-meetings-modal .modal-footer {
   background: #f5f5f5;
   border-top: 1px solid #ddd; }
-  .isometrica-meetings-edit-modal .modal-footer small.text-left {
+  .isometrica-meetings-modal .modal-footer small.text-left {
     text-align: left; }
-  .isometrica-meetings-edit-modal .modal-footer small.text-right {
+  .isometrica-meetings-modal .modal-footer small.text-right {
     text-align: right; }
