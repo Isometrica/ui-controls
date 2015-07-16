@@ -33,13 +33,16 @@ input.form-value {
   top: 0;
   font-size: 18px;
   line-height: 22px;
-  color: #bbb;
+  color: #bbb !important;
   transition: all 0.3s ease;
   border: 0; }
   .clear-field:hover {
-    color: #99130f; }
+    color: #99130f !important; }
   .clear-field i {
-    margin: 0; }
+    margin: 0 !important; }
+
+.android .clear-field {
+  right: 5px; }
 
 .help-icon {
   margin-left: 5px;
@@ -2183,87 +2186,158 @@ input.form-value {
   height: 32px;
   width: 32px; }
 
-/*
-.meetings-icon {
-  border-radius: 2px;
-  text-align: center;
-  width: 42px;
-  height: 42px;
-  margin-right: 12px;
-  color: white;
-  font-size: 10px;
-  font-weight: 500;
+.isometrica-meetings .isometrica-meetings-modal .modal-content {
+  overflow: hidden; }
 
-  &.meetings-icon-operations { background: #5dc1dd; }
-  &.meetings-icon-sales { background: #f69d55; }
-  &.meetings-icon-support { background: #f483b3; }
-  &.meetings-icon-planning { background: #ae7bda; }
-  &.meetings-icon-management { background: #8dda7b; }
-  &.meetings-icon-adhoc { background: #81a9c8; padding-top: 6px; }
+.isometrica-meetings .isometrica-meetings-modal .modal-body h4 {
+  margin: 15px 0 0; }
 
-  i {
-    font-size: 28px;
-    opacity: 1 !important;
-    color: white !important;
-    display: block;
-    text-align: center;
-    margin: 2px auto -2px auto !important;
-  }
-}
-*/
-.ios.isometrica-communications-log .bootcards-container {
+.isometrica-meetings .isometrica-meetings-modal .modal-body hr {
+  border-color: #ddd;
+  margin: 15px -15px; }
+
+.isometrica-meetings .isometrica-meetings-modal .modal-body .long-label {
+  padding-top: 0;
+  margin-bottom: -4px;
+  margin-top: -2px; }
+
+.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing {
+  clear: both;
+  margin-bottom: 0; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:first-child {
+    margin-top: 15px; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
+    left: 10px;
+    margin-top: -11px; }
+  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
+    border-color: #ddd;
+    margin: 15px -15px; }
+
+.isometrica-meetings .isometrica-meetings-modal .modal-footer {
+  background: #f5f5f5;
+  border-top: 1px solid #ddd; }
+  .isometrica-meetings .isometrica-meetings-modal .modal-footer small.text-left {
+    text-align: left; }
+  .isometrica-meetings .isometrica-meetings-modal .modal-footer small.text-right {
+    text-align: right; }
+
+.ios.isometrica-meetings .bootcards-container {
   position: fixed;
   top: 96px;
   left: 0;
   right: 0;
   bottom: 0;
-  padding-top: 0; }
+  padding-top: 0;
+  height: auto; }
 
 @media (max-width: 767px) {
-  .ios.isometrica-communications-log .bootcards-cards {
+  .ios.isometrica-meetings .bootcards-cards {
     padding-left: 0;
     padding-right: 0; } }
 
-.isometrica-meetings-modal .modal-content {
-  overflow: hidden; }
+.ios.isometrica-meetings .form-group {
+  border-bottom: 0;
+  border-top: 1px solid #ddd;
+  padding-left: 10px;
+  padding-right: 10px; }
+  .ios.isometrica-meetings .form-group:first-child {
+    border-top: 0; }
+  .ios.isometrica-meetings .form-group:last-child {
+    border-top: 0; }
 
-.isometrica-meetings-modal .modal-body h4 {
-  margin: 15px 0 0; }
+.ios.isometrica-meetings .isometrica-meetings-modal hr {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
 
-.isometrica-meetings-modal .modal-body hr {
-  border-color: #ddd;
-  margin: 15px -15px; }
+.ios.isometrica-meetings .isometrica-meetings-modal .modal-body {
+  padding-bottom: 0; }
 
-.isometrica-meetings-modal .modal-body .long-label {
+.ios.isometrica-meetings .isometrica-meetings-modal .btn-add, .ios.isometrica-meetings .isometrica-meetings-modal .btn-delete {
+  margin-top: 5px;
+  margin-bottom: 5px; }
+
+.ios.isometrica-meetings .isometrica-meetings-modal .btn-add {
+  margin-top: -10px; }
+
+.ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing {
+  border: 1px solid #ccc; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom: 0; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading {
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {
+    padding-bottom: 5px; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
+    padding-left: 10px;
+    padding-right: 10px; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn-default {
+    border-color: #ddd; }
+  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .active {
+    background: #007aff;
+    border-color: #007aff;
+    box-shadow: none;
+    opacity: 1; }
+
+.ios.isometrica-meetings .isometrica-meetings-modal .modal-footer small {
+  font-size: 11px; }
+
+.android.isometrica-meetings .bootcards-container {
+  position: fixed;
+  top: 102px;
+  left: 0;
+  right: 0;
+  bottom: 0;
   padding-top: 0;
-  margin-bottom: -4px;
-  margin-top: -2px; }
+  height: auto; }
 
-.isometrica-meetings-modal .bootcards-panel-collapsing {
-  clear: both;
-  margin-bottom: 0; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing:not(:first-child) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-width: 0; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing:first-child {
-    margin-top: 15px; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing:last-child {
-    margin-bottom: 15px; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-    left: 10px;
-    margin-top: -11px; }
-  .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
-    border-color: #ddd;
-    margin: 15px -15px; }
+@media (max-width: 767px) {
+  .android.isometrica-meetings .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; } }
 
-.isometrica-meetings-modal .modal-footer {
+.android.isometrica-meetings .bootcards-list select {
+  border-bottom: 0; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-left,
+.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-right {
+  position: absolute;
+  z-index: 1;
+  top: 0; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-left {
+  left: 0; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-right {
+  right: 0; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading {
+  padding-top: 10px;
+  padding-bottom: 10px;
   background: #f5f5f5;
-  border-top: 1px solid #ddd; }
-  .isometrica-meetings-modal .modal-footer small.text-left {
-    text-align: left; }
-  .isometrica-meetings-modal .modal-footer small.text-right {
-    text-align: right; }
+  border-radius: 0; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
+  border-color: #ddd; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .active {
+  background: #33b5e5;
+  border-color: #33b5e5;
+  box-shadow: none; }
+
+.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {
+  padding-top: 5px;
+  padding-bottom: 0; }
+  .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
+    margin-bottom: 10px; }

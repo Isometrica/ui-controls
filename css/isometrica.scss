@@ -51,17 +51,21 @@ input.form-value {
 	top: 0;
 	font-size: 18px;
 	line-height: 22px;
-	color: #bbb;
+	color: #bbb !important;
 	transition: all 0.3s ease;
 	border: 0;
 
 	&:hover {
-  	color: #99130f;
+  	color: #99130f !important;
 	}
 
 	i {
-  	margin: 0;
+  	margin: 0 !important;
 	}
+}
+
+.android .clear-field {
+	right: 5px;
 }
 
 .help-icon {
@@ -70,6 +74,9 @@ input.form-value {
 
   &:hover, &:focus, &:active { color: #23527c; }
 }
+
+
+
 
 /* NAV */
 
