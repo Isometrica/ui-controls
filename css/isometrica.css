@@ -2172,8 +2172,10 @@ input.form-value {
   .isometrica-meetings .bootcards-list .panel-body:first-child select {
     padding-left: 12px; }
 
-.isometrica-meetings .bootcards-list .list-group-item-content {
-  overflow: hidden; }
+.isometrica-meetings .list-group-item i.pull-left {
+  font-size: 32px;
+  position: relative;
+  top: 4px; }
 
 .isometrica-meetings .bootcards-cards .avatar {
   border-radius: 50%;
@@ -2181,6 +2183,7 @@ input.form-value {
   height: 32px;
   width: 32px; }
 
+/*
 .meetings-icon {
   border-radius: 2px;
   text-align: center;
@@ -2189,28 +2192,25 @@ input.form-value {
   margin-right: 12px;
   color: white;
   font-size: 10px;
-  font-weight: 500; }
-  .meetings-icon.meetings-icon-operations {
-    background: #5dc1dd; }
-  .meetings-icon.meetings-icon-sales {
-    background: #f69d55; }
-  .meetings-icon.meetings-icon-support {
-    background: #f483b3; }
-  .meetings-icon.meetings-icon-planning {
-    background: #ae7bda; }
-  .meetings-icon.meetings-icon-management {
-    background: #8dda7b; }
-  .meetings-icon.meetings-icon-adhoc {
-    background: #81a9c8;
-    padding-top: 6px; }
-  .meetings-icon i {
+  font-weight: 500;
+
+  &.meetings-icon-operations { background: #5dc1dd; }
+  &.meetings-icon-sales { background: #f69d55; }
+  &.meetings-icon-support { background: #f483b3; }
+  &.meetings-icon-planning { background: #ae7bda; }
+  &.meetings-icon-management { background: #8dda7b; }
+  &.meetings-icon-adhoc { background: #81a9c8; padding-top: 6px; }
+
+  i {
     font-size: 28px;
     opacity: 1 !important;
     color: white !important;
     display: block;
     text-align: center;
-    margin: 2px auto -2px auto !important; }
-
+    margin: 2px auto -2px auto !important;
+  }
+}
+*/
 .ios.isometrica-communications-log .bootcards-container {
   position: fixed;
   top: 96px;

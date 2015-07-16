@@ -28,9 +28,13 @@
         padding-left: 12px;
       }
     }
+  }
 
-    .list-group-item-content {
-      overflow: hidden;
+  .list-group-item {
+    i.pull-left {
+      font-size: 32px;
+      position: relative;
+      top: 4px;
     }
   }
 
@@ -44,6 +48,7 @@
   }
 }
 
+/*
 .meetings-icon {
   border-radius: 2px;
   text-align: center;
@@ -70,6 +75,7 @@
     margin: 2px auto -2px auto !important;
   }
 }
+*/
 
 .ios.isometrica-communications-log {
   //overflow: hidden;
