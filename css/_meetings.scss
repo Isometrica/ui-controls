@@ -121,7 +121,13 @@
 
 
 
-
+.desktop.isometrica-meetings {
+  .isometrica-meetings-modal {
+    .btn-add, .btn-delete {
+      margin: -8px 0;
+    }
+  }
+}
 
 
 .ios.isometrica-meetings {
@@ -248,21 +254,6 @@
   }
 
   .isometrica-meetings-modal {
-    .modal-header {
-      .pull-left,
-      .pull-right {
-        position: absolute;
-        z-index: 1;
-        top: 0;
-      }
-      .pull-left {
-        left: 0;
-      }
-      .pull-right {
-        right: 0;
-      }
-    }
-
     .bootcards-panel-collapsing {
       .panel-heading {
         padding-top: 10px;

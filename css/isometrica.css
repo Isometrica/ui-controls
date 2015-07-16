@@ -168,13 +168,13 @@ input.form-value {
   padding: 0; }
   .ios .modal-dialog .modal-header .pull-left {
     position: absolute;
-    left: 0;
-    top: 0;
+    left: 0 !important;
+    top: 0 !important;
     z-index: 1; }
   .ios .modal-dialog .modal-header .pull-right {
     position: absolute;
-    right: 0;
-    top: 0;
+    right: 0 !important;
+    top: 0 !important;
     z-index: 1; }
   .ios .modal-dialog .modal-header .btn {
     padding: 0 15px;
@@ -194,6 +194,16 @@ input.form-value {
 
 .android .modal-dialog .modal-header {
   padding: 0; }
+  .android .modal-dialog .modal-header .pull-left {
+    position: absolute;
+    left: 0 !important;
+    top: 0 !important;
+    z-index: 1; }
+  .android .modal-dialog .modal-header .pull-right {
+    position: absolute;
+    right: 0 !important;
+    top: 0 !important;
+    z-index: 1; }
   .android .modal-dialog .modal-header .btn {
     padding: 0 15px;
     line-height: 50px;
@@ -2157,6 +2167,15 @@ input.form-value {
   .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
     padding-right: 0; }
 
+.android.isometrica-communications-log .bootcards-container {
+  position: fixed;
+  top: 102px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  height: auto; }
+
 .isometrica-meetings .bootcards-container {
   padding-top: 80px; }
 
@@ -2229,6 +2248,9 @@ input.form-value {
     text-align: left; }
   .isometrica-meetings .isometrica-meetings-modal .modal-footer small.text-right {
     text-align: right; }
+
+.desktop.isometrica-meetings .isometrica-meetings-modal .btn-add, .desktop.isometrica-meetings .isometrica-meetings-modal .btn-delete {
+  margin: -8px 0; }
 
 .ios.isometrica-meetings .bootcards-container {
   position: fixed;
@@ -2309,18 +2331,6 @@ input.form-value {
 
 .android.isometrica-meetings .bootcards-list select {
   border-bottom: 0; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-left,
-.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-right {
-  position: absolute;
-  z-index: 1;
-  top: 0; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-left {
-  left: 0; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .modal-header .pull-right {
-  right: 0; }
 
 .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading {
   padding-top: 10px;

@@ -269,15 +269,15 @@ input.form-value {
 
     .pull-left {
       position: absolute;
-      left: 0;
-      top: 0;
+      left: 0 !important;
+      top: 0 !important;
       z-index: 1;
     }
 
     .pull-right {
       position: absolute;
-      right: 0;
-      top: 0;
+      right: 0 !important;
+      top: 0 !important;
       z-index: 1;
     }
 
@@ -312,6 +312,20 @@ input.form-value {
 .android .modal-dialog {
 	.modal-header {
 		padding: 0;
+
+    .pull-left {
+      position: absolute;
+      left: 0 !important;
+      top: 0 !important;
+      z-index: 1;
+    }
+
+    .pull-right {
+      position: absolute;
+      right: 0 !important;
+      top: 0 !important;
+      z-index: 1;
+    }
 
 		.btn {
 			padding: 0 15px;
