@@ -200,4 +200,10 @@
     padding-top: 0;
     height: auto;
   }
+
+  .isometrica-communications-edit-modal {
+    input[disabled] {
+      background: transparent;
+    }
+  }
 }

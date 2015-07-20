@@ -339,6 +339,16 @@ input.form-value {
 				font-size: 14px;
 			}
 		}
+
+		&.subheader {
+  		padding: 10px 15px;
+  		height: auto !important;
+  		font-size: 13px;
+  		line-height: 20px;
+  		background: #f5f5f5;
+  		box-shadow: none;
+		}
+
 	}
 }
 

@@ -535,6 +535,14 @@
   }
 }
 
+.android .isometrica-workbook-bia1-modal {
+  .bootcards-panel-collapsing {
+    .panel-heading {
+      background: #f5f5f5;
+    }
+  }
+}
+
 #impactGradingModal {
   .modal-content {
     overflow: hidden;
@@ -772,6 +780,13 @@
   }
 }
 
+.android #businessImpact2Modal {
+  .bootcards-panel-collapsing {
+    .panel-heading {
+      background: #f5f5f5;
+    }
+  }
+}
 
 #riskAnalysisModal {
   .risk-analysis-linked-items {
@@ -904,6 +919,20 @@
       margin-top: -17px;
     }
   }
+}
+
+.android #riskAnalysisModal {
+  .risk-analysis-impacts,
+  .risk-analysis-likelihood {
+    border-bottom: 0;
+    padding-bottom: 0;
+
+    .btn {
+      border-color: #ddd;
+      color: black;
+    }
+  }
+
 }
 
 #riskGradingModal {

@@ -212,6 +212,13 @@ input.form-value {
       vertical-align: 0; }
     .android .modal-dialog .modal-header .btn span {
       font-size: 14px; }
+  .android .modal-dialog .modal-header.subheader {
+    padding: 10px 15px;
+    height: auto !important;
+    font-size: 13px;
+    line-height: 20px;
+    background: #f5f5f5;
+    box-shadow: none; }
 
 .desktop .modal-title {
   line-height: 34px; }
@@ -622,6 +629,9 @@ input.form-value {
   margin-top: 10px;
   margin-bottom: 0; }
 
+.android .isometrica-workbook-bia1-modal .bootcards-panel-collapsing .panel-heading {
+  background: #f5f5f5; }
+
 #impactGradingModal .modal-content {
   overflow: hidden; }
 
@@ -790,6 +800,9 @@ input.form-value {
   .ios #businessImpact2Modal .modal-body > div:last-child .btn {
     margin: 0; }
 
+.android #businessImpact2Modal .bootcards-panel-collapsing .panel-heading {
+  background: #f5f5f5; }
+
 #riskAnalysisModal .risk-analysis-linked-items {
   margin-bottom: 10px; }
   #riskAnalysisModal .risk-analysis-linked-items .btn {
@@ -883,6 +896,15 @@ input.form-value {
     right: 15px;
     top: 50%;
     margin-top: -17px; }
+
+.android #riskAnalysisModal .risk-analysis-impacts,
+.android #riskAnalysisModal .risk-analysis-likelihood {
+  border-bottom: 0;
+  padding-bottom: 0; }
+  .android #riskAnalysisModal .risk-analysis-impacts .btn,
+  .android #riskAnalysisModal .risk-analysis-likelihood .btn {
+    border-color: #ddd;
+    color: black; }
 
 #riskGradingModal .isometrica-risk-grading table {
   margin-bottom: 10px; }
@@ -1671,7 +1693,7 @@ input.form-value {
 .android.bootcards-wiki .bootcards-wiki-panel-metadata {
   padding-top: 5px;
   padding-bottom: 5px;
-  border-bottom: 1px solid #ddd; }
+  border-top: 1px solid #ddd; }
   .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
     margin-bottom: 5px; }
     .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
@@ -2175,6 +2197,9 @@ input.form-value {
   bottom: 0;
   padding-top: 0;
   height: auto; }
+
+.android.isometrica-communications-log .isometrica-communications-edit-modal input[disabled] {
+  background: transparent; }
 
 .isometrica-meetings .bootcards-container {
   padding-top: 80px; }
