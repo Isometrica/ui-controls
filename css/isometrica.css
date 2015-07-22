@@ -31,7 +31,7 @@ input.form-value {
   position: absolute;
   right: 12px;
   top: 0;
-  font-size: 18px;
+  font-size: 21px !important;
   line-height: 22px;
   color: #bbb !important;
   transition: all 0.3s ease;
@@ -41,14 +41,69 @@ input.form-value {
   .clear-field i {
     margin: 0 !important; }
 
+.ios .clear-field {
+  right: 4px; }
+
 .android .clear-field {
-  right: 5px; }
+  right: 3px;
+  top: 3px; }
 
 .help-icon {
-  margin-left: 5px;
+  margin-right: 5px;
   color: #bbb; }
+  .help-icon i {
+    font-size: 21px; }
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
+
+/* BUTTONS */
+.android .btn {
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 3px;
+  transition: all 0.3s ease; }
+
+.android .btn-primary {
+  background: #33b5e5;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  .android .btn-primary:hover, .android .btn-primary:focus, .android .btn-primary:active, .android .btn-primary.active {
+    background: #23a5d5;
+    color: white;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    outline: none; }
+
+.android .btn-default {
+  background: #dfdfdf;
+  font-size: 14px;
+  color: #444;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  .android .btn-default:hover, .android .btn-default:focus, .android .btn-default:active, .android .btn-default.active {
+    background: #cecece;
+    color: #444;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
+    outline: none; }
+
+.android .modal-header .btn,
+.android .panel-heading .btn {
+  background: transparent;
+  color: #23527c;
+  box-shadow: none;
+  font-size: 14px; }
+
+/* FORMS */
+.android .form-horizontal .form-group {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+.android .form-horizontal .form-group .control-label:first-child {
+  padding-left: 15px; }
+
+.android .form-horizontal .form-group div:last-child {
+  padding-right: 15px; }
 
 /* NAV */
 .desktop .isometrica-navbar-centered .navbar-brand {
@@ -58,7 +113,7 @@ input.form-value {
   position: absolute;
   left: 0;
   right: 0;
-  z-index: -1; }
+  z-index: 1; }
 
 .desktop .isometrica-navbar-centered .btn {
   padding-top: 12px;
@@ -71,12 +126,18 @@ input.form-value {
     margin: 0; } }
 
 .desktop .isometrica-navbar-centered .navbar-nav.navbar-left {
-  float: left;
-  margin-left: -15px; }
+  position: absolute;
+  left: 0;
+  top: 1px;
+  z-index: 2;
+  margin: 0; }
 
 .desktop .isometrica-navbar-centered .navbar-nav.navbar-right {
-  float: right;
-  margin-right: -15px; }
+  position: absolute;
+  right: 0;
+  top: 1px;
+  z-index: 2;
+  margin: 0; }
 
 .desktop .navbar-inverse {
   background: #444; }
@@ -95,10 +156,174 @@ input.form-value {
 .android .navbar-collapse {
   display: none !important; }
 
-.android .navbar .btn {
-  line-height: 50px; }
+.android .navbar {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  border-color: transparent; }
+  .android .navbar .navbar-brand {
+    font-size: 20px;
+    padding-left: 15px !important;
+    color: white !important; }
+  .android .navbar .btn {
+    line-height: 50px; }
+
+.ios .bootcards-navbar-double .container > .navbar-right {
+  position: absolute;
+  left: 0;
+  right: auto; }
+
+.ios .bootcards-navbar-double .navbar-header {
+  overflow: hidden; }
+
+.ios .bootcards-navbar-double .navbar-collapse {
+  border: 0;
+  background: white !important;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  max-height: none; }
+  .ios .bootcards-navbar-double .navbar-collapse .navbar-nav {
+    margin: 0 !important; }
+  .ios .bootcards-navbar-double .navbar-collapse .navbar-nav > li > a {
+    color: #333;
+    font-size: 15px; }
+    .ios .bootcards-navbar-double .navbar-collapse .navbar-nav > li > a .label {
+      position: relative;
+      top: -2px;
+      left: 3px; }
+
+.android .bootcards-navbar-double .container > .navbar-right {
+  float: left !important; }
+  .android .bootcards-navbar-double .container > .navbar-right .btn {
+    height: 50px; }
+
+.android .bootcards-navbar-double .navbar-brand {
+  margin: 0; }
+
+.android .bootcards-navbar-double .navbar-header {
+  overflow: hidden; }
+
+.android .bootcards-navbar-double .navbar-collapse {
+  border: 0;
+  background: white !important;
+  color: #333;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  max-height: none; }
+  .android .bootcards-navbar-double .navbar-collapse .navbar-nav {
+    margin: 0 !important; }
+  .android .bootcards-navbar-double .navbar-collapse .navbar-nav > li > a {
+    color: #333;
+    font-size: 16px;
+    padding: 15px; }
+    .android .bootcards-navbar-double .navbar-collapse .navbar-nav > li > a .label {
+      position: relative;
+      top: -3px;
+      left: 3px; }
+
+/* NAVBAR FILTER DROPDOWN */
+.navbar-header .navbar-brand.dropdown-toggle {
+  cursor: pointer; }
+  .navbar-header .navbar-brand.dropdown-toggle i {
+    font-size: 12px;
+    position: relative;
+    top: -3px;
+    left: 2px;
+    opacity: 0.5;
+    transition: opacity 0.3s ease; }
+
+.navbar-header.open .navbar-brand.dropdown-toggle i {
+  opacity: 1; }
+
+.navbar-header .dropdown-menu {
+  width: 200px;
+  left: 50%;
+  margin-left: -100px;
+  text-align: center; }
+  .navbar-header .dropdown-menu a {
+    padding: 7px 15px; }
+  .navbar-header .dropdown-menu .active a {
+    background: #eee;
+    color: #333; }
+
+.ios .navbar-header .dropdown-menu {
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  font-size: 15px;
+  font-weight: 500; }
+  .ios .navbar-header .dropdown-menu a {
+    padding: 12px 20px;
+    font-size: 16px; }
+  .ios .navbar-header .dropdown-menu .active a {
+    background: #007aff;
+    color: white; }
+
+.android .navbar-header .dropdown-menu {
+  width: auto;
+  left: 0;
+  right: 0;
+  margin: 0;
+  border-radius: 0;
+  border: 0;
+  padding: 0;
+  text-align: left; }
+  .android .navbar-header .dropdown-menu a {
+    padding: 15px 20px;
+    font-size: 16px; }
+  .android .navbar-header .dropdown-menu .active a {
+    background: #33b5e5;
+    color: white; }
 
 /* MOBILE LIST VIEWS */
+.isometrica-container-listdetail .guidance-bar {
+  height: 52px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .isometrica-container-listdetail .guidance-bar h4 {
+      font-size: 14px; } }
+  .isometrica-container-listdetail .guidance-bar .btn-group {
+    margin: -13px 0;
+    margin-right: -15px; }
+
+.ios .isometrica-container-listdetail {
+  position: fixed;
+  top: 96px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  height: auto; }
+  @media (max-width: 767px) {
+    .ios .isometrica-container-listdetail {
+      top: 44px; } }
+
+@media (max-width: 767px) {
+  .ios .bootcards-cards {
+    padding: 0; } }
+
+.android .isometrica-container-listdetail {
+  padding-top: 0 !important;
+  position: fixed;
+  top: 102px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  height: auto; }
+  @media (max-width: 767px) {
+    .android .isometrica-container-listdetail {
+      top: 50px; } }
+
+@media (max-width: 767px) {
+  .android .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; }
+    .android .bootcards-cards > .panel {
+      border-left: 0;
+      border-right: 0; } }
+
 .isometrica-mobile-list-view-container {
   padding-top: 15px; }
   .isometrica-mobile-list-view-container .bootcards-list {
@@ -154,8 +379,7 @@ input.form-value {
   top: 44px; }
 
 .android .guidance-bar {
-  -webkit-box-shadow: none;
-  border: 0; }
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
 
 /* MODALS */
 .desktop .modal-dialog .modal-header {
@@ -193,7 +417,12 @@ input.form-value {
   margin: 0; }
 
 .android .modal-dialog .modal-header {
-  padding: 0; }
+  padding: 0;
+  border-color: transparent;
+  background: #eee;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3); }
+  .android .modal-dialog .modal-header .modal-title {
+    font-size: 20px; }
   .android .modal-dialog .modal-header .pull-left {
     position: absolute;
     left: 0 !important;
@@ -207,7 +436,8 @@ input.form-value {
   .android .modal-dialog .modal-header .btn {
     padding: 0 15px;
     line-height: 50px;
-    margin-top: 0; }
+    margin-top: 0;
+    color: #33b5e5; }
     .android .modal-dialog .modal-header .btn i {
       vertical-align: 0; }
     .android .modal-dialog .modal-header .btn span {
@@ -274,6 +504,13 @@ input.form-value {
     left: 8px;
     font-size: 18px;
     margin-top: -10px; } }
+
+.android .panel-heading .btn {
+  color: #33b5e5 !important; }
+
+.android .panel-heading .panel-title {
+  color: #333;
+  padding: 8px 0; }
 
 /* workbook */
 /* Guidance bar */
@@ -1624,19 +1861,6 @@ input.form-value {
       padding-right: 0; }
 
 /* iOS */
-.ios.bootcards-wiki .bootcards-container {
-  padding-top: 0;
-  position: fixed;
-  top: 44px;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-
-@media (max-width: 767px) {
-  .ios.bootcards-wiki .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; } }
-
 .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading {
   min-height: 44px; }
   .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn {
@@ -1705,16 +1929,6 @@ input.form-value {
 .isometrica-address-book .bootcards-container {
   padding-top: 80px; }
 
-.isometrica-address-book .guidance-bar {
-  height: 52px;
-  overflow: hidden; }
-  @media (max-width: 767px) {
-    .isometrica-address-book .guidance-bar h4 {
-      font-size: 14px; } }
-  .isometrica-address-book .guidance-bar .btn-group {
-    margin: -13px 0;
-    margin-right: -15px; }
-
 .isometrica-address-book .isometrica-address-book-select {
   border-bottom: 1px solid #ddd; }
   .isometrica-address-book .isometrica-address-book-select .list-group-item i {
@@ -1727,9 +1941,6 @@ input.form-value {
   .isometrica-address-book .isometrica-address-book-select .collapse .list-group-item:before {
     display: none;
     /* Hide disclosure indicators */ }
-
-.isometrica-address-book .panel-body:first-child {
-  border-bottom: 1px solid #ddd; }
 
 .isometrica-address-book .phone-numbers .list-group-item-text {
   margin-bottom: 10px; }
@@ -1761,24 +1972,6 @@ input.form-value {
 
 .isometrica-address-book .call-tree a {
   margin-left: 15px; }
-
-.ios.isometrica-address-book .bootcards-container {
-  padding-top: 52px;
-  position: fixed;
-  top: 44px;
-  left: 0;
-  right: 0;
-  bottom: 0; }
-  .ios.isometrica-address-book .bootcards-container select {
-    padding-left: 12px; }
-
-@media (max-width: 767px) {
-  .ios.isometrica-address-book .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; } }
-
-.android.isometrica-address-book .bootcards-container {
-  padding-top: 52px; }
 
 /* Edit MOdal */
 .isometrica-addressbook-edit-modal .modal-content {
@@ -2089,11 +2282,6 @@ input.form-value {
     margin: -13px 0;
     margin-right: -15px; }
 
-.isometrica-communications-log .bootcards-list .panel-body:first-child {
-  border-bottom: 1px solid #ddd; }
-  .isometrica-communications-log .bootcards-list .panel-body:first-child select {
-    padding-left: 12px; }
-
 .isometrica-communications-log .bootcards-list .list-group-item-content {
   overflow: hidden; }
 
@@ -2106,19 +2294,6 @@ input.form-value {
   width: auto;
   opacity: 1;
   margin-right: 5px; }
-
-.ios.isometrica-communications-log .bootcards-container {
-  position: fixed;
-  top: 96px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0; }
-
-@media (max-width: 767px) {
-  .ios.isometrica-communications-log .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; } }
 
 /* Edit MOdal */
 .isometrica-communications-edit-modal .isometrica-workbook-modal-subheading {
@@ -2189,15 +2364,6 @@ input.form-value {
   .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
     padding-right: 0; }
 
-.android.isometrica-communications-log .bootcards-container {
-  position: fixed;
-  top: 102px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto; }
-
 .android.isometrica-communications-log .isometrica-communications-edit-modal input[disabled] {
   background: transparent; }
 
@@ -2213,11 +2379,6 @@ input.form-value {
   .isometrica-meetings .guidance-bar .btn-group {
     margin: -13px 0;
     margin-right: -15px; }
-
-.isometrica-meetings .bootcards-list .panel-body:first-child {
-  border-bottom: 1px solid #ddd; }
-  .isometrica-meetings .bootcards-list .panel-body:first-child select {
-    padding-left: 12px; }
 
 .isometrica-meetings .list-group-item i.pull-left {
   font-size: 32px;
@@ -2285,6 +2446,9 @@ input.form-value {
   bottom: 0;
   padding-top: 0;
   height: auto; }
+  @media (max-width: 767px) {
+    .ios.isometrica-meetings .bootcards-container {
+      top: 44px; } }
 
 @media (max-width: 767px) {
   .ios.isometrica-meetings .bootcards-cards {
@@ -2329,30 +2493,12 @@ input.form-value {
   .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
     padding-left: 10px;
     padding-right: 10px; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn-default {
-    border-color: #ddd; }
   .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .active {
-    background: #007aff;
-    border-color: #007aff;
     box-shadow: none;
     opacity: 1; }
 
 .ios.isometrica-meetings .isometrica-meetings-modal .modal-footer small {
   font-size: 11px; }
-
-.android.isometrica-meetings .bootcards-container {
-  position: fixed;
-  top: 102px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto; }
-
-@media (max-width: 767px) {
-  .android.isometrica-meetings .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; } }
 
 .android.isometrica-meetings .bootcards-list select {
   border-bottom: 0; }
@@ -2364,11 +2510,6 @@ input.form-value {
   border-radius: 0; }
 
 .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
-  border-color: #ddd; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .active {
-  background: #33b5e5;
-  border-color: #33b5e5;
   box-shadow: none; }
 
 .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {

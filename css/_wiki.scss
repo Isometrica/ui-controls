@@ -120,24 +120,6 @@
 
 /* iOS */
 .ios.bootcards-wiki {
-
-  .bootcards-container {
-    padding-top: 0;
-
-    position: fixed;
-    top: 44px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-  }
-
-  .bootcards-cards {
-    @media (max-width:767px) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
   .bootcards-wiki-panel {
     .panel-heading {
       min-height: 44px;

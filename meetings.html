@@ -64,9 +64,16 @@
         </li>
       </ul>
       <div class="navbar-header">
-        <span class="navbar-brand">
-        	Meetings
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Recent meetings
+          <i class="fa fa-chevron-down"></i>
         </span>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">Recent meetings</a></li>
+          <li><a href="#">All meetings</a></li>
+          <li><a href="#">Agenda items</a></li>
+          <li><a href="#">Open meeting activities</a></li>
+        </ul>
       </div>
     </div>
   </div>
@@ -74,10 +81,10 @@
 
 
 
-  <div class="container bootcards-container" id="main">
+  <div class="container bootcards-container isometrica-container-listdetail" id="main">
 
     <!-- Guidance Bar -->
-    <div class="guidance-bar">
+    <div class="guidance-bar hidden-xs">
       <div class="container">
         <h4 class="pull-left">Guidance goes here lorem ipsum</h4>
         <div class="btn-group btn-group-lg pull-right">
@@ -95,32 +102,21 @@
   			<div class="panel panel-default">
   				<div class="panel-body">
   					<div class="search-form">
-  						<div class="row">
-  						    <div class="col-xs-8">
-  						      <div class="form-group">
-  							      <select class="form-control">
-  							        <option>Recent meetings</option>
-  							        <option>All meetings</option>
-  							        <option>Agenda items</option>
-  							        <option>Open meeting activites</option>
-  							      </select>
-  						      </div>
-  						    </div>
-  						    <div class="col-xs-4">
+    					<div class="row">
+						    <div class="col-xs-8">
+    				      <div class="form-group">
+    					      <input type="text" class="form-control" placeholder="Search Meetings...">
+    					      <i class="fa fa-search"></i>
+    				      </div>
+						    </div>
+						    <div class="col-xs-4">
   								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#isometrica-meetings-add-modal">
   									<i class="fa fa-plus"></i>
   									<span>Add</span>
   								</button>
-  						    </div>
+						    </div>
   						</div>
-  					</div>
-  				</div>
-  				<div class="panel-body">
-  					<div class="search-form">
-				      <div class="form-group">
-					      <input type="text" class="form-control" placeholder="Search Meetings...">
-					      <i class="fa fa-search"></i>
-				      </div>
+
   					</div>
   				</div>
   				<div class="list-group">
@@ -170,42 +166,42 @@
 						<h3 class="panel-title">Meeting record</h3>
 					</div>
           <div class="list-group">
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.1" data-placement="top">
+            <div class="list-group-item">
   						<i class="fa fa-briefcase pull-left"></i>
               <p class="list-group-item-text">Type</p>
               <h4 class="list-group-item-heading">Monthly management</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.2" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Date</p>
               <h4 class="list-group-item-heading">20 May 2015</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.3" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Notes</p>
               <h4 class="list-group-item-heading">This meeting was held over from last week</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.4" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Attendees</p>
               <h4 class="list-group-item-heading">Nigel Cheshire</h4>
               <h4 class="list-group-item-heading">Steve Ives</h4>
               <h4 class="list-group-item-heading">Mark Dixon</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.5" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Agenda items</p>
               <h4 class="list-group-item-heading">1. Previous minutes</h4>
               <h4 class="list-group-item-heading">2. FY15 Plan</h4>
               <h4 class="list-group-item-heading">3. Teamstudio Business Report</h4>
               <h4 class="list-group-item-heading">4. AOB</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.6" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Actions from last meeting - closed</p>
               <h4 class="list-group-item-heading">MA129: Arrange briefing session for Michael Hamilton</h4>
               <h4 class="list-group-item-heading">MA130: Check on how up-to-date we are on R&amp;D tax credits</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.7" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">Actions from last meeting - open</p>
               <h4 class="list-group-item-heading">MA110: Ask Lyndsey to change DSO calculator</h4>
             </div>
-            <div class="list-group-item" data-toggle="tooltip" title="4.4.1.8" data-placement="top">
+            <div class="list-group-item">
               <p class="list-group-item-text">New meeting actions</p>
               <h4 class="list-group-item-heading">MA135: Investigate Japan pricing</h4>
               <h4 class="list-group-item-heading">MA136: Renew EMEA prices</h4>
@@ -240,27 +236,27 @@
         </div>
         <form class="form-horizontal">
           <div class="modal-body">
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.1" data-placement="top">
-              <label class="control-label col-xs-5">Type</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Type</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value="" placeholder="Type"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.2" data-placement="top">
-              <label class="control-label col-xs-5">Date</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Date</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value="" placeholder="Date"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.3" data-placement="top">
-              <label class="control-label col-xs-5">Notes</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Notes</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value="" placeholder="Notes"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -282,8 +278,8 @@
                   <div class="panel-body">
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">
+          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		          Name
-                        <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		        </label>
           		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="" placeholder="Name">
@@ -294,7 +290,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="" placeholder="Initials">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -305,7 +301,7 @@
           		        <label class="control-label col-xs-4">Regular attendee</label>
           		        <div class="col-xs-8">
           			        <div class="btn-group">
-            			        <a class="btn btn-default">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -365,27 +361,27 @@
         </div>
         <form class="form-horizontal">
           <div class="modal-body">
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.1" data-placement="top">
-              <label class="control-label col-xs-5">Type</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Type</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value="Monthly management"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.2" data-placement="top">
-              <label class="control-label col-xs-5">Date</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Date</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value="20 May 2015"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
-            <div class="form-group" data-toggle="tooltip" title="4.4.2.3" data-placement="top">
-              <label class="control-label col-xs-5">Notes</label>
-              <div class="col-xs-7">
+            <div class="form-group">
+              <label class="control-label col-xs-2">Notes</label>
+              <div class="col-xs-10">
                 <input type="text" class="form-control" value=""/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -404,10 +400,10 @@
                 </div>
                 <div class="collapse" id="attendee-1">
                   <div class="panel-body">
-          	        <div class="form-group" data-toggle="tooltip" title="4.4.2.4" data-placement="top">
+          	        <div class="form-group">
           		        <label class="control-label col-xs-4">
+          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		          Name
-                        <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		        </label>
           		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="Nigel Cheshire">
@@ -416,20 +412,20 @@
           			        </button>
           		        </div>
           	        </div>
-          	        <div class="form-group" data-toggle="tooltip" title="4.4.2.5" data-placement="top">
+          	        <div class="form-group">
           		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
           		        </div>
           	        </div>
-          	        <div class="form-group" data-toggle="tooltip" title="4.4.2.6" data-placement="top">
+          	        <div class="form-group">
           		        <label class="control-label col-xs-4">Regular attendee</label>
           		        <div class="col-xs-8">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -453,8 +449,8 @@
                   <div class="panel-body">
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">
+          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		          Name
-                        <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		        </label>
           		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="Nigel Cheshire">
@@ -465,7 +461,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -476,7 +472,7 @@
           		        <label class="control-label col-xs-4">Regular attendee</label>
           		        <div class="col-xs-8">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -500,8 +496,8 @@
                   <div class="panel-body">
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">
+          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		          Name
-                        <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
           		        </label>
           		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="Nigel Cheshire">
@@ -512,7 +508,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-8">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -523,7 +519,7 @@
           		        <label class="control-label col-xs-4">Regular attendee</label>
           		        <div class="col-xs-8">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -571,7 +567,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="1">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -580,7 +576,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -591,7 +587,7 @@
           		        <label class="control-label col-xs-3">Recurring</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -631,7 +627,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="1">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -640,7 +636,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -651,7 +647,7 @@
           		        <label class="control-label col-xs-3">Recurring</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -691,7 +687,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="1">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -700,7 +696,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -711,7 +707,7 @@
           		        <label class="control-label col-xs-3">Recurring</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -751,7 +747,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="1">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -760,7 +756,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -771,7 +767,7 @@
           		        <label class="control-label col-xs-3">Recurring</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Yes</a>
+            			        <a class="btn btn-primary">Yes</a>
             			        <a class="btn btn-default">No</a>
           			        </div>
           		        </div>
@@ -798,16 +794,16 @@
                 <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                       MA129
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                       Arrange briefing session for Michael Hamilton
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-2">
                       MD
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-10">
                       20 May 2015
                     </div>
                   </div>
@@ -834,7 +830,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -843,7 +839,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-4">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="20 Jun 2015">
               			    <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -854,7 +850,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Open</a>
+            			        <a class="btn btn-primary">Open</a>
             			        <a class="btn btn-default">Closed</a>
           			        </div>
           		        </div>
@@ -873,16 +869,16 @@
                 <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                       MA130
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                       Check on how up-to-date we are on R&amp;D tax credits
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-2">
                       SI
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-10">
                       20 May 2015
                     </div>
                   </div>
@@ -909,7 +905,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -918,7 +914,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-4">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="20 Jun 2015">
               			    <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -929,7 +925,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Open</a>
+            			        <a class="btn btn-primary">Open</a>
             			        <a class="btn btn-default">Closed</a>
           			        </div>
           		        </div>
@@ -954,16 +950,16 @@
                 <div class="panel-heading clearfix collapsed" href="#action-3" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                       MA110
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                       Ask Lyndsey to change DSO calculator
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-2">
                       NC
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-10">
                       20 May 2015
                     </div>
                   </div>
@@ -990,7 +986,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -999,7 +995,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-4">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="20 Jun 2015">
               			    <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1010,7 +1006,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Open</a>
+            			        <a class="btn btn-primary">Open</a>
             			        <a class="btn btn-default">Closed</a>
           			        </div>
           		        </div>
@@ -1035,16 +1031,16 @@
                 <div class="panel-heading clearfix collapsed" href="#action-4" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                       MA135
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                       Investigate Japan pricing
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-2">
                       DC
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-10">
                       20 June 2015
                     </div>
                   </div>
@@ -1071,7 +1067,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1080,7 +1076,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-4">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="20 Jun 2015">
               			    <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1091,7 +1087,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Open</a>
+            			        <a class="btn btn-primary">Open</a>
             			        <a class="btn btn-default">Closed</a>
           			        </div>
           		        </div>
@@ -1110,16 +1106,16 @@
                 <div class="panel-heading clearfix collapsed" href="#action-5" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
-                    <div class="col-xs-2">
+                    <div class="col-sm-2">
                       MA136
                     </div>
-                    <div class="col-xs-6">
+                    <div class="col-sm-6">
                       Renew EMEA prices
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-2">
                       DC
                     </div>
-                    <div class="col-xs-2">
+                    <div class="col-sm-2 col-xs-10">
                       20 June 2015
                     </div>
                   </div>
@@ -1146,7 +1142,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-3">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="NC">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1155,7 +1151,7 @@
           	        </div>
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-4">
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="20 Jun 2015">
               			    <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1166,7 +1162,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
           			        <div class="btn-group">
-            			        <a class="btn btn-primary active">Open</a>
+            			        <a class="btn btn-primary">Open</a>
             			        <a class="btn btn-default">Closed</a>
           			        </div>
           		        </div>
@@ -1196,11 +1192,11 @@
           </div>
           <div class="modal-footer">
             <div class="row">
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <small class="text-left">Recorded by: Nigel Cheshire</small>
                 <small class="text-left">Date: 20 May 2015</small>
               </div>
-              <div class="col-sm-6">
+              <div class="col-xs-6">
                 <small class="text-right">Last edited by: Nigel Cheshire</small>
                 <small class="text-right">Date: 21 May 2015</small>
               </div>

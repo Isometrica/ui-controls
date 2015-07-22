@@ -19,16 +19,6 @@
     }
   }
 
-  .bootcards-list {
-    .panel-body:first-child {
-      border-bottom: 1px solid #ddd;
-
-      select {
-        padding-left: 12px;
-      }
-    }
-  }
-
   .list-group-item {
     i.pull-left {
       font-size: 32px;
@@ -139,6 +129,10 @@
     bottom: 0;
     padding-top: 0;
     height: auto;
+
+    @media (max-width: 767px) {
+      top: 44px;
+    }
   }
 
   @media (max-width: 767px) {
@@ -209,12 +203,12 @@
         }
 
         .btn-default {
-          border-color: #ddd;
+          //border-color: #ddd;
         }
 
         .active {
-          background: #007aff;
-          border-color: #007aff;
+          //background: #007aff;
+          //border-color: #007aff;
           box-shadow: none;
           opacity: 1;
         }
@@ -230,23 +224,6 @@
 }
 
 .android.isometrica-meetings {
-  .bootcards-container {
-    position: fixed;
-    top: 102px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    padding-top: 0;
-    height: auto;
-  }
-
-  @media (max-width: 767px) {
-    .bootcards-cards {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-
   .bootcards-list {
     select {
       border-bottom: 0;
@@ -264,12 +241,13 @@
 
       .btn-group {
         .btn {
-          border-color: #ddd;
+          //border-color: #ddd;
+          box-shadow: none;
         }
         .active {
-          background: #33b5e5;
-          border-color: #33b5e5;
-          box-shadow: none;
+          //background: #33b5e5;
+          //border-color: #33b5e5;
+          //box-shadow: none;
         }
       }
 

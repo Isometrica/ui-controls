@@ -6,22 +6,6 @@
     padding-top: 80px;
   }
 
-  .guidance-bar {
-    height: 52px;
-    overflow: hidden;
-
-    @media (max-width: 767px) {
-      h4 {
-        font-size: 14px;
-      }
-    }
-
-    .btn-group {
-      margin: -13px 0;
-      margin-right: -15px;
-    }
-  }
-
   .isometrica-address-book-select {
     border-bottom: 1px solid #ddd;
 
@@ -47,9 +31,6 @@
     }
   }
 
-  .panel-body:first-child {
-    border-bottom: 1px solid #ddd;
-  }
 
   .phone-numbers {
     .list-group-item-text {
@@ -99,33 +80,7 @@
 
 }
 
-.ios.isometrica-address-book {
-  .bootcards-container {
-    padding-top: 52px;
-    position: fixed;
-    top: 44px;
-    left: 0;
-    right: 0;
-    bottom: 0;
 
-    select {
-      padding-left: 12px;
-    }
-  }
-
-  .bootcards-cards {
-    @media (max-width: 767px) {
-      padding-left: 0;
-      padding-right: 0;
-    }
-  }
-}
-
-.android.isometrica-address-book {
-  .bootcards-container {
-    padding-top: 52px;
-  }
-}
 
 
 /* Edit MOdal */

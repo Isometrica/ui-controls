@@ -49,7 +49,7 @@ input.form-value {
 	position: absolute;
 	right: 12px;
 	top: 0;
-	font-size: 18px;
+	font-size: 21px !important;
 	line-height: 22px;
 	color: #bbb !important;
 	transition: all 0.3s ease;
@@ -64,18 +64,95 @@ input.form-value {
 	}
 }
 
+.ios .clear-field {
+  right: 4px;
+}
+
 .android .clear-field {
-	right: 5px;
+	right: 3px;
+	top: 3px;
 }
 
 .help-icon {
-  margin-left: 5px;
+  margin-right: 5px;
   color: #bbb;
+
+  i {
+    font-size: 21px;
+  }
 
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
 
+/* BUTTONS */
+
+.android {
+  .btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary {
+    background: #33b5e5;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #23a5d5;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
+  .btn-default {
+    background: #dfdfdf;
+    font-size: 14px;
+    color: #444;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #cecece;
+      color: #444;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
+  .modal-header,
+  .panel-heading {
+    .btn {
+      background: transparent;
+      color: #23527c;
+      box-shadow: none;
+      font-size: 14px;
+    }
+  }
+}
+
+
+/* FORMS */
+
+.android {
+  .form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .form-horizontal .form-group .control-label:first-child {
+    padding-left: 15px;
+  }
+
+  .form-horizontal .form-group div:last-child {
+    padding-right: 15px;
+  }
+}
 
 
 /* NAV */
@@ -88,7 +165,7 @@ input.form-value {
     position: absolute;
     left: 0;
     right: 0;
-    z-index: -1;
+    z-index: 1;
   }
 
   .btn {
@@ -106,14 +183,26 @@ input.form-value {
   		margin: 0;
   	}
 
+
+
   	&.navbar-left {
-  		float: left;
-  		margin-left: -15px;
+  		//float: left;
+  		//margin-left: -15px;
+  		position: absolute;
+  		left: 0;
+  		top: 1px;
+  		z-index: 2;
+  		margin: 0;
   	}
 
   	&.navbar-right {
-  		float: right;
-  		margin-right: -15px;
+  		//float: right;
+  		//margin-right: -15px;
+  		position: absolute;
+  		right: 0;
+  		top: 1px;
+  		z-index: 2;
+  		margin: 0;
   	}
   }
 }
@@ -147,12 +236,262 @@ input.form-value {
   display: none !important;
 }
 
-.android .navbar .btn {
-  line-height: 50px;
+.android {
+  .navbar {
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    border-color: transparent;
+
+    .navbar-brand {
+      font-size: 20px;
+      padding-left: 15px !important;
+      color: white !important;
+    }
+    .btn {
+      line-height: 50px;
+    }
+  }
+}
+
+.ios .bootcards-navbar-double {
+  .container > .navbar-right {
+    position: absolute;
+    left: 0;
+    right: auto;
+  }
+
+  .navbar-header {
+    overflow: hidden;
+  }
+
+  .navbar-collapse {
+    border:0;
+    background: white !important;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    max-height: none;
+
+    .navbar-nav {
+      margin: 0 !important;
+    }
+
+    .navbar-nav>li>a {
+      color: #333;
+      font-size: 15px;
+
+      .label {
+        position: relative;
+        top: -2px;
+        left: 3px;
+      }
+    }
+  }
+}
+
+.android .bootcards-navbar-double {
+  .container > .navbar-right {
+    float: left !important;
+
+    .btn {
+      height: 50px;
+    }
+  }
+
+  .navbar-brand {
+    margin: 0;
+  }
+
+  .navbar-header {
+    overflow: hidden;
+  }
+
+  .navbar-collapse {
+    border:0;
+    background: white !important;
+    color: #333;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+    max-height: none;
+
+    .navbar-nav {
+      margin: 0 !important;
+    }
+
+    .navbar-nav>li>a {
+      color: #333;
+      font-size: 16px;
+      padding: 15px;
+
+      .label {
+        position: relative;
+        top: -3px;
+        left: 3px;
+      }
+    }
+  }
 }
 
 
+/* NAVBAR FILTER DROPDOWN */
+
+.navbar-header {
+  .navbar-brand.dropdown-toggle {
+    cursor: pointer;
+
+    i {
+      font-size: 12px;
+      position: relative;
+      top: -3px;
+      left: 2px;
+      opacity: 0.5;
+      transition: opacity 0.3s ease;
+    }
+  }
+
+  &.open .navbar-brand.dropdown-toggle i {
+    opacity: 1;
+  }
+
+  .dropdown-menu {
+    width: 200px;
+    left: 50%;
+    margin-left: -100px;
+    text-align: center;
+
+    a {
+      padding: 7px 15px;
+    }
+
+    .active a {
+      background: #eee;
+      color: #333;
+    }
+  }
+}
+
+.ios .navbar-header {
+  .dropdown-menu {
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    font-size: 15px;
+    font-weight: 500;
+
+    a {
+      padding: 12px 20px;
+      font-size: 16px;
+    }
+
+    .active a {
+      background: #007aff;
+      color: white;
+    }
+  }
+}
+
+.android .navbar-header {
+  .dropdown-menu {
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: 0;
+    border-radius: 0;
+    border: 0;
+    padding: 0;
+    text-align: left;
+
+    a {
+      padding: 15px 20px;
+      font-size: 16px;
+    }
+
+    .active a {
+      background: #33b5e5;
+      color: white;
+    }
+  }
+}
+
+
+
+
+
 /* MOBILE LIST VIEWS */
+
+.isometrica-container-listdetail {
+  .guidance-bar {
+    height: 52px;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      h4 {
+        font-size: 14px;
+      }
+    }
+
+    .btn-group {
+      margin: -13px 0;
+      margin-right: -15px;
+    }
+  }
+}
+
+.ios {
+  .isometrica-container-listdetail {
+    position: fixed;
+    top: 96px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+    height: auto;
+
+    @media (max-width: 767px) {
+      top: 44px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .bootcards-cards {
+      //padding-left: 0;
+      //padding-right: 0;
+
+      padding: 0;
+    }
+  }
+}
+
+.android {
+  .isometrica-container-listdetail {
+    padding-top: 0 !important;
+    position: fixed;
+    top: 102px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
+    height: auto;
+
+    @media (max-width: 767px) {
+      top: 50px;
+    }
+  }
+
+  @media (max-width: 767px) {
+    .bootcards-cards {
+      padding-left: 0;
+      padding-right: 0;
+
+
+      > .panel {
+        border-left: 0;
+        border-right: 0;
+      }
+    }
+  }
+}
 
 .isometrica-mobile-list-view-container {
   padding-top: 15px;
@@ -240,12 +579,7 @@ input.form-value {
 }
 
 .android .guidance-bar {
-  -webkit-box-shadow: none;
-  border: 0;
-
-  .btn {
-    //line-height: 20px;
-  }
+  box-shadow: 0 1px 2px rgba(0,0,0,0.3);
 }
 
 
@@ -312,6 +646,16 @@ input.form-value {
 .android .modal-dialog {
 	.modal-header {
 		padding: 0;
+    //background: #33b5e5;
+    //background: #444;
+    border-color: transparent;
+    background: #eee;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.3);
+
+    .modal-title {
+      font-size: 20px;
+      //color: white;
+    }
 
     .pull-left {
       position: absolute;
@@ -331,6 +675,8 @@ input.form-value {
 			padding: 0 15px;
 			line-height: 50px;
 			margin-top: 0;
+			color: #33b5e5;
+			//font-size: 14px;
 
 			i {
 				vertical-align: 0;
@@ -441,6 +787,20 @@ input.form-value {
       	margin-top: -10px;
     	}
   	}
+  }
+}
+
+
+.android {
+  .panel-heading {
+    .btn {
+      color: #33b5e5 !important;
+    }
+
+    .panel-title {
+      color: #333;
+      padding: 8px 0;
+    }
   }
 }
 
