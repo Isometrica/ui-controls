@@ -226,7 +226,7 @@ input.form-value {
   cursor: pointer; }
   .navbar-header .navbar-brand.dropdown-toggle i {
     position: relative;
-    top: -3px;
+    top: -2px;
     left: 2px; }
 
 .navbar-header .dropdown-menu {
