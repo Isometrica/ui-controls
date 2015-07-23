@@ -84,6 +84,12 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
+.ios {
+  .form-horizontal .form-group .control-label {
+    padding-top: 6px;
+  }
+}
+
 
 /* BUTTONS */
 
@@ -337,17 +343,11 @@ input.form-value {
     cursor: pointer;
 
     i {
-      font-size: 12px;
+      //font-size: 12px;
       position: relative;
       top: -3px;
       left: 2px;
-      opacity: 0.5;
-      transition: opacity 0.3s ease;
     }
-  }
-
-  &.open .navbar-brand.dropdown-toggle i {
-    opacity: 1;
   }
 
   .dropdown-menu {
@@ -585,6 +585,10 @@ input.form-value {
 
 
 /* MODALS */
+
+.modal-footer small, .panel-footer small {
+  text-align: inherit !important;
+}
 
 .desktop .modal-dialog {
   .modal-header {

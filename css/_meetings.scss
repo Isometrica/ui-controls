@@ -203,14 +203,14 @@
         }
 
         .btn-default {
-          //border-color: #ddd;
+          border-color: #ddd;
         }
 
-        .active {
-          //background: #007aff;
-          //border-color: #007aff;
+        .btn-primary {
+          background: #007aff;
+          border-color: #007aff;
           box-shadow: none;
-          opacity: 1;
+          color: white;
         }
       }
     }
@@ -240,14 +240,10 @@
       }
 
       .btn-group {
+        margin-top: 4px;
+
         .btn {
-          //border-color: #ddd;
           box-shadow: none;
-        }
-        .active {
-          //background: #33b5e5;
-          //border-color: #33b5e5;
-          //box-shadow: none;
         }
       }
 

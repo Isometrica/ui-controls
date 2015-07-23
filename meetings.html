@@ -65,14 +65,13 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Recent meetings
+          Meetings - all
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">Recent meetings</a></li>
-          <li><a href="#">All meetings</a></li>
-          <li><a href="#">Agenda items</a></li>
-          <li><a href="#">Open meeting activities</a></li>
+          <li class="active"><a href="#">Meetings - all</a></li>
+          <li><a href="#">Meetings - recent</a></li>
+          <li><a href="#">Meetings - with open items</a></li>
         </ul>
       </div>
     </div>
@@ -208,8 +207,16 @@
             </div>
           </div>
           <div class="panel-footer">
-            <small class="pull-left">Last edited by J.Smith</small>
-            <small class="pull-right">20 Jan 2015</small>
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
+              </div>
+              <div class="col-xs-6">
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
+              </div>
+            </div>
           </div>
 				</div>
 			</div>
@@ -237,8 +244,8 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-2">Type</label>
-              <div class="col-xs-10">
+              <label class="control-label col-xs-2 col-sm-4">Type</label>
+              <div class="col-xs-10 col-sm-8">
                 <input type="text" class="form-control" value="" placeholder="Type"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -246,8 +253,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-2">Date</label>
-              <div class="col-xs-10">
+              <label class="control-label col-xs-2 col-sm-4">Date</label>
+              <div class="col-xs-10 col-sm-8">
                 <input type="text" class="form-control" value="" placeholder="Date"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -255,8 +262,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-2">Notes</label>
-              <div class="col-xs-10">
+              <label class="control-label col-xs-2 col-sm-4">Notes</label>
+              <div class="col-xs-10 col-sm-8">
                 <input type="text" class="form-control" value="" placeholder="Notes"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -362,27 +369,27 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-2">Type</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" value="Monthly management"/>
+              <label class="control-label col-xs-2 col-sm-4">Type</label>
+              <div class="col-xs-10 col-sm-8">
+                <input type="text" class="form-control" value="Monthly management" placeholder="Type"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-2">Date</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" value="20 May 2015"/>
+              <label class="control-label col-xs-2 col-sm-4">Date</label>
+              <div class="col-xs-10 col-sm-8">
+                <input type="text" class="form-control" value="20 May 2015" placeholder="Date"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-2">Notes</label>
-              <div class="col-xs-10">
-                <input type="text" class="form-control" value=""/>
+              <label class="control-label col-xs-2 col-sm-4">Notes</label>
+              <div class="col-xs-10 col-sm-8">
+                <input type="text" class="form-control" value="" placeholder="Notes"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -803,7 +810,7 @@
                     <div class="col-sm-2 col-xs-2">
                       MD
                     </div>
-                    <div class="col-sm-2 col-xs-10">
+                    <div class="col-sm-2 col-xs-10 text-right">
                       20 May 2015
                     </div>
                   </div>
@@ -820,7 +827,7 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label long-label col-xs-3">Linked to agenda item</label>
+          		        <label class="control-label col-xs-3">Linked to agenda item</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="FY2015 plan">
           			        <button type="button" class="btn btn-link clear-field">
@@ -878,7 +885,7 @@
                     <div class="col-sm-2 col-xs-2">
                       SI
                     </div>
-                    <div class="col-sm-2 col-xs-10">
+                    <div class="col-sm-2 col-xs-10 text-right">
                       20 May 2015
                     </div>
                   </div>
@@ -895,7 +902,7 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label long-label col-xs-3">Linked to agenda item</label>
+          		        <label class="control-label col-xs-3">Linked to agenda item</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="FY2015 plan">
           			        <button type="button" class="btn btn-link clear-field">
@@ -959,7 +966,7 @@
                     <div class="col-sm-2 col-xs-2">
                       NC
                     </div>
-                    <div class="col-sm-2 col-xs-10">
+                    <div class="col-sm-2 col-xs-10 text-right">
                       20 May 2015
                     </div>
                   </div>
@@ -976,7 +983,7 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label long-label col-xs-3">Linked to agenda item</label>
+          		        <label class="control-label col-xs-3">Linked to agenda item</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="FY2015 plan">
           			        <button type="button" class="btn btn-link clear-field">
@@ -1040,7 +1047,7 @@
                     <div class="col-sm-2 col-xs-2">
                       DC
                     </div>
-                    <div class="col-sm-2 col-xs-10">
+                    <div class="col-sm-2 col-xs-10 text-right">
                       20 June 2015
                     </div>
                   </div>
@@ -1057,7 +1064,7 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label long-label col-xs-3">Linked to agenda item</label>
+          		        <label class="control-label col-xs-3">Linked to agenda item</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="FY2015 plan">
           			        <button type="button" class="btn btn-link clear-field">
@@ -1115,7 +1122,7 @@
                     <div class="col-sm-2 col-xs-2">
                       DC
                     </div>
-                    <div class="col-sm-2 col-xs-10">
+                    <div class="col-sm-2 col-xs-10 text-right">
                       20 June 2015
                     </div>
                   </div>
@@ -1132,7 +1139,7 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label long-label col-xs-3">Linked to agenda item</label>
+          		        <label class="control-label col-xs-3">Linked to agenda item</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="FY2015 plan">
           			        <button type="button" class="btn btn-link clear-field">
@@ -1193,12 +1200,12 @@
           <div class="modal-footer">
             <div class="row">
               <div class="col-xs-6">
-                <small class="text-left">Recorded by: Nigel Cheshire</small>
-                <small class="text-left">Date: 20 May 2015</small>
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
               </div>
               <div class="col-xs-6">
-                <small class="text-right">Last edited by: Nigel Cheshire</small>
-                <small class="text-right">Date: 21 May 2015</small>
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
               </div>
             </div>
           </div>
