@@ -25,6 +25,9 @@ body.desktop {
   position: fixed;
 }
 
+
+/* FORMS */
+
 .btn {
   i.no-margin {
     margin: 0;
@@ -85,6 +88,12 @@ input.form-value {
 }
 
 .ios {
+  .form-horizontal .form-group .control-label {
+    padding-top: 6px;
+  }
+}
+
+.android {
   .form-horizontal .form-group .control-label {
     padding-top: 6px;
   }

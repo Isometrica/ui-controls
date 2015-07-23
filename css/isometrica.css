@@ -13,6 +13,7 @@ body.desktop {
 .modal-backdrop.in {
   position: fixed; }
 
+/* FORMS */
 .btn i.no-margin {
   margin: 0; }
 
@@ -57,6 +58,9 @@ input.form-value {
     color: #23527c; }
 
 .ios .form-horizontal .form-group .control-label {
+  padding-top: 6px; }
+
+.android .form-horizontal .form-group .control-label {
   padding-top: 6px; }
 
 /* BUTTONS */
