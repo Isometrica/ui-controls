@@ -68,7 +68,7 @@ input.form-value {
 }
 
 .ios .clear-field {
-  right: 4px;
+  //right: 4px;
 }
 
 .android .clear-field {
@@ -88,8 +88,22 @@ input.form-value {
 }
 
 .ios {
+
+  .form-horizontal .form-group:last-child {
+    margin-bottom: 0;
+  }
+
   .form-horizontal .form-group .control-label {
     padding-top: 6px;
+
+  }
+
+  .form-horizontal .form-group > :first-child {
+    padding-left: 15px !important;
+  }
+
+  .form-horizontal .form-group > :last-child {
+    padding-right: 15px !important;
   }
 }
 
@@ -111,7 +125,8 @@ input.form-value {
     transition: all 0.3s ease;
   }
 
-  .btn-primary {
+  .btn-primary,
+  .btn-info {
     background: #33b5e5;
     color: white;
     font-size: 14px;
@@ -425,12 +440,11 @@ input.form-value {
 }
 
 
-
-
-
-/* MOBILE LIST VIEWS */
+/* COMMON LIST-DETAIL VIEWS */
 
 .isometrica-container-listdetail {
+  padding-top: 80px;
+
   .guidance-bar {
     height: 52px;
     overflow: hidden;
@@ -446,6 +460,28 @@ input.form-value {
       margin-right: -15px;
     }
   }
+
+  .list-group-item {
+    i.pull-left {
+      font-size: 32px;
+      position: relative;
+      top: 4px;
+    }
+    .list-group-item-content {
+      overflow: hidden;
+    }
+  }
+
+  .bootcards-cards {
+    .list-group-item {
+      i {
+        width: auto;
+        opacity: 1;
+        margin-right: 5px;
+      }
+    }
+  }
+
 }
 
 .ios {
@@ -502,6 +538,9 @@ input.form-value {
     }
   }
 }
+
+
+/* MOBILE-ONLY LIST VIEWS */
 
 .isometrica-mobile-list-view-container {
   padding-top: 15px;
@@ -829,3 +868,4 @@ input.form-value {
 @import "_dashboard.scss";
 @import "_communications.scss";
 @import "_meetings.scss";
+@import "_work-inbox.scss";

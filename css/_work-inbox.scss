@@ -1,0 +1,107 @@
+.isometrica-work-inbox {
+  .bootcards-list {
+    .list-group-item {
+      padding-right: 40px;
+    }
+
+
+  }
+
+    .text-info {
+      color: #46b8da;
+    }
+
+  .label {
+    border-radius: 2px;
+    display: inline-block;
+    padding: 4px 7px;
+  }
+
+  .bootcards-cards {
+    .panel-title {
+      i.pull-left {
+        font-size: 32px;
+        line-height: 34px;
+        margin-right: 15px;
+        margin-top: -8px;
+        margin-left: 4px;
+        opacity: 0.3;
+      }
+    }
+
+    .list-group-item-text {
+      &.pull-left, &.pull-right {
+        margin-bottom: 0;
+      }
+    }
+
+
+
+    .list-group {
+      .row {
+        margin: 0;
+
+        > div {
+          padding: 0;
+        }
+
+        .list-group-item {
+          border-width: 1px 0;
+        }
+      }
+    }
+  }
+}
+
+.android.isometrica-work-inbox {
+
+  .bootcards-cards {
+    .row {
+      margin-top: 1px;
+      margin-bottom: -1px;
+    }
+    .row > div > .list-group-item:last-child {
+      border-bottom: 1px solid #ddd !important;
+    }
+  }
+
+  .modal {
+    .btn-group {
+      margin-bottom: 5px;
+
+      .btn {
+        box-shadow: none;
+      }
+    }
+  }
+
+}
+
+.ios.isometrica-work-inbox {
+
+  .bootcards-cards {
+    .row {
+      margin-top: 1px;
+      margin-bottom: -1px;
+    }
+    .row > div > .list-group-item:last-child {
+      border-bottom: 1px solid #ddd !important;
+    }
+  }
+
+  .modal {
+    .btn-group {
+      //margin-bottom: 5px;
+      margin-right: 10px;
+
+      .btn {
+        box-shadow: none;
+        padding-left: 10px;
+        padding-right: 10px;
+        background: #007aff;
+        color: white;
+      }
+    }
+  }
+
+}

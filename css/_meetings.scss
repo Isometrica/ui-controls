@@ -1,38 +1,13 @@
 .isometrica-meetings {
-  .bootcards-container {
-    padding-top: 80px;
-  }
-
-  .guidance-bar {
-    height: 52px;
-    overflow: hidden;
-
-    @media (max-width: 767px) {
-      h4 {
-        font-size: 14px;
-      }
-    }
-
-    .btn-group {
-      margin: -13px 0;
-      margin-right: -15px;
-    }
-  }
-
-  .list-group-item {
-    i.pull-left {
-      font-size: 32px;
-      position: relative;
-      top: 4px;
-    }
-  }
 
   .bootcards-cards {
-    .avatar {
-      border-radius: 50%;
-      margin-right: 5px;
-      height: 32px;
-      width: 32px;
+    .list-group-item {
+      i {
+        opacity: 0.3;
+        margin-right: 15px;
+        //position: relative;
+        //top: 6px;
+      }
     }
   }
 
@@ -145,8 +120,8 @@
   .form-group {
     border-bottom: 0;
     border-top: 1px solid #ddd;
-    padding-left: 10px;
-    padding-right: 10px;
+    //padding-left: 10px;
+    //padding-right: 10px;
 
     &:first-child {
       border-top: 0;
@@ -174,7 +149,7 @@
     }
 
     .btn-add {
-      margin-top: -10px;
+      //margin-top: -10px;
     }
 
     .bootcards-panel-collapsing {
@@ -192,7 +167,7 @@
       }
 
       .panel-body {
-        padding-bottom: 5px;
+        padding-bottom: 0;
       }
 
       // Toggle

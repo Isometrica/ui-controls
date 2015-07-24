@@ -42,9 +42,6 @@ input.form-value {
   .clear-field i {
     margin: 0 !important; }
 
-.ios .clear-field {
-  right: 4px; }
-
 .android .clear-field {
   right: 3px;
   top: 3px; }
@@ -57,8 +54,17 @@ input.form-value {
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
 
+.ios .form-horizontal .form-group:last-child {
+  margin-bottom: 0; }
+
 .ios .form-horizontal .form-group .control-label {
   padding-top: 6px; }
+
+.ios .form-horizontal .form-group > :first-child {
+  padding-left: 15px !important; }
+
+.ios .form-horizontal .form-group > :last-child {
+  padding-right: 15px !important; }
 
 .android .form-horizontal .form-group .control-label {
   padding-top: 6px; }
@@ -71,13 +77,18 @@ input.form-value {
   border-radius: 3px;
   transition: all 0.3s ease; }
 
-.android .btn-primary {
+.android .btn-primary,
+.android .btn-info {
   background: #33b5e5;
   color: white;
   font-size: 14px;
   text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-primary:hover, .android .btn-primary:focus, .android .btn-primary:active, .android .btn-primary.active {
+  .android .btn-primary:hover,
+  .android .btn-primary:focus,
+  .android .btn-primary:active,
+  .android .btn-primary.active,
+  .android .btn-info:hover, .android .btn-info:focus, .android .btn-info:active, .android .btn-info.active {
     background: #23a5d5;
     color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
@@ -278,16 +289,28 @@ input.form-value {
     background: #33b5e5;
     color: white; }
 
-/* MOBILE LIST VIEWS */
-.isometrica-container-listdetail .guidance-bar {
-  height: 52px;
-  overflow: hidden; }
-  @media (max-width: 767px) {
-    .isometrica-container-listdetail .guidance-bar h4 {
-      font-size: 14px; } }
-  .isometrica-container-listdetail .guidance-bar .btn-group {
-    margin: -13px 0;
-    margin-right: -15px; }
+/* COMMON LIST-DETAIL VIEWS */
+.isometrica-container-listdetail {
+  padding-top: 80px; }
+  .isometrica-container-listdetail .guidance-bar {
+    height: 52px;
+    overflow: hidden; }
+    @media (max-width: 767px) {
+      .isometrica-container-listdetail .guidance-bar h4 {
+        font-size: 14px; } }
+    .isometrica-container-listdetail .guidance-bar .btn-group {
+      margin: -13px 0;
+      margin-right: -15px; }
+  .isometrica-container-listdetail .list-group-item i.pull-left {
+    font-size: 32px;
+    position: relative;
+    top: 4px; }
+  .isometrica-container-listdetail .list-group-item .list-group-item-content {
+    overflow: hidden; }
+  .isometrica-container-listdetail .bootcards-cards .list-group-item i {
+    width: auto;
+    opacity: 1;
+    margin-right: 5px; }
 
 .ios .isometrica-container-listdetail {
   position: fixed;
@@ -326,6 +349,7 @@ input.form-value {
       border-left: 0;
       border-right: 0; } }
 
+/* MOBILE-ONLY LIST VIEWS */
 .isometrica-mobile-list-view-container {
   padding-top: 15px; }
   .isometrica-mobile-list-view-container .bootcards-list {
@@ -1931,22 +1955,6 @@ input.form-value {
       line-height: 28px; }
 
 /* ADDRESS BOOK */
-.isometrica-address-book .bootcards-container {
-  padding-top: 80px; }
-
-.isometrica-address-book .isometrica-address-book-select {
-  border-bottom: 1px solid #ddd; }
-  .isometrica-address-book .isometrica-address-book-select .list-group-item i {
-    position: absolute;
-    left: 0;
-    width: auto; }
-  .isometrica-address-book .isometrica-address-book-select .list-group-item .list-group-item-heading {
-    padding-left: 34px;
-    position: relative; }
-  .isometrica-address-book .isometrica-address-book-select .collapse .list-group-item:before {
-    display: none;
-    /* Hide disclosure indicators */ }
-
 .isometrica-address-book .phone-numbers .list-group-item-text {
   margin-bottom: 10px; }
 
@@ -2274,32 +2282,6 @@ input.form-value {
   padding-left: 15px;
   padding-right: 15px; }
 
-.isometrica-communications-log .bootcards-container {
-  padding-top: 80px; }
-
-.isometrica-communications-log .guidance-bar {
-  height: 52px;
-  overflow: hidden; }
-  @media (max-width: 767px) {
-    .isometrica-communications-log .guidance-bar h4 {
-      font-size: 14px; } }
-  .isometrica-communications-log .guidance-bar .btn-group {
-    margin: -13px 0;
-    margin-right: -15px; }
-
-.isometrica-communications-log .bootcards-list .list-group-item-content {
-  overflow: hidden; }
-
-.isometrica-communications-log .bootcards-list .list-group-item i {
-  font-size: 36px;
-  top: 2px;
-  position: relative; }
-
-.isometrica-communications-log .bootcards-cards .list-group-item i {
-  width: auto;
-  opacity: 1;
-  margin-right: 5px; }
-
 /* Edit MOdal */
 .isometrica-communications-edit-modal .isometrica-workbook-modal-subheading {
   margin: 0 0 15px;
@@ -2372,29 +2354,9 @@ input.form-value {
 .android.isometrica-communications-log .isometrica-communications-edit-modal input[disabled] {
   background: transparent; }
 
-.isometrica-meetings .bootcards-container {
-  padding-top: 80px; }
-
-.isometrica-meetings .guidance-bar {
-  height: 52px;
-  overflow: hidden; }
-  @media (max-width: 767px) {
-    .isometrica-meetings .guidance-bar h4 {
-      font-size: 14px; } }
-  .isometrica-meetings .guidance-bar .btn-group {
-    margin: -13px 0;
-    margin-right: -15px; }
-
-.isometrica-meetings .list-group-item i.pull-left {
-  font-size: 32px;
-  position: relative;
-  top: 4px; }
-
-.isometrica-meetings .bootcards-cards .avatar {
-  border-radius: 50%;
-  margin-right: 5px;
-  height: 32px;
-  width: 32px; }
+.isometrica-meetings .bootcards-cards .list-group-item i {
+  opacity: 0.3;
+  margin-right: 15px; }
 
 .isometrica-meetings .isometrica-meetings-modal .modal-content {
   overflow: hidden; }
@@ -2462,9 +2424,7 @@ input.form-value {
 
 .ios.isometrica-meetings .form-group {
   border-bottom: 0;
-  border-top: 1px solid #ddd;
-  padding-left: 10px;
-  padding-right: 10px; }
+  border-top: 1px solid #ddd; }
   .ios.isometrica-meetings .form-group:first-child {
     border-top: 0; }
   .ios.isometrica-meetings .form-group:last-child {
@@ -2481,9 +2441,6 @@ input.form-value {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-.ios.isometrica-meetings .isometrica-meetings-modal .btn-add {
-  margin-top: -10px; }
-
 .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing {
   border: 1px solid #ccc; }
   .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
@@ -2494,7 +2451,7 @@ input.form-value {
     padding-bottom: 10px;
     border-radius: 0; }
   .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {
-    padding-bottom: 5px; }
+    padding-bottom: 0; }
   .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
     padding-left: 10px;
     padding-right: 10px; }
@@ -2528,3 +2485,60 @@ input.form-value {
   padding-bottom: 0; }
   .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
     margin-bottom: 10px; }
+
+.isometrica-work-inbox .bootcards-list .list-group-item {
+  padding-right: 40px; }
+
+.isometrica-work-inbox .text-info {
+  color: #46b8da; }
+
+.isometrica-work-inbox .label {
+  border-radius: 2px;
+  display: inline-block;
+  padding: 4px 7px; }
+
+.isometrica-work-inbox .bootcards-cards .panel-title i.pull-left {
+  font-size: 32px;
+  line-height: 34px;
+  margin-right: 15px;
+  margin-top: -8px;
+  margin-left: 4px;
+  opacity: 0.3; }
+
+.isometrica-work-inbox .bootcards-cards .list-group-item-text.pull-left, .isometrica-work-inbox .bootcards-cards .list-group-item-text.pull-right {
+  margin-bottom: 0; }
+
+.isometrica-work-inbox .bootcards-cards .list-group .row {
+  margin: 0; }
+  .isometrica-work-inbox .bootcards-cards .list-group .row > div {
+    padding: 0; }
+  .isometrica-work-inbox .bootcards-cards .list-group .row .list-group-item {
+    border-width: 1px 0; }
+
+.android.isometrica-work-inbox .bootcards-cards .row {
+  margin-top: 1px;
+  margin-bottom: -1px; }
+
+.android.isometrica-work-inbox .bootcards-cards .row > div > .list-group-item:last-child {
+  border-bottom: 1px solid #ddd !important; }
+
+.android.isometrica-work-inbox .modal .btn-group {
+  margin-bottom: 5px; }
+  .android.isometrica-work-inbox .modal .btn-group .btn {
+    box-shadow: none; }
+
+.ios.isometrica-work-inbox .bootcards-cards .row {
+  margin-top: 1px;
+  margin-bottom: -1px; }
+
+.ios.isometrica-work-inbox .bootcards-cards .row > div > .list-group-item:last-child {
+  border-bottom: 1px solid #ddd !important; }
+
+.ios.isometrica-work-inbox .modal .btn-group {
+  margin-right: 10px; }
+  .ios.isometrica-work-inbox .modal .btn-group .btn {
+    box-shadow: none;
+    padding-left: 10px;
+    padding-right: 10px;
+    background: #007aff;
+    color: white; }
