@@ -2593,6 +2593,26 @@ input.form-value {
 
 .isometrica-work-inbox .bootcards-list .list-group-item {
   padding-right: 40px; }
+  .isometrica-work-inbox .bootcards-list .list-group-item .list-group-item-heading {
+    position: relative; }
+  .isometrica-work-inbox .bootcards-list .list-group-item .work-icon {
+    position: relative; }
+  .isometrica-work-inbox .bootcards-list .list-group-item .label {
+    border-radius: 50%;
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    z-index: 9;
+    width: 24px;
+    height: 24px;
+    padding: 0; }
+    .isometrica-work-inbox .bootcards-list .list-group-item .label i {
+      color: white;
+      opacity: 1;
+      font-size: 18px;
+      width: auto;
+      margin: 0;
+      line-height: 24px; }
 
 .isometrica-work-inbox .label {
   border-radius: 2px;
@@ -2628,8 +2648,8 @@ input.form-value {
     .isometrica-work-inbox .modal .isometrica-btn-toggle .btn {
       font-size: 12px;
       line-height: 20px;
-      padding-left: 8px;
-      padding-right: 8px; } }
+      padding-left: 7px;
+      padding-right: 7px; } }
 
 .android.isometrica-work-inbox .bootcards-cards .row {
   margin-top: 1px;

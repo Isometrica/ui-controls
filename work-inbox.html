@@ -69,12 +69,12 @@
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">Work - all items</a></li>
-          <li><a href="#">Work - open items</a></li>
-          <li><a href="#">Work - overdue items</a></li>
-          <li><a href="#">Work - by type</a></li>
-          <li><a href="#">Work - by coworkers</a></li>
-          <li><a href="#">Work - cancelled</a></li>
+          <li class="active"><a href="#">All items</a></li>
+          <li><a href="#">Open items</a></li>
+          <li><a href="#">Overdue items</a></li>
+          <li><a href="#">By type</a></li>
+          <li><a href="#">By coworkers</a></li>
+          <li><a href="#">Cancelled</a></li>
         </ul>
       </div>
     </div>
@@ -123,29 +123,45 @@
   				</div>
   				<div class="list-group">
   				  <a class="list-group-item">
-						  <i class="fa fa-check-square-o pull-left"></i>
+              <div class="work-icon pull-left">
+                <i class="fa fa-check-square-o pull-left"></i>
+                <span class="label label-danger"><i class="fa fa-exclamation"></i></span>
+              </div>
 							<h4 class="list-group-item-heading">Fix machine calibration</h4>
-              <p class="list-group-item-text">J.Jones, 3 Jun <span class="label label-danger pull-right">Overdue</span></p>
+              <p class="list-group-item-text">J.Jones, 3 Jun</p>
 						</a>
 						<a class="list-group-item">
-              <i class="fa fa-users pull-left"></i>
+  						<div class="work-icon pull-left">
+    						<span class="label label-warning"><i class="fa fa-clock-o"></i></span>
+                <i class="fa fa-users pull-left"></i>
+              </div>
 							<h4 class="list-group-item-heading">Test all components</h4>
-              <p class="list-group-item-text">P.Smith, 30 May <span class="label label-warning pull-right">In progress</span></p>
+              <p class="list-group-item-text">P.Smith, 30 May</p>
 						</a>
 						<a class="list-group-item">
-  						<i class="fa fa-bell-o pull-left"></i>
+  						<div class="work-icon pull-left">
+    						<span class="label label-warning"><i class="fa fa-clock-o"></i></span>
+    						<i class="fa fa-bell-o pull-left"></i>
+              </div>
 							<h4 class="list-group-item-heading">Refit old stock</h4>
-              <p class="list-group-item-text">A.Andrews, 20 May <span class="label label-warning pull-right">In progress</span></p>
+              <p class="list-group-item-text">A.Andrews, 20 May</p>
 						</a>
   				  <a class="list-group-item">
-    				  <i class="fa fa-medkit pull-left"></i>
+    				  <div class="work-icon pull-left">
+      				  <span class="label label-default"><i class="fa fa-times"></i></span>
+      				  <i class="fa fa-medkit pull-left"></i>
+              </div>
 							<h4 class="list-group-item-heading">Find better supplier</h4>
-              <p class="list-group-item-text">C.Cox, 10 May <span class="label label-default pull-right">Cancelled</span></p>
+              <p class="list-group-item-text">C.Cox, 10 May</p>
 						</a>
 						<a class="list-group-item">
-						  <i class="fa fa-list-ol pull-left"></i>
+  						<div class="work-icon pull-left">
+                <i class="fa fa-list-ol pull-left"></i>
+    						<span class="label label-success"><i class="fa fa-check"></i></span>
+              </div>
+
 							<h4 class="list-group-item-heading">Train sales staff</h4>
-              <p class="list-group-item-text">J.Johnson, 10 May <span class="label label-success pull-right">Closed</span></p>
+              <p class="list-group-item-text">J.Johnson, 10 May</p>
 						</a>
   				</div>
   			</div>
@@ -165,7 +181,7 @@
           <div class="list-group">
             <div class="list-group-item clearfix">
               <h4 class="list-group-item-heading pull-left">Ref <span class="label label-warning">CA129</span></h4>
-              <h4 class="list-group-item-heading pull-right">Created from <a href="#" class="btn btn-danger">NC216</a></h4>
+              <h4 class="list-group-item-heading pull-right">Created from <a href="#" class="btn btn-default">NC216</a></h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
