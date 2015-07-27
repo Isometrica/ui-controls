@@ -3,18 +3,12 @@
     .list-group-item {
       padding-right: 40px;
     }
-
-
   }
-
-    .text-info {
-      color: #46b8da;
-    }
 
   .label {
     border-radius: 2px;
     display: inline-block;
-    padding: 4px 7px;
+    padding: .25em .5em;
   }
 
   .bootcards-cards {
@@ -29,13 +23,17 @@
       }
     }
 
-    .list-group-item-text {
-      &.pull-left, &.pull-right {
-        margin-bottom: 0;
-      }
+    .label {
+      margin-bottom: -1px;
     }
 
+    .list-group-item-heading {
+      &.pull-left, &.pull-right {
+        margin-bottom: 0;
+        line-height: 34px;
 
+      }
+    }
 
     .list-group {
       .row {
@@ -47,6 +45,22 @@
 
         .list-group-item {
           border-width: 1px 0;
+        }
+      }
+    }
+  }
+
+  .modal {
+    .isometrica-btn-toggle {
+      overflow: hidden;
+      white-space: nowrap;
+
+      .btn {
+        @media (max-width: 767px) {
+          font-size: 12px;
+          line-height: 20px;
+          padding-left: 8px;
+          padding-right: 8px;
         }
       }
     }
@@ -95,11 +109,11 @@
       margin-right: 10px;
 
       .btn {
-        box-shadow: none;
-        padding-left: 10px;
-        padding-right: 10px;
-        background: #007aff;
-        color: white;
+        //box-shadow: none;
+        //padding-left: 10px;
+        //padding-right: 10px;
+        //background: #007aff;
+        //color: white;
       }
     }
   }

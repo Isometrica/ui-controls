@@ -209,6 +209,8 @@ body.desktop.isometrica-overview-page {
   .btn-add-org {
     margin-bottom: 20px;
   }
+
+
 }
 
 .isometrica-overview-add {
@@ -254,8 +256,8 @@ body.desktop.isometrica-overview-page {
 
 	.panel-body {
 		.isometrica-overview-item-heading {
-      overflow: hidden;
-      height: 75px;
+      //overflow: hidden;
+      //height: 75px;
 
   		.workbook-icon {
   			float: left;
@@ -272,7 +274,7 @@ body.desktop.isometrica-overview-page {
   		}
 
 			.org-name {
-    		margin-bottom: 5px;
+    		margin-bottom: 0;
     		line-height: 20px;
     		white-space: nowrap;
     		overflow: hidden;
@@ -284,13 +286,16 @@ body.desktop.isometrica-overview-page {
 			overflow: hidden;
 			margin: 0;
 			margin-bottom: 5px;
+
 		}
 
 		.description {
   		margin-bottom: 15px;
   		line-height: 20px;
-  		height: 40px;
+  		height: 50px;
   		overflow: hidden;
+  		clear: both;
+  		padding-top: 10px;
 
   		@media (max-width: 767px) {
     		height: auto;
@@ -336,6 +341,12 @@ body.desktop.isometrica-overview-page {
     display: block;
     text-align: center;
     padding: 7px 0;
+  }
+
+  .panel-footer {
+    background: transparent;
+    text-align: center;
+    line-height: 34px;
   }
 
 	.users {

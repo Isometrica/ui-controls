@@ -51,7 +51,7 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
-          <a class="btn btn-link icon-only" href="dashboard.html">
+          <a class="btn btn-link icon-only" href="overview-multiorg.html">
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
@@ -65,19 +65,16 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          All work items
+          Work - all items
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">All work items</a></li>
-          <li><a href="#">Open items</a></li>
-          <li><a href="#">Overdue items</a></li>
-          <li><a href="#">Corrective items</a></li>
-          <li><a href="#">Meeting actions</a></li>
-          <li><a href="#">Audit actions</a></li>
-          <li><a href="#">Approved requests</a></li>
-          <li><a href="#">Read requests</a></li>
-          <li><a href="#">Coworkers' items</a></li>
+          <li class="active"><a href="#">Work - all items</a></li>
+          <li><a href="#">Work - open items</a></li>
+          <li><a href="#">Work - overdue items</a></li>
+          <li><a href="#">Work - by type</a></li>
+          <li><a href="#">Work - by coworkers</a></li>
+          <li><a href="#">Work - cancelled</a></li>
         </ul>
       </div>
     </div>
@@ -128,27 +125,27 @@
   				  <a class="list-group-item">
 						  <i class="fa fa-check-square-o pull-left"></i>
 							<h4 class="list-group-item-heading">Fix machine calibration</h4>
-              <p class="list-group-item-text">J.Jones, 3 Jun <span class="text-info pull-right">Open</span></p>
+              <p class="list-group-item-text">J.Jones, 3 Jun <span class="label label-danger pull-right">Overdue</span></p>
 						</a>
 						<a class="list-group-item">
               <i class="fa fa-users pull-left"></i>
 							<h4 class="list-group-item-heading">Test all components</h4>
-              <p class="list-group-item-text">P.Smith, 30 May <span class="text-info pull-right">Open</span></p>
+              <p class="list-group-item-text">P.Smith, 30 May <span class="label label-warning pull-right">In progress</span></p>
 						</a>
 						<a class="list-group-item">
   						<i class="fa fa-bell-o pull-left"></i>
 							<h4 class="list-group-item-heading">Refit old stock</h4>
-              <p class="list-group-item-text">A.Andrews, 20 May <span class="text-info pull-right">Open</span></p>
+              <p class="list-group-item-text">A.Andrews, 20 May <span class="label label-warning pull-right">In progress</span></p>
 						</a>
   				  <a class="list-group-item">
     				  <i class="fa fa-medkit pull-left"></i>
 							<h4 class="list-group-item-heading">Find better supplier</h4>
-              <p class="list-group-item-text">C.Cox, 10 May <span class="text-info pull-right">Open</span></p>
+              <p class="list-group-item-text">C.Cox, 10 May <span class="label label-default pull-right">Cancelled</span></p>
 						</a>
 						<a class="list-group-item">
 						  <i class="fa fa-list-ol pull-left"></i>
 							<h4 class="list-group-item-heading">Train sales staff</h4>
-              <p class="list-group-item-text">J.Johnson, 10 May <span class="text-info pull-right">Open</span></p>
+              <p class="list-group-item-text">J.Johnson, 10 May <span class="label label-success pull-right">Closed</span></p>
 						</a>
   				</div>
   			</div>
@@ -167,8 +164,8 @@
 					</div>
           <div class="list-group">
             <div class="list-group-item clearfix">
-              <p class="list-group-item-text pull-left">Ref CA129</p>
-              <p class="list-group-item-text pull-right">Created from <span class="label label-default">NC216</span></p>
+              <h4 class="list-group-item-heading pull-left">Ref <span class="label label-warning">CA129</span></h4>
+              <h4 class="list-group-item-heading pull-right">Created from <a href="#" class="btn btn-danger">NC216</a></h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
@@ -192,7 +189,7 @@
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Created date</p>
-                  <h4 class="list-group-item-heading">3 June 2015</h4>
+                  <h4 class="list-group-item-heading">3 Jun 2015</h4>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -206,7 +203,7 @@
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Status</p>
-                  <h4 class="list-group-item-heading"><span class="text-info">Open</span></h4>
+                  <h4 class="list-group-item-heading clearfix"><span class="label label-warning pull-left">In progress</span></h4>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -270,13 +267,7 @@
             <div class="form-group">
               <label class="control-label col-xs-4">System</label>
               <div class="col-xs-8">
-                <select class="form-control">
-                  <option></option>
-                  <option>System name</option>
-                  <option>Lorem ipsum</option>
-                  <option>Dolor</option>
-                  <option>Est compendum</option>
-                </select>
+                <input type="text" class="form-control form-value" disabled="disabled" value="ABC"/>
               </div>
             </div>
             <div class="form-group">
@@ -300,12 +291,17 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Status</label>
               <div class="col-xs-8">
-                <select class="form-control">
-                  <option></option>
-                  <option>Open</option>
-                  <option>Closed</option>
-                  <option>Discarded</option>
-                </select>
+                <div class="btn-group isometrica-btn-toggle">
+                  <button type="button" class="btn btn-warning">
+                    Open
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Closed
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Cancelled
+                  </button>
+                </div>
               </div>
             </div>
             <div class="form-group">

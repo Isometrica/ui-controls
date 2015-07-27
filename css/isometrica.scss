@@ -105,16 +105,117 @@ input.form-value {
   .form-horizontal .form-group > :last-child {
     padding-right: 15px !important;
   }
+
+  textarea:focus, input:focus{
+    outline: 0;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .form-horizontal .form-group .btn {
+    margin: 1px 0;
+  }
 }
 
 .android {
+
+  textarea:focus, input:focus{
+    outline: 0;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
   .form-horizontal .form-group .control-label {
     padding-top: 6px;
+  }
+
+  .form-horizontal .form-group .btn {
+    margin: 2px 0;
   }
 }
 
 
 /* BUTTONS */
+
+.ios {
+  .btn {
+    transition: all 0.3s ease;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &:hover, &:focus, &:active, &.active {
+      outline: none;
+      opacity: 1 !important;
+    }
+  }
+
+  .form-horizontal .form-group .btn {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btn-primary {
+    background: #007aff;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #007aff;
+      color: white;
+    }
+  }
+
+  .btn-info {
+    background: #33b5e5;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #23a5d5;
+      color: white;
+    }
+  }
+
+  .btn-default {
+    background: white;
+    border-color: #ccc;
+    color: #444;
+
+    &:hover, &:focus, &:active, &.active {
+      background: white;
+      border: 1px solid #ccc;
+      color: #444;
+    }
+  }
+
+  .btn-warning {
+    background: #f0ad4e;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #f0ad4e;
+      color: white;
+    }
+  }
+
+  .btn-danger {
+    background: #d9534f;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #d9534f;
+      color: white;
+    }
+  }
+
+  .modal-header,
+  .panel-heading {
+    .btn {
+      background: transparent;
+      color: #007aff;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
 
 .android {
   .btn {
@@ -125,7 +226,21 @@ input.form-value {
     transition: all 0.3s ease;
   }
 
-  .btn-primary,
+  .btn-primary {
+    background: #337ab7;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #337ab7;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
   .btn-info {
     background: #33b5e5;
     color: white;
@@ -152,6 +267,28 @@ input.form-value {
       color: #444;
       box-shadow: 0 3px 6px rgba(0,0,0,0.3);
       outline: none;
+    }
+  }
+
+  .btn-warning {
+    background: #f0ad4e;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #f0ad4e;
+      color: white;
+    }
+  }
+
+  .btn-danger {
+    background: #d9534f;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #d9534f;
+      color: white;
     }
   }
 
@@ -458,6 +595,10 @@ input.form-value {
     .btn-group {
       margin: -13px 0;
       margin-right: -15px;
+
+      .btn i {
+        font-size: 21px;
+      }
     }
   }
 
@@ -486,6 +627,14 @@ input.form-value {
 
 .ios {
   .isometrica-container-listdetail {
+
+    .guidance-bar {
+      .btn {
+        line-height: 28px;
+        padding-right: 15px;
+      }
+    }
+
     position: fixed;
     top: 96px;
     left: 0;
@@ -511,6 +660,13 @@ input.form-value {
 
 .android {
   .isometrica-container-listdetail {
+
+    .guidance-bar {
+      .btn {
+        line-height: 28px;
+      }
+    }
+
     padding-top: 0 !important;
     position: fixed;
     top: 102px;
