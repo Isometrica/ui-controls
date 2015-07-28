@@ -32,6 +32,10 @@ body.desktop {
   i.no-margin {
     margin: 0;
   }
+
+  i.margin-left {
+    margin: 0 0 0 5px;
+  }
 }
 
 input.form-value {
@@ -630,7 +634,38 @@ input.form-value {
       }
     }
 
+    .isometrica-icon-group {
+      position: relative;
 
+      > i {
+        position: relative;
+        top: 4px;
+        font-size: 32px;
+        color: #999;
+      }
+
+      .label {
+        border-radius: 11px;
+        position: absolute;
+        left: -5px;
+        top: -5px;
+        z-index: 9;
+        height: 21px;
+        padding: 0 6px;
+        line-height: 21px;
+        font-size: 12px;
+
+        i {
+          color: white;
+          opacity: 1;
+          font-size: 16px;
+          width: auto;
+          margin: 0 -6px;
+          line-height: 21px;
+          width: 21px;
+        }
+      }
+    }
 
     .list-group-item-content {
       overflow: hidden;
@@ -645,6 +680,21 @@ input.form-value {
         margin-right: 5px;
       }
     }
+
+    .list-group { // Multiple form groups per row
+      .row {
+        margin: 0;
+
+        > div {
+          padding: 0;
+        }
+
+        .list-group-item {
+          border-width: 1px 0;
+        }
+      }
+    }
+
   }
 
 }
@@ -670,6 +720,19 @@ input.form-value {
     @media (max-width: 767px) {
       top: 44px;
     }
+
+
+    .bootcards-cards .list-group {
+      .row { // Multiple form groups per row
+        margin-bottom: -1px;
+      }
+
+      .row > div > .list-group-item:last-child {
+        border-top: 1px solid #ddd !important;
+      }
+    }
+
+
   }
 
   @media (max-width: 767px) {
@@ -703,6 +766,17 @@ input.form-value {
     @media (max-width: 767px) {
       top: 50px;
     }
+
+    .bootcards-cards .list-group {
+      .row { // Multiple form groups per row
+        margin-bottom: -1px;
+      }
+
+      .row > div > .list-group-item:last-child {
+        border-top: 1px solid #ddd !important;
+      }
+    }
+
   }
 
   @media (max-width: 767px) {

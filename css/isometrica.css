@@ -17,6 +17,9 @@ body.desktop {
 .btn i.no-margin {
   margin: 0; }
 
+.btn i.margin-left {
+  margin: 0 0 0 5px; }
+
 input.form-value {
   border-color: transparent !important;
   background: transparent !important;
@@ -417,12 +420,43 @@ input.form-value {
       top: 4px;
       font-size: 32px;
       color: #999; }
+  .isometrica-container-listdetail .list-group-item .isometrica-icon-group {
+    position: relative; }
+    .isometrica-container-listdetail .list-group-item .isometrica-icon-group > i {
+      position: relative;
+      top: 4px;
+      font-size: 32px;
+      color: #999; }
+    .isometrica-container-listdetail .list-group-item .isometrica-icon-group .label {
+      border-radius: 11px;
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      z-index: 9;
+      height: 21px;
+      padding: 0 6px;
+      line-height: 21px;
+      font-size: 12px; }
+      .isometrica-container-listdetail .list-group-item .isometrica-icon-group .label i {
+        color: white;
+        opacity: 1;
+        font-size: 16px;
+        width: auto;
+        margin: 0 -6px;
+        line-height: 21px;
+        width: 21px; }
   .isometrica-container-listdetail .list-group-item .list-group-item-content {
     overflow: hidden; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
     width: auto;
     opacity: 1;
     margin-right: 5px; }
+  .isometrica-container-listdetail .bootcards-cards .list-group .row {
+    margin: 0; }
+    .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+      padding: 0; }
+    .isometrica-container-listdetail .bootcards-cards .list-group .row .list-group-item {
+      border-width: 1px 0; }
 
 .ios .isometrica-container-listdetail {
   position: fixed;
@@ -438,6 +472,10 @@ input.form-value {
   @media (max-width: 767px) {
     .ios .isometrica-container-listdetail {
       top: 44px; } }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group .row {
+    margin-bottom: -1px; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
+    border-top: 1px solid #ddd !important; }
 
 @media (max-width: 767px) {
   .ios .bootcards-cards {
@@ -457,6 +495,10 @@ input.form-value {
   @media (max-width: 767px) {
     .android .isometrica-container-listdetail {
       top: 50px; } }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group .row {
+    margin-bottom: -1px; }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
+    border-top: 1px solid #ddd !important; }
 
 @media (max-width: 767px) {
   .android .bootcards-cards {
@@ -2612,22 +2654,6 @@ input.form-value {
     position: relative; }
   .isometrica-work-inbox .bootcards-list .list-group-item .work-icon {
     position: relative; }
-  .isometrica-work-inbox .bootcards-list .list-group-item .label {
-    border-radius: 50%;
-    position: absolute;
-    left: -5px;
-    top: -5px;
-    z-index: 9;
-    width: 21px;
-    height: 21px;
-    padding: 0; }
-    .isometrica-work-inbox .bootcards-list .list-group-item .label i {
-      color: white;
-      opacity: 1;
-      font-size: 16px;
-      width: auto;
-      margin: 0;
-      line-height: 21px; }
 
 .isometrica-work-inbox .label {
   border-radius: 2px;
@@ -2649,13 +2675,6 @@ input.form-value {
   margin-bottom: 0;
   line-height: 34px; }
 
-.isometrica-work-inbox .bootcards-cards .list-group .row {
-  margin: 0; }
-  .isometrica-work-inbox .bootcards-cards .list-group .row > div {
-    padding: 0; }
-  .isometrica-work-inbox .bootcards-cards .list-group .row .list-group-item {
-    border-width: 1px 0; }
-
 .isometrica-work-inbox .modal .isometrica-btn-toggle {
   overflow: hidden;
   white-space: nowrap; }
@@ -2666,24 +2685,10 @@ input.form-value {
       padding-left: 7px;
       padding-right: 7px; } }
 
-.android.isometrica-work-inbox .bootcards-cards .row {
-  margin-top: 1px;
-  margin-bottom: -1px; }
-
-.android.isometrica-work-inbox .bootcards-cards .row > div > .list-group-item:last-child {
-  border-bottom: 1px solid #ddd !important; }
-
 .android.isometrica-work-inbox .modal .btn-group {
   margin-bottom: 5px; }
   .android.isometrica-work-inbox .modal .btn-group .btn {
     box-shadow: none; }
-
-.ios.isometrica-work-inbox .bootcards-cards .row {
-  margin-top: 1px;
-  margin-bottom: -1px; }
-
-.ios.isometrica-work-inbox .bootcards-cards .row > div > .list-group-item:last-child {
-  border-bottom: 1px solid #ddd !important; }
 
 .ios.isometrica-work-inbox .modal .btn-group {
   margin-right: 10px; }
