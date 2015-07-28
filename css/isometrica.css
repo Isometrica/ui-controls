@@ -86,13 +86,25 @@ input.form-value {
   margin: 2px 0; }
 
 /* BUTTONS */
+.btn {
+  transition: all 0.3s ease; }
+
+.btn-default {
+  background: #e6e6e6;
+  border-color: #bbb; }
+  .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
+    background: white;
+    border-color: #bbb; }
+
 .ios .btn {
   transition: all 0.3s ease;
   padding-left: 12px;
   padding-right: 12px; }
   .ios .btn:hover, .ios .btn:focus, .ios .btn:active, .ios .btn.active {
     outline: none;
-    opacity: 1 !important; }
+    opacity: 1 !important;
+    padding-left: 12px;
+    padding-right: 12px; }
 
 .ios .form-horizontal .form-group .btn {
   padding-left: 12px;
@@ -113,12 +125,12 @@ input.form-value {
     color: white; }
 
 .ios .btn-default {
-  background: white;
-  border-color: #ccc;
+  background: #e6e6e6;
+  border-color: #bbb;
   color: #444; }
   .ios .btn-default:hover, .ios .btn-default:focus, .ios .btn-default:active, .ios .btn-default.active {
     background: white;
-    border: 1px solid #ccc;
+    border: 1px solid #bbb;
     color: #444; }
 
 .ios .btn-warning {
@@ -398,10 +410,13 @@ input.form-value {
       margin-right: -15px; }
       .isometrica-container-listdetail .guidance-bar .btn-group .btn i {
         font-size: 21px; }
-  .isometrica-container-listdetail .list-group-item i.pull-left {
-    font-size: 32px;
-    position: relative;
-    top: 4px; }
+  .isometrica-container-listdetail .list-group-item i {
+    opacity: 1; }
+    .isometrica-container-listdetail .list-group-item i.pull-left {
+      position: relative;
+      top: 4px;
+      font-size: 32px;
+      color: #999; }
   .isometrica-container-listdetail .list-group-item .list-group-item-content {
     overflow: hidden; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
@@ -2603,16 +2618,16 @@ input.form-value {
     left: -5px;
     top: -5px;
     z-index: 9;
-    width: 24px;
-    height: 24px;
+    width: 21px;
+    height: 21px;
     padding: 0; }
     .isometrica-work-inbox .bootcards-list .list-group-item .label i {
       color: white;
       opacity: 1;
-      font-size: 18px;
+      font-size: 16px;
       width: auto;
       margin: 0;
-      line-height: 24px; }
+      line-height: 21px; }
 
 .isometrica-work-inbox .label {
   border-radius: 2px;

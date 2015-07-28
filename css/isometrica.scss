@@ -137,6 +137,20 @@ input.form-value {
 
 /* BUTTONS */
 
+.btn {
+  transition: all 0.3s ease;
+}
+
+.btn-default {
+  background: #e6e6e6;
+  border-color: #bbb;
+
+  &:hover, &:focus, &:active, &.active {
+    background: white;
+    border-color: #bbb;
+  }
+}
+
 .ios {
   .btn {
     transition: all 0.3s ease;
@@ -146,6 +160,8 @@ input.form-value {
     &:hover, &:focus, &:active, &.active {
       outline: none;
       opacity: 1 !important;
+      padding-left: 12px;
+      padding-right: 12px;
     }
   }
 
@@ -175,13 +191,13 @@ input.form-value {
   }
 
   .btn-default {
-    background: white;
-    border-color: #ccc;
+    background: #e6e6e6;
+    border-color: #bbb;
     color: #444;
 
     &:hover, &:focus, &:active, &.active {
       background: white;
-      border: 1px solid #ccc;
+      border: 1px solid #bbb;
       color: #444;
     }
   }
@@ -603,11 +619,19 @@ input.form-value {
   }
 
   .list-group-item {
-    i.pull-left {
-      font-size: 32px;
-      position: relative;
-      top: 4px;
+    i {
+      opacity: 1;
+
+      &.pull-left {
+        position: relative;
+        top: 4px;
+        font-size: 32px;
+        color: #999;
+      }
     }
+
+
+
     .list-group-item-content {
       overflow: hidden;
     }
