@@ -599,6 +599,31 @@ input.form-value {
 
 /* COMMON LIST-DETAIL VIEWS */
 
+.status-indicator {
+  border-radius: 11px;
+  z-index: 9;
+  height: 21px;
+  width: 21px;
+  padding: 0;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+  font-size: 12px;
+  line-height: 21px;
+
+  i {
+    color: white;
+    opacity: 1;
+    font-size: 16px;
+    width: auto !important;
+    margin: 0 !important;
+    line-height: 21px;
+    width: 21px;
+  }
+}
+
 .isometrica-container-listdetail {
   padding-top: 80px;
 
@@ -631,39 +656,6 @@ input.form-value {
         top: 4px;
         font-size: 32px;
         color: #999;
-      }
-    }
-
-    .isometrica-icon-group {
-      position: relative;
-
-      > i {
-        position: relative;
-        top: 4px;
-        font-size: 32px;
-        color: #999;
-      }
-
-      .label {
-        border-radius: 11px;
-        position: absolute;
-        left: -5px;
-        top: -5px;
-        z-index: 9;
-        height: 21px;
-        padding: 0 6px;
-        line-height: 21px;
-        font-size: 12px;
-
-        i {
-          color: white;
-          opacity: 1;
-          font-size: 16px;
-          width: auto;
-          margin: 0 -6px;
-          line-height: 21px;
-          width: 21px;
-        }
       }
     }
 

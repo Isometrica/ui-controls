@@ -400,6 +400,28 @@ input.form-value {
     color: white; }
 
 /* COMMON LIST-DETAIL VIEWS */
+.status-indicator {
+  border-radius: 11px;
+  z-index: 9;
+  height: 21px;
+  width: 21px;
+  padding: 0;
+  float: left;
+  text-align: center;
+  margin-right: 10px;
+  position: relative;
+  top: -1px;
+  font-size: 12px;
+  line-height: 21px; }
+  .status-indicator i {
+    color: white;
+    opacity: 1;
+    font-size: 16px;
+    width: auto !important;
+    margin: 0 !important;
+    line-height: 21px;
+    width: 21px; }
+
 .isometrica-container-listdetail {
   padding-top: 80px; }
   .isometrica-container-listdetail .guidance-bar {
@@ -420,31 +442,6 @@ input.form-value {
       top: 4px;
       font-size: 32px;
       color: #999; }
-  .isometrica-container-listdetail .list-group-item .isometrica-icon-group {
-    position: relative; }
-    .isometrica-container-listdetail .list-group-item .isometrica-icon-group > i {
-      position: relative;
-      top: 4px;
-      font-size: 32px;
-      color: #999; }
-    .isometrica-container-listdetail .list-group-item .isometrica-icon-group .label {
-      border-radius: 11px;
-      position: absolute;
-      left: -5px;
-      top: -5px;
-      z-index: 9;
-      height: 21px;
-      padding: 0 6px;
-      line-height: 21px;
-      font-size: 12px; }
-      .isometrica-container-listdetail .list-group-item .isometrica-icon-group .label i {
-        color: white;
-        opacity: 1;
-        font-size: 16px;
-        width: auto;
-        margin: 0 -6px;
-        line-height: 21px;
-        width: 21px; }
   .isometrica-container-listdetail .list-group-item .list-group-item-content {
     overflow: hidden; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
@@ -2654,11 +2651,6 @@ input.form-value {
     position: relative; }
   .isometrica-work-inbox .bootcards-list .list-group-item .work-icon {
     position: relative; }
-
-.isometrica-work-inbox .label {
-  border-radius: 2px;
-  display: inline-block;
-  padding: 0.25em 0.5em; }
 
 .isometrica-work-inbox .bootcards-cards .panel-title i.pull-left {
   font-size: 32px;
