@@ -401,25 +401,26 @@ input.form-value {
 
 /* COMMON LIST-DETAIL VIEWS */
 .status-indicator {
-  border-radius: 11px;
+  border-radius: 50%;
   z-index: 9;
-  height: 21px;
-  width: 21px;
+  height: 18px;
+  width: 18px;
   padding: 0;
   float: left;
   text-align: center;
   margin-right: 10px;
-  position: relative;
-  top: -1px;
-  font-size: 12px;
-  line-height: 21px; }
+  font-size: 11px;
+  line-height: 18px;
+  display: block; }
+  .status-indicator:empty {
+    display: block; }
   .status-indicator i {
     color: white;
     opacity: 1;
-    font-size: 16px;
+    font-size: 14px;
     width: auto !important;
     margin: 0 !important;
-    line-height: 21px;
+    line-height: 18px;
     width: 21px; }
 
 .isometrica-container-listdetail {
@@ -444,6 +445,15 @@ input.form-value {
       color: #999; }
   .isometrica-container-listdetail .list-group-item .list-group-item-content {
     overflow: hidden; }
+  .isometrica-container-listdetail .bootcards-cards .panel-title .label {
+    padding-top: .25em;
+    padding-bottom: .25em;
+    position: relative;
+    top: -1px;
+    margin-right: 6px; }
+  .isometrica-container-listdetail .bootcards-cards .panel-title .status-indicator {
+    position: static;
+    padding: 0; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
     width: auto;
     opacity: 1;
@@ -454,6 +464,8 @@ input.form-value {
       padding: 0; }
     .isometrica-container-listdetail .bootcards-cards .list-group .row .list-group-item {
       border-width: 1px 0; }
+  .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child .list-group-item {
+    border-top-width: 0; }
 
 .ios .isometrica-container-listdetail {
   position: fixed;
@@ -473,6 +485,12 @@ input.form-value {
     margin-bottom: -1px; }
   .ios .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
     border-top: 1px solid #ddd !important; }
+  @media (max-width: 767px) {
+    .ios .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div:first-child > .list-group-item {
+      border-top: 0 !important; } }
+  @media (min-width: 768px) {
+    .ios .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div > .list-group-item {
+      border-top: 0 !important; } }
 
 @media (max-width: 767px) {
   .ios .bootcards-cards {
@@ -496,6 +514,12 @@ input.form-value {
     margin-bottom: -1px; }
   .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
     border-top: 1px solid #ddd !important; }
+  @media (max-width: 767px) {
+    .android .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div:first-child > .list-group-item {
+      border-top: 0 !important; } }
+  @media (min-width: 768px) {
+    .android .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div > .list-group-item {
+      border-top: 0 !important; } }
 
 @media (max-width: 767px) {
   .android .bootcards-cards {
