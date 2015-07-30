@@ -2009,18 +2009,31 @@ input.form-value {
   box-shadow: none !important;
   padding-left: 0; }
 
-.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
-  font-size: 15px;
-  line-height: 22px;
-  padding: 25px; }
+.bootcards-wiki .bootcards-wiki-panel {
+  position: absolute;
+  left: 15px;
+  bottom: 0;
+  top: 30px;
+  right: 15px; }
+  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 25px; }
+  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0; }
 
 .bootcards-wiki .bootcards-wiki-panel-files {
-  border-top: 1px solid #ddd; }
+  border-top: 1px solid #ddd;
+  background: white; }
   .bootcards-wiki .bootcards-wiki-panel-files label {
     margin-right: 10px; }
 
 .bootcards-wiki .bootcards-wiki-panel-metadata {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  background: white; }
   .bootcards-wiki .bootcards-wiki-panel-metadata strong {
     display: block; }
   .bootcards-wiki .bootcards-wiki-panel-metadata .label {
@@ -2028,9 +2041,9 @@ input.form-value {
   .bootcards-wiki .bootcards-wiki-panel-metadata hr {
     border-color: #ddd;
     margin: 10px 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row {
+  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row, .bootcards-wiki .bootcards-wiki-panel-metadata .collapsing .row {
     margin: 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row > div {
+  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row > div, .bootcards-wiki .bootcards-wiki-panel-metadata .collapsing .row > div {
     padding: 0; }
   .bootcards-wiki .bootcards-wiki-panel-metadata .modal-body {
     border-bottom: 1px solid #ddd;
@@ -2048,10 +2061,25 @@ input.form-value {
 .bootcards-wiki .bootcards-accordion .text-danger {
   color: #d9534f; }
 
-.bootcards-wiki .modal .list-group-item {
+.bootcards-wiki .bootcards-cards .list-group-item, .bootcards-wiki .modal .list-group-item {
   border-radius: 0;
   border-left: 0;
   border-right: 0; }
+
+.isometrica-wiki-edit-modal .modal-dialog {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  top: 0;
+  margin-left: -450px; }
+  .isometrica-wiki-edit-modal .modal-dialog .modal-content {
+    height: 100%; }
+
+.isometrica-wiki-edit-modal .bootcards-wiki-panel-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0; }
 
 .isometrica-wiki-edit-modal .bootcards-wiki-panel-controls {
   border-bottom: 1px solid #ddd;
@@ -2072,16 +2100,27 @@ input.form-value {
   .isometrica-wiki-edit-modal .bootcards-wiki-panel-text-edit iframe {
     min-height: 300px; }
 
-.bootcards-wiki-accordion h5.list-group-item-heading {
-  margin-left: 15px; }
+.isometrica-wiki-edit-modal .modal-footer {
+  border-top: 0;
+  text-align: center; }
 
 /* Desktop */
-.desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
-  margin-bottom: 10px; }
-  .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
-    margin-bottom: 0; }
-  .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .control-label {
-    padding-right: 0; }
+.desktop.bootcards-wiki {
+  overflow: hidden; }
+  .desktop.bootcards-wiki .isometrica-container-listdetail {
+    position: fixed;
+    top: 102px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0; }
+    .desktop.bootcards-wiki .isometrica-container-listdetail > .row,
+    .desktop.bootcards-wiki .isometrica-container-listdetail > .row > div {
+      height: 100%; }
+    .desktop.bootcards-wiki .isometrica-container-listdetail > .row > div {
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-top: 30px; }
 
 /* iOS */
 .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading {

@@ -10,15 +10,29 @@
   }
 
   .bootcards-wiki-panel {
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    top: 30px;
+    right: 15px;
+
     .bootcards-wiki-panel-text-read {
       font-size: 15px;
       line-height: 22px;
       padding: 25px;
     }
+
+    .bootcards-wiki-panel-bottom {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
   }
 
   .bootcards-wiki-panel-files {
     border-top: 1px solid #ddd;
+    background: white;
 
     label {
       margin-right: 10px;
@@ -27,6 +41,7 @@
 
   .bootcards-wiki-panel-metadata {
     margin-bottom: 0;
+    background: white;
 
     strong {
       display: block;
@@ -41,7 +56,7 @@
       margin: 10px 0;
     }
 
-    .collapse {
+    .collapse, .collapsing {
       .row { margin: 0; }
       .row > div { padding: 0; }
     }
@@ -73,7 +88,7 @@
     }
   }
 
-  .modal {
+  .bootcards-cards, .modal {
     .list-group-item {
       border-radius: 0;
       border-left: 0;
@@ -83,6 +98,27 @@
 }
 
 .isometrica-wiki-edit-modal {
+
+  .modal-dialog {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    top: 0;
+    margin-left: -450px;
+
+    .modal-content {
+      height: 100%;
+    }
+  }
+
+  .bootcards-wiki-panel-bottom {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+
+
   .bootcards-wiki-panel-controls {
     border-bottom: 1px solid #ddd;
     text-align: center;
@@ -107,34 +143,38 @@
       min-height: 300px;
     }
   }
-}
 
-.bootcards-wiki-accordion {
-  h5.list-group-item-heading {
-    margin-left: 15px;
+  .modal-footer {
+    border-top: 0;
+    text-align: center;
   }
 }
+
 
 /* Desktop */
 .desktop.bootcards-wiki {
+  overflow: hidden;
 
-  .bootcards-wiki-panel-metadata {
-    //padding: 10px 15px;
-    //background: #f5f5f5;
-    //border-top: 1px solid #ddd;
+  .isometrica-container-listdetail { // Separately scrolling columns
+    position: fixed;
+    top: 102px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 0;
 
-    .form-group {
-      margin-bottom: 10px;
+    > .row,
+    > .row > div {
+      height: 100%;
+    }
 
-      &:last-child {
-        margin-bottom: 0;
-      }
-
-      .control-label {
-        padding-right: 0;
-      }
+    > .row > div {
+      overflow-x: hidden;
+      overflow-y: auto;
+      padding-top: 30px;
     }
   }
+
 }
 
 /* iOS */
