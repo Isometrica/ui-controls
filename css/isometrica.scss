@@ -28,6 +28,10 @@ body.desktop {
 
 /* FORMS */
 
+.desktop .list-group label {
+  font-weight: bold;
+}
+
 .btn {
   i.no-margin {
     margin: 0;
@@ -1055,7 +1059,7 @@ $status-indicator-size: 18px;
     font-size: 16px !important;
 
     &:before {
-      //font-size: 24px !important;
+      font-size: 18px !important;
       //width: 20px !important;
       color: #337ab7 !important;
       transition: all 0.3s ease;

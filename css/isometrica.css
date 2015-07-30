@@ -14,6 +14,9 @@ body.desktop {
   position: fixed; }
 
 /* FORMS */
+.desktop .list-group label {
+  font-weight: bold; }
+
 .btn i.no-margin {
   margin: 0; }
 
@@ -668,6 +671,7 @@ input.form-value {
   padding-left: 48px;
   font-size: 16px !important; }
   .bootcards-accordion .bootcards-list-subheading:before {
+    font-size: 18px !important;
     color: #337ab7 !important;
     transition: all 0.3s ease; }
   .bootcards-accordion .bootcards-list-subheading .list-group-item-heading {
@@ -2005,36 +2009,49 @@ input.form-value {
   box-shadow: none !important;
   padding-left: 0; }
 
-.bootcards-wiki .bootcards-wiki-panel .panel-heading {
-  /* Show/Hide Details
-      .pull-left {
-        .btn {
-          .hide-text {
-            display: none;
-          }
-
-          &.active {
-            .show-text {
-              display: none;
-            }
-
-            .hide-text {
-              display: inline;
-            }
-          }
-        }
-      }*/
-  /* Read/Edit */ }
-  .bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-right .btn[aria-expanded="true"] {
-    display: none; }
-
 .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
   font-size: 15px;
   line-height: 22px;
   padding: 25px; }
 
+.bootcards-wiki .bootcards-wiki-panel-files {
+  border-top: 1px solid #ddd; }
+  .bootcards-wiki .bootcards-wiki-panel-files label {
+    margin-right: 10px; }
+
+.bootcards-wiki .bootcards-wiki-panel-metadata {
+  margin-bottom: 0; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata strong {
+    display: block; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata .label {
+    font-size: 12px; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata hr {
+    border-color: #ddd;
+    margin: 10px 0; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row {
+    margin: 0; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row > div {
+    padding: 0; }
+  .bootcards-wiki .bootcards-wiki-panel-metadata .modal-body {
+    border-bottom: 1px solid #ddd;
+    padding-top: 10px;
+    padding-bottom: 10px; }
+
 .bootcards-wiki .bootcards-accordion .list-group-item-heading {
   line-height: 20px; }
+
+.bootcards-wiki .bootcards-accordion .collapse .list-group-item, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item {
+  padding-left: 25px; }
+  .bootcards-wiki .bootcards-accordion .collapse .list-group-item:hover, .bootcards-wiki .bootcards-accordion .collapse .list-group-item:focus, .bootcards-wiki .bootcards-accordion .collapse .list-group-item:active, .bootcards-wiki .bootcards-accordion .collapse .list-group-item.active, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:hover, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:focus, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:active, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item.active {
+    padding-left: 40px; }
+
+.bootcards-wiki .bootcards-accordion .text-danger {
+  color: #d9534f; }
+
+.bootcards-wiki .modal .list-group-item {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0; }
 
 .isometrica-wiki-edit-modal .bootcards-wiki-panel-controls {
   border-bottom: 1px solid #ddd;
@@ -2059,18 +2076,12 @@ input.form-value {
   margin-left: 15px; }
 
 /* Desktop */
-.desktop.bootcards-wiki .bootcards-container {
-  padding-top: 30px; }
-
-.desktop.bootcards-wiki .bootcards-wiki-panel-metadata {
-  padding: 10px 15px;
-  border-top: 1px solid #ddd; }
-  .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
-    margin-bottom: 10px; }
-    .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
-      margin-bottom: 0; }
-    .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .control-label {
-      padding-right: 0; }
+.desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
+  margin-bottom: 10px; }
+  .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
+    margin-bottom: 0; }
+  .desktop.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .control-label {
+    padding-right: 0; }
 
 /* iOS */
 .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading {
@@ -2087,7 +2098,7 @@ input.form-value {
     color: #007aff; }
 
 .ios.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-metadata {
-  border-top: 1px solid #ddd; }
+  margin-bottom: 0; }
 
 .ios.bootcards-wiki .bootcards-wiki-panel .bootcards-panel-tips {
   padding-top: 10px;
@@ -2126,16 +2137,12 @@ input.form-value {
 .android.bootcards-wiki .bootcards-panel-tips {
   padding: 10px 15px; }
 
-.android.bootcards-wiki .bootcards-wiki-panel-metadata {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  border-top: 1px solid #ddd; }
-  .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
-    margin-bottom: 5px; }
-    .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
-      margin-bottom: 0; }
-    .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .btn {
-      line-height: 28px; }
+.android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
+  margin-bottom: 5px; }
+  .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
+    margin-bottom: 0; }
+  .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .btn {
+    line-height: 28px; }
 
 /* ADDRESS BOOK */
 .isometrica-address-book .phone-numbers .list-group-item-text {

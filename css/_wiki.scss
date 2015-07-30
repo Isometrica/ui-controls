@@ -10,51 +10,74 @@
   }
 
   .bootcards-wiki-panel {
-    .panel-heading {
-
-      /* Show/Hide Details
-      .pull-left {
-        .btn {
-          .hide-text {
-            display: none;
-          }
-
-          &.active {
-            .show-text {
-              display: none;
-            }
-
-            .hide-text {
-              display: inline;
-            }
-          }
-        }
-      }*/
-
-      /* Read/Edit */
-      .pull-right {
-        .btn {
-          &[aria-expanded="true"] {
-            display: none;
-          }
-        }
-      }
-    }
-
-
-
     .bootcards-wiki-panel-text-read {
       font-size: 15px;
       line-height: 22px;
       padding: 25px;
     }
+  }
 
+  .bootcards-wiki-panel-files {
+    border-top: 1px solid #ddd;
 
+    label {
+      margin-right: 10px;
+    }
+  }
+
+  .bootcards-wiki-panel-metadata {
+    margin-bottom: 0;
+
+    strong {
+      display: block;
+    }
+
+    .label {
+      font-size: 12px;
+    }
+
+    hr {
+      border-color: #ddd;
+      margin: 10px 0;
+    }
+
+    .collapse {
+      .row { margin: 0; }
+      .row > div { padding: 0; }
+    }
+
+    .modal-body {
+      border-bottom: 1px solid #ddd;
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
   }
 
   .bootcards-accordion {
     .list-group-item-heading {
       line-height: 20px;
+    }
+
+    .collapse, .collapsing {
+      .list-group-item {
+        padding-left: 25px;
+
+        &:hover, &:focus, &:active, &.active {
+          padding-left: 40px;
+        }
+      }
+    }
+
+    .text-danger {
+      color: #d9534f;
+    }
+  }
+
+  .modal {
+    .list-group-item {
+      border-radius: 0;
+      border-left: 0;
+      border-right: 0;
     }
   }
 }
@@ -95,14 +118,10 @@
 /* Desktop */
 .desktop.bootcards-wiki {
 
-  .bootcards-container {
-    padding-top: 30px;
-  }
-
   .bootcards-wiki-panel-metadata {
-    padding: 10px 15px;
+    //padding: 10px 15px;
     //background: #f5f5f5;
-    border-top: 1px solid #ddd;
+    //border-top: 1px solid #ddd;
 
     .form-group {
       margin-bottom: 10px;
@@ -140,7 +159,8 @@
     }
 
     .bootcards-wiki-panel-metadata {
-      border-top: 1px solid #ddd;
+      //border-top: 1px solid #ddd;
+      margin-bottom: 0;
     }
 
     .bootcards-wiki-panel-text-edit {
@@ -204,9 +224,9 @@
   }
 
   .bootcards-wiki-panel-metadata {
-    padding-top: 5px;
-    padding-bottom: 5px;
-    border-top: 1px solid #ddd;
+    //padding-top: 5px;
+    //padding-bottom: 5px;
+    //border-top: 1px solid #ddd;
 
     .form-group {
       margin-bottom: 5px;
