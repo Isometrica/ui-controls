@@ -25,6 +25,9 @@ body.desktop {
   position: fixed;
 }
 
+.label {
+  padding: .25em .6em;
+}
 
 /* FORMS */
 
@@ -700,6 +703,14 @@ $status-indicator-size: 36px;
         width: auto;
         opacity: 1;
         margin-right: 5px;
+      }
+
+      .list-group-item-heading {
+        .label {
+          position: relative;
+          top: -1px;
+          margin-right: 5px;
+        }
       }
     }
 
