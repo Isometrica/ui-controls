@@ -734,6 +734,16 @@ $status-indicator-size: 36px;
   }
 }
 
+.desktop {
+  .isometrica-container-listdetail {
+    .bootcards-list {
+      .panel-body {
+        padding: 10px 15px;
+      }
+    }
+  }
+}
+
 .ios {
   .isometrica-container-listdetail {
 

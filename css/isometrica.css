@@ -483,6 +483,9 @@ input.form-value {
   .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child .list-group-item {
     border-top-width: 0; }
 
+.desktop .isometrica-container-listdetail .bootcards-list .panel-body {
+  padding: 10px 15px; }
+
 .ios .isometrica-container-listdetail {
   position: fixed;
   top: 96px;
