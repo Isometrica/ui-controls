@@ -541,8 +541,10 @@ input.form-value {
       transition: all 0.3s ease;
     }
 
-    &[aria-expanded="true"] i {
-      color: #aaa;
+    &[aria-expanded="true"] {
+      i {
+        color: #aaa;
+      }
     }
   }
 
