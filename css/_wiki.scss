@@ -2,12 +2,15 @@
 
 .bootcards-wiki {
 
-  input[type="text"][disabled] {
-    background: transparent !important;
-    border-color: transparent !important;
-    box-shadow: none !important;
-    padding-left: 0;
+  .bootcards-list {
+    .subsection {
+      //font-weight: normal;
+      font-size: 13px;
+      padding-left: 15px;
+    }
   }
+
+
 
   .bootcards-wiki-panel {
     //position: absolute;

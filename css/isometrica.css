@@ -2016,11 +2016,9 @@ input.form-value {
       border-bottom: 0; }
 
 /* WIKI MODULE */
-.bootcards-wiki input[type="text"][disabled] {
-  background: transparent !important;
-  border-color: transparent !important;
-  box-shadow: none !important;
-  padding-left: 0; }
+.bootcards-wiki .bootcards-list .subsection {
+  font-size: 13px;
+  padding-left: 15px; }
 
 .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
   font-size: 15px;
