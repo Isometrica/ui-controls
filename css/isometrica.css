@@ -409,24 +409,26 @@ input.form-value {
 .status-indicator {
   border-radius: 50%;
   z-index: 9;
-  height: 18px;
-  width: 18px;
+  height: 36px;
+  width: 36px;
   padding: 0;
   float: left;
   text-align: center;
   margin-right: 10px;
   font-size: 11px;
-  line-height: 18px;
-  display: block; }
+  line-height: 36px;
+  display: block;
+  position: relative;
+  top: 2px; }
   .status-indicator:empty {
     display: block; }
   .status-indicator i {
     color: white;
-    opacity: 1;
-    font-size: 14px;
+    opacity: 1 !important;
+    font-size: 18px;
     width: auto !important;
     margin: 0 !important;
-    line-height: 18px;
+    line-height: 36px;
     width: 21px; }
 
 .isometrica-container-listdetail {

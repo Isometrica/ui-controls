@@ -607,7 +607,7 @@ input.form-value {
 
 /* COMMON LIST-DETAIL VIEWS */
 
-$status-indicator-size: 18px;
+$status-indicator-size: 36px;
 
 .status-indicator {
   border-radius: 50%;
@@ -621,6 +621,8 @@ $status-indicator-size: 18px;
   font-size: 11px;
   line-height: $status-indicator-size;
   display: block;
+  position: relative;
+  top: 2px;
 
   &:empty {
     display: block;
@@ -628,8 +630,8 @@ $status-indicator-size: 18px;
 
   i {
     color: white;
-    opacity: 1;
-    font-size: 14px;
+    opacity: 1 !important;
+    font-size: 18px;
     width: auto !important;
     margin: 0 !important;
     line-height: $status-indicator-size;
