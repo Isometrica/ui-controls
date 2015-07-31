@@ -52,6 +52,9 @@ input.form-value {
   right: 3px;
   top: 3px; }
 
+.desktop .clear-field {
+  display: none; }
+
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
