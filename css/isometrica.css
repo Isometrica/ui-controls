@@ -360,7 +360,10 @@ input.form-value {
   .navbar-header .navbar-brand.dropdown-toggle i {
     position: relative;
     top: -2px;
-    left: 2px; }
+    left: 2px;
+    transition: all 0.3s ease; }
+  .navbar-header .navbar-brand.dropdown-toggle[aria-expanded="true"] i {
+    color: #aaa; }
 
 .navbar-header .dropdown-menu {
   width: 200px;

@@ -538,6 +538,11 @@ input.form-value {
       position: relative;
       top: -2px;
       left: 2px;
+      transition: all 0.3s ease;
+    }
+
+    &[aria-expanded="true"] i {
+      color: #aaa;
     }
   }
 
