@@ -20,12 +20,6 @@ body.desktop {
 .desktop .list-group label {
   font-weight: bold; }
 
-.btn i.no-margin {
-  margin: 0; }
-
-.btn i.margin-left {
-  margin: 0 0 0 5px; }
-
 input.form-value {
   border-color: transparent !important;
   background: transparent !important;
@@ -100,12 +94,16 @@ input.form-value {
 /* BUTTONS */
 .btn {
   transition: all 0.3s ease; }
+  .btn i.no-margin {
+    margin: 0; }
+  .btn i.margin-left {
+    margin: 0 0 0 5px; }
 
 .btn-default {
-  background: #e6e6e6;
+  background: white;
   border-color: #bbb; }
   .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
-    background: white;
+    background: #e6e6e6;
     border-color: #bbb; }
 
 .ios .btn {
@@ -137,11 +135,11 @@ input.form-value {
     color: white; }
 
 .ios .btn-default {
-  background: #e6e6e6;
+  background: white;
   border-color: #bbb;
   color: #444; }
   .ios .btn-default:hover, .ios .btn-default:focus, .ios .btn-default:active, .ios .btn-default.active {
-    background: white;
+    background: #e6e6e6;
     border: 1px solid #bbb;
     color: #444; }
 

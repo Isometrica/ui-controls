@@ -35,16 +35,6 @@ body.desktop {
   font-weight: bold;
 }
 
-.btn {
-  i.no-margin {
-    margin: 0;
-  }
-
-  i.margin-left {
-    margin: 0 0 0 5px;
-  }
-}
-
 input.form-value {
   border-color: transparent !important;
   background: transparent !important;
@@ -154,14 +144,22 @@ input.form-value {
 
 .btn {
   transition: all 0.3s ease;
+
+  i.no-margin {
+    margin: 0;
+  }
+
+  i.margin-left {
+    margin: 0 0 0 5px;
+  }
 }
 
 .btn-default {
-  background: #e6e6e6;
+  background: white;
   border-color: #bbb;
 
   &:hover, &:focus, &:active, &.active {
-    background: white;
+    background: #e6e6e6;
     border-color: #bbb;
   }
 }
@@ -206,12 +204,12 @@ input.form-value {
   }
 
   .btn-default {
-    background: #e6e6e6;
+    background: white;
     border-color: #bbb;
     color: #444;
 
     &:hover, &:focus, &:active, &.active {
-      background: white;
+      background: #e6e6e6;
       border: 1px solid #bbb;
       color: #444;
     }
