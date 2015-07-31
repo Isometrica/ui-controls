@@ -10,11 +10,14 @@
   }
 
   .bootcards-wiki-panel {
-    position: absolute;
-    left: 15px;
-    bottom: 0;
-    top: 30px;
-    right: 15px;
+    //position: absolute;
+    //left: 15px;
+    //bottom: 0;
+    //top: 30px;
+    //right: 15px;
+
+    //min-height: 90%;
+    //position: relative;
 
     .bootcards-wiki-panel-text-read {
       font-size: 15px;
@@ -23,10 +26,10 @@
     }
 
     .bootcards-wiki-panel-bottom {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
+      //position: absolute;
+      //bottom: 0;
+      //left: 0;
+      //right: 0;
     }
   }
 
@@ -100,22 +103,22 @@
 .isometrica-wiki-edit-modal {
 
   .modal-dialog {
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    top: 0;
-    margin-left: -450px;
+    //position: absolute;
+    //left: 50%;
+    //bottom: 0;
+    //top: 0;
+    //margin-left: -450px;
 
     .modal-content {
-      height: 100%;
+      //height: 100%;
     }
   }
 
   .bootcards-wiki-panel-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    //position: absolute;
+    //bottom: 0;
+    //left: 0;
+    //right: 0;
   }
 
 
@@ -162,6 +165,7 @@
     right: 0;
     bottom: 0;
     padding-top: 0;
+
 
     > .row,
     > .row > div {

@@ -2012,21 +2012,10 @@ input.form-value {
   box-shadow: none !important;
   padding-left: 0; }
 
-.bootcards-wiki .bootcards-wiki-panel {
-  position: absolute;
-  left: 15px;
-  bottom: 0;
-  top: 30px;
-  right: 15px; }
-  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
-    font-size: 15px;
-    line-height: 22px;
-    padding: 25px; }
-  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-bottom {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0; }
+.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
+  font-size: 15px;
+  line-height: 22px;
+  padding: 25px; }
 
 .bootcards-wiki .bootcards-wiki-panel-files {
   border-top: 1px solid #ddd;
@@ -2068,21 +2057,6 @@ input.form-value {
   border-radius: 0;
   border-left: 0;
   border-right: 0; }
-
-.isometrica-wiki-edit-modal .modal-dialog {
-  position: absolute;
-  left: 50%;
-  bottom: 0;
-  top: 0;
-  margin-left: -450px; }
-  .isometrica-wiki-edit-modal .modal-dialog .modal-content {
-    height: 100%; }
-
-.isometrica-wiki-edit-modal .bootcards-wiki-panel-bottom {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0; }
 
 .isometrica-wiki-edit-modal .bootcards-wiki-panel-controls {
   border-bottom: 1px solid #ddd;
