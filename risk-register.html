@@ -72,8 +72,9 @@
           <li class="active"><a href="#">All</a></li>
           <li><a href="#">By management system</a></li>
           <li><a href="#">By risk owner</a></li>
-          <li><a href="#">By activity linkage</a></li>
-          <li><a href="#">Unassigned</a></li>
+          <li><a href="#">By risk type</a></li>
+          <li><a href="#">By activity</a></li>
+          <li><a href="#">By department</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
       </div>
@@ -123,24 +124,24 @@
   				</div>
   				<div class="list-group">
   				  <a class="list-group-item">
-              <span class="label label-danger status-indicator">H</span>
+              <span class="label label-warning risk-square">67</span>
               <div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Explosion of binder</h4>
-                <p class="list-group-item-text">P.Jones, RK6 - High risk (96)</p>
+                <p class="list-group-item-text">Industrial accidents</p>
               </div>
 						</a>
 						<a class="list-group-item">
-  						<span class="label label-warning status-indicator">M</span>
+  						<span class="label label-danger risk-square">91</span>
               <div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">Explosion of solvent</h4>
-                <p class="list-group-item-text">P.Smith, RK4 - Medium risk (69)</p>
+  							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                <p class="list-group-item-text">Industrial accidents</p>
               </div>
 						</a>
 						<a class="list-group-item">
-  						<span class="label label-success status-indicator">L</span>
+  						<span class="label label-success risk-square">54</span>
               <div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Flu pandemic</h4>
-                <p class="list-group-item-text">A.Andrews, RK19 - Low risk (49)</p>
+                <p class="list-group-item-text">Human health</p>
               </div>
 						</a>
   				</div>
@@ -156,24 +157,44 @@
 								Edit
 							</a>
 						</div>
-						<h3 class="panel-title"><span class="label label-warning status-indicator">M</span>Risk statement</h3>
+						<h3 class="panel-title"><span class="label label-danger">91</span> Risk statement</h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Risk name</p>
               <h4 class="list-group-item-heading">Spillage of solvent</h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Risk ref</p>
-              <h4 class="list-group-item-heading">R12</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Risk ref</p>
+                  <h4 class="list-group-item-heading">R12</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Risk type</p>
+                  <h4 class="list-group-item-heading">Industrial accidents</h4>
+                </div>
+              </div>
             </div>
             <div class="list-group-item">
-              <p class="list-group-item-text">Risk type</p>
-              <h4 class="list-group-item-heading">Industrial accidents</h4>
+              <p class="list-group-item-text">Risk score</p>
+              <h4 class="list-group-item-heading"><span class="label label-danger">Catastrophic (91)</span></h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Activity/process</p>
-              <h4 class="list-group-item-heading">Thermoforming</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Activity/process</p>
+                  <h4 class="list-group-item-heading">Thermoforming</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Department</p>
+                  <h4 class="list-group-item-heading">Manufacturing</h4>
+                </div>
+              </div>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Links to other risks</p>
