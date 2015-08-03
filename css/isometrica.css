@@ -760,8 +760,12 @@ input.form-value {
       position: absolute;
       left: 15px;
       top: 50%;
-      margin-top: -12px;
+      margin-top: -11px;
       transition: all 0.3s ease; }
+    .bootcards-panel-collapsing .panel-heading .label {
+      position: relative;
+      top: -1px;
+      margin-right: 5px; }
     .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
       background: #f5f5f5; }
       .bootcards-panel-collapsing .panel-heading:hover .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:focus .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:active .bootcards-panel-collapsing-indicator {
