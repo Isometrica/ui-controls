@@ -470,6 +470,8 @@ input.form-value {
     width: auto;
     opacity: 1;
     margin-right: 5px; }
+  .isometrica-container-listdetail .bootcards-cards .list-group-item .btn {
+    margin-bottom: 5px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading .label {
     position: relative;
     top: -1px;
