@@ -434,6 +434,8 @@ input.form-value {
     margin: 0 !important;
     line-height: 36px;
     width: 21px; }
+    .status-indicator i.fa-clock-o {
+      font-size: 24px; }
 
 .isometrica-container-listdetail {
   padding-top: 80px; }

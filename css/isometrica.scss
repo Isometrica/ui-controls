@@ -644,6 +644,10 @@ $status-indicator-size: 36px;
     margin: 0 !important;
     line-height: $status-indicator-size;
     width: 21px;
+
+    &.fa-clock-o {
+      font-size: 24px;
+    }
   }
 }
 
