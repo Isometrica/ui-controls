@@ -1,0 +1,556 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Non-conformities</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+</head>
+<body class="bootcards-fullheight bootcards-nofooter">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="dashboard.html">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-question-circle"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+          Non-conformities - by date
+          <i class="fa fa-chevron-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">By date</a></li>
+          <li><a href="#">By source</a></li>
+          <li><a href="#">By system</a></li>
+          <li><a href="#">Deleted</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container bootcards-container isometrica-container-listdetail" id="main">
+
+    <!-- Guidance Bar -->
+    <div class="guidance-bar hidden-xs">
+      <div class="container">
+        <h4 class="pull-left">Guidance goes here lorem ipsum</h4>
+        <div class="btn-group btn-group-lg pull-right">
+          <a href="" class="btn btn-link icon-only">
+            <i class="fa fa-times-circle"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+		<div class="row">
+
+      <div class="col-sm-5 bootcards-list" id="list">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<div class="search-form">
+    					<div class="row">
+						    <div class="col-xs-8">
+    				      <div class="form-group">
+    					      <input type="text" class="form-control" placeholder="Search...">
+    					      <i class="fa fa-search"></i>
+    				      </div>
+						    </div>
+						    <div class="col-xs-4">
+  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#isometrica-meetings-add-modal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</button>
+						    </div>
+  						</div>
+
+  					</div>
+  				</div>
+  				<div class="list-group">
+  				  <a class="list-group-item active">
+    				  <span class="label label-warning status-indicator"><i class="fa fa-clock-o"></i></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                <p class="list-group-item-text">Communication, 3 Mar 2015, N593</p>
+  						</div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-danger status-indicator"><i class="fa fa-exclamation"></i></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Brackets getting corroded</h4>
+                <p class="list-group-item-text">Incident, 3 Mar 2015, N592</p>
+              </div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-danger status-indicator"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Mouldings are wrong color</h4>
+                <p class="list-group-item-text">Communication, 6 Mar 2015, N591</p>
+              </div>
+						</a>
+  				  <a class="list-group-item">
+    				  <span class="label label-empty status-indicator"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Supplier X delivered late</h4>
+                <p class="list-group-item-text">Incident, 6 Mar 2015, N590</p>
+              </div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-success status-indicator"><i class="fa fa-check"></i></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Supplier Y failed to replace item</h4>
+                <p class="list-group-item-text">Audit, 6 Mar 2015, N589</p>
+              </div>
+						</a>
+  				</div>
+  			</div>
+  		</div>
+
+			<div class="col-sm-7 bootcards-cards hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-right">
+							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+								<i class="fa fa-pencil"></i>
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title">
+  						<span class="label label-warning">NC216</span>
+  						Non-conformity
+  				  </h3>
+					</div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <span class="label label-warning status-indicator"><i class="fa fa-clock-o"></i></span>
+              <p class="list-group-item-text">Description</p>
+              <h4 class="list-group-item-heading">Extrusion failed in service</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Recorded by</p>
+              <h4 class="list-group-item-heading">S.Smith</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Linked from</p>
+              <a href="#" class="btn btn-warning">Communication CN19</a>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Source</p>
+              <h4 class="list-group-item-heading">Geest PLC</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes</p>
+              <h4 class="list-group-item-heading">Immediately closed down production line</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">File(s)</p>
+              <a href="#" class="btn btn-default">
+                <i class="fa fa-file-word-o fa-lg"></i>
+                Investigation reports.docx
+              </a>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Findings</p>
+              <h4 class="list-group-item-heading">We examined the extrusion and found it had a hairline fracture</h4>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
+              </div>
+              <div class="col-xs-6">
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-edit-modal isometrica-meetings-modal" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Non-conformity</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-4">Description</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="Extrusion failed in service" placeholder="Description"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Recorded by</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="S.Smith" placeholder="Recorded by"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Source</label>
+              <div class="col-xs-8">
+                <div class="btn-group isometrica-btn-toggle">
+                  <button type="button" class="btn btn-info">
+                    Customer
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Supplier
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Internal
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    Other
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Notes</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" placeholder="Notes" rows="2"></textarea>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Management system</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option></option>
+                  <option>Quality</option>
+                  <option selected="">Business continuity</option>
+                  <option>Info security</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Files</label>
+              <div class="col-xs-8">
+                <button type="button" class="btn btn-default">
+                  <i class="fa fa-file-word-o fa-lg"></i>
+                  Test.docx
+                  <i class="fa fa-times-circle margin-left"></i>
+                </button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+
+            <hr>
+
+            <h4>Findings</h4>
+
+            <div class="isometrica-rich-text-control">
+              <div class="isometrica-rich-text-controls clearfix">
+                <div class="ql-toolbar-container" id="formatting-container">
+                  <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                  <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                  <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                  <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                  <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
+                </div>
+              </div>
+              <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+              </div>
+            </div>
+
+            <h4>Corrective actions</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <span class="label label-danger">CA129</span>
+                      Fix machine calibration
+                    </div>
+                    <div class="col-xs-4 text-right">
+                      9 Sep 15 <span class="label label-danger">Open</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-1">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Action</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Fix machine calibration">
+          			        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="9 Sep 15">
+          			        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-danger">
+                            Open
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Closed
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Cancelled
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-link btn-block btn-add">Add corrective action</button>
+
+            <hr>
+
+            <h4>Improvement opportunities</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <span class="label label-success">IO731</span>
+                      Buy new machines
+                    </div>
+                    <div class="col-xs-4 text-right">
+                      <span class="label label-success">Closed</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="improvement-1">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-5">Improvement opportunity</label>
+          		        <div class="col-xs-7">
+          			        <input type="text" class="form-control" value="Fix machine calibration">
+          			        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-5">Status</label>
+          		        <div class="col-xs-7">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-default">
+                            Open
+                          </button>
+                          <button type="button" class="btn btn-success">
+                            Closed
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Cancelled
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-8">
+                      <span class="label label-warning">IO732</span>
+                      Change build process
+                    </div>
+                    <div class="col-xs-4 text-right">
+                      <span class="label label-warning">Open</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="improvement-2">
+                  <div class="panel-body">
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-5">Improvement opportunity</label>
+          		        <div class="col-xs-7">
+          			        <input type="text" class="form-control" value="Change build process">
+          			        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-5">Status</label>
+          		        <div class="col-xs-7">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-warning">
+                            Open
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Closed
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Cancelled
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-link btn-block btn-add">Add improvement opportunity</button>
+
+            <hr>
+
+
+            <div class="text-center">
+              <button type="button" class="btn btn-default btn-delete">Delete</button>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
+              </div>
+              <div class="col-xs-6">
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .list-group a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+
+
+  /* Tooltips */
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+</script>
+
+</body>
+</html>

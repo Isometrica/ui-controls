@@ -92,6 +92,25 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
+.isometrica-rich-text-control {
+  padding: 0;
+
+  .isometrica-rich-text-controls {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+
+    .btn {
+      border: 0;
+      border-radius: 0;
+    }
+  }
+
+  .isometrica-rich-text-input {
+    height: 300px;
+  }
+}
+
 .ios {
 
   .form-horizontal .form-group:last-child {
@@ -984,11 +1003,37 @@ $status-indicator-size: 36px;
   text-align: inherit !important;
 }
 
+.modal {
+  .modal-body {
+    .isometrica-rich-text-control {
+      margin: 0 -15px;
+      border-top: 1px solid #ddd;
+      border-bottom: 1px solid #ddd;
+      margin-bottom: 15px;
+
+      .isometrica-rich-text-input {
+        height: 160px;
+      }
+    }
+
+    hr {
+      margin: 15px -15px;
+      border-color: #ddd;
+    }
+  }
+}
+
 .desktop .modal-dialog {
   .modal-header {
     border-color: #ddd;
+
+    .modal-title {
+    	line-height: 34px;
+    }
   }
 }
+
+.desktop
 
 .ios .modal-dialog {
 
@@ -1096,9 +1141,7 @@ $status-indicator-size: 36px;
 	}
 }
 
-.desktop .modal-title {
-	line-height: 34px;
-}
+
 
 
 
