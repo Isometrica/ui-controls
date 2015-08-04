@@ -29,6 +29,12 @@ body.desktop {
   padding: .25em .6em;
 }
 
+.container {
+  @media (min-width:768px) and (max-width: 991px) {
+    width: auto;
+  }
+}
+
 /* FORMS */
 
 .desktop .list-group label {
@@ -43,9 +49,17 @@ input.form-value {
   padding-left: 0;
 }
 
-.container {
-  @media (min-width:768px) and (max-width: 991px) {
-    width: auto;
+.isometrica-btn-toggle { // Toggle
+  overflow: hidden;
+  white-space: nowrap;
+
+  .btn {
+    @media (max-width: 767px) {
+      font-size: 12px !important;
+      line-height: 20px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
   }
 }
 
@@ -665,7 +679,7 @@ $status-indicator-size: 36px;
     width: 21px;
 
     &.fa-clock-o {
-      font-size: 24px;
+      font-size: 26px;
     }
   }
 }
@@ -1201,6 +1215,7 @@ $status-indicator-size: 36px;
       position: relative;
       top: -1px;
       margin-right: 5px;
+      font-size: 12px;
     }
 
     &:hover, &:focus, &:active {
