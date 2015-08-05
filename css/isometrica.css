@@ -20,6 +20,10 @@ body.desktop {
   .container {
     width: auto; } }
 
+/* COLORS */
+.text-danger {
+  color: #d9534f; }
+
 /* FORMS */
 .desktop .list-group label {
   font-weight: bold; }
@@ -31,15 +35,12 @@ input.form-value {
   box-shadow: none !important;
   padding-left: 0; }
 
-.isometrica-btn-toggle {
-  overflow: hidden;
-  white-space: nowrap; }
-  @media (max-width: 767px) {
-    .isometrica-btn-toggle .btn {
-      font-size: 12px !important;
-      line-height: 20px;
-      padding-left: 7px;
-      padding-right: 7px; } }
+@media (max-width: 767px) {
+  .isometrica-btn-toggle .btn {
+    font-size: 12px !important;
+    line-height: 20px;
+    padding-left: 7px;
+    padding-right: 7px; } }
 
 .clear-field {
   position: absolute;
@@ -70,15 +71,25 @@ input.form-value {
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
 
+.form-horizontal .form-group .btn {
+  margin-bottom: 4px; }
+
 .isometrica-rich-text-control {
   padding: 0; }
   .isometrica-rich-text-control .isometrica-rich-text-controls {
     border-bottom: 1px solid #ddd;
     padding: 5px 10px;
-    text-align: center; }
+    text-align: center;
+    position: relative; }
     .isometrica-rich-text-control .isometrica-rich-text-controls .btn {
-      border: 0;
+      border-color: transparent;
+      background: transparent;
+      box-shadow: none;
       border-radius: 0; }
+    .isometrica-rich-text-control .isometrica-rich-text-controls .btn-expand {
+      position: absolute;
+      right: 10px;
+      top: 4px; }
   .isometrica-rich-text-control .isometrica-rich-text-input {
     height: 300px; }
 
@@ -127,6 +138,21 @@ input.form-value {
   .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
     background: #e6e6e6;
     border-color: #bbb; }
+
+.btn-progress {
+  opacity: 0.5;
+  position: relative;
+  overflow: hidden; }
+  .btn-progress .progress-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #337ab7;
+    opacity: 0.3; }
+
+.ios .btn-progress {
+  opacity: 0.5 !important; }
 
 .ios .btn {
   transition: all 0.3s ease;
@@ -177,6 +203,13 @@ input.form-value {
   color: white; }
   .ios .btn-danger:hover, .ios .btn-danger:focus, .ios .btn-danger:active, .ios .btn-danger.active {
     background: #d9534f;
+    color: white; }
+
+.ios .btn-success {
+  background: #4cae4c;
+  color: white; }
+  .ios .btn-success:hover, .ios .btn-success:focus, .ios .btn-success:active, .ios .btn-success.active {
+    background: #4cae4c;
     color: white; }
 
 .ios .modal-header .btn,
@@ -242,6 +275,14 @@ input.form-value {
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
   .android .btn-danger:hover, .android .btn-danger:focus, .android .btn-danger:active, .android .btn-danger.active {
     background: #d9534f;
+    color: white; }
+
+.android .btn-success {
+  background: #4cae4c;
+  color: white;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  .android .btn-success:hover, .android .btn-success:focus, .android .btn-success:active, .android .btn-success.active {
+    background: #4cae4c;
     color: white; }
 
 .android .modal-header .btn,
@@ -500,17 +541,22 @@ input.form-value {
     position: relative;
     top: -1px;
     margin-right: 5px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin: 0; }
-    .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
-      padding: 0; }
-    .isometrica-container-listdetail .bootcards-cards .list-group .row .list-group-item {
-      border-width: 1px 0; }
-  .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child .list-group-item {
-    border-top-width: 0; }
 
 .desktop .isometrica-container-listdetail .bootcards-list .panel-body {
   padding: 10px 15px; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group-item {
+  border-top: 0;
+  border-bottom: 1px solid #ddd !important;
+  margin-bottom: 0; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+  border-bottom: 0 !important; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group .row {
+  margin: 0; }
+  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+    padding: 0; }
 
 .ios .isometrica-container-listdetail {
   position: fixed;
@@ -519,23 +565,46 @@ input.form-value {
   right: 0;
   bottom: 0;
   padding-top: 0;
-  height: auto; }
+  height: auto;
+  /*
+    .bootcards-cards .list-group {
+      .row { // Multiple form groups per row
+        margin-bottom: -1px;
+      }
+
+      .row > div > .list-group-item:last-child {
+        border-top: 1px solid #ddd !important;
+      }
+
+      @media (max-width:767px) {
+        .row:first-child > div:first-child > .list-group-item {
+          border-top: 0 !important;
+        }
+      }
+
+      @media (min-width:768px) {
+        .row:first-child > div > .list-group-item {
+          border-top: 0 !important;
+        }
+      }
+
+    }*/ }
   .ios .isometrica-container-listdetail .guidance-bar .btn {
     line-height: 28px;
     padding-right: 15px; }
   @media (max-width: 767px) {
     .ios .isometrica-container-listdetail {
       top: 44px; } }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group-item {
+    border-top: 0;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0; }
   .ios .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin-bottom: -1px; }
-  .ios .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
-    border-top: 1px solid #ddd !important; }
-  @media (max-width: 767px) {
-    .ios .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div:first-child > .list-group-item {
-      border-top: 0 !important; } }
-  @media (min-width: 768px) {
-    .ios .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div > .list-group-item {
-      border-top: 0 !important; } }
+    margin: 0; }
+    .ios .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+      padding: 0; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+    border-bottom: 0 !important; }
 
 @media (max-width: 767px) {
   .ios .bootcards-cards {
@@ -549,22 +618,44 @@ input.form-value {
   right: 0;
   bottom: 0;
   padding-top: 0;
-  height: auto; }
+  height: auto;
+  /*.bootcards-cards .list-group {
+      .row { // Multiple form groups per row
+        margin-bottom: -1px;
+      }
+
+      .row > div > .list-group-item:last-child {
+        border-top: 1px solid #ddd !important;
+      }
+
+      @media (max-width:767px) {
+        .row:first-child > div:first-child > .list-group-item {
+          border-top: 0 !important;
+        }
+      }
+
+      @media (min-width:768px) {
+        .row:first-child > div > .list-group-item {
+          border-top: 0 !important;
+        }
+      }
+
+    }*/ }
   .android .isometrica-container-listdetail .guidance-bar .btn {
     line-height: 28px; }
   @media (max-width: 767px) {
     .android .isometrica-container-listdetail {
       top: 50px; } }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group-item {
+    border-top: 0;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0; }
   .android .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin-bottom: -1px; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div > .list-group-item:last-child {
-    border-top: 1px solid #ddd !important; }
-  @media (max-width: 767px) {
-    .android .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div:first-child > .list-group-item {
-      border-top: 0 !important; } }
-  @media (min-width: 768px) {
-    .android .isometrica-container-listdetail .bootcards-cards .list-group .row:first-child > div > .list-group-item {
-      border-top: 0 !important; } }
+    margin: 0; }
+    .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+      padding: 0; }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+    border-bottom: 0 !important; }
 
 @media (max-width: 767px) {
   .android .bootcards-cards {
@@ -663,37 +754,29 @@ input.form-value {
   .desktop .modal-dialog .modal-header .modal-title {
     line-height: 34px; }
 
-.desktop
 .ios .modal-dialog .modal-content {
   z-index: 1; }
 
-.desktop
 .ios .modal-dialog .modal-header {
   padding: 0; }
-  .desktop
-.ios .modal-dialog .modal-header .pull-left {
+  .ios .modal-dialog .modal-header .pull-left {
     position: absolute;
     left: 0 !important;
     top: 0 !important;
     z-index: 1; }
-  .desktop
-.ios .modal-dialog .modal-header .pull-right {
+  .ios .modal-dialog .modal-header .pull-right {
     position: absolute;
     right: 0 !important;
     top: 0 !important;
     z-index: 1; }
-  .desktop
-.ios .modal-dialog .modal-header .btn {
+  .ios .modal-dialog .modal-header .btn {
     padding: 0 15px;
     line-height: 44px; }
-    .desktop
-.ios .modal-dialog .modal-header .btn i {
+    .ios .modal-dialog .modal-header .btn i {
       vertical-align: 0; }
-    .desktop
-.ios .modal-dialog .modal-header .btn span {
+    .ios .modal-dialog .modal-header .btn span {
       font-size: 14px; }
-  .desktop
-.ios .modal-dialog .modal-header.subheader {
+  .ios .modal-dialog .modal-header.subheader {
     padding: 10px 15px;
     height: auto !important;
     font-size: 12px;
@@ -752,8 +835,19 @@ input.form-value {
     font-weight: normal; }
 
 .bootcards-panel-collapsing {
-  margin-bottom: 15px;
+  margin-bottom: 0;
   border-color: #bbb; }
+  .bootcards-panel-collapsing:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0; }
+  .bootcards-panel-collapsing:first-child {
+    margin-top: 15px; }
+  .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;
     padding-left: 50px;
@@ -768,7 +862,7 @@ input.form-value {
       margin-top: 7px;
       color: #337ab7;
       position: absolute;
-      left: 15px;
+      left: 10px;
       top: 50%;
       margin-top: -11px;
       transition: all 0.3s ease; }
@@ -788,11 +882,41 @@ input.form-value {
   .bootcards-panel-collapsing .panel-body {
     border-top: 1px solid #ddd; }
 
-@media (max-width: 767px) {
-  .ios .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-    left: 8px;
-    font-size: 18px;
-    margin-top: -10px; } }
+.ios .bootcards-panel-collapsing {
+  border: 1px solid #ccc; }
+  .ios .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom: 0; }
+  .ios .bootcards-panel-collapsing .panel-heading {
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0; }
+  .ios .bootcards-panel-collapsing .panel-body {
+    padding-bottom: 0; }
+  @media (max-width: 767px) {
+    .ios .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
+      left: 8px;
+      font-size: 18px;
+      margin-top: -10px; } }
+
+.android .bootcards-panel-collapsing {
+  margin-bottom: 0; }
+  .android .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .android .bootcards-panel-collapsing .panel-heading {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background: #f5f5f5;
+    border-radius: 0; }
+  .android .bootcards-panel-collapsing .btn-group {
+    margin-top: 4px; }
+    .android .bootcards-panel-collapsing .btn-group .btn {
+      box-shadow: none; }
+  .android .bootcards-panel-collapsing .panel-body {
+    padding-top: 5px;
+    padding-bottom: 0; }
+    .android .bootcards-panel-collapsing .panel-body hr {
+      margin-bottom: 10px; }
 
 .android .panel-heading .btn {
   color: #33b5e5 !important; }
@@ -2092,7 +2216,13 @@ input.form-value {
   border-top: 1px solid #ddd;
   background: white; }
   .bootcards-wiki .bootcards-wiki-panel-files label {
-    margin-right: 10px; }
+    float: left;
+    margin-right: 15px;
+    margin-top: 6px; }
+  .bootcards-wiki .bootcards-wiki-panel-files div {
+    overflow: hidden; }
+  .bootcards-wiki .bootcards-wiki-panel-files .btn {
+    margin: 0 0 5px; }
 
 .bootcards-wiki .bootcards-wiki-panel-metadata {
   margin-bottom: 0;
@@ -2717,50 +2847,8 @@ input.form-value {
   margin-top: 5px;
   margin-bottom: 5px; }
 
-.ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing {
-  border: 1px solid #ccc; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
-    border-bottom: 0; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading {
-    background-color: #f5f5f5;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    border-radius: 0; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {
-    padding-bottom: 0; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
-    padding-left: 10px;
-    padding-right: 10px; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn-default {
-    border-color: #ddd; }
-  .ios.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn-primary {
-    background: #007aff;
-    border-color: #007aff;
-    box-shadow: none;
-    color: white; }
-
 .ios.isometrica-meetings .isometrica-meetings-modal .modal-footer small {
   font-size: 11px; }
-
-.android.isometrica-meetings .bootcards-list select {
-  border-bottom: 0; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading {
-  padding-top: 10px;
-  padding-bottom: 10px;
-  background: #f5f5f5;
-  border-radius: 0; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group {
-  margin-top: 4px; }
-  .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .btn-group .btn {
-    box-shadow: none; }
-
-.android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body {
-  padding-top: 5px;
-  padding-bottom: 0; }
-  .android.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
-    margin-bottom: 10px; }
 
 .isometrica-work-inbox .bootcards-list .list-group-item {
   padding-right: 40px; }

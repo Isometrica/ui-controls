@@ -35,6 +35,13 @@ body.desktop {
   }
 }
 
+/* COLORS */
+
+.text-danger {
+  color: #d9534f;
+}
+
+
 /* FORMS */
 
 .desktop .list-group label {
@@ -50,8 +57,8 @@ input.form-value {
 }
 
 .isometrica-btn-toggle { // Toggle
-  overflow: hidden;
-  white-space: nowrap;
+  //overflow: hidden;
+  //white-space: nowrap;
 
   .btn {
     @media (max-width: 767px) {
@@ -106,6 +113,10 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
+.form-horizontal .form-group .btn {
+  margin-bottom: 4px;
+}
+
 .isometrica-rich-text-control {
   padding: 0;
 
@@ -113,10 +124,19 @@ input.form-value {
     border-bottom: 1px solid #ddd;
     padding: 5px 10px;
     text-align: center;
+    position: relative;
 
     .btn {
-      border: 0;
+      border-color: transparent;
+      background: transparent;
+      box-shadow: none;
       border-radius: 0;
+    }
+
+    .btn-expand {
+      position: absolute;
+      right: 10px;
+      top: 4px;
     }
   }
 
@@ -197,6 +217,25 @@ input.form-value {
   }
 }
 
+.btn-progress {
+  opacity: 0.5;
+  position: relative;
+  overflow: hidden;
+
+  .progress-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #337ab7;
+    opacity: 0.3;
+  }
+}
+
+.ios .btn-progress {
+  opacity: 0.5 !important;
+}
+
 .ios {
   .btn {
     transition: all 0.3s ease;
@@ -264,6 +303,16 @@ input.form-value {
 
     &:hover, &:focus, &:active, &.active {
       background: #d9534f;
+      color: white;
+    }
+  }
+
+  .btn-success {
+    background: #4cae4c;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #4cae4c;
       color: white;
     }
   }
@@ -354,6 +403,17 @@ input.form-value {
     }
   }
 
+  .btn-success {
+    background: #4cae4c;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #4cae4c;
+      color: white;
+    }
+  }
+
   .modal-header,
   .panel-heading {
     .btn {
@@ -364,6 +424,8 @@ input.form-value {
     }
   }
 }
+
+
 
 
 /* FORMS */
@@ -760,18 +822,7 @@ $status-indicator-size: 36px;
       }
     }
 
-    .list-group { // Multiple form groups per row
-      .row {
-        margin: 0;
 
-        > div { padding: 0; }
-
-        .list-group-item { border-width: 1px 0; }
-      }
-      .row:first-child {
-        .list-group-item { border-top-width: 0; }
-      }
-    }
   }
 }
 
@@ -780,6 +831,25 @@ $status-indicator-size: 36px;
     .bootcards-list {
       .panel-body {
         padding: 10px 15px;
+      }
+    }
+
+    .bootcards-cards {
+      .list-group-item {
+        border-top: 0;
+        border-bottom: 1px solid #ddd !important;
+        margin-bottom: 0;
+      }
+
+      .list-group>.list-group-item:last-child {
+        border-bottom: 0 !important;
+      }
+
+      .list-group {
+        .row {
+          margin: 0;
+          > div { padding: 0; }
+        }
       }
     }
   }
@@ -807,7 +877,27 @@ $status-indicator-size: 36px;
       top: 44px;
     }
 
+    .bootcards-cards {
+      .list-group-item {
+        border-top: 0;
+        border-bottom: 1px solid #ddd !important;
+        margin-bottom: 0;
+      }
 
+      .list-group {
+        .row {
+          margin: 0;
+          > div { padding: 0; }
+        }
+
+        > .list-group-item:last-child {
+          border-bottom: 0 !important;
+        }
+      }
+    }
+
+
+    /*
     .bootcards-cards .list-group {
       .row { // Multiple form groups per row
         margin-bottom: -1px;
@@ -829,7 +919,7 @@ $status-indicator-size: 36px;
         }
       }
 
-    }
+    }*/
 
 
   }
@@ -866,7 +956,7 @@ $status-indicator-size: 36px;
       top: 50px;
     }
 
-    .bootcards-cards .list-group {
+    /*.bootcards-cards .list-group {
       .row { // Multiple form groups per row
         margin-bottom: -1px;
       }
@@ -887,6 +977,25 @@ $status-indicator-size: 36px;
         }
       }
 
+    }*/
+
+    .bootcards-cards {
+      .list-group-item {
+        border-top: 0;
+        border-bottom: 1px solid #ddd !important;
+        margin-bottom: 0;
+      }
+
+      .list-group {
+        .row {
+          margin: 0;
+          > div { padding: 0; }
+        }
+
+        > .list-group-item:last-child {
+          border-bottom: 0 !important;
+        }
+      }
     }
 
   }
@@ -1047,8 +1156,6 @@ $status-indicator-size: 36px;
   }
 }
 
-.desktop
-
 .ios .modal-dialog {
 
   .modal-content {
@@ -1186,8 +1293,27 @@ $status-indicator-size: 36px;
 }
 
 .bootcards-panel-collapsing {
-	margin-bottom: 15px;
+	margin-bottom: 0;
 	border-color: #bbb;
+
+  &:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+  }
+
+  &:first-child {
+    margin-top: 15px;
+  }
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
 
 	.panel-heading {
   	border: 0;
@@ -1205,7 +1331,7 @@ $status-indicator-size: 36px;
     	margin-top: 7px;
     	color: #337ab7;
     	position: absolute;
-    	left: 15px;
+    	left: 10px;
     	top: 50%;
     	margin-top: -11px;
     	transition: all 0.3s ease;
@@ -1241,6 +1367,23 @@ $status-indicator-size: 36px;
 }
 
 .ios .bootcards-panel-collapsing {
+  border: 1px solid #ccc;
+
+  &:not(:last-child) {
+    border-bottom: 0;
+  }
+
+  .panel-heading {
+    background-color: #f5f5f5;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 0;
+  }
+
+  .panel-body {
+    padding-bottom: 0;
+  }
+
   .panel-heading {
   	.bootcards-panel-collapsing-indicator {
     	@media (max-width:767px) {
@@ -1254,6 +1397,38 @@ $status-indicator-size: 36px;
 
 
 .android {
+  .bootcards-panel-collapsing {
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+
+    .panel-heading {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background: #f5f5f5;
+      border-radius: 0;
+    }
+
+    .btn-group {
+      margin-top: 4px;
+
+      .btn {
+        box-shadow: none;
+      }
+    }
+
+    .panel-body {
+      padding-top: 5px;
+      padding-bottom: 0;
+
+      hr {
+        margin-bottom: 10px;
+      }
+    }
+  }
+
   .panel-heading {
     .btn {
       color: #33b5e5 !important;
