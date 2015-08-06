@@ -869,7 +869,7 @@ input.form-value {
     .bootcards-panel-collapsing .panel-heading .label {
       position: relative;
       top: -1px;
-      margin-right: 5px;
+      margin-left: 10px;
       font-size: 12px; }
     .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
       background: #f5f5f5; }

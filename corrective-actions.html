@@ -181,15 +181,21 @@
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading"><span class="label label-default">CA129</span> Fix machine calibration</h4>
+              <h4 class="list-group-item-heading">Fix machine calibration <span class="label label-danger">Open – Overdue</span></h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Status</p>
-              <h4 class="list-group-item-heading"><span class="label label-danger">Open – Overdue</span></h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Created from</p>
-              <a href="#" class="btn btn-default">NC216 <i class="fa fa-circle margin-left text-danger"></i></a>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Ref number</p>
+                  <h4 class="list-group-item-heading">CA129</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Created from</p>
+                  <a href="#" class="btn btn-default">NC216 <i class="fa fa-circle margin-left text-danger"></i></a>
+                </div>
+              </div>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -269,6 +275,15 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
+              <label class="control-label col-xs-4">Description</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
               <label class="control-label col-xs-4">Ref</label>
               <div class="col-xs-8">
                 <input type="text" class="form-control form-value" disabled="" value="CA129"/>
@@ -309,15 +324,7 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Description</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
+
             <div class="form-group">
               <label class="control-label col-xs-4">Owner</label>
               <div class="col-xs-8">
@@ -394,7 +401,7 @@
                   <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
                   <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
                 </div>
-                <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrows-v no-margin"></i></a>
+                <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
               </div>
               <div class="ql-container isometrica-rich-text-input" id="editor-container">
                 <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
@@ -408,8 +415,7 @@
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
                     <div class="col-xs-6">
-                      <span class="label label-default">CA128</span>
-                      Replace customer item
+                      <strong>CA128:</strong> Replace customer item
                     </div>
                     <div class="col-xs-6 text-right">
                       9 Sep 15 <span class="label label-danger">Open – Overdue</span>
@@ -418,10 +424,23 @@
                 </div>
                 <div class="collapse" id="action-1">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action</label>
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
           		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Fix machine calibration">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="Replace customer item">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
@@ -468,7 +487,98 @@
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
+                        <button type="button" class="btn btn-default pull-right">Delete</button>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing">
+                <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <div class="row">
+                    <div class="col-xs-6">
+                      <strong>CA129:</strong> Existing corrective action
+                    </div>
+                    <div class="col-xs-6 text-right">
+                      9 Sep 15 <span class="label label-danger">Open – No plan</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="collapse" id="action-2">
+                  <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-default">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-info">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>CA129: Existing corrective action</option>
+            			        <option>CA128: Lorem ipsum dolor</option>
+            			        <option>CA127: Est compendum</option>
+            			        <option>CA126: Existing corrective action</option>
+            			        <option>CA125: Lorem ipsum dolor</option>
+            			        <option>CA124: Est compendum</option>
+            			        <option>CA123: Existing corrective action</option>
+            			        <option>CA122: Lorem ipsum dolor</option>
+            			        <option>CA121: Est compendum</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Date</label>
+          		        <div class="col-xs-9">
+          			        <input type="text" class="form-control" value="9 Sep 15">
+          			        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            Open
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Closed
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Cancelled
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Plan exists?</label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-default">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-info">
+                            No
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <hr>
+          	        <div class="form-group">
+                      <div class="col-sm-9 col-sm-offset-3 clearfix">
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>
@@ -488,8 +598,7 @@
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
                     <div class="col-xs-6">
-                      <span class="label label-default">IO731</span>
-                      Buy new machines
+                      <strong>IO731:</strong> Buy new machines
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="label label-success">Closed</span>
@@ -498,9 +607,22 @@
                 </div>
                 <div class="collapse" id="improvement-1">
                   <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Improvement opportunity</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="Fix machine calibration">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -508,8 +630,8 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Status</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
                           <button type="button" class="btn btn-default">
                             Open
@@ -526,7 +648,7 @@
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>
@@ -538,8 +660,7 @@
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <div class="row">
                     <div class="col-xs-6">
-                      <span class="label label-default">IO732</span>
-                      Change build process
+                      <strong>IO732:</strong> Change build process
                     </div>
                     <div class="col-xs-6 text-right">
                       <span class="label label-warning">Open – In progress</span>
@@ -548,18 +669,38 @@
                 </div>
                 <div class="collapse" id="improvement-2">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Improvement opportunity</label>
-          		        <div class="col-xs-7">
-          			        <input type="text" class="form-control" value="Change build process">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-default">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-info">
+                            Existing
+                          </button>
+                        </div>
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Status</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
+          			        <select class="form-control">
+            			        <option>IO732: Change build process</option>
+            			        <option>IO731: Lorem ipsum dolor</option>
+            			        <option>IO730: Est compendum</option>
+            			        <option>IO729: Change build process</option>
+            			        <option>IO728: Lorem ipsum dolor</option>
+            			        <option>IO727: Est compendum</option>
+            			        <option>IO726: Change build process</option>
+            			        <option>IO725: Lorem ipsum dolor</option>
+            			        <option>IO724: Est compendum</option>
+          			        </select>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
                           <button type="button" class="btn btn-info">
                             Open
@@ -574,8 +715,8 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Plan exists?</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Plan exists?</label>
+          		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
                           <button type="button" class="btn btn-info">
                             Yes
@@ -589,7 +730,7 @@
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>
