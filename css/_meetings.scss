@@ -1,71 +1,17 @@
 .isometrica-meetings {
 
-  .bootcards-cards {
-    .list-group-item {
-      i {
-        opacity: 0.3;
-        margin-right: 15px;
-        //position: relative;
-        //top: 6px;
-      }
-    }
-  }
-
   .isometrica-meetings-modal {
     .modal-content {
       overflow: hidden;
     }
 
     .modal-body {
-      h4 {
-        margin: 15px 0 0;
-      }
 
-      hr {
-        border-color: #ddd;
-        margin: 15px -15px;
-      }
 
       .long-label {
         padding-top: 0;
         margin-bottom: -4px;
         margin-top: -2px;
-      }
-    }
-
-    .bootcards-panel-collapsing {
-      clear: both;
-      margin-bottom: 0;
-
-      &:not(:first-child) {
-        border-top-left-radius: 0;
-        border-top-right-radius: 0;
-      }
-
-      &:not(:last-child) {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-bottom-width: 0;
-      }
-
-      &:first-child {
-        margin-top: 15px;
-      }
-
-      &:last-child {
-        margin-bottom: 15px;
-      }
-
-      .panel-heading .bootcards-panel-collapsing-indicator {
-        left: 10px;
-        margin-top: -11px;
-      }
-
-      .panel-body {
-        hr {
-          border-color: #ddd;
-          margin: 15px -15px;
-        }
       }
     }
 
@@ -84,15 +30,6 @@
   }
 }
 
-
-
-.desktop.isometrica-meetings {
-  .isometrica-meetings-modal {
-    .btn-add, .btn-delete {
-      margin: -8px 0;
-    }
-  }
-}
 
 
 .ios.isometrica-meetings {

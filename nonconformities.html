@@ -121,7 +121,7 @@
   				</div>
   				<div class="list-group">
   				  <a class="list-group-item active">
-    				  <span class="label label-warning status-indicator"><i class="fa fa-clock-o"></i></span>
+    				  <span class="label label-warning status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
                 <p class="list-group-item-text">Communication, 3 Mar 2015, N593</p>
@@ -149,7 +149,7 @@
               </div>
 						</a>
 						<a class="list-group-item">
-  						<span class="label label-success status-indicator"><i class="fa fa-check"></i></span>
+  						<span class="label label-success status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Supplier Y failed to replace item</h4>
                 <p class="list-group-item-text">Audit, 6 Mar 2015, N589</p>
@@ -169,27 +169,42 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
-  						<span class="label label-warning">NC216</span>
+
   						Non-conformity
   				  </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
-              <span class="label label-warning status-indicator"><i class="fa fa-clock-o"></i></span>
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Extrusion failed in service</h4>
+              <h4 class="list-group-item-heading">Extrusion failed in service <span class="label label-warning">Open - In progress</span></h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Recorded by</p>
-              <h4 class="list-group-item-heading">S.Smith</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Ref number</p>
+                  <h4 class="list-group-item-heading">NC216</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Recorded by</p>
+                  <h4 class="list-group-item-heading">S.Smith</h4>
+                </div>
+              </div>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Linked from</p>
-              <a href="#" class="btn btn-warning">CN19</a>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Source</p>
-              <h4 class="list-group-item-heading">Geest PLC</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Linked from</p>
+                  <a href="#" class="btn btn-default">CN19 <i class="fa fa-circle margin-left text-success"></i></a>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Source</p>
+                  <h4 class="list-group-item-heading">Geest PLC</h4>
+                </div>
+              </div>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Notes</p>
@@ -245,18 +260,6 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Ref</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="NS216"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Linked from</label>
-              <div class="col-xs-8">
-                <a href="#" class="btn btn-warning">CN19</a>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Description</label>
               <div class="col-xs-8">
                 <input type="text" class="form-control" value="Extrusion failed in service" placeholder="Description"/>
@@ -265,6 +268,20 @@
   			        </button>
               </div>
             </div>
+            <div class="form-group">
+
+              <label class="control-label col-xs-4">Ref</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control form-value" disabled="" value="NS216"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Linked from</label>
+              <div class="col-xs-8">
+                <a href="#" class="btn btn-default">CN19 <i class="fa fa-circle margin-left text-success"></i></a>
+              </div>
+            </div>
+
             <div class="form-group">
               <label class="control-label col-xs-4">Recorded by</label>
               <div class="col-xs-8">
@@ -316,11 +333,25 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
               <div class="col-xs-8">
-                <button type="button" class="btn btn-default">
-                  <i class="fa fa-file-word-o fa-lg"></i>
-                  Test.docx
-                  <i class="fa fa-times-circle margin-left"></i>
-                </button>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-file-word-o fa-lg"></i>
+                    Example.docx
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default btn-progress">
+                    <span class="progress-indicator" style="width: 75%;"></span>
+                    <i class="fa fa-file-excel-o fa-lg"></i>
+                    currently_uploading_file.xls
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
                 <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
               </div>
             </div>
@@ -337,6 +368,7 @@
                   <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
                   <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
                   <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
+                  <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
                 </div>
               </div>
               <div class="ql-container isometrica-rich-text-input" id="editor-container">
@@ -349,20 +381,32 @@
               <div class="panel panel-default bootcards-panel-collapsing">
                 <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="row">
-                    <div class="col-xs-8">
-                      <span class="label label-danger">CA129</span>
-                      Fix machine calibration
-                    </div>
-                    <div class="col-xs-4 text-right">
-                      9 Sep 15 <span class="label label-danger">Open</span>
-                    </div>
+                  <div class="pull-left">
+                    <strong>CA129:</strong>
+                    Fix machine calibration
+                  </div>
+                  <div class="pull-right">
+                    9 Sep 2015 <span class="label label-danger">Open - Overdue</span>
                   </div>
                 </div>
                 <div class="collapse" id="action-1">
                   <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action</label>
+
+          		        <label class="control-label col-xs-3">Description</label>
           		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="Fix machine calibration">
           			        <button type="button" class="btn btn-link clear-field">
@@ -373,7 +417,7 @@
           	        <div class="form-group">
           		        <label class="control-label col-xs-3">Date</label>
           		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="9 Sep 15">
+          			        <input type="text" class="form-control" value="9 Sep 2015">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
@@ -383,7 +427,7 @@
           		        <label class="control-label col-xs-3">Status</label>
           		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-danger">
+                          <button type="button" class="btn btn-info">
                             Open
                           </button>
                           <button type="button" class="btn btn-default">
@@ -395,10 +439,23 @@
                         </div>
           		        </div>
           	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Plan exists?</label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            No
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>
@@ -416,21 +473,32 @@
               <div class="panel panel-default bootcards-panel-collapsing">
                 <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="row">
-                    <div class="col-xs-8">
-                      <span class="label label-success">IO731</span>
-                      Buy new machines
-                    </div>
-                    <div class="col-xs-4 text-right">
-                      <span class="label label-success">Closed</span>
-                    </div>
+                  <div class="pull-left">
+                    <strong>IO731:</strong>
+                    Buy new machines
+                  </div>
+                  <div class="pull-right">
+                    <span class="label label-success">Closed</span>
                   </div>
                 </div>
                 <div class="collapse" id="improvement-1">
                   <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Improvement opportunity</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="Fix machine calibration">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -438,13 +506,13 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Status</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
                           <button type="button" class="btn btn-default">
                             Open
                           </button>
-                          <button type="button" class="btn btn-success">
+                          <button type="button" class="btn btn-info">
                             Closed
                           </button>
                           <button type="button" class="btn btn-default">
@@ -456,7 +524,7 @@
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>
@@ -466,21 +534,32 @@
               <div class="panel panel-default bootcards-panel-collapsing">
                 <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="row">
-                    <div class="col-xs-8">
-                      <span class="label label-warning">IO732</span>
-                      Change build process
-                    </div>
-                    <div class="col-xs-4 text-right">
-                      <span class="label label-warning">Open</span>
-                    </div>
+                  <div class="pull-left">
+                    <strong>IO732:</strong>
+                    Change build process
+                  </div>
+                  <div class="pull-right">
+                    <span class="label label-warning">Open - In progress</span>
                   </div>
                 </div>
                 <div class="collapse" id="improvement-2">
                   <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-3"></label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            New
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Existing
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Improvement opportunity</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Description</label>
+          		        <div class="col-xs-9">
           			        <input type="text" class="form-control" value="Change build process">
           			        <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -488,10 +567,10 @@
           		        </div>
           	        </div>
           	        <div class="form-group">
-          		        <label class="control-label col-xs-5">Status</label>
-          		        <div class="col-xs-7">
+          		        <label class="control-label col-xs-3">Status</label>
+          		        <div class="col-xs-9">
                   	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-warning">
+                          <button type="button" class="btn btn-info">
                             Open
                           </button>
                           <button type="button" class="btn btn-default">
@@ -503,10 +582,23 @@
                         </div>
           		        </div>
           	        </div>
+          	        <div class="form-group">
+          		        <label class="control-label col-xs-3">Plan exists?</label>
+          		        <div class="col-xs-9">
+                  	    <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            No
+                          </button>
+                        </div>
+          		        </div>
+          	        </div>
           	        <hr>
           	        <div class="form-group">
                       <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-primary pull-left">Save Changes</button>
+                        <button type="button" class="btn btn-default pull-left">More Info</button>
                         <button type="button" class="btn btn-default pull-right">Delete</button>
                       </div>
                     </div>

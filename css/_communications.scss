@@ -2,19 +2,8 @@
 /* Edit MOdal */
 
 .isometrica-communications-edit-modal {
-  .isometrica-workbook-modal-subheading {
-    margin: 0 0 15px;
-    font-size: 16px;
-  }
 
-  .modal-body {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 0;
 
-    &:last-child {
-      border-bottom: 0;
-    }
-  }
 
   .linked-items {
     margin-bottom: 10px;
@@ -41,6 +30,7 @@
     }
   }
 
+  /*
   .isometrica-rich-text-control {
     padding: 0;
 
@@ -59,62 +49,5 @@
       height: 300px;
     }
   }
-
-  .problems-nonconformities {
-    background: #eee;
-    .btn.pull-right {
-      position: relative;
-      top: -8px;
-      margin-right: -8px;
-    }
-  }
-
-  .table {
-    margin-bottom: 0;
-
-    th {
-      background: #eee;
-    }
-
-    .label {
-      font-size: 14px;
-    }
-  }
-}
-
-.ios .isometrica-communications-edit-modal {
-
-  .control-label {
-    padding-left: 15px !important;
-  }
-
-  input[disabled] {
-    background: transparent;
-  }
-
-  .form-group:last-child {
-    margin-bottom: 0;
-  }
-
-  .linked-items {
-    padding-bottom: 0;
-    margin-bottom: 0;
-
-    .btn {
-      padding-left: 12px;
-      padding-right: 12px;
-    }
-
-    .btn-info:first-child {
-      padding-right: 0;
-    }
-  }
-}
-
-.android.isometrica-communications-log {
-  .isometrica-communications-edit-modal {
-    input[disabled] {
-      background: transparent;
-    }
-  }
+  */
 }

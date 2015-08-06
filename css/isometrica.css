@@ -24,6 +24,12 @@ body.desktop {
 .text-danger {
   color: #d9534f; }
 
+.text-warning {
+  color: #f0ad4e; }
+
+.text-success {
+  color: #5cb85c; }
+
 /* FORMS */
 .desktop .list-group label {
   font-weight: bold; }
@@ -2690,115 +2696,47 @@ input.form-value {
   padding-right: 15px; }
 
 /* Edit MOdal */
-.isometrica-communications-edit-modal .isometrica-workbook-modal-subheading {
-  margin: 0 0 15px;
-  font-size: 16px; }
+.isometrica-communications-edit-modal {
+  /*
+  .isometrica-rich-text-control {
+    padding: 0;
 
-.isometrica-communications-edit-modal .modal-body {
-  border-bottom: 1px solid #ddd;
-  padding-bottom: 0; }
-  .isometrica-communications-edit-modal .modal-body:last-child {
-    border-bottom: 0; }
+    .isometrica-rich-text-controls {
+      border-bottom: 1px solid #ddd;
+      padding: 5px 10px;
+      text-align: center;
 
-.isometrica-communications-edit-modal .linked-items {
-  margin-bottom: 10px; }
-  .isometrica-communications-edit-modal .linked-items .btn {
-    margin-bottom: 5px; }
-  .isometrica-communications-edit-modal .linked-items .btn-info {
-    background-color: #5bc0de; }
-    .isometrica-communications-edit-modal .linked-items .btn-info:hover, .isometrica-communications-edit-modal .linked-items .btn-info:focus, .isometrica-communications-edit-modal .linked-items .btn-info:active {
-      background-color: #31b0d5; }
-  .isometrica-communications-edit-modal .linked-items .btn-primary {
-    background-color: #337ab7; }
-    .isometrica-communications-edit-modal .linked-items .btn-primary:hover, .isometrica-communications-edit-modal .linked-items .btn-primary:focus, .isometrica-communications-edit-modal .linked-items .btn-primary:active {
-      background-color: #286090; }
+      .btn {
+        border: 0;
+        border-radius: 0;
+      }
+    }
 
-.isometrica-communications-edit-modal .isometrica-rich-text-control {
-  padding: 0; }
-  .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-controls {
-    border-bottom: 1px solid #ddd;
-    padding: 5px 10px;
-    text-align: center; }
-    .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-controls .btn {
-      border: 0;
-      border-radius: 0; }
-  .isometrica-communications-edit-modal .isometrica-rich-text-control .isometrica-rich-text-input {
-    height: 300px; }
-
-.isometrica-communications-edit-modal .problems-nonconformities {
-  background: #eee; }
-  .isometrica-communications-edit-modal .problems-nonconformities .btn.pull-right {
-    position: relative;
-    top: -8px;
-    margin-right: -8px; }
-
-.isometrica-communications-edit-modal .table {
-  margin-bottom: 0; }
-  .isometrica-communications-edit-modal .table th {
-    background: #eee; }
-  .isometrica-communications-edit-modal .table .label {
-    font-size: 14px; }
-
-.ios .isometrica-communications-edit-modal .control-label {
-  padding-left: 15px !important; }
-
-.ios .isometrica-communications-edit-modal input[disabled] {
-  background: transparent; }
-
-.ios .isometrica-communications-edit-modal .form-group:last-child {
-  margin-bottom: 0; }
-
-.ios .isometrica-communications-edit-modal .linked-items {
-  padding-bottom: 0;
-  margin-bottom: 0; }
-  .ios .isometrica-communications-edit-modal .linked-items .btn {
-    padding-left: 12px;
-    padding-right: 12px; }
-  .ios .isometrica-communications-edit-modal .linked-items .btn-info:first-child {
-    padding-right: 0; }
-
-.android.isometrica-communications-log .isometrica-communications-edit-modal input[disabled] {
-  background: transparent; }
-
-.isometrica-meetings .bootcards-cards .list-group-item i {
-  opacity: 0.3;
-  margin-right: 15px; }
+    .isometrica-rich-text-input {
+      height: 300px;
+    }
+  }
+  */ }
+  .isometrica-communications-edit-modal .linked-items {
+    margin-bottom: 10px; }
+    .isometrica-communications-edit-modal .linked-items .btn {
+      margin-bottom: 5px; }
+    .isometrica-communications-edit-modal .linked-items .btn-info {
+      background-color: #5bc0de; }
+      .isometrica-communications-edit-modal .linked-items .btn-info:hover, .isometrica-communications-edit-modal .linked-items .btn-info:focus, .isometrica-communications-edit-modal .linked-items .btn-info:active {
+        background-color: #31b0d5; }
+    .isometrica-communications-edit-modal .linked-items .btn-primary {
+      background-color: #337ab7; }
+      .isometrica-communications-edit-modal .linked-items .btn-primary:hover, .isometrica-communications-edit-modal .linked-items .btn-primary:focus, .isometrica-communications-edit-modal .linked-items .btn-primary:active {
+        background-color: #286090; }
 
 .isometrica-meetings .isometrica-meetings-modal .modal-content {
   overflow: hidden; }
-
-.isometrica-meetings .isometrica-meetings-modal .modal-body h4 {
-  margin: 15px 0 0; }
-
-.isometrica-meetings .isometrica-meetings-modal .modal-body hr {
-  border-color: #ddd;
-  margin: 15px -15px; }
 
 .isometrica-meetings .isometrica-meetings-modal .modal-body .long-label {
   padding-top: 0;
   margin-bottom: -4px;
   margin-top: -2px; }
-
-.isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing {
-  clear: both;
-  margin-bottom: 0; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:first-child) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:not(:last-child) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-width: 0; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:first-child {
-    margin-top: 15px; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing:last-child {
-    margin-bottom: 15px; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-    left: 10px;
-    margin-top: -11px; }
-  .isometrica-meetings .isometrica-meetings-modal .bootcards-panel-collapsing .panel-body hr {
-    border-color: #ddd;
-    margin: 15px -15px; }
 
 .isometrica-meetings .isometrica-meetings-modal .modal-footer {
   background: #f5f5f5;
@@ -2807,9 +2745,6 @@ input.form-value {
     text-align: left; }
   .isometrica-meetings .isometrica-meetings-modal .modal-footer small.text-right {
     text-align: right; }
-
-.desktop.isometrica-meetings .isometrica-meetings-modal .btn-add, .desktop.isometrica-meetings .isometrica-meetings-modal .btn-delete {
-  margin: -8px 0; }
 
 .ios.isometrica-meetings .bootcards-container {
   position: fixed;
