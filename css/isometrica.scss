@@ -845,8 +845,12 @@ $status-indicator-size: 36px;
     .bootcards-cards {
       .list-group-item {
         border-top: 0;
-        border-bottom: 1px solid #ddd !important;
+        border-bottom: 1px solid #ddd;
         margin-bottom: 0;
+      }
+
+      .panel>.list-group .list-group-item:last-child {
+        border-bottom: 1px solid #ddd;
       }
 
       .list-group>.list-group-item:last-child {

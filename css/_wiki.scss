@@ -2,41 +2,43 @@
 
 .bootcards-wiki {
 
+  .bootcards-accordion {
+    .list-group-item-heading {
+      line-height: 20px;
+    }
+
+    .collapse, .collapsing {
+      .list-group-item {
+        padding-left: 25px;
+
+        &:hover, &:focus, &:active, &.active {
+          padding-left: 40px;
+        }
+      }
+    }
+
+    .text-danger {
+      color: #d9534f;
+    }
+  }
+
   .bootcards-list {
     .subsection {
-      //font-weight: normal;
       font-size: 13px;
       padding-left: 15px;
     }
   }
 
-
-
   .bootcards-wiki-panel {
-    //position: absolute;
-    //left: 15px;
-    //bottom: 0;
-    //top: 30px;
-    //right: 15px;
-
-    //min-height: 90%;
-    //position: relative;
-
     .bootcards-wiki-panel-text-read {
       font-size: 15px;
       line-height: 22px;
       padding: 25px;
     }
-
-    .bootcards-wiki-panel-bottom {
-      //position: absolute;
-      //bottom: 0;
-      //left: 0;
-      //right: 0;
-    }
   }
 
   .bootcards-wiki-panel-files {
+    border-bottom: 1px solid #ddd;
     border-top: 1px solid #ddd;
     background: white;
 
@@ -55,9 +57,19 @@
     }
   }
 
+  .bootcards-cards {
+    .bootcards-list-subheading {
+      border-bottom: 0 !important;
+    }
+  }
+
   .bootcards-wiki-panel-metadata {
     margin-bottom: 0;
     background: white;
+
+    .panel-body {
+      border-top: 1px solid #ddd;
+    }
 
     strong {
       display: block;
@@ -84,27 +96,8 @@
     }
   }
 
-  .bootcards-accordion {
-    .list-group-item-heading {
-      line-height: 20px;
-    }
-
-    .collapse, .collapsing {
-      .list-group-item {
-        padding-left: 25px;
-
-        &:hover, &:focus, &:active, &.active {
-          padding-left: 40px;
-        }
-      }
-    }
-
-    .text-danger {
-      color: #d9534f;
-    }
-  }
-
-  .bootcards-cards, .modal {
+  .bootcards-cards,
+  .modal {
     .list-group-item {
       border-radius: 0;
       border-left: 0;
@@ -114,27 +107,6 @@
 }
 
 .isometrica-wiki-edit-modal {
-
-  .modal-dialog {
-    //position: absolute;
-    //left: 50%;
-    //bottom: 0;
-    //top: 0;
-    //margin-left: -450px;
-
-    .modal-content {
-      //height: 100%;
-    }
-  }
-
-  .bootcards-wiki-panel-bottom {
-    //position: absolute;
-    //bottom: 0;
-    //left: 0;
-    //right: 0;
-  }
-
-
   .bootcards-wiki-panel-controls {
     border-bottom: 1px solid #ddd;
     text-align: center;
@@ -151,13 +123,17 @@
   }
 
   .bootcards-wiki-panel-text-edit {
-    //height: 100%;
     padding: 0;
     position: relative;
     font-size: 0;
+
     iframe {
       min-height: 300px;
     }
+  }
+
+  .bootcards-wiki-panel-files {
+    border-bottom: 0;
   }
 
   .modal-footer {
