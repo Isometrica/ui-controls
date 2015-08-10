@@ -831,12 +831,17 @@ input.form-value {
 /* ACCORDION */
 .bootcards-accordion .bootcards-list-subheading {
   background-color: #f5f5f5 !important;
-  padding-left: 48px;
+  padding-left: 40px !important;
   font-size: 16px !important; }
   .bootcards-accordion .bootcards-list-subheading:before {
     font-size: 18px !important;
     color: #337ab7 !important;
     transition: all 0.3s ease; }
+  .bootcards-accordion .bootcards-list-subheading.active {
+    background-color: #337ab7 !important;
+    color: white !important; }
+    .bootcards-accordion .bootcards-list-subheading.active:before {
+      color: white !important; }
   .bootcards-accordion .bootcards-list-subheading .list-group-item-heading {
     font-size: 16px;
     font-weight: 500; }
@@ -2636,9 +2641,17 @@ input.form-value {
 
 .isometrica-dashboard-page .isometrica-dashboard-items {
   padding-top: 30px; }
+  .isometrica-dashboard-page .isometrica-dashboard-items .row > div {
+    width: 20%; }
+  .isometrica-dashboard-page .isometrica-dashboard-items hr {
+    clear: both;
+    border-color: #ddd;
+    margin: 30px 15px; }
 
 .isometrica-dashboard-page .isometrica-dashboard-item {
-  min-height: 160px;
+  min-height: 180px;
+  height: 180px;
+  overflow: hidden;
   border: 1px solid #bbb;
   margin-bottom: 30px;
   transition: all 0.3s ease;
@@ -2648,8 +2661,8 @@ input.form-value {
   .isometrica-dashboard-page .isometrica-dashboard-item i {
     display: block;
     text-align: center;
-    font-size: 42px;
-    margin-top: 10px;
+    font-size: 60px;
+    margin-top: 5px;
     margin-bottom: 10px;
     color: #5ec4e0; }
   .isometrica-dashboard-page .isometrica-dashboard-item h3 {

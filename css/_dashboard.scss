@@ -25,10 +25,22 @@
 
   .isometrica-dashboard-items {
     padding-top: 30px;
+
+    .row > div {
+      width: 20%;
+    }
+
+    hr {
+      clear: both;
+      border-color: #ddd;
+      margin: 30px 15px;
+    }
   }
 
   .isometrica-dashboard-item {
-    min-height: 160px;
+    min-height: 180px;
+    height: 180px;
+    overflow: hidden;
     border: 1px solid #bbb;
     margin-bottom: 30px;
     transition: all 0.3s ease;
@@ -39,8 +51,8 @@
     i {
       display: block;
       text-align: center;
-      font-size: 42px;
-      margin-top: 10px;
+      font-size: 60px;
+      margin-top: 5px;
       margin-bottom: 10px;
       color: #5ec4e0;
     }
