@@ -2649,8 +2649,8 @@ input.form-value {
     margin: 30px 15px; }
 
 .isometrica-dashboard-page .isometrica-dashboard-item {
-  min-height: 180px;
-  height: 180px;
+  min-height: 160px;
+  height: 160px;
   overflow: hidden;
   border: 1px solid #bbb;
   margin-bottom: 30px;
@@ -2661,8 +2661,8 @@ input.form-value {
   .isometrica-dashboard-page .isometrica-dashboard-item i {
     display: block;
     text-align: center;
-    font-size: 60px;
-    margin-top: 5px;
+    font-size: 42px;
+    margin-top: 10px;
     margin-bottom: 10px;
     color: #5ec4e0; }
   .isometrica-dashboard-page .isometrica-dashboard-item h3 {
