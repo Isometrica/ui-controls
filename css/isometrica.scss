@@ -1120,6 +1120,21 @@ $status-indicator-size: 36px;
       }
     }
   }
+
+  .guidance-bar-dismiss {
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    margin-top: -17px;
+    color: white;
+    font-size: 24px;
+    padding: 0;
+    opacity: 0.7;
+
+    &:hover, &:active, &:focus {
+      opacity: 1;
+    }
+  }
 }
 
 .ios .guidance-bar {
