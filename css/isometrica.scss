@@ -821,6 +821,10 @@ $status-indicator-size: 36px;
         margin-bottom: 5px;
       }
 
+      .progress {
+        margin-bottom: 7px;
+      }
+
       .list-group-item-heading {
         .label {
           position: relative;
@@ -860,6 +864,11 @@ $status-indicator-size: 36px;
       .list-group {
         .row {
           margin: 0;
+
+          &:last-child {
+            margin-bottom: -1px;
+          }
+
           > div { padding: 0; }
         }
       }
@@ -1151,6 +1160,10 @@ $status-indicator-size: 36px;
 
 .modal-footer small, .panel-footer small {
   text-align: inherit !important;
+}
+
+.modal-footer {
+  border-color: #ddd;
 }
 
 .modal {

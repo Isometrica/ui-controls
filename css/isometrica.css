@@ -543,6 +543,8 @@ input.form-value {
     margin-right: 5px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .btn {
     margin-bottom: 5px; }
+  .isometrica-container-listdetail .bootcards-cards .list-group-item .progress {
+    margin-bottom: 7px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading .label {
     position: relative;
     top: -1px;
@@ -564,6 +566,8 @@ input.form-value {
 
 .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row {
   margin: 0; }
+  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row:last-child {
+    margin-bottom: -1px; }
   .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
     padding: 0; }
 
@@ -756,6 +760,9 @@ input.form-value {
 /* MODALS */
 .modal-footer small, .panel-footer small {
   text-align: inherit !important; }
+
+.modal-footer {
+  border-color: #ddd; }
 
 .modal .modal-body .isometrica-rich-text-control {
   margin: 0 -15px;
