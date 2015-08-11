@@ -2831,3 +2831,19 @@ input.form-value {
 
 .ios.isometrica-work-inbox .modal .btn-group {
   margin-right: 10px; }
+
+.isometrica-calendar .table thead {
+  background: #f5f5f5; }
+  .isometrica-calendar .table thead th {
+    width: 8.33333%;
+    border-width: 1px;
+    text-align: center;
+    font-weight: 500; }
+
+.isometrica-calendar .table th, .isometrica-calendar .table td {
+  padding: 8px !important; }
+
+.isometrica-calendar .table tbody .label {
+  display: block;
+  font-size: 14px;
+  padding: 5px; }

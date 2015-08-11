@@ -1,0 +1,27 @@
+.isometrica-calendar {
+  .table {
+    thead {
+      background: #f5f5f5;
+
+      th {
+        width: 8.33333%; // 100% / 12
+        border-width: 1px;
+        text-align: center;
+        font-weight: 500;
+      }
+
+    }
+
+    th, td {
+      padding: 8px !important;
+    }
+
+    tbody {
+      .label {
+        display: block;
+        font-size: 14px;
+        padding: 5px;
+      }
+    }
+  }
+}
