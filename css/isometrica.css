@@ -20,6 +20,12 @@ body.desktop {
   .container {
     width: auto; } }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+
 /* COLORS */
 .text-danger {
   color: #d9534f; }
@@ -566,8 +572,8 @@ input.form-value {
 
 .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row {
   margin: 0; }
-  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row:last-child {
-    margin-bottom: -1px; }
+  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row:last-child .list-group-item {
+    border-bottom: 0 !important; }
   .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
     padding: 0; }
 

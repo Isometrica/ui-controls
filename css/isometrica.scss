@@ -35,6 +35,13 @@ body.desktop {
   }
 }
 
+.row-eq-height {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 /* COLORS */
 
 .text-danger {
@@ -866,7 +873,10 @@ $status-indicator-size: 36px;
           margin: 0;
 
           &:last-child {
-            margin-bottom: -1px;
+            //margin-bottom: -1px;
+            .list-group-item {
+              border-bottom: 0 !important;
+            }
           }
 
           > div { padding: 0; }
