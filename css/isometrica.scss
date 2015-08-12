@@ -1,8 +1,9 @@
-$red-color: #d9534f;
-$amber-color: #f0ad4e;
-$green-color: #5cb85c;
-$sticky-color-default:#dcecf8;
-$link-color: #337ab7;
+$red-color: #d85250;
+$amber-color: #f0ab54;
+$green-color: #60b660;
+$light-blue-color: #00b2e2;
+$blue-color: #006e9e;
+$dark-blue-color: #222844;
 
 html,
 body {
@@ -45,15 +46,19 @@ body.desktop {
 /* COLORS */
 
 .text-danger {
-  color: #d9534f;
+  color: $red-color;
 }
 
 .text-warning {
-  color: #f0ad4e;
+  color: $amber-color;
 }
 
 .text-success {
-  color: #5cb85c;
+  color: $green-color;
+}
+
+.text-info {
+  color: $light-blue-color;
 }
 
 
@@ -229,6 +234,22 @@ input.form-value {
   &:hover, &:focus, &:active, &.active {
     background: #e6e6e6;
     border-color: #bbb;
+  }
+}
+
+.btn-primary {
+  background: $blue-color;
+
+  &:hover, &:focus, &:active, &.active {
+    background: #004e7e;
+  }
+}
+
+.btn-info {
+  background: $light-blue-color;
+
+  &:hover, &:focus, &:active, &.active {
+    background: #2698ba;
   }
 }
 
@@ -517,7 +538,9 @@ input.form-value {
 
 .desktop {
   .navbar-inverse {
+    //background: $dark-blue-color;
     background: #444;
+    border-color: #444;
 
     .navbar-brand {
       font-weight: 500;
@@ -526,6 +549,7 @@ input.form-value {
     .navbar-brand,
     .navbar-text,
     .navbar-nav>li>a {
+      //color: #c4cae0;
       color: #bbb;
     }
 
@@ -851,6 +875,12 @@ $status-indicator-size: 36px;
       .panel-body {
         padding: 10px 15px;
       }
+
+      .list-group-item.active,
+      .list-group-item.active:focus,
+      .list-group-item.active:hover {
+        background: $blue-color;
+      }
     }
 
     .bootcards-cards {
@@ -1086,7 +1116,7 @@ $status-indicator-size: 36px;
 
 .guidance-bar {
   //background: rgba(0,0,0,0.75) !important;
-  background: #337ab7;
+  background: $blue-color;
   border: 0;
   height: auto;
   margin: 0;
@@ -1144,7 +1174,7 @@ $status-indicator-size: 36px;
     position: absolute;
     right: 15px;
     top: 50%;
-    margin-top: -17px;
+    margin-top: -18px;
     color: white;
     font-size: 24px;
     padding: 0;

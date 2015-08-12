@@ -28,13 +28,16 @@ body.desktop {
 
 /* COLORS */
 .text-danger {
-  color: #d9534f; }
+  color: #d85250; }
 
 .text-warning {
-  color: #f0ad4e; }
+  color: #f0ab54; }
 
 .text-success {
-  color: #5cb85c; }
+  color: #60b660; }
+
+.text-info {
+  color: #00b2e2; }
 
 /* FORMS */
 .desktop .list-group label {
@@ -150,6 +153,16 @@ input.form-value {
   .btn-default:hover, .btn-default:focus, .btn-default:active, .btn-default.active {
     background: #e6e6e6;
     border-color: #bbb; }
+
+.btn-primary {
+  background: #006e9e; }
+  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
+    background: #004e7e; }
+
+.btn-info {
+  background: #00b2e2; }
+  .btn-info:hover, .btn-info:focus, .btn-info:active, .btn-info.active {
+    background: #2698ba; }
 
 .btn-progress {
   opacity: 0.5;
@@ -350,7 +363,8 @@ input.form-value {
   margin: 0; }
 
 .desktop .navbar-inverse {
-  background: #444; }
+  background: #444;
+  border-color: #444; }
   .desktop .navbar-inverse .navbar-brand {
     font-weight: 500; }
   .desktop .navbar-inverse .navbar-brand,
@@ -559,6 +573,11 @@ input.form-value {
 .desktop .isometrica-container-listdetail .bootcards-list .panel-body {
   padding: 10px 15px; }
 
+.desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active,
+.desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active:focus,
+.desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active:hover {
+  background: #006e9e; }
+
 .desktop .isometrica-container-listdetail .bootcards-cards .list-group-item {
   border-top: 0;
   border-bottom: 1px solid #ddd;
@@ -708,7 +727,7 @@ input.form-value {
 
 /* GUIDANCE BAR */
 .guidance-bar {
-  background: #337ab7;
+  background: #006e9e;
   border: 0;
   height: auto;
   margin: 0;
@@ -749,7 +768,7 @@ input.form-value {
     position: absolute;
     right: 15px;
     top: 50%;
-    margin-top: -17px;
+    margin-top: -18px;
     color: white;
     font-size: 24px;
     padding: 0;
@@ -1114,9 +1133,9 @@ input.form-value {
       text-align: center;
       font-size: 18px; }
       .workbook-column .workbook-item .workbook-item-checkbox.text-danger {
-        border-color: #d9534f; }
+        border-color: #d85250; }
       .workbook-column .workbook-item .workbook-item-checkbox.text-success {
-        border-color: #5cb85c; }
+        border-color: #60b660; }
     .workbook-column .workbook-item .workbook-item-progress {
       margin-bottom: 0; }
     .workbook-column .workbook-item .workbook-item-clock {
@@ -1130,11 +1149,11 @@ input.form-value {
     .workbook-column .workbook-item .workbook-item-icon {
       color: #999; }
     .workbook-column .workbook-item .text-danger {
-      color: #d9534f; }
+      color: #d85250; }
     .workbook-column .workbook-item .text-warning {
-      color: #f0ad4e; }
+      color: #f0ab54; }
     .workbook-column .workbook-item .text-success {
-      color: #5cb85c; }
+      color: #60b660; }
     .workbook-column .workbook-item .workbook-item-label {
       position: absolute;
       left: 0;
@@ -1717,7 +1736,7 @@ input.form-value {
 
 /* Tabs */
 .isometrica-overview-tabs {
-  background: #337ab7; }
+  background: #006e9e; }
   @media (max-width: 767px) {
     .isometrica-overview-tabs {
       padding-top: 3px; }
@@ -1729,6 +1748,7 @@ input.form-value {
     font-weight: 500;
     color: white;
     background: #539ad7;
+    background: #00b2e2;
     transition: all 0.3s ease;
     margin: 0 2px;
     border-bottom-left-radius: 0;
@@ -2669,14 +2689,13 @@ input.form-value {
   transition: all 0.3s ease;
   cursor: pointer; }
   .isometrica-dashboard-page .isometrica-dashboard-item:hover, .isometrica-dashboard-page .isometrica-dashboard-item:focus, .isometrica-dashboard-page .isometrica-dashboard-item:active {
-    border-color: #5bc0de; }
+    border-color: #00b2e2; }
   .isometrica-dashboard-page .isometrica-dashboard-item i {
     display: block;
     text-align: center;
     font-size: 42px;
     margin-top: 10px;
-    margin-bottom: 10px;
-    color: #5ec4e0; }
+    margin-bottom: 10px; }
   .isometrica-dashboard-page .isometrica-dashboard-item h3 {
     line-height: 20px;
     font-size: 16px;

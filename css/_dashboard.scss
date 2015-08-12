@@ -1,12 +1,8 @@
 .isometrica-dashboard-page {
-  //padding-top: 50px;
-
 
   .guidance-bar {
     position: relative;
     top: 0;
-
-
   }
 
   .isometrica-dashboard-items {
@@ -32,7 +28,7 @@
     transition: all 0.3s ease;
     cursor: pointer;
 
-    &:hover, &:focus, &:active { border-color: #5bc0de; }
+    &:hover, &:focus, &:active { border-color: $light-blue-color; }
 
     i {
       display: block;
@@ -40,7 +36,7 @@
       font-size: 42px;
       margin-top: 10px;
       margin-bottom: 10px;
-      color: #5ec4e0;
+      //color: #5ec4e0;
     }
 
     h3 {
@@ -93,11 +89,9 @@
 
     }
   }
-
 }
 
 .ios.isometrica-dashboard-page {
-  //overflow-y: visible;
 
   .guidance-bar {
     position: fixed;
