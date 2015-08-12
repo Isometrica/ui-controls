@@ -90,7 +90,11 @@ input.form-value {
   margin-bottom: 4px; }
 
 .isometrica-rich-text-control {
-  padding: 0; }
+  padding: 0;
+  margin: 0 -15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px; }
   .isometrica-rich-text-control .isometrica-rich-text-controls {
     border-bottom: 1px solid #ddd;
     padding: 5px 10px;
@@ -107,6 +111,17 @@ input.form-value {
       top: 4px; }
   .isometrica-rich-text-control .isometrica-rich-text-input {
     height: 300px; }
+
+.modal .isometrica-rich-text-control .isometrica-rich-text-input {
+  height: 160px; }
+
+.isometrica-rich-text-panel .panel-body {
+  padding-top: 0;
+  padding-bottom: 0; }
+  .isometrica-rich-text-panel .panel-body .isometrica-rich-text-control {
+    border-top: 0;
+    border-bottom: 0;
+    margin-bottom: 0; }
 
 .ios .form-horizontal .form-group:last-child {
   margin-bottom: 0; }
@@ -788,14 +803,6 @@ input.form-value {
 
 .modal-footer {
   border-color: #ddd; }
-
-.modal .modal-body .isometrica-rich-text-control {
-  margin: 0 -15px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 15px; }
-  .modal .modal-body .isometrica-rich-text-control .isometrica-rich-text-input {
-    height: 160px; }
 
 .modal .modal-body hr {
   margin: 15px -15px;

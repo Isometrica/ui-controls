@@ -137,8 +137,18 @@ input.form-value {
   margin-bottom: 4px;
 }
 
+    .isometrica-rich-text-control {
+
+
+
+    }
+
 .isometrica-rich-text-control {
   padding: 0;
+  margin: 0 -15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
 
   .isometrica-rich-text-controls {
     border-bottom: 1px solid #ddd;
@@ -162,6 +172,25 @@ input.form-value {
 
   .isometrica-rich-text-input {
     height: 300px;
+  }
+}
+
+.modal .isometrica-rich-text-control {
+  .isometrica-rich-text-input {
+    height: 160px;
+  }
+}
+
+.isometrica-rich-text-panel {
+  .panel-body {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .isometrica-rich-text-control {
+      border-top: 0;
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
   }
 }
 
@@ -1208,16 +1237,7 @@ $status-indicator-size: 36px;
 
 .modal {
   .modal-body {
-    .isometrica-rich-text-control {
-      margin: 0 -15px;
-      border-top: 1px solid #ddd;
-      border-bottom: 1px solid #ddd;
-      margin-bottom: 15px;
 
-      .isometrica-rich-text-input {
-        height: 160px;
-      }
-    }
 
     hr {
       margin: 15px -15px;
