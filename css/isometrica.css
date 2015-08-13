@@ -2897,6 +2897,45 @@ input.form-value {
 .isometrica-calendar .table th, .isometrica-calendar .table td {
   padding: 8px !important; }
 
+.isometrica-calendar .table .btn-date {
+  position: relative; }
+  .isometrica-calendar .table .btn-date:before {
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-bottom-color: #00b2e2;
+    position: absolute;
+    left: -10px;
+    bottom: -1px;
+    transition: all 0.3s ease;
+    display: none; }
+  .isometrica-calendar .table .btn-date:after {
+    content: '';
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent;
+    border-top-color: #00b2e2;
+    position: absolute;
+    right: -10px;
+    top: -1px;
+    transition: all 0.3s ease;
+    display: none; }
+  .isometrica-calendar .table .btn-date:hover:before, .isometrica-calendar .table .btn-date:focus:before, .isometrica-calendar .table .btn-date:active:before {
+    border-bottom-color: #2698ba; }
+  .isometrica-calendar .table .btn-date:hover:after, .isometrica-calendar .table .btn-date:focus:after, .isometrica-calendar .table .btn-date:active:after {
+    border-top-color: #2698ba; }
+  .isometrica-calendar .table .btn-date.btn-date-specific {
+    margin-left: 10px; }
+    .isometrica-calendar .table .btn-date.btn-date-specific:before {
+      display: block; }
+  .isometrica-calendar .table .btn-date.btn-date-range {
+    display: block;
+    margin-left: 10px;
+    margin-right: 10px; }
+    .isometrica-calendar .table .btn-date.btn-date-range:before, .isometrica-calendar .table .btn-date.btn-date-range:after {
+      display: block; }
+
 .isometrica-calendar .table tbody .label {
   display: block;
   font-size: 14px;
