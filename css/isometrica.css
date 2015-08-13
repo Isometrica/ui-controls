@@ -918,6 +918,8 @@ input.form-value {
     border-radius: 0;
     margin-left: -15px;
     margin-right: -15px; }
+    .bootcards-panel-collapsing.full-width .panel-heading {
+      background: white; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;
     padding-left: 50px;
