@@ -377,13 +377,44 @@
 
 
             <div>
-              <div class="panel panel-default bootcards-panel-collapsing isometrica-rich-text-panel">
-                <div class="panel-heading clearfix" href="#audit-plan" data-toggle="collapse" aria-expanded="true">
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#audit-plan" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <strong>Audit plan</strong>
+                  <h4 class="panel-title pull-left">Audit plan</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse in" id="audit-plan">
+                <div class="collapse" id="audit-plan">
                   <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                        <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#observation-notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Observation notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="observation-notes">
+                  <div class="panel-body">
+
                     <div class="isometrica-rich-text-control">
                       <div class="isometrica-rich-text-controls clearfix">
                         <div class="ql-toolbar-container" id="formatting-container">
@@ -405,167 +436,150 @@
               </div>
             </div>
 
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing isometrica-rich-text-panel">
-                <div class="panel-heading clearfix" href="#observation-notes" data-toggle="collapse" aria-expanded="true">
+            <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <strong>Observation notes</strong>
+                  <h4 class="panel-title pull-left">Non-conformities</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse in" id="observation-notes">
+                <div class="collapse" id="nonconformities">
                   <div class="panel-body">
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
-                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
-                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
-                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
-                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <strong>NC509</strong> Instrument calibration not properly documented
+                            </div>
+                            <div class="col-xs-6 text-right">
+                              <span class="label label-danger">Open – Overdue</span>
+                            </div>
+                          </div>
                         </div>
-                        <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+                        <div class="collapse" id="nonconformity-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Description</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Instrument calibration not properly documented">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Closed
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Cancelled
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Plan exists?</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#nonconformity-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-6">
+                              <strong>NC510</strong> Litter found on shop floor
+                            </div>
+                            <div class="col-xs-6 text-right">
+                              <span class="label label-success">Closed</span>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="nonconformity-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Description</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Litter found on shop floor">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Closed
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Cancelled
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Plan exists?</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
 
+                    <button type="button" class="btn btn-link btn-block btn-add">Add a non-conformity</button>
+                    <button type="button" class="btn btn-link btn-block btn-add">Patch</button>
+
+                  </div>
                 </div>
-              </div>
             </div>
 
-            <h4>Non-conformities</h4>
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <strong>NC509</strong> Instrument calibration not properly documented
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="label label-danger">Open – Overdue</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapse" id="nonconformity-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Instrument calibration not properly documented">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-                  	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-info">
-                            Open
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            Closed
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            Cancelled
-                          </button>
-                        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Plan exists?</label>
-          		        <div class="col-xs-9">
-                  	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-info">
-                            Yes
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            No
-                          </button>
-                        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#nonconformity-2" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="row">
-                    <div class="col-xs-6">
-                      <strong>NC510</strong> Litter found on shop floor
-                    </div>
-                    <div class="col-xs-6 text-right">
-                      <span class="label label-success">Closed</span>
-                    </div>
-                  </div>
-                </div>
-                <div class="collapse" id="nonconformity-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Litter found on shop floor">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-                  	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-info">
-                            Open
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            Closed
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            Cancelled
-                          </button>
-                        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Plan exists?</label>
-          		        <div class="col-xs-9">
-                  	    <div class="btn-group isometrica-btn-toggle">
-                          <button type="button" class="btn btn-info">
-                            Yes
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            No
-                          </button>
-                        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-
-            <button type="button" class="btn btn-link btn-block btn-add">Add a non-conformity</button>
-            <button type="button" class="btn btn-link btn-block btn-add">Patch</button>
-
-            <hr>
 
             <div class="form-group">
               <label class="control-label col-xs-6">Corrective actions verified as effective</label>
