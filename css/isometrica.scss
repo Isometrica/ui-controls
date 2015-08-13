@@ -1424,6 +1424,14 @@ $status-indicator-size: 36px;
     margin-bottom: 15px;
   }
 
+  &.full-width {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
 	.panel-heading {
   	border: 0;
   	//padding: 10px 15px 0;

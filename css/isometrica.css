@@ -912,6 +912,12 @@ input.form-value {
     margin-top: 15px; }
   .bootcards-panel-collapsing:last-child {
     margin-bottom: 15px; }
+  .bootcards-panel-collapsing.full-width {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;
     padding-left: 50px;
