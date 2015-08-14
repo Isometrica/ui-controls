@@ -58,7 +58,7 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          <img src="img/logo-white.png"/>
+          <img src="img/logo-white-lowercase.png" class="hidden-xs"/><span class="hidden-xs">:</span>
           IBM UK <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
@@ -159,10 +159,6 @@
       	Add a template
     	</a>
 
-    	<hr class="visible-xs"/>
-
-    	<h2 class="isometrica-org-heading">IBM UK</h2>
-
 			<div class="row">
 
 				<div class="col-sm-6 col-md-4">
@@ -203,6 +199,7 @@
 						</div>
 						<div class="panel-footer">
 							<a href="users.html" class="btn btn-primary">
+  							<i class="fa fa-plus-circle fa-lg"></i>
   						  Invite users
               </a>
 						</div>
@@ -219,13 +216,13 @@
 							</div>
 						</div>
 						<div class="panel-footer">
-							<span>5 actions <span class="label label-info">2 new</span></span>
+							<span>5 actions <span class="label label-danger">2 new</span></span>
 						</div>
 					</div>
 				</div>
 			</div>
 
-			<!--<div class="row">
+			<div class="row">
 
         <div class="col-sm-6 col-md-4">
 					<div class="panel panel-default isometrica-overview-item isometrica-overview-item-document" onclick="window.location='wiki.html';">
@@ -239,8 +236,39 @@
               <p class="status text-muted text-center">60 pages</p>
 							<ul class="users">
 								<li>
+									<img class="img-circle" src="img/avatar-steve.gif" data-toggle="tooltip" title="Steve Ives" alt="Steve Ives"/>
+								</li>
+								<li>
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
 								</li>
+								<li>
+									<img class="img-circle" src="img/avatar-matt.gif" data-toggle="tooltip" title="Matt White" alt="Matt White"/>
+								</li>
+								<li>
+									<img class="img-circle" src="img/avatar-jack.gif" data-toggle="tooltip" title="Steve Ives" alt="Steve Ives"/>
+								</li>
+								<li>
+									<a href="users.html" class="add-user" data-toggle="tooltip" title="Add a User">
+										<i class="fa fa-plus"></i>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="col-sm-6 col-md-4">
+					<div class="panel panel-default isometrica-overview-item isometrica-overview-item-document" onclick="window.location='wiki.html';">
+						<div class="panel-body">
+							<div class="isometrica-overview-item-heading">
+  							<img class="workbook-icon pull-left" src="img/icon-document@2x.png" alt="workbook icon"/>
+                <h3>Title goes here</h3>
+                <p class="org-name text-muted">IBM UK</p>
+							</div>
+							<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit suspendisse lacus nisl.</p>
+              <p class="status text-muted text-center">60 pages</p>
+							<ul class="users">
 								<li>
 									<img class="img-circle" src="img/avatar-matt.gif" data-toggle="tooltip" title="Matt White" alt="Matt White"/>
 								</li>
@@ -288,7 +316,7 @@
 									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
 								</li>
 								<li>
-									<img class="img-circle" src="img/avatar-matt.gif" data-toggle="tooltip" title="Matt White" alt="Matt White"/>
+									<img class="img-circle" src="img/avatar-steve.gif" data-toggle="tooltip" title="Matt White" alt="Matt White"/>
 								</li>
 								<li>
 									<a href="users.html" class="add-user" data-toggle="tooltip" title="Add a User">
@@ -300,12 +328,15 @@
 					</div>
 				</div>
 
-			</div>-->
+			</div>
 
 
 			<hr>
 
-			<button type="button" class="btn btn-primary btn-add-org">Report a non-conformity</button>
+			<button type="button" class="btn btn-primary btn-add-org">
+			  <i class="fa fa-plus-circle fa-lg"></i>
+			  Report a non-conformity
+      </button>
 
     </div>
   </div>

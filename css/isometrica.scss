@@ -239,14 +239,20 @@ input.form-value {
 
 /* LINKS & BUTTONS */
 
-/*a:not(.btn),
-.btn-link {
-  color: $blue-color;
+.desktop,
+.ios,
+.android {
+  a,
+  .btn-link {
+    color: $blue-color;
 
-  &:hover, &:focus, &:active, &.active {
-    color: $blue-color-hover;
+    &:hover, &:focus, &:active, &.active {
+      color: $blue-color-hover;
+    }
   }
-}*/
+}
+
+
 
 .btn {
   transition: all 0.3s ease;

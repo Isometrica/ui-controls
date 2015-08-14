@@ -155,14 +155,36 @@ input.form-value {
   margin: 2px 0; }
 
 /* LINKS & BUTTONS */
-/*a:not(.btn),
-.btn-link {
-  color: $blue-color;
+.desktop a,
+.desktop .btn-link,
+.ios a,
+.ios .btn-link,
+.android a,
+.android .btn-link {
+  color: #006e9e; }
+  .desktop a:hover,
+  .desktop a:focus,
+  .desktop a:active,
+  .desktop a.active,
+  .desktop .btn-link:hover,
+  .desktop .btn-link:focus,
+  .desktop .btn-link:active,
+  .desktop .btn-link.active,
+  .ios a:hover,
+  .ios a:focus,
+  .ios a:active,
+  .ios a.active,
+  .ios .btn-link:hover,
+  .ios .btn-link:focus,
+  .ios .btn-link:active,
+  .ios .btn-link.active,
+  .android a:hover,
+  .android a:focus,
+  .android a:active,
+  .android a.active,
+  .android .btn-link:hover, .android .btn-link:focus, .android .btn-link:active, .android .btn-link.active {
+    color: #004e7e; }
 
-  &:hover, &:focus, &:active, &.active {
-    color: $blue-color-hover;
-  }
-}*/
 .btn {
   transition: all 0.3s ease; }
   .btn i.no-margin {
@@ -1710,10 +1732,6 @@ input.form-value {
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
   position: relative; }
-  @media (max-width: 767px) {
-    .isometrica-overview-page .navbar .navbar-brand img {
-      height: 19px;
-      top: -2px; } }
   @media (min-width: 768px) {
     .isometrica-overview-page .navbar .navbar-brand img {
       height: 28px;
@@ -1741,17 +1759,33 @@ input.form-value {
 
 @media (max-width: 767px) {
   body.desktop.isometrica-overview-page {
-    padding-top: 50px !important; } }
+    padding-top: 50px !important; }
+    body.desktop.isometrica-overview-page .btn-menu {
+      display: block !important;
+      position: absolute;
+      right: 0;
+      top: 0;
+      z-index: 99;
+      padding: 13px 15px; } }
 
 body.desktop.isometrica-overview-page .navbar-header {
   position: relative; }
+  @media (max-width: 767px) {
+    body.desktop.isometrica-overview-page .navbar-header {
+      display: block;
+      height: 50px; } }
+  @media (max-width: 767px) {
+    body.desktop.isometrica-overview-page .navbar-header .navbar-brand {
+      float: none;
+      display: block;
+      text-align: center; } }
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header .navbar-brand {
       font-size: 36px; } }
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header .navbar-brand img {
       height: 40px;
-      top: -5px; } }
+      top: -4px; } }
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header {
       height: 80px; }
@@ -1761,8 +1795,16 @@ body.desktop.isometrica-overview-page .navbar-header {
         left: auto;
         right: 0; } }
 
+.ios.isometrica-overview-page .navbar .navbar-brand img {
+  height: 18px;
+  top: -2px; }
+
 .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav {
   margin: 0; }
+
+.android.isometrica-overview-page .navbar .navbar-brand img {
+  height: 21px;
+  top: -2px; }
 
 .android.isometrica-overview-page .guidance-bar {
   box-shadow: none; }
@@ -1875,7 +1917,9 @@ body.desktop.isometrica-overview-page .navbar-header {
   width: 100px;
   text-decoration: none !important;
   font-weight: 500;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  font-size: 16px;
+  line-height: 20px; }
   @media (max-width: 768px) {
     .isometrica-overview-add {
       position: static;
@@ -1898,6 +1942,8 @@ body.desktop.isometrica-overview-page .navbar-header {
       margin-bottom: 15px; } }
   .isometrica-overview-item:hover, .isometrica-overview-item:focus, .isometrica-overview-item:active {
     border-color: #5bc0de; }
+  .isometrica-overview-item .label {
+    font-size: 12px; }
   .isometrica-overview-item .panel-body .isometrica-overview-item-heading .workbook-icon {
     float: left;
     margin: 3px 15px 0 3px;
@@ -2790,7 +2836,8 @@ body.desktop.isometrica-overview-page .navbar-header {
     position: absolute;
     left: 0;
     top: 50%;
-    margin-top: -14px; }
+    margin-top: -14px;
+    opacity: 1; }
   .isometrica-dashboard-page .list-group .list-group-item .label {
     position: relative;
     top: -1px;
