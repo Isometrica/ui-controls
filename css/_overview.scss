@@ -3,6 +3,13 @@
 .isometrica-overview-page {
   .navbar {
     .navbar-brand {
+      @media (min-width: 1060px) and (max-width: 1199px) {
+        margin-left: -59px;
+      }
+      @media (min-width: 1260px) {
+        margin-left: -59px;
+      }
+
       img {
         display: inline-block;
         position: relative;

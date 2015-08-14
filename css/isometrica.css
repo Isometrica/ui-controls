@@ -1729,6 +1729,14 @@ input.form-value {
   padding-right: 15px; }
 
 /* Navbar */
+@media (min-width: 1060px) and (max-width: 1199px) {
+  .isometrica-overview-page .navbar .navbar-brand {
+    margin-left: -59px; } }
+
+@media (min-width: 1260px) {
+  .isometrica-overview-page .navbar .navbar-brand {
+    margin-left: -59px; } }
+
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
   position: relative; }
