@@ -239,14 +239,14 @@ input.form-value {
 
 /* LINKS & BUTTONS */
 
-a:not(.btn),
+/*a:not(.btn),
 .btn-link {
   color: $blue-color;
 
   &:hover, &:focus, &:active, &.active {
     color: $blue-color-hover;
   }
-}
+}*/
 
 .btn {
   transition: all 0.3s ease;
@@ -1431,7 +1431,7 @@ $status-indicator-size: 36px;
     box-shadow: none;
     border-color: #ddd;
 
-    .panel-heading {
+    > .panel-heading {
       background: white;
     }
   }
