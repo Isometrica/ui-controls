@@ -285,33 +285,57 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Activity/process</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="Extrusion" placeholder="Activity/process"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Department</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="Manufacturing" placeholder="Department"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Ref</label>
               <div class="col-xs-8">
                 <input type="text" class="form-control form-value" disabled="" value="IA106"/>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Scope</label>
+              <label class="control-label col-xs-4">Management system</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" value="All production activities" placeholder="Scope"/>
+                <select class="form-control">
+                  <option></option>
+                  <option selected="">Quality</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Audit area(s)</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="Warehouse activities - receiving" placeholder="Audit area(s)"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Relevant docs</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-file-word-o fa-lg"></i>
+                    PR15
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-file-word-o fa-lg"></i>
+                    Appendix 12
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Department</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="Manufacturing" placeholder="Department"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -333,6 +357,7 @@
                 </select>
               </div>
             </div>
+
             <div class="form-group">
               <label class="control-label col-xs-4">Due by</label>
               <div class="col-xs-8">
@@ -361,18 +386,12 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
+              <label class="control-label col-xs-4">Who audited</label>
               <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                <input type="text" class="form-control" value="P. Smith" placeholder="Who audited"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
               </div>
             </div>
 
@@ -437,9 +456,47 @@
               </div>
 
               <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#observation-files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Observation files</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="observation-files">
+                  <div class="panel-body">
+
+                    <div class="form-group">
+
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-image-o fa-lg"></i>
+                            Image name here.jpg
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-video-o fa-lg"></i>
+                            Video filename goes here.mov
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
                   <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
                     <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                    <h4 class="panel-title pull-left">Non-conformities</h4>
+                    <h4 class="panel-title pull-left">Non-conformities found</h4>
                     <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                   </div>
                   <div class="collapse" id="nonconformities">
@@ -575,6 +632,107 @@
 
                       <button type="button" class="btn btn-link btn-block btn-add">Add a non-conformity</button>
                       <button type="button" class="btn btn-link btn-block btn-add">Patch</button>
+
+                    </div>
+                  </div>
+              </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                  <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
+                    <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                    <h4 class="panel-title pull-left">Corrective actions</h4>
+                    <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  </div>
+                  <div class="collapse" id="corrective-actions">
+                    <div class="panel-body">
+
+                      <div>
+                        <div class="panel panel-default bootcards-panel-collapsing">
+                          <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
+                            <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                            <div class="pull-left">
+                              <strong>CA129</strong>
+                              Fix machine calibration
+                            </div>
+                            <div class="pull-right">
+                              9 Sep 2015 <span class="label label-danger">Open - Overdue</span>
+                            </div>
+                          </div>
+                          <div class="collapse" id="action-1">
+                            <div class="panel-body">
+                              <div class="form-group">
+                    		        <label class="control-label col-xs-3"></label>
+                    		        <div class="col-xs-9">
+                            	    <div class="btn-group isometrica-btn-toggle">
+                                    <button type="button" class="btn btn-info">
+                                      New
+                                    </button>
+                                    <button type="button" class="btn btn-default">
+                                      Existing
+                                    </button>
+                                  </div>
+                    		        </div>
+                    	        </div>
+                    	        <div class="form-group">
+
+                    		        <label class="control-label col-xs-3">Description</label>
+                    		        <div class="col-xs-9">
+                    			        <input type="text" class="form-control" value="Fix machine calibration">
+                    			        <button type="button" class="btn btn-link clear-field">
+                    			          <i class="fa fa-times-circle"></i>
+                    			        </button>
+                    		        </div>
+                    	        </div>
+                    	        <div class="form-group">
+                    		        <label class="control-label col-xs-3">Date</label>
+                    		        <div class="col-xs-9">
+                    			        <input type="text" class="form-control" value="9 Sep 2015">
+                    			        <button type="button" class="btn btn-link clear-field">
+                    			          <i class="fa fa-times-circle"></i>
+                    			        </button>
+                    		        </div>
+                    	        </div>
+                    	        <div class="form-group">
+                    		        <label class="control-label col-xs-3">Status</label>
+                    		        <div class="col-xs-9">
+                            	    <div class="btn-group isometrica-btn-toggle">
+                                    <button type="button" class="btn btn-info">
+                                      Open
+                                    </button>
+                                    <button type="button" class="btn btn-default">
+                                      Closed
+                                    </button>
+                                    <button type="button" class="btn btn-default">
+                                      Cancelled
+                                    </button>
+                                  </div>
+                    		        </div>
+                    	        </div>
+                    	        <div class="form-group">
+                    		        <label class="control-label col-xs-3">Plan exists?</label>
+                    		        <div class="col-xs-9">
+                            	    <div class="btn-group isometrica-btn-toggle">
+                                    <button type="button" class="btn btn-info">
+                                      Yes
+                                    </button>
+                                    <button type="button" class="btn btn-default">
+                                      No
+                                    </button>
+                                  </div>
+                    		        </div>
+                    	        </div>
+                    	        <hr>
+                    	        <div class="form-group">
+                                <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                  <button type="button" class="btn btn-default pull-left">More Info</button>
+                                  <button type="button" class="btn btn-default pull-right">Delete</button>
+                                </div>
+                              </div>
+                  	        </div>
+                          </div>
+                        </div>
+                      </div>
+                      <button type="button" class="btn btn-link btn-block btn-add">Add corrective action</button>
 
                     </div>
                   </div>

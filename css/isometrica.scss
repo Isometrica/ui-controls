@@ -242,7 +242,7 @@ input.form-value {
 .desktop,
 .ios,
 .android {
-  a,
+  a:not(.btn):not(.list-group-item),
   .btn-link {
     color: $blue-color;
 
@@ -251,6 +251,7 @@ input.form-value {
     }
   }
 }
+
 
 
 

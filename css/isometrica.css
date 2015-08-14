@@ -155,33 +155,33 @@ input.form-value {
   margin: 2px 0; }
 
 /* LINKS & BUTTONS */
-.desktop a,
+.desktop a:not(.btn):not(.list-group-item),
 .desktop .btn-link,
-.ios a,
+.ios a:not(.btn):not(.list-group-item),
 .ios .btn-link,
-.android a,
+.android a:not(.btn):not(.list-group-item),
 .android .btn-link {
   color: #006e9e; }
-  .desktop a:hover,
-  .desktop a:focus,
-  .desktop a:active,
-  .desktop a.active,
+  .desktop a:not(.btn):not(.list-group-item):hover,
+  .desktop a:not(.btn):not(.list-group-item):focus,
+  .desktop a:not(.btn):not(.list-group-item):active,
+  .desktop a:not(.btn):not(.list-group-item).active,
   .desktop .btn-link:hover,
   .desktop .btn-link:focus,
   .desktop .btn-link:active,
   .desktop .btn-link.active,
-  .ios a:hover,
-  .ios a:focus,
-  .ios a:active,
-  .ios a.active,
+  .ios a:not(.btn):not(.list-group-item):hover,
+  .ios a:not(.btn):not(.list-group-item):focus,
+  .ios a:not(.btn):not(.list-group-item):active,
+  .ios a:not(.btn):not(.list-group-item).active,
   .ios .btn-link:hover,
   .ios .btn-link:focus,
   .ios .btn-link:active,
   .ios .btn-link.active,
-  .android a:hover,
-  .android a:focus,
-  .android a:active,
-  .android a.active,
+  .android a:not(.btn):not(.list-group-item):hover,
+  .android a:not(.btn):not(.list-group-item):focus,
+  .android a:not(.btn):not(.list-group-item):active,
+  .android a:not(.btn):not(.list-group-item).active,
   .android .btn-link:hover, .android .btn-link:focus, .android .btn-link:active, .android .btn-link.active {
     color: #004e7e; }
 
