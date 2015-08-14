@@ -202,17 +202,17 @@
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Actions from last meeting - closed</p>
-              <a href="#" class="btn btn-default"><strong>MA129:</strong> Arrange briefing session for Michael Hamilton <i class="fa fa-circle margin-left text-success"></i></a>
-              <a href="#" class="btn btn-default"><strong>MA130:</strong> Check on how up-to-date we are on R&amp;D tax credits <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA129</strong> Arrange briefing session for Michael Hamilton <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA130</strong> Check on how up-to-date we are on R&amp;D tax credits <i class="fa fa-circle margin-left text-success"></i></a>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Actions from last meeting - open</p>
-              <a href="#" class="btn btn-default"><strong>MA110:</strong> Ask Lyndsey to change DSO calculator <i class="fa fa-circle margin-left text-danger"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA110</strong> Ask Lyndsey to change DSO calculator <i class="fa fa-circle margin-left text-danger"></i></a>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">New meeting actions</p>
-              <a href="#" class="btn btn-default"><strong>MA135:</strong> Investigate Japan pricing <i class="fa fa-circle margin-left text-warning"></i></a>
-              <a href="#" class="btn btn-default"><strong>MA136:</strong> Renew EMEA prices <i class="fa fa-circle margin-left text-warning"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA135</strong> Investigate Japan pricing <i class="fa fa-circle margin-left text-warning"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA136</strong> Renew EMEA prices <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
           </div>
           <div class="panel-footer">
@@ -280,76 +280,103 @@
               </div>
             </div>
 
-            <hr>
-
-            <h4>Attendees</h4>
-
-            <div class="collapse" id="addAttendee">
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix" href="#attendee-new" data-toggle="collapse" aria-expanded="true">
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#attendees-add" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  Add attendee
+                  <h4 class="panel-title pull-left">Attendees</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse in" id="attendee-new">
+                <div class="collapse" id="attendees-add">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">
-          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
-          		          Name
-          		        </label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="" placeholder="Name">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="" placeholder="Initials">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Regular attendee</label>
-          		        <div class="col-xs-8">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-8 col-sm-offset-4 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
+
+                    <div class="collapse" id="addAttendee">
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix" href="#attendee-new" data-toggle="collapse" aria-expanded="true">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          Add attendee
+                        </div>
+                        <div class="collapse in" id="attendee-new">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">
+                  		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
+                  		          Name
+                  		        </label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Name">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Initials</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Initials">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Regular attendee</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
+
                     </div>
-        	        </div>
+
+                    <button type="button" class="btn btn-link btn-block btn-add" data-toggle="collapse" href="#addAttendee" aria-expanded="false">Add attendee</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#agenda-items-add" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Agenda items</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="agenda-items-add">
+                  <div class="panel-body">
+
+                    <button type="button" class="btn btn-link btn-block btn-add">Add agenda item</button>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#new-actions-add" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">New meeting actions</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="new-actions-add">
+                  <div class="panel-body">
+
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link btn-add">Add new action</button>
+                    </div>
+
+                  </div>
                 </div>
               </div>
 
             </div>
-
-            <button type="button" class="btn btn-link btn-block btn-add" data-toggle="collapse" href="#addAttendee" aria-expanded="false">Add attendee</button>
-
-            <hr>
-
-            <h4>Agenda items</h4>
-
-            <button type="button" class="btn btn-link btn-block btn-add">Add agenda item</button>
-
-            <hr>
-
-            <h4>New meeting actions</h4>
-
-            <div class="text-center">
-              <button type="button" class="btn btn-link btn-add">Add new action</button>
-            </div>
-
           </div>
         </form>
       </div>
@@ -404,756 +431,807 @@
               </div>
             </div>
 
-            <hr>
-
-            <h4>Attendees</h4>
             <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#attendee-1" data-toggle="collapse" aria-expanded="false">
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#attendees" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  Nigel Cheshire
+                  <h4 class="panel-title pull-left">Attendees</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="attendee-1">
+                <div class="collapse" id="attendees">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">
-          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
-          		          Name
-          		        </label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="Nigel Cheshire">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Regular attendee</label>
-          		        <div class="col-xs-8">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-8 col-sm-offset-4 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#attendee-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          Nigel Cheshire
+                        </div>
+                        <div class="collapse" id="attendee-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">
+                  		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
+                  		          Name
+                  		        </label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="Nigel Cheshire">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Initials</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Regular attendee</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#attendee-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          Steve Ives
+                        </div>
+                        <div class="collapse" id="attendee-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">
+                  		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
+                  		          Name
+                  		        </label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="Nigel Cheshire">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Initials</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Regular attendee</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#attendee-3" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          Mark Dixon
+                        </div>
+                        <div class="collapse" id="attendee-3">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">
+                  		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
+                  		          Name
+                  		        </label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="Nigel Cheshire">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Initials</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Regular attendee</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
                     </div>
-        	        </div>
+
+                    <button type="button" class="btn btn-link btn-block btn-add">Add attendee</button>
+
+                  </div>
                 </div>
               </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#attendee-2" data-toggle="collapse" aria-expanded="false">
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#agenda-items" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  Steve Ives
+                  <h4 class="panel-title pull-left">Agenda items</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="attendee-2">
+                <div class="collapse" id="agenda-items">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">
-          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
-          		          Name
-          		        </label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="Nigel Cheshire">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Regular attendee</label>
-          		        <div class="col-xs-8">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-8 col-sm-offset-4 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            1. Previous minutes
+                          </div>
+                          <div class="pull-right">
+                            NC
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="1">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                            <hr>
+                            <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            2. FY plan
+                          </div>
+                          <div class="pull-right">
+                            NC
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="1">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-3" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            3. Teamstudio Business Reports
+                          </div>
+                          <div class="pull-right">
+                            NC
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-3">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="1">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>4. Isometrica update</strong>
+                          </div>
+                          <div class="pull-right">
+                            <strong>SI</strong>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-4">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="1">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
                     </div>
-        	        </div>
+
+                    <button type="button" class="btn btn-link btn-block btn-add">Add agenda item</button>
+
+                  </div>
                 </div>
               </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#attendee-3" data-toggle="collapse" aria-expanded="false">
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#closed-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  Mark Dixon
+                  <h4 class="panel-title pull-left">Actions from last meeting - closed</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="attendee-3">
+                <div class="collapse" id="closed-actions">
                   <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">
-          		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
-          		          Name
-          		        </label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="Nigel Cheshire">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Initials</label>
-          		        <div class="col-xs-8">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-4">Regular attendee</label>
-          		        <div class="col-xs-8">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-8 col-sm-offset-4 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>MA129</strong> Arrange briefing session for Michael Hamilton
+                          </div>
+                          <div class="pull-right">
+                            MD, 20 May 2015
+                          </div>
+                        </div>
+                        <div class="collapse" id="action-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Action item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Linked to agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <select class="form-control">
+                    			        <option>1. Previous minutes</option>
+                    			        <option>2. FY plan</option>
+                    			        <option selected="">3. Teamstudio Business Reports</option>
+                    			        <option>4. Isometrica updates</option>
+                  			        </select>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Owner</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Target date</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="20 Jun 2015">
+                      			    <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-default">Open</a>
+                    			        <a class="btn btn-info">Closed</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>MA130</strong> Check on how up-to-date we are on R&amp;D tax credits
+                          </div>
+                          <div class="pull-right">
+                            SI, 20 May 2015
+                          </div>
+                        </div>
+                        <div class="collapse" id="action-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Action item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Linked to agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <select class="form-control">
+                    			        <option>1. Previous minutes</option>
+                    			        <option>2. FY plan</option>
+                    			        <option selected="">3. Teamstudio Business Reports</option>
+                    			        <option>4. Isometrica updates</option>
+                  			        </select>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Owner</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Target date</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="20 Jun 2015">
+                      			    <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-default">Open</a>
+                    			        <a class="btn btn-info">Closed</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
                       </div>
                     </div>
-        	        </div>
+
+
+                  </div>
                 </div>
               </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#open-actions" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Actions from last meeting - open</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="open-actions">
+                  <div class="panel-body">
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#action-3" data-toggle="collapse">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>MA110</strong> Ask Lyndsey to change DSO calculator
+                          </div>
+                          <div class="pull-right">
+                            NC, 20 June 2015
+                          </div>
+                        </div>
+                        <div class="collapse" id="action-3">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Action item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Linked to agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <select class="form-control">
+                    			        <option>1. Previous minutes</option>
+                    			        <option>2. FY plan</option>
+                    			        <option selected="">3. Teamstudio Business Reports</option>
+                    			        <option>4. Isometrica updates</option>
+                  			        </select>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Owner</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Target date</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="20 Jun 2015">
+                      			    <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Open</a>
+                    			        <a class="btn btn-default">Closed</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#new-actions" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">New meeting actions</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="new-actions">
+                  <div class="panel-body">
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#action-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>MA135</strong> Investigate Japan pricing
+                          </div>
+                          <div class="pull-right">
+                            DC, 20 June 2015
+                          </div>
+                        </div>
+                        <div class="collapse" id="action-4">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Action item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Linked to agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <select class="form-control">
+                    			        <option>1. Previous minutes</option>
+                    			        <option>2. FY plan</option>
+                    			        <option selected="">3. Teamstudio Business Reports</option>
+                    			        <option>4. Isometrica updates</option>
+                  			        </select>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Owner</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Target date</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="20 Jun 2015">
+                      			    <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Open</a>
+                    			        <a class="btn btn-default">Closed</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#action-5" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>MA136</strong> Renew EMEA prices
+                          </div>
+                          <div class="pull-right">
+                            DC, 20 June 2015
+                          </div>
+                        </div>
+                        <div class="collapse" id="action-5">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Action item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Linked to agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <select class="form-control">
+                    			        <option>1. Previous minutes</option>
+                    			        <option>2. FY plan</option>
+                    			        <option selected="">3. Teamstudio Business Reports</option>
+                    			        <option>4. Isometrica updates</option>
+                  			        </select>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Owner</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Target date</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="20 Jun 2015">
+                      			    <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Open</a>
+                    			        <a class="btn btn-default">Closed</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link btn-add">Add new action</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+
             </div>
-
-            <button type="button" class="btn btn-link btn-block btn-add">Add attendee</button>
-
-            <hr>
-
-            <h4>Agenda items</h4>
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#agenda-item-1" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    1. Previous minutes
-                  </div>
-                  <div class="pull-right">
-                    NC
-                  </div>
-                </div>
-                <div class="collapse" id="agenda-item-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Agenda item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Previous minutes">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="1">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Recurring</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-                    <hr>
-                    <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#agenda-item-2" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    2. FY plan
-                  </div>
-                  <div class="pull-right">
-                    NC
-                  </div>
-                </div>
-                <div class="collapse" id="agenda-item-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Agenda item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Previous minutes">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="1">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Recurring</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#agenda-item-3" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    3. Teamstudio Business Reports
-                  </div>
-                  <div class="pull-right">
-                    NC
-                  </div>
-                </div>
-                <div class="collapse" id="agenda-item-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Agenda item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Previous minutes">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="1">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Recurring</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#agenda-item-4" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>4. Isometrica update</strong>
-                  </div>
-                  <div class="pull-right">
-                    <strong>SI</strong>
-                  </div>
-                </div>
-                <div class="collapse" id="agenda-item-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Agenda item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Previous minutes">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Number</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="1">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Who submitted</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Recurring</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Yes</a>
-            			        <a class="btn btn-default">No</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-
-            <button type="button" class="btn btn-link btn-block btn-add">Add agenda item</button>
-
-            <hr>
-
-            <h4>Actions from last meeting - closed</h4>
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>MA129:</strong> Arrange briefing session for Michael Hamilton
-                  </div>
-                  <div class="pull-right">
-                    MD, 20 May 2015
-                  </div>
-                </div>
-                <div class="collapse" id="action-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Investigate Japan pricing">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Linked to agenda item</label>
-          		        <div class="col-xs-9">
-          			        <select class="form-control">
-            			        <option>1. Previous minutes</option>
-            			        <option>2. FY plan</option>
-            			        <option selected="">3. Teamstudio Business Reports</option>
-            			        <option>4. Isometrica updates</option>
-          			        </select>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="20 Jun 2015">
-              			    <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-default">Open</a>
-            			        <a class="btn btn-info">Closed</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>MA130:</strong> Check on how up-to-date we are on R&amp;D tax credits
-                  </div>
-                  <div class="pull-right">
-                    SI, 20 May 2015
-                  </div>
-                </div>
-                <div class="collapse" id="action-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Investigate Japan pricing">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Linked to agenda item</label>
-          		        <div class="col-xs-9">
-          			        <select class="form-control">
-            			        <option>1. Previous minutes</option>
-            			        <option>2. FY plan</option>
-            			        <option selected="">3. Teamstudio Business Reports</option>
-            			        <option>4. Isometrica updates</option>
-          			        </select>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="20 Jun 2015">
-              			    <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-default">Open</a>
-            			        <a class="btn btn-info">Closed</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <h4>Actions from last meeting - open</h4>
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#action-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>MA110:</strong> Ask Lyndsey to change DSO calculator
-                  </div>
-                  <div class="pull-right">
-                    NC, 20 June 2015
-                  </div>
-                </div>
-                <div class="collapse" id="action-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Investigate Japan pricing">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Linked to agenda item</label>
-          		        <div class="col-xs-9">
-          			        <select class="form-control">
-            			        <option>1. Previous minutes</option>
-            			        <option>2. FY plan</option>
-            			        <option selected="">3. Teamstudio Business Reports</option>
-            			        <option>4. Isometrica updates</option>
-          			        </select>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="20 Jun 2015">
-              			    <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Open</a>
-            			        <a class="btn btn-default">Closed</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-
-            <hr>
-
-            <h4>New meeting actions</h4>
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#action-4" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>MA135:</strong> Investigate Japan pricing
-                  </div>
-                  <div class="pull-right">
-                    DC, 20 June 2015
-                  </div>
-                </div>
-                <div class="collapse" id="action-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Investigate Japan pricing">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Linked to agenda item</label>
-          		        <div class="col-xs-9">
-          			        <select class="form-control">
-            			        <option>1. Previous minutes</option>
-            			        <option>2. FY plan</option>
-            			        <option selected="">3. Teamstudio Business Reports</option>
-            			        <option>4. Isometrica updates</option>
-          			        </select>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="20 Jun 2015">
-              			    <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Open</a>
-            			        <a class="btn btn-default">Closed</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#action-5" data-toggle="collapse" aria-expanded="false">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <div class="pull-left">
-                    <strong>MA136:</strong> Renew EMEA prices
-                  </div>
-                  <div class="pull-right">
-                    DC, 20 June 2015
-                  </div>
-                </div>
-                <div class="collapse" id="action-5">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Action item</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="Investigate Japan pricing">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Linked to agenda item</label>
-          		        <div class="col-xs-9">
-          			        <select class="form-control">
-            			        <option>1. Previous minutes</option>
-            			        <option>2. FY plan</option>
-            			        <option selected="">3. Teamstudio Business Reports</option>
-            			        <option>4. Isometrica updates</option>
-          			        </select>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Owner</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="NC">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Target date</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" value="20 Jun 2015">
-              			    <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Status</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <a class="btn btn-info">Open</a>
-            			        <a class="btn btn-default">Closed</a>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <hr>
-          	        <div class="form-group">
-                      <div class="col-sm-9 col-sm-offset-3 clearfix">
-                        <button type="button" class="btn btn-default pull-left">More Info</button>
-                        <button type="button" class="btn btn-default pull-right">Delete</button>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="text-center">
-              <button type="button" class="btn btn-link btn-add">Add new action</button>
-            </div>
-
-            <hr>
 
             <div class="text-center">
               <button type="button" class="btn btn-default btn-delete">Delete</button>
