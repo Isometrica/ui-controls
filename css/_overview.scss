@@ -2,13 +2,27 @@
 
 .isometrica-overview-page {
   .navbar {
+    .navbar-brand {
+      img {
+        display: inline-block;
+        position: relative;
+
+        @media (max-width: 767px) {
+          height: 19px;
+          top: -2px;
+        }
+
+        @media (min-width: 768px) {
+          height: 28px;
+          top: -5px;
+        }
+      }
+    }
+
     .navbar-nav {
       margin: 0;
 
       .btn {
-        //padding-top: 12px;
-        //padding-bottom: 12px;
-
         i {
           font-size: 24px;
         }
@@ -18,6 +32,7 @@
         }
       }
     }
+
     .navbar-right {
       float: right;
       margin-right: -15px;
@@ -38,9 +53,40 @@
   }
 }
 
+
 body.desktop.isometrica-overview-page {
   @media (max-width:767px) {
     padding-top: 50px !important;
+  }
+
+  .navbar-header {
+    position: relative;
+
+    .navbar-brand {
+      @media (min-width: 768px) {
+        font-size: 36px;
+      }
+
+      img {
+        @media (min-width: 768px) {
+          height: 40px;
+          top: -5px;
+        }
+      }
+    }
+
+    @media (min-width: 768px) {
+      height: 80px;
+
+      .dropdown-toggle i {
+        top: -8px;
+      }
+
+      .dropdown-menu {
+        left: auto;
+        right: 0;
+      }
+    }
   }
 }
 
@@ -54,28 +100,43 @@ body.desktop.isometrica-overview-page {
   }
 }
 
+.android.isometrica-overview-page {
+  .guidance-bar {
+    box-shadow: none;
+  }
+}
+
+
+.ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child,
+.android.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child {
+  @media (min-width: 768px) {
+    float: left !important;
+  }
+}
+
+
+
+
 /* Scrolling Area */
 
 .ios.isometrica-overview-page {
   overflow-y: auto;
 }
 
-.isometrica-overview-page.desktop {
-  @media (min-width: 768px) {
-    .navbar-brand {
-      font-size: 36px;
-    }
-  }
-}
+
 
 /* DASHBOARD */
 
 .isometrica-overview-page .guidance-bar {
-  position: static;
+  position: relative;
   top: auto;
   left: auto;
   right: auto;
   bottom: auto;
+
+  h4 {
+    line-height: 28px;
+  }
 
   @media (max-width: 767px) {
     padding-bottom: 5px;
@@ -86,7 +147,6 @@ body.desktop.isometrica-overview-page {
 
     h4 {
       font-size: 14px;
-      line-height: 1.4;
     }
     .btn-group {
       text-align: center;
@@ -257,8 +317,6 @@ body.desktop.isometrica-overview-page {
 
 	.panel-body {
 		.isometrica-overview-item-heading {
-      //overflow: hidden;
-      //height: 75px;
 
   		.workbook-icon {
   			float: left;

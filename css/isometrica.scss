@@ -3,6 +3,7 @@ $amber-color: #f0ab54;
 $green-color: #60b660;
 $light-blue-color: #00b2e2;
 $blue-color: #006e9e;
+$blue-color-hover: #004e7e;
 $dark-blue-color: #222844;
 
 html,
@@ -137,12 +138,6 @@ input.form-value {
   margin-bottom: 4px;
 }
 
-    .isometrica-rich-text-control {
-
-
-
-    }
-
 .isometrica-rich-text-control {
   padding: 0;
   margin: 0 -15px;
@@ -242,7 +237,16 @@ input.form-value {
 }
 
 
-/* BUTTONS */
+/* LINKS & BUTTONS */
+
+a:not(.btn),
+.btn-link {
+  color: $blue-color;
+
+  &:hover, &:focus, &:active, &.active {
+    color: $blue-color-hover;
+  }
+}
 
 .btn {
   transition: all 0.3s ease;
@@ -266,11 +270,14 @@ input.form-value {
   }
 }
 
-.btn-primary {
+.btn-primary,
+.ios .btn-primary {
   background: $blue-color;
+  color: white;
 
   &:hover, &:focus, &:active, &.active {
-    background: #004e7e;
+    background: $blue-color-hover;
+    color: white;
   }
 }
 
@@ -318,16 +325,6 @@ input.form-value {
   .form-horizontal .form-group .btn {
     padding-left: 12px;
     padding-right: 12px;
-  }
-
-  .btn-primary {
-    background: #007aff;
-    color: white;
-
-    &:hover, &:focus, &:active, &.active {
-      background: #007aff;
-      color: white;
-    }
   }
 
   .btn-info {
@@ -620,7 +617,7 @@ input.form-value {
   }
 
   .navbar-header {
-    overflow: hidden;
+    //overflow: hidden;
   }
 
   .navbar-collapse {
@@ -702,6 +699,7 @@ input.form-value {
       top: -2px;
       left: 2px;
       transition: all 0.3s ease;
+      font-size: 18px;
     }
 
     &[aria-expanded="true"] {
@@ -1153,7 +1151,7 @@ $status-indicator-size: 36px;
   top: 50px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9;
   border-radius: 0;
   padding: 15px 0;
 

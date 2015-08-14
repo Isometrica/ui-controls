@@ -154,7 +154,17 @@ input.form-value {
 .android .form-horizontal .form-group .btn {
   margin: 2px 0; }
 
-/* BUTTONS */
+/* LINKS & BUTTONS */
+a:not(.btn),
+.btn-link {
+  color: #006e9e; }
+  a:not(.btn):hover,
+  a:not(.btn):focus,
+  a:not(.btn):active,
+  a:not(.btn).active,
+  .btn-link:hover, .btn-link:focus, .btn-link:active, .btn-link.active {
+    color: #004e7e; }
+
 .btn {
   transition: all 0.3s ease; }
   .btn i.no-margin {
@@ -169,10 +179,17 @@ input.form-value {
     background: #e6e6e6;
     border-color: #bbb; }
 
-.btn-primary {
-  background: #006e9e; }
-  .btn-primary:hover, .btn-primary:focus, .btn-primary:active, .btn-primary.active {
-    background: #004e7e; }
+.btn-primary,
+.ios .btn-primary {
+  background: #006e9e;
+  color: white; }
+  .btn-primary:hover,
+  .btn-primary:focus,
+  .btn-primary:active,
+  .btn-primary.active,
+  .ios .btn-primary:hover, .ios .btn-primary:focus, .ios .btn-primary:active, .ios .btn-primary.active {
+    background: #004e7e;
+    color: white; }
 
 .btn-info {
   background: #00b2e2; }
@@ -207,13 +224,6 @@ input.form-value {
 .ios .form-horizontal .form-group .btn {
   padding-left: 12px;
   padding-right: 12px; }
-
-.ios .btn-primary {
-  background: #007aff;
-  color: white; }
-  .ios .btn-primary:hover, .ios .btn-primary:focus, .ios .btn-primary:active, .ios .btn-primary.active {
-    background: #007aff;
-    color: white; }
 
 .ios .btn-info {
   background: #33b5e5;
@@ -411,9 +421,6 @@ input.form-value {
   left: 0;
   right: auto; }
 
-.ios .bootcards-navbar-double .navbar-header {
-  overflow: hidden; }
-
 .ios .bootcards-navbar-double .navbar-collapse {
   border: 0;
   background: white !important;
@@ -465,7 +472,8 @@ input.form-value {
     position: relative;
     top: -2px;
     left: 2px;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    font-size: 18px; }
   .navbar-header .navbar-brand.dropdown-toggle[aria-expanded="true"] i {
     color: #aaa; }
 
@@ -750,7 +758,7 @@ input.form-value {
   top: 50px;
   left: 0;
   right: 0;
-  z-index: 10;
+  z-index: 9;
   border-radius: 0;
   padding: 15px 0; }
   .guidance-bar .row i.fa-long-arrow-right {
@@ -1701,6 +1709,18 @@ input.form-value {
   padding-right: 15px; }
 
 /* Navbar */
+.isometrica-overview-page .navbar .navbar-brand img {
+  display: inline-block;
+  position: relative; }
+  @media (max-width: 767px) {
+    .isometrica-overview-page .navbar .navbar-brand img {
+      height: 19px;
+      top: -2px; } }
+  @media (min-width: 768px) {
+    .isometrica-overview-page .navbar .navbar-brand img {
+      height: 28px;
+      top: -5px; } }
+
 .isometrica-overview-page .navbar .navbar-nav {
   margin: 0; }
   .isometrica-overview-page .navbar .navbar-nav .btn i {
@@ -1725,30 +1745,53 @@ input.form-value {
   body.desktop.isometrica-overview-page {
     padding-top: 50px !important; } }
 
+body.desktop.isometrica-overview-page .navbar-header {
+  position: relative; }
+  @media (min-width: 768px) {
+    body.desktop.isometrica-overview-page .navbar-header .navbar-brand {
+      font-size: 36px; } }
+  @media (min-width: 768px) {
+    body.desktop.isometrica-overview-page .navbar-header .navbar-brand img {
+      height: 40px;
+      top: -5px; } }
+  @media (min-width: 768px) {
+    body.desktop.isometrica-overview-page .navbar-header {
+      height: 80px; }
+      body.desktop.isometrica-overview-page .navbar-header .dropdown-toggle i {
+        top: -8px; }
+      body.desktop.isometrica-overview-page .navbar-header .dropdown-menu {
+        left: auto;
+        right: 0; } }
+
 .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav {
   margin: 0; }
+
+.android.isometrica-overview-page .guidance-bar {
+  box-shadow: none; }
+
+@media (min-width: 768px) {
+  .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child,
+  .android.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child {
+    float: left !important; } }
 
 /* Scrolling Area */
 .ios.isometrica-overview-page {
   overflow-y: auto; }
 
-@media (min-width: 768px) {
-  .isometrica-overview-page.desktop .navbar-brand {
-    font-size: 36px; } }
-
 /* DASHBOARD */
 .isometrica-overview-page .guidance-bar {
-  position: static;
+  position: relative;
   top: auto;
   left: auto;
   right: auto;
   bottom: auto; }
+  .isometrica-overview-page .guidance-bar h4 {
+    line-height: 28px; }
   @media (max-width: 767px) {
     .isometrica-overview-page .guidance-bar {
       padding-bottom: 5px; }
       .isometrica-overview-page .guidance-bar h4 {
-        font-size: 14px;
-        line-height: 1.4; }
+        font-size: 14px; }
       .isometrica-overview-page .guidance-bar .btn-group {
         text-align: center;
         float: none !important;
@@ -2705,8 +2748,7 @@ input.form-value {
     margin: 30px 15px; }
 
 .isometrica-dashboard-page .isometrica-dashboard-item {
-  min-height: 160px;
-  height: 160px;
+  height: 151px;
   overflow: hidden;
   border: 1px solid #bbb;
   margin-bottom: 30px;
