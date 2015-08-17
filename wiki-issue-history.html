@@ -140,7 +140,7 @@
   					</div>
   				</div>
   				<div class="list-group bootcards-accordion" id="accordion">
-						<a class="list-group-item" href="wiki-issue-history.html">
+						<a class="list-group-item active" href="wiki-issue-history.html">
 							<h5 class="list-group-item-heading">Issue history</h5>
 						</a>
     				<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse1">
@@ -151,7 +151,7 @@
   							<h5 class="list-group-item-heading">1.1 Lorem ipsum</h5>
   						</a>
   					</div>
-  					<a class="list-group-item bootcards-list-subheading active" data-toggle="collapse" href="#collapse2">
+  					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse2">
   						<h4 class="list-group-item-heading">2. Quality Management System</h4>
   					</a>
   					<div id="collapse2" class="collapse in">
@@ -234,208 +234,207 @@
 
 
 			<div class="col-sm-8 bootcards-cards hidden-xs">
-				<div class="panel panel-default bootcards-wiki-panel">
-					<div class="panel-heading clearfix">
-						<div class="btn-group pull-left">
-							<a class="btn btn-link dropdown-toggle" data-toggle="dropdown">
-								<i class="fa fa-ellipsis-v fa-lg no-margin"></i>
-							</a>
-							<ul class="dropdown-menu">
-                <li><a href="#">Rollback</a></li>
-                <li><a href="#">View changes</a></li>
-                <li><a href="#">Email</a></li>
-              </ul>
-						</div>
-						<div class="pull-right">
-							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-wiki-edit-modal">
-								Edit
-							</a>
-						</div>
-						<h3 class="panel-title text-center">2. Quality Management System</h3>
-					</div>
-          <div class="panel-body bootcards-wiki-panel-text-read">
-            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          </div>
-          <div class="panel-body bootcards-wiki-panel-files">
-            <label class="control-label">Files</label>
-            <div>
-              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-pdf-o fa-lg"></i> brochure.pdf</a>
-            </div>
-          </div>
 
-          <div class="panel-body bootcards-wiki-panel-metadata">
+				<div class="panel panel-default bootcards-wiki-issue-history">
+					<div class="panel-heading clearfix">
+						<h3 class="panel-title text-center">Issue history</h3>
+					</div>
+					<div class="panel-body">
+
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#page-info" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#issue-5" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title">Page info</h4>
+                  <h4 class="panel-title pull-left">5. Included latest version of handbook</h4>
+                  <h4 class="panel-title pull-right">25 Jun 2015</h4>
                 </div>
-                <div class="collapse" id="page-info">
+                <div class="collapse" id="issue-5">
                   <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Version</strong>
-                        <span>1</span>
-                        <hr>
-                        <strong>Status</strong>
-                        <span class="label label-warning">Awaiting approval</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Signed by</strong>
-                        <span>Steve Ives</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>20 Jan 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Last edited by</strong>
-                        <span>M.Smith</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>20 Mar 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Created by</strong>
-                        <span>P.Jones</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>10 Jan 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                    </div>
+                    <p><strong>Approved by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">J. Smith</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">S. Jones</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p><strong>Signed by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">A. Appleby</span>
+                      <span class="pull-right">26 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Jane Coulson</span>
+                      <span class="pull-right">24 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Pete Sampras</span>
+                      <span class="pull-right">20 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Mike Smith</span>
+                      <span class="pull-right">28 Jun 2015</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#issue-4" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">4. Half-yearly review to update process descriptions</h4>
+                  <h4 class="panel-title pull-right">1 Jan 2015</h4>
+                </div>
+                <div class="collapse" id="issue-4">
+                  <div class="panel-body">
+                    <p><strong>Approved by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">J. Smith</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">S. Jones</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p><strong>Signed by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">A. Appleby</span>
+                      <span class="pull-right">26 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Jane Coulson</span>
+                      <span class="pull-right">24 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Pete Sampras</span>
+                      <span class="pull-right">20 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Mike Smith</span>
+                      <span class="pull-right">28 Jun 2015</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#issue-3" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">3. Half-yearly review to update context</h4>
+                  <h4 class="panel-title pull-right">25 Jun 2014</h4>
+                </div>
+                <div class="collapse" id="issue-3">
+                  <div class="panel-body">
+                    <p><strong>Approved by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">J. Smith</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">S. Jones</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p><strong>Signed by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">A. Appleby</span>
+                      <span class="pull-right">26 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Jane Coulson</span>
+                      <span class="pull-right">24 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Pete Sampras</span>
+                      <span class="pull-right">20 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Mike Smith</span>
+                      <span class="pull-right">28 Jun 2015</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#issue-2" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">2. Updated for recent staff changes</h4>
+                  <h4 class="panel-title pull-right">2 Jan 2014</h4>
+                </div>
+                <div class="collapse" id="issue-2">
+                  <div class="panel-body">
+                    <p><strong>Approved by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">J. Smith</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">S. Jones</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p><strong>Signed by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">A. Appleby</span>
+                      <span class="pull-right">26 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Jane Coulson</span>
+                      <span class="pull-right">24 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Pete Sampras</span>
+                      <span class="pull-right">20 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Mike Smith</span>
+                      <span class="pull-right">28 Jun 2015</span>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#issue-1" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">1. Overview of BSH amended</h4>
+                  <h4 class="panel-title pull-right">28 Jun 2013</h4>
+                </div>
+                <div class="collapse" id="issue-1">
+                  <div class="panel-body">
+                    <p><strong>Approved by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">J. Smith</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">S. Jones</span>
+                      <span class="pull-right">25 Jun 2015</span>
+                    </p>
+                    <p><strong>Signed by:</strong></p>
+                    <p class="clearfix">
+                      <span class="pull-left">A. Appleby</span>
+                      <span class="pull-right">26 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Jane Coulson</span>
+                      <span class="pull-right">24 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Pete Sampras</span>
+                      <span class="pull-right">20 Jun 2015</span>
+                    </p>
+                    <p class="clearfix">
+                      <span class="pull-left">Mike Smith</span>
+                      <span class="pull-right">28 Jun 2015</span>
+                    </p>
                   </div>
                 </div>
               </div>
             </div>
 
-            <div class="text-center">
-              <button type="button" class="btn btn-default">Delete</button>
-            </div>
-          </div>
-
+					</div>
         </div>
-
 			</div>
 		</div>
   </div>
 
-
-
-  <!-- Edit Modal -->
-  <div class="modal fade isometrica-wiki-edit-modal">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="pull-right">
-      			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Save
-      			</button>
-          </div>
-          <h4 class="modal-title">1. Overview</h4>
-        </div>
-        <div class="clearfix bootcards-wiki-panel-controls">
-          <div class="ql-toolbar-container btn-group" id="formatting-container">
-            <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-            <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-            <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-            <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-            <a class="btn btn-default icon-only" href="#" title="Image"><i class="fa fa-image"></i></a>
-            <a class="btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-            <a class="btn btn-default icon-only" href="#" title="Refresh"><i class="fa fa-refresh"></i></a>
-          </div>
-        </div>
-        <div class="modal-body bootcards-wiki-panel-text-edit">
-          <div class="ql-container" id="editor-container">
-            <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-          </div>
-        </div>
-        <div class="modal-body bootcards-wiki-panel-files">
-          <label class="control-label">Files</label>
-          <div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default">
-                <i class="fa fa-file-word-o fa-lg"></i>
-                Example.docx
-              </button>
-              <button type="button" class="btn btn-default">
-                <i class="fa fa-times-circle no-margin fa-lg"></i>
-              </button>
-            </div>
-            <div class="btn-group">
-              <button type="button" class="btn btn-default btn-progress">
-                <span class="progress-indicator" style="width: 75%;"></span>
-                <i class="fa fa-file-excel-o fa-lg"></i>
-                currently_uploading_file.xls
-              </button>
-              <button type="button" class="btn btn-default">
-                <i class="fa fa-times-circle no-margin fa-lg"></i>
-              </button>
-            </div>
-            <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-          </div>
-        </div>
-				<div class="list-group bootcards-accordion bootcards-wiki-panel-metadata">
-  				<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" aria-expanded="true" href="#bootcards-wiki-modal-metadata">
-						<h4 class="list-group-item-heading">Page info</h4>
-					</a>
-					<div class="collapse in" id="bootcards-wiki-modal-metadata">
-  					<div class="modal-body">
-              <div class="row">
-                <div class="col-sm-3 col-xs-6">
-                  <strong>Version</strong>
-                  <span>1</span>
-                  <hr>
-                  <strong>Status</strong>
-                  <span class="label label-warning">Awaiting approval</span>
-                  <hr class="visible-xs">
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                  <strong>Signed by</strong>
-                  <span>Steve Ives</span>
-                  <hr>
-                  <strong>Date</strong>
-                  <span>20 Jan 2015</span>
-                  <hr class="visible-xs">
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                  <strong>Last edited by</strong>
-                  <span>M.Smith</span>
-                  <hr>
-                  <strong>Date</strong>
-                  <span>20 Mar 2015</span>
-                  <hr class="visible-xs">
-                </div>
-                <div class="col-sm-3 col-xs-6">
-                  <strong>Created by</strong>
-                  <span>P.Jones</span>
-                  <hr>
-                  <strong>Date</strong>
-                  <span>10 Jan 2015</span>
-                  <hr class="visible-xs">
-                </div>
-              </div>
-  					</div>
-					</div>
-				</div>
-				<div class="modal-footer text-center">
-  				<button type="button" class="btn btn-default">Delete</button>
-				</div>
-      </div>
-    </div>
-  </div>
 
 
   <!-- Settings Modal -->

@@ -2,6 +2,7 @@ $red-color: #d85250;
 $amber-color: #f0ab54;
 $green-color: #60b660;
 $light-blue-color: #00b2e2;
+$light-blue-color-hover: #0092c2;
 $blue-color: #006e9e;
 $blue-color-hover: #004e7e;
 $dark-blue-color: #222844;
@@ -292,7 +293,7 @@ input.form-value {
   background: $light-blue-color;
 
   &:hover, &:focus, &:active, &.active {
-    background: #2698ba;
+    background: $light-blue-color-hover;
   }
 }
 
@@ -528,12 +529,40 @@ input.form-value {
     z-index: 1;
   }
 
-  .btn {
+  .btn-link {
     padding-top: 12px;
     padding-bottom: 12px;
 
     i {
       font-size: 24px;
+    }
+  }
+
+  .btn:not(.btn-link) {
+    padding: 6px 12px;
+    color: white;
+    //background: #006e9e;
+    //border-color: #006e9e;
+    margin: 7px 4px;
+  }
+
+  .btn-primary {
+    background: $blue-color;
+    border-color: $blue-color;
+
+    &:hover, &:focus, &:active {
+      background: $blue-color-hover;
+      border-color: $blue-color-hover;
+    }
+  }
+
+  .btn-info {
+    background: $light-blue-color;
+    border-color: $light-blue-color;
+
+    &:hover, &:focus, &:active {
+      background: $light-blue-color-hover;
+      border-color: $light-blue-color-hover;
     }
   }
 
