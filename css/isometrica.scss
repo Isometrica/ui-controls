@@ -871,6 +871,12 @@ $status-indicator-size: 36px;
     }
   }
 
+  .bootcards-list {
+    a.list-group-item {
+      padding-right: 30px;
+    }
+  }
+
   .list-group-item {
     i {
       opacity: 1;

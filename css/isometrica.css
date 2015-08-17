@@ -601,6 +601,8 @@ input.form-value {
       margin-right: -15px; }
       .isometrica-container-listdetail .guidance-bar .btn-group .btn i {
         font-size: 21px; }
+  .isometrica-container-listdetail .bootcards-list a.list-group-item {
+    padding-right: 30px; }
   .isometrica-container-listdetail .list-group-item i {
     opacity: 1; }
     .isometrica-container-listdetail .list-group-item i.pull-left {
