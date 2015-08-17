@@ -1758,7 +1758,8 @@ input.form-value {
 
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
-  position: relative; }
+  position: relative;
+  margin-right: 10px; }
   @media (min-width: 768px) {
     .isometrica-overview-page .navbar .navbar-brand img {
       height: 28px;
@@ -1909,7 +1910,7 @@ body.desktop.isometrica-overview-page .navbar-header {
   margin-top: 30px;
   padding: 0 0 0 120px;
   position: relative; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .isometrica-overview-items {
       padding-left: 0;
       margin-top: 20px; } }
@@ -1947,18 +1948,24 @@ body.desktop.isometrica-overview-page .navbar-header {
   transition: all 0.3s ease;
   font-size: 16px;
   line-height: 20px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .isometrica-overview-add {
       position: static;
       width: auto;
       margin-bottom: 20px; } }
+  @media (min-width: 768px) {
+    .isometrica-overview-add {
+      white-space: normal; } }
   .isometrica-overview-add i {
     display: block;
     font-size: 48px; }
-    @media (max-width: 768px) {
+    @media (max-width: 767px) {
       .isometrica-overview-add i {
         display: inline-block;
         font-size: inherit; } }
+    @media (min-width: 768px) {
+      .isometrica-overview-add i {
+        margin: 0 !important; } }
 
 .isometrica-overview-item {
   cursor: pointer;
