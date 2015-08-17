@@ -848,6 +848,20 @@ $status-indicator-size: 36px;
   }
 }
 
+.list-group-item-icon {
+  position: relative;
+
+  .status-circle {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: -3px;
+    top: -3px;
+  }
+}
+
 .isometrica-container-listdetail {
   padding-top: 80px;
 

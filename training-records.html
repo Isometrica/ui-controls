@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Training records</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+</head>
+<body class="bootcards-fullheight bootcards-nofooter isometrica-address-book">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="index.html">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+          Training records - Completed
+          <i class="fa fa-chevron-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">Completed</a></li>
+          <li><a href="#">Completed</a></li>
+          <li><a href="#">By person</a></li>
+          <li><a href="#">By outcome</a></li>
+          <li><a href="#">Scheduled</a></li>
+          <li><a href="#">Deleted</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container bootcards-container isometrica-container-listdetail" id="main">
+
+    <!-- Guidance Bar -->
+    <div class="guidance-bar hidden-xs">
+      <div class="container">
+        <h4>Guidance goes here lorem ipsum</h4>
+        <button type="button" class="btn btn-link guidance-bar-dismiss">
+          <i class="fa fa-times-circle no-margin"></i>
+        </button>
+      </div>
+    </div>
+
+
+		<div class="row">
+
+      <div class="col-sm-4 bootcards-list" id="list">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<div class="search-form">
+  						<div class="row">
+  						    <div class="col-xs-8">
+  						      <div class="form-group">
+      					      <input type="text" class="form-control" placeholder="Search...">
+      					      <i class="fa fa-search"></i>
+  						      </div>
+  						    </div>
+  						    <div class="col-xs-4">
+  								<a class="btn btn-primary btn-block" href="/contacts/add" data-toggle="modal" data-target="#edit-modal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</a>
+  						    </div>
+  						</div>
+  					</div>
+  				</div>
+  				<div class="list-group">
+  				  <a class="list-group-item active">
+    				  <div class="list-group-item-icon pull-left">
+  						  <img class="img-circle" src="img/avatar-jack.gif">
+  						  <span class="label label-success status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">John Smith</h4>
+							<p class="list-group-item-text">5 Jul 2015</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-placeholder.png">
+  						  <span class="label label-danger status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Anna Angstrom</h4>
+							<p class="list-group-item-text">3 Jul 2015</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-placeholder.png">
+  						  <span class="label label-success status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Peter Bright</h4>
+							<p class="list-group-item-text">20 Jun 2015</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-placeholder.png">
+  						  <span class="label label-warning status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Helen Cavanagh</h4>
+							<p class="list-group-item-text">VP of Sales</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-mark.gif">
+  						  <span class="label label-default status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Mike Johnson</h4>
+							<p class="list-group-item-text">11 Jun 2015</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-placeholder.png">
+  						  <span class="label label-default status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Kelly Withers</h4>
+							<p class="list-group-item-text">9 Jun 2015</p>
+						</a>
+						<a class="list-group-item">
+  						<div class="list-group-item-icon pull-left">
+  						  <img class="img-circle pull-left" src="img/avatar-placeholder.png">
+  						  <span class="label label-default status-circle"></span>
+    				  </div>
+							<h4 class="list-group-item-heading">Helen Molyneaux</h4>
+							<p class="list-group-item-text">BCM consultant</p>
+						</a>
+  				</div>
+  			</div>
+  		</div>
+
+
+			<div class="col-sm-8 bootcards-cards hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-right">
+							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+								<i class="fa fa-pencil"></i>
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title">User details</h3>
+					</div>
+          <div class="list-group">
+
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Name</p>
+                  <h4 class="list-group-item-heading">John Smith</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Role</p>
+                  <h4 class="list-group-item-heading">BCM Manager</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Competency description</p>
+              <h4 class="list-group-item-heading">Understanding of ISO 9001 management system <span class="label label-success">Passed</span></h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes on training required</p>
+              <h4 class="list-group-item-heading">Basic introduction to ISO 9001:2015</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Date needed by</p>
+                  <h4 class="list-group-item-heading">30 Jun 2015</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Date trained</p>
+                  <h4 class="list-group-item-heading">5 Jul 2015</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Visibility</p>
+              <h4 class="list-group-item-heading">Open</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">File(s)</p>
+              <a href="#" class="btn btn-default">
+                <i class="fa fa-file-word-o fa-lg"></i>
+                Investigation reports.docx
+              </a>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Training record</h4>
+
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-4">Name</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Name" value="John Smith"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Role</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Role" value="BCM manager"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Competency description</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" placeholder="Competency description">Understanding of ISO9001 management system</textarea>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes on training required</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                        <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-xs-4">Files</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-file-word-o fa-lg"></i>
+                    Example.docx
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Date needed by</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Date needed by" value="30 Jun 2015"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Date trained</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Date trained" value="5 Jul 2015"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Outcome</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option></option>
+                  <option>Attended</option>
+                  <option selected="">Passed</option>
+                  <option>Failed</option>
+                  <option>No longer required</option>
+                  <option>Rescheduled</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Visibility</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-info active">Open</button>
+                  <button type="button" class="btn btn-default">Closed</button>
+                </div>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-default">Delete</button>
+            </div>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    $('.btn[data-toggle="collapse"]').click(function(){
+      $(this).toggleClass("active");
+    });
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .list-group a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+  </script>
+
+</body>
+</html>

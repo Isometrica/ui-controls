@@ -588,6 +588,17 @@ input.form-value {
     .status-indicator i.fa-clock-o {
       font-size: 26px; }
 
+.list-group-item-icon {
+  position: relative; }
+  .list-group-item-icon .status-circle {
+    display: block;
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    position: absolute;
+    left: -3px;
+    top: -3px; }
+
 .isometrica-container-listdetail {
   padding-top: 80px; }
   .isometrica-container-listdetail .guidance-bar {
