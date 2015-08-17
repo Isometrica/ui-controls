@@ -2478,6 +2478,8 @@ body.desktop.isometrica-overview-page .navbar-header {
       border-top: 0; }
     .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing:last-child {
       border-bottom: 0; }
+    .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing .panel-body {
+      padding-left: 50px; }
 
 .bootcards-wiki .bootcards-cards .list-group-item,
 .bootcards-wiki .modal .list-group-item {
