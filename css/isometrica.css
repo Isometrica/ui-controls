@@ -2559,9 +2559,9 @@ body.desktop.isometrica-overview-page .navbar-header {
 .isometrica-address-book .phone-numbers .list-group-item-text {
   margin-bottom: 10px; }
 
-.isometrica-address-book .phone-numbers a span {
-  margin-left: 15px;
-  font-weight: normal; }
+.isometrica-address-book .phone-numbers a {
+  width: 180px;
+  display: inline-block; }
 
 .isometrica-address-book .bootcards-list-subheading {
   font-size: 16px !important; }
@@ -2596,8 +2596,15 @@ body.desktop.isometrica-overview-page .navbar-header {
   border-left: 0;
   border-right: 0; }
 
+.isometrica-addressbook-edit-modal .form-group.avatar img {
+  width: 80px;
+  height: 80px;
+  margin-right: 15px; }
+
 .isometrica-addressbook-edit-modal div.checkbox {
   padding-top: 7px !important; }
+  .isometrica-addressbook-edit-modal div.checkbox label {
+    font-weight: bold; }
 
 .isometrica-addressbook-edit-modal input[type="checkbox"] {
   margin-top: 4px; }
