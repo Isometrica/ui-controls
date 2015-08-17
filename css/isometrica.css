@@ -1956,16 +1956,13 @@ body.desktop.isometrica-overview-page .navbar-header {
   @media (min-width: 768px) {
     .isometrica-overview-add {
       white-space: normal; } }
-  .isometrica-overview-add i {
-    display: block;
-    font-size: 48px; }
-    @media (max-width: 767px) {
-      .isometrica-overview-add i {
-        display: inline-block;
-        font-size: inherit; } }
-    @media (min-width: 768px) {
-      .isometrica-overview-add i {
-        margin: 0 !important; } }
+  @media (min-width: 768px) {
+    .isometrica-overview-add i {
+      margin: 0 !important;
+      font-size: 48px;
+      line-height: 1;
+      vertical-align: 0;
+      display: block; } }
 
 .isometrica-overview-item {
   cursor: pointer;
