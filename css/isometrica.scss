@@ -206,6 +206,12 @@ input.form-value {
   width: 34px;
   padding-left: 0;
   padding-right: 0;
+  margin-right: 10px;
+
+  i {
+    margin: 0 !important;
+    color: white;
+  }
 }
 
 .ios {
@@ -1507,6 +1513,10 @@ $status-indicator-size: 36px;
 
     > .panel-heading {
       background: white;
+    }
+
+    .panel-body.indented {
+      padding-left: 50px;
     }
   }
 

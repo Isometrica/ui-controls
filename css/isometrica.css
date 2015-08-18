@@ -133,7 +133,11 @@ input.form-value {
 .btn-checkbox {
   width: 34px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  margin-right: 10px; }
+  .btn-checkbox i {
+    margin: 0 !important;
+    color: white; }
 
 .ios .form-horizontal .form-group:last-child {
   margin-bottom: 0; }
@@ -994,6 +998,8 @@ input.form-value {
     border-color: #ddd; }
     .bootcards-panel-collapsing.full-width > .panel-heading {
       background: white; }
+    .bootcards-panel-collapsing.full-width .panel-body.indented {
+      padding-left: 50px; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;
     padding-left: 50px;
