@@ -816,43 +816,7 @@
     }
   }
 
-  .risk-analysis-impacts {
-    margin-bottom: 0;
 
-    .btn {
-      border-bottom-left-radius: 0;
-      border-bottom-right-radius: 0;
-      border-bottom: 0;
-    }
-  }
-  .risk-analysis-likelihood {
-    margin-bottom: 0;
-
-    .btn {
-      border-radius: 0;
-      border-bottom: 0;
-    }
-  }
-  .risk-analysis-score {
-    .btn {
-      border-top-left-radius: 0;
-      border-top-right-radius: 0;
-      color: white;
-
-      &.btn-success {
-        background-color: #5cb85c;
-        &:hover, &:focus, &:active { background-color: #449d44; }
-      }
-      &.btn-warning {
-        background-color: #f0ad4e;
-        &:hover, &:focus, &:active { background-color: #ec971f; }
-      }
-      &.btn-danger {
-        background-color: #d9534f;
-        &:hover, &:focus, &:active { background-color: #c9302c; }
-      }
-    }
-  }
 
   .risk-analysis-mitigation-header {
     border-bottom: 1px solid #ddd;
@@ -935,73 +899,7 @@
 
 }
 
-#riskGradingModal {
 
-  .isometrica-risk-grading {
-    //margin-right: 18px;
-    //margin-top: 15px;
-
-    table {
-      margin-bottom: 10px;
-
-      th, td {
-        border-color: white;
-        border-left: 1px solid white;
-        text-align: center;
-        width: 14.2857%;
-        padding: 10px !important;
-
-        &:first-child {
-          border-left: 0;
-        }
-      }
-
-      td {
-        &.impact {
-          cursor: pointer;
-          position: relative;
-
-          &:after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 0;
-            bottom: 0;
-            background: rgba(0,0,0,0.1);
-            display: none;
-          }
-
-          &:hover, &:focus, &:active {
-            &:after {
-              display: block;
-            }
-          }
-        }
-
-        &.impact-vlow { background: #19aa50; }
-        &.impact-low { background: #5cb85c; }
-        &.impact-medium { background: #f0ad4e; }
-        &.impact-high { background: #d9534f; }
-        &.impact-vhigh { background: #c02927; }
-      }
-
-      th {
-        &.impact-label {
-          background: #eee;
-        }
-      }
-
-      .impacts-heading {
-        -webkit-transform: rotate(-90deg);
-        display: block;
-        position: absolute;
-        top: 50%;
-        margin-top: -20px;
-      }
-    }
-  }
-}
 
 #strategyEvaluationModal {
   .disabled {

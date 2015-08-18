@@ -111,9 +111,16 @@ input.form-value {
       top: 4px; }
   .isometrica-rich-text-control .isometrica-rich-text-input {
     height: 300px; }
+  .isometrica-rich-text-control.isometrica-rich-text-control-condensed {
+    margin: 0;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    border-radius: 4px; }
+    .isometrica-rich-text-control.isometrica-rich-text-control-condensed .isometrica-rich-text-input {
+      height: 120px; }
 
 .modal .isometrica-rich-text-control .isometrica-rich-text-input {
-  height: 160px; }
+  height: 120px; }
 
 .isometrica-rich-text-panel .panel-body {
   padding-top: 0;
@@ -122,6 +129,11 @@ input.form-value {
     border-top: 0;
     border-bottom: 0;
     margin-bottom: 0; }
+
+.btn-checkbox {
+  width: 34px;
+  padding-left: 0;
+  padding-right: 0; }
 
 .ios .form-horizontal .form-group:last-child {
   margin-bottom: 0; }
@@ -1066,6 +1078,71 @@ input.form-value {
   color: #333;
   padding: 8px 0; }
 
+/* RISK ANALYSIS */
+.risk-analysis-impacts {
+  margin-bottom: 0; }
+  .risk-analysis-impacts .btn {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom: 0;
+    margin-bottom: 0 !important; }
+
+.risk-analysis-likelihood {
+  margin-bottom: 0; }
+  .risk-analysis-likelihood .btn {
+    border-radius: 0;
+    border-bottom: 0;
+    margin-bottom: 0 !important; }
+
+.risk-analysis-score .btn {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  color: white;
+  margin-bottom: 0 !important; }
+
+.isometrica-risk-grading-modal .isometrica-risk-grading table {
+  margin-bottom: 10px; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table th, .isometrica-risk-grading-modal .isometrica-risk-grading table td {
+    border-color: white;
+    border-left: 1px solid white;
+    text-align: center;
+    width: 14.2857%;
+    padding: 10px !important; }
+    .isometrica-risk-grading-modal .isometrica-risk-grading table th:first-child, .isometrica-risk-grading-modal .isometrica-risk-grading table td:first-child {
+      border-left: 0; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact {
+    cursor: pointer;
+    position: relative; }
+    .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:after {
+      content: '';
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.1);
+      display: none; }
+    .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:hover:after, .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:focus:after, .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:active:after {
+      display: block; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-vlow {
+    background: #19aa50; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-low {
+    background: #5cb85c; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-medium {
+    background: #f0ad4e; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-high {
+    background: #d9534f; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-vhigh {
+    background: #c02927; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table th.impact-label {
+    background: #eee; }
+  .isometrica-risk-grading-modal .isometrica-risk-grading table .impacts-heading {
+    -webkit-transform: rotate(-90deg);
+    display: block;
+    position: absolute;
+    top: 50%;
+    margin-top: -20px; }
+
 /* workbook */
 /* Guidance bar */
 .isometrica-workbook-page .guidance-bar {
@@ -1610,36 +1687,6 @@ input.form-value {
     #riskAnalysisModal .risk-analysis-linked-items .btn-primary:hover, #riskAnalysisModal .risk-analysis-linked-items .btn-primary:focus, #riskAnalysisModal .risk-analysis-linked-items .btn-primary:active {
       background-color: #286090; }
 
-#riskAnalysisModal .risk-analysis-impacts {
-  margin-bottom: 0; }
-  #riskAnalysisModal .risk-analysis-impacts .btn {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom: 0; }
-
-#riskAnalysisModal .risk-analysis-likelihood {
-  margin-bottom: 0; }
-  #riskAnalysisModal .risk-analysis-likelihood .btn {
-    border-radius: 0;
-    border-bottom: 0; }
-
-#riskAnalysisModal .risk-analysis-score .btn {
-  border-top-left-radius: 0;
-  border-top-right-radius: 0;
-  color: white; }
-  #riskAnalysisModal .risk-analysis-score .btn.btn-success {
-    background-color: #5cb85c; }
-    #riskAnalysisModal .risk-analysis-score .btn.btn-success:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-success:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-success:active {
-      background-color: #449d44; }
-  #riskAnalysisModal .risk-analysis-score .btn.btn-warning {
-    background-color: #f0ad4e; }
-    #riskAnalysisModal .risk-analysis-score .btn.btn-warning:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-warning:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-warning:active {
-      background-color: #ec971f; }
-  #riskAnalysisModal .risk-analysis-score .btn.btn-danger {
-    background-color: #d9534f; }
-    #riskAnalysisModal .risk-analysis-score .btn.btn-danger:hover, #riskAnalysisModal .risk-analysis-score .btn.btn-danger:focus, #riskAnalysisModal .risk-analysis-score .btn.btn-danger:active {
-      background-color: #c9302c; }
-
 #riskAnalysisModal .risk-analysis-mitigation-header {
   border-bottom: 1px solid #ddd;
   background: #eee; }
@@ -1696,49 +1743,6 @@ input.form-value {
   .android #riskAnalysisModal .risk-analysis-likelihood .btn {
     border-color: #ddd;
     color: black; }
-
-#riskGradingModal .isometrica-risk-grading table {
-  margin-bottom: 10px; }
-  #riskGradingModal .isometrica-risk-grading table th, #riskGradingModal .isometrica-risk-grading table td {
-    border-color: white;
-    border-left: 1px solid white;
-    text-align: center;
-    width: 14.2857%;
-    padding: 10px !important; }
-    #riskGradingModal .isometrica-risk-grading table th:first-child, #riskGradingModal .isometrica-risk-grading table td:first-child {
-      border-left: 0; }
-  #riskGradingModal .isometrica-risk-grading table td.impact {
-    cursor: pointer;
-    position: relative; }
-    #riskGradingModal .isometrica-risk-grading table td.impact:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.1);
-      display: none; }
-    #riskGradingModal .isometrica-risk-grading table td.impact:hover:after, #riskGradingModal .isometrica-risk-grading table td.impact:focus:after, #riskGradingModal .isometrica-risk-grading table td.impact:active:after {
-      display: block; }
-  #riskGradingModal .isometrica-risk-grading table td.impact-vlow {
-    background: #19aa50; }
-  #riskGradingModal .isometrica-risk-grading table td.impact-low {
-    background: #5cb85c; }
-  #riskGradingModal .isometrica-risk-grading table td.impact-medium {
-    background: #f0ad4e; }
-  #riskGradingModal .isometrica-risk-grading table td.impact-high {
-    background: #d9534f; }
-  #riskGradingModal .isometrica-risk-grading table td.impact-vhigh {
-    background: #c02927; }
-  #riskGradingModal .isometrica-risk-grading table th.impact-label {
-    background: #eee; }
-  #riskGradingModal .isometrica-risk-grading table .impacts-heading {
-    -webkit-transform: rotate(-90deg);
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -20px; }
 
 #strategyEvaluationModal .disabled {
   border-color: transparent;
