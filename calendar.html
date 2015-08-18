@@ -177,6 +177,28 @@
     				</thead>
     				<tbody>
       				<tr>
+        				<td colspan="4"><a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal">IMT training <small class="date">13 Jan - 14 Apr</small></a></td>
+        				<td colspan="3"><a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal">Staff training <small class="date">3 May - 31 Jul</small></a></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Email <small class="date">3 Mar</small></a></a></td>
+        				<td colspan="3"><a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal">Staff training <small class="date">3 Oct - 31 Dec</small></a></td>
+      				</tr>
+      				<tr>
+        				<td colspan="1"></td>
+        				<td colspan="4"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Call cascade <small class="date">14 Feb</small></a></td>
+        				<td colspan="5"><a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal">Disaster recovery <small class="date">3 Jun - 31 Oct</small></a></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">News <small class="date">14 Dec</small></a></td>
+      				</tr>
+      				<tr>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">News <small class="date">14 Jan</small></a></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Email <small class="date">3 Mar</small></a></a></td>
+        				<td colspan="1"></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Posters <small class="date">14 Jun</small></a></td>
+        				<td colspan="1"></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Posters <small class="date">14 Sep</small></a></td>
+        				<td colspan="2"><a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal">Email <small class="date">3 Dec</small></a></a></td>
+      				</tr>
+
+      				<!--<tr>
         				<td colspan="2"><a class="btn btn-info btn-date btn-date-specific" data-toggle="modal" data-target="#edit-modal">News</a></td>
         				<td colspan="2"><a class="btn btn-info btn-date btn-date-range" data-toggle="modal" data-target="#edit-modal">Email</a></td>
         				<td colspan="1"></td>
@@ -198,7 +220,7 @@
         				<td colspan="1"></td>
         				<td colspan="3"><a class="btn btn-info btn-date btn-date-specific" data-toggle="modal" data-target="#edit-modal">Disaster recovery</a></td>
         				<td colspan="1"></td>
-      				</tr>
+      				</tr>-->
     				</tbody>
   				</table>
 				</div>
@@ -232,19 +254,25 @@
             <div class="form-group">
               <label class="control-label col-xs-3 col-sm-4">Topic</label>
               <div class="col-xs-9 col-sm-8">
-                <input type="text" class="form-control" value="Training" placeholder="Topic"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+                <select class="form-control">
+                  <option></option>
+                  <option>Awareness</option>
+                  <option selected="">Training</option>
+                  <option>Customer survey</option>
+                  <option>Supplier survey</option>
+                  <option>Internal audit</option>
+                  <option>External audit</option>
+                  <option>Management review</option>
+                </select>
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-xs-3 col-sm-4">Management program</label>
               <div class="col-xs-9 col-sm-8">
-                <input type="text" class="form-control" value="Quality management" placeholder="Management program"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+                <select class="form-control">
+                  <option></option>
+                  <option selected="">Quality management</option>
+                </select>
               </div>
             </div>
             <div class="form-group">
@@ -266,24 +294,40 @@
               </div>
             </div>
 
-            <hr>
 
-            <h4>Notes</h4>
-            <div class="isometrica-rich-text-control">
-              <div class="isometrica-rich-text-controls clearfix">
-                <div class="ql-toolbar-container" id="formatting-container">
-                  <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                  <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                  <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                  <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                  <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-                  <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                          <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                          <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                          <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                          <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
+                          <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+        	        </div>
                 </div>
               </div>
-              <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-              </div>
             </div>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-default">Delete</button>
+            </div>
+
 
           </div>
         </form>

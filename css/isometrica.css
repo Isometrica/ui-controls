@@ -3044,57 +3044,103 @@ body.desktop.isometrica-overview-page .navbar-header {
 .ios.isometrica-work-inbox .modal .btn-group {
   margin-right: 10px; }
 
-.isometrica-calendar .table thead {
-  background: #f5f5f5; }
-  .isometrica-calendar .table thead th {
-    width: 8.33333%;
-    border-width: 1px;
-    text-align: center;
-    font-weight: 500; }
+.isometrica-calendar .table {
+  /*
+    .btn-date {
 
-.isometrica-calendar .table th, .isometrica-calendar .table td {
-  padding: 8px !important; }
+      position: relative;
 
-.isometrica-calendar .table .btn-date {
-  position: relative; }
-  .isometrica-calendar .table .btn-date:before {
-    content: '';
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent;
-    border-bottom-color: #00b2e2;
-    position: absolute;
-    left: -10px;
-    bottom: -1px;
-    transition: all 0.3s ease;
-    display: none; }
-  .isometrica-calendar .table .btn-date:after {
-    content: '';
-    border-width: 10px;
-    border-style: solid;
-    border-color: transparent;
-    border-top-color: #00b2e2;
-    position: absolute;
-    right: -10px;
-    top: -1px;
-    transition: all 0.3s ease;
-    display: none; }
-  .isometrica-calendar .table .btn-date:hover:before, .isometrica-calendar .table .btn-date:focus:before, .isometrica-calendar .table .btn-date:active:before {
-    border-bottom-color: #2698ba; }
-  .isometrica-calendar .table .btn-date:hover:after, .isometrica-calendar .table .btn-date:focus:after, .isometrica-calendar .table .btn-date:active:after {
-    border-top-color: #2698ba; }
-  .isometrica-calendar .table .btn-date.btn-date-specific {
-    margin-left: 10px; }
-    .isometrica-calendar .table .btn-date.btn-date-specific:before {
+      &:before {
+        content: '';
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent;
+        border-bottom-color: #00b2e2;
+        position: absolute;
+        left: -10px;
+        bottom: -1px;
+        transition: all 0.3s ease;
+        display: none;
+      }
+
+      &:after {
+        content: '';
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent;
+        border-top-color: #00b2e2;
+        position: absolute;
+        right: -10px;
+        top: -1px;
+        transition: all 0.3s ease;
+        display: none;
+      }
+
+      &:hover, &:focus, &:active {
+        &:before {
+          border-bottom-color: #2698ba;
+        }
+
+        &:after {
+          border-top-color: #2698ba;
+        }
+      }
+
+      &.btn-date-specific {
+        margin-left: 10px;
+
+        &:before {
+          display: block;
+        }
+      }
+
+      &.btn-date-range {
+        display: block;
+        margin-left: 10px;
+        margin-right: 10px;
+
+        &:before, &:after {
+          display: block;
+        }
+      }
+    }
+    */ }
+  .isometrica-calendar .table thead {
+    background: #f5f5f5; }
+    .isometrica-calendar .table thead th {
+      width: 8.33333%;
+      border-width: 1px;
+      text-align: center;
+      font-weight: 500; }
+  .isometrica-calendar .table th, .isometrica-calendar .table td {
+    padding: 8px !important; }
+  .isometrica-calendar .table .btn {
+    text-align: left;
+    text-decoration: none; }
+    .isometrica-calendar .table .btn .date {
       display: block; }
-  .isometrica-calendar .table .btn-date.btn-date-range {
+  .isometrica-calendar .table .btn-date-specific {
+    position: relative;
+    padding-right: 0;
+    padding-left: 15px; }
+    .isometrica-calendar .table .btn-date-specific .date {
+      color: #999; }
+    .isometrica-calendar .table .btn-date-specific:before {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #00b2e2;
+      position: absolute;
+      left: 0;
+      top: 11px; }
+  .isometrica-calendar .table .btn-date-range {
     display: block;
-    margin-left: 10px;
-    margin-right: 10px; }
-    .isometrica-calendar .table .btn-date.btn-date-range:before, .isometrica-calendar .table .btn-date.btn-date-range:after {
-      display: block; }
-
-.isometrica-calendar .table tbody .label {
-  display: block;
-  font-size: 14px;
-  padding: 5px; }
+    text-align: left; }
+    .isometrica-calendar .table .btn-date-range .date {
+      color: #cde9f0; }
+  .isometrica-calendar .table tbody .label {
+    display: block;
+    font-size: 14px;
+    padding: 5px; }
