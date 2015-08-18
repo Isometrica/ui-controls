@@ -174,37 +174,32 @@
 					</div>
           <div class="list-group">
 
-            <div class="list-group-item">
-              <p class="list-group-item-text">Name/description</p>
-              <h4 class="list-group-item-heading">Health &amp; Safety at Work <span class="label label-danger">Overdue</span></h4>
-            </div>
-
-            <div class="list-group-item">
-              <p class="list-group-item-text">Type</p>
-              <h4 class="list-group-item-heading">Legal &amp; regulatory</h4>
-            </div>
-
-
-
-            <div class="list-group-item">
-              <p class="list-group-item-text">Relevant requirement(s)</p>
-              <h4 class="list-group-item-heading">Safe working environment for employees</h4>
-            </div>
-
             <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Type</p>
+                  <h4 class="list-group-item-heading">Legal &amp; regulatory</h4>
+                </div>
+              </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Management system</p>
                   <h4 class="list-group-item-heading">All</h4>
                 </div>
               </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Internal owner</p>
-                  <h4 class="list-group-item-heading">John Smith</h4>
-                </div>
-              </div>
             </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Name/description</p>
+              <h4 class="list-group-item-heading">Health &amp; Safety at Work <span class="label label-danger">Overdue</span></h4>
+            </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Relevant requirement(s)</p>
+              <h4 class="list-group-item-heading">Safe working environment for employees</h4>
+            </div>
+
+
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
@@ -223,7 +218,22 @@
               <p class="list-group-item-text">Contact email</p>
               <h4 class="list-group-item-heading"><a href="mailto:peter.last@nhs.org.uk">peter.last@nhs.org.uk</a></h4>
             </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes</p>
+              <h4 class="list-group-item-heading">Lorem ipsum dolor</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">File(s)</p>
+              <a href="#" class="btn btn-default">
+                <i class="fa fa-file-word-o fa-lg"></i>
+                Investigation reports.docx
+              </a>
+            </div>
+
+
           </div>
+
+
           <div class="panel-footer">
             <div class="row">
               <div class="col-xs-6">
@@ -311,15 +321,6 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Internal owner</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="John Smith" placeholder="Internal owner"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">External contact</label>
               <div class="col-xs-8">
                 <input type="text" class="form-control" value="Peter Last" placeholder="External contact"/>
@@ -363,8 +364,26 @@
               </div>
             </div>
 
+            <div class="form-group">
+              <label class="control-label col-xs-4">Notes</label>
+              <div class="col-xs-8">
+                <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
+                  <div class="isometrica-rich-text-controls clearfix">
+                    <div class="ql-toolbar-container" id="formatting-container">
+                      <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                      <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                      <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                      <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                    </div>
+                  </div>
+                  <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                    <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
 
-
+            <!--
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
@@ -395,7 +414,7 @@
                 </div>
               </div>
             </div>
-
+            -->
 
             <div class="form-group">
               <label class="control-label col-xs-4">Files</label>

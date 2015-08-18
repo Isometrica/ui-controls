@@ -617,6 +617,14 @@ input.form-value {
     left: -3px;
     top: -3px; }
 
+.status-circle {
+  display: inline-block !important;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  padding: 0;
+  margin-left: 3px; }
+
 .isometrica-container-listdetail {
   padding-top: 80px; }
   .isometrica-container-listdetail .guidance-bar {
