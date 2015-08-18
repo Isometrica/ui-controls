@@ -129,6 +129,8 @@ input.form-value {
     border-top: 0;
     border-bottom: 0;
     margin-bottom: 0; }
+  .isometrica-rich-text-panel .panel-body .isometrica-rich-text-input {
+    height: 340px; }
 
 .btn-checkbox {
   width: 34px;
