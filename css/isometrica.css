@@ -132,6 +132,15 @@ input.form-value {
   .isometrica-rich-text-panel .panel-body .isometrica-rich-text-input {
     height: 340px; }
 
+.form-control-with-status {
+  padding-right: 35px !important;
+  position: relative; }
+  .form-control-with-status .label {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -6px; }
+
 .btn-checkbox {
   width: 34px;
   padding-left: 0;
@@ -965,6 +974,9 @@ input.form-value {
     box-shadow: none; }
 
 /* ACCORDION */
+.bootcards-list .bootcards-accordion .collapse .list-group-item .list-group-item-heading {
+  margin-left: 25px; }
+
 .bootcards-accordion .bootcards-list-subheading {
   background-color: #f5f5f5 !important;
   padding-left: 40px !important;
@@ -1116,48 +1128,132 @@ input.form-value {
   color: white;
   margin-bottom: 0 !important; }
 
-.isometrica-risk-grading-modal .isometrica-risk-grading table {
-  margin-bottom: 10px; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table th, .isometrica-risk-grading-modal .isometrica-risk-grading table td {
-    border-color: white;
-    border-left: 1px solid white;
+.isometrica-risk-grading {
+  border-top: 1px solid #ddd; }
+  .isometrica-risk-grading table {
+    margin-bottom: 10px; }
+  .isometrica-risk-grading .table > tbody > tr > td,
+  .isometrica-risk-grading .table > tbody > tr > th,
+  .isometrica-risk-grading .table > tfoot > tr > td,
+  .isometrica-risk-grading .table > tfoot > tr > th,
+  .isometrica-risk-grading .table > thead > tr > td,
+  .isometrica-risk-grading .table > thead > tr > th {
+    border-color: white !important;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
     text-align: center;
     width: 14.2857%;
-    padding: 10px !important; }
-    .isometrica-risk-grading-modal .isometrica-risk-grading table th:first-child, .isometrica-risk-grading-modal .isometrica-risk-grading table td:first-child {
-      border-left: 0; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact {
-    cursor: pointer;
-    position: relative; }
-    .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:after {
-      content: '';
-      position: absolute;
-      left: 0;
-      right: 0;
-      top: 0;
-      bottom: 0;
-      background: rgba(0, 0, 0, 0.1);
-      display: none; }
-    .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:hover:after, .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:focus:after, .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact:active:after {
-      display: block; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-vlow {
-    background: #19aa50; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-low {
-    background: #5cb85c; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-medium {
-    background: #f0ad4e; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-high {
-    background: #d9534f; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table td.impact-vhigh {
-    background: #c02927; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table th.impact-label {
-    background: #eee; }
-  .isometrica-risk-grading-modal .isometrica-risk-grading table .impacts-heading {
-    -webkit-transform: rotate(-90deg);
-    display: block;
-    position: absolute;
-    top: 50%;
-    margin-top: -20px; }
+    padding: 10px !important;
+    font-weight: 500; }
+    .isometrica-risk-grading .table > tbody > tr > td.impacts-heading,
+    .isometrica-risk-grading .table > tbody > tr > th.impacts-heading,
+    .isometrica-risk-grading .table > tfoot > tr > td.impacts-heading,
+    .isometrica-risk-grading .table > tfoot > tr > th.impacts-heading,
+    .isometrica-risk-grading .table > thead > tr > td.impacts-heading,
+    .isometrica-risk-grading .table > thead > tr > th.impacts-heading {
+      position: relative;
+      width: 40px;
+      padding: 0; }
+      .isometrica-risk-grading .table > tbody > tr > td.impacts-heading span,
+      .isometrica-risk-grading .table > tbody > tr > th.impacts-heading span,
+      .isometrica-risk-grading .table > tfoot > tr > td.impacts-heading span,
+      .isometrica-risk-grading .table > tfoot > tr > th.impacts-heading span,
+      .isometrica-risk-grading .table > thead > tr > td.impacts-heading span,
+      .isometrica-risk-grading .table > thead > tr > th.impacts-heading span {
+        -webkit-transform: rotate(-90deg);
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -50px; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-label,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-label,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-label,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-label,
+    .isometrica-risk-grading .table > thead > tr > td.impact-label,
+    .isometrica-risk-grading .table > thead > tr > th.impact-label {
+      background: #eee; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact,
+    .isometrica-risk-grading .table > tbody > tr > th.impact,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact,
+    .isometrica-risk-grading .table > thead > tr > td.impact,
+    .isometrica-risk-grading .table > thead > tr > th.impact {
+      cursor: pointer;
+      position: relative; }
+      .isometrica-risk-grading .table > tbody > tr > td.impact:after,
+      .isometrica-risk-grading .table > tbody > tr > th.impact:after,
+      .isometrica-risk-grading .table > tfoot > tr > td.impact:after,
+      .isometrica-risk-grading .table > tfoot > tr > th.impact:after,
+      .isometrica-risk-grading .table > thead > tr > td.impact:after,
+      .isometrica-risk-grading .table > thead > tr > th.impact:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.6);
+        opacity: 1;
+        transition: all 0.3s ease; }
+      .isometrica-risk-grading .table > tbody > tr > td.impact:hover:after,
+      .isometrica-risk-grading .table > tbody > tr > td.impact:focus:after,
+      .isometrica-risk-grading .table > tbody > tr > td.impact:active:after,
+      .isometrica-risk-grading .table > tbody > tr > td.impact.active:after,
+      .isometrica-risk-grading .table > tbody > tr > th.impact:hover:after,
+      .isometrica-risk-grading .table > tbody > tr > th.impact:focus:after,
+      .isometrica-risk-grading .table > tbody > tr > th.impact:active:after,
+      .isometrica-risk-grading .table > tbody > tr > th.impact.active:after,
+      .isometrica-risk-grading .table > tfoot > tr > td.impact:hover:after,
+      .isometrica-risk-grading .table > tfoot > tr > td.impact:focus:after,
+      .isometrica-risk-grading .table > tfoot > tr > td.impact:active:after,
+      .isometrica-risk-grading .table > tfoot > tr > td.impact.active:after,
+      .isometrica-risk-grading .table > tfoot > tr > th.impact:hover:after,
+      .isometrica-risk-grading .table > tfoot > tr > th.impact:focus:after,
+      .isometrica-risk-grading .table > tfoot > tr > th.impact:active:after,
+      .isometrica-risk-grading .table > tfoot > tr > th.impact.active:after,
+      .isometrica-risk-grading .table > thead > tr > td.impact:hover:after,
+      .isometrica-risk-grading .table > thead > tr > td.impact:focus:after,
+      .isometrica-risk-grading .table > thead > tr > td.impact:active:after,
+      .isometrica-risk-grading .table > thead > tr > td.impact.active:after,
+      .isometrica-risk-grading .table > thead > tr > th.impact:hover:after, .isometrica-risk-grading .table > thead > tr > th.impact:focus:after, .isometrica-risk-grading .table > thead > tr > th.impact:active:after, .isometrica-risk-grading .table > thead > tr > th.impact.active:after {
+        opacity: 0; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-vlow,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-vlow,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-vlow,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-vlow,
+    .isometrica-risk-grading .table > thead > tr > td.impact-vlow,
+    .isometrica-risk-grading .table > thead > tr > th.impact-vlow {
+      background: #19aa50; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-low,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-low,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-low,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-low,
+    .isometrica-risk-grading .table > thead > tr > td.impact-low,
+    .isometrica-risk-grading .table > thead > tr > th.impact-low {
+      background: #5cb85c; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-medium,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-medium,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-medium,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-medium,
+    .isometrica-risk-grading .table > thead > tr > td.impact-medium,
+    .isometrica-risk-grading .table > thead > tr > th.impact-medium {
+      background: #f0ad4e; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-high,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-high,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-high,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-high,
+    .isometrica-risk-grading .table > thead > tr > td.impact-high,
+    .isometrica-risk-grading .table > thead > tr > th.impact-high {
+      background: #d9534f; }
+    .isometrica-risk-grading .table > tbody > tr > td.impact-vhigh,
+    .isometrica-risk-grading .table > tbody > tr > th.impact-vhigh,
+    .isometrica-risk-grading .table > tfoot > tr > td.impact-vhigh,
+    .isometrica-risk-grading .table > tfoot > tr > th.impact-vhigh,
+    .isometrica-risk-grading .table > thead > tr > td.impact-vhigh,
+    .isometrica-risk-grading .table > thead > tr > th.impact-vhigh {
+      background: #c02927; }
+  .isometrica-risk-grading td {
+    color: white !important; }
 
 /* workbook */
 /* Guidance bar */
@@ -2445,11 +2541,6 @@ body.desktop.isometrica-overview-page .navbar-header {
 /* WIKI MODULE */
 .bootcards-wiki .bootcards-accordion .list-group-item-heading {
   line-height: 20px; }
-
-.bootcards-wiki .bootcards-accordion .collapse .list-group-item, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item {
-  padding-left: 25px; }
-  .bootcards-wiki .bootcards-accordion .collapse .list-group-item:hover, .bootcards-wiki .bootcards-accordion .collapse .list-group-item:focus, .bootcards-wiki .bootcards-accordion .collapse .list-group-item:active, .bootcards-wiki .bootcards-accordion .collapse .list-group-item.active, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:hover, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:focus, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item:active, .bootcards-wiki .bootcards-accordion .collapsing .list-group-item.active {
-    padding-left: 40px; }
 
 .bootcards-wiki .bootcards-accordion .text-danger {
   color: #d9534f; }

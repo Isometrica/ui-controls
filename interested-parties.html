@@ -174,6 +174,11 @@
 					</div>
           <div class="list-group">
 
+            <div class="list-group-item">
+              <p class="list-group-item-text">Name/description</p>
+              <h4 class="list-group-item-heading">Health &amp; Safety at Work <span class="label label-danger">Overdue</span></h4>
+            </div>
+
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
@@ -189,10 +194,7 @@
               </div>
             </div>
 
-            <div class="list-group-item">
-              <p class="list-group-item-text">Name/description</p>
-              <h4 class="list-group-item-heading">Health &amp; Safety at Work <span class="label label-danger">Overdue</span></h4>
-            </div>
+
 
             <div class="list-group-item">
               <p class="list-group-item-text">Relevant requirement(s)</p>
@@ -365,58 +367,6 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-xs-4">Notes</label>
-              <div class="col-xs-8">
-                <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
-                  <div class="isometrica-rich-text-controls clearfix">
-                    <div class="ql-toolbar-container" id="formatting-container">
-                      <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                      <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                      <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                      <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                    </div>
-                  </div>
-                  <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                    <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!--
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
-                </div>
-                <div class="collapse" id="notes">
-                  <div class="panel-body">
-
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
-                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
-                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
-                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
-                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
-                        </div>
-                        <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
-                      </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-            </div>
-            -->
-
-            <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
               <div class="col-xs-8">
                 <div class="btn-group">
@@ -463,9 +413,36 @@
               </div>
             </div>
 
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
 
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                        <a class="btn btn-default btn-expand" href="#" title="Link"><i class="fa fa-arrow-up no-margin"></i></a>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
 
-            <hr>
+                  </div>
+                </div>
+              </div>
+            </div>
 
             <div class="text-center">
               <button type="button" class="btn btn-default btn-delete">Delete</button>

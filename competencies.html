@@ -122,35 +122,30 @@
     				  <span class="label label-warning status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Good knowledge of the BCM lifecycle</h4>
-                <p class="list-group-item-text">20 May</p>
   						</div>
 						</a>
 						<a class="list-group-item active">
   						<span class="label label-success status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Good understanding of the management system</h4>
-                <p class="list-group-item-text">15 May</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-danger status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Good understanding of IS requirements</h4>
-                <p class="list-group-item-text">12 May</p>
               </div>
 						</a>
   				  <a class="list-group-item">
     				  <span class="label label-none status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Basic knowledge of the BCM</h4>
-                <p class="list-group-item-text">11 May</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-none status-indicator"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Good understanding of risk assessment</h4>
-                <p class="list-group-item-text">10 May</p>
               </div>
 						</a>
   				</div>
@@ -173,11 +168,7 @@
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Good understanding of the management system <span class="label label-success">Expert</span></h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Roles</p>
-              <h4 class="list-group-item-heading">BCM Manager, Environment Manager, IT Manager</h4>
+              <h4 class="list-group-item-heading">Good understanding of the management system</h4>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -194,24 +185,33 @@
               </div>
             </div>
             <div class="list-group-item">
+              <p class="list-group-item-text">Roles requiring this competency</p>
+              <h4 class="list-group-item-heading">BCM Manager, Environment Manager, IT Manager</h4>
+            </div>
+
+            <div class="list-group-item">
               <img class="avatar pull-left img-circle" src="img/avatar-jack.gif">
-              <h4 class="list-group-item-heading">John Smith, BCM Manager</h4>
-              <span class="label label-success">Trainer</span>
+              <h4 class="list-group-item-heading">John Smith <span class="label label-success">Trainer</span></h4>
+              <p class="list-group-item-text">BCM Manager</p>
+
             </div>
             <div class="list-group-item">
               <img class="avatar pull-left img-circle" src="img/avatar-placeholder.png">
-              <h4 class="list-group-item-heading">Sally Jason, Environment Manager</h4>
-              <span class="label label-success">Expert</span>
+              <h4 class="list-group-item-heading">Sally Jason <span class="label label-success">Expert</span></h4>
+              <p class="list-group-item-text">Environmental Manager</p>
+
             </div>
             <div class="list-group-item">
               <img class="avatar pull-left img-circle" src="img/avatar-dan.png">
-              <h4 class="list-group-item-heading">Mike Tufnell, IT Manager</h4>
-              <span class="label label-warning">Competent</span>
+              <h4 class="list-group-item-heading">Mike Tufnell <span class="label label-success">Competent</span></h4>
+              <p class="list-group-item-text">IT Manager</p>
+
             </div>
             <div class="list-group-item">
               <img class="avatar pull-left img-circle" src="img/avatar-steve.gif">
-              <h4 class="list-group-item-heading">Pete Robinson, Financial Manager</h4>
-              <span class="label label-danger">Limited</span>
+              <h4 class="list-group-item-heading">Pete Robinson <span class="label label-warning">Limited</span></h4>
+              <p class="list-group-item-text">Financial Manager</p>
+
             </div>
 
           </div>
@@ -364,9 +364,10 @@
                         <div class="collapse" id="assessment-1">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <div class="col-xs-12">
+                  		        <label class="control-label col-xs-3">Knowledge level</label>
+                  		        <div class="col-xs-9">
                           	    <div class="btn-group">
-                                  <button type="button" class="btn btn-success active">
+                                  <button type="button" class="btn btn-success">
                                     Trainer
                                   </button>
                                   <button type="button" class="btn btn-default">
@@ -384,7 +385,26 @@
                                 </div>
                   		        </div>
                   	        </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Last review date</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Assessed by</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
                 	        </div>
+
                         </div>
                       </div>
                       <div class="panel panel-default bootcards-panel-collapsing">
@@ -399,12 +419,13 @@
                         <div class="collapse" id="assessment-2">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <div class="col-xs-12">
+                              <label class="control-label col-xs-3">Knowledge level</label>
+                  		        <div class="col-xs-9">
                           	    <div class="btn-group">
                                   <button type="button" class="btn btn-default">
                                     Trainer
                                   </button>
-                                  <button type="button" class="btn btn-success active">
+                                  <button type="button" class="btn btn-success">
                                     Expert
                                   </button>
                                   <button type="button" class="btn btn-default">
@@ -419,6 +440,24 @@
                                 </div>
                   		        </div>
                   	        </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Last review date</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Assessed by</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
                 	        </div>
                         </div>
                       </div>
@@ -429,12 +468,13 @@
                             <strong>Mike Tufnell</strong>
                             IT Manager
                           </div>
-                          <span class="label label-warning pull-right">Competent</span>
+                          <span class="label label-success pull-right">Competent</span>
                         </div>
                         <div class="collapse" id="assessment-3">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <div class="col-xs-12">
+                              <label class="control-label col-xs-3">Knowledge level</label>
+                  		        <div class="col-xs-9">
                           	    <div class="btn-group">
                                   <button type="button" class="btn btn-default">
                                     Trainer
@@ -442,7 +482,7 @@
                                   <button type="button" class="btn btn-default">
                                     Expert
                                   </button>
-                                  <button type="button" class="btn btn-warning active">
+                                  <button type="button" class="btn btn-success">
                                     Competent
                                   </button>
                                   <button type="button" class="btn btn-default">
@@ -454,6 +494,24 @@
                                 </div>
                   		        </div>
                   	        </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Last review date</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Assessed by</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
                 	        </div>
                         </div>
                       </div>
@@ -464,12 +522,13 @@
                             <strong>Pete Robinson</strong>
                             Financial Manager
                           </div>
-                          <span class="label label-danger pull-right">Limited</span>
+                          <span class="label label-warning pull-right">Limited</span>
                         </div>
                         <div class="collapse" id="assessment-4">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <div class="col-xs-12">
+                              <label class="control-label col-xs-3">Knowledge level</label>
+                  		        <div class="col-xs-9">
                           	    <div class="btn-group">
                                   <button type="button" class="btn btn-default">
                                     Trainer
@@ -480,7 +539,7 @@
                                   <button type="button" class="btn btn-default">
                                     Competent
                                   </button>
-                                  <button type="button" class="btn btn-danger active">
+                                  <button type="button" class="btn btn-warning">
                                     Limited
                                   </button>
                                   <button type="button" class="btn btn-default">
@@ -489,6 +548,24 @@
                                 </div>
                   		        </div>
                   	        </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Last review date</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-3">Assessed by</label>
+                              <div class="col-xs-9">
+                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                              </div>
+                            </div>
                 	        </div>
                         </div>
                       </div>

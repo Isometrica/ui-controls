@@ -7,16 +7,6 @@
       line-height: 20px;
     }
 
-    .collapse, .collapsing {
-      .list-group-item {
-        padding-left: 25px;
-
-        &:hover, &:focus, &:active, &.active {
-          padding-left: 40px;
-        }
-      }
-    }
-
     .text-danger {
       color: #d9534f;
     }
@@ -70,12 +60,6 @@
 
     .bootcards-panel-collapsing {
       margin-top: 0;
-    }
-
-    .panel-body {
-      //border-top: 1px solid #ddd;
-      //padding-top: 0;
-      //padding-bottom: 0;
     }
 
     strong {

@@ -349,63 +349,109 @@
             </div>
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#analysis" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Analysis</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-left">Risk Scoring</h4>
+                  <h4 class="panel-title pull-right"><span class="label label-danger">80 - Very high</span></h4>
                 </div>
                 <div class="collapse" id="analysis">
-                  <div class="panel-body">
+                  <div class="isometrica-risk-grading">
 
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Comments</label>
-                      <div class="col-xs-8">
-                        <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
-                          <div class="isometrica-rich-text-controls clearfix">
-                            <div class="ql-toolbar-container" id="formatting-container">
-                              <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                              <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                              <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                              <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                            </div>
-                          </div>
-                          <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                            <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="form-group risk-analysis-impacts">
-                      <label class="control-label col-xs-4">Impacts</label>
-                      <div class="col-xs-4">
-                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">1</button>
-                      </div>
-                    </div>
-                    <div class="form-group risk-analysis-likelihood">
-                      <label class="control-label col-xs-4">Likelihood</label>
-                      <div class="col-xs-4">
-                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">5</button>
-                      </div>
-                    </div>
-                    <div class="form-group risk-analysis-score">
-                      <label class="control-label col-xs-4">Risk score</label>
-                      <div class="col-xs-4">
-                        <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">Medium</button>
-                      </div>
-                    </div>
+              	    <table class="table">
+                	    <tbody>
+                  	    <tr>
+                    	    <th rowspan="7" class="impacts-heading"><span>Impacts</span></th>
+                    	    <th class="impact-label">Catastrophic</th>
+                    	    <td class="impact impact-low">45</td>
+                    	    <td class="impact impact-medium">65</td>
+                    	    <td class="impact impact-high active">80</td>
+                    	    <td class="impact impact-high">90</td>
+                    	    <td class="impact impact-high">100</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Significant</th>
+                    	    <td class="impact impact-low">35</td>
+                    	    <td class="impact impact-medium">60</td>
+                    	    <td class="impact impact-high">75</td>
+                    	    <td class="impact impact-high">80</td>
+                    	    <td class="impact impact-high">85</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Moderate</th>
+                    	    <td class="impact impact-low">26</td>
+                    	    <td class="impact impact-medium">51</td>
+                    	    <td class="impact impact-medium">54</td>
+                    	    <td class="impact impact-medium">59</td>
+                    	    <td class="impact impact-medium">66</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Minor</th>
+                    	    <td class="impact impact-vlow">15</td>
+                    	    <td class="impact impact-low">26</td>
+                    	    <td class="impact impact-low">30</td>
+                    	    <td class="impact impact-low">36</td>
+                    	    <td class="impact impact-low">42</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Limited</th>
+                    	    <td class="impact impact-vlow">1</td>
+                    	    <td class="impact impact-vlow">8</td>
+                    	    <td class="impact impact-vlow">12</td>
+                    	    <td class="impact impact-vlow">16</td>
+                    	    <td class="impact impact-vlow">20</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">&nbsp;</th>
+                    	    <th class="impact-label">V.Low</th>
+                    	    <th class="impact-label">Low</th>
+                    	    <th class="impact-label">Med</th>
+                    	    <th class="impact-label">High</th>
+                    	    <th class="impact-label">V.High</th>
+                  	    </tr>
+                  	    <tr>
+                    	    <th>&nbsp;</th>
+                    	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
+                  	    </tr>
+                	    </tbody>
+              	    </table>
 
         	        </div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#evolution" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#evaluation" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Evolution</h4>
+                  <h4 class="panel-title pull-left">Evaluation</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="evolution">
+                <div class="collapse" id="evaluation">
                   <div class="panel-body">
 
                     <div class="form-group">
@@ -429,7 +475,19 @@
                     <div class="form-group">
                       <label class="control-label col-xs-4">Previous loss experience</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Previous loss experience" value=""/>
+                        <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
+                          <div class="isometrica-rich-text-controls clearfix">
+                            <div class="ql-toolbar-container" id="formatting-container">
+                              <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                              <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                              <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                              <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                            </div>
+                          </div>
+                          <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                            <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                          </div>
+                        </div>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
@@ -687,65 +745,7 @@
   	      </button>
   	    </div>
   	    <div class="isometrica-risk-grading">
-    	    <table class="table">
-      	    <tbody>
-        	    <tr>
-          	    <th rowspan="5"><span class="impacts-heading">Impacts</span></th>
-          	    <th class="impact-label">5</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-        	    </tr>
-        	    <tr>
-          	    <th class="impact-label">4</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-        	    </tr>
-        	    <tr>
-          	    <th class="impact-label">3</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
-        	    </tr>
-        	    <tr>
-          	    <th class="impact-label">2</th>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
-        	    </tr>
-        	    <tr>
-          	    <th class="impact-label">1</th>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-        	    </tr>
-        	    <tr>
-          	    <th>&nbsp;</th>
-          	    <th class="impact-label">&nbsp;</th>
-          	    <th class="impact-label">1</th>
-          	    <th class="impact-label">2</th>
-          	    <th class="impact-label">3</th>
-          	    <th class="impact-label">4</th>
-          	    <th class="impact-label">5</th>
-        	    </tr>
-        	    <tr>
-          	    <th>&nbsp;</th>
-          	    <th>&nbsp;</th>
-          	    <th colspan="5"><span class="probability-heading">Probability</span></th>
-        	    </tr>
-      	    </tbody>
-    	    </table>
+
   	    </div>
       </div>
     </div>
