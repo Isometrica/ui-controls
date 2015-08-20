@@ -976,7 +976,11 @@ $status-indicator-size: 16px;
         margin-bottom: 7px;
       }
 
-      > ul,
+      > ul {
+        margin-bottom: 0;
+      }
+
+      > ul > li,
       > p:not(.list-group-item-text) {
         margin-bottom: 5px;
       }

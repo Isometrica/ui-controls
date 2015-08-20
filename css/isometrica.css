@@ -659,7 +659,9 @@ input.form-value {
     margin-bottom: 5px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .progress {
     margin-bottom: 7px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item > ul,
+  .isometrica-container-listdetail .bootcards-cards .list-group-item > ul {
+    margin-bottom: 0; }
+  .isometrica-container-listdetail .bootcards-cards .list-group-item > ul > li,
   .isometrica-container-listdetail .bootcards-cards .list-group-item > p:not(.list-group-item-text) {
     margin-bottom: 5px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
