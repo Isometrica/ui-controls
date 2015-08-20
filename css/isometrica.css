@@ -532,6 +532,13 @@ input.form-value {
       top: -3px;
       left: 3px; }
 
+.dropdown-menu > li > a {
+  padding: 7px 15px; }
+
+.dropdown-menu > li.active > a {
+  background: #eee;
+  color: #333; }
+
 /* NAVBAR FILTER DROPDOWN */
 .navbar-header .navbar-brand.dropdown-toggle {
   cursor: pointer; }
@@ -549,11 +556,6 @@ input.form-value {
   left: 50%;
   margin-left: -100px;
   text-align: center; }
-  .navbar-header .dropdown-menu a {
-    padding: 7px 15px; }
-  .navbar-header .dropdown-menu .active a {
-    background: #eee;
-    color: #333; }
 
 .ios .navbar-header .dropdown-menu {
   width: auto;
@@ -890,10 +892,29 @@ input.form-value {
   margin: 15px -15px;
   border-color: #ddd; }
 
+.modal .list-group {
+  margin: 0; }
+  .modal .list-group .list-group-item {
+    border-right: 0;
+    border-left: 0; }
+    .modal .list-group .list-group-item:first-child {
+      border-top: 0; }
+    .modal .list-group .list-group-item:last-child {
+      border-bottom: 0; }
+
 .desktop .modal-dialog .modal-header {
-  border-color: #ddd; }
+  border-color: #ddd;
+  position: relative; }
   .desktop .modal-dialog .modal-header .modal-title {
     line-height: 34px; }
+  .desktop .modal-dialog .modal-header .pull-left {
+    left: 15px;
+    top: 15px;
+    position: absolute; }
+  .desktop .modal-dialog .modal-header .pull-right {
+    right: 15px;
+    top: 15px;
+    position: absolute; }
 
 .ios .modal-dialog .modal-content {
   z-index: 1; }

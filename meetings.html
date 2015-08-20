@@ -107,10 +107,16 @@
     				      </div>
 						    </div>
 						    <div class="col-xs-4">
-  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#isometrica-meetings-add-modal">
-  									<i class="fa fa-plus"></i>
-  									<span>Add</span>
-  								</button>
+  						    <div style="position:relative">
+    								<button class="btn btn-primary btn-block" data-toggle="dropdown">
+    									<i class="fa fa-plus"></i>
+    									<span>Add</span>
+    								</button>
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#" data-toggle="modal" data-target="#isometrica-meetings-add-modal">Create new meeting</a></li>
+                      <li><a href="#" data-toggle="modal" data-target="#choose-template-modal">Create from template</a></li>
+                    </ul>
+  						    </div>
 						    </div>
   						</div>
 
@@ -2000,6 +2006,42 @@
       </div>
     </div>
   </div>
+
+
+
+  <!-- Choose Meeting Template Modal -->
+  <div class="modal fade" id="choose-template-modal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-right">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <h4 class="modal-title">Choose template</h4>
+        </div>
+        <div class="list-group">
+          <a href="#" class="list-group-item" data-dismiss="modal" data-toggle="modal" data-target="#isometrica-meetings-edit-modal">
+            <h4 class="list-group-item-heading">Template name lorem ipsum dolor</h4>
+            <p class="list-group-item-text">Weekly management</p>
+            <p class="list-group-item-text text-info">4 agenda items</p>
+          </a>
+          <a href="#" class="list-group-item" data-dismiss="modal" data-toggle="modal" data-target="#isometrica-meetings-edit-modal">
+            <h4 class="list-group-item-heading">Another template name</h4>
+            <p class="list-group-item-text">Annual planning</p>
+            <p class="list-group-item-text text-info">11 agenda items</p>
+          </a>
+          <a href="#" class="list-group-item" data-dismiss="modal" data-toggle="modal" data-target="#isometrica-meetings-edit-modal">
+            <h4 class="list-group-item-heading">Dolor ipsum lorem</h4>
+            <p class="list-group-item-text">Weekly management</p>
+            <p class="list-group-item-text text-info">7 agenda items</p>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
 
   <script>
 
