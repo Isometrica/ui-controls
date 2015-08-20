@@ -1461,10 +1461,15 @@ $status-indicator-size: 16px;
 
 .bootcards-list {
   .bootcards-accordion {
-    .collapse {
+    .collapse, .collapsing {
       .list-group-item {
         .list-group-item-heading {
           margin-left: 25px;
+        }
+      }
+      .bootcards-list-subheading {
+        &:before {
+          left: 40px;
         }
       }
     }

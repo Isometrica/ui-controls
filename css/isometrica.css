@@ -956,8 +956,11 @@ input.form-value {
     box-shadow: none; }
 
 /* ACCORDION */
-.bootcards-list .bootcards-accordion .collapse .list-group-item .list-group-item-heading {
+.bootcards-list .bootcards-accordion .collapse .list-group-item .list-group-item-heading, .bootcards-list .bootcards-accordion .collapsing .list-group-item .list-group-item-heading {
   margin-left: 25px; }
+
+.bootcards-list .bootcards-accordion .collapse .bootcards-list-subheading:before, .bootcards-list .bootcards-accordion .collapsing .bootcards-list-subheading:before {
+  left: 40px; }
 
 .bootcards-accordion .bootcards-list-subheading {
   background-color: #f5f5f5 !important;
