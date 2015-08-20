@@ -195,10 +195,34 @@
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Agenda items</p>
-              <h4 class="list-group-item-heading">1. Previous minutes</h4>
-              <h4 class="list-group-item-heading">2. FY15 Plan</h4>
-              <h4 class="list-group-item-heading">3. Teamstudio Business Report</h4>
-              <h4 class="list-group-item-heading">4. AOB</h4>
+              <h4 class="list-group-item-heading">1. Follow up actions from previous management review</h4>
+              <h4 class="list-group-item-heading">2. Internal Audit results</h4>
+              <h4 class="list-group-item-heading">3. Review feedback and complaints</h4>
+              <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
+              <h4 class="list-group-item-heading">4. Review business performance information</h4>
+              <ul>
+                <li><strong>Adjustments to policy</strong></li>
+                <li><strong>Objectives and targets</strong></li>
+              </ul>
+              <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
+              <h4 class="list-group-item-heading">5. Status of corrective and preventative measures</h4>
+              <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
+              <h4 class="list-group-item-heading">6. Manual/Review updates</h4>
+              <ul>
+                <li><strong>Changes that may affect the Quality Management System</strong></li>
+                <li><strong>Changes that may affect the Information Security Management System</strong></li>
+                <li><strong>Recommendations for improvement</strong></li>
+              </ul>
+              <h4 class="list-group-item-heading">7. Resources</h4>
+              <ul>
+                <li><strong>Staff/staff training</strong></li>
+                <li><strong>Equipment</strong></li>
+              </ul>
+              <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
+              <h4 class="list-group-item-heading">8. Evidence of compliance with legal and other requirements (where applicable)</h4>
+              <h4 class="list-group-item-heading">9. Risk Management and status of Risk Assessments</h4>
+              <h4 class="list-group-item-heading">10. Serious untoward incidents</h4>
+              <h4 class="list-group-item-heading">11. Any other business</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Actions from last meeting - closed</p>
@@ -255,10 +279,19 @@
             <div class="form-group">
               <label class="control-label col-xs-3 col-sm-4">Type</label>
               <div class="col-xs-9 col-sm-8">
-                <input type="text" class="form-control" value="" placeholder="Type"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="" placeholder="Type"/>
+                  <span class="input-group-btn">
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#">Ad hoc meeting</a></li>
+                      <li><a href="#">Weekly management</a></li>
+                      <li><a href="#">Monthly operations</a></li>
+                      <li><a href="#">Quarterly support</a></li>
+                      <li><a href="#">Annual planning</a></li>
+                    </ul>
+                    <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                  </span>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -407,10 +440,19 @@
             <div class="form-group">
               <label class="control-label col-xs-2 col-sm-4">Type</label>
               <div class="col-xs-10 col-sm-8">
-                <input type="text" class="form-control" value="Monthly management" placeholder="Type"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+  			        <div class="input-group">
+                  <input type="text" class="form-control" value="Monthly management" placeholder="Type"/>
+                  <span class="input-group-btn">
+                    <ul class="dropdown-menu dropdown-menu-right">
+                      <li><a href="#">Ad hoc meeting</a></li>
+                      <li><a href="#">Weekly management</a></li>
+                      <li><a href="#">Monthly operations</a></li>
+                      <li><a href="#">Quarterly support</a></li>
+                      <li><a href="#">Annual planning</a></li>
+                    </ul>
+                    <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                  </span>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -581,9 +623,56 @@
                 	        </div>
                         </div>
                       </div>
+                      <div class="panel panel-default bootcards-panel-collapsing collapse" id="addAttendee2">
+                        <div class="panel-heading clearfix" href="#attendee-new-2" data-toggle="collapse" aria-expanded="true">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          Add attendee
+                        </div>
+                        <div class="collapse in" id="attendee-new-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">
+                  		          <a href="#" class="help-icon"><i class="fa fa-question-circle fa-lg"></i></a>
+                  		          Name
+                  		        </label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Name">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Initials</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Initials">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Regular attendee</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+
+                      </div>
                     </div>
 
-                    <button type="button" class="btn btn-link btn-block btn-add">Add attendee</button>
+                    <button type="button" class="btn btn-link btn-block btn-add" data-toggle="collapse" data-target="#addAttendee2">Add attendee</button>
 
                   </div>
                 </div>
@@ -601,11 +690,15 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            1. Previous minutes
-                          </div>
-                          <div class="pull-right">
-                            NC
+                          <div class="row">
+                            <div class="col-xs-9">
+                              1. Follow up actions from previous management review
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              NC
+                            </div>
                           </div>
                         </div>
                         <div class="collapse" id="agenda-item-1">
@@ -646,6 +739,24 @@
                   			        </div>
                   		        </div>
                   	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
                             <hr>
                             <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
@@ -658,11 +769,15 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            2. FY plan
-                          </div>
-                          <div class="pull-right">
-                            NC
+                          <div class="row">
+                            <div class="col-xs-9">
+                              2. Internal Audit results
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              NC
+                            </div>
                           </div>
                         </div>
                         <div class="collapse" id="agenda-item-2">
@@ -670,7 +785,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Agenda item</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <input type="text" class="form-control" value="Internal Audit results">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -679,7 +794,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Number</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="1">
+                  			        <input type="text" class="form-control" value="2">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -703,6 +818,24 @@
                   			        </div>
                   		        </div>
                   	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
                   	        <hr>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
@@ -715,11 +848,16 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-3" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            3. Teamstudio Business Reports
-                          </div>
-                          <div class="pull-right">
-                            NC
+                          <div class="row">
+                            <div class="col-xs-9">
+                              3. Review feedback and complaints
+                            </div>
+                            <div class="col-xs-1">
+                              <i class="fa fa-comment-o"></i>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              NC
+                            </div>
                           </div>
                         </div>
                         <div class="collapse" id="agenda-item-3">
@@ -736,7 +874,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Number</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="1">
+                  			        <input type="text" class="form-control" value="3">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -760,6 +898,24 @@
                   			        </div>
                   		        </div>
                   	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments">Lorem ipsum dolor est</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
                   	        <hr>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
@@ -772,11 +928,16 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-4" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>4. Isometrica update</strong>
-                          </div>
-                          <div class="pull-right">
-                            <strong>SI</strong>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              <strong>4. Review business performance information</strong>
+                            </div>
+                            <div class="col-xs-1">
+                              <i class="fa fa-comment-o"></i>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              <strong>SI</strong>
+                            </div>
                           </div>
                         </div>
                         <div class="collapse" id="agenda-item-4">
@@ -793,7 +954,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Number</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="1">
+                  			        <input type="text" class="form-control" value="4">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -817,6 +978,584 @@
                   			        </div>
                   		        </div>
                   	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments">Lorem ipsum dolor est</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items">- Adjustments to policy
+- Objectives & targets</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-5" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              5. Status of corrective and preventative actions
+                            </div>
+                            <div class="col-xs-1">
+                              <i class="fa fa-comment-o"></i>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              NC
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-5">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments">Lorem ipsum dolor est</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-6" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              6. Manual/Review updates
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              MD
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-6">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items">- Changes that may affect the Quality Management System
+- Changes that may affect the Information Security Management System
+- Recommendations for improvement</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-7" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              7. Resources
+                            </div>
+                            <div class="col-xs-1">
+                              <i class="fa fa-comment-o"></i>
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              MD
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-7">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments">Lorem ipsum dolor est</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items">- Staff/staff training
+- Equipment</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-8" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              8. Evidence of compliance with legal and other requirements (where applicable)
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              MD
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-8">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-9" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              9. Risk Management and status of Risk Assessments
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              SI
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-9">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments">Lorem ipsum dolor est</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-10" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              10. Serious untoward incidents
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              SI
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-10">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items">- Adjustments to policy
+- Objectives & targets</textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#agenda-item-11" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="row">
+                            <div class="col-xs-9">
+                              11. Any other business
+                            </div>
+                            <div class="col-xs-1">
+                            </div>
+                            <div class="col-xs-2 text-right">
+                              NC
+                            </div>
+                          </div>
+                        </div>
+                        <div class="collapse" id="agenda-item-11">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Agenda item</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Previous minutes">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Number</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="4">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Who submitted</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="NC">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Recurring</label>
+                  		        <div class="col-xs-9">
+                  			        <div class="btn-group">
+                    			        <a class="btn btn-info">Yes</a>
+                    			        <a class="btn btn-default">No</a>
+                  			        </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Comments</label>
+                  		        <div class="col-xs-9">
+                  			        <textarea class="form-control" rows="2" placeholder="Comments"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Sub-items</label>
+                  		        <div class="col-xs-9">
+                    		        <textarea class="form-control" rows="3" placeholder="Sub-items"></textarea>
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
                   	        <hr>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
@@ -829,6 +1568,7 @@
                     </div>
 
                     <div class="text-center">
+                      <button type="button" class="btn btn-link btn-add">Add standard agenda</button>
                       <button type="button" class="btn btn-link btn-add">Add agenda item</button>
                       <button type="button" class="btn btn-link btn-add">Add comment</button>
                     </div>
@@ -1076,7 +1816,9 @@
                   </div>
                 </div>
               </div>
+            </div>
 
+            <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#new-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>

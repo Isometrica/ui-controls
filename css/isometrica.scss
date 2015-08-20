@@ -976,12 +976,20 @@ $status-indicator-size: 16px;
         margin-bottom: 7px;
       }
 
+      > ul,
+      > p:not(.list-group-item-text) {
+        margin-bottom: 5px;
+      }
+
       .list-group-item-heading {
+        margin-top: 8px;
+
         .label {
           position: relative;
           top: -1px;
           margin-right: 5px;
         }
+
       }
     }
 
