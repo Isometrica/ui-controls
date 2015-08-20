@@ -212,9 +212,10 @@ input.form-value {
 
   .label {
     position: absolute;
-    right: 10px;
+    right: 8px;
+    left: auto !important;
     top: 50%;
-    margin-top: -6px;
+    margin-top: -8px;
   }
 }
 
@@ -850,9 +851,9 @@ input.form-value {
 }
 
 
-/* COMMON LIST-DETAIL VIEWS */
+/* STATUS DOTS */
 
-$status-indicator-size: 36px;
+$status-indicator-size: 16px;
 
 .status-indicator {
   border-radius: 50%;
@@ -860,17 +861,12 @@ $status-indicator-size: 36px;
   height: $status-indicator-size;
   width: $status-indicator-size;
   padding: 0;
-  float: left;
   text-align: center;
-  margin-right: 10px;
-  font-size: 11px;
-  line-height: $status-indicator-size;
-  display: block;
   position: relative;
-  top: 2px;
+  top: 1px;
 
   &:empty {
-    display: block;
+    display: inline-block;
   }
 
   i {
@@ -886,30 +882,22 @@ $status-indicator-size: 36px;
       font-size: 26px;
     }
   }
-}
 
-.list-group-item-icon {
-  position: relative;
-
-  .status-circle {
-    display: block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    position: absolute;
-    left: -3px;
-    top: -3px;
+  &.pull-left {
+    margin-right: 10px;
   }
+
+  &:not(.pull-left) {
+    left: 4px;
+
+  }
+
+
 }
 
-.status-circle {
-  display: inline-block !important;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  padding: 0;
-  margin-left: 3px;
-}
+
+
+/* COMMON LIST-DETAIL VIEWS */
 
 .isometrica-container-listdetail {
   padding-top: 80px;

@@ -137,9 +137,10 @@ input.form-value {
   position: relative; }
   .form-control-with-status .label {
     position: absolute;
-    right: 10px;
+    right: 8px;
+    left: auto !important;
     top: 50%;
-    margin-top: -6px; }
+    margin-top: -8px; }
 
 .btn-checkbox {
   width: 34px;
@@ -587,53 +588,34 @@ input.form-value {
     background: #33b5e5;
     color: white; }
 
-/* COMMON LIST-DETAIL VIEWS */
+/* STATUS DOTS */
 .status-indicator {
   border-radius: 50%;
   z-index: 9;
-  height: 36px;
-  width: 36px;
+  height: 16px;
+  width: 16px;
   padding: 0;
-  float: left;
   text-align: center;
-  margin-right: 10px;
-  font-size: 11px;
-  line-height: 36px;
-  display: block;
   position: relative;
-  top: 2px; }
+  top: 1px; }
   .status-indicator:empty {
-    display: block; }
+    display: inline-block; }
   .status-indicator i {
     color: white;
     opacity: 1 !important;
     font-size: 18px;
     width: auto !important;
     margin: 0 !important;
-    line-height: 36px;
+    line-height: 16px;
     width: 21px; }
     .status-indicator i.fa-clock-o {
       font-size: 26px; }
+  .status-indicator.pull-left {
+    margin-right: 10px; }
+  .status-indicator:not(.pull-left) {
+    left: 4px; }
 
-.list-group-item-icon {
-  position: relative; }
-  .list-group-item-icon .status-circle {
-    display: block;
-    width: 18px;
-    height: 18px;
-    border-radius: 50%;
-    position: absolute;
-    left: -3px;
-    top: -3px; }
-
-.status-circle {
-  display: inline-block !important;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  padding: 0;
-  margin-left: 3px; }
-
+/* COMMON LIST-DETAIL VIEWS */
 .isometrica-container-listdetail {
   padding-top: 80px; }
   .isometrica-container-listdetail .guidance-bar {
