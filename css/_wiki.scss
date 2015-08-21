@@ -2,21 +2,8 @@
 
 .bootcards-wiki {
 
-  .bootcards-accordion {
-    .list-group-item-heading {
-      line-height: 20px;
-    }
-
-    .text-danger {
-      color: #d9534f;
-    }
-  }
-
-  .bootcards-list {
-    .subsection {
-      font-size: 13px;
-      padding-left: 15px;
-    }
+  .bootcards-list .list-group-item-heading {
+    line-height: 20px;
   }
 
   .bootcards-wiki-panel {

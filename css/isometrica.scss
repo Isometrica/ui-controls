@@ -48,7 +48,7 @@ body.desktop {
 /* COLORS */
 
 .text-danger {
-  color: $red-color;
+  color: $red-color !important;
 }
 
 .text-warning {
@@ -1530,6 +1530,28 @@ $status-indicator-size: 16px;
     padding-left: 40px !important;
     font-size: 16px !important;
 
+    &.has-content {
+      &:not(.active) {
+        background-color: transparent !important;
+      }
+
+      &:after {
+        font-family: FontAwesome;
+        content: '';
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        font-size: 14px;
+        line-height: 14px;
+        margin-top: -7px;
+        color: #ccc;
+      }
+
+      &.active:after {
+        color: #e1edf7;
+      }
+    }
+
     &:before {
       font-size: 18px !important;
       //width: 20px !important;
@@ -1554,6 +1576,12 @@ $status-indicator-size: 16px;
     .list-group-item-text {
       font-weight: normal;
     }
+  }
+
+  .subsection {
+    font-size: 13px;
+    padding-left: 15px;
+    //font-weight: normal;
   }
 }
 
