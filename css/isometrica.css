@@ -478,7 +478,7 @@ input.form-value {
   border-color: transparent; }
   .android .navbar .navbar-brand {
     font-size: 20px;
-    padding-left: 15px !important;
+    padding-left: 0;
     color: white !important;
     margin-left: 0 !important; }
   .android .navbar .btn {
