@@ -666,7 +666,7 @@ input.form-value {
   .isometrica-container-listdetail .bootcards-cards .list-group-item > p:not(.list-group-item-text) {
     margin-bottom: 5px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
-    margin-top: 8px; }
+    line-height: 1.35; }
     .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading .label {
       position: relative;
       top: -1px;

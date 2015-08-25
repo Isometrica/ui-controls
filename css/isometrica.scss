@@ -987,7 +987,8 @@ $status-indicator-size: 16px;
       }
 
       .list-group-item-heading {
-        margin-top: 8px;
+        //margin-top: 8px;
+        line-height: 1.35;
 
         .label {
           position: relative;

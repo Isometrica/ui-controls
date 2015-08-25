@@ -1,0 +1,588 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Suppliers & partners</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+	<script>
+	// Platform Detection (testing only)
+	$( document ).ready(function() {
+		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('ios');
+     	}
+		else if( navigator.userAgent.match(/Android/i) ) {
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('android');
+		}
+		else
+		{
+			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
+			$("head").append(cssLink);
+			$('body').addClass('desktop');
+		}
+	});
+	</script>
+
+	<link rel="stylesheet" href="css/isometrica.css">
+
+</head>
+<body class="bootcards-fullheight bootcards-nofooter">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="dashboard.html">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link icon-only" href="#">
+          	<i class="fa fa-lg fa-question-circle"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+          Suppliers & partners - all
+          <i class="fa fa-chevron-down"></i>
+        </span>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">By type</a></li>
+          <li><a href="#">By approval date</a></li>
+          <li><a href="#">By non-conformities</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="container bootcards-container isometrica-container-listdetail" id="main">
+
+    <!-- Guidance Bar -->
+    <div class="guidance-bar hidden-xs">
+      <div class="container">
+        <h4>Guidance goes here lorem ipsum</h4>
+        <button type="button" class="btn btn-link guidance-bar-dismiss">
+          <i class="fa fa-times-circle no-margin"></i>
+        </button>
+      </div>
+    </div>
+
+
+		<div class="row">
+
+      <div class="col-sm-4 bootcards-list" id="list">
+  			<div class="panel panel-default">
+  				<div class="panel-body">
+  					<div class="search-form">
+    					<div class="row">
+						    <div class="col-xs-8">
+    				      <div class="form-group">
+    					      <input type="text" class="form-control" placeholder="Search...">
+    					      <i class="fa fa-search"></i>
+    				      </div>
+						    </div>
+						    <div class="col-xs-4">
+  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#edit-modal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</button>
+						    </div>
+  						</div>
+
+  					</div>
+  				</div>
+  				<div class="list-group">
+  				  <a class="list-group-item active">
+    				  <span class="label label-success status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Smith Components</h4>
+  							<p class="list-group-item-text">25 Mar 2015</p>
+  						</div>
+						</a>
+						<a class="list-group-item ">
+  						<span class="label label-warning status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">RS Components</h4>
+  							<p class="list-group-item-text">16 May 2014</p>
+              </div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-danger status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Tough Tubes Ltd</h4>
+  							<p class="list-group-item-text">3 Jan 2010</p>
+              </div>
+						</a>
+  				  <a class="list-group-item">
+  						<span class="label label-success status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Mice Fabrications</h4>
+  							<p class="list-group-item-text">17 Aug 2007</p>
+              </div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-success status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Screwfix</h4>
+  							<p class="list-group-item-text">6 Nov 2011</p>
+              </div>
+						</a>
+						<a class="list-group-item">
+  						<span class="label label-success status-indicator pull-left"></span>
+  						<div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">BT</h4>
+  							<p class="list-group-item-text">19 Dec 2013</p>
+              </div>
+						</a>
+  				</div>
+  			</div>
+  		</div>
+
+			<div class="col-sm-8 bootcards-cards hidden-xs">
+				<div class="panel panel-default">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-right">
+							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+								<i class="fa fa-pencil"></i>
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title">
+  						Survey
+  				  </h3>
+					</div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <p class="list-group-item-text">Name</p>
+              <h4 class="list-group-item-heading">Smith Components</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Type</p>
+                  <h4 class="list-group-item-heading">Supplier</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Status</p>
+                  <h4 class="list-group-item-heading"><span class="label label-success">Approved</span></h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Contact name</p>
+              <h4 class="list-group-item-heading">Mike Lawrence</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Contact phone</p>
+                  <h4 class="list-group-item-heading"><a href="tel:01257682123">01257 682123</a></h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Contact email</p>
+                  <h4 class="list-group-item-heading"><a href="mailto:mike@smith.co.uk">mike@smith.co.uk</a></h4>
+                </div>
+              </div>
+            </div>
+
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Internal owner</p>
+              <h4 class="list-group-item-heading">Peter Johnson</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Our requirements</p>
+              <h4 class="list-group-item-heading">Flanges need to be heat treated to spec 1706. Supplier must be ISO 9001 accredited.</h4>
+            </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Strengths &amp; weaknesses</p>
+              <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br>Pellentesque id felis ac sem faucibus auctor. <br>Nullam vulputate mi libero. <br>Donec imperdiet cursus sapien et volutpat.</h4>
+            </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes</p>
+              <h4 class="list-group-item-heading">Pellentesque id felis ac sem faucibus auctor</h4>
+            </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">File(s)</p>
+              <a href="#" class="btn btn-default">
+                <i class="fa fa-file-pdf-o fa-lg"></i>
+                Contract.pdf
+              </a>
+            </div>
+
+            <div class="list-group-item">
+              <p class="list-group-item-text">Products &amp; services supplied</p>
+              <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet <br>Consectetur adipiscing elit</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Reported non-conformities</p>
+              <a href="#" class="btn btn-default"><strong>NC15</strong> Fractured flange <i class="fa fa-circle margin-left text-success"></i></a>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Approved by</p>
+                  <h4 class="list-group-item-heading">John Smith</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Approved date</p>
+                  <h4 class="list-group-item-heading">25 Mar 2015</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
+              </div>
+              <div class="col-xs-6">
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
+              </div>
+            </div>
+          </div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-edit-modal" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Supplier/partner</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-4">Name</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Name" value="Smith Components">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Type</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option></option>
+                  <option selected="">Supplier</option>
+                  <option>Partner</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Contact name</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Contact name" value="Mike Lawrence">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Contact phone</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Contact phone" value="01257 682123">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Contact email</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Contact email" value="mlaurence@smith.co.uk">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Internal owner</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Internal owner" value="Peter Johnson">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Our requirements</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" rows="3" placeholder="Our requirements">Flanges need to be heat treated to spec 1706. Supplier must be ISO 9001 accredited.</textarea>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Strengths &amp; weaknesses</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" rows="3" placeholder="Strengths & weaknesses">Lorem ipsum dolor sit amet, consectetur.
+Pellentesque id felis ac sem faucibus auctor.
+Nullam vulputate mi libero.
+Donec imperdiet cursus sapien et volutpat.</textarea>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Notes</label>
+              <div class="col-xs-8">
+                <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
+                  <div class="isometrica-rich-text-controls clearfix">
+                    <div class="ql-toolbar-container" id="formatting-container">
+                      <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                      <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                      <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                      <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                    </div>
+                  </div>
+                  <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                    <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Files</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-file-word-o fa-lg"></i>
+                    Contract.docx
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                  </button>
+                </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Products &amp; services supplied</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" rows="3" placeholder="Strengths & weaknesses">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+Pellentesque id felis ac sem faucibus auctor.
+Nullam vulputate mi libero.
+Donec imperdiet cursus sapien et volutpat.</textarea>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Reported non-conformities</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="nonconformities">
+                  <div class="panel-body">
+
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>NC15</strong>
+                            Fractured flange
+                          </div>
+                          <div class="pull-right">
+                            <span class="label label-danger">Open - Overdue</span>
+                          </div>
+                        </div>
+                        <div class="collapse" id="nonconformity-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Description</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Fractured flange">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Closed
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Cancelled
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Plan exists?</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link btn-add">Add non-conformity</button>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-xs-4">Approval status</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-success active">Approved</button>
+                  <button type="button" class="btn btn-default">In progress</button>
+                  <button type="button" class="btn btn-default">Not approved</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Approved by</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Approved by" value="John Smith">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Approved date</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Approved date" value="25 Mar 2015">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <hr>
+
+            <div class="text-center">
+              <button type="button" class="btn btn-default btn-delete">Delete</button>
+            </div>
+
+          </div>
+          <div class="modal-footer">
+            <div class="row">
+              <div class="col-xs-6">
+                <div class="text-left"><small>Recorded by: Nigel Cheshire</small></div>
+                <div class="text-left"><small>Date: 20 May 2015</small></div>
+              </div>
+              <div class="col-xs-6">
+                <div class="text-right"><small>Last edited by: Nigel Cheshire</small></div>
+                <div class="text-right"><small>Date: 21 May 2015</small></div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+
+    // DETAIL VIEW FOR MOBILE
+    if ($(window).width() < 768) {
+      $( ".bootcards-list .list-group a" ).click(function() {
+
+        // Hide list view
+        $(".bootcards-list").attr('style','display:none !important');
+
+        // Show detail view
+        $(".bootcards-cards").attr('style','display:block !important');
+      });
+    }
+
+
+  /* Tooltips */
+  $(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+  });
+
+</script>
+
+</body>
+</html>
