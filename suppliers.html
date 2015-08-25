@@ -122,7 +122,8 @@
     				  <span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Smith Components</h4>
-  							<p class="list-group-item-text">25 Mar 2015</p>
+  							<p class="list-group-item-text pull-left">25 Mar 2015</p>
+  							<p class="list-group-item-text pull-right">1</p>
   						</div>
 						</a>
 						<a class="list-group-item ">
@@ -136,7 +137,8 @@
   						<span class="label label-danger status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Tough Tubes Ltd</h4>
-  							<p class="list-group-item-text">3 Jan 2010</p>
+  							<p class="list-group-item-text pull-left">3 Jan 2010</p>
+  							<p class="list-group-item-text pull-right">3</p>
               </div>
 						</a>
   				  <a class="list-group-item">
@@ -150,14 +152,16 @@
   						<span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Screwfix</h4>
-  							<p class="list-group-item-text">6 Nov 2011</p>
+  							<p class="list-group-item-text pull-left">6 Nov 2011</p>
+  							<p class="list-group-item-text pull-right">6</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">BT</h4>
-  							<p class="list-group-item-text">19 Dec 2013</p>
+  							<p class="list-group-item-text pull-left">19 Dec 2013</p>
+  							<p class="list-group-item-text pull-right">6</p>
               </div>
 						</a>
   				</div>
@@ -380,24 +384,6 @@ Donec imperdiet cursus sapien et volutpat.</textarea>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Notes</label>
-              <div class="col-xs-8">
-                <div class="isometrica-rich-text-control isometrica-rich-text-control-condensed">
-                  <div class="isometrica-rich-text-controls clearfix">
-                    <div class="ql-toolbar-container" id="formatting-container">
-                      <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                      <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                      <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                      <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                    </div>
-                  </div>
-                  <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                    <iframe src="quill-condensed.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
               <div class="col-xs-8">
                 <div class="btn-group">
@@ -427,6 +413,33 @@ Donec imperdiet cursus sapien et volutpat.</textarea>
 
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
