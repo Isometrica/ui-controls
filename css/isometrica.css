@@ -1052,16 +1052,15 @@ input.form-value {
     border-color: #ddd; }
     .bootcards-panel-collapsing.full-width > .panel-heading {
       background: white; }
-    .bootcards-panel-collapsing.full-width .panel-body.indented {
+    .bootcards-panel-collapsing.full-width .indented {
       padding-left: 50px; }
-    .bootcards-panel-collapsing.full-width .table-responsive.indented {
-      border-top: 1px solid #ddd;
-      padding-left: 50px; }
-      .bootcards-panel-collapsing.full-width .table-responsive.indented .table {
+    .bootcards-panel-collapsing.full-width .table-responsive {
+      border-top: 1px solid #ddd; }
+      .bootcards-panel-collapsing.full-width .table-responsive .table {
         margin: 0; }
-      .bootcards-panel-collapsing.full-width .table-responsive.indented td:first-child, .bootcards-panel-collapsing.full-width .table-responsive.indented th:first-child {
+      .bootcards-panel-collapsing.full-width .table-responsive td:first-child, .bootcards-panel-collapsing.full-width .table-responsive th:first-child {
         padding-left: 0 !important; }
-      .bootcards-panel-collapsing.full-width .table-responsive.indented th {
+      .bootcards-panel-collapsing.full-width .table-responsive th {
         border-bottom-width: 1px; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;

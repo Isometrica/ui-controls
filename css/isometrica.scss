@@ -1623,13 +1623,12 @@ $status-indicator-size: 16px;
       background: white;
     }
 
-    .panel-body.indented {
+    .indented {
       padding-left: 50px;
     }
 
-    .table-responsive.indented {
+    .table-responsive {
       border-top: 1px solid #ddd;
-      padding-left: 50px;
 
       .table {
         margin: 0;
