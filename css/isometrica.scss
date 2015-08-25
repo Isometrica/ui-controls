@@ -1623,7 +1623,7 @@ $status-indicator-size: 16px;
       background: white;
     }
 
-    .indented {
+    .panel-body.indented {
       padding-left: 50px;
     }
 
@@ -1634,12 +1634,16 @@ $status-indicator-size: 16px;
         margin: 0;
       }
 
-      td:first-child, th:first-child {
-        padding-left: 0 !important;
-      }
-
       th {
         border-bottom-width: 1px;
+      }
+
+      &.indented {
+        padding-left: 50px;
+
+        td:first-child, th:first-child {
+          padding-left: 0 !important;
+        }
       }
     }
 
