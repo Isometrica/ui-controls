@@ -1626,6 +1626,25 @@ $status-indicator-size: 16px;
     .panel-body.indented {
       padding-left: 50px;
     }
+
+    .table-responsive.indented {
+      border-top: 1px solid #ddd;
+      padding-left: 50px;
+
+      .table {
+        margin: 0;
+      }
+
+      td:first-child, th:first-child {
+        padding-left: 0 !important;
+      }
+
+      th {
+        border-bottom-width: 1px;
+      }
+    }
+
+
   }
 
 	.panel-heading {
@@ -1686,6 +1705,8 @@ $status-indicator-size: 16px;
 
 	.panel-body {
   	border-top: 1px solid #ddd;
+
+
 	}
 }
 

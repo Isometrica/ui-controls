@@ -1054,6 +1054,15 @@ input.form-value {
       background: white; }
     .bootcards-panel-collapsing.full-width .panel-body.indented {
       padding-left: 50px; }
+    .bootcards-panel-collapsing.full-width .table-responsive.indented {
+      border-top: 1px solid #ddd;
+      padding-left: 50px; }
+      .bootcards-panel-collapsing.full-width .table-responsive.indented .table {
+        margin: 0; }
+      .bootcards-panel-collapsing.full-width .table-responsive.indented td:first-child, .bootcards-panel-collapsing.full-width .table-responsive.indented th:first-child {
+        padding-left: 0 !important; }
+      .bootcards-panel-collapsing.full-width .table-responsive.indented th {
+        border-bottom-width: 1px; }
   .bootcards-panel-collapsing .panel-heading {
     border: 0;
     padding-left: 50px;
