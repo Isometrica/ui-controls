@@ -273,7 +273,9 @@ body.desktop.isometrica-overview-page {
   position: relative;
 
   &.workspace {
-    padding-left: 120px; // Space for Add button
+    @media (min-width: 768px) {
+      padding-left: 120px; // Space for Add button
+    }
   }
 
   @media (max-width:767px) {
@@ -323,11 +325,17 @@ body.desktop.isometrica-overview-page {
     .panel-title {
       line-height: 1.3;
       overflow: hidden;
+      text-align: center;
     }
 
     i {
       margin-top: 12px;
       margin-right: 12px;
+      display: block;
+      float: none !important;
+      margin: 10px 0;
+      text-align: center;
+      font-size: 40px;
     }
   }
 }

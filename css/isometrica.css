@@ -2071,8 +2071,9 @@ body.desktop.isometrica-overview-page .navbar-header {
   margin-top: 30px;
   padding: 0;
   position: relative; }
-  .isometrica-overview-items.workspace {
-    padding-left: 120px; }
+  @media (min-width: 768px) {
+    .isometrica-overview-items.workspace {
+      padding-left: 120px; } }
   @media (max-width: 767px) {
     .isometrica-overview-items {
       padding-left: 0;
@@ -2104,10 +2105,16 @@ body.desktop.isometrica-overview-page .navbar-header {
   background: transparent; }
   .isometrica-overview-items.services .panel-heading .panel-title {
     line-height: 1.3;
-    overflow: hidden; }
+    overflow: hidden;
+    text-align: center; }
   .isometrica-overview-items.services .panel-heading i {
     margin-top: 12px;
-    margin-right: 12px; }
+    margin-right: 12px;
+    display: block;
+    float: none !important;
+    margin: 10px 0;
+    text-align: center;
+    font-size: 40px; }
 
 /* Workspace */
 .isometrica-overview-add {
