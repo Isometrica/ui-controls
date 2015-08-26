@@ -403,6 +403,20 @@ input.form-value {
   padding-right: 15px; }
 
 /* NAV */
+.navbar .btn-primary {
+  background: #006e9e;
+  border-color: #006e9e; }
+  .navbar .btn-primary:hover, .navbar .btn-primary:focus, .navbar .btn-primary:active {
+    background: #004e7e;
+    border-color: #004e7e; }
+
+.navbar .btn-info {
+  background: #00b2e2;
+  border-color: #00b2e2; }
+  .navbar .btn-info:hover, .navbar .btn-info:focus, .navbar .btn-info:active {
+    background: #0092c2 !important;
+    border-color: #0092c2 !important; }
+
 .desktop .isometrica-navbar-centered .navbar-brand {
   text-align: center;
   display: block;
@@ -422,20 +436,6 @@ input.form-value {
   padding: 6px 12px;
   color: white;
   margin: 7px 4px; }
-
-.desktop .isometrica-navbar-centered .btn-primary {
-  background: #006e9e;
-  border-color: #006e9e; }
-  .desktop .isometrica-navbar-centered .btn-primary:hover, .desktop .isometrica-navbar-centered .btn-primary:focus, .desktop .isometrica-navbar-centered .btn-primary:active {
-    background: #004e7e;
-    border-color: #004e7e; }
-
-.desktop .isometrica-navbar-centered .btn-info {
-  background: #00b2e2;
-  border-color: #00b2e2; }
-  .desktop .isometrica-navbar-centered .btn-info:hover, .desktop .isometrica-navbar-centered .btn-info:focus, .desktop .isometrica-navbar-centered .btn-info:active {
-    background: #0092c2;
-    border-color: #0092c2; }
 
 @media (max-width: 767px) {
   .desktop .isometrica-navbar-centered .navbar-nav {
@@ -483,6 +483,12 @@ input.form-value {
     margin-left: 0 !important; }
   .android .navbar .btn {
     line-height: 50px; }
+
+.ios .navbar .btn:not(.btn-link) {
+  font-size: 15px;
+  line-height: 1.42857143;
+  padding: 6px 12px;
+  margin: 5px 3px; }
 
 .ios .bootcards-navbar-double .container > .navbar-right {
   position: absolute;
@@ -634,6 +640,8 @@ input.form-value {
         font-size: 21px; }
   .isometrica-container-listdetail .bootcards-list a.list-group-item {
     padding-right: 40px; }
+    .isometrica-container-listdetail .bootcards-list a.list-group-item.active .list-group-item-heading {
+      color: white; }
   .isometrica-container-listdetail .list-group-item i {
     opacity: 1; }
     .isometrica-container-listdetail .list-group-item i.pull-left {
@@ -2611,8 +2619,6 @@ body.desktop.isometrica-overview-page .navbar-header {
     float: left;
     margin-right: 15px;
     margin-top: 6px; }
-  .bootcards-wiki .bootcards-wiki-panel-files div {
-    overflow: hidden; }
   .bootcards-wiki .bootcards-wiki-panel-files .btn {
     margin: 0 0 5px; }
 
@@ -2660,6 +2666,10 @@ body.desktop.isometrica-overview-page .navbar-header {
   border-radius: 0;
   border-left: 0;
   border-right: 0; }
+
+@media (min-width: 992px) {
+  .isometrica-wiki-edit-modal .modal-dialog {
+    width: 960px; } }
 
 .isometrica-wiki-edit-modal .bootcards-wiki-panel-controls {
   border-bottom: 1px solid #ddd;

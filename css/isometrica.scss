@@ -559,6 +559,28 @@ input.form-value {
 
 /* NAV */
 
+.navbar {
+  .btn-primary {
+    background: $blue-color;
+    border-color: $blue-color;
+
+    &:hover, &:focus, &:active {
+      background: $blue-color-hover;
+      border-color: $blue-color-hover;
+    }
+  }
+
+  .btn-info {
+    background: $light-blue-color;
+    border-color: $light-blue-color;
+
+    &:hover, &:focus, &:active {
+      background: $light-blue-color-hover !important;
+      border-color: $light-blue-color-hover !important;
+    }
+  }
+}
+
 .desktop .isometrica-navbar-centered {
   .navbar-brand {
     text-align: center;
@@ -587,33 +609,13 @@ input.form-value {
     margin: 7px 4px;
   }
 
-  .btn-primary {
-    background: $blue-color;
-    border-color: $blue-color;
 
-    &:hover, &:focus, &:active {
-      background: $blue-color-hover;
-      border-color: $blue-color-hover;
-    }
-  }
-
-  .btn-info {
-    background: $light-blue-color;
-    border-color: $light-blue-color;
-
-    &:hover, &:focus, &:active {
-      background: $light-blue-color-hover;
-      border-color: $light-blue-color-hover;
-    }
-  }
 
   .navbar-nav {
   	@media (max-width: 767px) {
   		//margin: 4px 0;
   		margin: 0;
   	}
-
-
 
   	&.navbar-left {
   		//float: left;
@@ -684,6 +686,15 @@ input.form-value {
     .btn {
       line-height: 50px;
     }
+  }
+}
+
+.ios .navbar {
+  .btn:not(.btn-link) {
+    font-size: 15px;
+    line-height: 1.42857143;
+    padding: 6px 12px;
+    margin: 5px 3px;
   }
 }
 
@@ -926,6 +937,12 @@ $status-indicator-size: 16px;
   .bootcards-list {
     a.list-group-item {
       padding-right: 40px;
+
+      &.active {
+        .list-group-item-heading {
+          color: white;
+        }
+      }
     }
   }
 
