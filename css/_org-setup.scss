@@ -4,7 +4,8 @@
   background: white;
 
   .guidance-bar {
-    position: static;
+    position: relative;
+    top: 0;
 
     .container-fluid {
       max-width: 1200px;
@@ -49,6 +50,7 @@
       border-color: #bbb;
       background: #eee;
       position: relative;
+      width: 100%;
 
       &.first {
         border-top-left-radius: 3px;
@@ -144,7 +146,7 @@
           position: relative;
           cursor: pointer;
           transition: all 0.3s ease;
-          color: #337ab7;
+          color: #333;
 
           &:hover, &:focus, &:active {
         		border-color: #5bc0de;
@@ -158,7 +160,7 @@
           i {
             font-size: 48px;
             margin-bottom: 10px;
-            opacity: 0.3;
+            color: $light-blue-color;
           }
 
           .org-setup-item-title {
@@ -171,6 +173,10 @@
           &.org-setup-item-empty {
             color: #aaa;
             background: white;
+
+            i {
+              color: #ddd;
+            }
           }
         }
       }
@@ -243,6 +249,16 @@
           bottom: 15px;
         }
         .right-arrow {
+          top: 15px;
+        }
+      }
+
+      &#risks {
+        right: -164px;
+        bottom: 55px;
+
+        .left-arrow {
+          right: 130px;
           top: 15px;
         }
       }

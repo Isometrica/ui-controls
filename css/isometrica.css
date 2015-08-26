@@ -21,7 +21,8 @@ body.desktop {
   .container {
     width: auto; } }
 
-.row-eq-height {
+.row-eq-height,
+.row-eq-height > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
@@ -2313,7 +2314,8 @@ body.desktop.isometrica-overview-page .navbar-header {
 .isometrica-org-setup-page {
   background: white; }
   .isometrica-org-setup-page .guidance-bar {
-    position: static; }
+    position: relative;
+    top: 0; }
     .isometrica-org-setup-page .guidance-bar .container-fluid {
       max-width: 1200px; }
 
@@ -2346,7 +2348,8 @@ body.desktop.isometrica-overview-page .navbar-header {
       border-radius: 0;
       border-color: #bbb;
       background: #eee;
-      position: relative; }
+      position: relative;
+      width: 100%; }
       .org-setup-container .org-setup-panel .panel-heading.first {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px; }
@@ -2405,7 +2408,7 @@ body.desktop.isometrica-overview-page .navbar-header {
           position: relative;
           cursor: pointer;
           transition: all 0.3s ease;
-          color: #337ab7; }
+          color: #333; }
           .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:hover, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:focus, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:active {
             border-color: #5bc0de; }
           .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .panel-body {
@@ -2414,7 +2417,7 @@ body.desktop.isometrica-overview-page .navbar-header {
           .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item i {
             font-size: 48px;
             margin-bottom: 10px;
-            opacity: 0.3; }
+            color: #00b2e2; }
           .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .org-setup-item-title {
             text-align: center;
             font-size: 14px;
@@ -2423,6 +2426,8 @@ body.desktop.isometrica-overview-page .navbar-header {
           .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item.org-setup-item-empty {
             color: #aaa;
             background: white; }
+            .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item.org-setup-item-empty i {
+              color: #ddd; }
     .org-setup-container .org-setup-panel .offset {
       position: absolute;
       top: 0;
@@ -2470,6 +2475,12 @@ body.desktop.isometrica-overview-page .navbar-header {
         bottom: 15px; }
       .org-setup-container .org-setup-panel .offset#suppliers .right-arrow {
         top: 15px; }
+      .org-setup-container .org-setup-panel .offset#risks {
+        right: -164px;
+        bottom: 55px; }
+        .org-setup-container .org-setup-panel .offset#risks .left-arrow {
+          right: 130px;
+          top: 15px; }
 
 .ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;

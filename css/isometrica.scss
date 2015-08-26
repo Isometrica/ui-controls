@@ -38,7 +38,8 @@ body.desktop {
   }
 }
 
-.row-eq-height {
+.row-eq-height,
+.row-eq-height > div {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
