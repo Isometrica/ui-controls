@@ -266,6 +266,23 @@
   }
 }
 
+.isometrica-org-setup-multiadd {
+  .form-group {
+    margin-bottom: 5px;
+
+    &:last-child {
+      //margin-bottom: 0;
+    }
+  }
+  .input-group {
+    .btn {
+      margin-bottom: 0;
+      //background: red !important;
+    }
+  }
+}
+
+
 .ios.isometrica-org-setup-page {
 
   .org-setup-container {
@@ -292,8 +309,6 @@
   }
 
   .modal {
-
-
     .subheader {
       height: auto;
     }

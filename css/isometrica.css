@@ -2491,6 +2491,12 @@ body.desktop.isometrica-overview-page .navbar-header {
           right: 130px;
           top: 15px; }
 
+.isometrica-org-setup-multiadd .form-group {
+  margin-bottom: 5px; }
+
+.isometrica-org-setup-multiadd .input-group .btn {
+  margin-bottom: 0; }
+
 .ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;
   overflow: scroll; }
