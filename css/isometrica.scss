@@ -941,7 +941,7 @@ $status-indicator-size: 16px;
 
       &.active {
         .list-group-item-heading {
-          color: white;
+          //color: white;
         }
       }
     }
@@ -1032,6 +1032,7 @@ $status-indicator-size: 16px;
       .list-group-item.active:focus,
       .list-group-item.active:hover {
         background: $blue-color;
+        color: white;
       }
     }
 
@@ -1063,6 +1064,19 @@ $status-indicator-size: 16px;
 
           > div { padding: 0; }
         }
+      }
+    }
+  }
+}
+
+.android {
+  .isometrica-container-listdetail {
+    .bootcards-list {
+      .list-group-item.active,
+      .list-group-item.active:focus,
+      .list-group-item.active:hover {
+        background: $blue-color;
+        color: white;
       }
     }
   }
@@ -1354,9 +1368,17 @@ $status-indicator-size: 16px;
   text-align: inherit !important;
 }
 
+.modal-content {
+  overflow: hidden;
+}
+
 .modal-footer {
   border-color: #ddd;
+  background: #f5f5f5;
+  //border-radius: 0 0 4px 4px;
 }
+
+
 
 .modal {
   .modal-body {
