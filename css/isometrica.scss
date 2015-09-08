@@ -1,5 +1,6 @@
 $red-color: #d85250;
 $amber-color: #f0ab54;
+$yellow-color: #e5d800;
 $green-color: #60b660;
 $light-blue-color: #00b2e2;
 $light-blue-color-hover: #0092c2;
@@ -904,8 +905,6 @@ $status-indicator-size: 16px;
     left: 4px;
 
   }
-
-
 }
 
 
@@ -975,8 +974,9 @@ $status-indicator-size: 16px;
       }
 
       .status-indicator {
-        position: static;
+        //position: static;
         padding: 0;
+        top: 2px;
       }
     }
 
@@ -1925,11 +1925,11 @@ $status-indicator-size: 16px;
       }
     }
 
-    &.impact-vlow { background: #19aa50; }
-    &.impact-low { background: #5cb85c; }
-    &.impact-medium { background: #f0ad4e; }
-    &.impact-high { background: #d9534f; }
-    &.impact-vhigh { background: #c02927; }
+    &.impact-vlow { background: $green-color; }
+    &.impact-low { background: $yellow-color; }
+    &.impact-medium { background: $amber-color; }
+    &.impact-high { background: $red-color; }
+    &.impact-vhigh { background: $red-color; }
   }
 
   td {

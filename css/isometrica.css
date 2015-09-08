@@ -657,8 +657,8 @@ input.form-value {
     top: -1px;
     margin-right: 6px; }
   .isometrica-container-listdetail .bootcards-cards .panel-title .status-indicator {
-    position: static;
-    padding: 0; }
+    padding: 0;
+    top: 2px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
     width: auto;
     opacity: 1;
@@ -1283,35 +1283,35 @@ input.form-value {
     .isometrica-risk-grading .table > tfoot > tr > th.impact-vlow,
     .isometrica-risk-grading .table > thead > tr > td.impact-vlow,
     .isometrica-risk-grading .table > thead > tr > th.impact-vlow {
-      background: #19aa50; }
+      background: #60b660; }
     .isometrica-risk-grading .table > tbody > tr > td.impact-low,
     .isometrica-risk-grading .table > tbody > tr > th.impact-low,
     .isometrica-risk-grading .table > tfoot > tr > td.impact-low,
     .isometrica-risk-grading .table > tfoot > tr > th.impact-low,
     .isometrica-risk-grading .table > thead > tr > td.impact-low,
     .isometrica-risk-grading .table > thead > tr > th.impact-low {
-      background: #5cb85c; }
+      background: #e5d800; }
     .isometrica-risk-grading .table > tbody > tr > td.impact-medium,
     .isometrica-risk-grading .table > tbody > tr > th.impact-medium,
     .isometrica-risk-grading .table > tfoot > tr > td.impact-medium,
     .isometrica-risk-grading .table > tfoot > tr > th.impact-medium,
     .isometrica-risk-grading .table > thead > tr > td.impact-medium,
     .isometrica-risk-grading .table > thead > tr > th.impact-medium {
-      background: #f0ad4e; }
+      background: #f0ab54; }
     .isometrica-risk-grading .table > tbody > tr > td.impact-high,
     .isometrica-risk-grading .table > tbody > tr > th.impact-high,
     .isometrica-risk-grading .table > tfoot > tr > td.impact-high,
     .isometrica-risk-grading .table > tfoot > tr > th.impact-high,
     .isometrica-risk-grading .table > thead > tr > td.impact-high,
     .isometrica-risk-grading .table > thead > tr > th.impact-high {
-      background: #d9534f; }
+      background: #d85250; }
     .isometrica-risk-grading .table > tbody > tr > td.impact-vhigh,
     .isometrica-risk-grading .table > tbody > tr > th.impact-vhigh,
     .isometrica-risk-grading .table > tfoot > tr > td.impact-vhigh,
     .isometrica-risk-grading .table > tfoot > tr > th.impact-vhigh,
     .isometrica-risk-grading .table > thead > tr > td.impact-vhigh,
     .isometrica-risk-grading .table > thead > tr > th.impact-vhigh {
-      background: #c02927; }
+      background: #d85250; }
   .isometrica-risk-grading td {
     color: white !important; }
 
