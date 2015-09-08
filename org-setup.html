@@ -238,59 +238,32 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal isometrica-org-setup-multiadd">
-  	        <div class="form-group">
-  		        <div class="col-xs-12">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Name" value="Quality Management">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                  </span>
-                </div>
-  		        </div>
-  	        </div>
-  	        <div class="form-group">
-  		        <div class="col-xs-12">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Name" value="Environmental Management">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                  </span>
-                </div>
-  		        </div>
-  	        </div>
-  	        <div class="form-group">
-  		        <div class="col-xs-12">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Name" value="Business Continuity Management">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                  </span>
-                </div>
-  		        </div>
-  	        </div>
-  	        <div class="form-group">
-  		        <div class="col-xs-12">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Name" value="Information Security Management">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                  </span>
-                </div>
-  		        </div>
-  	        </div>
-  	        <hr>
-  	        <div class="form-group">
-  		        <div class="col-xs-12">
-                <div class="input-group">
-                  <input class="form-control" type="text" placeholder="Add management system..." value="">
-                  <span class="input-group-btn">
-                    <button class="btn btn-default" type="button"><i class="fa fa-lg fa-plus-circle no-margin text-success"></i></button>
-                  </span>
-                </div>
-  		        </div>
-  	        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Quality Management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Environmental Management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Business Continuity Management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Information Security Management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"></td>
+                </tr>
+              </tbody>
+            </table>
             <!--<button type="button" class="btn btn-link btn-block">
               Add another management system
             </button>-->
@@ -921,7 +894,7 @@
 
   <!-- Edit Products -->
   <div class="modal fade edit-item-details" id="editProducts">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-left">
@@ -942,200 +915,254 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal isometrica-org-setup-multiadd">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#products-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <div class="col-xs-12">
-                      <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Name" value="Unplugged">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                        </span>
-                      </div>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="products-1">
-          	      <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Short</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control" type="text" placeholder="Short" value="PROC015">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Type</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-primary active">Product</button>
-            			        <button type="button" class="btn btn-default">Service</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur lacus nec lobortis egestas.</textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#products-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <div class="col-xs-12">
-        			        <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Name" value="Notes Tools">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                        </span>
-                      </div>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="products-2">
-          	      <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Short</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control" type="text" placeholder="Short" value="PROC015">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Type</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-primary active">Product</button>
-            			        <button type="button" class="btn btn-default">Service</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur lacus nec lobortis egestas.</textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#products-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <div class="col-xs-12">
-        			        <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Name" value="Modernization Services">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin text-danger"></i></button>
-                        </span>
-                      </div>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="products-3">
-          	      <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Short</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control" type="text" placeholder="Short" value="PROC015">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Type</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-default">Product</button>
-            			        <button type="button" class="btn btn-primary active">Service</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque efficitur lacus nec lobortis egestas.</textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#products-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <div class="col-xs-12">
-        			        <div class="input-group">
-                        <input class="form-control" type="text" placeholder="Add a product or service..." value="">
-                        <span class="input-group-btn">
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-plus-circle no-margin text-success"></i></button>
-                        </span>
-                      </div>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="products-4">
-          	      <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Short</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control" type="text" placeholder="Short" value="">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Type</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-default">Product</button>
-            			        <button type="button" class="btn btn-default">Service</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Description</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Description"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <!--<button type="button" class="btn btn-link btn-block">
-              Add another product or service
-            </button>-->
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Short</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value=""></td>
+                  <td>
+                    <div class="btn-group">
+        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-default">Service</button>
+      			        </div>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>

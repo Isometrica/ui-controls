@@ -266,20 +266,65 @@
   }
 }
 
-.isometrica-org-setup-multiadd {
-  .form-group {
-    margin-bottom: 10px;
 
-    &:last-child {
-      //margin-bottom: 0;
-    }
+/* Spreadsheet multiadd */
+.isometrica-org-setup-multiadd {
+
+  .table {
+    border-width: 0 0 1px;
   }
-  .input-group {
+
+  .table>tbody>tr>td {
+    padding: 0 !important;
+  }
+
+  .table>thead>tr>th {
+    padding-left: 15px;
+    background: #f5f5f5;
+    border-bottom-width: 1px;
+  }
+
+  .table>tbody>tr>td,
+  .table>thead>tr>th {
+    &:first-child { border-left: 0; }
+  }
+
+  td.wide {
+    min-width: 300px;
+  }
+
+  td.medium {
+    min-width: 100px;
+  }
+
+  td.icon {
+    width: 40px;
+  }
+
+  .form-control {
+    border-color: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    padding-left: 15px;
+  }
+
+  .btn {
+    border-color: transparent;
+    border-radius: 0;
+  }
+
+  .text-muted {
+    color: #bbb;
+  }
+
+  .btn-group {
+    white-space: nowrap;
     .btn {
-      margin-bottom: 0;
-      //background: red !important;
+      float: none;
+      display: inline-block;
     }
   }
+
 }
 
 

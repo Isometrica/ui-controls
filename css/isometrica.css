@@ -2491,11 +2491,49 @@ body.desktop.isometrica-overview-page .navbar-header {
           right: 130px;
           top: 15px; }
 
-.isometrica-org-setup-multiadd .form-group {
-  margin-bottom: 10px; }
+/* Spreadsheet multiadd */
+.isometrica-org-setup-multiadd .table {
+  border-width: 0 0 1px; }
 
-.isometrica-org-setup-multiadd .input-group .btn {
-  margin-bottom: 0; }
+.isometrica-org-setup-multiadd .table > tbody > tr > td {
+  padding: 0 !important; }
+
+.isometrica-org-setup-multiadd .table > thead > tr > th {
+  padding-left: 15px;
+  background: #f5f5f5;
+  border-bottom-width: 1px; }
+
+.isometrica-org-setup-multiadd .table > tbody > tr > td:first-child,
+.isometrica-org-setup-multiadd .table > thead > tr > th:first-child {
+  border-left: 0; }
+
+.isometrica-org-setup-multiadd td.wide {
+  min-width: 300px; }
+
+.isometrica-org-setup-multiadd td.medium {
+  min-width: 100px; }
+
+.isometrica-org-setup-multiadd td.icon {
+  width: 40px; }
+
+.isometrica-org-setup-multiadd .form-control {
+  border-color: transparent;
+  box-shadow: none;
+  border-radius: 0;
+  padding-left: 15px; }
+
+.isometrica-org-setup-multiadd .btn {
+  border-color: transparent;
+  border-radius: 0; }
+
+.isometrica-org-setup-multiadd .text-muted {
+  color: #bbb; }
+
+.isometrica-org-setup-multiadd .btn-group {
+  white-space: nowrap; }
+  .isometrica-org-setup-multiadd .btn-group .btn {
+    float: none;
+    display: inline-block; }
 
 .ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;
