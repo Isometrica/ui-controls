@@ -2672,10 +2672,13 @@ body.desktop.isometrica-overview-page .navbar-header {
 .bootcards-wiki .bootcards-list .list-group-item-heading {
   line-height: 20px; }
 
-.bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
-  font-size: 15px;
-  line-height: 22px;
-  padding: 25px; }
+.bootcards-wiki .bootcards-wiki-panel {
+  overflow: hidden; }
+  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
+    font-size: 15px;
+    line-height: 22px;
+    padding: 25px;
+    min-height: 500px; }
 
 .bootcards-wiki .bootcards-wiki-panel-files {
   border-top: 1px solid #ddd;
@@ -2692,9 +2695,11 @@ body.desktop.isometrica-overview-page .navbar-header {
 
 .bootcards-wiki .bootcards-wiki-panel-metadata {
   padding-top: 0;
-  background: white; }
+  padding-bottom: 0; }
   .bootcards-wiki .bootcards-wiki-panel-metadata .bootcards-panel-collapsing {
-    margin-top: 0; }
+    margin-top: 0;
+    margin-bottom: 0;
+    border-bottom: 0; }
   .bootcards-wiki .bootcards-wiki-panel-metadata strong {
     display: block; }
   .bootcards-wiki .bootcards-wiki-panel-metadata .label {
@@ -2753,7 +2758,7 @@ body.desktop.isometrica-overview-page .navbar-header {
   position: relative;
   font-size: 0; }
   .isometrica-wiki-edit-modal .bootcards-wiki-panel-text-edit iframe {
-    min-height: 300px; }
+    min-height: 600px; }
 
 .isometrica-wiki-edit-modal .bootcards-wiki-panel-files {
   border-bottom: 0; }

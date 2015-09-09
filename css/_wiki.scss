@@ -7,10 +7,13 @@
   }
 
   .bootcards-wiki-panel {
+    overflow: hidden;
+
     .bootcards-wiki-panel-text-read {
       font-size: 15px;
       line-height: 22px;
       padding: 25px;
+      min-height: 500px;
     }
   }
 
@@ -42,11 +45,14 @@
 
   .bootcards-wiki-panel-metadata {
     padding-top: 0;
+    padding-bottom: 0;
     //margin-bottom: 0;
-    background: white;
+    //background: white;
 
     .bootcards-panel-collapsing {
       margin-top: 0;
+      margin-bottom: 0;
+      border-bottom: 0;
     }
 
     strong {
@@ -138,7 +144,7 @@
     font-size: 0;
 
     iframe {
-      min-height: 300px;
+      min-height: 600px;
     }
   }
 
