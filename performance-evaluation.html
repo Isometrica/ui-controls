@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Performance evaluation</title>
+  <title>Performance indicators</title>
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
@@ -58,12 +58,12 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-          Performance evaluation - by frequency
+          Performance indicators - by area
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">By frequency</a></li>
-          <li><a href="#">By area</a></li>
+          <li class="active"><a href="#">By area</a></li>
+          <li><a href="#">Archived</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
       </div>
@@ -90,6 +90,12 @@
 
       <div class="col-sm-4 bootcards-list" id="list">
   			<div class="panel panel-default">
+  				<div class="panel-heading clearfix">
+      			<h4 class="panel-title pull-left">Reviewed Jun 2015</h4>
+      			<button type="button" class="btn btn-default pull-right">
+      			  <i class="fa fa-gear fa-lg no-margin"></i>
+      			</button>
+    			</div>
   				<div class="panel-body">
   					<div class="search-form">
   						<div class="row">
@@ -110,52 +116,49 @@
   				</div>
   				<div class="list-group bootcards-accordion">
     				<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse-1">
-  						<h4 class="list-group-item-heading">Annual</h4>
+  						<h4 class="list-group-item-heading">Management system</h4>
   					</a>
   					<div id="collapse-1" class="collapse in">
-              <a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-1-1">
-    						<h4 class="list-group-item-heading">Core framework</h4>
+              <a class="list-group-item active">
+    						<h4 class="list-group-item-heading">Scope</h4>
     					</a>
-    					<div id="collapse-1-1" class="collapse">
-                <a class="list-group-item">
-    							<h5 class="list-group-item-heading">Lorem ipsum</h5>
-    						</a>
-    					</div>
-    					<a class="list-group-item bootcards-list-subheading" data-toggle="collapse" href="#collapse-1-2">
-    						<h4 class="list-group-item-heading">Quality</h4>
+    					<a class="list-group-item">
+    						<h4 class="list-group-item-heading">Policy, objectives &amp; targets met</h4>
     					</a>
-    					<div id="collapse-1-2" class="collapse in">
-                <a class="list-group-item">
-    							<h5 class="list-group-item-heading">Customer satisfaction</h5>
-    						</a>
-    						<a class="list-group-item active">
-    							<h5 class="list-group-item-heading">Scope</h5>
-    						</a>
-    						<a class="list-group-item">
-    							<h5 class="list-group-item-heading">Warehouse activities - receiving</h5>
-    						</a>
-    						<a class="list-group-item">
-    							<h5 class="list-group-item-heading">Warehouse activities - in process testing</h5>
-    						</a>
-    						<a class="list-group-item">
-    							<h5 class="list-group-item-heading">Warehouse activities - final inspection</h5>
-    						</a>
-    					</div>
+    					<a class="list-group-item">
+    						<h4 class="list-group-item-heading">Competencies</h4>
+    					</a>
   					</div>
   					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-2">
-  						<h4 class="list-group-item-heading">Half yearly</h4>
+  						<h4 class="list-group-item-heading">Customer satisfaction</h4>
   					</a>
   					<div id="collapse-2" class="collapse">
               <a class="list-group-item">
-  							<h5 class="list-group-item-heading">Lorem ipsum</h5>
+  							<h4 class="list-group-item-heading">Lorem ipsum</h4>
   						</a>
   					</div>
   					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-3">
-  						<h4 class="list-group-item-heading">Quarterly</h4>
+  						<h4 class="list-group-item-heading">Product quality</h4>
   					</a>
   					<div id="collapse-3" class="collapse">
               <a class="list-group-item">
-  							<h5 class="list-group-item-heading">Lorem ipsum</h5>
+  							<h4 class="list-group-item-heading">Lorem ipsum</h4>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-4">
+  						<h4 class="list-group-item-heading">Sales performance</h4>
+  					</a>
+  					<div id="collapse-4" class="collapse">
+              <a class="list-group-item">
+  							<h4 class="list-group-item-heading">Lorem ipsum</h4>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-5">
+  						<h4 class="list-group-item-heading">Website performance</h4>
+  					</a>
+  					<div id="collapse-5" class="collapse">
+              <a class="list-group-item">
+  							<h4 class="list-group-item-heading">Lorem ipsum</h4>
   						</a>
   					</div>
   				</div>
@@ -177,21 +180,11 @@
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Area to be monitored</p>
-              <h4 class="list-group-item-heading">Scope</h4>
+              <h4 class="list-group-item-heading">Management system <span class="label label-danger">Review overdue</span></h4>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Management system</p>
-                  <h4 class="list-group-item-heading">Quality</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Frequency</p>
-                  <h4 class="list-group-item-heading">Annual</h4>
-                </div>
-              </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Indicator name</p>
+              <h4 class="list-group-item-heading">Scope</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">What is measured</p>
@@ -205,8 +198,32 @@
               <p class="list-group-item-text">Where results are considered</p>
               <h4 class="list-group-item-heading">Management review meeting</h4>
             </div>
-
-
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Last reviewed</p>
+                  <h4 class="list-group-item-heading">1 Dec 2015</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Reviewed by</p>
+                  <h4 class="list-group-item-heading">John Smith</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Files</p>
+              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Example.docx</a>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Links</p>
+              <a href="" class="btn btn-default">4.3</a>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notes</p>
+              <h4 class="list-group-item-heading">Lorem ipsum dolor est</h4>
+            </div>
           </div>
 				</div>
 			</div>
@@ -229,28 +246,28 @@
       				Save
       			</button>
           </div>
-          <h4 class="modal-title">Performance area</h4>
+          <h4 class="modal-title">Performance indicator</h4>
 
         </div>
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Management system</label>
+              <label class="control-label col-xs-4">Area to be monitored</label>
               <div class="col-xs-8">
                 <select class="form-control">
                   <option></option>
-                  <option>Core framework</option>
-                  <option selected="">Quality</option>
-                  <option>Environmental</option>
-                  <option>Business continuity</option>
-                  <option>Information security</option>
+                  <option selected="">Management system</option>
+                  <option>Customer satisfaction</option>
+                  <option>Product quality</option>
+                  <option>Sales performance</option>
+                  <option>Website performance</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Area to be monitored</label>
+              <label class="control-label col-xs-4">Indicator name</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Area to be monitored" value="Scope"/>
+                <input type="text" class="form-control" placeholder="Indicator name" value="Scope"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -275,17 +292,6 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Frequency</label>
-              <div class="col-xs-8">
-                <select class="form-control">
-                  <option></option>
-                  <option>Quarterly</option>
-                  <option>Half yearly</option>
-                  <option selected="">Annual</option>
-                </select>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Where results are considered</label>
               <div class="col-xs-8">
                 <select class="form-control">
@@ -296,33 +302,91 @@
                 </select>
               </div>
             </div>
-
             <div class="form-group">
-              <label class="control-label col-xs-4">Links to relevant docs</label>
+              <label class="control-label col-xs-4">Last reviewed</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Last reviewed" value="1 Dec 2015"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Reviewed by</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Reviewed by" value="John Smith"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Review status</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Reviewed</button>
+                  <button type="button" class="btn btn-default">Awaiting review</button>
+                  <button type="button" class="btn btn-danger active">Overdue</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Links</label>
               <div class="col-xs-8">
                 <div class="btn-group">
                   <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
                     4.3
                   </button>
                   <button type="button" class="btn btn-default">
                     <i class="fa fa-times-circle no-margin fa-lg"></i>
                   </button>
                 </div>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add Link</button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Files</label>
+              <div class="col-xs-8">
                 <div class="btn-group">
                   <button type="button" class="btn btn-default">
                     <i class="fa fa-file-word-o fa-lg"></i>
-                    PR21
+                    Example.doc
                   </button>
                   <button type="button" class="btn btn-default">
                     <i class="fa fa-times-circle no-margin fa-lg"></i>
                   </button>
                 </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add File</button>
               </div>
             </div>
 
-            <hr>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
+                          <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
+                          <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
+                          <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
+                          <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+            </div>
 
             <div class="text-center">
               <button type="button" class="btn btn-default">Delete</button>
