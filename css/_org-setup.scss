@@ -271,7 +271,7 @@
 .isometrica-org-setup-multiadd {
 
   .table {
-    border-width: 0 0 1px;
+    border-width: 1px 0;
   }
 
   .table>tbody>tr>td {
@@ -356,6 +356,7 @@
   .modal {
     .subheader {
       height: auto;
+
     }
 
     .panel {
@@ -439,6 +440,7 @@
   	line-height: 1.5;
   	padding: 12px 15px;
   	color: #777;
+  	border-bottom: 0;
 
   	p {
     	margin: 0;

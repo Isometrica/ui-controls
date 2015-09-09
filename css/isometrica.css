@@ -2493,7 +2493,7 @@ body.desktop.isometrica-overview-page .navbar-header {
 
 /* Spreadsheet multiadd */
 .isometrica-org-setup-multiadd .table {
-  border-width: 0 0 1px; }
+  border-width: 1px 0; }
 
 .isometrica-org-setup-multiadd .table > tbody > tr > td {
   padding: 0 !important; }
@@ -2600,7 +2600,8 @@ body.desktop.isometrica-overview-page .navbar-header {
     font-size: 14px;
     line-height: 1.5;
     padding: 12px 15px;
-    color: #777; }
+    color: #777;
+    border-bottom: 0; }
     .modal.edit-item-details .subheader p {
       margin: 0; }
   .modal.edit-item-details .bootcards-panel-collapsing .panel-heading .form-group {

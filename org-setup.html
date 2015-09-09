@@ -104,8 +104,8 @@
             <i class="fa fa-long-arrow-left left-arrow"></i>
             <i class="fa fa-long-arrow-right right-arrow"></i>
             <div class="panel panel-default">
-              <div class="panel-heading first last">
-                <h4 class="panel-title">Interested parties (e.g. customers) <span class="text-info">(4)</span></h4>
+              <div class="panel-heading first last" data-toggle="modal" data-target="#editInterestedParties">
+                <h4 class="panel-title">Interested party types <span class="text-info">(8)</span></h4>
               </div>
             </div>
           </div>
@@ -115,7 +115,7 @@
           <div class="row row-eq-height org-setup-split-sections">
             <div class="col-sm-3">
               <div class="panel-heading" data-toggle="modal" data-target="#editDepartments">
-                <h3 class="panel-title">Departments <span class="text-info">(5)</span></h3>
+                <h3 class="panel-title">Departments <span class="text-info">(8)</span></h3>
               </div>
             </div>
             <div class="col-sm-3">
@@ -125,17 +125,17 @@
             </div>
             <div class="col-sm-3">
               <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
-                <h3 class="panel-title">Meeting types <span class="text-info">(5)</span></h3>
+                <h3 class="panel-title">Meeting types <span class="text-info">(8)</span></h3>
               </div>
             </div>
             <div class="col-sm-3">
               <div class="panel-heading" data-toggle="modal" data-target="#editCommunicationTypes">
-                <h3 class="panel-title">Communication types <span class="text-info">(6)</span></h3>
+                <h3 class="panel-title">Communication types <span class="text-info">(8)</span></h3>
               </div>
             </div>
           </div>
           <div class="panel-heading last" data-toggle="modal" data-target="#editProducts">
-            <h3 class="panel-title">Products &amp; services <span class="text-info">(8)</span></h3>
+            <h3 class="panel-title">Products &amp; services <span class="text-info">(5)</span></h3>
           </div>
         </div>
       </div>
@@ -145,7 +145,7 @@
           <i class="fa fa-long-arrow-right right-arrow"></i>
           <div class="panel panel-default" data-toggle="modal" data-target="#editSupplierTypes">
             <div class="panel-heading first last">
-              <h4 class="panel-title">Suppliers &amp; outsource partners <span class="text-info">(4)</span></h4>
+              <h4 class="panel-title">Supplier &amp; partner types <span class="text-info">(2)</span></h4>
             </div>
           </div>
         </div>
@@ -153,8 +153,8 @@
         <div class="offset right" id="risks">
             <i class="fa fa-long-arrow-left left-arrow"></i>
             <div class="panel panel-default">
-              <div class="panel-heading first last">
-                <h4 class="panel-title">Risks</h4>
+              <div class="panel-heading first last" data-toggle="modal" data-target="#editRiskTypes">
+                <h4 class="panel-title">Risk types <span class="text-info">(9)</span></h4>
               </div>
             </div>
           </div>
@@ -201,14 +201,14 @@
               </div>
             </li>
           </ul>
-          <h3 class="panel-title">Activities &amp; processes <span class="text-info">(6)</span></h3>
+          <h3 class="panel-title">Activities &amp; processes <span class="text-info">(3)</span></h3>
         </div>
         <div class="panel-heading" data-toggle="modal" data-target="#editDependencies">
-          <h3 class="panel-title">Dependencies <span class="text-info">(3)</span></h3>
+          <h3 class="panel-title"><span class="text-muted">Dependencies</span></h3>
         </div>
       </div>
-      <div class="panel-heading last">
-        <h3 class="panel-title">Assets &amp; resources</h3>
+      <div class="panel-heading last" data-toggle="modal" data-target="#editAssets">
+        <h3 class="panel-title text-muted"><span class="text-muted">Assets &amp; resources</span></h3>
       </div>
     </div>
   </div>
@@ -260,19 +260,15 @@
                 </tr>
                 <tr>
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
-                  <td class="icon"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
               </tbody>
             </table>
-            <!--<button type="button" class="btn btn-link btn-block">
-              Add another management system
-            </button>-->
-          </form>
-        </div>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
 
 
   <!-- Edit Departments -->
@@ -298,163 +294,53 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#departments-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Sales">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="departments-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Manager</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control typeahead" type="text" placeholder="Manager" value="Dan Colbert">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes">Teams are located in Beverly, Wyboston and Tokyo</textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#departments-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="departments-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Manager</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control typeahead" type="text" placeholder="Manager">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#departments-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="departments-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Manager</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control typeahead" type="text" placeholder="Manager">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#departments-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="departments-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Manager</label>
-          		        <div class="col-xs-9">
-          			        <input class="form-control typeahead" type="text" placeholder="Manager">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another department
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Accounting"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="HR"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Sales"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Marketing"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Manufacturing"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Operations"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Customer service"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Technical support"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
 
 
   <!-- Edit Roles -->
@@ -480,123 +366,30 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#roles-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Customer service">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="roles-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#roles-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="roles-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#roles-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="roles-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#roles-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="roles-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another role
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Quality manager"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="IT manager"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Environmental manager"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -625,123 +418,50 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#meetings-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Quarterly sales">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="meetings-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#meetings-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="meetings-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#meetings-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="meetings-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#meetings-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="meetings-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another meeting type
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Ad hoc"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Weekly management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Weekly operations"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Weekly sales"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Weekly support"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Monthly management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Quarterly management review"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="6-monthly management review"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -770,123 +490,50 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#communications-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Lorem ipsum">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="communications-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#communications-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="communications-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#communications-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="communications-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#communications-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-                <div class="collapse" id="communications-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another communication type
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Internal management"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Internal staff"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Customer"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Supplier"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Regulator"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Local community"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Trade union"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Trade association"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
@@ -932,218 +579,58 @@
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
                   </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Instant, offline access to data and applications stored on smartphones & tablets"></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
                   </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Develop and manage Notes applications faster, better, easier."></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Product</option>
+                      <option selected="">Service</option></select>
                   </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Mobilize or web enable IBM Notes and Domino applications"></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="XControls"></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
                   </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="A flexible framework for mobile and responsive web application development"></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Controls"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC018"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-info active">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
-                  </td>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
-                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC019"></td>
-                  <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-info active">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Product</option>
+                      <option selected="">Service</option></select>
                   </td>
                   <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1152,12 +639,13 @@
                   <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
                   <td class="medium"><input class="form-control" type="text" placeholder="Short" value=""></td>
                   <td>
-                    <div class="btn-group">
-        			        <button type="button" class="btn btn-default">Product</button><button type="button" class="btn btn-default">Service</button>
-      			        </div>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Product</option>
+                      <option>Service</option></select>
                   </td>
                   <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
-                  <td class="icon"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
               </tbody>
             </table>
@@ -1168,10 +656,81 @@
   </div>
 
 
+  <!-- Edit Interested Parties -->
+  <div class="modal fade edit-item-details" id="editInterestedParties">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Interested party types</h4>
+        </div>
+        <div class="modal-header subheader">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Customer"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Employee"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Financial stakeholder"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Local community"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Legal & regulatory"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Outsource partner"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Supplier"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Trade union"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Edit Activities -->
   <div class="modal fade edit-item-details" id="editActivities">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-left">
@@ -1192,405 +751,86 @@
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#activities-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Lorem">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="activities-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Abbreviation</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Abbreviation">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Department</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Department">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#activities-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="activities-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Abbreviation</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Abbreviation">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Department</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Department">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#activities-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="activities-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Abbreviation</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Abbreviation">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Department</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Department">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#activities-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="activities-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Abbreviation</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Abbreviation">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Department</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control" placeholder="Department">
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another key activity or process
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Short</th>
+                  <th>Type</th>
+                  <th>Description</th>
+                  <th></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Extrusion"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC015"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Activity</option>
+                      <option>Process</option>
+                      <option>Procedure</option>
+                      <option>Work instruction</option>
+                    </select>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value="Lorem ipsum dolor sit amet"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Thermoforming"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC016"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Activity</option>
+                      <option>Process</option>
+                      <option>Procedure</option>
+                      <option>Work instruction</option>
+                    </select>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Longer Title Goes Here Lorem Ipsum Dolor Est"></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value="PROC017"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Activity</option>
+                      <option>Process</option>
+                      <option selected="">Procedure</option>
+                      <option>Work instruction</option>
+                    </select>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="medium"><input class="form-control" type="text" placeholder="Short" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Activity</option>
+                      <option>Process</option>
+                      <option>Procedure</option>
+                      <option>Work instruction</option>
+                    </select>
+                  </td>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
-
-
-
-  <!-- Edit Dependencies -->
-  <div class="modal fade edit-item-details" id="editDependencies">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
-      				<i class="fa fa-lg fa-question-circle"></i>
-      			</button>
-      			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Done
-      			</button>
-          </div>
-          <h4 class="modal-title">Dependencies</h4>
-        </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#dependencies-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Lorem">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="dependencies-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">&nbsp;</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-info active">External dependency</button>
-            			        <button type="button" class="btn btn-default">Supporting activity</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Computed title</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control form-value" disabled="" placeholder="Computed title" value="Supplier"/>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#dependencies-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="dependencies-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">&nbsp;</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-default">External dependency</button>
-            			        <button type="button" class="btn btn-default">Supporting activity</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Computed title</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control form-value" disabled="" placeholder="Computed title"/>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#dependencies-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="dependencies-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">&nbsp;</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-default">External dependency</button>
-            			        <button type="button" class="btn btn-default">Supporting activity</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Computed title</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control form-value" disabled="" placeholder="Computed title"/>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#dependencies-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="dependencies-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">&nbsp;</label>
-          		        <div class="col-xs-9">
-          			        <div class="btn-group">
-            			        <button type="button" class="btn btn-default">External dependency</button>
-            			        <button type="button" class="btn btn-default">Supporting activity</button>
-          			        </div>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Computed title</label>
-          		        <div class="col-xs-9">
-          			        <input type="text" class="form-control form-value" disabled="" placeholder="Computed title"/>
-          		        </div>
-          	        </div>
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another dependency
-            </button>
-          </form>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
   <!-- Edit Supplier types -->
@@ -1611,131 +851,111 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Supplier types</h4>
+          <h4 class="modal-title">Supplier &amp; partner types</h4>
         </div>
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
         </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#suppliers-1" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name" value="Lorem">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="suppliers-1">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#suppliers-2" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="suppliers-2">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#suppliers-3" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="suppliers-3">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing">
-                <div class="panel-heading clearfix collapsed" href="#suppliers-4" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-        	        <div class="form-group">
-        		        <label class="control-label col-xs-3">Name</label>
-        		        <div class="col-xs-9">
-        			        <input class="form-control" type="text" placeholder="Name">
-        			        <button type="button" class="btn btn-link clear-field">
-        			          <i class="fa fa-times-circle"></i>
-        			        </button>
-        		        </div>
-        	        </div>
-                </div>
-       	        <div class="collapse" id="suppliers-4">
-                  <div class="panel-body">
-          	        <div class="form-group">
-          		        <label class="control-label col-xs-3">Notes</label>
-          		        <div class="col-xs-9">
-          			        <textarea class="form-control" placeholder="Notes"></textarea>
-          			        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-          		        </div>
-          	        </div>
-        	        </div>
-                </div>
-              </div>
-            </div>
-            <button type="button" class="btn btn-link btn-block">
-              Add another supplier type
-            </button>
-          </form>
-        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Supplier"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Outsource partner"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
       </div>
     </div>
   </div>
+
+
+  <!-- Edit Risk types -->
+  <div class="modal fade edit-item-details" id="editRiskTypes">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Risk types</h4>
+        </div>
+        <div class="modal-header subheader">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Industrial accident"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Strike or stoppage"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Technical failure"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Transport accident"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Severe weather"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Human health"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Animal health"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="Public protest"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value="International event"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="wide"><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <script>
 
