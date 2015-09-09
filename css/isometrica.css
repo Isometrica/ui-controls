@@ -1166,6 +1166,17 @@ input.form-value {
   color: #333;
   padding: 8px 0; }
 
+/* FOOTER - CHANGELOG */
+.panel-footer .isometrica-changelog, .modal-footer .isometrica-changelog {
+  margin-top: -10px;
+  margin-bottom: -10px;
+  background: transparent;
+  border: 0; }
+  .panel-footer .isometrica-changelog .panel-heading, .modal-footer .isometrica-changelog .panel-heading {
+    background: transparent; }
+  .panel-footer .isometrica-changelog .table, .modal-footer .isometrica-changelog .table {
+    font-size: 12px; }
+
 /* RISK ANALYSIS */
 .risk-analysis-impacts {
   margin-bottom: 0; }

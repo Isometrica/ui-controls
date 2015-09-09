@@ -1362,6 +1362,13 @@ $status-indicator-size: 16px;
 
 
 
+
+
+
+
+
+
+
 /* MODALS */
 
 .modal-footer small, .panel-footer small {
@@ -1827,6 +1834,28 @@ $status-indicator-size: 16px;
     }
   }
 }
+
+
+/* FOOTER - CHANGELOG */
+
+.panel-footer, .modal-footer {
+  .isometrica-changelog {
+    margin-top: -10px;
+    margin-bottom: -10px;
+    background: transparent;
+    border: 0;
+
+    .panel-heading {
+      background: transparent;
+    }
+
+    .table {
+      font-size: 12px;
+    }
+  }
+}
+
+
 
 
 /* RISK ANALYSIS */
