@@ -660,6 +660,10 @@ input.form-value {
     padding: 0;
     top: 2px;
     margin-right: 10px; }
+  .isometrica-container-listdetail .bootcards-cards .panel-title .risk-square {
+    padding: 0;
+    margin: -9px 0;
+    margin-right: 10px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item i {
     width: auto;
     opacity: 1;
