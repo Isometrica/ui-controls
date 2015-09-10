@@ -71,8 +71,8 @@
         <ul class="dropdown-menu">
           <li class="active"><a href="#">Legal</a></li>
           <li><a href="#">All</a></li>
-          <li><a href="#">By management system</a></li>
-          <li><a href="#">By overdue</a></li>
+          <li><a href="#">By system area</a></li>
+          <li><a href="#">Archived</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
       </div>
@@ -99,6 +99,12 @@
 
       <div class="col-sm-4 bootcards-list" id="list">
   			<div class="panel panel-default">
+    			<div class="panel-heading clearfix">
+      			<h4 class="panel-title pull-left">Reviewed Jun 2015</h4>
+      			<button type="button" class="btn btn-default pull-right">
+      			  <i class="fa fa-gear fa-lg no-margin"></i>
+      			</button>
+    			</div>
   				<div class="panel-body">
   					<div class="search-form">
     					<div class="row">
@@ -169,15 +175,20 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
+  						<span class="label label-danger status-indicator pull-left"></span>
   						Interested party
   				  </h3>
 					</div>
           <div class="list-group">
+            <div class="list-group-item">
+              <p class="list-group-item-text">Name</p>
+              <h4 class="list-group-item-heading">Health &amp; Safety Executive <span class="label label-danger">Review overdue</span></h4>
+            </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">Name</p>
-                  <h4 class="list-group-item-heading">Health &amp; Safety Executive</h4>
+                  <p class="list-group-item-text">Description</p>
+                  <h4 class="list-group-item-heading">Health &amp; Safety at Work</h4>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -187,29 +198,19 @@
                 </div>
               </div>
             </div>
-
-
             <div class="list-group-item">
-              <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Health and Safety at Work Act 1974</h4>
-            </div>
-
-            <div class="list-group-item">
-              <p class="list-group-item-text">Management system</p>
-              <h4 class="list-group-item-heading">All</h4>
-            </div>
-
-            <div class="list-group-item">
-              <p class="list-group-item-text">Requirement(s)</p>
+              <p class="list-group-item-text">Relevant requirement(s)</p>
               <h4 class="list-group-item-heading">Safe working environment for employees</h4>
             </div>
-
-
+            <div class="list-group-item">
+              <p class="list-group-item-text">Management system area</p>
+              <h4 class="list-group-item-heading">All</h4>
+            </div>
 
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">External contact</p>
+                  <p class="list-group-item-text">Contact name</p>
                   <h4 class="list-group-item-heading">Peter Last</h4>
                 </div>
               </div>
@@ -223,6 +224,20 @@
             <div class="list-group-item">
               <p class="list-group-item-text">Contact email</p>
               <h4 class="list-group-item-heading"><a href="mailto:peter.last@nhs.org.uk">peter.last@nhs.org.uk</a></h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Last reviewed</p>
+                  <h4 class="list-group-item-heading">1 Dec 2015</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Reviewed by</p>
+                  <h4 class="list-group-item-heading">John Smith</h4>
+                </div>
+              </div>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Notes</p>
@@ -281,7 +296,17 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Name</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" value="Health & Safety Executive" placeholder="Name"/>
+                <input type="text" class="form-control" value="UK Health & Safety Executive" placeholder="Name"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-xs-4">Description</label>
+              <div class="col-xs-8">
+                <textarea class="form-control" rows="2" placeholder="Description">Health and Safety at Work</textarea>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -305,18 +330,10 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="control-label col-xs-4">Description</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" rows="2" placeholder="Description">Health and Safety at Work Act 1974</textarea>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
+
 
             <div class="form-group">
-              <label class="control-label col-xs-4">Requirement(s)</label>
+              <label class="control-label col-xs-4">Relevant requirement(s)</label>
               <div class="col-xs-8">
                 <textarea class="form-control" rows="2" placeholder="Requirement(s)">Safe working environment for employees</textarea>
                 <button type="button" class="btn btn-link clear-field">
@@ -326,7 +343,7 @@
             </div>
 
             <div class="form-group">
-              <label class="control-label col-xs-4">Management system</label>
+              <label class="control-label col-xs-4">Management system area</label>
               <div class="col-xs-8">
                 <select class="form-control">
                   <option></option>
@@ -339,7 +356,7 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">External contact</label>
+              <label class="control-label col-xs-4">Contact name</label>
               <div class="col-xs-8">
                 <input type="text" class="form-control" value="Peter Last" placeholder="External contact"/>
                 <button type="button" class="btn btn-link clear-field">
@@ -365,20 +382,35 @@
   			        </button>
               </div>
             </div>
+
             <div class="form-group">
-              <label class="control-label col-xs-4">Period</label>
+              <label class="control-label col-xs-4">Last reviewed</label>
               <div class="col-xs-8">
-                <select class="form-control">
-                  <option></option>
-                  <option>One-off</option>
-                  <option>Weekly</option>
-                  <option>Monthly</option>
-                  <option>Quarterly</option>
-                  <option selected="">6-monthly</option>
-                  <option>Annual</option>
-                  <option>Every 2 years</option>
-                  <option>Every 3 years</option>
-                </select>
+                <input type="text" class="form-control" value="5 Jan 2014" placeholder="Last reviewed"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-xs-4">Reviewed by</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="John Smith" placeholder="Reviewed by"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-xs-4">Review status</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Reviewed</button>
+                  <button type="button" class="btn btn-default">Imminent</button>
+                  <button type="button" class="btn btn-danger active">Overdue</button>
+                </div>
               </div>
             </div>
 
@@ -398,36 +430,9 @@
               </div>
             </div>
 
-            <div class="form-group">
-              <label class="control-label col-xs-4">Last review</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="5 Jan 2014" placeholder="Last review"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
 
-            <div class="form-group">
-              <label class="control-label col-xs-4">Next review by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="4 Jan 2015" placeholder="Next review by"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
 
-            <div class="form-group">
-              <label class="control-label col-xs-4">Review status</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">Reviewed</button>
-                  <button type="button" class="btn btn-default">Imminent</button>
-                  <button type="button" class="btn btn-danger active">Overdue</button>
-                </div>
-              </div>
-            </div>
+
 
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
