@@ -3322,103 +3322,52 @@ body.desktop.isometrica-overview-page .navbar-header {
 .ios.isometrica-work-inbox .modal .btn-group {
   margin-right: 10px; }
 
-.isometrica-calendar .table {
-  /*
-    .btn-date {
+.isometrica-calendar.isometrica-calendar-year th {
+  width: 8.33333%; }
 
-      position: relative;
+.isometrica-calendar.isometrica-calendar-quarter th {
+  width: 7.6923%; }
 
-      &:before {
-        content: '';
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent;
-        border-bottom-color: #00b2e2;
-        position: absolute;
-        left: -10px;
-        bottom: -1px;
-        transition: all 0.3s ease;
-        display: none;
-      }
+.isometrica-calendar thead {
+  background: #f5f5f5; }
+  .isometrica-calendar thead th {
+    border-width: 1px !important;
+    text-align: center;
+    font-weight: 500; }
 
-      &:after {
-        content: '';
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent;
-        border-top-color: #00b2e2;
-        position: absolute;
-        right: -10px;
-        top: -1px;
-        transition: all 0.3s ease;
-        display: none;
-      }
+.isometrica-calendar th, .isometrica-calendar td {
+  padding: 8px !important; }
 
-      &:hover, &:focus, &:active {
-        &:before {
-          border-bottom-color: #2698ba;
-        }
+.isometrica-calendar .btn {
+  text-align: left;
+  text-decoration: none; }
+  .isometrica-calendar .btn .date {
+    display: block; }
 
-        &:after {
-          border-top-color: #2698ba;
-        }
-      }
-
-      &.btn-date-specific {
-        margin-left: 10px;
-
-        &:before {
-          display: block;
-        }
-      }
-
-      &.btn-date-range {
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
-
-        &:before, &:after {
-          display: block;
-        }
-      }
-    }
-    */ }
-  .isometrica-calendar .table thead {
-    background: #f5f5f5; }
-    .isometrica-calendar .table thead th {
-      width: 8.33333%;
-      border-width: 1px;
-      text-align: center;
-      font-weight: 500; }
-  .isometrica-calendar .table th, .isometrica-calendar .table td {
-    padding: 8px !important; }
-  .isometrica-calendar .table .btn {
-    text-align: left;
-    text-decoration: none; }
-    .isometrica-calendar .table .btn .date {
-      display: block; }
-  .isometrica-calendar .table .btn-date-specific {
-    position: relative;
-    padding-right: 0;
-    padding-left: 15px; }
-    .isometrica-calendar .table .btn-date-specific .date {
-      color: #999; }
-    .isometrica-calendar .table .btn-date-specific:before {
-      content: '';
-      display: block;
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      background: #00b2e2;
-      position: absolute;
-      left: 0;
-      top: 11px; }
-  .isometrica-calendar .table .btn-date-range {
+.isometrica-calendar .btn-date-specific {
+  position: relative;
+  padding-right: 0;
+  padding-left: 15px; }
+  .isometrica-calendar .btn-date-specific .date {
+    color: #999; }
+  .isometrica-calendar .btn-date-specific:before {
+    content: '';
     display: block;
-    text-align: left; }
-    .isometrica-calendar .table .btn-date-range .date {
-      color: #cde9f0; }
-  .isometrica-calendar .table tbody .label {
-    display: block;
-    font-size: 14px;
-    padding: 5px; }
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background: #00b2e2;
+    position: absolute;
+    left: 0;
+    top: 11px; }
+
+.isometrica-calendar .btn-date-range {
+  display: block;
+  text-align: left; }
+  .isometrica-calendar .btn-date-range .date {
+    color: #cde9f0; }
+
+.isometrica-calendar tbody .label {
+  display: block;
+  font-size: 14px;
+  padding: 5px; }

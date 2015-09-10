@@ -1,136 +1,72 @@
 .isometrica-calendar {
-  .table {
-    thead {
-      background: #f5f5f5;
 
-      th {
-        width: 8.33333%; // 100% / 12
-        border-width: 1px;
-        text-align: center;
-        font-weight: 500;
-      }
+  &.isometrica-calendar-year th {
+    width: 8.33333%; // 100% / 12
+  }
 
+  &.isometrica-calendar-quarter th {
+    width: 7.6923%; // 100% / 13
+  }
+
+  thead {
+    background: #f5f5f5;
+
+    th {
+      border-width: 1px !important;
+      text-align: center;
+      font-weight: 500;
     }
+  }
 
-    th, td {
-      padding: 8px !important;
-    }
+  th, td {
+    padding: 8px !important;
+  }
 
-    .btn {
-      text-align: left;
-      text-decoration: none;
+  .btn {
+    text-align: left;
+    text-decoration: none;
 
-      .date {
-        display: block;
-      }
-    }
-
-    .btn-date-specific {
-      position: relative;
-      padding-right: 0;
-      padding-left: 15px;
-      //overflow: hidden;
-      //white-space: nowrap;
-      //text-overflow: ellipsis;
-
-      .date {
-        color: #999;
-      }
-
-      &:before {
-        content: '';
-        display: block;
-        height: 10px;
-        width: 10px;
-        border-radius: 50%;
-        background: #00b2e2;
-        position: absolute;
-        left: 0;
-        top: 11px;
-        //top: 50%;
-        //margin-top: -5px;
-      }
-    }
-
-    .btn-date-range {
+    .date {
       display: block;
-      text-align: left;
-      //overflow: hidden;
-      //white-space: nowrap;
-      //text-overflow: ellipsis;
+    }
+  }
 
-      .date {
-        color: #cde9f0;
-      }
+  .btn-date-specific {
+    position: relative;
+    padding-right: 0;
+    padding-left: 15px;
+
+    .date {
+      color: #999;
     }
 
-    /*
-    .btn-date {
-
-      position: relative;
-
-      &:before {
-        content: '';
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent;
-        border-bottom-color: #00b2e2;
-        position: absolute;
-        left: -10px;
-        bottom: -1px;
-        transition: all 0.3s ease;
-        display: none;
-      }
-
-      &:after {
-        content: '';
-        border-width: 10px;
-        border-style: solid;
-        border-color: transparent;
-        border-top-color: #00b2e2;
-        position: absolute;
-        right: -10px;
-        top: -1px;
-        transition: all 0.3s ease;
-        display: none;
-      }
-
-      &:hover, &:focus, &:active {
-        &:before {
-          border-bottom-color: #2698ba;
-        }
-
-        &:after {
-          border-top-color: #2698ba;
-        }
-      }
-
-      &.btn-date-specific {
-        margin-left: 10px;
-
-        &:before {
-          display: block;
-        }
-      }
-
-      &.btn-date-range {
-        display: block;
-        margin-left: 10px;
-        margin-right: 10px;
-
-        &:before, &:after {
-          display: block;
-        }
-      }
+    &:before {
+      content: '';
+      display: block;
+      height: 10px;
+      width: 10px;
+      border-radius: 50%;
+      background: #00b2e2;
+      position: absolute;
+      left: 0;
+      top: 11px;
     }
-    */
+  }
 
-    tbody {
-      .label {
-        display: block;
-        font-size: 14px;
-        padding: 5px;
-      }
+  .btn-date-range {
+    display: block;
+    text-align: left;
+
+    .date {
+      color: #cde9f0;
+    }
+  }
+
+  tbody {
+    .label {
+      display: block;
+      font-size: 14px;
+      padding: 5px;
     }
   }
 }
