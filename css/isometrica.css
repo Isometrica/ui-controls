@@ -41,6 +41,9 @@ body.desktop {
 .text-info {
   color: #00b2e2; }
 
+.bg-success {
+  background-color: #dff0d8 !important; }
+
 /* FORMS */
 .desktop .list-group label {
   font-weight: bold; }
@@ -1062,7 +1065,7 @@ input.form-value {
     border-bottom-right-radius: 0;
     border-bottom-width: 0; }
   .bootcards-panel-collapsing:first-child {
-    margin-top: 15px; }
+    margin-top: 30px; }
   .bootcards-panel-collapsing:last-child {
     margin-bottom: 15px; }
   .bootcards-panel-collapsing.full-width {
@@ -1075,6 +1078,8 @@ input.form-value {
     border-color: #ddd; }
     .bootcards-panel-collapsing.full-width > .panel-heading {
       background: white; }
+    .bootcards-panel-collapsing.full-width .panel-body {
+      padding-bottom: 30px; }
     .bootcards-panel-collapsing.full-width .panel-body.indented {
       padding-left: 50px; }
     .bootcards-panel-collapsing.full-width .table-responsive {

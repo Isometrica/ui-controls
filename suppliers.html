@@ -98,9 +98,8 @@
 
       <div class="col-sm-4 bootcards-list" id="list">
   			<div class="panel panel-default">
-    			<div class="panel-heading clearfix">
-      			<h4 class="panel-title pull-left">
-        			<span class="label label-success status-indicator pull-left"></span>
+    			<div class="panel-heading clearfix bg-success">
+      			<h4 class="panel-title pull-left text-success">
         			Reviewed Jun 2015
         		</h4>
       			<button type="button" class="btn btn-default pull-right">
@@ -233,7 +232,7 @@
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Review status</p>
-                  <h4 class="list-group-item-heading"><span class="label label-success">Reviewed</span></h4>
+                  <h4 class="list-group-item-heading"><span class="label bg-success text-success">Reviewed</span></h4>
                 </div>
               </div>
             </div>
@@ -349,72 +348,6 @@
                 </div>
               </div>
             </div>
-            <hr>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Last reviewed</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Last reviewed" value="1 Dec 2014">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Reviewed by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Reviewed by" value="Simon Shore">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Review status</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-success active">Reviewed</button>
-                  <button type="button" class="btn btn-default">Imminent</button>
-                  <button type="button" class="btn btn-default">Overdue</button>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Internal owner</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Internal owner" value="Simon Shore">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <hr>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Supplier contact name</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Supplier contact name" value="Mike Lawrence">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Contact phone</label>
-              <div class="col-xs-8">
-                <input type="phone" class="form-control" placeholder="Contact phone" value="01257 682123">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Contact email</label>
-              <div class="col-xs-8">
-                <input type="email" class="form-control" placeholder="Contact email" value="mlaurence@smith.co.uk">
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
             <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
               <div class="col-xs-8">
@@ -433,6 +366,93 @@
 
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#contact-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Contact info</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse in" id="contact-info">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Supplier contact name</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Supplier contact name" value="Mike Lawrence">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Contact phone</label>
+                      <div class="col-xs-8">
+                        <input type="phone" class="form-control" placeholder="Contact phone" value="01257 682123">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Contact email</label>
+                      <div class="col-xs-8">
+                        <input type="email" class="form-control" placeholder="Contact email" value="mlaurence@smith.co.uk">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Review info</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label bg-success text-success">Reviewed</span></h4>
+                </div>
+                <div class="collapse" id="review-info">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Last reviewed</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Last reviewed" value="1 Dec 2014">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reviewed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Reviewed by" value="Simon Shore">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Review status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-success active">Reviewed</button>
+                          <button type="button" class="btn btn-default">Imminent</button>
+                          <button type="button" class="btn btn-default">Overdue</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Internal owner</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Internal owner" value="Simon Shore">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#more-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -468,7 +488,6 @@
           			        </button>
                       </div>
                     </div>
-
                   </div>
                 </div>
               </div>

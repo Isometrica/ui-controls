@@ -65,6 +65,12 @@ body.desktop {
   color: $light-blue-color;
 }
 
+.bg-success {
+  background-color: #dff0d8 !important;
+}
+
+
+
 
 /* FORMS */
 
@@ -1660,7 +1666,7 @@ $status-indicator-size: 16px;
   }
 
   &:first-child {
-    margin-top: 15px;
+    margin-top: 30px;
   }
 
   &:last-child {
@@ -1678,6 +1684,10 @@ $status-indicator-size: 16px;
 
     > .panel-heading {
       background: white;
+    }
+
+    .panel-body {
+      padding-bottom: 30px;
     }
 
     .panel-body.indented {
