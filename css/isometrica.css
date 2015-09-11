@@ -50,6 +50,10 @@ body.desktop {
 .bg-danger {
   background-color: #f2dede !important; }
 
+/* PANELS */
+.panel-default {
+  border-color: #ccc; }
+
 /* FORMS */
 .desktop .list-group label {
   font-weight: bold; }
