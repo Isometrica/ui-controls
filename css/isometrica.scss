@@ -54,11 +54,11 @@ body.desktop {
 }
 
 .text-warning {
-  color: $amber-color;
+  color: $amber-color !important;
 }
 
 .text-success {
-  color: $green-color;
+  color: $green-color !important;
 }
 
 .text-info {
@@ -67,6 +67,14 @@ body.desktop {
 
 .bg-success {
   background-color: #dff0d8 !important;
+}
+
+.bg-warning {
+  background-color: #fcf8e3 !important;
+}
+
+.bg-danger {
+  background-color: #f2dede !important;
 }
 
 

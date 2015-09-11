@@ -33,16 +33,22 @@ body.desktop {
   color: #d85250 !important; }
 
 .text-warning {
-  color: #f0ab54; }
+  color: #f0ab54 !important; }
 
 .text-success {
-  color: #60b660; }
+  color: #60b660 !important; }
 
 .text-info {
   color: #00b2e2; }
 
 .bg-success {
   background-color: #dff0d8 !important; }
+
+.bg-warning {
+  background-color: #fcf8e3 !important; }
+
+.bg-danger {
+  background-color: #f2dede !important; }
 
 /* FORMS */
 .desktop .list-group label {
