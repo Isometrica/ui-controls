@@ -357,64 +357,6 @@
                 </select>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Contact name</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="Peter Last" placeholder="External contact"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Contact phone</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="01234 567890" placeholder="Contact phone"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Contact email</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="peter.last@nhs.org.uk" placeholder="Contact email"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="control-label col-xs-4">Last reviewed</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="5 Jan 2014" placeholder="Last reviewed"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="control-label col-xs-4">Reviewed by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="John Smith" placeholder="Reviewed by"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label class="control-label col-xs-4">Review status</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">Reviewed</button>
-                  <button type="button" class="btn btn-default">Imminent</button>
-                  <button type="button" class="btn btn-danger active">Overdue</button>
-                </div>
-              </div>
-            </div>
 
             <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
@@ -437,6 +379,84 @@
 
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#contact-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Contact info</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse in" id="contact-info">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Contact name</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="Peter Last" placeholder="External contact"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Contact phone</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="01234 567890" placeholder="Contact phone"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Contact email</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="peter.last@nhs.org.uk" placeholder="Contact email"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Review info</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label bg-danger text-danger">Review overdue</span></h4>
+                </div>
+                <div class="collapse" id="review-info">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Last reviewed</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Last reviewed" value="1 Dec 2014">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reviewed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Reviewed by" value="Simon Shore">
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Review status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">Reviewed</button>
+                          <button type="button" class="btn btn-default">Imminent</button>
+                          <button type="button" class="btn btn-danger active">Overdue</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
