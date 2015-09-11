@@ -2544,6 +2544,10 @@ body.desktop.isometrica-overview-page .navbar-header {
 .isometrica-org-setup-multiadd td.medium {
   min-width: 100px; }
 
+.isometrica-org-setup-multiadd td.short,
+.isometrica-org-setup-multiadd th.short {
+  width: 140px; }
+
 .isometrica-org-setup-multiadd td.icon {
   width: 40px; }
 
@@ -2617,6 +2621,9 @@ body.desktop.isometrica-overview-page .navbar-header {
 /* CORE SYSTEM MODAL */
 .modal.edit-item-details {
   z-index: 1051; }
+  @media (min-width: 768px) {
+    .modal.edit-item-details .modal-dialog:not(.modal-lg) {
+      width: 480px; } }
   .modal.edit-item-details .modal-header {
     padding: 10px; }
     .modal.edit-item-details .modal-header .pull-left {

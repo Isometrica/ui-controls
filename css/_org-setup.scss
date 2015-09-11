@@ -297,6 +297,11 @@
     min-width: 100px;
   }
 
+  td.short,
+  th.short {
+    width: 140px;
+  }
+
   td.icon {
     width: 40px;
   }
@@ -418,6 +423,12 @@
 
 .modal.edit-item-details {
 	z-index: 1051;
+
+	.modal-dialog:not(.modal-lg) {
+  	@media (min-width: 768px) {
+    	width: 480px;
+  	}
+	}
 
 	.modal-header {
   	padding: 10px;
