@@ -58,6 +58,9 @@ body.desktop {
 .desktop .list-group label {
   font-weight: bold; }
 
+.inline-dropdown {
+  display: inline-block; }
+
 input.form-value {
   border-color: transparent !important;
   background: transparent !important;
@@ -919,9 +922,6 @@ input.form-value {
 /* MODALS */
 .modal-footer small, .panel-footer small {
   text-align: inherit !important; }
-
-.modal-content {
-  overflow: hidden; }
 
 .modal-footer {
   border-color: #ddd;

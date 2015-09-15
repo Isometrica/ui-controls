@@ -508,7 +508,7 @@
       				Save
       			</button>
           </div>
-          <h4 class="modal-title">Settings</h4>
+          <h4 class="modal-title">Edit Settings</h4>
         </div>
         <form class="form-horizontal">
           <div class="modal-body">
@@ -530,41 +530,217 @@
   			        </button>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Owner</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    Steve Ives
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
+
+
+            <div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#owners" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Document owners</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse in" id="owners">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Document owner</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Steve Ives
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Approvers</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Michael Hamilton
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="dropdown inline-dropdown">
+                          <button type="button" class="btn btn-primary" data-toggle="dropdown"><i class="fa fa-plus"></i> Add</button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Steve Fortune</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Signers</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Mark Leusink
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="dropdown inline-dropdown">
+                          <button type="button" class="btn btn-primary" data-toggle="dropdown"><i class="fa fa-plus"></i> Add</button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Steve Fortune</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Editors</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    Jack Herbert
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#editors" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Document editors &amp; readers</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    Mark Leusink
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
+                <div class="collapse" id="editors">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Anyone can edit?</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-info active">
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Editors</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Michael Hamilton
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Jack Herbert
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Steve Ives
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            Mark Leusink
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="dropdown inline-dropdown">
+                          <button type="button" class="btn btn-primary" data-toggle="dropdown"><i class="fa fa-plus"></i> Add</button>
+                          <ul class="dropdown-menu">
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Steve Fortune</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Anyone can read?</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info active">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <input type="text" class="form-control" value="" placeholder="Add an Editor"/>
               </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#approval" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Document approval</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="approval">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Page approval mode</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info active">
+                            Automatic
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Manual
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Document lifetime</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Document lifetime">
+                          <span class="input-group-addon">years</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Review/approval frequency</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Review/approval frequency">
+                          <span class="input-group-addon">months</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Approval expiry reminders</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Approval expiry reminders">
+                          <span class="input-group-addon">days</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
+
           </div>
         </form>
       </div>
