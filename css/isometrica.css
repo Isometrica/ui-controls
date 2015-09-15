@@ -1187,15 +1187,29 @@ input.form-value {
   padding: 8px 0; }
 
 /* FOOTER - CHANGELOG */
+.isometrica-changelog-toggle {
+  position: relative;
+  top: 5px; }
+  .isometrica-changelog-toggle .open-label {
+    display: none; }
+  .isometrica-changelog-toggle .closed-label {
+    display: inline; }
+  .isometrica-changelog-toggle[aria-expanded="true"] .open-label {
+    display: inline; }
+  .isometrica-changelog-toggle[aria-expanded="true"] .closed-label {
+    display: none; }
+
 .panel-footer .isometrica-changelog, .modal-footer .isometrica-changelog {
-  margin-top: -10px;
-  margin-bottom: -10px;
   background: transparent;
-  border: 0; }
+  border-top: 1px solid #ddd;
+  margin: 0 -15px;
+  margin-bottom: -10px;
+  margin-top: 10px; }
   .panel-footer .isometrica-changelog .panel-heading, .modal-footer .isometrica-changelog .panel-heading {
     background: transparent; }
   .panel-footer .isometrica-changelog .table, .modal-footer .isometrica-changelog .table {
-    font-size: 12px; }
+    font-size: 12px;
+    margin-bottom: 0; }
 
 /* RISK ANALYSIS */
 .risk-analysis-impacts {
