@@ -1915,12 +1915,14 @@ $status-indicator-size: 16px;
 
   .table {
     margin: 0;
+    background: white;
 
     tbody {
       tr:last-child {
         td {
           padding-top: 20px;
           padding-bottom: 20px;
+          background: #f5f5f5;
         }
       }
     }
