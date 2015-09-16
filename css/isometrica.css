@@ -1188,28 +1188,32 @@ input.form-value {
 
 /* FOOTER - CHANGELOG */
 .isometrica-changelog-toggle {
-  position: relative;
-  top: 5px; }
-  .isometrica-changelog-toggle .open-label {
-    display: none; }
-  .isometrica-changelog-toggle .closed-label {
-    display: inline; }
-  .isometrica-changelog-toggle[aria-expanded="true"] .open-label {
-    display: inline; }
-  .isometrica-changelog-toggle[aria-expanded="true"] .closed-label {
-    display: none; }
+  cursor: pointer;
+  position: relative; }
+  .isometrica-changelog-toggle .disclosure-indicator {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    margin-top: -7px;
+    transition: all 0.3s ease;
+    color: #aaa; }
+  .isometrica-changelog-toggle.collapsed .disclosure-indicator {
+    transform: rotate(180deg); }
 
-.panel-footer .isometrica-changelog, .modal-footer .isometrica-changelog {
-  background: transparent;
+.panel-footer.isometrica-changelog,
+.modal-footer.isometrica-changelog {
   border-top: 1px solid #ddd;
-  margin: 0 -15px;
-  margin-bottom: -10px;
-  margin-top: 10px; }
-  .panel-footer .isometrica-changelog .panel-heading, .modal-footer .isometrica-changelog .panel-heading {
+  padding: 0; }
+  .panel-footer.isometrica-changelog .panel-heading,
+  .modal-footer.isometrica-changelog .panel-heading {
     background: transparent; }
-  .panel-footer .isometrica-changelog .table, .modal-footer .isometrica-changelog .table {
+  .panel-footer.isometrica-changelog .table-responsive,
+  .modal-footer.isometrica-changelog .table-responsive {
     font-size: 12px;
-    margin-bottom: 0; }
+    margin: 0; }
+  .panel-footer.isometrica-changelog .table,
+  .modal-footer.isometrica-changelog .table {
+    margin: 0; }
 
 /* RISK ANALYSIS */
 .risk-analysis-impacts {
