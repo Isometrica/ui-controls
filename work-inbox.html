@@ -265,7 +265,7 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Description</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Description"/>
+                <input type="text" class="form-control" placeholder="Description" value="Fix machine calibration"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -278,9 +278,18 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Created</label>
+              <label class="control-label col-xs-4">Owner</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Created date"/>
+                <input type="text" class="form-control" placeholder="Owner" value="J.Jones"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Created date</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Created date" value="3 Jun 2015"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -289,7 +298,7 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Target date</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Target date"/>
+                <input type="text" class="form-control" placeholder="Target date" value="9 Sep 2015"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -354,17 +363,36 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Files (1)</h4>
+                  <h4 class="panel-title pull-left">Files (4)</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="files">
                   <div class="panel-body">
-                        <button type="button" class="btn btn-default">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <a href="" class="btn btn-default">
                           <i class="fa fa-file-word-o fa-lg"></i>
-                          Document name goes here.docx
+                          Alvca_letter_June_15.docx
                           <i class="fa fa-times-circle margin-left"></i>
-                        </button>
+                        </a>
+                        <a href="" class="btn btn-default">
+                          <i class="fa fa-file-excel-o fa-lg"></i>
+                          sales.xls
+                          <i class="fa fa-times-circle margin-left"></i>
+                        </a>
+                        <a href="" class="btn btn-default">
+                          <i class="fa fa-file-powerpoint-o fa-lg"></i>
+                          presentation.ppt
+                          <i class="fa fa-times-circle margin-left"></i>
+                        </a>
+                        <a href="" class="btn btn-default">
+                          <i class="fa fa-file-pdf-o fa-lg"></i>
+                          brochure.pdf
+                          <i class="fa fa-times-circle margin-left"></i>
+                        </a>
                         <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
