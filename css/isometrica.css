@@ -1198,7 +1198,7 @@ input.form-value {
     transition: all 0.3s ease;
     color: #aaa; }
   .isometrica-changelog-toggle.collapsed .disclosure-indicator {
-    transform: rotate(180deg); }
+    -webkit-transform: rotate(180deg); }
 
 .panel-footer.isometrica-changelog,
 .modal-footer.isometrica-changelog {
@@ -1214,6 +1214,10 @@ input.form-value {
   .panel-footer.isometrica-changelog .table,
   .modal-footer.isometrica-changelog .table {
     margin: 0; }
+    .panel-footer.isometrica-changelog .table tbody tr:last-child td,
+    .modal-footer.isometrica-changelog .table tbody tr:last-child td {
+      padding-top: 15px;
+      padding-bottom: 15px; }
 
 /* RISK ANALYSIS */
 .risk-analysis-impacts {

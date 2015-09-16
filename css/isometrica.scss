@@ -1894,7 +1894,7 @@ $status-indicator-size: 16px;
 
   &.collapsed {
     .disclosure-indicator {
-      transform: rotate(180deg);
+      -webkit-transform: rotate(180deg);
     }
   }
 }
@@ -1915,6 +1915,15 @@ $status-indicator-size: 16px;
 
   .table {
     margin: 0;
+
+    tbody {
+      tr:last-child {
+        td {
+          padding-top: 15px;
+          padding-bottom: 15px;
+        }
+      }
+    }
   }
 }
 
