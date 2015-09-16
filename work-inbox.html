@@ -69,11 +69,11 @@
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">All items</a></li>
-          <li><a href="#">Open items</a></li>
-          <li><a href="#">Overdue items</a></li>
+          <li class="active"><a href="#">All work items</a></li>
           <li><a href="#">By type</a></li>
-          <li><a href="#">By coworkers</a></li>
+          <li><a href="#">By coworker</a></li>
+          <li><a href="#">Closed</a></li>
+          <li><a href="#">Cancelled</a></li>
         </ul>
       </div>
     </div>
@@ -168,17 +168,14 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
+  						<span class="label label-warning">CA129</span>
   						Corrective action
   				  </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Fix machine calibration <span class="label label-warning">Open - In progress</span></h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Ref</p>
-              <h4 class="list-group-item-heading">CA129</h4>
+              <h4 class="list-group-item-heading">Fix machine calibration</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Created from</p>
@@ -211,6 +208,10 @@
                   <h4 class="list-group-item-heading">9 Sep 2015</h4>
                 </div>
               </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Status</p>
+              <h4 class="list-group-item-heading"><span class="label label-warning">Open - In progress</span></h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Files</p>
@@ -323,24 +324,49 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <button type="button" class="btn btn-default">
-                  <i class="fa fa-file-word-o fa-lg"></i>
-                  Test.docx
-                  <i class="fa fa-times-circle margin-left"></i>
-                </button>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Notes</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" placeholder="Notes" rows="2"></textarea>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files (1)</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                        <button type="button" class="btn btn-default">
+                          <i class="fa fa-file-word-o fa-lg"></i>
+                          Document name goes here.docx
+                          <i class="fa fa-times-circle margin-left"></i>
+                        </button>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
