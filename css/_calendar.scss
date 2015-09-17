@@ -1,7 +1,41 @@
 .isometrica-calendar {
 
-  &.isometrica-calendar-year th {
-    width: 8.33333%; // 100% / 12
+  .search-form {
+    .row > div {
+      &:first-child {
+        padding-right: 5px;
+      }
+      &:last-child {
+        padding-left: 5px;
+      }
+    }
+
+    .form-group {
+      position: relative;
+      margin: 0;
+    }
+
+    input {
+      padding-left: 32px;
+    }
+
+    i.fa-search {
+        position: absolute;
+        left: 12px;
+        top: 10px;
+        color: #999;
+        font-size: 14px;
+    }
+  }
+
+  &.isometrica-calendar-year {
+      th {
+        width: 5.83333%; /* 70% / 12 */
+
+        &:first-child {
+          width: 30%;
+        }
+      }
   }
 
   &.isometrica-calendar-quarter th {
@@ -15,6 +49,7 @@
       border-width: 1px !important;
       text-align: center;
       font-weight: 500;
+      vertical-align: middle !important;
     }
   }
 
@@ -22,7 +57,18 @@
     padding: 8px !important;
   }
 
-  .btn {
+  th:first-child {
+    border-right: 1px solid #ddd;
+  }
+
+  tbody th {
+    font-size: 18px;
+    padding: 10px 15px !important;
+    font-weight: 500;
+  }
+
+  .btn-date-specific,
+  .btn-date-range  {
     text-align: left;
     text-decoration: none;
 
