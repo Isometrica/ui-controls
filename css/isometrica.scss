@@ -1418,6 +1418,9 @@ $status-indicator-size: 16px;
 .modal-footer {
   border-color: #ddd;
   background: #f5f5f5;
+  text-align: left;
+
+  border-radius: 0 0 4px 4px;
   //border-radius: 0 0 4px 4px;
 }
 
@@ -1878,44 +1881,44 @@ $status-indicator-size: 16px;
 
 /* FOOTER - CHANGELOG */
 
-.isometrica-changelog-toggle {
-  cursor: pointer;
-  position: relative;
+.panel-footer .isometrica-changelog { margin: -10px -15px; }
+.modal-footer .isometrica-changelog { margin: -15px; }
 
+.isometrica-changelog {
 
-  .disclosure-indicator {
-    position: absolute;
-    right: 20px;
-    top: 50%;
-    margin-top: -7px;
-    transition: all 0.3s ease;
-    color: #aaa;
-  }
+  .isometrica-changelog-toggle {
+    cursor: pointer;
+    position: relative;
+    padding: 10px 0;
+    margin: 0;
 
-  &.collapsed {
     .disclosure-indicator {
-      -webkit-transform: rotate(180deg);
+      position: absolute;
+      right: 20px;
+      top: 50%;
+      margin-top: -7px;
+      transition: all 0.3s ease;
+      color: #aaa;
     }
-  }
-}
 
-.panel-footer.isometrica-changelog,
-.modal-footer.isometrica-changelog {
-  border-top: 1px solid #ddd;
-  padding: 0;
-
-  .panel-heading {
-    background: transparent;
+    &.collapsed {
+      .disclosure-indicator {
+        -webkit-transform: rotate(180deg);
+      }
+    }
   }
 
   .table-responsive {
     font-size: 12px;
     margin: 0;
+    border-top: 1px solid #ddd;
   }
 
   .table {
     margin: 0;
     background: white;
+    border-radius: 0 0 4px 4px;
+    overflow: hidden;
 
     tbody {
       tr:last-child {
@@ -1923,6 +1926,7 @@ $status-indicator-size: 16px;
           padding-top: 20px;
           padding-bottom: 20px;
           background: #f5f5f5;
+
         }
       }
     }
