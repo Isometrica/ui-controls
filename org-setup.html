@@ -95,69 +95,56 @@
   </div>
 
   <div class="container org-setup-container">
+    <div class="panel panel-default org-setup-panel">
+      <div class="org-setup-offset-container">
+        <div class="panel-heading first" data-toggle="modal" data-target="#editMission">
+          <h3 class="panel-title">IBM UK mission &amp; goals</h3>
+          <i class="fa fa-long-arrow-right arrow left"></i>
+        </div>
+        <div class="panel-heading" data-toggle="modal" data-target="#editPerformanceIndicators">
+          <h3 class="panel-title">Performance indicators <span class="text-muted">(7 areas)</span></h3>
+        </div>
 
-    <div class="panel panel-default org-setup-panel" id="corePanel">
-      <div class="panel-body">
-        <h2>Teamstudio</h2>
-        <div class="panel panel-default">
-          <div class="offset right" id="interested-parties">
-            <i class="fa fa-long-arrow-left left-arrow"></i>
-            <i class="fa fa-long-arrow-right right-arrow"></i>
-            <div class="panel panel-default">
-              <div class="panel-heading first last" data-toggle="modal" data-target="#editInterestedParties">
-                <h4 class="panel-title">Interested parties - types <span class="text-muted">(8)</span></h4>
-              </div>
+        <div class="offset left">
+          <div class="panel panel-default" data-toggle="modal" data-target="#editRiskTypes">
+            <div class="panel-heading first last">
+              <h4 class="panel-title">Risks <span class="text-muted">(6 types)</span></h4>
             </div>
-          </div>
-          <div class="panel-heading first" data-toggle="modal" data-target="#editManagementSystems">
-            <h3 class="panel-title">Management programs <span class="text-muted">(4)</span></h3>
-          </div>
-          <div class="row row-eq-height org-setup-split-sections">
-            <div class="col-sm-3">
-              <div class="panel-heading" data-toggle="modal" data-target="#editDepartments">
-                <h3 class="panel-title">Departments <span class="text-muted">(8)</span></h3>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="panel-heading" data-toggle="modal" data-target="#editRoles">
-                <h3 class="panel-title">Roles <span class="text-muted">(3)</span></h3>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
-                <h3 class="panel-title">Meetings - types <span class="text-muted">(8)</span></h3>
-              </div>
-            </div>
-            <div class="col-sm-3">
-              <div class="panel-heading" data-toggle="modal" data-target="#editCommunicationTypes">
-                <h3 class="panel-title">Communications - types <span class="text-muted">(8)</span></h3>
-              </div>
-            </div>
-          </div>
-          <div class="panel-heading last" data-toggle="modal" data-target="#editProducts">
-            <h3 class="panel-title">Products &amp; services <span class="text-muted">(5)</span></h3>
           </div>
         </div>
       </div>
-      <div class="activities-and-dependencies">
-        <div class="offset left" id="suppliers">
-          <i class="fa fa-long-arrow-left left-arrow"></i>
-          <i class="fa fa-long-arrow-right right-arrow"></i>
+      <div class="panel-heading" data-toggle="modal" data-target="#editManagementSystems">
+        <h3 class="panel-title">Management programs <span class="text-muted">(4)</span></h3>
+      </div>
+      <div class="org-setup-offset-container">
+        <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
+          <h3 class="panel-title">Meetings &amp; communications <span class="text-muted">(6 types)</span></h3>
+          <i class="fa fa-arrows-h arrow left"></i>
+          <i class="fa fa-arrows-h arrow right"></i>
+        </div>
+        <div class="panel-heading" data-toggle="modal" data-target="#editDepartments">
+          <h3 class="panel-title">Departments <span class="text-muted">(7)</span></h3>
+        </div>
+        <div class="panel-heading" data-toggle="modal" data-target="#editRoles">
+          <h3 class="panel-title">Roles <span class="text-muted">(8)</span></h3>
+        </div>
+
+        <div class="offset left">
           <div class="panel panel-default" data-toggle="modal" data-target="#editSupplierTypes">
             <div class="panel-heading first last">
-              <h4 class="panel-title">Suppliers - types <span class="text-muted">(2)</span></h4>
+              <h4 class="panel-title">Suppliers &amp; partners <span class="text-muted">(2 types)</span></h4>
             </div>
           </div>
         </div>
 
-        <div class="offset right" id="risks">
-            <i class="fa fa-long-arrow-left left-arrow"></i>
-            <div class="panel panel-default">
-              <div class="panel-heading first last" data-toggle="modal" data-target="#editRiskTypes">
-                <h4 class="panel-title">Risks - types <span class="text-muted">(9)</span></h4>
-              </div>
+        <div class="offset right">
+          <div class="panel panel-default">
+            <div class="panel-heading first last" data-toggle="modal" data-target="#editInterestedParties">
+              <h4 class="panel-title">Customers &amp; interested parties <span class="text-muted">(10 types)</span></h4>
             </div>
           </div>
+        </div>
+
         <div class="panel-heading panel-heading-activities" data-toggle="modal" data-target="#editActivities">
           <ul class="org-setup-items hidden-xs">
             <li>
@@ -202,13 +189,28 @@
             </li>
           </ul>
           <h3 class="panel-title">Activities &amp; processes <span class="text-muted">(3)</span></h3>
+          <i class="fa fa-long-arrow-right arrow left"></i>
         </div>
-        <div class="panel-heading" data-toggle="modal" data-target="#editDependencies">
-          <h3 class="panel-title"><span class="text-muted">Dependencies</span></h3>
+        <div class="panel-heading" data-toggle="modal" data-target="#editProducts">
+          <h3 class="panel-title">Products &amp; services <span class="text-muted">(5)</span></h3>
+          <i class="fa fa-long-arrow-right arrow left"></i>
+          <i class="fa fa-long-arrow-right arrow right"></i>
+        </div>
+        <div class="panel-heading last" data-toggle="modal" data-target="#editAssets">
+          <h3 class="panel-title">Assets, resources &amp; dependencies</h3>
+          <i class="fa fa-long-arrow-right arrow left"></i>
         </div>
       </div>
-      <div class="panel-heading last" data-toggle="modal" data-target="#editAssets">
-        <h3 class="panel-title text-muted"><span class="text-muted">Assets &amp; resources</span></h3>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-6 col-sm-offset-3">
+        <div class="panel panel-default org-setup-panel">
+          <div class="panel-heading first last" data-toggle="modal" data-target="#editEnvironmental">
+            <h3 class="panel-title">Environmental aspects <span class="text-muted">(6 types)</span></h3>
+            <i class="fa fa-long-arrow-up arrow top"></i>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -413,7 +415,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Meetings - types</h4>
+          <h4 class="modal-title">Meetings &amp; communications</h4>
         </div>
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
@@ -675,7 +677,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Interested parties - types</h4>
+          <h4 class="modal-title">Customers &amp; interested parties</h4>
         </div>
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
@@ -852,7 +854,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Suppliers - types</h4>
+          <h4 class="modal-title">Suppliers &amp; partners</h4>
         </div>
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>

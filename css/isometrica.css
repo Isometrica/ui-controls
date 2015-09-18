@@ -2404,7 +2404,7 @@ body.desktop.isometrica-overview-page .navbar-header {
     .org-setup-container {
       padding: 0 15px; } }
   .org-setup-container .org-setup-panel {
-    margin-bottom: 125px;
+    margin-bottom: 40px;
     border-color: #bbb; }
     .org-setup-container .org-setup-panel .panel {
       margin-bottom: 15px;
@@ -2419,7 +2419,6 @@ body.desktop.isometrica-overview-page .navbar-header {
     .org-setup-container .org-setup-panel .panel-heading {
       cursor: pointer;
       text-align: center;
-      overflow: hidden;
       transition: all 0.3s ease;
       border-radius: 0;
       border-color: #bbb;
@@ -2439,11 +2438,29 @@ body.desktop.isometrica-overview-page .navbar-header {
         .org-setup-container .org-setup-panel .panel-heading:hover:after,
         .org-setup-container .org-setup-panel .panel-heading:active:after {
           border-left-color: rgba(0, 0, 0, 0.2); }
+      .org-setup-container .org-setup-panel .panel-heading .arrow {
+        position: absolute;
+        font-size: 35px;
+        line-height: 1;
+        top: 50%;
+        margin-top: -17px;
+        color: #ccc; }
+        .org-setup-container .org-setup-panel .panel-heading .arrow.left {
+          left: -40px; }
+        .org-setup-container .org-setup-panel .panel-heading .arrow.right {
+          right: -40px; }
+        .org-setup-container .org-setup-panel .panel-heading .arrow.top {
+          top: -40px;
+          margin-top: 0;
+          left: 50%;
+          margin-left: -17px; }
       @media (min-width: 768px) {
         .org-setup-container .org-setup-panel .panel-heading.panel-heading-activities {
           padding-top: 15px; } }
       .org-setup-container .org-setup-panel .panel-heading .panel-title {
         line-height: 1.3; }
+        .org-setup-container .org-setup-panel .panel-heading .panel-title span {
+          display: inline-block; }
         .org-setup-container .org-setup-panel .panel-heading .panel-title .badge {
           position: relative;
           top: -1px;
@@ -2453,18 +2470,7 @@ body.desktop.isometrica-overview-page .navbar-header {
     .org-setup-container .org-setup-panel .panel-body {
       border-bottom: 1px solid #bbb;
       padding-bottom: 0; }
-    .org-setup-container .org-setup-panel .org-setup-split-sections {
-      margin: 0; }
-      .org-setup-container .org-setup-panel .org-setup-split-sections > div {
-        padding: 0; }
-        .org-setup-container .org-setup-panel .org-setup-split-sections > div .panel-heading {
-          border-radius: 0; }
-          @media (min-width: 768px) {
-            .org-setup-container .org-setup-panel .org-setup-split-sections > div .panel-heading {
-              border-left: 1px solid #bbb; } }
-        .org-setup-container .org-setup-panel .org-setup-split-sections > div:first-child .panel-heading {
-          border-left: 0; }
-    .org-setup-container .org-setup-panel .activities-and-dependencies {
+    .org-setup-container .org-setup-panel .org-setup-offset-container {
       position: relative; }
     .org-setup-container .org-setup-panel .org-setup-activities h3 {
       margin-bottom: 15px; }
@@ -2515,7 +2521,7 @@ body.desktop.isometrica-overview-page .navbar-header {
       .org-setup-container .org-setup-panel .offset.left {
         left: -165px; }
       .org-setup-container .org-setup-panel .offset.right {
-        right: -180px; }
+        right: -165px; }
       .org-setup-container .org-setup-panel .offset .panel {
         position: absolute;
         left: 0;
@@ -2532,31 +2538,6 @@ body.desktop.isometrica-overview-page .navbar-header {
           right: 0;
           margin: 0;
           border: 0; }
-      .org-setup-container .org-setup-panel .offset .left-arrow,
-      .org-setup-container .org-setup-panel .offset .right-arrow {
-        position: absolute;
-        font-size: 24px;
-        color: #ccc; }
-      .org-setup-container .org-setup-panel .offset#interested-parties .left-arrow,
-      .org-setup-container .org-setup-panel .offset#interested-parties .right-arrow {
-        right: 130px; }
-      .org-setup-container .org-setup-panel .offset#interested-parties .left-arrow {
-        top: 15px; }
-      .org-setup-container .org-setup-panel .offset#interested-parties .right-arrow {
-        bottom: 15px; }
-      .org-setup-container .org-setup-panel .offset#suppliers .left-arrow,
-      .org-setup-container .org-setup-panel .offset#suppliers .right-arrow {
-        left: 130px; }
-      .org-setup-container .org-setup-panel .offset#suppliers .left-arrow {
-        bottom: 15px; }
-      .org-setup-container .org-setup-panel .offset#suppliers .right-arrow {
-        top: 15px; }
-      .org-setup-container .org-setup-panel .offset#risks {
-        right: -164px;
-        bottom: 55px; }
-        .org-setup-container .org-setup-panel .offset#risks .left-arrow {
-          right: 130px;
-          top: 15px; }
 
 /* Spreadsheet multiadd */
 .isometrica-org-setup-multiadd .table {
