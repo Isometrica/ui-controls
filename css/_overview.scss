@@ -503,6 +503,11 @@ body.desktop.isometrica-overview-page {
     background: transparent;
     text-align: center;
     line-height: 35px;
+
+    .progress {
+      border-radius: 3px;
+      margin: 2px 0 3px;
+    }
   }
 
 	.users {
@@ -548,7 +553,8 @@ body.desktop.isometrica-overview-page {
 
 				&:hover,
 				&:active {
-					background: #428bca;
+					background: $blue-color;
+          color: white;
 				}
 
 				i {

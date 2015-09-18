@@ -901,6 +901,10 @@ input.form-value {
     font-size: 17px; }
     .guidance-bar .btn-group .btn:hover, .guidance-bar .btn-group .btn:active {
       opacity: 1; }
+  .guidance-bar .btn {
+    color: white; }
+    .guidance-bar .btn:hover, .guidance-bar .btn:active, .guidance-bar .btn:focus {
+      color: white; }
   .guidance-bar .guidance-bar-dismiss {
     position: absolute;
     right: 15px;
@@ -2307,6 +2311,9 @@ body.desktop.isometrica-overview-page .navbar-header {
     background: transparent;
     text-align: center;
     line-height: 35px; }
+    .isometrica-overview-item .panel-footer .progress {
+      border-radius: 3px;
+      margin: 2px 0 3px; }
   .isometrica-overview-item .users {
     list-style: none;
     padding: 0;
@@ -2340,7 +2347,8 @@ body.desktop.isometrica-overview-page .navbar-header {
         margin: 0 auto; }
         .isometrica-overview-item .users li .add-user:hover,
         .isometrica-overview-item .users li .add-user:active {
-          background: #428bca; }
+          background: #006e9e;
+          color: white; }
         .isometrica-overview-item .users li .add-user i {
           font-size: 20px;
           line-height: 34px;

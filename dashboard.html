@@ -44,29 +44,62 @@
 
 
 </head>
-<body class="bootcards-nofooter isometrica-dashboard-page">
+<body class="bootcards-nofooter bootcards-fullheight isometrica-dashboard-page isometrica-overview-page has-bootcards-navbar-double">
 
   <!-- fixed top navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
-    <div class="container-fluid">
-      <ul class="nav navbar-nav navbar-left">
-        <li>
-          <a class="btn btn-link icon-only" href="index.html">
-          	<i class="fa fa-lg fa-chevron-left"></i>
-          </a>
-        </li>
-      </ul>
+  <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
+    <div class="container">
       <ul class="nav navbar-nav navbar-right">
         <li>
-          <a class="btn btn-link icon-only" href="#">
-          	<i class="fa fa-lg fa-question-circle"></i>
+          <a href="#" class="btn btn-link icon-only btn-menu" data-toggle="collapse" data-target=".navbar-collapse">
+          	<i class="fa fa-lg fa-bars"></i>
           </a>
         </li>
       </ul>
       <div class="navbar-header">
-        <span class="navbar-brand">
-        	Dashboard - Teamstudio
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+          <img src="img/logo-icon.png" class="hidden-xs"/><span class="hidden-xs">Isometrica:</span>
+          Teamstudio <i class="fa fa-chevron-down"></i>
         </span>
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">Teamstudio</a></li>
+          <li><a href="#">Another company</a></li>
+        </ul>
+      </div>
+      <div class="navbar-collapse collapse">
+  	    <ul class="nav navbar-nav navbar-right bootcards-nav-secondary">
+          <li>
+            <a href="#">
+  	        	<i class="fa fa-fw fa-user"></i>
+  	        	Stephen Ives
+  	        	<span class="label label-danger">+ 5</span>
+  	        </a>
+          </li>
+          <li>
+            <a href="#">
+  	        	Account
+  	        </a>
+          </li>
+          <li>
+            <a href="#">
+  	        	Logout
+  	        </a>
+          </li>
+  	    </ul>
+        <ul class="nav navbar-nav navbar-right bootcards-nav-primary">
+          <li>
+            <a href="#">
+  	          <i class="fa fa-fw fa-question-circle"></i>
+              Help
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <i class="fa fa-fw fa-gear"></i>
+              Settings
+            </a>
+          </li>
+        </ul>
       </div>
     </div>
   </div>
@@ -81,16 +114,49 @@
     </div>
   </div>
 
+  <!-- Tabs -->
+  <div class="isometrica-overview-tabs">
+    <div class="container">
+      <ul class="nav nav-tabs nav-justified">
+        <li>
+          <a href="overview.html">
+            <i class="fa fa-home visible-xs"></i>
+            <span class="hidden-xs">Workspace</span>
+          </a>
+        </li>
+        <li class="active">
+          <a href="dashboard.html">
+            <i class="fa fa-dashboard visible-xs"></i>
+            <span class="hidden-xs">Dashboard</span>
+          </a>
+        </li>
+        <li>
+          <a href="templates.html">
+            <i class="fa fa-files-o visible-xs"></i>
+            <span class="hidden-xs">Document templates</span>
+          </a>
+        </li>
+        <li>
+          <a href="archive.html">
+            <i class="fa fa-archive visible-xs"></i>
+            <span class="hidden-xs">Deleted &amp; archived</span>
+          </a>
+        </li>
+        <li>
+          <a href="services.html">
+            <i class="fa fa-wrench visible-xs"></i>
+            <span class="hidden-xs">Services</span>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
   <!-- Dashboard - mobile -->
   <div class="container bootcards-container isometrica-mobile-list-view-container visible-xs">
     <div class="bootcards-list">
       <div class="panel panel-default">
         <div class="list-group">
-          <a class="list-group-item" href="org-setup.html">
-            <i class="fa fa-building-o pull-left text-info"></i>
-            <h4 class="list-group-item-heading">Organization setup</h4>
-            <p class="list-group-item-text">Subheading here</p>
-          </a>
           <a class="list-group-item" href="calendar.html">
             <i class="fa fa-calendar pull-left text-info"></i>
             <h4 class="list-group-item-heading">Calendar</h4>
@@ -171,19 +237,19 @@
   	<div class="isometrica-dashboard-items">
 			<div class="row">
 				<div class="col-sm-3">
-					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='org-setup.html';">
+					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='calendar.html';">
 						<div class="panel-body">
-							  <i class="fa fa-building-o text-info"></i>
-                <h3>Organization setup</h3>
+							  <i class="fa fa-calendar text-info"></i>
+                <h3>Calendar</h3>
                 <p>Subheading here</p>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='calendar.html';">
+					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='surveys.html';">
 						<div class="panel-body">
-							  <i class="fa fa-calendar text-info"></i>
-                <h3>Calendar</h3>
+							  <i class="fa fa-list-alt text-info"></i>
+                <h3>Customer surveys</h3>
                 <p>Subheading here</p>
 						</div>
 					</div>
@@ -254,7 +320,7 @@
 					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='risk-register.html';">
 						<div class="panel-body">
 							  <i class="fa fa-exclamation-triangle text-info"></i>
-                <h3>Risks</h3>
+                <h3>Risk register</h3>
                 <p>12 risks <span class="label label-danger">3 new</span></p>
 						</div>
 					</div>
@@ -264,7 +330,7 @@
 					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='competencies.html';">
 						<div class="panel-body">
 							  <i class="fa fa-thumbs-o-up text-info"></i>
-                <h3>Competencies</h3>
+                <h3>Competencies register</h3>
                 <p>Subheading here</p>
 						</div>
 					</div>
@@ -273,16 +339,15 @@
 					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='performance-evaluation.html';">
 						<div class="panel-body">
 							  <i class="fa fa-line-chart text-info"></i>
-                <h3>Performance evaluation</h3>
+                <h3>Performance metrics register</h3>
 						</div>
 					</div>
 				</div>
 				<div class="col-sm-3">
-					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='surveys.html';">
+					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='environmental.html';">
 						<div class="panel-body">
-							  <i class="fa fa-list-alt text-info"></i>
-                <h3>Surveys</h3>
-                <p>Subheading here</p>
+							  <i class="fa fa-leaf text-info"></i>
+                <h3>Environmental aspects register</h3>
 						</div>
 					</div>
 				</div>
@@ -298,7 +363,7 @@
 					<div class="panel panel-default isometrica-dashboard-item" onclick="window.location='suppliers.html';">
 						<div class="panel-body">
 							  <i class="fa fa-truck text-info"></i>
-                <h3>Suppliers</h3>
+                <h3>Suppliers register</h3>
                 <p>Subheading here</p>
 						</div>
 					</div>

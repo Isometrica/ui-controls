@@ -1372,6 +1372,14 @@ $status-indicator-size: 16px;
     }
   }
 
+  .btn {
+    color: white;
+
+    &:hover, &:active, &:focus {
+      color: white;
+    }
+  }
+
   .guidance-bar-dismiss {
     position: absolute;
     right: 15px;
