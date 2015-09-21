@@ -2406,7 +2406,67 @@ body.desktop.isometrica-overview-page .navbar-header {
       padding: 0 15px; } }
   .org-setup-container .org-setup-panel {
     margin-bottom: 40px;
-    border-color: #bbb; }
+    border-color: #bbb;
+    /*.org-setup-activities {
+      h3 {
+        margin-bottom: 15px;
+      }
+    }*/
+    /*
+    .org-setup-items {
+      list-style: none;
+      padding: 0;
+      margin: 0 -7px;
+
+      li {
+        float: left;
+        width: 20%;
+        margin-bottom: 15px;
+
+        .org-setup-item {
+          margin: 0 7px;
+          background: white;
+          overflow: hidden;
+          text-align: center;
+          position: relative;
+          cursor: pointer;
+          transition: all 0.3s ease;
+          color: #333;
+
+          &:hover, &:focus, &:active {
+        		border-color: #5bc0de;
+        	}
+
+          .panel-body {
+            height: 130px;
+            border: 0;
+          }
+
+          i {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: $light-blue-color;
+          }
+
+          .org-setup-item-title {
+            text-align: center;
+            font-size: 14px;
+            line-height: 18px;
+            margin: 0;
+          }
+
+          &.org-setup-item-empty {
+            color: #aaa;
+            background: white;
+
+            i {
+              color: #ddd;
+            }
+          }
+        }
+      }
+    }
+    */ }
     .org-setup-container .org-setup-panel .panel {
       margin-bottom: 15px;
       position: relative;
@@ -2425,7 +2485,13 @@ body.desktop.isometrica-overview-page .navbar-header {
       border-color: #bbb;
       background: #eee;
       position: relative;
-      width: 100%; }
+      width: 100%;
+      /*&.panel-heading-activities {
+        //padding-bottom: 0;
+        @media (min-width:768px) {
+          padding-top: 15px;
+        }
+      }*/ }
       .org-setup-container .org-setup-panel .panel-heading.first {
         border-top-left-radius: 3px;
         border-top-right-radius: 3px; }
@@ -2455,9 +2521,6 @@ body.desktop.isometrica-overview-page .navbar-header {
           margin-top: 0;
           left: 50%;
           margin-left: -17px; }
-      @media (min-width: 768px) {
-        .org-setup-container .org-setup-panel .panel-heading.panel-heading-activities {
-          padding-top: 15px; } }
       .org-setup-container .org-setup-panel .panel-heading .panel-title {
         line-height: 1.3; }
         .org-setup-container .org-setup-panel .panel-heading .panel-title span {
@@ -2473,44 +2536,6 @@ body.desktop.isometrica-overview-page .navbar-header {
       padding-bottom: 0; }
     .org-setup-container .org-setup-panel .org-setup-offset-container {
       position: relative; }
-    .org-setup-container .org-setup-panel .org-setup-activities h3 {
-      margin-bottom: 15px; }
-    .org-setup-container .org-setup-panel .org-setup-items {
-      list-style: none;
-      padding: 0;
-      margin: 0 -7px; }
-      .org-setup-container .org-setup-panel .org-setup-items li {
-        float: left;
-        width: 20%;
-        margin-bottom: 15px; }
-        .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item {
-          margin: 0 7px;
-          background: white;
-          overflow: hidden;
-          text-align: center;
-          position: relative;
-          cursor: pointer;
-          transition: all 0.3s ease;
-          color: #333; }
-          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:hover, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:focus, .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item:active {
-            border-color: #5bc0de; }
-          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .panel-body {
-            height: 130px;
-            border: 0; }
-          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item i {
-            font-size: 48px;
-            margin-bottom: 10px;
-            color: #00b2e2; }
-          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item .org-setup-item-title {
-            text-align: center;
-            font-size: 14px;
-            line-height: 18px;
-            margin: 0; }
-          .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item.org-setup-item-empty {
-            color: #aaa;
-            background: white; }
-            .org-setup-container .org-setup-panel .org-setup-items li .org-setup-item.org-setup-item-empty i {
-              color: #ddd; }
     .org-setup-container .org-setup-panel .offset {
       position: absolute;
       top: 0;
