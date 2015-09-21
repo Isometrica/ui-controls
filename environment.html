@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Suppliers</title>
+  <title>Environmental aspects</title>
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
@@ -65,14 +65,17 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          Suppliers - all
+          Environmental aspects - all
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
           <li class="active"><a href="#">All</a></li>
+          <li><a href="#">By owner</a></li>
           <li><a href="#">By type</a></li>
-          <li><a href="#">By approval date</a></li>
-          <li><a href="#">By non-conformities</a></li>
+          <li><a href="#">By activity</a></li>
+          <li><a href="#">By department</a></li>
+          <li><a href="#">Archived</a></li>
+          <li><a href="#">Deleted</a></li>
         </ul>
       </div>
     </div>
@@ -98,8 +101,8 @@
 
       <div class="col-sm-4 bootcards-list" id="list">
   			<div class="panel panel-default">
-    			<div class="panel-heading clearfix bg-success">
-      			<h4 class="panel-title pull-left text-success">
+    			<div class="panel-heading clearfix bg-warning">
+      			<h4 class="panel-title pull-left text-warning">
         			Reviewed Jun 2015
         		</h4>
       			<button type="button" class="btn btn-default pull-right">
@@ -126,49 +129,35 @@
   					</div>
   				</div>
   				<div class="list-group">
-    				<a class="list-group-item">
-  						<span class="label label-success status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">BT</h4>
-  							<p class="list-group-item-text pull-left">19 Dec 2013</p>
+    				<a class="list-group-item clearfix">
+              <span class="label label-danger risk-square">65</span>
+              <div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Use of electricity for air conditioning</h4>
               </div>
 						</a>
-						<a class="list-group-item">
-  						<span class="label label-success status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">Mice Fabrications</h4>
-  							<p class="list-group-item-text">17 Aug 2007</p>
+						<a class="list-group-item clearfix">
+  						<span class="label label-warning risk-square">41</span>
+              <div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Generation of waste paper in office</h4>
               </div>
 						</a>
-						<a class="list-group-item ">
-  						<span class="label label-warning status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">RS Components</h4>
-  							<p class="list-group-item-text">16 May 2014</p>
+    				<a class="list-group-item clearfix active">
+  						<span class="label label-success risk-square">27</span>
+              <div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Use of electricity for office lighting</h4>
               </div>
 						</a>
-						<a class="list-group-item">
-  						<span class="label label-success status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">Screwfix</h4>
-  							<p class="list-group-item-text pull-left">6 Nov 2011</p>
-  							<!--<p class="list-group-item-text pull-right">6 NCs</p>-->
+
+						<a class="list-group-item clearfix">
+  						<span class="label label-success risk-square">15</span>
+              <div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Office fit-out</h4>
               </div>
 						</a>
-  				  <a class="list-group-item active">
-    				  <span class="label label-success status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">Smith Components</h4>
-  							<p class="list-group-item-text pull-left">25 Mar 2015</p>
-  							<!--<p class="list-group-item-text pull-right">1 NC</p>-->
-  						</div>
-						</a>
-						<a class="list-group-item">
-  						<span class="label label-danger status-indicator pull-left"></span>
-  						<div class="list-group-item-content">
-  							<h4 class="list-group-item-heading">Tough Tubes Ltd</h4>
-  							<p class="list-group-item-text pull-left">3 Jan 2010</p>
-  							<!--<p class="list-group-item-text pull-right">3 NCs</p>-->
+						<a class="list-group-item clearfix">
+  						<span class="label label-success risk-square">8</span>
+              <div class="list-group-item-content">
+  							<h4 class="list-group-item-heading">Storage &amp; use of chemicals for cleaning</h4>
               </div>
 						</a>
   				</div>
@@ -185,102 +174,68 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
-  						<span class="label label-success status-indicator pull-left"></span>
-  						Supplier
-  				  </h3>
+  						<span class="label label-success risk-square">27</span>
+              Environmental aspect
+            </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Name</p>
-              <h4 class="list-group-item-heading">Smith Components</h4>
+              <p class="list-group-item-text">Aspect name</p>
+              <h4 class="list-group-item-heading">Use of electricity for office lighting <span class="label bg-warning text-warning">Awaiting review</span></h4>
             </div>
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">Type</p>
-                  <h4 class="list-group-item-heading">Supplier</h4>
+                  <p class="list-group-item-text">Ref</p>
+                  <h4 class="list-group-item-heading">AS12</h4>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">Supplier status</p>
-                  <h4 class="list-group-item-heading"><span class="label label-success">Approved</span></h4>
+                  <p class="list-group-item-text">Risk score</p>
+                  <h4 class="list-group-item-heading">Minor (27)</h4>
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Impact type</p>
+              <h4 class="list-group-item-heading">Generation of greenhouse gases</h4>
+            </div>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Activity/process</p>
+                  <h4 class="list-group-item-heading">Thermoforming</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Department</p>
+                  <h4 class="list-group-item-heading">Manufacturing</h4>
                 </div>
               </div>
             </div>
             <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Owner</p>
+                  <h4 class="list-group-item-heading">Peter Jones</h4>
+                </div>
+              </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Last reviewed</p>
-                  <h4 class="list-group-item-heading">1 Dec 2014</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Reviewed by</p>
-                  <h4 class="list-group-item-heading">Simon Shore</h4>
+                  <h4 class="list-group-item-heading">8 Sep 2014</h4>
                 </div>
               </div>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Internal owner</p>
-                  <h4 class="list-group-item-heading">Simon Shore</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Review status</p>
-                  <h4 class="list-group-item-heading"><span class="label bg-success text-success">Reviewed</span></h4>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Supplier contact name</p>
-                  <h4 class="list-group-item-heading">Mike Laurence</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Contact phone</p>
-                  <h4 class="list-group-item-heading"><a href="tel:01257682123">01257 682123</a></h4>
-                </div>
-              </div>
-            </div>
+
+
             <div class="list-group-item">
-              <p class="list-group-item-text">Contact email</p>
-              <h4 class="list-group-item-heading"><a href="mailto:mike@smith.co.uk">mlaurence@smith.co.uk</a></h4>
+              <p class="list-group-item-text">Files</p>
+              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Example.docx</a>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">File(s)</p>
-              <a href="#" class="btn btn-default">
-                <i class="fa fa-file-word-o fa-lg"></i>
-                Example.docx
-              </a>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
-              <h4 class="list-group-item-heading">Pellentesque id felis ac sem faucibus auctor</h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Reported non-conformities</p>
-              <a href="#" class="btn btn-default"><strong>NC15</strong> Fractured flange <i class="fa fa-circle margin-left text-success"></i></a>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Products &amp; services supplied</p>
-              <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet <br>Consectetur adipiscing elit</h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Comments on our requirements</p>
-              <h4 class="list-group-item-heading">Flanges need to be heat treated to spec 1706. Supplier must be ISO 9001 accredited.</h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Overall supplier evaluation</p>
-              <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id felis ac sem faucibus auctor. Nullam vulputate mi libero.</h4>
-            </div>
+
           </div>
           <div class="panel-footer">
             <div class="isometrica-changelog collapsed">
@@ -371,7 +326,7 @@
   </div>
 
 
-  <!-- Edit Modal -->
+  <!-- Add Modal -->
   <div class="modal fade isometrica-edit-modal" id="edit-modal">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -386,209 +341,372 @@
       				Save
       			</button>
           </div>
-          <h4 class="modal-title">Supplier</h4>
+          <h4 class="modal-title">Environmental aspect</h4>
         </div>
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Name</label>
+              <label class="control-label col-xs-4">Aspect name</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Name" value="Smith Components">
+                <input type="text" class="form-control" placeholder="Aspect name" value="Use of electricity"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Type</label>
+              <label class="control-label col-xs-4">Ref</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control form-value" disabled="disabled" value="AS12"/>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Risk type</label>
               <div class="col-xs-8">
                 <select class="form-control">
                   <option></option>
-                  <option selected="">Supplier</option>
-                  <option>Partner</option>
+                  <option selected="">Generation of greenhouse gases</option>
+                  <option>Lorem ipsum</option>
                 </select>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Supplier status</label>
+              <label class="control-label col-xs-4">Activity/process</label>
               <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-success active">Approved</button>
-                  <button type="button" class="btn btn-default">In progress</button>
-                  <button type="button" class="btn btn-default">Not approved</button>
-                </div>
+                <input type="text" class="form-control" placeholder="Activity/process" value="Thermoforming"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
               </div>
             </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Department</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Department" value="Manufacturing"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Owner</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Owner" value="Peter Jones"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+
             <div class="form-group">
               <label class="control-label col-xs-4">Files</label>
               <div class="col-xs-8">
                 <div class="btn-group">
+                  <a href="#" class="btn btn-default">Example.docx</a>
                   <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
+                    <i class="fa fa-times-circle fa-lg no-margin"></i>
                   </button>
                 </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add file</button>
               </div>
             </div>
 
-
             <div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix" href="#contact-info" data-toggle="collapse">
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Contact details</h4>
+                  <h4 class="panel-title pull-left">Notes</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse in" id="contact-info">
+                <div class="collapse" id="notes">
                   <div class="panel-body">
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Supplier contact name</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Supplier contact name" value="Mike Lawrence">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
                       </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Contact phone</label>
-                      <div class="col-xs-8">
-                        <input type="phone" class="form-control" placeholder="Contact phone" value="01257 682123">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Contact email</label>
-                      <div class="col-xs-8">
-                        <input type="email" class="form-control" placeholder="Contact email" value="mlaurence@smith.co.uk">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
+
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#analysis" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Review</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
-                  <h4 class="panel-title pull-right"><span class="label bg-success text-success">Reviewed</span></h4>
+                  <h4 class="panel-title pull-left">Environment risk scoring</h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-success">27 - Minor</span>
+                  </h4>
                 </div>
-                <div class="collapse" id="review-info">
+                <div class="collapse" id="analysis">
+                  <div class="isometrica-risk-grading">
+
+              	    <table class="table">
+                	    <tbody>
+                  	    <tr>
+                    	    <th rowspan="6" class="impacts-heading"><span>Impacts</span></th>
+                    	    <th class="impact-label">Catastrophic</th>
+                    	    <td class="impact impact-low">45</td>
+                    	    <td class="impact impact-medium">65</td>
+                    	    <td class="impact impact-high">80</td>
+                    	    <td class="impact impact-high">90</td>
+                    	    <td class="impact impact-high">100</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Significant</th>
+                    	    <td class="impact impact-low">35</td>
+                    	    <td class="impact impact-medium">60</td>
+                    	    <td class="impact impact-high">75</td>
+                    	    <td class="impact impact-high">80</td>
+                    	    <td class="impact impact-high">85</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Moderate</th>
+                    	    <td class="impact impact-low">26</td>
+                    	    <td class="impact impact-medium">51</td>
+                    	    <td class="impact impact-medium">54</td>
+                    	    <td class="impact impact-medium">59</td>
+                    	    <td class="impact impact-medium">66</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Minor</th>
+                    	    <td class="impact impact-vlow">15</td>
+                    	    <td class="impact impact-low">27</td>
+                    	    <td class="impact impact-low">30</td>
+                    	    <td class="impact impact-low">36</td>
+                    	    <td class="impact impact-low">42</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">Limited</th>
+                    	    <td class="impact impact-vlow">1</td>
+                    	    <td class="impact impact-vlow">8</td>
+                    	    <td class="impact impact-vlow">12</td>
+                    	    <td class="impact impact-vlow">16</td>
+                    	    <td class="impact impact-vlow active">27</td>
+                  	    </tr>
+                  	    <tr>
+                    	    <th class="impact-label">&nbsp;</th>
+                    	    <th class="impact-label">V.Low</th>
+                    	    <th class="impact-label">Low</th>
+                    	    <th class="impact-label">Med</th>
+                    	    <th class="impact-label">High</th>
+                    	    <th class="impact-label">V.High</th>
+                  	    </tr>
+                  	    <tr>
+                    	    <th><a href="#"><i class="fa fa-question-circle fa-2x"></i></a></th>
+                    	    <th>&nbsp;</th>
+                    	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
+                  	    </tr>
+                	    </tbody>
+              	    </table>
+
+        	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#evaluation" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Legal evaluation</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="evaluation">
                   <div class="panel-body">
+
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Last reviewed</label>
+                      <label class="control-label col-xs-4">Relevant legal agency</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Last reviewed" value="1 Dec 2014">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Reviewed by</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Reviewed by" value="Simon Shore">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Review status</label>
-                      <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-success active">Reviewed</button>
-                          <button type="button" class="btn btn-default">Imminent</button>
-                          <button type="button" class="btn btn-default">Overdue</button>
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Relevant legal agency" value="DEWHA"/>
+                          <span class="input-group-btn">
+                            <ul class="dropdown-menu dropdown-menu-right">
+                              <li><a href="#">DEWHA</a></li>
+                              <li><a href="#">Lorem</a></li>
+                              <li><a href="#">Ipsum</a></li>
+                            </ul>
+                            <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                          </span>
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Internal owner</label>
+                      <label class="control-label col-xs-4">Description of legal requirements</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Internal owner" value="Simon Shore">
+                        <textarea class="form-control" rows="3" placeholder="Description of legal requirements">Targets for energy use and annual reporting of energy performance to DEWHA</textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Previous incident experience (if any)</label>
+                      <div class="col-xs-8">
+                        <textarea class="form-control" rows="3" placeholder="Previous incident experience (if any)">Omitted to send report in 2014</textarea>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+
                   </div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#more-info" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#treatment" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Key information</h4>
+                  <h4 class="panel-title pull-left">Control &amp; compliance</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="more-info">
+                <div class="collapse" id="treatment">
                   <div class="panel-body">
+
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Products &amp; services supplied</label>
+                      <label class="control-label col-xs-4">Evidence required for compliance</label>
                       <div class="col-xs-8">
-                        <textarea class="form-control" rows="3" placeholder="Strengths & weaknesses">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque id felis ac sem faucibus auctor. Nullam vulputate mi libero. Donec imperdiet cursus sapien et volutpat.</textarea>
+                        <textarea class="form-control" rows="3" placeholder="Evidence required for compliance">Monitoring of energy use and current report to DEWHA</textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Comments on our requirements</label>
+                      <label class="control-label col-xs-4">Target date</label>
                       <div class="col-xs-8">
-                        <textarea class="form-control" rows="3" placeholder="Our requirements">Flanges need to be heat treated to spec 1706. Supplier must be ISO 9001 accredited.</textarea>
+                        <input type="text" class="form-control" placeholder="Target date" value="1 Sep 2015"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Overall supplier evaluation</label>
+                      <label class="control-label col-xs-4">Completed and verified?</label>
                       <div class="col-xs-8">
-                        <textarea class="form-control" rows="3" placeholder="Strengths & weaknesses">Lorem ipsum dolor sit amet, consectetur. Pellentesque id felis ac sem faucibus auctor. Nullam vulputate mi libero. Donec imperdiet cursus sapien et volutpat.</textarea>
+                        <button type="button" class="btn btn-info btn-checkbox">
+                          <i class="fa fa-check fa-lg no-margin"></i>
+                        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Signed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Signed by" value="Peter Jones"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
+
                   </div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Reported non-conformities</h4>
+                  <h4 class="panel-title pull-left">Improvement opportunities</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="nonconformities">
+                <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">
 
                     <div>
                       <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="pull-left">
-                            <strong>NC15</strong>
-                            Fractured flange
+                            <strong>IO731</strong>
+                            Buy new machines
                           </div>
                           <div class="pull-right">
-                            <span class="label label-danger">Open - Overdue</span>
+                            <span class="label label-success">Closed</span>
                           </div>
                         </div>
-                        <div class="collapse" id="nonconformity-1">
+                        <div class="collapse" id="improvement-1">
                           <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-3"></label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Description</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Fractured flange">
+                  			        <input type="text" class="form-control" value="Fix machine calibration">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Status</label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-info">
+                                    Closed
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Cancelled
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-9 col-sm-offset-3 clearfix">
+                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>IO732</strong>
+                            Change build process
+                          </div>
+                          <div class="pull-right">
+                            <span class="label label-warning">Open - In progress</span>
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-2">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-3"></label>
+                  		        <div class="col-xs-9">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Description</label>
+                  		        <div class="col-xs-9">
+                  			        <input type="text" class="form-control" value="Change build process">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -635,51 +753,63 @@
                       </div>
                     </div>
 
-                    <div class="text-center">
-                      <button type="button" class="btn btn-link btn-add">Add non-conformity</button>
-                    </div>
+                    <button type="button" class="btn btn-link btn-block btn-add">Add improvement opportunity</button>
 
-                  </div>
+        	        </div>
                 </div>
               </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notes</h4>
+                  <h4 class="panel-title pull-left">Review</h4>
                   <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label bg-warning text-warning">Awaiting review</span></h4>
                 </div>
-                <div class="collapse" id="notes">
+                <div class="collapse" id="review-info">
                   <div class="panel-body">
-
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
-                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
-                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
-                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
-                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Last reviewed</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reviewed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Reviewed by" value="Peter Jones"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Review status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">Reviewed</button>
+                          <button type="button" class="btn btn-warning active">Awaiting review</button>
+                          <button type="button" class="btn btn-default">Overdue</button>
                         </div>
                       </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
                     </div>
-
                   </div>
                 </div>
               </div>
 
             </div>
 
-
             <div class="text-center">
-              <button type="button" class="btn btn-default btn-delete">Delete</button>
+              <button type="button" class="btn btn-default">Delete</button>
             </div>
 
+
           </div>
-          <div class="modal-footer">
-            <div class="isometrica-changelog collapsed">
+        </form>
+        <div class="modal-footer">
+          <div class="isometrica-changelog collapsed">
               <div class="row isometrica-changelog-toggle collapsed" data-toggle="collapse" data-target="#changelog-2">
                 <div class="col-xs-4">
                   <div><small>Created by: Nigel Cheshire</small></div>
@@ -760,11 +890,29 @@
                 </div>
               </div>
             </div>
-          </div>
-        </form>
+        </div>
       </div>
     </div>
   </div>
+
+
+  <!-- Risk Analysis: Risk grading tool -->
+  <div class="modal fade isometrica-risk-grading-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+  	    <div class="modal-header clearfix">
+  	      <h4 class="modal-title pull-left">Select risk level</h4>
+  	      <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
+  	        Cancel
+  	      </button>
+  	    </div>
+  	    <div class="isometrica-risk-grading">
+
+  	    </div>
+      </div>
+    </div>
+  </div>
+
 
   <script>
 
@@ -779,12 +927,6 @@
         $(".bootcards-cards").attr('style','display:block !important');
       });
     }
-
-
-  /* Tooltips */
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
 
 </script>
 
