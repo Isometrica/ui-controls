@@ -2104,7 +2104,8 @@ body.desktop.isometrica-overview-page .navbar-header {
   top: auto;
   left: auto;
   right: auto;
-  bottom: auto; }
+  bottom: auto;
+  height: 115px; }
   .isometrica-overview-page .guidance-bar h4 {
     line-height: 28px; }
   @media (max-width: 767px) {
