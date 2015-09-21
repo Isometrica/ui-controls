@@ -418,34 +418,7 @@
   			        </button>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Last reviewed</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Reviewed by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Reviewed by" value="Peter Jones"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Review status</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">Reviewed</button>
-                  <button type="button" class="btn btn-warning active">Awaiting review</button>
-                  <button type="button" class="btn btn-default">Overdue</button>
-                </div>
-              </div>
-            </div>
+
             <div class="form-group">
               <label class="control-label col-xs-4">Links to other risks</label>
               <div class="col-xs-8">
@@ -819,6 +792,46 @@
                     <button type="button" class="btn btn-link btn-block btn-add">Add improvement opportunity</button>
 
         	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Review</h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label bg-warning text-warning">Awaiting review</span></h4>
+                </div>
+                <div class="collapse" id="review-info">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Last reviewed</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reviewed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Reviewed by" value="Peter Jones"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Review status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">Reviewed</button>
+                          <button type="button" class="btn btn-warning active">Awaiting review</button>
+                          <button type="button" class="btn btn-default">Overdue</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
