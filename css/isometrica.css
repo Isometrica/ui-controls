@@ -3421,13 +3421,18 @@ body.desktop.isometrica-overview-page .navbar-header {
   font-size: 14px; }
 
 .isometrica-calendar.isometrica-calendar-year th {
-  width: 5.83333%;
-  /* 70% / 12 */ }
+  width: 6.25%;
+  /* 75% / 12 */ }
   .isometrica-calendar.isometrica-calendar-year th:first-child {
-    width: 30%; }
+    width: 25%;
+    border-right: 1px solid #bbb; }
 
 .isometrica-calendar.isometrica-calendar-quarter th {
-  width: 7.6923%; }
+  width: 5.76923%;
+  /* 75% / 13 */ }
+  .isometrica-calendar.isometrica-calendar-quarter th:first-child {
+    width: 25%;
+    border-right: 1px solid #bbb; }
 
 .isometrica-calendar thead {
   background: #f5f5f5; }
@@ -3444,7 +3449,7 @@ body.desktop.isometrica-overview-page .navbar-header {
   border-right: 1px solid #ddd; }
 
 .isometrica-calendar tbody th {
-  font-size: 18px;
+  font-size: 16px;
   padding: 10px 15px !important;
   font-weight: 500; }
 
