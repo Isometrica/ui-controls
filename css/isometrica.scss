@@ -39,6 +39,10 @@ body.desktop {
   }
 }
 
+.margin-left {
+  margin-left: 5px;
+}
+
 .row-eq-height,
 .row-eq-height > div {
   display: -webkit-box;
@@ -1016,6 +1020,16 @@ $status-indicator-size: 16px;
       }
     }
 
+    .panel-subheading {
+      border-top: 1px solid #ddd;
+
+      .panel-title {
+        margin: 0;
+        color: #333;
+        font-size: 14px;
+      }
+    }
+
     .list-group-item {
       i {
         width: auto;
@@ -1059,6 +1073,24 @@ $status-indicator-size: 16px;
 
 .desktop {
   .isometrica-container-listdetail {
+
+    position: fixed;
+    top: 50px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding-top: 52px;
+
+    > .row {
+      height: 100%;
+
+      > div {
+        overflow-x: hidden;
+        height: 100%;
+        padding-top: 30px;
+      }
+    }
+
     .bootcards-list {
       .panel-body {
         padding: 10px 15px;
