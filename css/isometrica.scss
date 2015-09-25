@@ -1125,6 +1125,10 @@ $status-indicator-size: 16px;
         overflow-x: hidden;
         height: 100%;
         padding-top: 30px;
+
+        &::-webkit-scrollbar {
+            width: 0px;
+        }
       }
     }
 

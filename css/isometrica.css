@@ -750,6 +750,8 @@ input.form-value {
       overflow-x: hidden;
       height: 100%;
       padding-top: 30px; }
+      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
+        width: 0px; }
   .desktop .isometrica-container-listdetail .bootcards-list .panel-body {
     padding: 10px 15px; }
   .desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active,
