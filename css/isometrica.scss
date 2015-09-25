@@ -182,6 +182,11 @@ input.form-value {
   .btn-group .btn {
     margin-right: 0;
   }
+
+  .input-group .btn {
+    margin-right: 0;
+    margin-bottom: 0;
+  }
 }
 
 .isometrica-rich-text-control {
@@ -1063,6 +1068,21 @@ $status-indicator-size: 16px;
       padding-top: 7px;
       padding-bottom: 7px;
 
+      .list-group-item-heading {
+        //margin-top: 8px;
+        line-height: 24px;
+
+        .label {
+          position: relative;
+          top: -1px;
+          margin-right: 5px;
+        }
+      }
+
+      .list-group-item-text {
+        margin-bottom: 0;
+      }
+
       i {
         width: auto;
         opacity: 1;
@@ -1074,34 +1094,14 @@ $status-indicator-size: 16px;
         margin-bottom: 2px;
       }
 
-      .progress {
-        margin-bottom: 7px;
-      }
+      ol, ul {
+        padding-left: 30px;
 
-      > ul {
-        margin-bottom: 0;
-      }
-
-      > ul > li,
-      > p:not(.list-group-item-text) {
-        margin-bottom: 5px;
-      }
-
-      .list-group-item-text {
-        margin-bottom: 0;
-      }
-
-      .list-group-item-heading {
-        //margin-top: 8px;
-        line-height: 24px;
-
-        .label {
-          position: relative;
-          top: -1px;
-          margin-right: 5px;
+        li {
+          margin-bottom: 5px;
         }
-
       }
+
     }
 
 

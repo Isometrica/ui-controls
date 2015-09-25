@@ -178,12 +178,12 @@
 								Edit
 							</a>
 						</div>
-						<h3 class="panel-title">Meeting record</h3>
+						<h3 class="panel-title">Meeting record <span class="label label-danger margin-left">Overdue actions</span></h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Type</p>
-              <h4 class="list-group-item-heading">Annual planning <span class="label label-danger">Overdue actions</span></h4>
+              <h4 class="list-group-item-heading">Annual planning</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Date</p>
@@ -193,15 +193,22 @@
               <p class="list-group-item-text">Notes</p>
               <h4 class="list-group-item-heading">This meeting was held over from last week</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Attendees</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Attendees</p>
               <h4 class="list-group-item-heading">Nigel Cheshire</h4>
               <h4 class="list-group-item-heading">Steve Ives</h4>
               <h4 class="list-group-item-heading">Mark Dixon</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Agenda items</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Agenda items</p>
-
               <ol>
                 <li>
                   <h4 class="list-group-item-heading">Follow up actions from previous management review</h4>
@@ -216,8 +223,8 @@
                 <li>
                   <h4 class="list-group-item-heading">Review business performance information</h4>
                   <ul>
-                    <li><strong>Adjustments to policy</strong></li>
-                    <li><strong>Objectives and targets</strong></li>
+                    <li>Adjustments to policy</li>
+                    <li>Objectives and targets</li>
                   </ul>
                   <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
                 </li>
@@ -228,16 +235,16 @@
                 <li>
                   <h4 class="list-group-item-heading">Manual/Review updates</h4>
                   <ul>
-                    <li><strong>Changes that may affect the Quality Management System</strong></li>
-                    <li><strong>Changes that may affect the Information Security Management System</strong></li>
-                    <li><strong>Recommendations for improvement</strong></li>
+                    <li>Changes that may affect the Quality Management System</li>
+                    <li>Changes that may affect the Information Security Management System</li>
+                    <li>Recommendations for improvement</li>
                   </ul>
                 </li>
                 <li>
                   <h4 class="list-group-item-heading">Resources</h4>
                   <ul>
-                    <li><strong>Staff/staff training</strong></li>
-                    <li><strong>Equipment</strong></li>
+                    <li>Staff/staff training</li>
+                    <li>Equipment</li>
                   </ul>
                   <p class="text-muted">&ldquo;Lorem ipsum dolor est lorem ipsum dolor est&rdquo;</p>
                 </li>
@@ -254,18 +261,31 @@
                   <h4 class="list-group-item-heading">Any other business</h4>
                 </li>
               </ol>
+
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Actions from last meeting - closed</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Actions from last meeting - closed</p>
               <a href="#" class="btn btn-default"><strong>MA129</strong> Arrange briefing session for Michael Hamilton <i class="fa fa-circle margin-left text-success"></i></a>
               <a href="#" class="btn btn-default"><strong>MA130</strong> Check on how up-to-date we are on R&amp;D tax credits <i class="fa fa-circle margin-left text-success"></i></a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Actions from last meeting - open</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Actions from last meeting - open</p>
               <a href="#" class="btn btn-default"><strong>MA110</strong> Ask Lyndsey to change DSO calculator <i class="fa fa-circle margin-left text-danger"></i></a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">New meeting actions</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">New meeting actions</p>
               <a href="#" class="btn btn-default"><strong>MA135</strong> Investigate Japan pricing <i class="fa fa-circle margin-left text-warning"></i></a>
               <a href="#" class="btn btn-default"><strong>MA136</strong> Renew EMEA prices <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
@@ -732,6 +752,7 @@
                 	        </div>
                         </div>
                       </div>
+                      <!--
                       <div class="panel panel-default bootcards-panel-collapsing collapse" id="addAttendee2">
                         <div class="panel-heading clearfix" href="#attendee-new-2" data-toggle="collapse" aria-expanded="true">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -779,6 +800,7 @@
                         </div>
 
                       </div>
+                      -->
                     </div>
 
                     <button type="button" class="btn btn-link btn-block btn-add" data-toggle="collapse" data-target="#addAttendee2">Add attendee</button>
@@ -800,8 +822,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              1. Follow up actions from previous management review
+                            <div class="col-xs-1">
+                              1.
+                            </div>
+                            <div class="col-xs-8">
+                              Follow up actions from previous management review
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -870,8 +895,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              2. Internal Audit results
+                            <div class="col-xs-1">
+                              2.
+                            </div>
+                            <div class="col-xs-8">
+                              Internal Audit results
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -940,8 +968,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-3" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              3. Review feedback and complaints
+                            <div class="col-xs-1">
+                              3.
+                            </div>
+                            <div class="col-xs-8">
+                              Review feedback and complaints
                             </div>
                             <div class="col-xs-1">
                               <i class="fa fa-comment-o"></i>
@@ -1011,8 +1042,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-4" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              <strong>4. Review business performance information</strong>
+                            <div class="col-xs-1">
+                              <strong>4.</strong>
+                            </div>
+                            <div class="col-xs-8">
+                              <strong>Review business performance information</strong>
                             </div>
                             <div class="col-xs-1">
                               <i class="fa fa-comment-o"></i>
@@ -1082,8 +1116,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-5" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              5. Status of corrective and preventative actions
+                            <div class="col-xs-1">
+                              5.
+                            </div>
+                            <div class="col-xs-8">
+                              Status of corrective and preventative actions
                             </div>
                             <div class="col-xs-1">
                               <i class="fa fa-comment-o"></i>
@@ -1153,8 +1190,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-6" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              6. Manual/Review updates
+                            <div class="col-xs-1">
+                              6.
+                            </div>
+                            <div class="col-xs-8">
+                              Manual/Review updates
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -1223,8 +1263,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-7" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              7. Resources
+                            <div class="col-xs-1">
+                              7.
+                            </div>
+                            <div class="col-xs-8">
+                              Resources
                             </div>
                             <div class="col-xs-1">
                               <i class="fa fa-comment-o"></i>
@@ -1294,8 +1337,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-8" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              8. Evidence of compliance with legal and other requirements (where applicable)
+                            <div class="col-xs-1">
+                              8.
+                            </div>
+                            <div class="col-xs-8">
+                              Evidence of compliance with legal and other requirements (where applicable)
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -1364,8 +1410,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-9" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              9. Risk Management and status of Risk Assessments
+                            <div class="col-xs-1">
+                              9.
+                            </div>
+                            <div class="col-xs-8">
+                              Risk Management and status of Risk Assessments
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -1434,8 +1483,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-10" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              10. Serious untoward incidents
+                            <div class="col-xs-1">
+                              10.
+                            </div>
+                            <div class="col-xs-8">
+                              Serious untoward incidents
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -1504,8 +1556,11 @@
                         <div class="panel-heading clearfix collapsed" href="#agenda-item-11" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="row">
-                            <div class="col-xs-9">
-                              11. Any other business
+                            <div class="col-xs-1">
+                              11.
+                            </div>
+                            <div class="col-xs-8">
+                              Any other business
                             </div>
                             <div class="col-xs-1">
                             </div>
@@ -1819,9 +1874,7 @@
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-meetings-actions-new">
                 <div class="panel-heading clearfix collapsed" href="#new-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
