@@ -31,6 +31,8 @@ body.desktop {
 
 .label {
   padding: .25em .6em;
+
+
 }
 
 .container {
@@ -1056,7 +1058,8 @@ $status-indicator-size: 16px;
       }
 
       .btn {
-        margin-bottom: 5px;
+        margin-top: 3px;
+        margin-bottom: 2px;
       }
 
       .progress {
@@ -1072,9 +1075,13 @@ $status-indicator-size: 16px;
         margin-bottom: 5px;
       }
 
+      .list-group-item-text {
+        margin-bottom: 0;
+      }
+
       .list-group-item-heading {
         //margin-top: 8px;
-        line-height: 1.35;
+        line-height: 24px;
 
         .label {
           position: relative;
@@ -1814,7 +1821,7 @@ $status-indicator-size: 16px;
     	text-align: center;
     	color: #337ab7;
     	position: absolute;
-    	left: 10px;
+    	left: 13px;
     	top: 50%;
     	margin-top: -11px;
     	transition: all 0.3s ease;
@@ -1822,10 +1829,10 @@ $status-indicator-size: 16px;
 
   	.disclosure-indicator {
     	line-height: 1;
-    	font-size: 16px;
+    	font-size: 14px;
     	color: #aaa;
     	position: absolute;
-    	right: 15px;
+    	right: 18px;
     	top: 50%;
     	margin-top: -8px;
   	}
@@ -1836,6 +1843,10 @@ $status-indicator-size: 16px;
       //margin-right: 5px;
       margin-left: 10px;
       font-size: 12px;
+
+      &.text-muted {
+        color: #999;
+      }
     }
 
     &:hover, &:focus, &:active {

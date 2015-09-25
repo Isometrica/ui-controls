@@ -179,7 +179,6 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
-  						<span class="label label-danger risk-square">91</span>
               Risk statement
               <span class="label label-warning margin-left">Awaiting review</span>
             </h3>
@@ -226,8 +225,12 @@
               <a href="#" class="btn btn-default"><strong>RK15</strong> Flu pandemic <i class="fa fa-circle margin-left text-success"></i></a>
               <a href="#" class="btn btn-default"><strong>RK16</strong> Explosion of binder <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Files</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Files</p>
               <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
               <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
               <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt</a>
@@ -437,16 +440,13 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Risk name</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Name" value="Spillage of solvent"/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">RK18</span>
+                  <input type="text" class="form-control" placeholder="Name" value="Spillage of solvent"/>
+                </div>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Ref</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="disabled" value="RK18"/>
               </div>
             </div>
             <div class="form-group">
@@ -513,25 +513,38 @@
                 <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add risk</button>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <a href="#" class="btn btn-default">File_name_here.docx</a>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle fa-lg no-margin"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add file</button>
-              </div>
-            </div>
+
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label text-muted">4</span>
+                  </h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx<i class="fa fa-times-circle fa-lg margin-left"></i></a>
+                        <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls<i class="fa fa-times-circle fa-lg margin-left"></i></a>
+                        <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt<i class="fa fa-times-circle fa-lg margin-left"></i></a>
+                        <a href="" class="btn btn-default"><i class="fa fa-file-pdf-o fa-lg"></i> brochure.pdf<i class="fa fa-times-circle fa-lg margin-left"></i></a>
+
+                        <div><button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add file</button></div>
+                      </div>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
                   <div class="panel-body">
@@ -558,7 +571,7 @@
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Risk Scoring</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-danger">80 - Very high</span>
+                    <span class="label label-danger">91 - Catastrophic</span>
                   </h4>
                 </div>
                 <div class="collapse" id="analysis">
@@ -571,8 +584,8 @@
                     	    <th class="impact-label">Catastrophic</th>
                     	    <td class="impact impact-low">45</td>
                     	    <td class="impact impact-medium">65</td>
-                    	    <td class="impact impact-high active">80</td>
-                    	    <td class="impact impact-high">90</td>
+                    	    <td class="impact impact-high active">91</td>
+                    	    <td class="impact impact-high">95</td>
                     	    <td class="impact impact-high">100</td>
                   	    </tr>
                   	    <tr>
@@ -630,7 +643,9 @@
                 <div class="panel-heading clearfix collapsed" href="#evaluation" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Evaluation</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right">
+                    <span class="label text-muted">Avoid</span>
+                  </h4>
                 </div>
                 <div class="collapse" id="evaluation">
                   <div class="panel-body">
@@ -674,7 +689,9 @@
                 <div class="panel-heading clearfix collapsed" href="#treatment" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Treatment &amp; control</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right">
+                    <span class="label text-muted">Verified</span>
+                  </h4>
                 </div>
                 <div class="collapse" id="treatment">
                   <div class="panel-body">
@@ -722,7 +739,9 @@
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Improvement opportunities</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right">
+                    <span class="label text-muted">2</span>
+                  </h4>
                 </div>
                 <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">
