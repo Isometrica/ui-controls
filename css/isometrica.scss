@@ -169,7 +169,8 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
-.form-horizontal .form-group {
+.form-horizontal .form-group,
+.list-group-item {
   .btn {
     margin-bottom: 8px;
   }

@@ -107,13 +107,17 @@ input.form-value {
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
 
-.form-horizontal .form-group .btn {
+.form-horizontal .form-group .btn,
+.list-group-item .btn {
   margin-bottom: 8px; }
 
-.form-horizontal .form-group .btn, .form-horizontal .form-group .btn-group {
+.form-horizontal .form-group .btn,
+.form-horizontal .form-group .btn-group,
+.list-group-item .btn, .list-group-item .btn-group {
   margin-right: 3px; }
 
-.form-horizontal .form-group .btn-group .btn {
+.form-horizontal .form-group .btn-group .btn,
+.list-group-item .btn-group .btn {
   margin-right: 0; }
 
 .isometrica-rich-text-control {
