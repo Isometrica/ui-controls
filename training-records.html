@@ -157,7 +157,7 @@
 								Edit
 							</a>
 						</div>
-						<h3 class="panel-title">Training record</h3>
+						<h3 class="panel-title">Training record <span class="label label-success margin-left">Passed</span></h3>
 					</div>
           <div class="list-group">
 
@@ -183,10 +183,19 @@
               <p class="list-group-item-text">Competency description</p>
               <h4 class="list-group-item-heading">Understanding of ISO 9001 management system</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes on training required</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Notes on training required</p>
               <h4 class="list-group-item-heading">Basic introduction to ISO 9001:2015</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Training report</h4>
+          </div>
+          <div class="list-group">
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
@@ -215,9 +224,12 @@
                 </div>
               </div>
             </div>
-
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">File(s)</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">File(s)</p>
               <a href="#" class="btn btn-default">
                 <i class="fa fa-file-word-o fa-lg"></i>
                 Investigation reports.docx
@@ -375,7 +387,7 @@
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes on training required</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
                   <div class="panel-body">
@@ -398,68 +410,90 @@
                   </div>
                 </div>
               </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#report" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Training report</h4>
+                  <h4 class="panel-title pull-right"><span class="label label-success">Passed</span></h4>
+                </div>
+                <div class="collapse" id="report">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Date needed by</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Date needed by" value="30 Jun 2015"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Date trained</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Date trained" value="5 Jul 2015"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Outcome</label>
+                      <div class="col-xs-8">
+                        <div class="form-control-with-status">
+                          <select class="form-control">
+                            <option></option>
+                            <option>Attended</option>
+                            <option selected="">Passed</option>
+                            <option>Failed</option>
+                            <option>No longer required</option>
+                            <option>Rescheduled</option>
+                          </select>
+                          <span class="label label-success status-indicator"></span>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Visibility</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info">Open</button>
+                          <button type="button" class="btn btn-default">Restricted</button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">File(s)</h4>
+                  <h4 class="panel-title pull-right text-muted">1</h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-word-o fa-lg"></i>
+                            Example.docx
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
             </div>
 
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Date needed by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Date needed by" value="30 Jun 2015"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Date trained</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Date trained" value="5 Jul 2015"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Outcome</label>
-              <div class="col-xs-8">
-                <div class="form-control-with-status">
-                  <select class="form-control">
-                    <option></option>
-                    <option>Attended</option>
-                    <option selected="">Passed</option>
-                    <option>Failed</option>
-                    <option>No longer required</option>
-                    <option>Rescheduled</option>
-                  </select>
-                  <span class="label label-success status-indicator"></span>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Visibility</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">Open</button>
-                  <button type="button" class="btn btn-default">Restricted</button>
-                </div>
-              </div>
-            </div>
-
-            <hr>
 
             <div class="text-center">
               <button type="button" class="btn btn-default">Delete</button>

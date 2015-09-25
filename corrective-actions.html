@@ -174,12 +174,13 @@
 						</div>
 						<h3 class="panel-title">
   						Corrective Action
+  						<span class="label label-danger margin-left">Overdue</span>
   				  </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Fix machine calibration <span class="label label-danger">Open – Overdue</span></h4>
+              <h4 class="list-group-item-heading">Fix machine calibration </h4>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -190,22 +191,8 @@
               </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">System</p>
-                  <h4 class="list-group-item-heading">Quality management</h4>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
                   <p class="list-group-item-text">Created date</p>
                   <h4 class="list-group-item-heading">9 Jun 2015</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Target date</p>
-                  <h4 class="list-group-item-heading">9 Sep 2015</h4>
                 </div>
               </div>
             </div>
@@ -213,21 +200,79 @@
               <p class="list-group-item-text">Created from</p>
               <a href="#" class="btn btn-default"><strong>NC216</strong> Brackets getting corroded <i class="fa fa-circle margin-left text-danger"></i></a>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Owner</p>
-              <h4 class="list-group-item-heading">J.Jones</h4>
-            </div>
 
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Owner</p>
+                  <h4 class="list-group-item-heading">J.Jones</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">System</p>
+                  <h4 class="list-group-item-heading">Quality management</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Status</h4>
+          </div>
+          <div class="list-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Target date</p>
+                  <h4 class="list-group-item-heading">9 Sep 2015</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Plan exists?</p>
+                  <h4 class="list-group-item-heading">Yes</h4>
+                </div>
+              </div>
+            </div>
             <div class="list-group-item">
-              <p class="list-group-item-text">File(s)</p>
+              <p class="list-group-item-text">Status</p>
+              <h4 class="list-group-item-heading"><span class="label label-danger">Overdue</span></h4>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Files</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
               <a href="#" class="btn btn-default">
                 <i class="fa fa-file-word-o fa-lg"></i>
                 Example.docx
               </a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
               <h4 class="list-group-item-heading">Immediately closed down production line</h4>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Related corrective actions</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="#" class="btn btn-default"><strong>CA129</strong> Fix machine calibration <i class="fa fa-circle margin-left text-success"></i></a>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Related improvement opportunities</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="#" class="btn btn-default"><strong>IO731</strong> Buy new machines <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>IO732</strong> Change build process <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
           </div>
           <div class="panel-footer">
@@ -341,53 +386,32 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Description</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">CA129</span>
+                  <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
+                </div>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Ref</label>
+              <label class="control-label col-xs-4">Created date</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="CA129"/>
+                <input type="text" class="form-control" value="9 Sep 2015" placeholder="Created date" disabled=""/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-xs-4">Created from</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="CN19 Brackets getting corroded"/>
+                <a href="#" class="btn btn-default"><strong>NC216</strong> Brackets getting corroded <i class="fa fa-circle margin-left text-danger"></i></a>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Status</label>
-              <div class="col-xs-8">
-                <div class="btn-group isometrica-btn-toggle">
-                  <button type="button" class="btn btn-info">
-                    Open
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    Closed
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    Cancelled
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Plan exists?</label>
-              <div class="col-xs-8">
-                <div class="btn-group isometrica-btn-toggle">
-                  <button type="button" class="btn btn-info">
-                    Yes
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    No
-                  </button>
-                </div>
-              </div>
-            </div>
+
+
 
             <div class="form-group">
               <label class="control-label col-xs-4">Owner</label>
@@ -409,56 +433,100 @@
                 </select>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Created date</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="9 Sep 2015" placeholder="Created date"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Target date</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="9 Dec 2015" placeholder="Target date"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-progress">
-                    <span class="progress-indicator" style="width: 75%;"></span>
-                    <i class="fa fa-file-excel-o fa-lg"></i>
-                    currently_uploading_file.xls
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-              </div>
-            </div>
+
+
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#status" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Status</h4>
+                  <h4 class="panel-title pull-right"><span class="label label-danger">Overdue</span></h4>
+                </div>
+                <div class="collapse in" id="status">
+                  <div class="panel-body">
+
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Target date</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="9 Dec 2015" placeholder="Target date"/>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            Open
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Closed
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            Cancelled
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Plan exists?</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group isometrica-btn-toggle">
+                          <button type="button" class="btn btn-info">
+                            Yes
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            No
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-word-o fa-lg"></i>
+                            Survey.docx
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-excel-o fa-lg"></i>
+                            Survey results.xls
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
                   <div class="panel-body">
@@ -486,7 +554,7 @@
                 <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Related corrective actions</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="corrective-actions">
                   <div class="panel-body">
@@ -679,7 +747,7 @@
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Related improvement opportunities</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">

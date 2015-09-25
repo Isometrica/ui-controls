@@ -167,54 +167,84 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
-
   						Non-conformity
+  						<span class="label label-warning margin-left">In progress</span>
   				  </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Extrusion failed in service <span class="label label-warning">Open - In progress</span></h4>
+              <h4 class="list-group-item-heading">Extrusion failed in service </h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Ref number</p>
+              <h4 class="list-group-item-heading">NC216</h4>
+            </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Linked from</p>
+              <a href="#" class="btn btn-default"><strong>CN19</strong> Customer complaint about XYZ extrusion <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
             <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Ref number</p>
-                  <h4 class="list-group-item-heading">NC216</h4>
-                </div>
-              </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Recorded by</p>
                   <h4 class="list-group-item-heading">S.Smith</h4>
                 </div>
               </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Source</p>
+                  <h4 class="list-group-item-heading">Customer</h4>
+                </div>
+              </div>
             </div>
-
             <div class="list-group-item">
-              <p class="list-group-item-text">Linked from</p>
-              <a href="#" class="btn btn-default"><strong>CN19</strong> Customer complaint about XYZ extrusion <i class="fa fa-circle margin-left text-warning"></i></a>
+              <p class="list-group-item-text">Management system</p>
+              <h4 class="list-group-item-heading">Business continuity</h4>
             </div>
-
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Source</p>
-              <h4 class="list-group-item-heading">Geest PLC</h4>
-            </div>
-
-            <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
               <h4 class="list-group-item-heading">Immediately closed down production line</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">File(s)</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">File(s)</p>
               <a href="#" class="btn btn-default">
                 <i class="fa fa-file-word-o fa-lg"></i>
                 Investigation reports.docx
               </a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Findings</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Findings</p>
               <h4 class="list-group-item-heading">We examined the extrusion and found it had a hairline fracture</h4>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Corrective actions</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="#" class="btn btn-default"><strong>CA129</strong> Fix machine calibration <i class="fa fa-circle margin-left text-success"></i></a>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Improvement opportunities</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="#" class="btn btn-default"><strong>IO731</strong> Buy new machines <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>IO732</strong> Change build process <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
           </div>
           <div class="panel-footer">
@@ -328,23 +358,19 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Description</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" value="Extrusion failed in service" placeholder="Description"/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">NS216</span>
+                  <input type="text" class="form-control" value="Extrusion failed in service" placeholder="Description"/>
+                </div>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
             <div class="form-group">
-
-              <label class="control-label col-xs-4">Ref</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="NS216"/>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Linked from</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="CN19 Customer complaint about XYZ extrusion"/>
+                <a href="#" class="btn btn-default"><strong>CN19</strong> Customer complaint about XYZ extrusion <i class="fa fa-circle margin-left text-warning"></i></a>
               </div>
             </div>
 
@@ -377,15 +403,6 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Notes</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" placeholder="Notes" rows="2"></textarea>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Management system</label>
               <div class="col-xs-8">
                 <select class="form-control">
@@ -396,38 +413,73 @@
                 </select>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-progress">
-                    <span class="progress-indicator" style="width: 75%;"></span>
-                    <i class="fa fa-file-excel-o fa-lg"></i>
-                    currently_uploading_file.xls
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-              </div>
-            </div>
-
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-word-o fa-lg"></i>
+                            Survey.docx
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-excel-o fa-lg"></i>
+                            Survey results.xls
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#findings" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Findings</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="findings">
                   <div class="panel-body">
@@ -452,7 +504,7 @@
                 <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Corrective actions</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label label-danger">Overdue</span></h4>
                 </div>
                 <div class="collapse" id="corrective-actions">
                   <div class="panel-body">
@@ -466,7 +518,7 @@
                             Fix machine calibration
                           </div>
                           <div class="pull-right">
-                            9 Sep 2015 <span class="label label-danger">Open - Overdue</span>
+                            9 Sep 2015 <span class="label label-danger">Overdue</span>
                           </div>
                         </div>
                         <div class="collapse" id="action-1">
@@ -552,7 +604,7 @@
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Improvement opportunities</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label label-warning">In progress</span></h4>
                 </div>
                 <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">
@@ -627,7 +679,7 @@
                             Change build process
                           </div>
                           <div class="pull-right">
-                            <span class="label label-warning">Open - In progress</span>
+                            <span class="label label-warning">In progress</span>
                           </div>
                         </div>
                         <div class="collapse" id="improvement-2">

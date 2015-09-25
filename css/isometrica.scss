@@ -53,6 +53,16 @@ body.desktop {
   display: flex;
 }
 
+
+
+/* BUTTONS */
+
+.btn[disabled] {
+  opacity: 1;
+}
+
+
+
 /* COLORS */
 
 .text-danger {
