@@ -688,15 +688,19 @@ input.form-value {
     border-bottom: 0;
     background: white;
     padding-top: 15px;
-    padding-bottom: 5px;
-    margin-top: 5px; }
+    padding-bottom: 0; }
     .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
       margin: 0;
       font-size: 18px;
       font-weight: normal;
-      color: #999; }
+      color: #777; }
+  .isometrica-container-listdetail .bootcards-cards .list-group {
+    padding-top: 8px;
+    padding-bottom: 8px; }
   .isometrica-container-listdetail .bootcards-cards .list-group-item {
-    border: 0 !important; }
+    border: 0 !important;
+    padding-top: 7px;
+    padding-bottom: 7px; }
     .isometrica-container-listdetail .bootcards-cards .list-group-item i {
       width: auto;
       opacity: 1;
