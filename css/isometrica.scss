@@ -169,8 +169,18 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
-.form-horizontal .form-group .btn {
-  margin-bottom: 4px;
+.form-horizontal .form-group {
+  .btn {
+    margin-bottom: 8px;
+  }
+
+  .btn, .btn-group {
+    margin-right: 3px;
+  }
+
+  .btn-group .btn {
+    margin-right: 0;
+  }
 }
 
 .isometrica-rich-text-control {
@@ -1831,12 +1841,17 @@ $status-indicator-size: 16px;
   	.disclosure-indicator {
     	line-height: 1;
     	font-size: 14px;
-    	color: #aaa;
+    	color: #999;
     	position: absolute;
-    	right: 18px;
+    	right: 16px;
     	top: 50%;
     	margin-top: -8px;
   	}
+
+    .text-muted {
+      color: #777;
+      font-weight: normal;
+    }
 
     .label {
       position: relative;
