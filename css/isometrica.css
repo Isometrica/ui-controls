@@ -684,30 +684,38 @@ input.form-value {
     margin: -9px 0;
     margin-right: 10px; }
   .isometrica-container-listdetail .bootcards-cards .panel-subheading {
-    border-top: 1px solid #ddd; }
+    border-top: 1px solid #ddd;
+    border-bottom: 0;
+    background: white;
+    padding-top: 15px;
+    padding-bottom: 5px;
+    margin-top: 5px; }
     .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
       margin: 0;
-      color: #333;
-      font-size: 14px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item i {
-    width: auto;
-    opacity: 1;
-    margin-right: 5px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item .btn {
-    margin-bottom: 5px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item .progress {
-    margin-bottom: 7px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item > ul {
-    margin-bottom: 0; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item > ul > li,
-  .isometrica-container-listdetail .bootcards-cards .list-group-item > p:not(.list-group-item-text) {
-    margin-bottom: 5px; }
-  .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
-    line-height: 1.35; }
-    .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading .label {
-      position: relative;
-      top: -1px;
+      font-size: 18px;
+      font-weight: normal;
+      color: #999; }
+  .isometrica-container-listdetail .bootcards-cards .list-group-item {
+    border: 0 !important; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item i {
+      width: auto;
+      opacity: 1;
       margin-right: 5px; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item .btn {
+      margin-bottom: 5px; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item .progress {
+      margin-bottom: 7px; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item > ul {
+      margin-bottom: 0; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item > ul > li,
+    .isometrica-container-listdetail .bootcards-cards .list-group-item > p:not(.list-group-item-text) {
+      margin-bottom: 5px; }
+    .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
+      line-height: 1.35; }
+      .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading .label {
+        position: relative;
+        top: -1px;
+        margin-right: 5px; }
 
 .desktop .isometrica-container-listdetail {
   position: fixed;

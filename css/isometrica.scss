@@ -1022,15 +1022,26 @@ $status-indicator-size: 16px;
 
     .panel-subheading {
       border-top: 1px solid #ddd;
+      border-bottom: 0;
+      background: white;
+      padding-top: 15px;
+      padding-bottom: 5px;
+      margin-top: 5px;
+
 
       .panel-title {
         margin: 0;
-        color: #333;
-        font-size: 14px;
+        font-size: 18px;
+        font-weight: normal;
+        color: #999;
+        //text-transform: uppercase;
+
       }
     }
 
     .list-group-item {
+      border: 0 !important;
+
       i {
         width: auto;
         opacity: 1;
