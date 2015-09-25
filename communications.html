@@ -150,12 +150,12 @@
 								Edit
 							</a>
 						</div>
-						<h3 class="panel-title">Communication</h3>
+						<h3 class="panel-title">Communication <span class="label label-success">Closed</span></h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Customer complaint about XYZ extrusion <span class="label label-success">Closed</span></h4>
+              <h4 class="list-group-item-heading">Customer complaint about XYZ extrusion</h4>
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -185,20 +185,59 @@
                 </div>
               </div>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
-              <h4 class="list-group-item-heading">Customer sent an email stating that product they had purchased last week is too long</h4>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Contact details</h4>
+          </div>
+          <div class="list-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Contact email</p>
+                  <h4 class="list-group-item-heading"><a href="">peter.jackson@abc.net</a></h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Contact phone</p>
+                  <h4 class="list-group-item-heading"><a href="">012 345 6789</a></h4>
+                </div>
+              </div>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Files</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">File attachment(s)</p>
               <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
               <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-pdf-o fa-lg"></i> brochure.pdf</a>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Identified non-conformities</p>
+              <h4 class="list-group-item-heading">Customer sent an email stating that product they had purchased last week is too long</h4>
+            </div>
+          </div>
+
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Identified non-conformities</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
               <a href="#" class="btn btn-default"><strong>NC203</strong> Products out of spec <i class="fa fa-circle margin-left text-success"></i></a>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Patch actions</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="#" class="btn btn-default"><strong>PA129</strong> Replace wing mirrors <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>PA130</strong> Paint blemishes on panel - repaint <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
           </div>
           <div class="panel-footer">
@@ -310,15 +349,12 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Ref</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="CN136"/>
-              </div>
-            </div>
-            <div class="form-group">
               <label class="control-label col-xs-4">Description</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Description" value="Customer complaint about XYZ extrusion"/>
+                <div class="input-group">
+                  <span class="input-group-addon" id="basic-addon1">CN136</span>
+                  <input type="text" class="form-control" placeholder="Description" value="Customer complaint about XYZ extrusion"/>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -350,68 +386,71 @@
               </div>
             </div>
 
-            <!--<div class="form-group">
-              <label class="control-label col-xs-4">Logged by</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="John Smith on 6 June 2015"/>
-              </div>
-            </div>-->
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default btn-progress">
-                    <span class="progress-indicator" style="width: 75%;"></span>
-                    <i class="fa fa-file-excel-o fa-lg"></i>
-                    currently_uploading_file.xls
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-              </div>
-            </div>
-
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix" href="#contact" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Contact details</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse in" id="contact">
                   <div class="panel-body">
                     <div class="form-group">
                       <label class="control-label col-xs-4">Contact email</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Contact email"/>
+                        <input type="text" class="form-control" placeholder="Contact email" value="peter.jackson@abc.net"/>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Contact number</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Contact number"/>
+                        <input type="text" class="form-control" placeholder="Contact number" value="012 345 6789"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-word-o fa-lg"></i>
+                            Survey.docx
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-excel-o fa-lg"></i>
+                            Survey results.xls
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
 
+
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
                   <div class="panel-body">
@@ -438,8 +477,8 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Non-conformities</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-left">Identified non-conformities</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="nonconformities">
                   <div class="panel-body">
@@ -578,7 +617,7 @@
                 <div class="panel-heading clearfix collapsed" href="#patch-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Patch actions</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="patch-actions">
                   <div class="panel-body">
