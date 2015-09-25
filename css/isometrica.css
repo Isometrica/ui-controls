@@ -688,7 +688,8 @@ input.form-value {
     border-bottom: 0;
     background: white;
     padding-top: 15px;
-    padding-bottom: 0; }
+    padding-bottom: 0;
+    margin-bottom: -2px; }
     .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
       margin: 0;
       font-size: 18px;
