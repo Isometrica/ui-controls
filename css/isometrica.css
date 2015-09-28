@@ -602,6 +602,8 @@ input.form-value {
   left: 50%;
   margin-left: -100px;
   text-align: center; }
+  .navbar-header .dropdown-menu > .active > a {
+    background: #f5f5f5 !important; }
 
 .ios .navbar-header .dropdown-menu {
   width: auto;
@@ -3458,17 +3460,17 @@ body.desktop.isometrica-overview-page .navbar-header {
   font-size: 14px; }
 
 .isometrica-calendar.isometrica-calendar-year th {
-  width: 6.25%;
+  width: 6.6666%;
   /* 75% / 12 */ }
   .isometrica-calendar.isometrica-calendar-year th:first-child {
-    width: 25%;
+    width: 20%;
     border-right: 1px solid #bbb; }
 
 .isometrica-calendar.isometrica-calendar-quarter th {
-  width: 5.76923%;
+  width: 6.1538%;
   /* 75% / 13 */ }
   .isometrica-calendar.isometrica-calendar-quarter th:first-child {
-    width: 25%;
+    width: 20%;
     border-right: 1px solid #bbb; }
 
 .isometrica-calendar thead {
