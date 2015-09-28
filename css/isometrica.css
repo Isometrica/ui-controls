@@ -707,6 +707,8 @@ input.form-value {
     border-bottom: 0;
     background: white;
     padding-top: 15px;
+    padding-left: 15px;
+    margin-left: 15px;
     padding-bottom: 0;
     margin-bottom: -2px; }
     .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
@@ -978,25 +980,76 @@ input.form-value {
 .modal-footer small, .panel-footer small {
   text-align: inherit !important; }
 
-.modal-footer {
-  border-color: #ddd;
-  background: #f5f5f5;
-  text-align: left;
-  border-radius: 0 0 4px 4px; }
-
-.modal .modal-body hr {
-  margin: 15px -15px;
-  border-color: #ddd; }
-
-.modal .list-group {
-  margin: 0; }
-  .modal .list-group .list-group-item {
-    border-right: 0;
-    border-left: 0; }
-    .modal .list-group .list-group-item:first-child {
-      border-top: 0; }
-    .modal .list-group .list-group-item:last-child {
-      border-bottom: 0; }
+.modal {
+  /* Modal guidance panels */
+  /* Inline guidance */ }
+  .modal .modal-header .guidance-toggle {
+    display: none; }
+    .modal .modal-header .guidance-toggle.collapsed {
+      display: inline-block; }
+    .modal .modal-header .guidance-toggle i {
+      font-size: 24px; }
+  .modal .collapse, .modal .collapsing {
+    clear: both;
+    overflow: hidden; }
+  .modal .guidance-panel {
+    line-height: 1.5;
+    overflow: hidden;
+    padding-bottom: 0;
+    clear: both;
+    padding: 12px 15px 0; }
+    .modal .guidance-panel a.btn-link {
+      width: 50%;
+      padding: 10px 0;
+      border: 0;
+      float: left;
+      text-decoration: none;
+      margin-top: -10px;
+      margin-bottom: 3px;
+      margin-left: 0;
+      margin-right: 0; }
+    .modal .guidance-panel .show-more .expanded-label {
+      display: inline; }
+    .modal .guidance-panel .show-more .contracted-label {
+      display: none; }
+    .modal .guidance-panel .show-more.collapsed .expanded-label {
+      display: none; }
+    .modal .guidance-panel .show-more.collapsed .contracted-label {
+      display: inline; }
+    .modal .guidance-panel ul {
+      padding-left: 20px; }
+  .modal .form-group .guidance-toggle {
+    position: absolute;
+    left: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: all 0.3s ease; }
+    .modal .form-group .guidance-toggle.collapsed {
+      color: #bbb; }
+    .modal .form-group .guidance-toggle i {
+      font-size: 24px; }
+  .modal .form-group .guidance-panel {
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    padding: 12px 15px 0 !important;
+    margin-top: 15px; }
+  .modal .modal-body hr {
+    margin: 15px -15px;
+    border-color: #ddd; }
+  .modal .list-group {
+    margin: 0; }
+    .modal .list-group .list-group-item {
+      border-right: 0;
+      border-left: 0; }
+      .modal .list-group .list-group-item:first-child {
+        border-top: 0; }
+      .modal .list-group .list-group-item:last-child {
+        border-bottom: 0; }
+  .modal .modal-footer {
+    border-color: #ddd;
+    background: #f5f5f5;
+    text-align: left;
+    border-radius: 0 0 4px 4px; }
 
 .desktop .modal-dialog .modal-header {
   border-color: #ddd;
