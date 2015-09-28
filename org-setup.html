@@ -183,6 +183,125 @@
   </div>
 
 
+  <!-- Edit Performance Indicators -->
+  <div class="modal fade edit-item-details" id="editMission">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Mission &amp; goals</h4>
+        </div>
+        <div class="modal-header subheader">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-xs-3 col-md-5">Org name</label>
+              <div class="col-xs-9 col-md-4">
+                <input type="text" class="form-control" placeholder="Org name" value="IBM UK">
+              </div>
+            </div>
+            <div class="isometrica-rich-text-control">
+              <div class="isometrica-rich-text-controls clearfix">
+                <div class="ql-toolbar-container" id="formatting-container">
+                  <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                  <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                  <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                  <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                  <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                </div>
+              </div>
+              <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Performance Indicators -->
+  <div class="modal fade edit-item-details" id="editPerformanceIndicators">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Performance indicators - areas</h4>
+        </div>
+        <div class="modal-header subheader">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Management system"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Sales"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Marketing"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Customer service"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Manufacturing"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Technical support"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Operations"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
 
   <!-- Edit Management systemns -->
   <div class="modal fade edit-item-details" id="editManagementSystems">
@@ -424,75 +543,7 @@
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Edit Communication Types -->
-  <div class="modal fade edit-item-details" id="editCommunicationTypes">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
-      				<i class="fa fa-lg fa-question-circle"></i>
-      			</button>
-      			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Done
-      			</button>
-          </div>
-          <h4 class="modal-title">Communications - types</h4>
-        </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
-        </div>
-        <form class="form-horizontal isometrica-org-setup-multiadd">
-          <div class="table-responsive">
-            <table class="table table-bordered">
-              <tbody>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Internal management"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Internal staff"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Customer"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Supplier"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Regulator"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Local community"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Trade union"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Trade association"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Annual management review"></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -644,7 +695,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Customers &amp; interested parties</h4>
+          <h4 class="modal-title">Customers/interested parties</h4>
         </div>
         <div class="modal-header subheader">
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
@@ -912,6 +963,70 @@
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="International event"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Environmental -->
+  <div class="modal fade edit-item-details" id="editEnvironmental">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link hidden-xs">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Environmental aspects - types</h4>
+        </div>
+        <div class="modal-header subheader">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Use of limited water resources"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Use of limited forest resources"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Use of other limited natural resources"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Use of landfill"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Pollution of waterways"></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Generation of greenhouse gases"></td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>

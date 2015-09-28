@@ -190,16 +190,27 @@
   }
 }
 
+.isometrica-org-setup-page {
+  .modal-content {
+    overflow: hidden;
+  }
+}
 
 /* Spreadsheet multiadd */
 .isometrica-org-setup-multiadd {
 
   .table {
     border-width: 1px 0;
+    margin-bottom: 0;
+    border-bottom: 0;
   }
 
   .table>tbody>tr>td {
     padding: 0 !important;
+  }
+
+  .table>tbody>tr:last-child>td {
+    border-bottom: 0;
   }
 
   .table>thead>tr>th {
@@ -254,6 +265,33 @@
     }
   }
 
+}
+
+/* Mission & goals edit */
+
+#editMission {
+  .modal-dialog {
+    @media (min-width: 992px) {
+      width: 960px;
+    }
+  }
+
+  .modal-content {
+    overflow: hidden;
+  }
+
+  .modal-body {
+    padding-bottom: 0;
+    border-top: 1px solid #ddd;
+  }
+
+  .isometrica-rich-text-control {
+    border-bottom: 0;
+
+    .isometrica-rich-text-input {
+      height: 400px;
+    }
+  }
 }
 
 

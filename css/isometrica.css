@@ -2634,12 +2634,20 @@ body.desktop.isometrica-overview-page .navbar-header {
             margin-top: 0;
             margin-left: -9px; }
 
+.isometrica-org-setup-page .modal-content {
+  overflow: hidden; }
+
 /* Spreadsheet multiadd */
 .isometrica-org-setup-multiadd .table {
-  border-width: 1px 0; }
+  border-width: 1px 0;
+  margin-bottom: 0;
+  border-bottom: 0; }
 
 .isometrica-org-setup-multiadd .table > tbody > tr > td {
   padding: 0 !important; }
+
+.isometrica-org-setup-multiadd .table > tbody > tr:last-child > td {
+  border-bottom: 0; }
 
 .isometrica-org-setup-multiadd .table > thead > tr > th {
   padding-left: 15px;
@@ -2681,6 +2689,23 @@ body.desktop.isometrica-overview-page .navbar-header {
   .isometrica-org-setup-multiadd .btn-group .btn {
     float: none;
     display: inline-block; }
+
+/* Mission & goals edit */
+@media (min-width: 992px) {
+  #editMission .modal-dialog {
+    width: 960px; } }
+
+#editMission .modal-content {
+  overflow: hidden; }
+
+#editMission .modal-body {
+  padding-bottom: 0;
+  border-top: 1px solid #ddd; }
+
+#editMission .isometrica-rich-text-control {
+  border-bottom: 0; }
+  #editMission .isometrica-rich-text-control .isometrica-rich-text-input {
+    height: 400px; }
 
 .ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;
