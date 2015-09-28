@@ -1510,6 +1510,11 @@ $status-indicator-size: 16px;
 
   .guidance-toggle {
     display: none;
+    color: $light-blue-color !important;
+
+    &:hover, &:active, &:focus, &.active {
+      color: $light-blue-color-hover !important;
+    }
 
     &.collapsed { display: inline-block; }
 

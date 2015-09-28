@@ -984,7 +984,10 @@ input.form-value {
   /* Modal guidance panels */
   /* Inline guidance */ }
   .modal .guidance-toggle {
-    display: none; }
+    display: none;
+    color: #00b2e2 !important; }
+    .modal .guidance-toggle:hover, .modal .guidance-toggle:active, .modal .guidance-toggle:focus, .modal .guidance-toggle.active {
+      color: #0092c2 !important; }
     .modal .guidance-toggle.collapsed {
       display: inline-block; }
     .modal .guidance-toggle i {
