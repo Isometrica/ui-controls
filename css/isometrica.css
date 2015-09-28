@@ -1025,8 +1025,6 @@ input.form-value {
     padding-left: 6px;
     padding-right: 6px;
     transition: all 0.3s ease; }
-    .modal .form-group .guidance-toggle.collapsed {
-      color: #bbb; }
     .modal .form-group .guidance-toggle i {
       font-size: 24px; }
   .modal .form-group .guidance-panel {
