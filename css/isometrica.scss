@@ -1508,7 +1508,7 @@ $status-indicator-size: 16px;
 
   /* Modal guidance panels */
 
-  .modal-header .guidance-toggle {
+  .guidance-toggle {
     display: none;
 
     &.collapsed { display: inline-block; }

@@ -983,11 +983,11 @@ input.form-value {
 .modal {
   /* Modal guidance panels */
   /* Inline guidance */ }
-  .modal .modal-header .guidance-toggle {
+  .modal .guidance-toggle {
     display: none; }
-    .modal .modal-header .guidance-toggle.collapsed {
+    .modal .guidance-toggle.collapsed {
       display: inline-block; }
-    .modal .modal-header .guidance-toggle i {
+    .modal .guidance-toggle i {
       font-size: 24px; }
   .modal .collapse, .modal .collapsing {
     clear: both;
