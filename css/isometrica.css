@@ -1007,7 +1007,8 @@ input.form-value {
       margin-top: -10px;
       margin-bottom: 3px;
       margin-left: 0;
-      margin-right: 0; }
+      margin-right: 0;
+      font-weight: bold; }
     .modal .guidance-panel .show-more .expanded-label {
       display: inline; }
     .modal .guidance-panel .show-more .contracted-label {
