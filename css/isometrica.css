@@ -1016,16 +1016,20 @@ input.form-value {
     clear: both;
     padding: 12px 15px 0; }
     .modal .guidance-panel a.btn-link {
-      width: 50%;
       padding: 10px 0;
       border: 0;
-      float: left;
+      display: inline-block;
       text-decoration: none;
       margin-top: -10px;
       margin-bottom: 3px;
       margin-left: 0;
-      margin-right: 0;
-      font-weight: bold; }
+      margin-right: 20px;
+      font-size: 14px; }
+      .modal .guidance-panel a.btn-link i {
+        margin-right: 2px;
+        position: relative;
+        top: -2px;
+        font-size: 9px; }
     .modal .guidance-panel .show-more .expanded-label {
       display: inline; }
     .modal .guidance-panel .show-more .contracted-label {
