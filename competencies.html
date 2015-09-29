@@ -175,14 +175,14 @@
 							</a>
 						</div>
 						<h3 class="panel-title">
-  						<span class="label label-success status-indicator pull-left"></span>
   						Competency details
+  						<span class="label label-danger">Review overdue</span>
   				  </h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Description</p>
-              <h4 class="list-group-item-heading">Good understanding of the management system <span class="label bg-danger text-danger">Review overdue</span></h4>
+              <h4 class="list-group-item-heading">Good understanding of the management system</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Management system area</p>
@@ -192,11 +192,64 @@
               <p class="list-group-item-text">Roles requiring this competency</p>
               <h4 class="list-group-item-heading">BCM Manager, Environment Manager, IT Manager</h4>
             </div>
+
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Files</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Example.docx</a>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <h4 class="list-group-item-heading">Lorem ipsum dolor est</h4>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Individual assessments</h4>
+          </div>
+          <div class="list-group">
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <img class="avatar pull-left img-circle" src="img/avatar-jack.gif">
+                  <h4 class="list-group-item-heading">John Smith <span class="label label-success margin-left">Trainer</span></h4>
+                  <p class="list-group-item-text">BCM Manager</p>
+                </div>
+                <div class="list-group-item">
+                  <img class="avatar pull-left img-circle" src="img/avatar-placeholder.png">
+                  <h4 class="list-group-item-heading">Sally Jason <span class="label label-success margin-left">Expert</span></h4>
+                  <p class="list-group-item-text">Environmental Manager</p>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <img class="avatar pull-left img-circle" src="img/avatar-dan.png">
+                  <h4 class="list-group-item-heading">Mike Tufnell <span class="label label-success margin-left">Competent</span></h4>
+                  <p class="list-group-item-text">IT Manager</p>
+                </div>
+                <div class="list-group-item">
+                  <img class="avatar pull-left img-circle" src="img/avatar-steve.gif">
+                  <h4 class="list-group-item-heading">Pete Robinson <span class="label label-warning margin-left">Limited</span></h4>
+                  <p class="list-group-item-text">Financial Manager</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Review</h4>
+          </div>
+          <div class="list-group">
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Date last reviewed</p>
-                  <h4 class="list-group-item-heading">12 Feb 2015</h4>
+                  <h4 class="list-group-item-heading">12 Feb 2015 <span class="label label-danger margin-left">Review overdue</span></h4>
                 </div>
               </div>
               <div class="col-sm-6">
@@ -206,35 +259,6 @@
                 </div>
               </div>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Files</p>
-              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Example.docx</a>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
-              <h4 class="list-group-item-heading">Lorem ipsum dolor est</h4>
-            </div>
-            <div class="list-group-item">
-              <img class="avatar pull-left img-circle" src="img/avatar-jack.gif">
-              <h4 class="list-group-item-heading">John Smith <span class="label label-success">Trainer</span></h4>
-              <p class="list-group-item-text">BCM Manager</p>
-            </div>
-            <div class="list-group-item">
-              <img class="avatar pull-left img-circle" src="img/avatar-placeholder.png">
-              <h4 class="list-group-item-heading">Sally Jason <span class="label label-success">Expert</span></h4>
-              <p class="list-group-item-text">Environmental Manager</p>
-            </div>
-            <div class="list-group-item">
-              <img class="avatar pull-left img-circle" src="img/avatar-dan.png">
-              <h4 class="list-group-item-heading">Mike Tufnell <span class="label label-success">Competent</span></h4>
-              <p class="list-group-item-text">IT Manager</p>
-            </div>
-            <div class="list-group-item">
-              <img class="avatar pull-left img-circle" src="img/avatar-steve.gif">
-              <h4 class="list-group-item-heading">Pete Robinson <span class="label label-warning">Limited</span></h4>
-              <p class="list-group-item-text">Financial Manager</p>
-            </div>
-
           </div>
           <div class="panel-footer">
             <div class="isometrica-changelog collapsed">
@@ -403,28 +427,49 @@
                 </div>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-file-word-o fa-lg"></i>
-                    Example.docx
-                  </button>
-                  <button type="button" class="btn btn-default">
-                    <i class="fa fa-times-circle no-margin fa-lg"></i>
-                  </button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-              </div>
-            </div>
-
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
+                </div>
+                <div class="collapse" id="files">
+                  <div class="panel-body">
+
+                    <div class="form-group">
+
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-image-o fa-lg"></i>
+                            Image name here.jpg
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-video-o fa-lg"></i>
+                            Video filename goes here.mov
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
                   <div class="panel-body">
@@ -449,7 +494,7 @@
                 <div class="panel-heading clearfix collapsed" href="#assessments" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Individual assessments</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label label-success">Competent</span></h4>
                 </div>
                 <div class="collapse" id="assessments">
                   <div class="panel-body">
@@ -689,8 +734,7 @@
                 <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Review</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
-                  <h4 class="panel-title pull-right"><span class="label bg-danger text-danger">Overdue</span></h4>
+                  <h4 class="panel-title pull-right"><span class="label label-danger">Overdue</span></h4>
                 </div>
                 <div class="collapse" id="review-info">
                   <div class="panel-body">
