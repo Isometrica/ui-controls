@@ -1539,6 +1539,7 @@ $status-indicator-size: 16px;
 
     i {
       font-size: 24px;
+      margin: 0;
     }
   }
 
@@ -1553,6 +1554,7 @@ $status-indicator-size: 16px;
     padding-bottom: 0;
     clear: both;
     padding: 12px 15px 0;
+    border-bottom: 1px solid #ddd;
 
 
     a.btn-link {

@@ -183,7 +183,7 @@
   </div>
 
 
-  <!-- Edit Performance Indicators -->
+  <!-- Edit Mission -->
   <div class="modal fade edit-item-details" id="editMission">
     <div class="modal-dialog">
       <div class="modal-content">
@@ -194,7 +194,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editMission">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -203,8 +203,25 @@
           </div>
           <h4 class="modal-title">Mission &amp; goals</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        <div class="collapse in" id="guidance-panel-editMission">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editMission-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editMission-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editMission"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <div class="modal-body">
           <form class="form-horizontal">
@@ -246,17 +263,34 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editPerformanceIndicators">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Performance indicators - areas</h4>
+          <h4 class="modal-title">Performance indicator areas</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        <div class="collapse in" id="guidance-panel-editPerformanceIndicators">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editPerformanceIndicators-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editPerformanceIndicators-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editPerformanceIndicators"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -314,7 +348,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editManagementSystems">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -323,8 +357,25 @@
           </div>
           <h4 class="modal-title">Management programs</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        <div class="collapse in" id="guidance-panel-editManagementSystems">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editManagementSystems-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editManagementSystems-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editManagementSystems"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -370,7 +421,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editDepartments">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -379,8 +430,25 @@
           </div>
           <h4 class="modal-title">Departments</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non.</p>
+        <div class="collapse in" id="guidance-panel-editDepartments">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editDepartments-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editDepartments-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editDepartments"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -442,7 +510,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editRoles">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -451,8 +519,25 @@
           </div>
           <h4 class="modal-title">Roles</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editRoles">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editRoles-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editRoles-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editRoles"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -494,17 +579,34 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editMeetingTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Meetings &amp; communications</h4>
+          <h4 class="modal-title">Meeting types</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editMeetingTypes">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editMeetingTypes-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editMeetingTypes-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editMeetingTypes"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -570,7 +672,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editProducts">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -579,8 +681,25 @@
           </div>
           <h4 class="modal-title">Products &amp; services</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editProducts">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editProducts-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editProducts-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editProducts"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -688,7 +807,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editInterestedParties">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -697,8 +816,25 @@
           </div>
           <h4 class="modal-title">Customers/interested parties</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editInterestedParties">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editInterestedParties-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editInterestedParties-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editInterestedParties"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -760,7 +896,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editActivities">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -769,8 +905,25 @@
           </div>
           <h4 class="modal-title">Activities &amp; processes</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editActivities">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editActivities-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editActivities-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editActivities"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -865,7 +1018,7 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editSupplierTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -874,8 +1027,25 @@
           </div>
           <h4 class="modal-title">Suppliers &amp; partners</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editSupplierTypes">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editSupplierTypes-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editSupplierTypes-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editSupplierTypes"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -913,17 +1083,34 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editRiskTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Risks - types</h4>
+          <h4 class="modal-title">Risk types</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editRiskTypes">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editRiskTypes-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editRiskTypes-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editRiskTypes"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
@@ -989,17 +1176,34 @@
       			</button>
           </div>
           <div class="pull-right">
-      			<button type="button" class="btn btn-link hidden-xs">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editEnvironmental">
       				<i class="fa fa-lg fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Environmental aspects - types</h4>
+          <h4 class="modal-title">Environmental aspect types</h4>
         </div>
-        <div class="modal-header subheader">
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam nulla nibh, venenatis non efficitur pharetra, condimentum sollicitudin libero.</p>
+        <div class="collapse in" id="guidance-panel-editEnvironmental">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editEnvironmental-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editEnvironmental-more">
+              <span class="expanded-label"><i class="fa fa-chevron-up"></i> Less</span>
+              <span class="contracted-label"><i class="fa fa-chevron-down"></i> More</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editEnvironmental"><i class="fa fa-chevron-up"></i> Hide</a>
+          </div>
         </div>
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">

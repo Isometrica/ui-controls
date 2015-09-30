@@ -200,13 +200,16 @@
 .isometrica-org-setup-multiadd {
 
   .table {
-    border-width: 1px 0;
     margin-bottom: 0;
-    border-bottom: 0;
+    border: 0;
   }
 
   .table>tbody>tr>td {
     padding: 0 !important;
+  }
+
+  .table>tbody>tr:first-child>td {
+    border-top: 0;
   }
 
   .table>tbody>tr:last-child>td {
@@ -282,7 +285,7 @@
 
   .modal-body {
     padding-bottom: 0;
-    border-top: 1px solid #ddd;
+    //border-top: 1px solid #ddd;
   }
 
   .isometrica-rich-text-control {
@@ -321,11 +324,6 @@
   }
 
   .modal {
-    .subheader {
-      height: auto;
-
-    }
-
     .panel {
       border: 1px solid #bbb;
     }
@@ -358,13 +356,13 @@
     }
   }
 
-  .subheader {
+  /*.subheader {
     background: transparent;
     box-shadow: none;
     padding: 10px 15px;
     height: auto;
     border-bottom: 1px solid #ddd;
-  }
+  }*/
 
   .modal-header {
     .pull-right {
@@ -388,22 +386,23 @@
 	}
 
 	.modal-header {
-  	padding: 10px;
+  	//padding: 10px;
+  	padding: 12px 15px;
 
   	.pull-left {
     	position: absolute;
       left: 15px;
-      top: 10px;
+      top: 12px;
   	}
 
   	.pull-right {
     	position: absolute;
       right: 15px;
-      top: 10px;
+      top: 12px;
   	}
 	}
 
-	.subheader {
+	/*.subheader {
   	font-size: 14px;
   	line-height: 1.5;
   	padding: 12px 15px;
@@ -413,7 +412,7 @@
   	p {
     	margin: 0;
   	}
-	}
+	}*/
 }
 
 .ios .modal.edit-item-details {
