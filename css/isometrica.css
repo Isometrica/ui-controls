@@ -1043,10 +1043,9 @@ input.form-value {
     .modal .guidance-panel ul {
       padding-left: 20px; }
   .modal .form-group .guidance-toggle {
-    position: absolute;
-    left: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
     transition: all 0.3s ease; }
     .modal .form-group .guidance-toggle i {
       font-size: 24px; }

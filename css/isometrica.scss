@@ -1594,10 +1594,9 @@ $status-indicator-size: 16px;
 
   /* Inline guidance */
   .form-group .guidance-toggle {
-    position: absolute;
-    left: 10px;
-    padding-left: 6px;
-    padding-right: 6px;
+    float: left;
+    padding-left: 0;
+    padding-right: 0;
     transition: all 0.3s ease;
 
     &.collapsed {
