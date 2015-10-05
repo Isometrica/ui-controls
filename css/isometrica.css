@@ -186,7 +186,8 @@ input.form-value {
   width: 34px;
   padding-left: 0;
   padding-right: 0;
-  margin-right: 10px; }
+  margin-right: 10px;
+  margin-bottom: 0 !important; }
   .btn-checkbox i {
     margin: 0 !important;
     color: white; }
@@ -756,6 +757,11 @@ input.form-value {
         .isometrica-container-listdetail .bootcards-cards .list-group-item ol li .list-group-item-text, .isometrica-container-listdetail .bootcards-cards .list-group-item ul li .list-group-item-heading,
         .isometrica-container-listdetail .bootcards-cards .list-group-item ul li .list-group-item-text {
           margin-bottom: 5px; }
+  .isometrica-container-listdetail .bootcards-cards .isometrica-card-table {
+    margin-top: 10px;
+    margin-left: 15px; }
+    .isometrica-container-listdetail .bootcards-cards .isometrica-card-table td:first-child, .isometrica-container-listdetail .bootcards-cards .isometrica-card-table th:first-child {
+      padding-left: 0 !important; }
 
 .desktop .isometrica-container-listdetail {
   position: fixed;
@@ -1349,7 +1355,7 @@ input.form-value {
 
 .isometrica-changelog .table-responsive {
   font-size: 12px;
-  margin: 0;
+  margin: 0 !important;
   border-top: 1px solid #ddd; }
 
 .isometrica-changelog .table {
