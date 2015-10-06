@@ -1568,20 +1568,14 @@ $status-indicator-size: 16px;
     padding: 12px 15px 0;
     border-bottom: 1px solid #ddd;
 
-
     a.btn-link {
-      //width: 50%;
-      padding: 10px 0;
-      border: 0;
-      display: inline-block;
       text-decoration: none;
-      //margin-top: -13px;
       margin-bottom: 0;
       margin-left: 0;
-      margin-right: 20px;
       font-size: 14px;
 
-      i {
+      .fa-chevron-up,
+      .fa-chevron-down {
         margin-right: 2px;
         position: relative;
         top: -2px;
@@ -1589,18 +1583,28 @@ $status-indicator-size: 16px;
       }
     }
 
-    .show-more {
-      .expanded-label { display: inline; }
-      .contracted-label { display: none; }
+    .btn-group {
+      a.btn-link {
+        padding: 10px 0;
+        margin-right: 20px;
+      }
 
-      &.collapsed {
-        .expanded-label { display: none; }
-        .contracted-label { display: inline; }
+      .ask-question:not(.collapsed) {
+        display: none;
       }
     }
 
     ul {
       padding-left: 20px;
+    }
+
+    .guidance-panel-question {
+      textarea {
+        margin-bottom: 10px;
+      }
+      .btn {
+        margin-bottom: 15px;
+      }
     }
   }
 

@@ -1024,29 +1024,27 @@ input.form-value {
     padding: 12px 15px 0;
     border-bottom: 1px solid #ddd; }
     .modal .guidance-panel a.btn-link {
-      padding: 10px 0;
-      border: 0;
-      display: inline-block;
       text-decoration: none;
       margin-bottom: 0;
       margin-left: 0;
-      margin-right: 20px;
       font-size: 14px; }
-      .modal .guidance-panel a.btn-link i {
+      .modal .guidance-panel a.btn-link .fa-chevron-up,
+      .modal .guidance-panel a.btn-link .fa-chevron-down {
         margin-right: 2px;
         position: relative;
         top: -2px;
         font-size: 9px; }
-    .modal .guidance-panel .show-more .expanded-label {
-      display: inline; }
-    .modal .guidance-panel .show-more .contracted-label {
+    .modal .guidance-panel .btn-group a.btn-link {
+      padding: 10px 0;
+      margin-right: 20px; }
+    .modal .guidance-panel .btn-group .ask-question:not(.collapsed) {
       display: none; }
-    .modal .guidance-panel .show-more.collapsed .expanded-label {
-      display: none; }
-    .modal .guidance-panel .show-more.collapsed .contracted-label {
-      display: inline; }
     .modal .guidance-panel ul {
       padding-left: 20px; }
+    .modal .guidance-panel .guidance-panel-question textarea {
+      margin-bottom: 10px; }
+    .modal .guidance-panel .guidance-panel-question .btn {
+      margin-bottom: 15px; }
   .modal .form-group .guidance-toggle {
     float: left;
     padding-left: 0;
