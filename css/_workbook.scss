@@ -309,7 +309,7 @@
 
 /* Modals */
 
-.ios.isometrica-workbook-page .modal {
+/*.ios.isometrica-workbook-page .modal {
 
   .form-horizontal .form-group:last-child {
     margin-bottom: 0;
@@ -328,12 +328,12 @@
   .btn-warning {
     color: #f0ad4e;
   }
-}
+}*/
 
 
 /* workbook ITEM MODAL */
 
-.isometrica-workbook-modal {
+/*.isometrica-workbook-modal {
   .subheader {
     font-size: 14px;
     line-height: 1.5;
@@ -381,12 +381,14 @@
       height: 300px;
     }
   }
-}
+}*/
 
-
+/*
 .isometrica-workbook-bia1-modal {
+
   .panel-body.isometrica-impacts {
     padding: 0;
+
 
     .isometrica-impacts-subheading {
       padding: 15px;
@@ -396,6 +398,7 @@
       font-size: 16px;
       font-weight: 500;
     }
+
 
     .isometrica-impacts-row {
       list-style: none;
@@ -440,9 +443,12 @@
     }
   }
 
+
   .btn.add-type {
     margin-bottom: 15px;
   }
+
+
 
   .overall-analysis {
     .form-group {
@@ -473,7 +479,10 @@
     }
   }
 }
+*/
 
+
+/*
 .ios .isometrica-workbook-bia1-modal {
   .modal-body {
     padding-bottom: 15px;
@@ -534,6 +543,7 @@
     margin-bottom: 0;
   }
 }
+*/
 
 .android .isometrica-workbook-bia1-modal {
   .bootcards-panel-collapsing {
@@ -686,27 +696,25 @@
 }
 
 #businessImpact2Modal {
-  .panel-title {
-    span {
-      font-weight: normal;
-    }
-  }
-
   .isometrica-resource-analysis-table {
-    margin: 0;
-    border-top: 1px solid #ddd;
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    margin: -15px -15px 15px;
+    border-top: 0;
+
+    .table {
+      border-top: 0;
+      border-left: 0;
+      border-right: 0;
+    }
 
     th {
       text-align: center;
       border-bottom-width: 1px;
+      padding-left: 0;
+      padding-right: 0;
     }
 
     td {
-      //padding: 0;
-      //font-size: 18px;
+      padding: 5px 0;
     }
 
     th, td {
@@ -718,31 +726,19 @@
       }
     }
 
-    tr:last-child {
-      th, td {
-        border-bottom: 0;
-      }
-    }
-
     .form-control {
       border: 0;
       text-align: center;
       box-shadow: none;
-      //font-size: 16px;
-      //padding: 15px 0;
       height: auto;
-      //color: #337ab7;
       resize: none;
       padding-left: 0;
       padding-right: 0;
-      //font-weight: bold;
-    }
-
-    textarea {
-      text-align: left !important;
+      border-radius: 0;
     }
   }
 
+  /*
   .isometrica-resource-analysis-totals {
     input {
       width: 50px;
@@ -753,12 +749,11 @@
 
     }
   }
-
-  .btn.add-type {
-    margin-bottom: 15px;
-  }
+  */
 }
 
+
+/*
 .ios #businessImpact2Modal {
   .modal-body {
     .panel {
@@ -787,8 +782,12 @@
     }
   }
 }
+*/
 
+
+/*
 #riskAnalysisModal {
+
   .risk-analysis-linked-items {
     margin-bottom: 10px;
 
@@ -815,7 +814,6 @@
       }
     }
   }
-
 
 
   .risk-analysis-mitigation-header {
@@ -898,8 +896,9 @@
   }
 
 }
+*/
 
-
+/*
 
 #strategyEvaluationModal {
   .disabled {
@@ -932,3 +931,4 @@
     }
   }
 }
+*/

@@ -155,13 +155,13 @@
         </div>
         <div class="workbook-items">
           <div class="workbook-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
-            <h4 class="workbook-item-title">Example BIA1 card</h4>
+            <h4 class="workbook-item-title">Extrusion</h4>
             <div class="workbook-item-clock text-warning">
               <span>RTO</span> 4 days
             </div>
           </div>
-          <div class="workbook-item panel panel-default" data-toggle="modal" data-target="#businessImpact1MitigationModal">
-            <h4 class="workbook-item-title">Example BIA1 card with mitigation</h4>
+          <div class="workbook-item panel panel-default" data-toggle="modal" data-target="#businessImpact1Modal">
+            <h4 class="workbook-item-title">Thermoforming</h4>
             <div class="workbook-item-clock text-danger">
               <span>RTO</span> 1 day
             </div>
@@ -425,7 +425,7 @@
   </div>
 
   <!-- Business Impact Analysis Part 1 -->
-  <div class="modal fade isometrica-workbook-modal isometrica-workbook-bia1-modal" id="businessImpact1Modal" tabindex="-1" role="dialog">
+  <div class="modal fade isometrica-workbook-bia1-modal" id="businessImpact1Modal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -436,354 +436,186 @@
   		    </div>
   		    <div class="btn-group pull-right">
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
+  		      	Done
   		      </button>
   		    </div>
   	      <h4 class="modal-title">BIA part 1</h4>
   	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
+  	    <form class="form-horizontal">
+          <div class="modal-body">
+
             <div class="form-group">
               <label class="control-label col-sm-4 col-xs-5">Activity or process</label>
               <div class="col-sm-8 col-xs-7">
-                <input type="text" class="form-control typeahead" placeholder="Activity"/>
+                <input type="text" class="form-control typeahead" placeholder="Activity" value="Extrusion"/>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-body">
-          <h4 class="isometrica-workbook-modal-subheading text-center">Individual Impact Analysis</h4>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix" href="#bia1-impacts-1" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Financial impacts of disruption</h4>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#financial-impact-analysis" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Financial impacts of disruption</h4>
+                </div>
+                <div class="collapse" id="financial-impact-analysis">
+                  <div class="panel-body">
+                    <div class="form-group">
+          		        <div class="col-xs-12">
+                  	    <div class="btn-group btn-group-justified" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+                    	    <div class="btn-group"><button type="button" class="btn btn-success">1h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">2d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">3d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">1w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">2w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">4w</button></div>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <div class="col-xs-12">
+            		        <label class="control-label control-label-block">Mitigated by split site operations</label>
+                  	    <div class="btn-group btn-group-justified" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+                    	    <div class="btn-group"><button type="button" class="btn btn-success">1h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">3d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">1w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">2w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">4w</button></div>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="form-group">
+          		        <div class="col-xs-12">
+            		        <label class="control-label control-label-block">Mitigated by split site operations</label>
+                  	    <div class="btn-group btn-group-justified" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+                    	    <div class="btn-group"><button type="button" class="btn btn-success">1h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">3d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">4w</button></div>
+                        </div>
+          		        </div>
+          	        </div>
+          	        <div class="text-center">
+                      <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add a mitigation opportunity</button>
+          	        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#operational-impact-analysis" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Operational impacts of disruption</h4>
+                </div>
+                <div class="collapse" id="operational-impact-analysis">
+                  <div class="panel-body">
+                    <div class="form-group">
+          		        <div class="col-xs-12">
+                  	    <div class="btn-group btn-group-justified" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+                    	    <div class="btn-group"><button type="button" class="btn btn-success">1h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">2d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">3d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">1w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">2w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">4w</button></div>
+                        </div>
+          		        </div>
+          	        </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add a mitigation opportunity</button>
+          	        </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#reputational-impact-analysis" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Reputational impacts of disruption</h4>
+                </div>
+                <div class="collapse" id="reputational-impact-analysis">
+                  <div class="panel-body">
+                    <div class="form-group">
+          		        <div class="col-xs-12">
+                  	    <div class="btn-group btn-group-justified" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
+                    	    <div class="btn-group"><button type="button" class="btn btn-success">1h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">2h</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-success">1d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">2d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">3d</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-warning">1w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">2w</button></div>
+                          <div class="btn-group"><button type="button" class="btn btn-danger">4w</button></div>
+                        </div>
+          		        </div>
+          	        </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add a mitigation opportunity</button>
+          	        </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="collapse in" id="bia1-impacts-1">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a class="impact-vlow" href="#">1h</a></li>
-        	        <li><a class="impact-low" href="#">2h</a></li>
-        	        <li><a class="impact-low" href="#">1d</a></li>
-        	        <li><a class="impact-medium" href="#">2d</a></li>
-        	        <li><a class="impact-medium" href="#">3d</a></li>
-        	        <li><a class="impact-high" href="#">1w</a></li>
-        	        <li><a class="impact-high" href="#">2w</a></li>
-        	        <li><a class="impact-vhigh" href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#businessImpact1MitigationModal">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add an impact type</button>
+  	        </div>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#overall-analysis" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Overall analysis</h4>
+                </div>
+                <div class="collapse in" id="overall-analysis">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">
+                        MTPD
+                      </label>
+                      <div class="col-sm-9 col-xs-8">
+                        <input type="text" class="form-control" placeholder="Time" value="2 days"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">
+                        RTO
+                      </label>
+                      <div class="col-sm-9 col-xs-8">
+                        <input type="text" class="form-control" placeholder="Time" value="1 week"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-3 col-xs-4">
+                        IT system
+                      </label>
+                      <div class="col-sm-6 col-xs-8">
+                        <input type="text" class="form-control" placeholder="IT system name" value="Sales database"/>
+                      </div>
+                      <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-4">
+                        <input type="text" class="form-control" placeholder="RPO" value="Start of day"/>
+                      </div>
+                    </div>
+                    <div class="form-group text-center add-system">
+                      <button type="button" class="btn btn-primary">
+                        <i class="fa fa-plus"></i>
+                        Add an IT system
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-default">Delete</button>
             </div>
           </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-2" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Operational impacts of disruption</h4>
-            </div>
-            <div class="collapse" id="bia1-impacts-2">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a href="#">1h</a></li>
-        	        <li><a href="#">2h</a></li>
-        	        <li><a href="#">1d</a></li>
-        	        <li><a href="#">2d</a></li>
-        	        <li><a href="#">3d</a></li>
-        	        <li><a href="#">1w</a></li>
-        	        <li><a href="#">2w</a></li>
-        	        <li><a href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#businessImpact1MitigationModal">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing last">
-            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-3" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Reputational impacts of disruption</h4>
-            </div>
-            <div class="collapse" id="bia1-impacts-3">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a href="#">1h</a></li>
-        	        <li><a href="#">2h</a></li>
-        	        <li><a href="#">1d</a></li>
-        	        <li><a href="#">2d</a></li>
-        	        <li><a href="#">3d</a></li>
-        	        <li><a href="#">1w</a></li>
-        	        <li><a href="#">2w</a></li>
-        	        <li><a href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary" data-dismiss="modal" data-toggle="modal" data-target="#businessImpact1MitigationModal">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
-            </div>
-          </div>
-
-          <div class="text-center">
-            <button type="button" class="btn btn-primary add-type">
-              <i class="fa fa-plus"></i>
-              Add an Impacts type
-            </button>
-          </div>
-        </div>
-        <div class="modal-body overall-analysis">
-          <h4 class="isometrica-workbook-modal-subheading text-center">Overall analysis</h4>
-          <form class="form-horizontal">
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                MTPD
-              </label>
-              <div class="col-sm-9 col-xs-8">
-                <input type="text" class="form-control" placeholder="Time"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                RTO
-              </label>
-              <div class="col-sm-9 col-xs-8">
-                <input type="text" class="form-control" placeholder="Time"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                IT system
-              </label>
-              <div class="col-sm-6 col-xs-8">
-                <input type="text" class="form-control" placeholder="IT system name"/>
-              </div>
-              <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-4">
-                <input type="text" class="form-control" placeholder="RPO"/>
-              </div>
-            </div>
-            <div class="form-group text-center add-system">
-              <button type="button" class="btn btn-primary">
-                <i class="fa fa-plus"></i>
-                Add an IT system
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default">
-            Delete
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Business Impact Analysis Part 1 (with Mitigation) -->
-  <div class="modal fade isometrica-workbook-modal isometrica-workbook-bia1-modal" id="businessImpact1MitigationModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog">
-      <div class="modal-content">
-  	    <div class="modal-header clearfix">
-  		    <div class="btn-group pull-left">
-  			    <button type="button" class="btn btn-default btn-back" data-dismiss="modal">
-  		      	Cancel
-  		      </button>
-  		    </div>
-  		    <div class="btn-group pull-right">
-  			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
-  		      </button>
-  		    </div>
-  	      <h4 class="modal-title">BIA part 1</h4>
-  	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group">
-              <label class="control-label col-sm-4 col-xs-5">Activity or process</label>
-              <div class="col-sm-8 col-xs-7">
-                <input type="text" class="form-control typeahead" placeholder="Activity"/>
-              </div>
-            </div>
-          </form>
-        </div>
-        <div class="modal-body">
-          <h4 class="isometrica-workbook-modal-subheading text-center">Individual Impact Analysis</h4>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix" href="#bia1-impacts-1" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Financial impacts of disruption</h4>
-            </div>
-            <div class="collapse in" id="bia1-impacts-1">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a class="impact-vlow" href="#">1h</a></li>
-        	        <li><a class="impact-low" href="#">2h</a></li>
-        	        <li><a class="impact-low" href="#">1d</a></li>
-        	        <li><a class="impact-medium" href="#">2d</a></li>
-        	        <li><a class="impact-medium" href="#">3d</a></li>
-        	        <li><a class="impact-high" href="#">1w</a></li>
-        	        <li><a class="impact-high" href="#">2w</a></li>
-        	        <li><a class="impact-vhigh" href="#">4w</a></li>
-      	        </ul>
-      	        <h4 class="isometrica-impacts-subheading">Mitigated by split site operations</h4>
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a class="impact-vlow" href="#">1h</a></li>
-        	        <li><a class="impact-vlow" href="#">2h</a></li>
-        	        <li><a class="impact-vlow" href="#">1d</a></li>
-        	        <li><a class="impact-low" href="#">2d</a></li>
-        	        <li><a class="impact-low" href="#">3d</a></li>
-        	        <li><a class="impact-medium" href="#">1w</a></li>
-        	        <li><a class="impact-medium" href="#">2w</a></li>
-        	        <li><a class="impact-high" href="#">4w</a></li>
-      	        </ul>
-      	        <h4 class="isometrica-impacts-subheading">Mitigated by insurance</h4>
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a class="impact-vlow" href="#">1h</a></li>
-        	        <li><a class="impact-vlow" href="#">2h</a></li>
-        	        <li><a class="impact-vlow" href="#">1d</a></li>
-        	        <li><a class="impact-vlow" href="#">2d</a></li>
-        	        <li><a class="impact-vlow" href="#">3d</a></li>
-        	        <li><a class="impact-vlow" href="#">1w</a></li>
-        	        <li><a class="impact-low" href="#">2w</a></li>
-        	        <li><a class="impact-low" href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-2" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Operational impacts of disruption</h4>
-            </div>
-            <div class="collapse" id="bia1-impacts-2">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a href="#">1h</a></li>
-        	        <li><a href="#">2h</a></li>
-        	        <li><a href="#">1d</a></li>
-        	        <li><a href="#">2d</a></li>
-        	        <li><a href="#">3d</a></li>
-        	        <li><a href="#">1w</a></li>
-        	        <li><a href="#">2w</a></li>
-        	        <li><a href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
-            </div>
-          </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing last">
-            <div class="panel-heading clearfix collapsed" href="#bia1-impacts-3" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Reputational impacts of disruption</h4>
-            </div>
-            <div class="collapse" id="bia1-impacts-3">
-              <div class="panel-body isometrica-impacts">
-      	        <ul class="isometrica-impacts-row" data-dismiss="modal" data-toggle="modal" data-target="#impactGradingModal">
-        	        <li><a href="#">1h</a></li>
-        	        <li><a href="#">2h</a></li>
-        	        <li><a href="#">1d</a></li>
-        	        <li><a href="#">2d</a></li>
-        	        <li><a href="#">3d</a></li>
-        	        <li><a href="#">1w</a></li>
-        	        <li><a href="#">2w</a></li>
-        	        <li><a href="#">4w</a></li>
-      	        </ul>
-    	        </div>
-    	        <div class="panel-footer text-center">
-    	          <button type="button" class="btn btn-primary">
-    	            <i class="fa fa-plus"></i>
-    	            Add a Mitigation Opportunity
-    	          </button>
-    	        </div>
-            </div>
-          </div>
-
-          <div class="text-center">
-            <button type="button" class="btn btn-primary add-type">
-              <i class="fa fa-plus"></i>
-              Add an Impacts type
-            </button>
-          </div>
-        </div>
-        <div class="modal-body overall-analysis">
-          <h4 class="isometrica-workbook-modal-subheading text-center">Overall analysis</h4>
-          <form class="form-horizontal">
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                MTPD
-              </label>
-              <div class="col-sm-9 col-xs-8">
-                <input type="text" class="form-control" placeholder="Time"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                RTO
-              </label>
-              <div class="col-sm-9 col-xs-8">
-                <input type="text" class="form-control" placeholder="Time"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <i class="fa fa-question-circle isometrica-workbook-modal-help-icon"></i>
-              <label class="control-label col-sm-3 col-xs-4">
-                IT system
-              </label>
-              <div class="col-sm-6 col-xs-8">
-                <input type="text" class="form-control" placeholder="IT system name"/>
-              </div>
-              <div class="col-sm-3 col-sm-offset-0 col-xs-8 col-xs-offset-4">
-                <input type="text" class="form-control" placeholder="RPO"/>
-              </div>
-            </div>
-            <div class="form-group text-center add-system">
-              <button type="button" class="btn btn-primary">
-                <i class="fa fa-plus"></i>
-                Add an IT system
-              </button>
-            </div>
-          </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default">
-            Delete
-          </button>
-        </div>
+  	    </form>
       </div>
     </div>
   </div>
@@ -951,7 +783,7 @@
   </div>
 
   <!-- Business Impact Analysis Part 2 -->
-  <div class="modal fade isometrica-workbook-modal" id="businessImpact2Modal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="businessImpact2Modal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -962,20 +794,17 @@
   		    </div>
   		    <div class="btn-group pull-right">
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
+  		      	Done
   		      </button>
   		    </div>
   	      <h4 class="modal-title">BIA part 2</h4>
   	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
+        <form class="form-horizontal">
+          <div class="modal-body">
             <div class="form-group">
               <label class="control-label col-xs-4">Departments</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control typeahead" placeholder="Department"/>
+                <input type="text" class="form-control typeahead" placeholder="Department" value="Manufacturing"/>
               </div>
             </div>
             <div class="form-group">
@@ -991,118 +820,111 @@
             <div class="form-group">
               <label class="control-label col-xs-4">MTPD</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="2 days"/>
+                <input type="text" class="form-control" disabled="" value="2 days"/>
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-xs-4">RTO</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control form-value" disabled="" value="1 day"/>
+                <input type="text" class="form-control" disabled="" value="1 day"/>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-body">
-          <h4 class="isometrica-workbook-modal-subheading text-center">Individual resource analysis</h4>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix" href="#bia2-resource-1" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Sales reps <span class="text-muted">- when needed and how many?</span></h4>
-            </div>
-            <div class="collapse in" id="bia2-resource-1">
-    	        <table class="table table-bordered isometrica-resource-analysis-table">
-      	        <thead>
-        	        <tr>
-          	        <th>1h</th>
-          	        <th>4h</th>
-          	        <th>1d</th>
-          	        <th>2d</th>
-          	        <th>4d</th>
-          	        <th>1w</th>
-          	        <th>2w</th>
-          	        <th>4w</th>
-        	        </tr>
-      	        </thead>
-      	        <tbody>
-        	        <tr>
-          	        <td><input type="text" class="form-control" value=""/></td>
-          	        <td><input type="text" class="form-control" value=""/></td>
-          	        <td><input type="text" class="form-control" value="+2"/></td>
-          	        <td><input type="text" class="form-control" value=""/></td>
-          	        <td><input type="text" class="form-control" value=""/></td>
-          	        <td><input type="text" class="form-control" value="+3"/></td>
-          	        <td><input type="text" class="form-control" value=""/></td>
-          	        <td><input type="text" class="form-control" value="+6"/></td>
-        	        </tr>
-      	        </tbody>
-    	        </table>
-    	        <div class="panel-footer clearfix isometrica-resource-analysis-totals">
-    	          <div class="form-inline pull-left">
-      	          <div class="form-group">
-                    <label class="control-label">Normal level</label>
-                    <input type="text" class="form-control" value="12">
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#resource-analysis-1" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Sales reps <span class="text-muted">- when needed and how many</span></h4>
+                </div>
+                <div class="collapse in" id="resource-analysis-1">
+                  <div class="panel-body">
+                    <div class="table-responsive isometrica-resource-analysis-table">
+            	        <table class="table table-bordered">
+              	        <thead>
+                	        <tr>
+                  	        <th>1h</th>
+                  	        <th>4h</th>
+                  	        <th>1d</th>
+                  	        <th>2d</th>
+                  	        <th>4d</th>
+                  	        <th>1w</th>
+                  	        <th>2w</th>
+                  	        <th>4w</th>
+                	        </tr>
+              	        </thead>
+              	        <tbody>
+                	        <tr>
+                  	        <td><input type="text" class="form-control" value=""/></td>
+                  	        <td><input type="text" class="form-control" value=""/></td>
+                  	        <td><input type="text" class="form-control" value="+2"/></td>
+                  	        <td><input type="text" class="form-control" value=""/></td>
+                  	        <td><input type="text" class="form-control" value=""/></td>
+                  	        <td><input type="text" class="form-control" value="+3"/></td>
+                  	        <td><input type="text" class="form-control" value=""/></td>
+                  	        <td><input type="text" class="form-control" value="+6"/></td>
+                	        </tr>
+              	        </tbody>
+            	        </table>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Normal level</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="12"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Total</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" disabled="" value="11"/>
+                      </div>
+                    </div>
                   </div>
-    	          </div>
-    	          <div class="form-inline pull-right">
-      	          <div class="form-group">
-                    <label class="control-label">Total</label>
-                    <input type="text" class="form-control" value="11" disabled="disabled">
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#resource-analysis-2" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Salesforce.com</h4>
+                </div>
+                <div class="collapse in" id="resource-analysis-2">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">RTO</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="1 day"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">RPO</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="Last intraday backup"/>
+                      </div>
+                    </div>
                   </div>
-    	          </div>
-    	        </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix" href="#resource-analysis-3" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Dependency 1 - BT</h4>
+                </div>
+                <div class="collapse in" id="resource-analysis-3">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <textarea class="form-control" placeholder="Description of dependency">BT service into Harlow site needs to be working. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-default">
+                Delete
+              </button>
             </div>
           </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix" href="#bia2-resource-2" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Salesforce.com</h4>
-            </div>
-            <div class="collapse in" id="bia2-resource-2">
-    	        <table class="table table-bordered isometrica-resource-analysis-table">
-      	        <tbody>
-        	        <tr>
-          	        <th>RTO</th>
-          	        <th>RPO</th>
-        	        </tr>
-        	        <tr>
-          	        <td><input type="text" class="form-control" value="1 day"/></td>
-          	        <td><input type="text" class="form-control" value="last intraday backup"/></td>
-        	        </tr>
-      	        </tbody>
-    	        </table>
-            </div>
-          </div>
-
-          <div class="panel panel-default bootcards-panel-collapsing">
-            <div class="panel-heading clearfix" href="#bia2-resource-3" data-toggle="collapse">
-              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-    	        <h4 class="panel-title">Dependency 1 - BT</h4>
-            </div>
-            <div class="collapse in" id="bia2-resource-3">
-    	        <table class="table table-bordered isometrica-resource-analysis-table">
-      	        <tbody>
-        	        <tr>
-          	        <td><textarea class="form-control">BT service into Harlow site needs to be working. Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea></td>
-        	        </tr>
-      	        </tbody>
-    	        </table>
-            </div>
-          </div>
-
-          <div class="text-center">
-            <button type="button" class="btn btn-primary add-type">
-              <i class="fa fa-plus"></i>
-              Add a Resource type
-            </button>
-          </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default">
-            Delete
-          </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
@@ -1250,16 +1072,13 @@
   		    </div>
   		    <div class="btn-group pull-right">
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
+  		      	Done
   		      </button>
   		    </div>
   	      <h4 class="modal-title">Risk Analysis</h4>
   	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
+  	    <form class="form-horizontal">
+          <div class="modal-body">
             <div class="form-group">
               <label class="control-label col-sm-4">Risk name</label>
               <div class="col-sm-8">
@@ -1279,26 +1098,6 @@
               <label class="control-label col-sm-4">Risk number</label>
               <div class="col-sm-2">
                 <input type="text" class="form-control" value="1"/>
-              </div>
-            </div>
-            <div class="form-group risk-analysis-linked-items">
-              <label class="control-label col-sm-4">Activity linkage</label>
-              <div class="col-sm-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info">Thermoforming</button>
-                  <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus no-margin"></i></button>
-              </div>
-            </div>
-            <div class="form-group risk-analysis-linked-items">
-              <label class="control-label col-sm-4">Risk linkage</label>
-              <div class="col-sm-8">
-                <div class="btn-group linked-item">
-                  <button type="button" class="btn btn-info">Flooding</button>
-                  <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
-                </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus no-margin"></i></button>
               </div>
             </div>
             <div class="form-group">
@@ -1325,121 +1124,174 @@
                 <button type="button" class="btn btn-warning btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">Medium</button>
               </div>
             </div>
-          </form>
-        </div>
-        <div class="modal-body risk-analysis-mitigation-header clearfix">
-          <h4 class="isometrica-workbook-modal-subheading pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
-          <button type="button" class="btn btn-link pull-right">
-            <i class="fa fa-minus-circle fa-lg no-margin"></i>
-          </button>
-        </div>
-        <div class="modal-body">
-          <form class="form-horizontal">
-            <div class="form-group risk-analysis-impacts">
-              <label class="control-label col-sm-4">Impacts</label>
-              <div class="col-sm-4">
-                <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">1</button>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#riskanalysis-activities" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Activity linkage</h4>
+                  <h4 class="panel-title pull-right text-muted">1</h4>
+                </div>
+                <div class="collapse" id="riskanalysis-activities">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">Thermoforming</button>
+                          <button type="button" class="btn btn-default"><i class="fa fa-times-circle no-margin"></i></button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group risk-analysis-likelihood">
-              <label class="control-label col-sm-4">Likelihood</label>
-              <div class="col-sm-4">
-                <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">1</button>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#riskanalysis-risk-linkage" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Risk linkage</h4>
+                  <h4 class="panel-title pull-right text-muted">1</h4>
+                </div>
+                <div class="collapse" id="riskanalysis-risk-linkage">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <div class="col-sm-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">Flooding</button>
+                          <button type="button" class="btn btn-default"><i class="fa fa-times-circle no-margin"></i></button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
-            </div>
-            <div class="form-group risk-analysis-score">
-              <label class="control-label col-sm-4">Risk score</label>
-              <div class="col-sm-4">
-                <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">Low</button>
-              </div>
-            </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#riskanalysis-mitigation-1" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Mitigation opportunity 1: Special shielding of solvents</h4>
+                  <h4 class="panel-title pull-right"><span class="label label-success">Implemented</span></h4>
+                </div>
+                <div class="collapse" id="riskanalysis-mitigation-1">
+                  <div class="panel-body">
+                    <div class="form-group risk-analysis-impacts">
+                      <label class="control-label col-sm-4">Impacts</label>
+                      <div class="col-sm-4">
+                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">1</button>
+                      </div>
+                    </div>
+                    <div class="form-group risk-analysis-likelihood">
+                      <label class="control-label col-sm-4">Likelihood</label>
+                      <div class="col-sm-4">
+                        <button type="button" class="btn btn-default btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">1</button>
+                      </div>
+                    </div>
+                    <div class="form-group risk-analysis-score">
+                      <label class="control-label col-sm-4">Risk score</label>
+                      <div class="col-sm-4">
+                        <button type="button" class="btn btn-success btn-block" data-dismiss="modal" data-toggle="modal" data-target=".isometrica-risk-grading-modal">Low</button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-4">Implemented?</label>
+                      <div class="col-sm-4">
+                        <button type="button" class="btn btn-success btn-checkbox active"><i class="fa fa-check fa-lg"></i></button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-sm-4">Implemented date</label>
+                      <div class="col-sm-4">
+                        <input type="text" class="form-control" placeholder="Implemented date" value="15 Oct 2015"/>
+                      </div>
+                    </div>
+                  </div>
+                </div>
 
-          </form>
-        </div>
-        <div class="modal-body">
-          <div class="form-group text-center">
-	          <button type="button" class="btn btn-primary">
-	            <i class="fa fa-plus"></i>
-	            Add a Mitigation Opportunity
-	          </button>
+              </div>
+            </div>
+            <div class="text-center">
+  	          <button type="button" class="btn btn-primary">
+  	            <i class="fa fa-plus"></i>
+  	            Add a Mitigation Opportunity
+  	          </button>
+            </div>
+            <hr>
+            <div class="text-center">
+  	          <button type="button" class="btn btn-default">
+  	            Delete
+  	          </button>
+            </div>
           </div>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default">
-            Delete
-          </button>
-        </div>
+        </form>
       </div>
     </div>
   </div>
 
   <!-- Risk Analysis: Risk grading tool -->
   <div class="modal fade isometrica-risk-grading-modal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
-  	      <h4 class="modal-title pull-left">Select risk level</h4>
-  	      <button type="button" class="btn btn-link pull-right icon-only">
-  	        <i class="fa fa-lg fa-times"></i>
+  	      <h4 class="modal-title">Select risk level</h4>
+  	      <button type="button" class="btn btn-default pull-right" data-dismiss="modal">
+  	        Cancel
   	      </button>
   	    </div>
   	    <div class="isometrica-risk-grading">
     	    <table class="table">
       	    <tbody>
         	    <tr>
-          	    <th rowspan="5"><span class="impacts-heading">Impacts</span></th>
-          	    <th class="impact-label">5</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
+          	    <th rowspan="6" class="impacts-heading"><span>Impacts</span></th>
+          	    <th class="impact-label">Catastrophic</th>
+          	    <td class="impact impact-low">45</td>
+          	    <td class="impact impact-medium">65</td>
+          	    <td class="impact impact-high">80</td>
+          	    <td class="impact impact-high">90</td>
+          	    <td class="impact impact-high">100</td>
         	    </tr>
         	    <tr>
-          	    <th class="impact-label">4</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
-          	    <td class="impact impact-high"></td>
+          	    <th class="impact-label">Significant</th>
+          	    <td class="impact impact-low">35</td>
+          	    <td class="impact impact-medium">60</td>
+          	    <td class="impact impact-high">75</td>
+          	    <td class="impact impact-high">80</td>
+          	    <td class="impact impact-high">85</td>
         	    </tr>
         	    <tr>
-          	    <th class="impact-label">3</th>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
-          	    <td class="impact impact-medium"></td>
+          	    <th class="impact-label">Moderate</th>
+          	    <td class="impact impact-low">26</td>
+          	    <td class="impact impact-medium">51</td>
+          	    <td class="impact impact-medium">54</td>
+          	    <td class="impact impact-medium">59</td>
+          	    <td class="impact impact-medium">66</td>
         	    </tr>
         	    <tr>
-          	    <th class="impact-label">2</th>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
-          	    <td class="impact impact-low"></td>
+          	    <th class="impact-label">Minor</th>
+          	    <td class="impact impact-vlow">15</td>
+          	    <td class="impact impact-low">27</td>
+          	    <td class="impact impact-low">30</td>
+          	    <td class="impact impact-low">36</td>
+          	    <td class="impact impact-low">42</td>
         	    </tr>
         	    <tr>
-          	    <th class="impact-label">1</th>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
-          	    <td class="impact impact-vlow"></td>
+          	    <th class="impact-label">Limited</th>
+          	    <td class="impact impact-vlow">1</td>
+          	    <td class="impact impact-vlow">8</td>
+          	    <td class="impact impact-vlow">12</td>
+          	    <td class="impact impact-vlow">16</td>
+          	    <td class="impact impact-vlow active">27</td>
         	    </tr>
         	    <tr>
-          	    <th>&nbsp;</th>
           	    <th class="impact-label">&nbsp;</th>
-          	    <th class="impact-label">1</th>
-          	    <th class="impact-label">2</th>
-          	    <th class="impact-label">3</th>
-          	    <th class="impact-label">4</th>
-          	    <th class="impact-label">5</th>
+          	    <th class="impact-label">V.Low</th>
+          	    <th class="impact-label">Low</th>
+          	    <th class="impact-label">Med</th>
+          	    <th class="impact-label">High</th>
+          	    <th class="impact-label">V.High</th>
         	    </tr>
         	    <tr>
+          	    <th><a href="#"><i class="fa fa-question-circle fa-2x"></i></a></th>
           	    <th>&nbsp;</th>
-          	    <th>&nbsp;</th>
-          	    <th colspan="5"><span class="probability-heading">Probability</span></th>
+          	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
         	    </tr>
       	    </tbody>
     	    </table>
@@ -1449,7 +1301,7 @@
   </div>
 
   <!-- Risk Analysis: Worksheet -->
-  <div class="modal fade isometrica-worksheet-modal" id="riskAnalysisWorksheetModal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="riskAnalysisWorksheetModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header">
@@ -1551,7 +1403,7 @@
   </div>
 
   <!-- Strategy evaluation -->
-  <div class="modal fade isometrica-workbook-modal" id="strategyEvaluationModal" tabindex="-1" role="dialog">
+  <div class="modal fade" id="strategyEvaluationModal" tabindex="-1" role="dialog">
     <div class="modal-dialog">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
@@ -1562,20 +1414,23 @@
   		    </div>
   		    <div class="btn-group pull-right">
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
+  		      	Done
   		      </button>
   		    </div>
   	      <h4 class="modal-title">Strategy evaluation</h4>
   	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
+              <label class="control-label col-xs-4">Risk</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="Risk of flooding"/>
+              </div>
+            </div>
+            <div class="form-group">
               <label class="control-label col-xs-4">Activity</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control typeahead" value="Thermoforming"/>
+                <input type="text" class="form-control" value="Thermoforming"/>
               </div>
             </div>
             <div class="form-group">
@@ -1591,72 +1446,196 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Risks</label>
+              <label class="control-label col-xs-4">Dependencies to consider</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control disabled" disabled="" value="Fire in building, flood, severe weather"/>
+                <textarea class="form-control" disabled="" rows="2">Extrusion, raw material supply</textarea>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Dependencies</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control disabled" disabled="" value="Extrusion, raw material supply"/>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#strategy-option-1" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Strategy option 1: Move to building 2</h4>
+                  <h4 class="panel-title pull-right"><span class="label label-success">Selected</span></h4>
+                </div>
+                <div class="collapse" id="strategy-option-1">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Strategy option</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="Move to building 2"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Financial evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">1</button>
+                          <button type="button" class="btn btn-default">2</button>
+                          <button type="button" class="btn btn-danger active">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-default">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details" value="Lorem ipsum dolor sit amet"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Operational evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">1</button>
+                          <button type="button" class="btn btn-default">2</button>
+                          <button type="button" class="btn btn-default">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-warning active">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-default">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details" value="Consectetur adipiscing elit"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reputational evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">1</button>
+                          <button type="button" class="btn btn-default">2</button>
+                          <button type="button" class="btn btn-default">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-success active">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Overall evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-warning" disabled="">16/30</button>
+                          <button type="button" class="btn btn-warning" disabled="">OK</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Selected?</label>
+                      <div class="col-xs-8">
+                        <button type="button" class="btn btn-success btn-checkbox active"><i class="fa fa-check fa-lg"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#strategy-option-2" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Strategy option 2: Outsource to supplier X</h4>
+                </div>
+                <div class="collapse" id="strategy-option-2">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Strategy option</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="Outsource to supplier X"/>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Financial evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-danger active">1</button>
+                          <button type="button" class="btn btn-default">2</button>
+                          <button type="button" class="btn btn-default">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-default">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details" value="Lorem ipsum dolor sit amet"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Operational evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">1</button>
+                          <button type="button" class="btn btn-danger active">2</button>
+                          <button type="button" class="btn btn-default">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-default">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details" value="Consectetur adipiscing elit"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Reputational evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-danger active">1</button>
+                          <button type="button" class="btn btn-default">2</button>
+                          <button type="button" class="btn btn-default">3</button>
+                          <button type="button" class="btn btn-default">4</button>
+                          <button type="button" class="btn btn-default">5</button>
+                          <button type="button" class="btn btn-default">6</button>
+                          <button type="button" class="btn btn-default">7</button>
+                          <button type="button" class="btn btn-default">8</button>
+                          <button type="button" class="btn btn-default">9</button>
+                          <button type="button" class="btn btn-default">10</button>
+                        </div>
+                        <input type="text" class="form-control" placeholder="Details"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Overall evaluation</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-danger" disabled="">4/30</button>
+                          <button type="button" class="btn btn-danger" disabled="">Non-starter</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Selected?</label>
+                      <div class="col-xs-8">
+                        <button type="button" class="btn btn-default btn-checkbox"><i class="fa fa-check fa-lg"></i></button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
-          </div>
-          <div class="modal-body">
-            <div class="form-group risk-analysis-linked-items">
-              <label class="control-label col-xs-4">Strategy option</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="Spare machine"/>
-              </div>
+            <div class="text-center">
+              <button type="button" class="btn btn-primary">
+                <i class="fa fa-plus"></i>
+                Add a strategy option
+              </button>
             </div>
-            <div class="form-group risk-analysis-linked-items">
-              <label class="control-label col-xs-4">Details</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" rows="2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam pharetra arcu quis nulla</textarea>
-              </div>
-            </div>
-          </div>
-          <div class="modal-body">
-            <h4 class="isometrica-workbook-modal-subheading text-left">Evaluation</h4>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Financial</label>
-              <div class="col-xs-2 evaluation-rating">
-                <button type="button" class="btn btn-default btn-block">Poor</button>
-              </div>
-              <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Details" value="Lorem ipsum dolor sit amet, consectetur adipiscing elit"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Operational</label>
-              <div class="col-xs-2 evaluation-rating">
-                <button type="button" class="btn btn-warning btn-block">OK</button>
-              </div>
-              <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Details" value="Consectetur adipiscing elit"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Reputation</label>
-              <div class="col-xs-2 evaluation-rating">
-                <button type="button" class="btn btn-primary btn-block">Good</button>
-              </div>
-              <div class="col-xs-6">
-                <input type="text" class="form-control" placeholder="Details"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Overall</label>
-              <div class="col-xs-2 evaluation-rating">
-                <button type="button" class="btn btn-warning btn-block">OK</button>
-              </div>
-              <div class="col-xs-6 is-selected">
-                <button type="button" class="btn btn-primary pull-right">
-                  <i class="fa fa-check no-margin"></i>
-                </button>
-                <label class="control-label pull-right">Selected?</label>
-              </div>
+            <hr>
+            <div class="text-center">
+              <button type="button" class="btn btn-default">
+                Delete
+              </button>
             </div>
           </div>
         </form>
@@ -1674,7 +1653,7 @@
   		      	<i class="fa fa-lg fa-times"></i>
   		      </button>
   		    </div>
-  		    <h4 class="modal-title">Risk register</h4>
+  		    <h4 class="modal-title">Strategy evaluation</h4>
   	    </div>
         <div class="modal-body">
   				<div class="table-responsive">
@@ -1762,57 +1741,48 @@
   		    </div>
   		    <div class="btn-group pull-right">
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Save
+  		      	Done
   		      </button>
   		    </div>
   	      <h4 class="modal-title">Recovery procedure</h4>
   	    </div>
-  	    <div class="modal-header subheader">
-          <span class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eu justo condi mentum, tristique mi eget, volutpat ante.</span>
-        </div>
         <form class="form-horizontal">
-
-          <div class="modal-body isometrica-rich-text-control">
-            <div class="isometrica-rich-text-controls clearfix">
-              <div class="ql-toolbar-container" id="formatting-container">
-                <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-              </div>
-            </div>
-            <div class="ql-container isometrica-rich-text-input" id="editor-container">
-              <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-            </div>
-          </div>
           <div class="modal-body">
             <div class="form-group">
               <label class="control-label col-xs-4">Scenario name</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" value=""/>
+                <input type="text" class="form-control" placeholder="Scenario name" value=""/>
               </div>
             </div>
             <div class="form-group">
               <label class="control-label col-xs-4">Team</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control typeahead" value="Business Continuity"/>
+                <select class="form-control">
+                  <option></option>
+                  <option selected="">Business continuity</option>
+                  <option>Crisis communications</option>
+                  <option>Incident management</option>
+                  <option>IT disaster recovery</option>
+                </select>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Files</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-info"><i class="fa fa-file-o"></i> File name goes here</button>
-                  <button type="button" class="btn btn-info"><i class="fa fa-times-circle no-margin"></i></button>
+            <div class="isometrica-rich-text-control">
+              <div class="isometrica-rich-text-controls clearfix">
+                <div class="ql-toolbar-container" id="formatting-container">
+                  <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                  <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                  <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                  <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                  <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
                 </div>
-                <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add File</button>
+              </div>
+              <div class="ql-container isometrica-rich-text-input" id="editor-container" style="height: 400px">
+                <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
               </div>
             </div>
-          </div>
-          <div class="modal-footer">
-            <small class="pull-left">Last updated by A.Jones</small>
-            <small class="pull-right">12 Apr 2015</small>
+            <div class="text-center">
+              <button type="button" class="btn btn-default">Delete</button>
+            </div>
           </div>
         </form>
       </div>
