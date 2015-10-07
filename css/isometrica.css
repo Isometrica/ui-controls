@@ -4,43 +4,15 @@ body {
   height: 100%; }
 
 body {
-  display: -webkit-box;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  display: -moz-box;
-  /* OLD - Firefox 19- (buggy but mostly works) */
-  display: -ms-flexbox;
-  /* TWEENER - IE 10 */
-  display: -webkit-flex;
-  /* NEW - Chrome */
-  display: flex;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */
-  flex-direction: column;
-  padding-top: 0 !important;
-  overflow: hidden; }
+  padding-top: 0 !important; }
 
-/*body.desktop {
-  padding-top: 50px !important;
+body.desktop {
+  padding-top: 50px !important; }
+  body.desktop.has-bootcards-navbar-double {
+    padding-top: 80px !important; }
 
-  &.has-bootcards-navbar-double {
-    padding-top: 80px !important;
-  }
-}*/
 .bootcards-container {
-  position: relative !important;
-  -webkit-box-flex: 1;
-  /* OLD - iOS 6-, Safari 3.1-6 */
-  -moz-box-flex: 1;
-  /* OLD - Firefox 19- */
-  -webkit-flex: 1;
-  /* Chrome */
-  -ms-flex: 1;
-  /* IE 10 */
-  flex: 1;
-  /* NEW, Spec - Opera 12.1, Firefox 20+ */ }
-  .bootcards-container > .row {
-    position: absolute;
-    top: 0;
-    bottom: 0; }
+  height: 100%; }
 
 .desktop .bootcards-hidden-desktop {
   display: none; }
@@ -51,19 +23,12 @@ body {
 .label {
   padding: 0.25em 0.6em; }
 
-@media (min-width: 768px) and (max-width: 991px) {
+@media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: auto; } }
 
 .margin-left {
   margin-left: 5px; }
-
-.row-eq-height,
-.row-eq-height > div {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
 
 /* BUTTONS */
 .btn[disabled] {
@@ -485,7 +450,6 @@ input.form-value {
 
 /* NAV */
 .navbar {
-  position: relative;
   margin: 0; }
   .navbar .btn-primary {
     background: #006e9e;
@@ -572,6 +536,9 @@ input.form-value {
   line-height: 1.42857143;
   padding: 6px 12px;
   margin: 5px 3px; }
+
+.desktop .bootcards-navbar-double {
+  height: 80px; }
 
 .ios .bootcards-navbar-double .container > .navbar-right {
   position: absolute;
@@ -967,11 +934,14 @@ input.form-value {
 
 /* GUIDANCE BAR */
 /* Navbar guidance toggle */
+/*
 .guidance-bar-toggle {
-  display: none !important; }
-  .guidance-bar-toggle.collapsed {
-    display: block !important; }
+  display: none !important;
 
+  &.collapsed {
+    display: block !important;
+  }
+}*/
 /* Modal guidance toggle */
 .guidance-toggle {
   display: none;
@@ -984,7 +954,7 @@ input.form-value {
     font-size: 24px;
     margin: 0; }
 
-.collapse, .collapsing {
+.modal-body .collapse, .modal-body .collapsing {
   clear: both;
   overflow: hidden; }
 
@@ -1010,25 +980,8 @@ input.form-value {
   color: white;
   font-size: 17px;
   z-index: 9;
-  padding: 15px 0 0;
+  padding: 15px 0;
   font-weight: 300;
-  /*
-  h4 {
-    color: white;
-    margin: 0;
-    font-weight: 300;
-    line-height: 1.3;
-    font-size: 17px;
-    //padding: 0 10px;
-
-    .badge {
-      position: relative;
-      top: -1px;
-      margin-right: 3px;
-      background: #5bc0de;
-    }
-  }
-  */
   /*
   .btn-group {
     .btn {
@@ -1075,6 +1028,16 @@ input.form-value {
     font-size: 21px;
     line-height: 21px;
     color: white; }
+  .guidance-bar h4 {
+    margin: 0;
+    font-weight: 300;
+    line-height: 1.3;
+    font-size: 17px; }
+    .guidance-bar h4 .badge {
+      position: relative;
+      top: -1px;
+      margin-right: 3px;
+      background: #5bc0de; }
   .guidance-bar .btn {
     color: white !important; }
   .guidance-bar .text-muted {
@@ -1085,50 +1048,38 @@ input.form-value {
   .guidance-bar .guidance-panel-question .form-control {
     border-color: #006e9e; }
 
-.guidance-panel,
-.guidance-bar {
+.guidance-panel {
   line-height: 1.5;
   overflow: hidden;
   clear: both; }
-  .guidance-panel .btn,
-  .guidance-bar .btn {
+  .guidance-panel .btn {
     font-size: 14px;
     margin-right: 20px !important;
     margin-bottom: 10px !important; }
-    .guidance-panel .btn.ask-question:not(.collapsed),
-    .guidance-bar .btn.ask-question:not(.collapsed) {
+    .guidance-panel .btn.ask-question:not(.collapsed) {
       display: none; }
-    .guidance-panel .btn.show-more .collapsed-label,
-    .guidance-bar .btn.show-more .collapsed-label {
+    .guidance-panel .btn.show-more .collapsed-label {
       display: none; }
-    .guidance-panel .btn.show-more .expanded-label,
-    .guidance-bar .btn.show-more .expanded-label {
+    .guidance-panel .btn.show-more .expanded-label {
       display: inline-block; }
-    .guidance-panel .btn.show-more.collapsed .collapsed-label,
-    .guidance-bar .btn.show-more.collapsed .collapsed-label {
+    .guidance-panel .btn.show-more.collapsed .collapsed-label {
       display: inline-block; }
-    .guidance-panel .btn.show-more.collapsed .expanded-label,
-    .guidance-bar .btn.show-more.collapsed .expanded-label {
+    .guidance-panel .btn.show-more.collapsed .expanded-label {
       display: none; }
-  .guidance-panel .btn-link,
-  .guidance-bar .btn-link {
+  .guidance-panel .btn-link {
     text-decoration: none;
     margin-bottom: 0;
     margin-left: 0;
     padding: 10px 0; }
     .guidance-panel .btn-link .fa-chevron-up,
-    .guidance-panel .btn-link .fa-chevron-down,
-    .guidance-bar .btn-link .fa-chevron-up,
-    .guidance-bar .btn-link .fa-chevron-down {
+    .guidance-panel .btn-link .fa-chevron-down {
       margin-right: 2px;
       position: relative;
       top: -2px;
       font-size: 9px; }
-  .guidance-panel .guidance-panel-question textarea,
-  .guidance-bar .guidance-panel-question textarea {
+  .guidance-panel .guidance-panel-question textarea {
     margin-bottom: 10px; }
-  .guidance-panel ul,
-  .guidance-bar ul {
+  .guidance-panel ul {
     padding-left: 20px; }
 
 .guidance-panel {
@@ -2487,7 +2438,7 @@ body.desktop.isometrica-overview-page .navbar-header {
   left: auto;
   right: auto;
   bottom: auto;
-  height: 115px; }
+  min-height: 115px; }
   .isometrica-overview-page .guidance-bar h4 {
     line-height: 28px; }
   @media (max-width: 767px) {
