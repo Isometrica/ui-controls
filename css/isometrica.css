@@ -991,8 +991,10 @@ input.form-value {
 .guidance-bar {
   background: #006e9e;
   color: white;
+  font-size: 17px;
   z-index: 9;
-  padding: 15px 0 10px;
+  padding: 15px 0 0;
+  font-weight: 500;
   /*
   h4 {
     color: white;
@@ -1074,7 +1076,8 @@ input.form-value {
   .guidance-panel .btn,
   .guidance-bar .btn {
     font-size: 14px;
-    margin-right: 20px; }
+    margin-right: 20px !important;
+    margin-bottom: 10px !important; }
     .guidance-panel .btn.ask-question:not(.collapsed),
     .guidance-bar .btn.ask-question:not(.collapsed) {
       display: none; }

@@ -1496,7 +1496,7 @@ $status-indicator-size: 16px;
   //background: rgba(0,0,0,0.75) !important;
   background: $blue-color;
   color: white;
-  //font-size: 15px;
+  font-size: 17px;
   //border: 0;
   //margin: 0;
   //top: 50px;
@@ -1504,7 +1504,8 @@ $status-indicator-size: 16px;
   //right: 0;
   z-index: 9;
   //border-radius: 0;
-  padding: 15px 0 10px;
+  padding: 15px 0 0;
+  font-weight: 500;
 
   .row {
     i.fa-long-arrow-right {
@@ -1604,7 +1605,8 @@ $status-indicator-size: 16px;
 
   .btn {
     font-size: 14px;
-    margin-right: 20px;
+    margin-right: 20px !important;
+    margin-bottom: 10px !important;
 
     &.ask-question:not(.collapsed) {
       display: none;
