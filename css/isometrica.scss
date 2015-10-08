@@ -1243,14 +1243,16 @@ $status-indicator-size: 16px;
       }
     }*/
 
-    /*
+    top: 44px;
     position: fixed;
-    top: 96px;
     left: 0;
     right: 0;
     bottom: 0;
     padding-top: 0;
     height: auto;
+
+    /*
+    top: 96px;
 
     @media (max-width: 767px) {
       top: 44px;
@@ -1321,25 +1323,16 @@ $status-indicator-size: 16px;
 
 .android {
   .isometrica-container-listdetail {
-    /*
+
     padding-top: 0 !important;
     position: fixed;
-    top: 102px;
+    //top: 102px;
+    top: 50px;
     left: 0;
     right: 0;
     bottom: 0;
     padding-top: 0;
     height: auto;
-
-    @media (max-width: 767px) {
-      top: 50px;
-    }
-
-    .guidance-bar {
-      .btn {
-        line-height: 28px;
-      }
-    }*/
 
     .bootcards-list {
       .list-group-item.active,
