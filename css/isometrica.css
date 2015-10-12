@@ -1494,53 +1494,35 @@ input.form-value {
     color: white !important; }
 
 /* workbook */
-/* Guidance bar
+/* Guidance bar */
+.isometrica-workbook-page .guidance-panel-top {
+  height: 100px !important;
+  overflow: hidden; }
+  .isometrica-workbook-page .guidance-panel-top .col {
+    width: 20%;
+    float: left;
+    position: relative;
+    padding: 0 15px; }
+    @media (max-width: 991px) {
+      .isometrica-workbook-page .guidance-panel-top .col:nth-child(5) {
+        padding-right: 40px; } }
+  .isometrica-workbook-page .guidance-panel-top .btn-group {
+    position: absolute;
+    right: 10px;
+    top: 10px; }
+    .isometrica-workbook-page .guidance-panel-top .btn-group .btn {
+      display: block;
+      clear: both;
+      font-size: 24px;
+      padding: 0 7px; }
 
-.isometrica-workbook-page {
-  .guidance-bar {
-    height: 100px !important;
-    overflow: hidden;
+.android.isometrica-workbook-page .guidance-bar h4 {
+  font-size: 15px;
+  line-height: 22px; }
 
-    .col {
-      width: 20%;
-      float: left;
-      position: relative;
-      padding: 0 15px;
+.android.isometrica-workbook-page .guidance-bar .btn {
+  font-size: 15px; }
 
-      &:nth-child(5) {
-        @media (max-width: 991px) {
-          padding-right: 40px;
-        }
-      }
-    }
-
-    .btn-group {
-      position: absolute;
-      right: 10px;
-      top: 10px;
-
-      .btn {
-        display: block;
-        clear: both;
-        font-size: 24px;
-        padding: 0 7px;
-      }
-    }
-  }
-}
-
-.android.isometrica-workbook-page {
-  .guidance-bar {
-    h4 {
-      font-size: 15px;
-      line-height: 22px;
-    }
-
-    .btn {
-      font-size: 15px;
-    }
-  }
-}*/
 /* Rows */
 .workbook {
   position: fixed;
@@ -2680,7 +2662,7 @@ body.desktop.isometrica-overview-page .navbar-header {
 /* CORE SYSTEM */
 .isometrica-org-setup-page {
   background: white; }
-  .isometrica-org-setup-page .guidance-bar .container-fluid {
+  .isometrica-org-setup-page .guidance-panel-top .container-fluid {
     max-width: 1200px; }
 
 .org-setup-container {
