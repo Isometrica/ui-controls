@@ -40,27 +40,27 @@
 
 .isometrica-user-activity {
   padding-top: 30px;
-  
-  .guidance-bar {
-    .btn-group {
-      margin: -13px 0;
-    }
-  }
-  
+
+  //.guidance-bar {
+  //  .btn-group {
+  //    margin: -13px 0;
+  //  }
+  //}
+
   .bootcards-container {
     padding-top: 50px;
   }
-  
+
   .bootcards-accordion {
     .list-group-item.bootcards-list-subheading {
       padding-left: 65px;
-      
+
       &:before {
         width: 36px;
         text-align: center;
       }
     }
-    
+
     a.list-group-item {
       img {
         height: 36px;
@@ -68,14 +68,14 @@
       }
     }
   }
-  
+
   .bootcards-cards {
     .panel-heading {
       img {
         margin-right: 15px;
         margin-top: 7px;
       }
-      
+
       .text-muted {
         color: #777 !important;
       }

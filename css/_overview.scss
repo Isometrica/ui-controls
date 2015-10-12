@@ -56,6 +56,12 @@
   }
 }
 
+.isometrica-overview-page {
+  .guidance-panel-top {
+    min-height: 115px;
+  }
+}
+
 
 body.desktop.isometrica-overview-page {
   @media (max-width:767px) {
@@ -137,9 +143,9 @@ body.desktop.isometrica-overview-page {
     }
   }
 
-  .guidance-bar {
-    box-shadow: none;
-  }
+  //.guidance-bar {
+  //  box-shadow: none;
+  //}
 }
 
 
@@ -171,9 +177,9 @@ body.desktop.isometrica-overview-page {
   bottom: auto;
   min-height: 115px;
 
-  h4 {
-    line-height: 28px;
-  }
+  //h4 {
+  //  line-height: 28px;
+  //}
 
   @media (max-width: 767px) {
     padding-bottom: 5px;
@@ -181,6 +187,8 @@ body.desktop.isometrica-overview-page {
     .row {
       //padding-bottom: 5px;
     }
+
+    /*
 
     h4 {
       font-size: 14px;
@@ -196,6 +204,7 @@ body.desktop.isometrica-overview-page {
         font-weight: 500;
       }
     }
+    */
   }
 }
 
@@ -203,7 +212,7 @@ body.desktop.isometrica-overview-page {
 
 .isometrica-overview-tabs {
   background: $blue-color;
-
+  padding-top: 10px;
 
   @media (max-width: 767px) {
     padding-top: 3px;
@@ -226,6 +235,10 @@ body.desktop.isometrica-overview-page {
         margin: 0 2px;
         border-bottom-left-radius: 0;
         border-bottom-right-radius: 0;
+
+        @media (max-width: 991px) {
+          white-space: nowrap;
+        }
 
         i {
           font-size: 24px;
