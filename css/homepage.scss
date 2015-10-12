@@ -1,0 +1,184 @@
+body {
+  background: #444;
+}
+
+.homepage-header {
+  padding-top: 60px;
+  background: #d9edf1;
+  background-image: -moz-linear-gradient( 90deg, rgb(204,230,237) 0%, rgb(230,243,246) 100%);
+  background-image: -webkit-linear-gradient( 90deg, rgb(204,230,237) 0%, rgb(230,243,246) 100%);
+  background-image: -ms-linear-gradient( 90deg, rgb(204,230,237) 0%, rgb(230,243,246) 100%);
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+
+  .logo {
+    width: 300px;
+    margin-bottom: 40px;
+
+    @media (max-width: 767px) {
+      width: 200px;
+      margin-bottom: 20px;
+    }
+  }
+
+  h1 {
+    font-size: 24px;
+    line-height: 1.4;
+    color: #81abb2;
+    margin: 0 auto;
+    max-width: 640px;
+    font-weight: 500;
+
+    @media (max-width: 767px) {
+      font-size: 18px;
+    }
+  }
+
+  .availability {
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 200px;
+    height: 200px;
+
+    span {
+      position: absolute;
+      right: -80px;
+      top: 10px;
+      background: #d85250;
+      transform: rotate(45deg);
+      line-height:20px;
+      width: 240px;
+      padding: 10px 0;
+      text-align: center;
+      color: white;
+      font-size: 14px;
+
+      strong {
+        display: block;
+        font-weight: bold;
+      }
+    }
+  }
+
+  .sketch {
+    margin: 60px auto 0;
+
+    @media (max-width: 767px) {
+      margin-top: 30px;
+    }
+  }
+}
+
+.homepage-key-facts {
+  background: white;
+  padding-top: 40px;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+
+  .fact {
+    margin-bottom: 30px;
+    overflow: hidden;
+  }
+
+  .circle {
+    $circle-size: 80px;
+    $icon-size: 42px;
+    background: #006e9e;
+    margin: 0 auto 10px;
+
+    @media (max-width: 767px) {
+      float: left;
+      margin: 0 15px 0 0;
+      $circle-size: 50px;
+      $icon-size: 28px;
+    }
+
+    border-radius: 50%;
+    width: $circle-size;
+    height: $circle-size;
+    font-size: $icon-size;
+
+    i {
+      line-height: $circle-size;
+      color: #6fd5f1;
+      text-align: center;
+      display: block;
+    }
+  }
+
+  h4 {
+    color: #7da1ac;
+    font-size: 16px;
+    line-height: 1.4;
+    font-weight: 400;
+    margin: 0;
+    overflow: hidden;
+
+    @media (max-width: 767px) {
+      font-size: 14px;
+    }
+
+    strong {
+      color: #444;
+      display: block;
+      font-size: 32px;
+      line-height: 1;
+      margin-bottom: 4px;
+
+      @media (max-width: 767px) {
+        font-size: 24px;
+      }
+    }
+  }
+}
+
+.homepage-contact {
+  padding: 60px 0;
+  color: white;
+
+  @media (min-width: 768px) {
+    text-align: center;
+  }
+
+  h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #bbb;
+    margin: 0 0 30px;
+
+    @media (max-width: 767px) {
+      font-size: 24px;
+    }
+  }
+
+  form {
+
+
+    @media (min-width: 768px) {
+      max-width: 400px;
+      margin: 0 auto;
+    }
+
+    .form-control {
+      border-color: #444;
+      //border-right: 0;
+    }
+
+    .btn {
+      border-color: #444;
+      transition: all 0.3s ease;
+      //border-left: 0;
+    }
+
+    .checkbox {
+      margin-top: 30px;
+      font-weight: bold;
+    }
+  }
+}
