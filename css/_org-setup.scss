@@ -11,6 +11,15 @@
   }
 }
 
+.ios.isometrica-org-setup-page {
+  overflow: auto;
+
+  .org-setup-container {
+    overflow: visible;
+    height: auto;
+  }
+}
+
 .org-setup-container {
   width: auto;
   padding: 0 180px;

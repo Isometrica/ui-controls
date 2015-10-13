@@ -13,6 +13,7 @@
     .form-group {
       position: relative;
       margin: 0;
+      padding: 0;
     }
 
     input {
@@ -20,35 +21,46 @@
     }
 
     i.fa-search {
-        position: absolute;
-        left: 12px;
-        top: 10px;
-        color: #999;
-        font-size: 14px;
+      position: absolute;
+      left: 12px;
+      top: 10px;
+      color: #999;
+      font-size: 14px;
+    }
+  }
+
+  &.isometrica-calendar-year,
+  &.isometrica-calendar-quarter {
+    th:first-child {
+      width: 20%;
+      border-right: 1px solid #bbb;
+
+      @media (max-width: 1199px) {
+        width: 25%;
+      }
     }
   }
 
   &.isometrica-calendar-year {
-      th {
-        width: 6.6666%; /* 75% / 12 */
+    th {
+      width: 6.6666%; /* 80% / 12 */
 
-        &:first-child {
-          width: 20%;
-          border-right: 1px solid #bbb;
-        }
+      @media (max-width: 1199px) {
+        width: 6.25%; /* 75% / 12 */
       }
+    }
   }
 
   &.isometrica-calendar-quarter {
-      th {
-        width: 6.1538%;  /* 75% / 13 */
+    th {
+      width: 6.1538%;  /* 80% / 13 */
 
-        &:first-child {
-          width: 20%;
-          border-right: 1px solid #bbb;
-        }
+      @media (max-width: 1199px) {
+        width: 5.769%;  /* 75% / 13 */
       }
+    }
   }
+
 
   thead {
     background: #f5f5f5;
@@ -73,8 +85,6 @@
     font-size: 16px;
     padding: 10px 15px !important;
     font-weight: 500;
-
-
   }
 
   th.calendar-accordion-toggle {
@@ -154,5 +164,15 @@
       font-size: 14px;
       padding: 5px;
     }
+  }
+}
+
+
+.ios .isometrica-calendar-container {
+  overflow-y: scroll;
+
+  .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0;
   }
 }

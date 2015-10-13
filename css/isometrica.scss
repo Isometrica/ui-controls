@@ -26,6 +26,10 @@ body.desktop {
   }
 }
 
+body.ios {
+  padding-top: 44px !important;
+}
+
 .bootcards-container {
   height: 100%;
 
@@ -108,6 +112,13 @@ body.desktop {
   border-color: #ccc;
 }
 
+.ios .panel-title {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #444;
+}
+
 
 
 
@@ -154,6 +165,7 @@ input.form-value {
 	color: #bbb !important;
 	transition: all 0.3s ease;
 	border: 0;
+  z-index: 9;
 
 	&:hover {
   	color: #99130f !important;
@@ -166,6 +178,7 @@ input.form-value {
 
 .ios .clear-field {
   //right: 4px;
+  padding-right: 0 !important;
 }
 
 .android .clear-field {
@@ -205,6 +218,16 @@ input.form-value {
   .input-group .btn {
     margin-right: 0;
     margin-bottom: 0;
+  }
+}
+
+.ios {
+  .input-group {
+    .input-group-btn > .btn {
+      border-radius: 3px;
+      border-width: 1px;
+      z-index: 9;
+    }
   }
 }
 
@@ -303,21 +326,43 @@ input.form-value {
 
 .ios {
 
+  .modal-body {
+    padding-top: 0;
+  }
+
+  .form-horizontal .form-group {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    label,
+    .form-control,
+    .btn {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .form-horizontal .form-group:first-of-type {
+    margin-top: 0;
+  }
+
   .form-horizontal .form-group:last-child {
     margin-bottom: 0;
   }
 
-  .form-horizontal .form-group .control-label {
-    padding-top: 6px;
-
+  .form-horizontal .form-group .control-label:first-child {
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-right: 0;
   }
 
-  .form-horizontal .form-group > :first-child {
-    padding-left: 15px !important;
+  .form-horizontal .form-group > div {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  .form-horizontal .form-group > :last-child {
-    padding-right: 15px !important;
+  textarea {
+    resize: none;
   }
 
   textarea:focus, input:focus{
@@ -327,7 +372,7 @@ input.form-value {
   }
 
   .form-horizontal .form-group .btn {
-    margin: 1px 0;
+    //margin: 1px 0;
   }
 }
 
@@ -352,7 +397,6 @@ input.form-value {
 /* LINKS & BUTTONS */
 
 .desktop,
-.ios,
 .android {
   a:not(.btn):not(.list-group-item),
   .btn-link {
@@ -364,6 +408,13 @@ input.form-value {
   }
 }
 
+.ios {
+  a:not(.btn):not(.list-group-item),
+  .btn-link {
+    color: #007aff;
+  }
+
+}
 
 
 
@@ -502,6 +553,7 @@ input.form-value {
   .panel-heading {
     .btn {
       background: transparent;
+      border-color: transparent;
       color: #007aff;
       padding-left: 5px;
       padding-right: 5px;
@@ -924,7 +976,7 @@ input.form-value {
     }
 
     .active a {
-      background: #007aff;
+      background: $light-blue-color !important;
       color: white;
     }
   }
@@ -1005,6 +1057,10 @@ $status-indicator-size: 16px;
 }
 
 .bootcards-list {
+  .panel-heading {
+    border-radius: 0;
+  }
+
   a.list-group-item {
     padding-right: 40px;
 
@@ -1237,14 +1293,6 @@ $status-indicator-size: 16px;
 
 .ios {
   .isometrica-container-listdetail {
-
-    /*.guidance-bar {
-      .btn {
-        line-height: 28px;
-        padding-right: 15px;
-      }
-    }*/
-
     top: 44px;
     position: fixed;
     left: 0;
@@ -1253,30 +1301,35 @@ $status-indicator-size: 16px;
     padding-top: 0;
     height: auto;
 
-    /*
-    top: 96px;
+    .bootcards-list {
+      .panel-heading {
+        border-bottom: 0;
+      }
 
-    @media (max-width: 767px) {
-      top: 44px;
+      .list-group-item-heading {
+        font-weight: 500;
+        color: #444;
+      }
     }
-    */
 
     .bootcards-cards {
       .panel-title {
         text-transform: none;
         font-size: 17px;
         color: black;
-        font-weight: 400;
+        font-weight: 500;
       }
 
       .panel-subheading {
         padding-top: 15px;
+        margin-top: 1px;
 
         .panel-title {
-          color: #999;
+          color: #444;
           padding: 0;
           margin: 0;
           line-height: 1.2;
+          font-weight: 500;
         }
       }
 
@@ -1287,12 +1340,17 @@ $status-indicator-size: 16px;
 
       .list-group-item {
         border-top: 0;
-        border-bottom: 1px solid #ddd !important;
+        //border-bottom: 1px solid #ddd !important;
         margin-bottom: 0;
 
         .list-group-item-heading {
           font-size: 17px;
           font-weight: 400;
+        }
+
+        .list-group-item-text {
+          color: #777;
+          //color: #007aff;
         }
 
       }
@@ -1482,7 +1540,7 @@ $status-indicator-size: 16px;
     text-decoration: none;
     margin-bottom: 0;
     margin-left: 0;
-    padding: 10px 0;
+    padding: 10px 0 !important;
 
     .fa-chevron-up,
     .fa-chevron-down {
@@ -1563,6 +1621,8 @@ $status-indicator-size: 16px;
 
 
 
+
+
 /* Inline guidance */
 
 .form-group .guidance-toggle {
@@ -1574,6 +1634,11 @@ $status-indicator-size: 16px;
   i { font-size: 24px; }
 }
 
+.form-group .collapse,
+.form-group .collapsing {
+  padding: 0 !important;
+}
+
 .form-group .guidance-panel {
   border-top: 1px solid #ddd;
   border-bottom: 1px solid #ddd;
@@ -1582,6 +1647,19 @@ $status-indicator-size: 16px;
 }
 
 
+.ios {
+  .guidance-panel {
+    margin-top: 5px !important;
+  }
+
+  .form-group .guidance-panel {
+    border-bottom: 0;
+  }
+
+  .guidance-panel-top {
+    margin-top: 0 !important;
+  }
+}
 
 
 
@@ -1997,19 +2075,32 @@ $status-indicator-size: 16px;
 .ios .bootcards-panel-collapsing {
   border: 1px solid #ccc;
 
+  &.full-width {
+    border-left: 0;
+    border-right: 0;
+  }
+
+  &:first-child {
+    margin-top: -1px;
+  }
+
   &:not(:last-child) {
     border-bottom: 0;
   }
 
   .panel-heading {
     background-color: #f5f5f5;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     border-radius: 0;
   }
 
   .panel-body {
-    padding-bottom: 0;
+    padding-bottom: 15px;
+  }
+
+  .panel-title {
+    padding: 0;
   }
 
   .panel-heading {
@@ -2071,6 +2162,10 @@ $status-indicator-size: 16px;
 
 
 /* FOOTER - CHANGELOG */
+
+.panel-footer {
+  clear: both;
+}
 
 .panel-footer .isometrica-changelog { margin: -10px -15px; }
 .modal-footer .isometrica-changelog { margin: -15px; }
