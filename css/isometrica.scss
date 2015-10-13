@@ -166,6 +166,8 @@ input.form-value {
 	transition: all 0.3s ease;
 	border: 0;
   z-index: 9;
+  display: none;
+  margin-right: 0 !important;
 
 	&:hover {
   	color: #99130f !important;
@@ -176,19 +178,18 @@ input.form-value {
 	}
 }
 
+input:focus ~ .clear-field {
+  display: block;
+}
+
 .ios .clear-field {
-  //right: 4px;
   padding-right: 0 !important;
 }
 
 .android .clear-field {
-	right: 3px;
-	top: 3px;
+
 }
 
-.desktop .clear-field {
-  display: none;
-}
 
 .help-icon {
   margin-right: 5px;
@@ -227,6 +228,12 @@ input.form-value {
       border-radius: 3px;
       border-width: 1px;
       z-index: 9;
+    }
+
+    .input-group-addon {
+      background: transparent;
+      border-color: transparent;
+      padding-left: 0;
     }
   }
 }
@@ -313,10 +320,9 @@ input.form-value {
 
 .btn-checkbox {
   width: 34px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 10px;
-  margin-bottom: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 10px !important;
 
   i {
     margin: 0 !important;
@@ -340,6 +346,10 @@ input.form-value {
       margin-top: 5px;
       margin-bottom: 5px;
     }
+  }
+
+  .form-horizontal .form-group .control-label {
+    white-space: normal;
   }
 
   .form-horizontal .form-group:first-of-type {

@@ -99,21 +99,19 @@ input.form-value {
   color: #bbb !important;
   transition: all 0.3s ease;
   border: 0;
-  z-index: 9; }
+  z-index: 9;
+  display: none;
+  margin-right: 0 !important; }
   .clear-field:hover {
     color: #99130f !important; }
   .clear-field i {
     margin: 0 !important; }
 
+input:focus ~ .clear-field {
+  display: block; }
+
 .ios .clear-field {
   padding-right: 0 !important; }
-
-.android .clear-field {
-  right: 3px;
-  top: 3px; }
-
-.desktop .clear-field {
-  display: none; }
 
 .help-icon {
   margin-right: 5px;
@@ -145,6 +143,11 @@ input.form-value {
   border-radius: 3px;
   border-width: 1px;
   z-index: 9; }
+
+.ios .input-group .input-group-addon {
+  background: transparent;
+  border-color: transparent;
+  padding-left: 0; }
 
 .isometrica-rich-text-control {
   padding: 0;
@@ -201,10 +204,9 @@ input.form-value {
 
 .btn-checkbox {
   width: 34px;
-  padding-left: 0;
-  padding-right: 0;
-  margin-right: 10px;
-  margin-bottom: 0 !important; }
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 10px !important; }
   .btn-checkbox i {
     margin: 0 !important;
     color: white; }
@@ -220,6 +222,9 @@ input.form-value {
   .ios .form-horizontal .form-group .btn {
     margin-top: 5px;
     margin-bottom: 5px; }
+
+.ios .form-horizontal .form-group .control-label {
+  white-space: normal; }
 
 .ios .form-horizontal .form-group:first-of-type {
   margin-top: 0; }
