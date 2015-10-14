@@ -130,7 +130,8 @@
   .btn-date-specific {
     position: relative;
     padding-right: 0;
-    padding-left: 15px;
+    padding-left: 15px !important;
+    color: $blue-color;
 
     .date {
       color: #999;

@@ -35,19 +35,6 @@
   }
 }
 
-.android.isometrica-workbook-page {
-  .guidance-bar {
-    h4 {
-      font-size: 15px;
-      line-height: 22px;
-    }
-
-    .btn {
-      font-size: 15px;
-    }
-  }
-}
-
 /* Rows */
 
 .workbook {
@@ -296,6 +283,11 @@
 }
 
 .android .workbook {
+  top: 150px;
+
+  @media (max-width: 767px) {
+    top: 50px;
+  }
 
   .workbook-item-heading {
     background: transparent;

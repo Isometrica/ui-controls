@@ -14,6 +14,9 @@ body.desktop {
 body.ios {
   padding-top: 44px !important; }
 
+body.android {
+  padding-top: 50px !important; }
+
 .bootcards-container {
   height: 100%; }
 
@@ -73,11 +76,20 @@ body.ios {
   font-weight: 500;
   color: #444; }
 
+.android .panel-heading .btn {
+  color: #33b5e5 !important; }
+
+.android .panel-heading .panel-title {
+  color: #333;
+  padding: 8px 0; }
+
 /* LINKS & BUTTONS */
 .desktop a:not(.btn):not(.list-group-item),
 .desktop .btn-link,
 .android a:not(.btn):not(.list-group-item),
-.android .btn-link {
+.android .btn-link,
+.ios a:not(.btn):not(.list-group-item),
+.ios .btn-link {
   color: #006e9e; }
   .desktop a:not(.btn):not(.list-group-item):hover,
   .desktop a:not(.btn):not(.list-group-item):focus,
@@ -91,12 +103,16 @@ body.ios {
   .android a:not(.btn):not(.list-group-item):focus,
   .android a:not(.btn):not(.list-group-item):active,
   .android a:not(.btn):not(.list-group-item).active,
-  .android .btn-link:hover, .android .btn-link:focus, .android .btn-link:active, .android .btn-link.active {
+  .android .btn-link:hover,
+  .android .btn-link:focus,
+  .android .btn-link:active,
+  .android .btn-link.active,
+  .ios a:not(.btn):not(.list-group-item):hover,
+  .ios a:not(.btn):not(.list-group-item):focus,
+  .ios a:not(.btn):not(.list-group-item):active,
+  .ios a:not(.btn):not(.list-group-item).active,
+  .ios .btn-link:hover, .ios .btn-link:focus, .ios .btn-link:active, .ios .btn-link.active {
     color: #004e7e; }
-
-.ios a:not(.btn):not(.list-group-item),
-.ios .btn-link {
-  color: #007aff; }
 
 .btn {
   transition: all 0.3s ease; }
@@ -158,10 +174,15 @@ body.ios {
   padding-left: 12px;
   padding-right: 12px; }
 
-.ios .btn-info {
+.ios .btn-info,
+.ios .btn-info[disabled] {
   background: #33b5e5;
   color: white; }
-  .ios .btn-info:hover, .ios .btn-info:focus, .ios .btn-info:active, .ios .btn-info.active {
+  .ios .btn-info:hover,
+  .ios .btn-info:focus,
+  .ios .btn-info:active,
+  .ios .btn-info.active,
+  .ios .btn-info[disabled]:hover, .ios .btn-info[disabled]:focus, .ios .btn-info[disabled]:active, .ios .btn-info[disabled].active {
     background: #23a5d5;
     color: white; }
 
@@ -174,24 +195,39 @@ body.ios {
     border: 1px solid #bbb;
     color: #444; }
 
-.ios .btn-warning {
+.ios .btn-warning,
+.ios .btn-warning[disabled] {
   background: #f0ad4e;
   color: white; }
-  .ios .btn-warning:hover, .ios .btn-warning:focus, .ios .btn-warning:active, .ios .btn-warning.active {
+  .ios .btn-warning:hover,
+  .ios .btn-warning:focus,
+  .ios .btn-warning:active,
+  .ios .btn-warning.active,
+  .ios .btn-warning[disabled]:hover, .ios .btn-warning[disabled]:focus, .ios .btn-warning[disabled]:active, .ios .btn-warning[disabled].active {
     background: #f0ad4e;
     color: white; }
 
-.ios .btn-danger {
+.ios .btn-danger,
+.ios .btn-danger[disabled] {
   background: #d9534f;
   color: white; }
-  .ios .btn-danger:hover, .ios .btn-danger:focus, .ios .btn-danger:active, .ios .btn-danger.active {
+  .ios .btn-danger:hover,
+  .ios .btn-danger:focus,
+  .ios .btn-danger:active,
+  .ios .btn-danger.active,
+  .ios .btn-danger[disabled]:hover, .ios .btn-danger[disabled]:focus, .ios .btn-danger[disabled]:active, .ios .btn-danger[disabled].active {
     background: #d9534f;
     color: white; }
 
-.ios .btn-success {
+.ios .btn-success,
+.ios .btn-success[disabled] {
   background: #4cae4c;
   color: white; }
-  .ios .btn-success:hover, .ios .btn-success:focus, .ios .btn-success:active, .ios .btn-success.active {
+  .ios .btn-success:hover,
+  .ios .btn-success:focus,
+  .ios .btn-success:active,
+  .ios .btn-success.active,
+  .ios .btn-success[disabled]:hover, .ios .btn-success[disabled]:focus, .ios .btn-success[disabled]:active, .ios .btn-success[disabled].active {
     background: #4cae4c;
     color: white; }
 
@@ -199,7 +235,7 @@ body.ios {
 .ios .panel-heading .btn {
   background: transparent;
   border-color: transparent;
-  color: #007aff;
+  color: #00b2e2;
   padding-left: 5px;
   padding-right: 5px; }
 
@@ -210,68 +246,108 @@ body.ios {
   border-radius: 3px;
   transition: all 0.3s ease; }
 
-.android .btn-primary {
+.android .btn-primary,
+.android .btn-primary[disabled] {
   background: #337ab7;
+  border-color: #337ab7;
   color: white;
   font-size: 14px;
   text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-primary:hover, .android .btn-primary:focus, .android .btn-primary:active, .android .btn-primary.active {
+  .android .btn-primary:hover,
+  .android .btn-primary:focus,
+  .android .btn-primary:active,
+  .android .btn-primary.active,
+  .android .btn-primary[disabled]:hover, .android .btn-primary[disabled]:focus, .android .btn-primary[disabled]:active, .android .btn-primary[disabled].active {
     background: #337ab7;
     color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     outline: none; }
 
-.android .btn-info {
+.android .btn-info,
+.android .btn-info[disabled] {
   background: #33b5e5;
+  border-color: #33b5e5;
   color: white;
   font-size: 14px;
   text-transform: uppercase;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-info:hover, .android .btn-info:focus, .android .btn-info:active, .android .btn-info.active {
+  .android .btn-info:hover,
+  .android .btn-info:focus,
+  .android .btn-info:active,
+  .android .btn-info.active,
+  .android .btn-info[disabled]:hover, .android .btn-info[disabled]:focus, .android .btn-info[disabled]:active, .android .btn-info[disabled].active {
     background: #23a5d5;
     color: white;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     outline: none; }
 
-.android .btn-default {
+.android .btn-default,
+.android .btn-default[disabled] {
   background: #dfdfdf;
+  border-color: #dfdfdf;
   font-size: 14px;
   color: #444;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-default:hover, .android .btn-default:focus, .android .btn-default:active, .android .btn-default.active {
+  .android .btn-default:hover,
+  .android .btn-default:focus,
+  .android .btn-default:active,
+  .android .btn-default.active,
+  .android .btn-default[disabled]:hover, .android .btn-default[disabled]:focus, .android .btn-default[disabled]:active, .android .btn-default[disabled].active {
     background: #cecece;
     color: #444;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
     outline: none; }
 
-.android .btn-warning {
+.android .btn-warning,
+.android .btn-warning[disabled] {
   background: #f0ad4e;
+  border-color: #f0ad4e;
   color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-warning:hover, .android .btn-warning:focus, .android .btn-warning:active, .android .btn-warning.active {
+  .android .btn-warning:hover,
+  .android .btn-warning:focus,
+  .android .btn-warning:active,
+  .android .btn-warning.active,
+  .android .btn-warning[disabled]:hover, .android .btn-warning[disabled]:focus, .android .btn-warning[disabled]:active, .android .btn-warning[disabled].active {
     background: #f0ad4e;
     color: white; }
 
-.android .btn-danger {
+.android .btn-danger,
+.android .btn-danger[disabled] {
   background: #d9534f;
+  border-color: #d9534f;
   color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-danger:hover, .android .btn-danger:focus, .android .btn-danger:active, .android .btn-danger.active {
+  .android .btn-danger:hover,
+  .android .btn-danger:focus,
+  .android .btn-danger:active,
+  .android .btn-danger.active,
+  .android .btn-danger[disabled]:hover, .android .btn-danger[disabled]:focus, .android .btn-danger[disabled]:active, .android .btn-danger[disabled].active {
     background: #d9534f;
     color: white; }
 
-.android .btn-success {
+.android .btn-success,
+.android .btn-success[disabled] {
   background: #4cae4c;
+  border-color: #4cae4c;
   color: white;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
-  .android .btn-success:hover, .android .btn-success:focus, .android .btn-success:active, .android .btn-success.active {
+  .android .btn-success:hover,
+  .android .btn-success:focus,
+  .android .btn-success:active,
+  .android .btn-success.active,
+  .android .btn-success[disabled]:hover, .android .btn-success[disabled]:focus, .android .btn-success[disabled]:active, .android .btn-success[disabled].active {
     background: #4cae4c;
     color: white; }
+
+.android .btn[disabled] {
+  box-shadow: none; }
 
 .android .modal-header .btn,
 .android .panel-heading .btn {
   background: transparent;
+  border-color: transparent;
   color: #23527c;
   box-shadow: none;
   font-size: 14px; }
@@ -353,7 +429,7 @@ body.ios {
   border-color: transparent; }
   .android .navbar .navbar-brand {
     font-size: 20px;
-    padding-left: 0;
+    padding-left: 0 !important;
     color: white !important;
     margin-left: 0 !important; }
   .android .navbar .btn {
@@ -443,7 +519,8 @@ body.ios {
   margin-left: -100px;
   text-align: center; }
   .navbar-header .dropdown-menu > .active > a {
-    background: #f5f5f5 !important; }
+    background: #006e9e !important;
+    color: white !important; }
 
 .ios .navbar-header .dropdown-menu {
   width: auto;
@@ -458,9 +535,6 @@ body.ios {
   .ios .navbar-header .dropdown-menu a {
     padding: 12px 20px;
     font-size: 16px; }
-  .ios .navbar-header .dropdown-menu .active a {
-    background: #00b2e2 !important;
-    color: white; }
 
 .android .navbar-header .dropdown-menu {
   width: auto;
@@ -504,240 +578,6 @@ body.ios {
     margin-right: 10px; }
   .status-indicator:not(.pull-left) {
     left: 4px; }
-
-/* COMMON LIST-DETAIL VIEWS */
-.bootcards-list .panel-heading {
-  border-radius: 0; }
-
-.bootcards-list a.list-group-item {
-  padding-right: 40px; }
-
-.list-group-item i {
-  opacity: 1; }
-  .list-group-item i.pull-left {
-    position: relative;
-    top: 4px;
-    font-size: 32px;
-    color: #999; }
-
-.list-group-item .list-group-item-content {
-  overflow: hidden; }
-
-.bootcards-cards .panel-title .label {
-  padding-top: .25em;
-  padding-bottom: .25em;
-  position: relative;
-  top: -1px;
-  margin-right: 6px; }
-
-.bootcards-cards .panel-title .status-indicator {
-  padding: 0;
-  top: 2px;
-  margin-right: 10px; }
-
-.bootcards-cards .panel-title .risk-square {
-  padding: 0;
-  margin: -9px 0;
-  margin-right: 10px; }
-
-.bootcards-cards .panel-subheading {
-  border-top: 1px solid #ddd;
-  border-bottom: 0;
-  background: white;
-  padding-top: 15px;
-  padding-left: 0;
-  margin-left: 15px;
-  padding-bottom: 0;
-  margin-bottom: -2px;
-  background-color: transparent !important; }
-  .bootcards-cards .panel-subheading .panel-title {
-    margin: 0;
-    font-size: 18px;
-    font-weight: normal;
-    color: #777; }
-
-.bootcards-cards .list-group {
-  padding-top: 8px;
-  padding-bottom: 8px; }
-
-.bootcards-cards .list-group-item {
-  border: 0 !important;
-  padding-top: 7px;
-  padding-bottom: 7px; }
-  .bootcards-cards .list-group-item .list-group-item-heading {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 0; }
-    .bootcards-cards .list-group-item .list-group-item-heading .label {
-      position: relative;
-      top: -1px;
-      margin-right: 5px; }
-  .bootcards-cards .list-group-item .list-group-item-text {
-    margin-bottom: 0;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: normal; }
-  .bootcards-cards .list-group-item i {
-    width: auto;
-    opacity: 1;
-    margin-right: 5px; }
-  .bootcards-cards .list-group-item .btn {
-    margin-top: 3px;
-    margin-bottom: 2px; }
-  .bootcards-cards .list-group-item ol, .bootcards-cards .list-group-item ul {
-    padding-left: 35px; }
-    .bootcards-cards .list-group-item ol li, .bootcards-cards .list-group-item ul li {
-      margin-bottom: 5px; }
-      .bootcards-cards .list-group-item ol li:last-child, .bootcards-cards .list-group-item ul li:last-child {
-        margin-bottom: 0; }
-      .bootcards-cards .list-group-item ol li .list-group-item-heading,
-      .bootcards-cards .list-group-item ol li .list-group-item-text, .bootcards-cards .list-group-item ul li .list-group-item-heading,
-      .bootcards-cards .list-group-item ul li .list-group-item-text {
-        margin-bottom: 5px; }
-
-.bootcards-cards .isometrica-card-table {
-  margin-top: 10px;
-  margin-left: 15px; }
-  .bootcards-cards .isometrica-card-table td:first-child, .bootcards-cards .isometrica-card-table th:first-child {
-    padding-left: 0 !important; }
-
-.desktop .isometrica-container-listdetail {
-  /*
-
-    position: absolute;
-    //top: 50px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    top: 0;
-    //padding-top: 52px;
-
-    */ }
-  .desktop .isometrica-container-listdetail > .row {
-    height: 100%; }
-    .desktop .isometrica-container-listdetail > .row > div {
-      overflow-x: hidden;
-      height: 100%;
-      padding-top: 30px; }
-      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
-        width: 0px; }
-  .desktop .isometrica-container-listdetail .bootcards-list .panel-body {
-    padding: 10px 15px; }
-  .desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active,
-  .desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active:focus,
-  .desktop .isometrica-container-listdetail .bootcards-list .list-group-item.active:hover {
-    background: #006e9e;
-    color: white; }
-  .desktop .isometrica-container-listdetail .bootcards-cards .list-group-item {
-    border-top: 0;
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 0; }
-  .desktop .isometrica-container-listdetail .bootcards-cards .panel > .list-group .list-group-item:last-child {
-    border-bottom: 1px solid #ddd; }
-  .desktop .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
-    border-bottom: 0 !important; }
-  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin: 0; }
-    .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row:last-child .list-group-item {
-      border-bottom: 0 !important; }
-    .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
-      padding: 0; }
-
-.ios .isometrica-container-listdetail {
-  top: 44px;
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto; }
-  .ios .isometrica-container-listdetail .bootcards-list .panel-heading {
-    border-bottom: 0; }
-  .ios .isometrica-container-listdetail .bootcards-list .list-group-item-heading {
-    font-weight: 500;
-    color: #444; }
-  .ios .isometrica-container-listdetail .bootcards-cards .panel-title {
-    text-transform: none;
-    font-size: 17px;
-    color: black;
-    font-weight: 500; }
-  .ios .isometrica-container-listdetail .bootcards-cards .panel-subheading {
-    padding-top: 15px;
-    margin-top: 1px; }
-    .ios .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
-      color: #444;
-      padding: 0;
-      margin: 0;
-      line-height: 1.2;
-      font-weight: 500; }
-  .ios .isometrica-container-listdetail .bootcards-cards .list-group {
-    padding-top: 0;
-    padding-bottom: 0; }
-  .ios .isometrica-container-listdetail .bootcards-cards .list-group-item {
-    border-top: 0;
-    margin-bottom: 0; }
-    .ios .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
-      font-size: 17px;
-      font-weight: 400; }
-    .ios .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-text {
-      color: #777; }
-  .ios .isometrica-container-listdetail .bootcards-cards .list-group > .row {
-    margin: 0;
-    margin-bottom: -1px; }
-    .ios .isometrica-container-listdetail .bootcards-cards .list-group > .row > div {
-      padding: 0; }
-  .ios .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
-    border-bottom: 0 !important; }
-
-@media (max-width: 767px) {
-  .ios .bootcards-cards {
-    padding: 0; } }
-
-.android .isometrica-container-listdetail {
-  padding-top: 0 !important;
-  position: fixed;
-  top: 50px;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto; }
-  .android .isometrica-container-listdetail .bootcards-list .list-group-item.active,
-  .android .isometrica-container-listdetail .bootcards-list .list-group-item.active:focus,
-  .android .isometrica-container-listdetail .bootcards-list .list-group-item.active:hover {
-    background: #006e9e;
-    color: white; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group-item {
-    border-top: 0;
-    border-bottom: 1px solid #ddd !important;
-    margin-bottom: 0; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin: 0; }
-    .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
-      padding: 0; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
-    border-bottom: 0 !important; }
-
-@media (max-width: 767px) {
-  .android .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; }
-    .android .bootcards-cards > .panel {
-      border-left: 0;
-      border-right: 0; } }
-
-/* MOBILE-ONLY LIST VIEWS */
-.isometrica-mobile-list-view-container {
-  padding-top: 15px; }
-  .isometrica-mobile-list-view-container .bootcards-list {
-    height: auto !important; }
-  .isometrica-mobile-list-view-container .list-group-item .label {
-    display: inline-block;
-    padding: 0.3em 0.6em 0.3em; }
-
-.ios .isometrica-mobile-list-view-container {
-  padding: 0; }
 
 .risk-square {
   float: left;
@@ -1100,55 +940,42 @@ body.ios {
   .bootcards-panel-collapsing .panel-body {
     border-top: 1px solid #ddd; }
 
-.ios .bootcards-panel-collapsing {
-  border: 1px solid #ccc; }
-  .ios .bootcards-panel-collapsing.full-width {
+.ios .bootcards-panel-collapsing,
+.android .bootcards-panel-collapsing {
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  margin-top: -1px; }
+  .ios .bootcards-panel-collapsing:last-child,
+  .android .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .ios .bootcards-panel-collapsing.full-width,
+  .android .bootcards-panel-collapsing.full-width {
     border-left: 0;
     border-right: 0; }
-  .ios .bootcards-panel-collapsing:first-child {
-    margin-top: -1px; }
-  .ios .bootcards-panel-collapsing:not(:last-child) {
-    border-bottom: 0; }
-  .ios .bootcards-panel-collapsing .panel-heading {
+  .ios .bootcards-panel-collapsing .panel-heading,
+  .android .bootcards-panel-collapsing .panel-heading {
     background-color: #f5f5f5;
     padding-top: 12px;
     padding-bottom: 12px;
     border-radius: 0; }
-  .ios .bootcards-panel-collapsing .panel-body {
-    padding-bottom: 15px; }
-  .ios .bootcards-panel-collapsing .panel-title {
-    padding: 0; }
-  @media (max-width: 767px) {
-    .ios .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-      left: 8px;
-      font-size: 18px;
-      margin-top: -10px; } }
-
-.android .bootcards-panel-collapsing {
-  margin-bottom: 0; }
-  .android .bootcards-panel-collapsing:last-child {
-    margin-bottom: 15px; }
-  .android .bootcards-panel-collapsing .panel-heading {
-    padding-top: 10px;
-    padding-bottom: 10px;
-    background: #f5f5f5;
-    border-radius: 0; }
-  .android .bootcards-panel-collapsing .btn-group {
-    margin-top: 4px; }
-    .android .bootcards-panel-collapsing .btn-group .btn {
-      box-shadow: none; }
+    @media (max-width: 767px) {
+      .ios .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator,
+      .android .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
+        left: 8px;
+        font-size: 18px;
+        margin-top: -10px; } }
+  .ios .bootcards-panel-collapsing .panel-body,
   .android .bootcards-panel-collapsing .panel-body {
-    padding-top: 5px;
-    padding-bottom: 0; }
-    .android .bootcards-panel-collapsing .panel-body hr {
-      margin-bottom: 10px; }
+    padding-bottom: 15px; }
+  .ios .bootcards-panel-collapsing .panel-title,
+  .android .bootcards-panel-collapsing .panel-title {
+    padding: 0; }
 
-.android .panel-heading .btn {
-  color: #33b5e5 !important; }
+.ios .bootcards-panel-collapsing:first-child {
+  margin-top: -1px; }
 
-.android .panel-heading .panel-title {
-  color: #333;
-  padding: 8px 0; }
+.android .bootcards-panel-collapsing .panel-title {
+  padding: 2px 0; }
 
 /* FOOTER - CHANGELOG */
 .panel-footer {
@@ -1342,49 +1169,38 @@ body.ios {
   .isometrica-risk-grading td {
     color: white !important; }
 
+/*
 .desktop .list-group label {
-  font-weight: bold; }
-
+  font-weight: bold;
+}
+*/
 .inline-dropdown {
   display: inline-block; }
 
+/*
 input.form-value {
   border-color: transparent !important;
   background: transparent !important;
   color: #333 !important;
   box-shadow: none !important;
-  padding-left: 0; }
+  padding-left: 0;
+}
+*/
+/*
+.isometrica-btn-toggle { // Toggle
+  //overflow: hidden;
+  //white-space: nowrap;
 
-@media (max-width: 767px) {
-  .isometrica-btn-toggle .btn {
-    font-size: 12px !important;
-    line-height: 20px;
-    padding-left: 7px;
-    padding-right: 7px; } }
-
-.clear-field {
-  position: absolute;
-  right: 12px;
-  top: 0;
-  font-size: 21px !important;
-  line-height: 22px;
-  color: #bbb !important;
-  transition: all 0.3s ease;
-  border: 0;
-  z-index: 9;
-  display: none;
-  margin-right: 0 !important; }
-  .clear-field:hover {
-    color: #99130f !important; }
-  .clear-field i {
-    margin: 0 !important; }
-
-input:focus ~ .clear-field {
-  display: block; }
-
-.ios .clear-field {
-  padding-right: 0 !important; }
-
+  .btn {
+    @media (max-width: 767px) {
+      font-size: 12px !important;
+      line-height: 20px;
+      padding-left: 7px;
+      padding-right: 7px;
+    }
+  }
+}
+*/
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
@@ -1405,32 +1221,6 @@ input:focus ~ .clear-field {
 .form-horizontal .form-group .btn-group .btn,
 .list-group-item .btn-group .btn {
   margin-right: 0; }
-
-.form-horizontal .form-group .input-group,
-.list-group-item .input-group {
-  margin-top: 8px;
-  margin-bottom: 8px; }
-  .form-horizontal .form-group .input-group:first-child,
-  .list-group-item .input-group:first-child {
-    margin-top: 0; }
-  .form-horizontal .form-group .input-group:last-child,
-  .list-group-item .input-group:last-child {
-    margin-bottom: 0; }
-
-.form-horizontal .form-group .input-group .btn,
-.list-group-item .input-group .btn {
-  margin-right: 0;
-  margin-bottom: 0; }
-
-.ios .input-group .input-group-btn > .btn {
-  border-radius: 3px;
-  border-width: 1px;
-  z-index: 9; }
-
-.ios .input-group .input-group-addon {
-  background: transparent;
-  border-color: transparent;
-  padding-left: 0; }
 
 .isometrica-rich-text-control {
   padding: 0;
@@ -1512,18 +1302,6 @@ input:focus ~ .clear-field {
 .ios .form-horizontal .form-group:first-of-type {
   margin-top: 0; }
 
-.ios .form-horizontal .form-group:last-child {
-  margin-bottom: 0; }
-
-.ios .form-horizontal .form-group .control-label:first-child {
-  padding-top: 8px;
-  padding-left: 15px;
-  padding-right: 0; }
-
-.ios .form-horizontal .form-group > div {
-  padding-left: 15px;
-  padding-right: 15px; }
-
 .ios textarea {
   resize: none; }
 
@@ -1532,10 +1310,12 @@ input:focus ~ .clear-field {
   border-color: transparent;
   box-shadow: none; }
 
-.android textarea:focus, .android input:focus {
+.android textarea:focus, .android input:focus, .android select:focus {
   outline: 0;
-  border-color: transparent;
-  box-shadow: none; }
+  box-shadow: none;
+  border-left-color: transparent;
+  border-right-color: transparent;
+  border-top-color: transparent; }
 
 .android .form-horizontal .form-group .control-label {
   padding-top: 6px; }
@@ -1550,15 +1330,335 @@ input:focus ~ .clear-field {
   text-align: left;
   margin-bottom: 10px; }
 
+/* Disabled fields */
+.ios .form-control[disabled],
+.android .form-control[disabled] {
+  background: transparent;
+  border-color: transparent; }
+
+/* Clear field */
+.clear-field {
+  position: absolute;
+  right: 12px;
+  top: 0;
+  font-size: 21px !important;
+  line-height: 22px;
+  color: #bbb !important;
+  transition: all 0.3s ease;
+  border: 0;
+  z-index: 9;
+  display: none;
+  margin-right: 0 !important; }
+  .clear-field:hover {
+    color: #99130f !important; }
+  .clear-field i {
+    margin: 0 !important; }
+
+input:focus ~ .clear-field {
+  display: block; }
+
+.ios .clear-field {
+  padding-right: 0 !important; }
+
+.android .clear-field {
+  right: 0; }
+
+/* Form layout */
+.ios .form-horizontal .form-group,
 .android .form-horizontal .form-group {
   margin-left: -15px;
   margin-right: -15px; }
 
-.android .form-horizontal .form-group .control-label:first-child {
-  padding-left: 15px; }
+.ios .form-horizontal .form-group:last-child,
+.android .form-horizontal .form-group:last-child {
+  margin-bottom: 0; }
 
-.android .form-horizontal .form-group div:last-child {
+.ios .form-horizontal .form-group .control-label:first-child,
+.android .form-horizontal .form-group .control-label:first-child {
+  padding-left: 15px;
+  padding-right: 0; }
+
+.ios .form-horizontal .form-group > div,
+.ios .form-horizontal .form-group > div:last-child,
+.android .form-horizontal .form-group > div,
+.android .form-horizontal .form-group > div:last-child {
+  padding-left: 15px;
   padding-right: 15px; }
+
+.ios .form-horizontal .form-group .control-label {
+  padding-top: 9px; }
+
+.android .form-horizontal .form-group .control-label {
+  padding-top: 7px; }
+
+.android textarea {
+  line-height: 26px; }
+
+/* Input groups */
+.input-group {
+  margin-top: 8px;
+  margin-bottom: 8px; }
+  .input-group:first-child {
+    margin-top: 0; }
+  .input-group:last-child {
+    margin-bottom: 0; }
+
+.input-group .btn {
+  margin-right: 0;
+  margin-bottom: 0; }
+
+.ios .input-group .input-group-btn > .btn,
+.android .input-group .input-group-btn > .btn {
+  border-radius: 3px;
+  border-width: 1px;
+  z-index: 9; }
+
+.ios .input-group .input-group-addon,
+.android .input-group .input-group-addon {
+  background: transparent;
+  border-color: transparent;
+  padding-left: 0; }
+
+.list-group-item i {
+  opacity: 1; }
+  .list-group-item i.pull-left {
+    position: relative;
+    top: 4px;
+    font-size: 32px;
+    color: #999; }
+
+.list-group-item .list-group-item-content {
+  overflow: hidden; }
+
+.bootcards-cards .panel-title .label {
+  padding-top: .25em;
+  padding-bottom: .25em;
+  position: relative;
+  top: -1px;
+  margin-right: 6px; }
+
+.bootcards-cards .panel-title .status-indicator {
+  padding: 0;
+  top: 2px;
+  margin-right: 10px; }
+
+.bootcards-cards .panel-title .risk-square {
+  padding: 0;
+  margin: -9px 0;
+  margin-right: 10px; }
+
+.bootcards-cards .panel-subheading {
+  border-top: 1px solid #ddd;
+  border-bottom: 0;
+  background: white;
+  padding-top: 15px;
+  padding-left: 0;
+  margin-left: 15px;
+  padding-bottom: 0;
+  margin-bottom: -2px;
+  background-color: transparent !important; }
+  .bootcards-cards .panel-subheading .panel-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    color: #777; }
+
+.bootcards-cards .list-group {
+  padding-top: 8px;
+  padding-bottom: 8px; }
+
+.bootcards-cards .list-group-item {
+  border: 0 !important;
+  padding-top: 7px;
+  padding-bottom: 7px; }
+  .bootcards-cards .list-group-item .list-group-item-heading {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 24px;
+    margin-bottom: 0; }
+    .bootcards-cards .list-group-item .list-group-item-heading .label {
+      position: relative;
+      top: -1px;
+      margin-right: 5px; }
+  .bootcards-cards .list-group-item .list-group-item-text {
+    margin-bottom: 0;
+    line-height: 18px;
+    font-size: 14px;
+    font-weight: normal; }
+  .bootcards-cards .list-group-item i {
+    width: auto;
+    opacity: 1;
+    margin-right: 5px; }
+  .bootcards-cards .list-group-item .btn {
+    margin-top: 3px;
+    margin-bottom: 2px; }
+  .bootcards-cards .list-group-item ol, .bootcards-cards .list-group-item ul {
+    padding-left: 35px; }
+    .bootcards-cards .list-group-item ol li, .bootcards-cards .list-group-item ul li {
+      margin-bottom: 5px; }
+      .bootcards-cards .list-group-item ol li:last-child, .bootcards-cards .list-group-item ul li:last-child {
+        margin-bottom: 0; }
+      .bootcards-cards .list-group-item ol li .list-group-item-heading,
+      .bootcards-cards .list-group-item ol li .list-group-item-text, .bootcards-cards .list-group-item ul li .list-group-item-heading,
+      .bootcards-cards .list-group-item ul li .list-group-item-text {
+        margin-bottom: 5px; }
+
+.bootcards-cards .isometrica-card-table {
+  margin-top: 10px;
+  margin-left: 15px; }
+  .bootcards-cards .isometrica-card-table td:first-child, .bootcards-cards .isometrica-card-table th:first-child {
+    padding-left: 0 !important; }
+
+.isometrica-container-listdetail {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  height: auto !important; }
+
+.desktop .isometrica-container-listdetail {
+  top: 50px; }
+  .desktop .isometrica-container-listdetail > .row {
+    height: 100%; }
+    .desktop .isometrica-container-listdetail > .row > div {
+      overflow-x: hidden;
+      height: 100%;
+      padding-top: 30px; }
+      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
+        width: 0px; }
+
+.ios .isometrica-container-listdetail {
+  top: 44px; }
+
+.android .isometrica-container-listdetail {
+  top: 50px; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group-item {
+  border-top: 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 0; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .panel > .list-group .list-group-item:last-child {
+  border-bottom: 1px solid #ddd; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+  border-bottom: 0 !important; }
+
+.desktop .isometrica-container-listdetail .bootcards-cards .list-group .row {
+  margin: 0; }
+  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row:last-child .list-group-item {
+    border-bottom: 0 !important; }
+  .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+    padding: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-list .panel-heading {
+  border-bottom: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-list .list-group-item-heading {
+  font-weight: 500;
+  color: #444; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .panel-title {
+  text-transform: none;
+  font-size: 17px;
+  color: black;
+  font-weight: 500; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .panel-subheading {
+  padding-top: 15px;
+  margin-top: 1px; }
+  .ios .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
+    color: #777;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 400; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group {
+  padding-top: 0;
+  padding-bottom: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group-item {
+  border-top: 0;
+  margin-bottom: 0; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-heading {
+    font-size: 17px;
+    font-weight: 500;
+    color: #444; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group-item .list-group-item-text {
+    color: #777; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group > .row {
+  margin: 0;
+  margin-bottom: -1px; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group > .row > div {
+    padding: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+  border-bottom: 0 !important; }
+
+@media (max-width: 767px) {
+  .ios .bootcards-cards {
+    padding: 0; } }
+
+.android .isometrica-container-listdetail {
+  top: 50px; }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group-item {
+    border-top: 0;
+    border-bottom: 1px solid #ddd !important;
+    margin-bottom: 0; }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group .row {
+    margin: 0; }
+    .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+      padding: 0; }
+  .android .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+    border-bottom: 0 !important; }
+
+@media (max-width: 767px) {
+  .android .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; }
+    .android .bootcards-cards > .panel {
+      border-left: 0;
+      border-right: 0; } }
+
+/* List */
+.bootcards-list .panel-body {
+  padding: 10px 15px; }
+
+.bootcards-list .list-group-item.active,
+.bootcards-list .list-group-item.active:focus,
+.bootcards-list .list-group-item.active:hover {
+  background: #006e9e !important;
+  border-color: #006e9e !important;
+  color: white !important; }
+  .bootcards-list .list-group-item.active .list-group-item-heading,
+  .bootcards-list .list-group-item.active:focus .list-group-item-heading,
+  .bootcards-list .list-group-item.active:hover .list-group-item-heading {
+    color: white !important; }
+  .bootcards-list .list-group-item.active .list-group-item-text,
+  .bootcards-list .list-group-item.active:focus .list-group-item-text,
+  .bootcards-list .list-group-item.active:hover .list-group-item-text {
+    color: #c7ddef !important; }
+
+.desktop .bootcards-list .panel-heading {
+  border-radius: 0; }
+
+.desktop .bootcards-list a.list-group-item {
+  padding-right: 40px; }
+
+/* MOBILE-ONLY LIST VIEWS */
+.isometrica-mobile-list-view-container {
+  padding-top: 15px; }
+  .isometrica-mobile-list-view-container .bootcards-list {
+    height: auto !important; }
+  .isometrica-mobile-list-view-container .list-group-item .label {
+    display: inline-block;
+    padding: 0.3em 0.6em 0.3em; }
+
+.ios .isometrica-mobile-list-view-container {
+  padding: 0; }
 
 /* workbook */
 /* Guidance bar */
@@ -1582,13 +1682,6 @@ input:focus ~ .clear-field {
       clear: both;
       font-size: 24px;
       padding: 0 7px; }
-
-.android.isometrica-workbook-page .guidance-bar h4 {
-  font-size: 15px;
-  line-height: 22px; }
-
-.android.isometrica-workbook-page .guidance-bar .btn {
-  font-size: 15px; }
 
 /* Rows */
 .workbook {
@@ -1755,12 +1848,17 @@ input:focus ~ .clear-field {
       .ios .workbook .workbook-item-heading .panel-heading:after {
         left: 8px; }
 
-.android .workbook .workbook-item-heading {
-  background: transparent; }
-  .android .workbook .workbook-item-heading .panel-heading {
-    padding: 10px 5px 10px 36px; }
-    .android .workbook .workbook-item-heading .panel-heading:after {
-      left: 8px; }
+.android .workbook {
+  top: 150px; }
+  @media (max-width: 767px) {
+    .android .workbook {
+      top: 50px; } }
+  .android .workbook .workbook-item-heading {
+    background: transparent; }
+    .android .workbook .workbook-item-heading .panel-heading {
+      padding: 10px 5px 10px 36px; }
+      .android .workbook .workbook-item-heading .panel-heading:after {
+        left: 8px; }
 
 /* Modals */
 /*.ios.isometrica-workbook-page .modal {
@@ -3770,7 +3868,8 @@ body.desktop.isometrica-overview-page .navbar-header {
 .isometrica-calendar .btn-date-specific {
   position: relative;
   padding-right: 0;
-  padding-left: 15px; }
+  padding-left: 15px !important;
+  color: #006e9e; }
   .isometrica-calendar .btn-date-specific .date {
     color: #999; }
   .isometrica-calendar .btn-date-specific:before {
