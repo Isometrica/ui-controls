@@ -62,6 +62,7 @@ body.ios {
 
 .margin-left {
   margin-left: 5px;
+  margin-right: 0;
 }
 
 
@@ -70,6 +71,12 @@ body.ios {
 
 .btn[disabled] {
   opacity: 1;
+}
+
+.btn {
+  i.margin-left {
+    margin-right: 0 !important;
+  }
 }
 
 
@@ -124,284 +131,6 @@ body.ios {
 
 
 
-/* FORMS */
-
-.desktop .list-group label {
-  font-weight: bold;
-}
-
-.inline-dropdown {
-  display: inline-block;
-}
-
-input.form-value {
-  border-color: transparent !important;
-  background: transparent !important;
-  color: #333 !important;
-  box-shadow: none !important;
-  padding-left: 0;
-}
-
-.isometrica-btn-toggle { // Toggle
-  //overflow: hidden;
-  //white-space: nowrap;
-
-  .btn {
-    @media (max-width: 767px) {
-      font-size: 12px !important;
-      line-height: 20px;
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-  }
-}
-
-.clear-field {
-	position: absolute;
-	right: 12px;
-	top: 0;
-	font-size: 21px !important;
-	line-height: 22px;
-	color: #bbb !important;
-	transition: all 0.3s ease;
-	border: 0;
-  z-index: 9;
-  display: none;
-  margin-right: 0 !important;
-
-	&:hover {
-  	color: #99130f !important;
-	}
-
-	i {
-  	margin: 0 !important;
-	}
-}
-
-input:focus ~ .clear-field {
-  display: block;
-}
-
-.ios .clear-field {
-  padding-right: 0 !important;
-}
-
-.android .clear-field {
-
-}
-
-
-.help-icon {
-  margin-right: 5px;
-  color: #bbb;
-
-  i {
-    font-size: 21px;
-  }
-
-  &:hover, &:focus, &:active { color: #23527c; }
-}
-
-.form-horizontal .form-group,
-.list-group-item {
-  .btn {
-    margin-bottom: 8px;
-  }
-
-  .btn, .btn-group {
-    margin-right: 3px;
-  }
-
-  .btn-group .btn {
-    margin-right: 0;
-  }
-
-  .input-group .btn {
-    margin-right: 0;
-    margin-bottom: 0;
-  }
-}
-
-.ios {
-  .input-group {
-    .input-group-btn > .btn {
-      border-radius: 3px;
-      border-width: 1px;
-      z-index: 9;
-    }
-
-    .input-group-addon {
-      background: transparent;
-      border-color: transparent;
-      padding-left: 0;
-    }
-  }
-}
-
-.isometrica-rich-text-control {
-  padding: 0;
-  margin: 0 -15px;
-  border-top: 1px solid #ddd;
-  border-bottom: 1px solid #ddd;
-  margin-bottom: 15px;
-
-  .isometrica-rich-text-controls {
-    border-bottom: 1px solid #ddd;
-    padding: 5px 10px;
-    text-align: center;
-    position: relative;
-
-    .btn {
-      border-color: transparent;
-      background: transparent;
-      box-shadow: none;
-      border-radius: 0;
-    }
-
-    .btn-expand {
-      position: absolute;
-      right: 10px;
-      top: 4px;
-    }
-  }
-
-  .isometrica-rich-text-input {
-    height: 300px;
-  }
-
-  &.isometrica-rich-text-control-condensed {
-    margin: 0;
-    border: 1px solid #ccc;
-    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
-    border-radius: 4px;
-
-    .isometrica-rich-text-input {
-      height: 120px;
-    }
-  }
-
-}
-
-.modal .isometrica-rich-text-control {
-  .isometrica-rich-text-input {
-    height: 120px;
-  }
-}
-
-.isometrica-rich-text-panel {
-  .panel-body {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    .isometrica-rich-text-control {
-      border-top: 0;
-      border-bottom: 0;
-      margin-bottom: 0;
-    }
-
-    .isometrica-rich-text-input {
-      height: 340px;
-    }
-  }
-}
-
-.form-control-with-status {
-  padding-right: 35px !important;
-  position: relative;
-
-  .label {
-    position: absolute;
-    right: 8px;
-    left: auto !important;
-    top: 50%;
-    margin-top: -8px;
-  }
-}
-
-.btn-checkbox {
-  width: 34px;
-  padding-left: 0 !important;
-  padding-right: 0 !important;
-  margin-right: 10px !important;
-
-  i {
-    margin: 0 !important;
-    color: white;
-  }
-}
-
-.ios {
-
-  .modal-body {
-    padding-top: 0;
-  }
-
-  .form-horizontal .form-group {
-    padding-top: 0;
-    padding-bottom: 0;
-
-    label,
-    .form-control,
-    .btn {
-      margin-top: 5px;
-      margin-bottom: 5px;
-    }
-  }
-
-  .form-horizontal .form-group .control-label {
-    white-space: normal;
-  }
-
-  .form-horizontal .form-group:first-of-type {
-    margin-top: 0;
-  }
-
-  .form-horizontal .form-group:last-child {
-    margin-bottom: 0;
-  }
-
-  .form-horizontal .form-group .control-label:first-child {
-    padding-top: 8px;
-    padding-left: 15px;
-    padding-right: 0;
-  }
-
-  .form-horizontal .form-group > div {
-    padding-left: 15px;
-    padding-right: 15px;
-  }
-
-  textarea {
-    resize: none;
-  }
-
-  textarea:focus, input:focus{
-    outline: 0;
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  .form-horizontal .form-group .btn {
-    //margin: 1px 0;
-  }
-}
-
-.android {
-
-  textarea:focus, input:focus{
-    outline: 0;
-    border-color: transparent;
-    box-shadow: none;
-  }
-
-  .form-horizontal .form-group .control-label {
-    padding-top: 6px;
-  }
-
-  .form-horizontal .form-group .btn {
-    margin: 2px 0;
-  }
-}
 
 
 /* LINKS & BUTTONS */
@@ -671,30 +400,7 @@ input:focus ~ .clear-field {
 
 
 
-/* FORMS */
 
-.control-label-block,
-.form-horizontal .control-label-block {
-  padding-top: 0;
-  display: block;
-  text-align: left;
-  margin-bottom: 10px;
-}
-
-.android {
-  .form-horizontal .form-group {
-    margin-left: -15px;
-    margin-right: -15px;
-  }
-
-  .form-horizontal .form-group .control-label:first-child {
-    padding-left: 15px;
-  }
-
-  .form-horizontal .form-group div:last-child {
-    padding-right: 15px;
-  }
-}
 
 
 /* NAV */
@@ -2346,6 +2052,8 @@ $status-indicator-size: 16px;
 
 }
 
+
+@import "__forms.scss";
 
 
 @import "_workbook.scss";
