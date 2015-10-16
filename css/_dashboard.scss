@@ -87,27 +87,8 @@
 }
 
 
-.ios.isometrica-dashboard-page {
-
-  /*.guidance-bar {
-    position: fixed;
-    top: 44px;
-    left: 0;
-    right: 0;
-  }
-
-  .isometrica-dashboard-container {
-    position: fixed;
-    top: 118px;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    height: auto;
-  }*/
-
+.ios.isometrica-dashboard-page,
+.android.isometrica-dashboard-page {
   .isometrica-dashboard-container {
     height: auto;
   }

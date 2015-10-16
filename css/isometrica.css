@@ -29,6 +29,10 @@ body.android {
 .label {
   padding: 0.25em 0.6em; }
 
+.ios small,
+.android small {
+  font-size: 85%; }
+
 @media (min-width: 768px) and (max-width: 1199px) {
   .container {
     width: auto; } }
@@ -82,6 +86,9 @@ body.android {
 .android .panel-heading .panel-title {
   color: #333;
   padding: 8px 0; }
+
+.android .panel-heading .btn, .android .panel-heading .btn-group .btn {
+  margin-left: 0; }
 
 .ios .panel-heading .btn {
   font-size: 16px !important; }
@@ -607,8 +614,7 @@ body.android {
     margin: 0; }
 
 .modal-body .collapse, .modal-body .collapsing {
-  clear: both;
-  overflow: hidden; }
+  clear: both; }
 
 .guidance-panel {
   line-height: 1.5;
@@ -858,121 +864,6 @@ body.android {
 
 .bootcards-accordion .list-group-item-indent {
   padding-left: 35px; }
-
-.bootcards-panel-collapsing {
-  margin-bottom: 0;
-  border-color: #bbb; }
-  .bootcards-panel-collapsing:not(:first-child) {
-    border-top-left-radius: 0;
-    border-top-right-radius: 0; }
-  .bootcards-panel-collapsing:not(:last-child) {
-    border-bottom-left-radius: 0;
-    border-bottom-right-radius: 0;
-    border-bottom-width: 0; }
-  .bootcards-panel-collapsing:first-child {
-    margin-top: 30px; }
-  .bootcards-panel-collapsing:last-child {
-    margin-bottom: 15px; }
-  .bootcards-panel-collapsing.full-width {
-    border-left: 0;
-    border-right: 0;
-    border-radius: 0;
-    margin-left: -15px;
-    margin-right: -15px;
-    box-shadow: none;
-    border-color: #ddd; }
-    .bootcards-panel-collapsing.full-width > .panel-heading {
-      background: white; }
-    .bootcards-panel-collapsing.full-width .panel-body {
-      padding-bottom: 30px; }
-    .bootcards-panel-collapsing.full-width .panel-body.indented {
-      padding-left: 50px; }
-    .bootcards-panel-collapsing.full-width .table-responsive {
-      border-top: 1px solid #ddd; }
-      .bootcards-panel-collapsing.full-width .table-responsive .table {
-        margin: 0; }
-      .bootcards-panel-collapsing.full-width .table-responsive th {
-        border-bottom-width: 1px; }
-      .bootcards-panel-collapsing.full-width .table-responsive.indented {
-        padding-left: 50px; }
-        .bootcards-panel-collapsing.full-width .table-responsive.indented td:first-child, .bootcards-panel-collapsing.full-width .table-responsive.indented th:first-child {
-          padding-left: 0 !important; }
-  .bootcards-panel-collapsing .panel-heading {
-    border: 0;
-    padding-left: 50px;
-    cursor: pointer;
-    position: relative;
-    transition: all 0.3s ease; }
-    .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
-      line-height: 20px;
-      font-size: 24px;
-      width: 24px;
-      text-align: center;
-      color: #337ab7;
-      position: absolute;
-      left: 13px;
-      top: 50%;
-      margin-top: -11px;
-      transition: all 0.3s ease; }
-    .bootcards-panel-collapsing .panel-heading .disclosure-indicator {
-      line-height: 1;
-      font-size: 14px;
-      color: #999;
-      position: absolute;
-      right: 16px;
-      top: 50%;
-      margin-top: -8px; }
-    .bootcards-panel-collapsing .panel-heading .text-muted {
-      color: #777;
-      font-weight: normal; }
-    .bootcards-panel-collapsing .panel-heading .label {
-      position: relative;
-      top: -1px;
-      margin-left: 10px;
-      font-size: 12px; }
-      .bootcards-panel-collapsing .panel-heading .label.text-muted {
-        color: #999; }
-    .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
-      background: #f5f5f5; }
-      .bootcards-panel-collapsing .panel-heading:hover .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:focus .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:active .bootcards-panel-collapsing-indicator {
-        color: #23527c; }
-    .bootcards-panel-collapsing .panel-heading.collapsed {
-      border-radius: 4px; }
-      .bootcards-panel-collapsing .panel-heading.collapsed .bootcards-panel-collapsing-indicator {
-        -webkit-transform: rotate(-90deg); }
-  .bootcards-panel-collapsing .panel-body {
-    border-top: 1px solid #ddd; }
-
-.ios .bootcards-panel-collapsing,
-.android .bootcards-panel-collapsing {
-  border: 1px solid #ccc;
-  margin-bottom: 0;
-  margin-top: -1px; }
-  .ios .bootcards-panel-collapsing:last-child,
-  .android .bootcards-panel-collapsing:last-child {
-    margin-bottom: 15px; }
-  .ios .bootcards-panel-collapsing.full-width,
-  .android .bootcards-panel-collapsing.full-width {
-    border-left: 0;
-    border-right: 0; }
-  .ios .bootcards-panel-collapsing .panel-heading,
-  .android .bootcards-panel-collapsing .panel-heading {
-    background-color: #f5f5f5;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    border-radius: 0; }
-  .ios .bootcards-panel-collapsing .panel-body,
-  .android .bootcards-panel-collapsing .panel-body {
-    padding-bottom: 15px; }
-  .ios .bootcards-panel-collapsing .panel-title,
-  .android .bootcards-panel-collapsing .panel-title {
-    padding: 0; }
-
-.ios .bootcards-panel-collapsing:first-child {
-  margin-top: -1px; }
-
-.android .bootcards-panel-collapsing .panel-title {
-  padding: 2px 0; }
 
 /* FOOTER - CHANGELOG */
 .panel-footer {
@@ -1422,17 +1313,7 @@ input:focus ~ .clear-field {
   border-color: transparent;
   padding-left: 0; }
 
-.list-group-item i {
-  opacity: 1; }
-  .list-group-item i.pull-left {
-    position: relative;
-    top: 4px;
-    font-size: 32px;
-    color: #999; }
-
-.list-group-item .list-group-item-content {
-  overflow: hidden; }
-
+/* Cards */
 .bootcards-cards .panel-title .label {
   padding-top: .25em;
   padding-bottom: .25em;
@@ -1463,80 +1344,56 @@ input:focus ~ .clear-field {
     margin: 0;
     font-size: 18px;
     font-weight: normal;
-    color: #777; }
+    color: #777;
+    text-transform: none; }
 
 .bootcards-cards .list-group {
   padding-top: 8px;
   padding-bottom: 8px; }
-
-.bootcards-cards .list-group-item {
-  border: 0 !important;
-  padding-top: 7px;
-  padding-bottom: 7px; }
-  .bootcards-cards .list-group-item .list-group-item-heading {
-    font-size: 18px;
-    font-weight: 500;
-    line-height: 24px;
-    margin-bottom: 0; }
-    .bootcards-cards .list-group-item .list-group-item-heading .label {
-      position: relative;
-      top: -1px;
+  .bootcards-cards .list-group .list-group-item {
+    border: 0 !important;
+    padding-top: 7px;
+    padding-bottom: 7px; }
+    .bootcards-cards .list-group .list-group-item .list-group-item-heading {
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 24px;
+      margin-bottom: 0; }
+      .bootcards-cards .list-group .list-group-item .list-group-item-heading .label {
+        position: relative;
+        top: -1px;
+        margin-right: 5px; }
+    .bootcards-cards .list-group .list-group-item .list-group-item-text {
+      margin-bottom: 0;
+      line-height: 18px;
+      font-size: 14px;
+      font-weight: normal;
+      color: #777; }
+    .bootcards-cards .list-group .list-group-item i {
+      width: auto;
+      opacity: 1;
       margin-right: 5px; }
-  .bootcards-cards .list-group-item .list-group-item-text {
-    margin-bottom: 0;
-    line-height: 18px;
-    font-size: 14px;
-    font-weight: normal; }
-  .bootcards-cards .list-group-item i {
-    width: auto;
-    opacity: 1;
-    margin-right: 5px; }
-  .bootcards-cards .list-group-item .btn {
-    margin-top: 3px;
-    margin-bottom: 2px;
-    white-space: normal;
-    text-align: left; }
-  .bootcards-cards .list-group-item ol, .bootcards-cards .list-group-item ul {
-    padding-left: 35px; }
-    .bootcards-cards .list-group-item ol li, .bootcards-cards .list-group-item ul li {
-      margin-bottom: 5px; }
-      .bootcards-cards .list-group-item ol li:last-child, .bootcards-cards .list-group-item ul li:last-child {
-        margin-bottom: 0; }
-      .bootcards-cards .list-group-item ol li .list-group-item-heading,
-      .bootcards-cards .list-group-item ol li .list-group-item-text, .bootcards-cards .list-group-item ul li .list-group-item-heading,
-      .bootcards-cards .list-group-item ul li .list-group-item-text {
+    .bootcards-cards .list-group .list-group-item .btn {
+      margin-top: 3px;
+      margin-bottom: 2px;
+      white-space: normal;
+      text-align: left; }
+    .bootcards-cards .list-group .list-group-item ol, .bootcards-cards .list-group .list-group-item ul {
+      padding-left: 35px; }
+      .bootcards-cards .list-group .list-group-item ol li, .bootcards-cards .list-group .list-group-item ul li {
         margin-bottom: 5px; }
+        .bootcards-cards .list-group .list-group-item ol li:last-child, .bootcards-cards .list-group .list-group-item ul li:last-child {
+          margin-bottom: 0; }
+        .bootcards-cards .list-group .list-group-item ol li .list-group-item-heading,
+        .bootcards-cards .list-group .list-group-item ol li .list-group-item-text, .bootcards-cards .list-group .list-group-item ul li .list-group-item-heading,
+        .bootcards-cards .list-group .list-group-item ul li .list-group-item-text {
+          margin-bottom: 5px; }
 
 .bootcards-cards .isometrica-card-table {
   margin-top: 10px;
   margin-left: 15px; }
   .bootcards-cards .isometrica-card-table td:first-child, .bootcards-cards .isometrica-card-table th:first-child {
     padding-left: 0 !important; }
-
-.isometrica-container-listdetail {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto !important; }
-
-.desktop .isometrica-container-listdetail {
-  top: 50px; }
-  .desktop .isometrica-container-listdetail > .row {
-    height: 100%; }
-    .desktop .isometrica-container-listdetail > .row > div {
-      overflow-x: hidden;
-      height: 100%;
-      padding-top: 30px; }
-      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
-        width: 0px; }
-
-.ios .isometrica-container-listdetail {
-  top: 44px; }
-
-.android .isometrica-container-listdetail {
-  top: 50px; }
 
 .desktop .isometrica-container-listdetail .bootcards-cards .list-group-item {
   border-top: 0;
@@ -1555,6 +1412,32 @@ input:focus ~ .clear-field {
     border-bottom: 0 !important; }
   .desktop .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
     padding: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group-item,
+.android .isometrica-container-listdetail .bootcards-cards .list-group-item {
+  border-top: 0;
+  margin-bottom: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group .row,
+.android .isometrica-container-listdetail .bootcards-cards .list-group .row {
+  margin: 0; }
+  .ios .isometrica-container-listdetail .bootcards-cards .list-group .row > div,
+  .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
+    padding: 0; }
+
+.ios .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child,
+.android .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
+  border-bottom: 0 !important; }
+
+@media (max-width: 767px) {
+  .ios .bootcards-cards,
+  .android .bootcards-cards {
+    padding-left: 0;
+    padding-right: 0; }
+    .ios .bootcards-cards > .panel,
+    .android .bootcards-cards > .panel {
+      border-left: 0;
+      border-right: 0; } }
 
 .ios .isometrica-container-listdetail .bootcards-list .panel-heading {
   border-bottom: 0; }
@@ -1606,26 +1489,31 @@ input:focus ~ .clear-field {
   .ios .bootcards-cards {
     padding: 0; } }
 
+/* Layout */
+.isometrica-container-listdetail {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding-top: 0;
+  height: auto !important; }
+
+.desktop .isometrica-container-listdetail {
+  top: 50px; }
+  .desktop .isometrica-container-listdetail > .row {
+    height: 100%; }
+    .desktop .isometrica-container-listdetail > .row > div {
+      overflow-x: hidden;
+      height: 100%;
+      padding-top: 30px; }
+      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
+        width: 0px; }
+
+.ios .isometrica-container-listdetail {
+  top: 44px; }
+
 .android .isometrica-container-listdetail {
   top: 50px; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group-item {
-    border-top: 0;
-    border-bottom: 1px solid #ddd !important;
-    margin-bottom: 0; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group .row {
-    margin: 0; }
-    .android .isometrica-container-listdetail .bootcards-cards .list-group .row > div {
-      padding: 0; }
-  .android .isometrica-container-listdetail .bootcards-cards .list-group > .list-group-item:last-child {
-    border-bottom: 0 !important; }
-
-@media (max-width: 767px) {
-  .android .bootcards-cards {
-    padding-left: 0;
-    padding-right: 0; }
-    .android .bootcards-cards > .panel {
-      border-left: 0;
-      border-right: 0; } }
 
 /* List */
 .bootcards-list .panel-body {
@@ -1652,6 +1540,18 @@ input:focus ~ .clear-field {
 .desktop .bootcards-list a.list-group-item {
   padding-right: 40px; }
 
+/* List group items - icon positioning */
+.list-group-item i {
+  opacity: 1; }
+  .list-group-item i.pull-left {
+    position: relative;
+    top: 4px;
+    font-size: 32px;
+    color: #999; }
+
+.list-group-item .list-group-item-content {
+  overflow: hidden; }
+
 /* MOBILE-ONLY LIST VIEWS */
 .isometrica-mobile-list-view-container {
   padding-top: 15px; }
@@ -1663,6 +1563,121 @@ input:focus ~ .clear-field {
 
 .ios .isometrica-mobile-list-view-container {
   padding: 0; }
+
+.bootcards-panel-collapsing {
+  margin-bottom: 0;
+  border-color: #bbb; }
+  .bootcards-panel-collapsing:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0; }
+  .bootcards-panel-collapsing:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0; }
+  .bootcards-panel-collapsing:first-child {
+    margin-top: 30px; }
+  .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .bootcards-panel-collapsing.full-width {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    box-shadow: none;
+    border-color: #ddd; }
+    .bootcards-panel-collapsing.full-width > .panel-heading {
+      background: white; }
+    .bootcards-panel-collapsing.full-width .panel-body {
+      padding-bottom: 30px; }
+    .bootcards-panel-collapsing.full-width .panel-body.indented {
+      padding-left: 50px; }
+    .bootcards-panel-collapsing.full-width .table-responsive {
+      border-top: 1px solid #ddd; }
+      .bootcards-panel-collapsing.full-width .table-responsive .table {
+        margin: 0; }
+      .bootcards-panel-collapsing.full-width .table-responsive th {
+        border-bottom-width: 1px; }
+      .bootcards-panel-collapsing.full-width .table-responsive.indented {
+        padding-left: 50px; }
+        .bootcards-panel-collapsing.full-width .table-responsive.indented td:first-child, .bootcards-panel-collapsing.full-width .table-responsive.indented th:first-child {
+          padding-left: 0 !important; }
+  .bootcards-panel-collapsing .panel-heading {
+    border: 0;
+    padding-left: 50px;
+    cursor: pointer;
+    position: relative;
+    transition: all 0.3s ease; }
+    .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
+      line-height: 20px;
+      font-size: 24px;
+      width: 24px;
+      text-align: center;
+      color: #337ab7;
+      position: absolute;
+      left: 13px;
+      top: 50%;
+      margin-top: -11px;
+      transition: all 0.3s ease; }
+    .bootcards-panel-collapsing .panel-heading .disclosure-indicator {
+      line-height: 1;
+      font-size: 14px;
+      color: #999;
+      position: absolute;
+      right: 16px;
+      top: 50%;
+      margin-top: -8px; }
+    .bootcards-panel-collapsing .panel-heading .text-muted {
+      color: #777;
+      font-weight: normal; }
+    .bootcards-panel-collapsing .panel-heading .label {
+      position: relative;
+      top: -1px;
+      margin-left: 10px;
+      font-size: 12px; }
+      .bootcards-panel-collapsing .panel-heading .label.text-muted {
+        color: #999; }
+    .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
+      background: #f5f5f5; }
+      .bootcards-panel-collapsing .panel-heading:hover .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:focus .bootcards-panel-collapsing-indicator, .bootcards-panel-collapsing .panel-heading:active .bootcards-panel-collapsing-indicator {
+        color: #23527c; }
+    .bootcards-panel-collapsing .panel-heading.collapsed {
+      border-radius: 4px; }
+      .bootcards-panel-collapsing .panel-heading.collapsed .bootcards-panel-collapsing-indicator {
+        -webkit-transform: rotate(-90deg); }
+  .bootcards-panel-collapsing .panel-body {
+    border-top: 1px solid #ddd; }
+
+.ios .bootcards-panel-collapsing,
+.android .bootcards-panel-collapsing {
+  border: 1px solid #ccc;
+  margin-bottom: 0;
+  margin-top: -1px; }
+  .ios .bootcards-panel-collapsing:last-child,
+  .android .bootcards-panel-collapsing:last-child {
+    margin-bottom: 15px; }
+  .ios .bootcards-panel-collapsing.full-width,
+  .android .bootcards-panel-collapsing.full-width {
+    border-left: 0;
+    border-right: 0; }
+  .ios .bootcards-panel-collapsing .panel-heading,
+  .android .bootcards-panel-collapsing .panel-heading {
+    background-color: #f5f5f5;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    border-radius: 0; }
+  .ios .bootcards-panel-collapsing .panel-body,
+  .android .bootcards-panel-collapsing .panel-body {
+    padding-bottom: 15px; }
+  .ios .bootcards-panel-collapsing .panel-title,
+  .android .bootcards-panel-collapsing .panel-title {
+    padding: 0; }
+
+.ios .bootcards-panel-collapsing:first-child {
+  margin-top: -1px; }
+
+.android .bootcards-panel-collapsing .panel-title {
+  padding: 2px 0; }
 
 /* workbook */
 /* Guidance bar */
@@ -3116,11 +3131,10 @@ body.desktop.isometrica-overview-page .navbar-header {
     float: left;
     margin-right: 15px;
     margin-top: 6px; }
+  .bootcards-wiki .bootcards-wiki-panel-files .bootcards-wiki-panel-files-list {
+    overflow: hidden; }
   .bootcards-wiki .bootcards-wiki-panel-files .btn {
     margin: 0 0 5px; }
-
-.bootcards-wiki .bootcards-cards .bootcards-list-subheading {
-  border-bottom: 0 !important; }
 
 .bootcards-wiki .bootcards-wiki-panel-metadata {
   padding-top: 0;
@@ -3161,7 +3175,8 @@ body.desktop.isometrica-overview-page .navbar-header {
       padding-left: 50px; }
 
 .bootcards-wiki .bootcards-wiki-comments p {
-  margin: 0 !important; }
+  margin: 0 !important;
+  line-height: 1.5; }
 
 .bootcards-wiki .bootcards-wiki-comments .avatar {
   margin-top: 5px;
@@ -3205,64 +3220,97 @@ body.desktop.isometrica-overview-page .navbar-header {
   border-top: 0;
   text-align: center; }
 
-/* iOS */
-.ios.bootcards-wiki .bootcards-wiki-panel .panel-heading {
-  min-height: 44px; }
-  .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading .pull-left .btn {
-    margin-left: 0;
-    margin-right: 20px; }
-  .ios.bootcards-wiki .bootcards-wiki-panel .panel-heading .btn {
-    background: transparent !important;
-    box-shadow: none;
-    border-color: transparent;
-    padding: 8px 0;
-    opacity: 1;
-    color: #007aff; }
+/* iOS
+.ios.bootcards-wiki {
+  .bootcards-wiki-panel {
+    .panel-heading {
+      min-height: 44px;
 
-.ios.bootcards-wiki .bootcards-wiki-panel .bootcards-panel-tips {
-  padding-top: 10px;
-  padding-bottom: 10px; }
+      .pull-left .btn {
+        margin-left: 0;
+        margin-right: 20px;
+      }
 
-.ios.bootcards-wiki .control-label {
-  padding-left: 15px !important; }
+      .btn {
+        background: transparent !important;
+        box-shadow: none;
+        border-color: transparent;
+        padding: 8px 0;
+        opacity: 1;
+        color: #007aff;
+      }
+    }
 
-@media (max-width: 767px) {
-  .ios.bootcards-wiki .panel-footer small {
-    float: none !important; } }
+    .bootcards-panel-tips {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
 
-/* Android */
-.android.bootcards-wiki .panel-heading {
-  min-height: 44px;
-  padding-left: 5px;
-  padding-right: 5px;
-  position: relative; }
-  .android.bootcards-wiki .panel-heading .pull-left {
-    position: absolute;
-    left: 0;
-    top: 0; }
-  .android.bootcards-wiki .panel-heading .pull-right {
-    position: absolute;
-    right: 0;
-    top: 0; }
-  .android.bootcards-wiki .panel-heading .btn {
-    background: transparent !important;
-    box-shadow: none;
-    border-color: transparent;
-    opacity: 1;
-    color: #999;
-    margin: 0;
-    padding: 10px 15px; }
+  .panel-footer {
+    small {
+      @media (max-width:767px) {
+        float: none !important;
+      }
+    }
+  }
 
-.android.bootcards-wiki .bootcards-panel-tips {
-  padding: 10px 15px; }
+}*/
+/* Android
+.android.bootcards-wiki {
 
-.android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group {
-  margin-bottom: 5px; }
-  .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group:last-child {
-    margin-bottom: 0; }
-  .android.bootcards-wiki .bootcards-wiki-panel-metadata .form-group .btn {
-    line-height: 28px; }
+  .panel-heading {
+    min-height: 44px;
+    padding-left: 5px;
+    padding-right: 5px;
+    position: relative;
 
+    .pull-left {
+      position: absolute;
+      left: 0;
+      top: 0;
+    }
+
+    .pull-right {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+
+    .btn {
+      background: transparent !important;
+      box-shadow: none;
+      border-color: transparent;
+      opacity: 1;
+      color: #999;
+      margin: 0;
+      padding: 10px 15px;
+    }
+  }
+
+  .bootcards-panel-tips {
+    padding: 10px 15px;
+  }
+
+  .bootcards-wiki-panel-metadata {
+    //padding-top: 5px;
+    //padding-bottom: 5px;
+    //border-top: 1px solid #ddd;
+
+    .form-group {
+      margin-bottom: 5px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .btn {
+        line-height: 28px;
+      }
+    }
+  }
+
+}*/
 /* WORKSHEET MODAL */
 .isometrica-worksheet-modal .modal-dialog {
   width: auto; }
@@ -3463,38 +3511,25 @@ body.desktop.isometrica-overview-page .navbar-header {
     top: -1px;
     left: 3px; }
 
-.ios.isometrica-dashboard-page {
-  /*.guidance-bar {
-    position: fixed;
-    top: 44px;
-    left: 0;
-    right: 0;
-  }
+.ios.isometrica-dashboard-page .isometrica-dashboard-container,
+.android.isometrica-dashboard-page .isometrica-dashboard-container {
+  height: auto; }
 
-  .isometrica-dashboard-container {
-    position: fixed;
-    top: 118px;
-
-    left: 0;
-    right: 0;
-    bottom: 0;
-    overflow: scroll;
-    -webkit-overflow-scrolling: touch;
-    height: auto;
-  }*/ }
-  .ios.isometrica-dashboard-page .isometrica-dashboard-container {
-    height: auto; }
-  .ios.isometrica-dashboard-page .isometrica-dashboard-items {
+.ios.isometrica-dashboard-page .isometrica-dashboard-items,
+.android.isometrica-dashboard-page .isometrica-dashboard-items {
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-top: 15px; }
+  .ios.isometrica-dashboard-page .isometrica-dashboard-items .row > div,
+  .android.isometrica-dashboard-page .isometrica-dashboard-items .row > div {
     padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 15px; }
-    .ios.isometrica-dashboard-page .isometrica-dashboard-items .row > div {
-      padding-left: 8px;
-      padding-right: 8px; }
-    .ios.isometrica-dashboard-page .isometrica-dashboard-items hr {
-      margin: 15px 8px; }
-    .ios.isometrica-dashboard-page .isometrica-dashboard-items .isometrica-dashboard-item {
-      margin-bottom: 15px; }
+    padding-right: 8px; }
+  .ios.isometrica-dashboard-page .isometrica-dashboard-items hr,
+  .android.isometrica-dashboard-page .isometrica-dashboard-items hr {
+    margin: 15px 8px; }
+  .ios.isometrica-dashboard-page .isometrica-dashboard-items .isometrica-dashboard-item,
+  .android.isometrica-dashboard-page .isometrica-dashboard-items .isometrica-dashboard-item {
+    margin-bottom: 15px; }
 
 .isometrica-calendar .search-form .row > div:first-child {
   padding-right: 5px; }
