@@ -24,7 +24,6 @@
       padding-bottom: .25em;
       position: relative;
       top: -1px;
-      margin-right: 6px;
     }
 
     .status-indicator {
@@ -98,6 +97,8 @@
     .btn {
       margin-top: 3px;
       margin-bottom: 2px;
+      white-space: normal;
+      text-align: left;
     }
 
     ol, ul {

@@ -143,6 +143,14 @@ body.android {
   }
 }
 
+.ios {
+  .panel-heading {
+    .btn {
+      font-size: 16px !important;
+    }
+  }
+}
+
 
 
 
@@ -815,8 +823,8 @@ $status-indicator-size: 16px;
 /* GUIDANCE BAR */
 
 .guidance-toggle {
-  display: none !important;
-  &.collapsed { display: inline-block !important; }
+  display: none;
+  &.collapsed { display: inline-block; }
 }
 
 .modal {
@@ -1426,14 +1434,6 @@ $status-indicator-size: 16px;
       padding-top: 12px;
       padding-bottom: 12px;
       border-radius: 0;
-
-    	.bootcards-panel-collapsing-indicator {
-      	@media (max-width:767px) {
-        	left: 8px;
-        	font-size: 18px;
-        	margin-top: -10px;
-      	}
-    	}
     }
 
     .panel-body {
@@ -1652,11 +1652,6 @@ $status-indicator-size: 16px;
 @import "_overview.scss";
 @import "_org-setup.scss";
 @import "_wiki.scss";
-@import "_address-book.scss";
-@import "_users.scss";
 @import "_worksheet.scss";
 @import "_dashboard.scss";
-@import "_communications.scss";
-@import "_meetings.scss";
-@import "_work-inbox.scss";
 @import "_calendar.scss";

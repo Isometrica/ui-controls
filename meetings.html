@@ -56,13 +56,7 @@
           </a>
         </li>
       </ul>
-      <ul class="nav navbar-nav navbar-right">
-        <li>
-          <a class="btn btn-link icon-only" href="#">
-          	<i class="fa fa-lg fa-question-circle"></i>
-          </a>
-        </li>
-      </ul>
+
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
           Meeting records - all
@@ -166,11 +160,10 @@
 					<div class="panel-heading clearfix">
 						<div class="btn-group pull-right">
 							<a class="btn btn-primary" data-toggle="modal" data-target="#isometrica-meetings-edit-modal">
-								<i class="fa fa-pencil"></i>
 								Edit
 							</a>
 						</div>
-						<h3 class="panel-title">Meeting record <span class="label label-danger margin-left">Overdue actions</span></h3>
+						<h3 class="panel-title">Meeting record <span class="label label-danger">Overdue actions</span></h3>
 					</div>
           <div class="list-group">
             <div class="list-group-item">
@@ -261,8 +254,8 @@
           </div>
           <div class="list-group">
             <div class="list-group-item">
-              <a href="#" class="btn btn-default"><strong>MA129</strong> Arrange briefing session for Michael Hamilton <i class="fa fa-circle margin-left text-success"></i></a>
-              <a href="#" class="btn btn-default"><strong>MA130</strong> Check on how up-to-date we are on R&amp;D tax credits <i class="fa fa-circle margin-left text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA129</strong> Arrange briefing session for Michael Hamilton <i class="fa fa-circle text-success"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA130</strong> Check on how up-to-date we are on R&amp;D tax credits <i class="fa fa-circle text-success"></i></a>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -270,7 +263,7 @@
           </div>
           <div class="list-group">
             <div class="list-group-item">
-              <a href="#" class="btn btn-default"><strong>MA110</strong> Ask Lyndsey to change DSO calculator <i class="fa fa-circle margin-left text-danger"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA110</strong> Ask Lyndsey to change DSO calculator <i class="fa fa-circle text-danger"></i></a>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -278,8 +271,8 @@
           </div>
           <div class="list-group">
             <div class="list-group-item">
-              <a href="#" class="btn btn-default"><strong>MA135</strong> Investigate Japan pricing <i class="fa fa-circle margin-left text-warning"></i></a>
-              <a href="#" class="btn btn-default"><strong>MA136</strong> Renew EMEA prices <i class="fa fa-circle margin-left text-warning"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA135</strong> Investigate Japan pricing <i class="fa fa-circle text-warning"></i></a>
+              <a href="#" class="btn btn-default"><strong>MA136</strong> Renew EMEA prices <i class="fa fa-circle text-warning"></i></a>
             </div>
           </div>
           <div class="panel-footer">
@@ -442,7 +435,10 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-2 col-sm-4"><a class="guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-2"><i class="fa fa-lg fa-question-circle"></i></a>Date</label>
+              <label class="control-label col-xs-2 col-sm-4">
+                <a class="guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-2"><i class="fa fa-lg fa-question-circle"></i></a>
+                Date
+              </label>
               <div class="col-xs-10 col-sm-8">
                 <input type="text" class="form-control" value="20 May 2015" placeholder="Date"/>
                 <button type="button" class="btn btn-link clear-field">
@@ -535,7 +531,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -579,7 +575,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -623,7 +619,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -668,9 +664,9 @@
                         <div class="collapse" id="agenda-item-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Previous minutes">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
+                  			        <input type="text" class="form-control" value="Follow up actions from previous management review">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -714,7 +710,7 @@
                   	        </div>
                             <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -740,8 +736,8 @@
                         <div class="collapse" id="agenda-item-2">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Internal Audit results">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -786,7 +782,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -813,8 +809,8 @@
                         <div class="collapse" id="agenda-item-3">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -859,7 +855,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -886,8 +882,8 @@
                         <div class="collapse" id="agenda-item-4">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -932,7 +928,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -959,8 +955,8 @@
                         <div class="collapse" id="agenda-item-5">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1005,7 +1001,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1031,8 +1027,8 @@
                         <div class="collapse" id="agenda-item-6">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1077,7 +1073,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1104,8 +1100,8 @@
                         <div class="collapse" id="agenda-item-7">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1150,7 +1146,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1176,8 +1172,8 @@
                         <div class="collapse" id="agenda-item-8">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1222,7 +1218,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1248,8 +1244,8 @@
                         <div class="collapse" id="agenda-item-9">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1294,7 +1290,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1320,8 +1316,8 @@
                         <div class="collapse" id="agenda-item-10">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1366,7 +1362,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1392,8 +1388,8 @@
                         <div class="collapse" id="agenda-item-11">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Agenda item</label>
-                  		        <div class="col-xs-9">
+                  		        <label class="control-label col-sm-3 col-xs-12">Agenda item</label>
+                  		        <div class="col-sm-9 col-xs-12">
                   			        <input type="text" class="form-control" value="Previous minutes">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1438,7 +1434,7 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1457,8 +1453,14 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#closed-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Actions from last meeting - closed</h4>
-                  <h4 class="panel-title pull-right text-muted">2</h4>
+                  <div class="row">
+                    <div class="col-xs-10">
+                      <h4 class="panel-title">Closed actions from last meeting</h4>
+                    </div>
+                    <div class="col-xs-2 text-right">
+                      <h4 class="panel-title pull-right text-muted">2</h4>
+                    </div>
+                  </div>
                 </div>
                 <div class="collapse" id="closed-actions">
                   <div class="panel-body">
@@ -1479,7 +1481,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Action item</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <input type="text" class="form-control" value="Arrange briefing session for Michael Hamilton">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -1525,8 +1527,8 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">More Info</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1547,7 +1549,7 @@
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-3">Action item</label>
                   		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Investigate Japan pricing">
+                  			        <input type="text" class="form-control" value="Check on how up-to-date we are on R&amp;D tax credits">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -1593,8 +1595,8 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">More Info</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1610,8 +1612,14 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#open-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Actions from last meeting - open</h4>
-                  <h4 class="panel-title pull-right text-muted">1</h4>
+                  <div class="row">
+                    <div class="col-xs-10">
+                      <h4 class="panel-title">Open actions from last meeting</h4>
+                    </div>
+                    <div class="col-xs-2 text-right">
+                      <h4 class="panel-title pull-right text-muted">1</h4>
+                    </div>
+                  </div>
                 </div>
                 <div class="collapse" id="open-actions">
                   <div class="panel-body">
@@ -1678,8 +1686,8 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">More Info</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1762,8 +1770,8 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">More Info</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>
@@ -1830,8 +1838,8 @@
                   	        </div>
                   	        <div class="form-group">
                               <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                                <button type="button" class="btn btn-default">More Info</button>
+                                <button type="button" class="btn btn-default">Delete</button>
                               </div>
                             </div>
                 	        </div>

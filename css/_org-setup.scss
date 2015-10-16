@@ -211,6 +211,10 @@
     border: 0;
   }
 
+  .table-responsive {
+    border-top: 0;
+  }
+
   .table>tbody>tr>td {
     padding: 0 !important;
   }
@@ -234,21 +238,18 @@
     &:first-child { border-left: 0; }
   }
 
-  td.wide {
-    min-width: 300px;
+  th {
+    min-width: 180px;
   }
 
-  td.medium {
-    min-width: 100px;
-  }
-
-  td.short,
   th.short {
-    width: 140px;
+    min-width: 120px;
   }
 
+  th.icon,
   td.icon {
     width: 40px;
+    min-width: 40px;
   }
 
   .form-control {
@@ -345,10 +346,6 @@
       }
     }
   }
-
-  //.modal.edit-item-details .panel .panel-heading > .form-group:first-child label:before {
-  //  margin-top: 4px;
-  //}
 }
 
 .android.isometrica-org-setup-page {
@@ -363,14 +360,6 @@
     }
   }
 
-  /*.subheader {
-    background: transparent;
-    box-shadow: none;
-    padding: 10px 15px;
-    height: auto;
-    border-bottom: 1px solid #ddd;
-  }*/
-
   .modal-header {
     .pull-right {
       position: absolute;
@@ -383,7 +372,7 @@
 
 /* CORE SYSTEM MODAL */
 
-.modal.edit-item-details {
+.modal.isometrica-orgsetup-modal {
 	z-index: 1051;
 
 	.modal-dialog:not(.modal-lg) {
@@ -407,30 +396,13 @@
       right: 15px;
       top: 12px;
   	}
-	}
 
-	/*.subheader {
-  	font-size: 14px;
-  	line-height: 1.5;
-  	padding: 12px 15px;
-  	color: #777;
-  	border-bottom: 0;
+  	.modal-title {
+    	@media (max-width: 767px) {
+      	text-align: left;
+      	padding-left: 15px;
+    	}
 
-  	p {
-    	margin: 0;
   	}
-	}*/
-}
-
-.ios .modal.edit-item-details {
-  .modal-header {
-    .pull-left {
-      left: 0;
-      top: 0;
-    }
-    .pull-right {
-      right: 0;
-      top: 0;
-    }
-  }
+	}
 }

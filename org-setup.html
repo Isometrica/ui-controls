@@ -54,7 +54,7 @@
     <div class="container-fluid">
       <ul class="nav navbar-nav navbar-left">
         <li>
-          <a class="btn btn-link icon-only" href="dashboard.html">
+          <a class="btn btn-link icon-only" href="overview.html">
           	<i class="fa fa-lg fa-chevron-left"></i>
           </a>
         </li>
@@ -91,7 +91,99 @@
     </div>
   </div>
 
-  <div class="container org-setup-container">
+  <!-- List view - mobile -->
+  <div class="container bootcards-container isometrica-mobile-list-view-container visible-xs">
+    <div class="bootcards-list">
+      <div class="panel panel-default">
+        <div class="list-group">
+          <a class="list-group-item" data-toggle="modal" data-target="#editMission">
+            <span class="label label-success status-indicator pull-left"></span>
+              <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">IBM UK mission &amp; goals</h4>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editPerformanceIndicators">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Performance indicators</h4>
+              <p class="list-group-item-text">7 areas</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editRiskTypes">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Risks</h4>
+              <p class="list-group-item-text">6 types</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editManagementSystems">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Management programs</h4>
+              <p class="list-group-item-text">4</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editDepartments">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Departments</h4>
+              <p class="list-group-item-text">7</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editRoles">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Roles</h4>
+              <p class="list-group-item-text">8</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editSupplierTypes">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Suppliers &amp; partners</h4>
+              <p class="list-group-item-text">2 types</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editInterestedParties">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Customers &amp; interested parties</h4>
+              <p class="list-group-item-text">10 types</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editActivities">
+            <span class="label label-danger status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Activities &amp; processes</h4>
+              <p class="list-group-item-text">3</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editProducts">
+            <span class="label label-danger status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Products &amp; services</h4>
+              <p class="list-group-item-text">5</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editEnvironmental">
+            <span class="label label-danger status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Environmental aspects</h4>
+              <p class="list-group-item-text">6 types</p>
+            </div>
+          </a>
+          <a class="list-group-item">
+            <span class="label label-empty status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading text-muted">Assets, resources &amp; dependencies</h4>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container org-setup-container hidden-xs">
     <div class="panel panel-default org-setup-panel">
       <div class="org-setup-offset-container">
         <div class="panel-heading first" data-toggle="modal" data-target="#editMission">
@@ -181,15 +273,10 @@
 
 
   <!-- Edit Mission -->
-  <div class="modal fade edit-item-details" id="editMission">
+  <div class="modal fade isometrica-orgsetup-modal" id="editMission">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editMission">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -250,15 +337,10 @@
 
 
   <!-- Edit Performance Indicators -->
-  <div class="modal fade edit-item-details" id="editPerformanceIndicators">
+  <div class="modal fade isometrica-orgsetup-modal" id="editPerformanceIndicators">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editPerformanceIndicators">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -335,15 +417,10 @@
 
 
   <!-- Edit Management systemns -->
-  <div class="modal fade edit-item-details" id="editManagementSystems">
+  <div class="modal fade isometrica-orgsetup-modal" id="editManagementSystems">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editManagementSystems">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -408,15 +485,10 @@
 
 
   <!-- Edit Departments -->
-  <div class="modal fade edit-item-details" id="editDepartments">
+  <div class="modal fade isometrica-orgsetup-modal" id="editDepartments">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editDepartments">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -497,15 +569,10 @@
 
 
   <!-- Edit Roles -->
-  <div class="modal fade edit-item-details" id="editRoles">
+  <div class="modal fade isometrica-orgsetup-modal" id="editRoles">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editRoles">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -566,15 +633,10 @@
 
 
   <!-- Edit Meeting Types -->
-  <div class="modal fade edit-item-details" id="editMeetingTypes">
+  <div class="modal fade isometrica-orgsetup-modal" id="editMeetingTypes">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editMeetingTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -659,15 +721,10 @@
 
 
   <!-- Edit Products -->
-  <div class="modal fade edit-item-details" id="editProducts">
+  <div class="modal fade isometrica-orgsetup-modal" id="editProducts">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editProducts">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -707,7 +764,7 @@
                   <th class="short">Short name</th>
                   <th>Description</th>
                   <th class="short">Type</th>
-                  <th></th>
+                  <th class="icon"></th>
                 </tr>
               </thead>
               <tbody>
@@ -794,15 +851,10 @@
 
 
   <!-- Edit Interested Parties -->
-  <div class="modal fade edit-item-details" id="editInterestedParties">
+  <div class="modal fade isometrica-orgsetup-modal" id="editInterestedParties">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editInterestedParties">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -883,15 +935,10 @@
 
 
   <!-- Edit Activities -->
-  <div class="modal fade edit-item-details" id="editActivities">
+  <div class="modal fade isometrica-orgsetup-modal" id="editActivities">
     <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editActivities">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -931,7 +978,7 @@
                   <th class="short">Short name</th>
                   <th>Description</th>
                   <th class="short">Type</th>
-                  <th></th>
+                  <th class="icon"></th>
                 </tr>
               </thead>
               <tbody>
@@ -1005,15 +1052,10 @@
 
 
   <!-- Edit Supplier types -->
-  <div class="modal fade edit-item-details" id="editSupplierTypes">
+  <div class="modal fade isometrica-orgsetup-modal" id="editSupplierTypes">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editSupplierTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -1070,15 +1112,10 @@
 
 
   <!-- Edit Risk types -->
-  <div class="modal fade edit-item-details" id="editRiskTypes">
+  <div class="modal fade isometrica-orgsetup-modal" id="editRiskTypes">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editRiskTypes">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -1163,15 +1200,10 @@
 
 
   <!-- Edit Environmental -->
-  <div class="modal fade edit-item-details" id="editEnvironmental">
+  <div class="modal fade isometrica-orgsetup-modal" id="editEnvironmental">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="pull-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editEnvironmental">
       				<i class="fa fa-lg fa-question-circle"></i>
@@ -1253,10 +1285,10 @@
   	*/
 
   	/* Prevent form clicks from expanding/contracting accordion */
-  	$( ".edit-item-details .form-control").click(function() {
+  	$( ".isometrica-orgsetup-modal .form-control").click(function() {
   		event.stopPropagation();
   	});
-  	$( ".edit-item-details .clear-field").click(function() {
+  	$( ".isometrica-orgsetup-modal .clear-field").click(function() {
   		event.stopPropagation();
   	});
 

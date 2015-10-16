@@ -308,7 +308,14 @@ input:focus ~ .clear-field {
 
 .ios {
   .form-horizontal .form-group .control-label {
-    padding-top: 9px;
+    padding-top: 8px;
+    color: black;
+    font-weight: 500;
+  }
+
+  .bootcards-panel-collapsing:not(.full-width) .panel-body {
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 
