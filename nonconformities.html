@@ -72,6 +72,7 @@
           <li class="active"><a href="#">By date</a></li>
           <li><a href="#">By source</a></li>
           <li><a href="#">By system</a></li>
+          <li><a href="#">By financial impact</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
       </div>
@@ -189,10 +190,21 @@
                 </div>
               </div>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Management system</p>
-              <h4 class="list-group-item-heading">Business continuity</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Management system</p>
+                  <h4 class="list-group-item-heading">Business continuity</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Financial impact</p>
+                  <h4 class="list-group-item-heading">£25,000</h4>
+                </div>
+              </div>
             </div>
+
           </div>
           <div class="panel-heading panel-subheading">
             <h4 class="panel-title">Notes</h4>
@@ -429,6 +441,22 @@
                   <option selected="">Business continuity</option>
                   <option>Info security</option>
                 </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Financial impact</label>
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">&pound; <span class="caret"></span></button>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">&pound;</a></li>
+                      <li><a href="#">$</a></li>
+                      <li><a href="#">&euro;</a></li>
+                    </ul>
+                  </div>
+                  <input type="text" class="form-control" value="25,000" placeholder="Financial impact"/>
+                </div>
               </div>
             </div>
             <div>

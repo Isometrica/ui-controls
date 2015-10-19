@@ -1016,7 +1016,9 @@ input.form-value {
   margin-right: 3px; }
 
 .form-horizontal .form-group .btn-group .btn,
-.list-group-item .btn-group .btn {
+.form-horizontal .form-group .input-group .btn,
+.list-group-item .btn-group .btn,
+.list-group-item .input-group .btn {
   margin-right: 0; }
 
 .isometrica-rich-text-control {
