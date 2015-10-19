@@ -998,6 +998,9 @@ input.form-value {
   }
 }
 */
+.dropdown-menu .divider {
+  margin: 4px 0; }
+
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
@@ -1006,20 +1009,11 @@ input.form-value {
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
 
-.form-horizontal .form-group .btn,
 .list-group-item .btn {
   margin-bottom: 8px; }
 
-.form-horizontal .form-group .btn,
-.form-horizontal .form-group .btn-group,
 .list-group-item .btn, .list-group-item .btn-group {
   margin-right: 3px; }
-
-.form-horizontal .form-group .btn-group .btn,
-.form-horizontal .form-group .input-group .btn,
-.list-group-item .btn-group .btn,
-.list-group-item .input-group .btn {
-  margin-right: 0; }
 
 .isometrica-rich-text-control {
   padding: 0;
@@ -1200,14 +1194,6 @@ input:focus ~ .clear-field {
   line-height: 26px; }
 
 /* Input groups */
-.input-group {
-  margin-top: 8px;
-  margin-bottom: 8px; }
-  .input-group:first-child {
-    margin-top: 0; }
-  .input-group:last-child {
-    margin-bottom: 0; }
-
 .input-group .btn {
   margin-right: 0;
   margin-bottom: 0; }

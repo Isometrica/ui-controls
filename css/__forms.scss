@@ -37,6 +37,12 @@ input.form-value {
 */
 
 
+.dropdown-menu {
+  .divider {
+    margin: 4px 0;
+  }
+}
+
 
 
 .help-icon {
@@ -50,7 +56,6 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
-.form-horizontal .form-group,
 .list-group-item {
   .btn {
     margin-bottom: 8px;
@@ -58,11 +63,6 @@ input.form-value {
 
   .btn, .btn-group {
     margin-right: 3px;
-  }
-
-  .btn-group .btn,
-  .input-group .btn {
-    margin-right: 0;
   }
 }
 
@@ -334,11 +334,11 @@ input:focus ~ .clear-field {
 /* Input groups */
 
 .input-group {
-  margin-top: 8px;
-  margin-bottom: 8px;
+  //margin-top: 8px;
+  //margin-bottom: 8px;
 
-  &:first-child { margin-top: 0; }
-  &:last-child { margin-bottom: 0; }
+  //&:first-child { margin-top: 0; }
+  //&:last-child { margin-bottom: 0; }
 }
 
 .input-group .btn {
