@@ -3535,8 +3535,9 @@ body.bootcards-wiki {
 
 .isometrica-dashboard-page .isometrica-dashboard-items {
   padding-top: 30px; }
-  .isometrica-dashboard-page .isometrica-dashboard-items .row > div {
-    width: 20%; }
+  @media (min-width: 1200px) {
+    .isometrica-dashboard-page .isometrica-dashboard-items .row > div {
+      width: 20%; } }
   .isometrica-dashboard-page .isometrica-dashboard-items hr {
     clear: both;
     border-color: #ddd;
@@ -3554,18 +3555,16 @@ body.bootcards-wiki {
   .isometrica-dashboard-page .isometrica-dashboard-item i {
     display: block;
     text-align: center;
-    font-size: 42px;
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    font-size: 42px; }
   .isometrica-dashboard-page .isometrica-dashboard-item h3 {
     line-height: 20px;
     font-size: 16px;
     color: #333;
     text-align: center;
-    margin: 0 0 5px; }
+    margin: 0; }
   .isometrica-dashboard-page .isometrica-dashboard-item p {
     text-align: center;
-    margin: 0;
+    margin: 0 0 2px;
     color: #777; }
     .isometrica-dashboard-page .isometrica-dashboard-item p .label {
       position: relative;
