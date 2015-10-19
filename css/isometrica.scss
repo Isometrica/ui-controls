@@ -8,6 +8,8 @@ $blue-color: #006e9e;
 $blue-color-hover: #004e7e;
 $dark-blue-color: #222844;
 
+@import "__mixins.scss";
+
 html,
 body {
 	height: 100%;
@@ -71,6 +73,32 @@ body.android {
   margin-left: 5px;
   margin-right: 0;
 }
+
+
+.powered-by {
+  text-align: left;
+
+  small {
+    font-weight: 500;
+    color: #aaa;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: -1px;
+  }
+
+  img {
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover, &:active {
+      opacity: 1;
+    }
+  }
+}
+
 
 
 
@@ -550,13 +578,23 @@ body.android {
     .navbar-text,
     .navbar-nav>li>a {
       //color: #c4cae0;
-      color: #bbb;
+      color: #bbb !important;
     }
 
-    span.navbar-brand,
-    a.navbar-brand:hover,
-    .navbar-nav>li>a:hover {
-      color: white;
+    span.navbar-brand {
+      color: white !important;
+    }
+
+    a.navbar-brand,
+    .navbar-nav>li>a {
+      &:hover,
+      &:active {
+        color: white !important;
+      }
+    }
+
+    .navbar-nav>.open>a {
+      color: white !important;
     }
   }
 }
@@ -713,6 +751,8 @@ body.android {
     left: 50%;
     margin-left: -100px;
     text-align: center;
+    border-radius: 0 0 4px 4px;
+    margin-top: 0px;
 
     >.active>a {
       background: #006e9e !important;

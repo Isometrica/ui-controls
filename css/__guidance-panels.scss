@@ -1,8 +1,8 @@
 /* GUIDANCE BAR */
 
 .guidance-toggle {
-  display: none;
-  &.collapsed { display: inline-block; }
+  display: none !important;
+  &.collapsed { display: inline-block !important; }
 }
 
 .modal {
@@ -117,13 +117,18 @@
     }
 
     p {
-      margin: 0;
+      //margin: 0;
     }
 
     .btn {
       color: white !important;
       margin-bottom: 0 !important;
       font-weight: 500;
+
+    }
+
+    .btn-group {
+      margin-top: -10px;
     }
 
     .text-muted {
@@ -131,6 +136,10 @@
     }
 
     .guidance-panel-question {
+      .btn {
+        margin-bottom: 15px !important;
+      }
+
       .btn-primary {
         background: #204d74;
         border-color: #204d74;
@@ -182,5 +191,9 @@
 
   .guidance-panel-top {
     margin-top: 0 !important;
+
+    textarea {
+      padding: 10px 15px !important;
+    }
   }
 }

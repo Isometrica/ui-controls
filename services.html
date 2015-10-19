@@ -46,7 +46,7 @@
 </head>
 <body class="bootcards-nofooter bootcards-fullheight isometrica-overview-page has-bootcards-navbar-double">
 
-  <!-- fixed top navbar -->
+  <!-- fixed top navbar
   <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
     <div class="container">
       <ul class="nav navbar-nav navbar-right">
@@ -58,7 +58,7 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          <img src="img/logo-icon.png" class="hidden-xs"/><span class="hidden-xs">Isometrica:</span>
+          <img src="img/ortus-logo.png"/>
           Teamstudio <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
@@ -88,7 +88,7 @@
   	    </ul>
         <ul class="nav navbar-nav navbar-right bootcards-nav-primary">
           <li>
-            <a href="#">
+            <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
   	          <i class="fa fa-fw fa-question-circle"></i>
               Help
             </a>
@@ -102,13 +102,56 @@
         </ul>
       </div>
     </div>
+  </div>-->
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
+    <div class="container">
+      <div class="navbar-header">
+        <span class="navbar-brand dropdown-toggle">
+          <img src="img/ortus-logo.png" data-toggle="modal" data-target="#changeIconModal"/>
+          <span class="dropdown-toggle" data-toggle="dropdown">Teamstudio <i class="fa fa-chevron-down"></i></span>
+          <ul class="dropdown-menu">
+            <li class="active"><a href="#">Teamstudio</a></li>
+            <li><a href="#">Another company</a></li>
+          </ul>
+        </span>
+      </div>
+	    <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+            <i class="fa fa-question-circle"></i>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="chat-link">
+            <i class="fa fa-comment"></i>
+            <span class="label label-danger">4</span>
+          </a>
+        </li>
+        <li class="dropdown">
+          <a href="#" data-toggle="dropdown">
+	        	Stephen Ives
+	        	<span class="caret"></span>
+	        	<!--<span class="label label-danger"><i class="fa fa-comment"></i> 5+</span>-->
+	        </a>
+	        <ul class="dropdown-menu">
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+	    </ul>
+    </div>
   </div>
 
   <!-- Guidance Bar -->
   <div class="collapse in" id="guidance-panel">
     <div class="guidance-panel guidance-panel-top guidance-panel-overview">
       <div class="container">
-        <p>Guidance text goes here lorem ipsum</p>
+        <p>Ensure the success of your compliance management project with additional paid services.
+          <br>Isometrica provides system implementation support for a per-hour fee.
+          <br>Listed Isometrica partners provide specialized compliance consulting services.</p>
         <div class="collapse" id="guidance-panel-more">
           <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
           <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
@@ -119,12 +162,14 @@
             <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
           </ul>
         </div>
-        <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-more">
-          <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
-          <span class="expanded-label">Full help</span>
-        </a>
-        <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel"><i class="fa fa-chevron-up"></i> Hide</a>
-        <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-question">Ask question</a>
+        <div class="btn-group">
+          <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-more">
+            <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
+            <span class="expanded-label">Full help</span>
+          </a>
+          <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel"><i class="fa fa-chevron-up"></i> Hide</a>
+          <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-question">Ask question</a>
+        </div>
         <div class="collapse guidance-panel-question" id="guidance-panel-question">
           <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
           <a class="btn btn-primary" >Send</a>
@@ -231,18 +276,22 @@
         </div>
       </div>
       <hr>
-      <div class="text-center">
+      <div class="pull-left">
         <button type="button" class="btn btn-primary">Contact us</button>
         <button type="button" class="btn btn-info">More info</button>
+      </div>
+      <div class="pull-right">
+        <div class="powered-by">
+          <small>Powered by</small>
+          <img src="img/logo-dark-lowercase.png"/>
+        </div>
       </div>
   	</div>
   </div>
 
-
-
-  <!-- Edit Item -->
-  <div class="modal fade" id="addUsersModal" tabindex="-1" role="dialog">
-    <div class="modal-dialog modal-lg">
+  <!-- Change icon -->
+  <div class="modal fade" id="changeIconModal">
+    <div class="modal-dialog modal-sm">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
   		    <div class="btn-group pull-left">
@@ -251,45 +300,15 @@
   		      </button>
   		    </div>
   		    <div class="btn-group pull-right">
-  			    <button type="button" class="btn btn-primary" data-dismiss="modal">
-  		      	Done
-  		      </button>
+
   		    </div>
-  	      <h4 class="modal-title">Users</h4>
+  	      <h4 class="modal-title">Change icon</h4>
   	    </div>
-        <div class="modal-body">
-          <div class="row">
-            <div class="col-sm-6">
-              <h2>Add User(s) to this Plan</h2>
-              <p>Type names or emails to invite people to your team.</p>
-            </div>
-            <div class="col-sm-6">
-              <h2>Existing Plan Users</h2>
-              <p>Anyone on your team will see everything posted to this project. Every message, to-do list, file, event, and text document.</p>
-              <ul class="users">
-                <li>
-                  <img src="img/avatar-mark.gif" class="img-circle pull-left" alt="Mark Leusink"/>
-                  <h4>Mark Leusink</h4>
-                  <p class="text-muted">mark@teamstudio.com</p>
-                </li>
-                <li>
-                  <img src="img/avatar-matt.gif" class="img-circle pull-left" alt="Matt White"/>
-                  <h4>Matt White</h4>
-                  <p class="text-muted">matt@teamstudio.com</p>
-                </li>
-                <li>
-                  <img src="img/avatar-jack.gif" class="img-circle pull-left" alt="Jack Herbert"/>
-                  <h4>Jack Herbert</h4>
-                  <p class="text-muted">jack@teamstudio.com</p>
-                </li>
-                <li>
-                  <img src="img/avatar-steve.gif" class="img-circle pull-left" alt="Steve Ives"/>
-                  <h4>Steve Ives</h4>
-                  <p class="text-muted">steve@teamstudio.com</p>
-                </li>
-              </ul>
-            </div>
-          </div>
+        <div class="modal-body overview-icon-preview">
+          <img src="img/ortus-logo.png" class="img-responsive">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-primary btn-block">Upload new icon</button>
         </div>
       </div>
     </div>

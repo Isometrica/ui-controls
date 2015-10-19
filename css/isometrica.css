@@ -41,6 +41,23 @@ body.android {
   margin-left: 5px;
   margin-right: 0; }
 
+.powered-by {
+  text-align: left; }
+  .powered-by small {
+    font-weight: 500;
+    color: #aaa;
+    display: block;
+    text-transform: uppercase;
+    font-size: 10px;
+    margin-bottom: -1px; }
+  .powered-by img {
+    height: 20px;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+    cursor: pointer; }
+    .powered-by img:hover, .powered-by img:active {
+      opacity: 1; }
+
 /* BUTTONS */
 .btn[disabled] {
   opacity: 1; }
@@ -424,11 +441,16 @@ body.android {
   .desktop .navbar-inverse .navbar-brand,
   .desktop .navbar-inverse .navbar-text,
   .desktop .navbar-inverse .navbar-nav > li > a {
-    color: #bbb; }
-  .desktop .navbar-inverse span.navbar-brand,
+    color: #bbb !important; }
+  .desktop .navbar-inverse span.navbar-brand {
+    color: white !important; }
   .desktop .navbar-inverse a.navbar-brand:hover,
-  .desktop .navbar-inverse .navbar-nav > li > a:hover {
-    color: white; }
+  .desktop .navbar-inverse a.navbar-brand:active,
+  .desktop .navbar-inverse .navbar-nav > li > a:hover,
+  .desktop .navbar-inverse .navbar-nav > li > a:active {
+    color: white !important; }
+  .desktop .navbar-inverse .navbar-nav > .open > a {
+    color: white !important; }
 
 .ios .navbar-collapse,
 .android .navbar-collapse {
@@ -527,7 +549,9 @@ body.android {
   width: 200px;
   left: 50%;
   margin-left: -100px;
-  text-align: center; }
+  text-align: center;
+  border-radius: 0 0 4px 4px;
+  margin-top: 0px; }
   .navbar-header .dropdown-menu > .active > a {
     background: #006e9e !important;
     color: white !important; }
@@ -1566,9 +1590,9 @@ input:focus ~ .clear-field {
 
 /* GUIDANCE BAR */
 .guidance-toggle {
-  display: none; }
+  display: none !important; }
   .guidance-toggle.collapsed {
-    display: inline-block; }
+    display: inline-block !important; }
 
 .modal .guidance-toggle {
   color: #00b2e2 !important; }
@@ -1641,14 +1665,16 @@ input:focus ~ .clear-field {
         top: -1px;
         margin-right: 3px;
         background: #5bc0de; }
-    .guidance-panel.guidance-panel-top p {
-      margin: 0; }
     .guidance-panel.guidance-panel-top .btn {
       color: white !important;
       margin-bottom: 0 !important;
       font-weight: 500; }
+    .guidance-panel.guidance-panel-top .btn-group {
+      margin-top: -10px; }
     .guidance-panel.guidance-panel-top .text-muted {
       color: #caf0ff !important; }
+    .guidance-panel.guidance-panel-top .guidance-panel-question .btn {
+      margin-bottom: 15px !important; }
     .guidance-panel.guidance-panel-top .guidance-panel-question .btn-primary {
       background: #204d74;
       border-color: #204d74; }
@@ -1682,6 +1708,8 @@ input:focus ~ .clear-field {
 
 .ios .guidance-panel-top {
   margin-top: 0 !important; }
+  .ios .guidance-panel-top textarea {
+    padding: 10px 15px !important; }
 
 /* workbook */
 /* Guidance bar */
@@ -2462,7 +2490,7 @@ input:focus ~ .clear-field {
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
   position: relative;
-  margin-right: 10px; }
+  margin-right: 5px; }
   @media (min-width: 768px) {
     .isometrica-overview-page .navbar .navbar-brand img {
       height: 28px;
@@ -2487,6 +2515,18 @@ input:focus ~ .clear-field {
   float: none;
   margin: 0 -15px;
   position: static !important; }
+
+.isometrica-overview-page .navbar-nav > li > a i {
+  font-size: 24px;
+  position: relative;
+  top: 3px; }
+
+.isometrica-overview-page .navbar-nav > li > a.chat-link .label {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin-top: -16px;
+  border-radius: 10px; }
 
 .isometrica-overview-page .guidance-panel-top {
   min-height: 135px; }
@@ -2516,10 +2556,9 @@ body.desktop.isometrica-overview-page .navbar-header {
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header .navbar-brand {
       font-size: 36px; } }
-  @media (min-width: 768px) {
-    body.desktop.isometrica-overview-page .navbar-header .navbar-brand img {
-      height: 40px;
-      top: -4px; } }
+  body.desktop.isometrica-overview-page .navbar-header .navbar-brand img {
+    height: 40px;
+    top: -4px; }
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header {
       height: 80px; }
@@ -2529,21 +2568,57 @@ body.desktop.isometrica-overview-page .navbar-header {
         left: auto;
         right: 0; } }
 
-.ios.isometrica-overview-page .navbar .navbar-brand img {
-  height: 18px;
-  top: -2px; }
+body.desktop.isometrica-overview-page .navbar-nav > li > a {
+  line-height: 50px; }
+
+.ios.isometrica-overview-page .navbar .navbar-brand img,
+.android.isometrica-overview-page .navbar .navbar-brand img {
+  height: 26px;
+  top: -3px; }
+
+.ios.isometrica-overview-page .navbar .navbar-right,
+.android.isometrica-overview-page .navbar .navbar-right {
+  top: 0;
+  left: auto !important;
+  right: 0;
+  float: none !important;
+  position: absolute; }
+
+.ios.isometrica-overview-page .navbar .navbar-nav > li > a,
+.android.isometrica-overview-page .navbar .navbar-nav > li > a {
+  color: #ccc; }
+  .ios.isometrica-overview-page .navbar .navbar-nav > li > a:hover,
+  .ios.isometrica-overview-page .navbar .navbar-nav > li > a:focus,
+  .ios.isometrica-overview-page .navbar .navbar-nav > li > a:active,
+  .android.isometrica-overview-page .navbar .navbar-nav > li > a:hover, .android.isometrica-overview-page .navbar .navbar-nav > li > a:focus, .android.isometrica-overview-page .navbar .navbar-nav > li > a:active {
+    color: white; }
+  .ios.isometrica-overview-page .navbar .navbar-nav > li > a i,
+  .android.isometrica-overview-page .navbar .navbar-nav > li > a i {
+    line-height: 14px; }
+
+.ios.isometrica-overview-page .navbar .navbar-nav > li.open > a,
+.android.isometrica-overview-page .navbar .navbar-nav > li.open > a {
+  color: white; }
 
 .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav {
   margin: 0; }
 
-.android.isometrica-overview-page .navbar .navbar-brand img {
-  height: 21px;
-  top: -2px; }
+.android.isometrica-overview-page .navbar .navbar-brand {
+  padding-left: 15px !important; }
 
 @media (min-width: 768px) {
   .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child,
   .android.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child {
     float: left !important; } }
+
+/* ICON UPLOAD */
+.overview-icon-preview {
+  background: #444;
+  padding: 20px !important;
+  text-align: center; }
+  .overview-icon-preview img {
+    height: 40px;
+    margin: 0 auto; }
 
 /* Scrolling Area */
 .ios.isometrica-overview-page {
@@ -2559,24 +2634,7 @@ body.desktop.isometrica-overview-page .navbar-header {
   min-height: 115px; }
   @media (max-width: 767px) {
     .isometrica-overview-page .guidance-bar {
-      padding-bottom: 5px;
-      /*
-
-    h4 {
-      font-size: 14px;
-    }
-    .btn-group {
-      text-align: center;
-      float: none !important;
-      display: block;
-
-      .btn {
-        float: none;
-        font-size: 14px;
-        font-weight: 500;
-      }
-    }
-    */ } }
+      padding-bottom: 5px; } }
 
 /* Tabs */
 .isometrica-overview-tabs {
@@ -2779,6 +2837,7 @@ body.desktop.isometrica-overview-page .navbar-header {
     list-style: none;
     padding: 0;
     overflow: hidden;
+    height: 35px;
     margin: 0; }
     .isometrica-overview-item .users li {
       float: left;
@@ -3115,6 +3174,38 @@ body.desktop.isometrica-overview-page .navbar-header {
       .modal.isometrica-orgsetup-modal .modal-header .modal-title {
         text-align: left;
         padding-left: 15px; } }
+
+/* Flexible layout */
+body.bootcards-wiki {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-top: 0 !important;
+  height: 100%;
+  overflow: hidden; }
+
+.bootcards-wiki > .navbar-fixed-top,
+.bootcards-wiki > #guidance-panel,
+.bootcards-wiki > .bootcards-container {
+  position: static; }
+
+.bootcards-wiki > .bootcards-container {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  position: relative !important;
+  top: 0; }
+
+.bootcards-wiki > .bootcards-container > .row {
+  position: absolute;
+  top: 0;
+  left: 0; }
 
 /* WIKI MODULE */
 .bootcards-wiki .bootcards-list .list-group-item-heading {
