@@ -2897,8 +2897,10 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 /* CORE SYSTEM */
 .isometrica-org-setup-page {
   background: white; }
-  .isometrica-org-setup-page .guidance-panel-top .container-fluid {
-    max-width: 1200px; }
+  .isometrica-org-setup-page .guidance-panel-top {
+    padding-bottom: 15px; }
+    .isometrica-org-setup-page .guidance-panel-top .container-fluid {
+      max-width: 1200px; }
 
 .ios.isometrica-org-setup-page {
   overflow: auto; }
