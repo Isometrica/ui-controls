@@ -42,21 +42,20 @@ body.android {
   margin-right: 0; }
 
 .powered-by {
-  text-align: left; }
-  .powered-by small {
+  text-align: left;
+  /*
+  small {
     font-weight: 500;
     color: #aaa;
     display: block;
     text-transform: uppercase;
     font-size: 10px;
-    margin-bottom: -1px; }
+    margin-bottom: -1px;
+  }*/ }
   .powered-by img {
-    height: 20px;
-    opacity: 0.5;
-    transition: all 0.3s ease;
+    height: 24px;
+    margin: 5px 0;
     cursor: pointer; }
-    .powered-by img:hover, .powered-by img:active {
-      opacity: 1; }
 
 /* BUTTONS */
 .btn[disabled] {
@@ -526,13 +525,6 @@ body.android {
       top: -3px;
       left: 3px; }
 
-.dropdown-menu > li > a {
-  padding: 7px 15px; }
-
-.dropdown-menu > li.active > a {
-  background: #eee;
-  color: #333; }
-
 /* NAVBAR FILTER DROPDOWN */
 .navbar-header .navbar-brand.dropdown-toggle {
   cursor: pointer; }
@@ -998,9 +990,6 @@ input.form-value {
   }
 }
 */
-.dropdown-menu .divider {
-  margin: 4px 0; }
-
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
@@ -1122,6 +1111,28 @@ input.form-value {
   display: block;
   text-align: left;
   margin-bottom: 10px; }
+
+/* Dropdowns */
+.dropdown-menu > li > a {
+  padding: 7px 15px; }
+
+.dropdown-menu .divider {
+  margin: 4px 0; }
+
+.dropdown-menu > .active > a, .dropdown-menu > .active > a:focus, .dropdown-menu > .active > a:hover {
+  background: #006e9e;
+  color: white !important; }
+
+/* Typeahead */
+.isometrica-typeahead .input-group-btn {
+  position: static; }
+  .isometrica-typeahead .input-group-btn .btn {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    margin-left: -1px; }
+
+.isometrica-typeahead .dropdown-menu {
+  left: 0; }
 
 /* Disabled fields */
 .ios .form-control[disabled],

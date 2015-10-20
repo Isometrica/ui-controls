@@ -78,6 +78,7 @@ body.android {
 .powered-by {
   text-align: left;
 
+  /*
   small {
     font-weight: 500;
     color: #aaa;
@@ -85,17 +86,18 @@ body.android {
     text-transform: uppercase;
     font-size: 10px;
     margin-bottom: -1px;
-  }
+  }*/
 
   img {
-    height: 20px;
-    opacity: 0.5;
-    transition: all 0.3s ease;
+    height: 24px;
+    margin: 5px 0;
+    //opacity: 0.5;
+    //transition: all 0.3s ease;
     cursor: pointer;
 
-    &:hover, &:active {
-      opacity: 1;
-    }
+    //&:hover, &:active {
+    //  opacity: 1;
+    //}
   }
 }
 
@@ -715,14 +717,7 @@ body.android {
 }
 
 
-.dropdown-menu>li>a {
-  padding: 7px 15px;
-}
 
-.dropdown-menu>li.active>a {
-  background: #eee;
-  color: #333;
-}
 
 /* NAVBAR FILTER DROPDOWN */
 

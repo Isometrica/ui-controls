@@ -15,6 +15,9 @@
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
 
+	<!-- Typeahead JS -->
+	<script src="js/bootstrap3-typeahead.min.js"></script>
+
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
@@ -408,24 +411,26 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Category</label>
               <div class="col-xs-8">
-                <div class="input-group">
-                  <input type="text" class="form-control" value="Fire" placeholder="Reported by"/>
-                  <span class="input-group-btn">
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Lifting-related incident</a></li>
-                      <li><a href="#">Fall leading to injury</a></li>
-                      <li><a href="#">Sharp object injury</a></li>
-                      <li><a href="#">Acute health episode (e.g. heart attack)</a></li>
-                      <li><a href="#">Pressure system failure</a></li>
-                      <li><a href="#">Electrical short circuit</a></li>
-                      <li><a href="#">Explosion</a></li>
-                      <li><a href="#">Release of harmful material</a></li>
-                      <li><a href="#">Collapse of structure</a></li>
-                      <li><a href="#">Fire</a></li>
-                      <li><a href="#">Other</a></li>
-                    </ul>
-                    <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Fire" placeholder="Category" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
                   </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Lifting-related incident</a></li>
+                    <li><a href="#">Fall leading to injury</a></li>
+                    <li><a href="#">Sharp object injury</a></li>
+                    <li><a href="#">Acute health episode (e.g. heart attack)</a></li>
+                    <li><a href="#">Pressure system failure</a></li>
+                    <li><a href="#">Electrical short circuit</a></li>
+                    <li><a href="#">Explosion</a></li>
+                    <li><a href="#">Release of harmful material</a></li>
+                    <li><a href="#">Collapse of structure</a></li>
+                    <li class="active"><a href="#">Fire</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new incident category</strong></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -444,15 +449,20 @@
             <div class="form-group">
               <label class="control-label col-xs-4">Reported by</label>
               <div class="col-xs-8">
-                <div class="input-group">
-                  <input type="text" class="form-control" value="Steve Saunders" placeholder="Reported by"/>
-                  <span class="input-group-btn">
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Steve Saunders</a></li>
-                      <li><a href="#">Mike Smith</a></li>
-                    </ul>
-                    <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Steve Saunders" placeholder="Reported by" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
                   </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Jack Herbert</a></li>
+                    <li><a href="#">Steve Ives</a></li>
+                    <li><a href="#">Mark Leusink</a></li>
+                    <li class="active"><a href="#">Steve Saunders</a></li>
+                    <li><a href="#">Mike Smith</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new user</strong></a></li>
+                  </ul>
                 </div>
               </div>
             </div>
@@ -471,39 +481,76 @@
                 <textarea class="form-control" rows="2" placeholder="Illness or injury details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
               </div>
             </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Notify to regulator?</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">No</button>
-                  <button type="button" class="btn btn-info active">Yes</button>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Notified date</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="15 Jul 2015" placeholder="Notified date"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Notified by</label>
-              <div class="col-xs-8">
-                <div class="input-group">
-                  <input type="text" class="form-control" value="Mike Smith" placeholder="Notified by by"/>
-                  <span class="input-group-btn">
-                    <ul class="dropdown-menu dropdown-menu-right">
-                      <li><a href="#">Steve Saunders</a></li>
-                      <li><a href="#">Mike Smith</a></li>
-                    </ul>
-                    <button class="btn btn-default" type="button" data-toggle="dropdown"><span class="caret"></span></button>
-                  </span>
-                </div>
-              </div>
-            </div>
+
 
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#notify" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notify interested party</h4>
+                  <h4 class="panel-title pull-right text-muted">Yes</h4>
+                </div>
+                <div class="collapse" id="notify">
+                  <div class="panel-body">
+
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Notify interested party?</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">No</button>
+                          <button type="button" class="btn btn-info active">Yes</button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Which interested party?</label>
+                      <div class="col-xs-8">
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="UK Health & Safety Executive" placeholder="Which interested party?" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">UK customers</a></li>
+                            <li><a href="#">UK Government ICO</a></li>
+                            <li class="active"><a href="#">UK Health &amp; Safety Executive</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new interested party</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Notified date</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" value="15 Jul 2015" placeholder="Notified date"/>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Notified by</label>
+                      <div class="col-xs-8">
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="Mike Smith" placeholder="Notified by" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Saunders</a></li>
+                            <li class="active"><a href="#">Mike Smith</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new user</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#tags" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -515,28 +562,60 @@
                     <div class="form-group">
                       <label class="control-label col-xs-4">Activity or process</label>
                       <div class="col-xs-8">
-                        <select class="form-control">
-                          <option></option>
-                          <option selected="">Customer support</option>
-                        </select>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="Customer support" placeholder="Activity or process" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="active"><a href="#">Customer support</a></li>
+                            <li><a href="#">Extrusion</a></li>
+                            <li><a href="#">Thermoforming</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new activity or process</strong></a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Department(s)</label>
                       <div class="col-xs-8">
-                        <select class="form-control">
-                          <option></option>
-                          <option selected="">Customer service</option>
-                        </select>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="Customer service" placeholder="Department(s)" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Accounting</a></li>
+                            <li class="active"><a href="#">Customer service</a></li>
+                            <li><a href="#">HR</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Operations</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Technical support</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new interested party</strong></a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Interested party</label>
                       <div class="col-xs-8">
-                        <select class="form-control">
-                          <option></option>
-                          <option selected="">UK Health &amp; Safety Executive</option>
-                        </select>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="UK Health & Safety Executive" placeholder="Which interested party?" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">UK customers</a></li>
+                            <li><a href="#">UK Government ICO</a></li>
+                            <li class="active"><a href="#">UK Health &amp; Safety Executive</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new interested party</strong></a></li>
+                          </ul>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -987,6 +1066,22 @@
         $(".bootcards-cards").attr('style','display:block !important');
       });
     }
+
+    // TYPEAHEAD FIELDS
+    var incidentCategories = [
+      'Lifting-related incident',
+      'Fall leading to injury',
+      'Sharp object injury',
+      'Acute health episode (e.g. heart attack)',
+      'Pressure system failure',
+      'Electrical short circuit',
+      'Explosion',
+      'Release of harmful material',
+      'Collapse of structure',
+      'Fire',
+      'Other'
+    ];
+    $(".typeahead-incident-categories").typeahead({ source:incidentCategories });
 
 
   /* Tooltips */
