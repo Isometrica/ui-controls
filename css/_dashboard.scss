@@ -2,6 +2,8 @@
 
   .isometrica-dashboard-items {
     padding-top: 30px;
+    @include clearfix();
+    padding-bottom: 30px;
 
     .row > div {
       @media (min-width: 1200px) {
@@ -12,7 +14,7 @@
     hr {
       clear: both;
       border-color: #ddd;
-      margin: 30px 15px;
+      margin: 0 0 30px;
     }
   }
 
@@ -22,6 +24,7 @@
     margin-bottom: 30px;
     transition: all 0.3s ease;
     cursor: pointer;
+
 
     &:hover, &:focus, &:active { border-color: $light-blue-color; }
 
