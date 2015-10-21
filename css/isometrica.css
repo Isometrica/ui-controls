@@ -2494,8 +2494,7 @@ input:focus ~ .clear-field {
 
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
-  position: relative;
-  margin-right: 5px; }
+  position: relative; }
   @media (min-width: 768px) {
     .isometrica-overview-page .navbar .navbar-brand img {
       height: 28px;
@@ -2562,16 +2561,19 @@ body.desktop.isometrica-overview-page .navbar-header {
     body.desktop.isometrica-overview-page .navbar-header .navbar-brand {
       font-size: 36px; } }
   body.desktop.isometrica-overview-page .navbar-header .navbar-brand img {
-    height: 40px;
-    top: -4px; }
+    height: 34px; }
   @media (min-width: 768px) {
     body.desktop.isometrica-overview-page .navbar-header {
       height: 80px; }
       body.desktop.isometrica-overview-page .navbar-header .dropdown-toggle i {
         top: -8px; }
       body.desktop.isometrica-overview-page .navbar-header .dropdown-menu {
-        left: auto;
-        right: 0; } }
+        left: 0;
+        right: auto;
+        margin-left: 0;
+        text-align: left;
+        width: auto;
+        min-width: 240px; } }
 
 body.desktop.isometrica-overview-page .navbar-nav > li > a {
   line-height: 50px; }
@@ -2622,7 +2624,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   padding: 20px !important;
   text-align: center; }
   .overview-icon-preview img {
-    height: 40px;
+    height: 34px;
     margin: 0 auto; }
 
 /* Scrolling Area */
