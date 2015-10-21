@@ -8,19 +8,51 @@ html,
 body {
   height: 100%; }
 
+/* Flexible layout */
 body {
-  padding-top: 0 !important; }
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  padding-top: 0 !important;
+  height: 100%;
+  overflow: hidden; }
 
-body.desktop {
-  padding-top: 50px !important; }
-  body.desktop.has-bootcards-navbar-double {
-    padding-top: 80px !important; }
+body > .navbar,
+body > .guidance-panel,
+body > .bootcards-container {
+  position: relative !important; }
 
-body.ios {
-  padding-top: 44px !important; }
+body > .bootcards-container {
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  top: 0 !important; }
+  @media (max-width: 1199px) {
+    body > .bootcards-container {
+      width: 100%; } }
 
-body.android {
-  padding-top: 50px !important; }
+body > .bootcards-container > .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 100%; }
+
+.bootcards-cards,
+.bootcards-list {
+  overflow-x: hidden;
+  height: 100%;
+  padding-top: 30px; }
+  .bootcards-cards::-webkit-scrollbar,
+  .bootcards-list::-webkit-scrollbar {
+    width: 0px; }
 
 .bootcards-container {
   height: 100%; }
@@ -478,7 +510,8 @@ body.android {
 
 @media (min-width: 768px) {
   .desktop .bootcards-navbar-double {
-    height: 80px; } }
+    height: 80px;
+    min-height: 80px; } }
 
 .ios .bootcards-navbar-double .container > .navbar-right {
   position: absolute;
@@ -1402,30 +1435,8 @@ input:focus ~ .clear-field {
     padding: 0; } }
 
 /* Layout */
-.isometrica-container-listdetail {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto !important; }
-
-.desktop .isometrica-container-listdetail {
-  top: 50px; }
-  .desktop .isometrica-container-listdetail > .row {
-    height: 100%; }
-    .desktop .isometrica-container-listdetail > .row > div {
-      overflow-x: hidden;
-      height: 100%;
-      padding-top: 30px; }
-      .desktop .isometrica-container-listdetail > .row > div::-webkit-scrollbar {
-        width: 0px; }
-
-.ios .isometrica-container-listdetail {
-  top: 44px; }
-
-.android .isometrica-container-listdetail {
-  top: 50px; }
+.desktop .isometrica-container-listdetail > .row {
+  height: 100%; }
 
 /* List */
 .bootcards-list .panel-body {
@@ -1717,42 +1728,57 @@ input:focus ~ .clear-field {
 
 /* workbook */
 /* Guidance bar */
-.isometrica-workbook-page .guidance-panel-top {
-  height: 100px !important;
-  overflow: hidden; }
-  .isometrica-workbook-page .guidance-panel-top .col {
-    width: 20%;
-    float: left;
-    position: relative;
-    padding: 0 15px; }
-    @media (max-width: 991px) {
-      .isometrica-workbook-page .guidance-panel-top .col:nth-child(5) {
-        padding-right: 40px; } }
-  .isometrica-workbook-page .guidance-panel-top .btn-group {
-    position: absolute;
-    right: 10px;
-    top: 10px; }
-    .isometrica-workbook-page .guidance-panel-top .btn-group .btn {
-      display: block;
-      clear: both;
-      font-size: 24px;
-      padding: 0 7px; }
+/*.isometrica-workbook-page {
 
+  .guidance-panel-top {
+    height: 100px !important;
+    overflow: hidden;
+
+    .col {
+      width: 20%;
+      float: left;
+      position: relative;
+      padding: 0 15px;
+
+      &:nth-child(5) {
+        @media (max-width: 991px) {
+          padding-right: 40px;
+        }
+      }
+    }
+
+    .btn-group {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+
+      .btn {
+        display: block;
+        clear: both;
+        font-size: 24px;
+        padding: 0 7px;
+      }
+    }
+  }
+}*/
 /* Rows */
-.workbook {
+/*.workbook {
   position: fixed;
   left: 0;
   right: 0;
   bottom: 0;
-  background: #eee; }
+  background: #eee;
+
   @media (max-width: 767px) {
-    .workbook {
-      top: 50px;
-      /* Space for navbar */ } }
+    top: 50px;
+  }
   @media (min-width: 768px) {
-    .workbook {
-      top: 150px;
-      /* Space for navbar & guidance bar */ } }
+    top: 150px;
+  }
+}*/
+.workbook {
+  height: 100%;
+  position: relative; }
 
 .workbook-container {
   height: 100%;
@@ -2483,14 +2509,6 @@ input:focus ~ .clear-field {
 }
 */
 /* Navbar */
-@media (min-width: 1060px) and (max-width: 1199px) {
-  .isometrica-overview-page .navbar .navbar-brand {
-    margin-left: -59px; } }
-
-@media (min-width: 1260px) {
-  .isometrica-overview-page .navbar .navbar-brand {
-    margin-left: -59px; } }
-
 .isometrica-overview-page .navbar .navbar-brand img {
   display: inline-block;
   position: relative; }
@@ -2684,7 +2702,6 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 
 /* Dashboard Items */
 .isometrica-overview-items {
-  margin-top: 30px;
   padding: 0;
   position: relative;
   margin-bottom: 30px; }
@@ -3189,38 +3206,6 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
         text-align: left;
         padding-left: 15px; } }
 
-/* Flexible layout */
-body.bootcards-wiki {
-  display: -webkit-box;
-  display: -moz-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-flex-direction: column;
-  flex-direction: column;
-  padding-top: 0 !important;
-  height: 100%;
-  overflow: hidden; }
-
-.bootcards-wiki > .navbar-fixed-top,
-.bootcards-wiki > #guidance-panel,
-.bootcards-wiki > .bootcards-container {
-  position: static; }
-
-.bootcards-wiki > .bootcards-container {
-  -webkit-box-flex: 1;
-  -moz-box-flex: 1;
-  -webkit-flex: 1;
-  -ms-flex: 1;
-  flex: 1;
-  position: relative !important;
-  top: 0; }
-
-.bootcards-wiki > .bootcards-container > .row {
-  position: absolute;
-  top: 0;
-  left: 0; }
-
 /* WIKI MODULE */
 .bootcards-wiki .bootcards-list .list-group-item-heading {
   line-height: 20px; }
@@ -3560,7 +3545,6 @@ body.bootcards-wiki {
   margin: 0; }
 
 .isometrica-dashboard-page .isometrica-dashboard-items {
-  padding-top: 30px;
   padding-bottom: 30px; }
   .isometrica-dashboard-page .isometrica-dashboard-items:after {
     content: "";
@@ -3648,6 +3632,9 @@ body.bootcards-wiki {
   .ios.isometrica-dashboard-page .isometrica-dashboard-items .isometrica-dashboard-item,
   .android.isometrica-dashboard-page .isometrica-dashboard-items .isometrica-dashboard-item {
     margin-bottom: 15px; }
+
+.isometrica-calendar-container {
+  width: 100%; }
 
 .isometrica-calendar .search-form .row > div:first-child {
   padding-right: 5px; }

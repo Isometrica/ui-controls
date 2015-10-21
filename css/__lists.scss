@@ -284,38 +284,30 @@
 /* Layout */
 
 .isometrica-container-listdetail {
-  position: fixed;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  padding-top: 0;
-  height: auto !important;
+  //position: fixed;
+  //left: 0;
+  //right: 0;
+  //bottom: 0;
+  //padding-top: 0;
+  //height: auto !important;
 }
 
 .desktop .isometrica-container-listdetail {
-  top: 50px;
+  //top: 50px;
 
   > .row {
     height: 100%;
 
-    > div {
-      overflow-x: hidden;
-      height: 100%;
-      padding-top: 30px;
 
-      &::-webkit-scrollbar {
-          width: 0px;
-      }
-    }
   }
 }
 
 .ios .isometrica-container-listdetail {
-  top: 44px;
+  //top: 44px;
 }
 
 .android .isometrica-container-listdetail {
-  top: 50px;
+  //top: 50px;
 }
 
 

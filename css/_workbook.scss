@@ -2,7 +2,8 @@
 
 /* Guidance bar */
 
-.isometrica-workbook-page {
+/*.isometrica-workbook-page {
+
   .guidance-panel-top {
     height: 100px !important;
     overflow: hidden;
@@ -33,11 +34,11 @@
       }
     }
   }
-}
+}*/
 
 /* Rows */
 
-.workbook {
+/*.workbook {
   position: fixed;
   left: 0;
   right: 0;
@@ -45,11 +46,16 @@
   background: #eee;
 
   @media (max-width: 767px) {
-    top: 50px; /* Space for navbar */
+    top: 50px;
   }
   @media (min-width: 768px) {
-    top: 150px; /* Space for navbar & guidance bar */
+    top: 150px;
   }
+}*/
+
+.workbook {
+  height: 100%;
+  position: relative;
 }
 
 .workbook-container {

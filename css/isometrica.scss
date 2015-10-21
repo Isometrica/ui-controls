@@ -15,35 +15,71 @@ body {
 	height: 100%;
 }
 
-body {
-  padding-top: 0 !important;
 
+/* Flexible layout */
+
+body {
+  @include flexbox();
+  @include flex-direction(column);
+  padding-top: 0 !important;
+  height: 100%;
+  overflow: hidden;
 }
 
+body > .navbar,
+body > .guidance-panel,
+body > .bootcards-container {
+  position: relative !important;
+}
+
+body > .bootcards-container {
+  @include flex(1);
+  top: 0 !important;
+
+  @media (max-width: 1199px) {
+    width: 100%;
+  }
+}
+
+body > .bootcards-container > .row {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0;
+  height: 100%;
+}
+
+.bootcards-cards,
+.bootcards-list {
+  overflow-x: hidden;
+  height: 100%;
+  padding-top: 30px;
+
+  &::-webkit-scrollbar {
+      width: 0px;
+  }
+}
+
+
 body.desktop {
-  padding-top: 50px !important;
+  //padding-top: 50px !important;
 
   &.has-bootcards-navbar-double {
-    padding-top: 80px !important;
+    //padding-top: 80px !important;
   }
 }
 
 body.ios {
-  padding-top: 44px !important;
+  //padding-top: 44px !important;
 }
 
 body.android {
-  padding-top: 50px !important;
+  //padding-top: 50px !important;
 }
 
 .bootcards-container {
   height: 100%;
-
-  > .row {
-    //position: absolute;
-    //top: 0;
-    //bottom: 0;
-  }
 }
 
 .desktop .bootcards-hidden-desktop {
@@ -636,6 +672,7 @@ body.android {
 .desktop .bootcards-navbar-double {
   @media (min-width: 768px) {
     height: 80px;
+    min-height: 80px;
   }
 }
 

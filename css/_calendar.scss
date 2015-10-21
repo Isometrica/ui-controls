@@ -1,3 +1,7 @@
+.isometrica-calendar-container {
+  width: 100%;
+}
+
 .isometrica-calendar {
 
   .search-form {
@@ -171,6 +175,7 @@
 
 .ios .isometrica-calendar-container {
   overflow-y: scroll;
+
 
   .bootcards-cards {
     padding-left: 0;

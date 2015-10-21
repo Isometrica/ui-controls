@@ -1,32 +1,6 @@
-/* Flexible layout */
 
-body.bootcards-wiki {
-  @include flexbox();
-  @include flex-direction(column);
 
-  padding-top: 0 !important;
-  height: 100%;
-  overflow: hidden;
-}
 
-.bootcards-wiki > .navbar-fixed-top,
-.bootcards-wiki > #guidance-panel,
-.bootcards-wiki > .bootcards-container {
-  //@include flex(1);
-  position: static;
-}
-
-.bootcards-wiki > .bootcards-container {
-  @include flex(1);
-  position: relative !important;
-  top: 0;
-}
-
-.bootcards-wiki > .bootcards-container > .row {
-  position: absolute;
-  top: 0;
-  left: 0;
-}
 
 
 /* WIKI MODULE */
