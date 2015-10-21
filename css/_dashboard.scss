@@ -18,7 +18,6 @@
 
   .isometrica-dashboard-item {
     height: 151px; // Same height as Overview items
-    //overflow: hidden;
     border: 1px solid #bbb;
     margin-bottom: 30px;
     transition: all 0.3s ease;
@@ -26,10 +25,15 @@
 
     &:hover, &:focus, &:active { border-color: $light-blue-color; }
 
+    .panel-body {
+      position: relative;
+    }
+
     i {
       display: block;
       text-align: center;
       font-size: 42px;
+      margin: 10px 0 5px;
 
       //color: #5ec4e0;
     }
@@ -44,8 +48,14 @@
 
     p {
       text-align: center;
-      margin: 0 0 2px;
+      margin: 4px 0;
       color: #777;
+    }
+
+    .label {
+      position: absolute;
+      top: 5px;
+      right: 5px;
     }
   }
 
@@ -58,7 +68,7 @@
       padding-top: 10px;
       padding-bottom: 10px;
       padding-left: 48px;
-      overflow: hidden;
+      @include clearfix();
       margin-left: 15px;
 
       i {

@@ -1,4 +1,9 @@
 @charset "UTF-8";
+/* FLEXBOX */
+/* CLEARFIX */
+/* BORDER RADIUS */
+/* OPACITY */
+/* TEXT ELLIPSIS */
 html,
 body {
   height: 100%; }
@@ -1458,7 +1463,8 @@ input:focus ~ .clear-field {
     color: #999; }
 
 .list-group-item .list-group-item-content {
-  overflow: hidden; }
+  overflow: hidden;
+  /* Stops content wrapping under image/icon */ }
 
 /* MOBILE-ONLY LIST VIEWS */
 .isometrica-mobile-list-view-container {
@@ -2679,10 +2685,12 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 .isometrica-overview-items {
   margin-top: 30px;
   padding: 0;
-  position: relative; }
-  @media (min-width: 768px) {
-    .isometrica-overview-items.workspace {
-      padding-left: 120px; } }
+  position: relative;
+  margin-bottom: 30px; }
+  .isometrica-overview-items:after {
+    content: "";
+    display: table;
+    clear: both; }
   @media (max-width: 767px) {
     .isometrica-overview-items {
       padding-left: 0;
@@ -2690,7 +2698,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   .isometrica-overview-items hr {
     clear: both;
     border-color: #ddd;
-    margin: 0 0 20px; }
+    margin: 0 0 30px; }
     @media (max-width: 767px) {
       .isometrica-overview-items hr {
         margin-left: -15px;
@@ -2726,6 +2734,10 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     font-size: 40px; }
 
 /* Workspace */
+.isometrica-overview-document-items {
+  padding-left: 120px;
+  position: relative; }
+
 .isometrica-overview-add {
   display: block;
   text-align: center;
@@ -3564,10 +3576,13 @@ body.bootcards-wiki {
   cursor: pointer; }
   .isometrica-dashboard-page .isometrica-dashboard-item:hover, .isometrica-dashboard-page .isometrica-dashboard-item:focus, .isometrica-dashboard-page .isometrica-dashboard-item:active {
     border-color: #00b2e2; }
+  .isometrica-dashboard-page .isometrica-dashboard-item .panel-body {
+    position: relative; }
   .isometrica-dashboard-page .isometrica-dashboard-item i {
     display: block;
     text-align: center;
-    font-size: 42px; }
+    font-size: 42px;
+    margin: 10px 0 5px; }
   .isometrica-dashboard-page .isometrica-dashboard-item h3 {
     line-height: 20px;
     font-size: 16px;
@@ -3576,8 +3591,12 @@ body.bootcards-wiki {
     margin: 0; }
   .isometrica-dashboard-page .isometrica-dashboard-item p {
     text-align: center;
-    margin: 0 0 2px;
+    margin: 4px 0;
     color: #777; }
+  .isometrica-dashboard-page .isometrica-dashboard-item .label {
+    position: absolute;
+    top: 5px;
+    right: 5px; }
 
 .isometrica-dashboard-page .isometrica-mobile-list-view-container {
   overflow: scroll; }
@@ -3586,8 +3605,11 @@ body.bootcards-wiki {
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 48px;
-  overflow: hidden;
   margin-left: 15px; }
+  .isometrica-dashboard-page .list-group .list-group-item:after {
+    content: "";
+    display: table;
+    clear: both; }
   .isometrica-dashboard-page .list-group .list-group-item i {
     font-size: 28px;
     line-height: 1;

@@ -370,7 +370,7 @@
   }
 
   .list-group-item-content {
-    overflow: hidden;
+    overflow: hidden; /* Stops content wrapping under image/icon */
   }
 }
 

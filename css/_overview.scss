@@ -321,12 +321,8 @@ body.desktop.isometrica-overview-page {
   margin-top: 30px;
   padding: 0;
   position: relative;
-
-  &.workspace {
-    @media (min-width: 768px) {
-      padding-left: 120px; // Space for Add button
-    }
-  }
+  margin-bottom: 30px;
+  @include clearfix();
 
   @media (max-width:767px) {
     padding-left: 0;
@@ -336,7 +332,7 @@ body.desktop.isometrica-overview-page {
   hr {
     clear: both;
     border-color: #ddd;
-    margin: 0 0 20px;
+    margin: 0 0 30px;
 
     @media (max-width: 767px) {
       margin-left: -15px;
@@ -392,6 +388,11 @@ body.desktop.isometrica-overview-page {
 
 
 /* Workspace */
+
+.isometrica-overview-document-items {
+  padding-left: 120px;
+  position: relative;
+}
 
 .isometrica-overview-add {
   display: block;
