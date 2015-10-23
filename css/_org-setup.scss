@@ -2,14 +2,6 @@
 
 .isometrica-org-setup-page {
   background: white;
-
-  .guidance-panel-top {
-    padding-bottom: 15px;
-
-    .container-fluid {
-      max-width: 1200px;
-    }
-  }
 }
 
 .ios.isometrica-org-setup-page {
@@ -23,9 +15,14 @@
 
 .org-setup-container {
   width: auto;
-  padding: 0 180px;
-  padding-top: 30px;
-  max-width: 1200px;
+  //padding: 0 180px;
+  //padding-top: 30px;
+  //max-width: 1200px;
+
+  > .row > div {
+    padding: 30px 180px 0;
+    position: relative;
+  }
 
   @media (max-width: 991px) {
     padding: 0 15px;
@@ -155,7 +152,7 @@
       width: 120px;
 
       @media (max-width: 991px) {
-        display: none;
+        //display: none;
       }
 
       &.left {
