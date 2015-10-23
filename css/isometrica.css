@@ -129,11 +129,14 @@ body > .bootcards-container > .row {
 .panel-default {
   border-color: #ccc; }
 
-.ios .panel-title {
-  text-transform: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #444; }
+.panel-heading-alert {
+  padding: 12px 15px; }
+  .panel-heading-alert h5 {
+    margin: 0 0 3px;
+    color: #8a6d3b; }
+  .panel-heading-alert p {
+    margin: 0;
+    color: #8a6d3b; }
 
 .android .panel-heading .btn {
   color: #33b5e5 !important; }
@@ -144,6 +147,12 @@ body > .bootcards-container > .row {
 
 .android .panel-heading .btn, .android .panel-heading .btn-group .btn {
   margin-left: 0; }
+
+.ios .panel-title {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #444; }
 
 .ios .panel-heading .btn {
   font-size: 16px !important; }

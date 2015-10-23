@@ -196,11 +196,18 @@ body.android {
   border-color: #ccc;
 }
 
-.ios .panel-title {
-  text-transform: none;
-  font-size: 17px;
-  font-weight: 500;
-  color: #444;
+.panel-heading-alert {
+  padding: 12px 15px;
+
+  h5 {
+    margin: 0 0 3px;
+    color: #8a6d3b;
+  }
+
+  p {
+    margin: 0;
+    color: #8a6d3b;
+  }
 }
 
 .android {
@@ -218,6 +225,13 @@ body.android {
   .panel-heading .btn, .panel-heading .btn-group .btn {
     margin-left: 0;
   }
+}
+
+.ios .panel-title {
+  text-transform: none;
+  font-size: 17px;
+  font-weight: 500;
+  color: #444;
 }
 
 .ios {
