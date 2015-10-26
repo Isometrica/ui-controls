@@ -1409,16 +1409,6 @@ input:focus ~ .clear-field {
   color: black;
   font-weight: 500; }
 
-.ios .isometrica-container-listdetail .bootcards-cards .panel-subheading {
-  padding-top: 15px;
-  margin-top: 1px; }
-  .ios .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
-    color: #777;
-    padding: 0;
-    margin: 0;
-    line-height: 1.2;
-    font-weight: 400; }
-
 .ios .isometrica-container-listdetail .bootcards-cards .list-group {
   padding-top: 0;
   padding-bottom: 0; }
@@ -1445,6 +1435,19 @@ input:focus ~ .clear-field {
 @media (max-width: 767px) {
   .ios .bootcards-cards {
     padding: 0; } }
+
+.ios .isometrica-container-listdetail .bootcards-cards .panel-subheading,
+.android .isometrica-container-listdetail .bootcards-cards .panel-subheading {
+  padding-top: 15px;
+  padding-bottom: 0;
+  margin-top: 1px; }
+  .ios .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title,
+  .android .isometrica-container-listdetail .bootcards-cards .panel-subheading .panel-title {
+    color: #777;
+    padding: 0;
+    margin: 0;
+    line-height: 1.2;
+    font-weight: 400; }
 
 /* Layout */
 .desktop .isometrica-container-listdetail > .row {
@@ -3776,8 +3779,17 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   font-size: 14px;
   padding: 5px; }
 
-.ios .isometrica-calendar-container {
+.ios .isometrica-calendar-container,
+.android .isometrica-calendar-container {
   overflow-y: scroll; }
-  .ios .isometrica-calendar-container .bootcards-cards {
+  .ios .isometrica-calendar-container .bootcards-cards,
+  .android .isometrica-calendar-container .bootcards-cards {
     padding-left: 0;
-    padding-right: 0; }
+    padding-right: 0;
+    padding-top: 0; }
+
+.android .isometrica-calendar-container th h4 {
+  line-height: 34px; }
+
+.android .isometrica-calendar-container .search-form .form-control {
+  height: 34px; }

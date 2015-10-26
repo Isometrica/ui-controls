@@ -218,18 +218,7 @@
         font-weight: 500;
       }
 
-      .panel-subheading {
-        padding-top: 15px;
-        margin-top: 1px;
 
-        .panel-title {
-          color: #777;
-          padding: 0;
-          margin: 0;
-          line-height: 1.2;
-          font-weight: 400;
-        }
-      }
 
       .list-group {
         padding-top: 0;
@@ -275,6 +264,26 @@
 }
 
 
+.ios,
+.android {
+  .isometrica-container-listdetail {
+    .bootcards-cards {
+      .panel-subheading {
+        padding-top: 15px;
+        padding-bottom: 0;
+        margin-top: 1px;
+
+        .panel-title {
+          color: #777;
+          padding: 0;
+          margin: 0;
+          line-height: 1.2;
+          font-weight: 400;
+        }
+      }
+    }
+  }
+}
 
 
 
