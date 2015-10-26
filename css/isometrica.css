@@ -132,7 +132,7 @@ body > .bootcards-container > .row {
 .panel-heading-alert {
   padding: 12px 15px; }
   .panel-heading-alert h5 {
-    margin: 0 0 3px;
+    margin: 0 0 10px;
     color: #8a6d3b; }
   .panel-heading-alert p {
     margin: 0;
@@ -1666,8 +1666,7 @@ input:focus ~ .clear-field {
       font-size: 9px; }
   .guidance-panel .guidance-panel-question .form-control,
   .guidance-panel .guidance-panel-edit .form-control {
-    margin-top: 10px;
-    margin-bottom: 10px; }
+    margin-bottom: 15px; }
   .guidance-panel ul {
     padding-left: 20px; }
   .guidance-panel.guidance-panel-top {
@@ -1693,11 +1692,20 @@ input:focus ~ .clear-field {
     .guidance-panel.guidance-panel-top .guidance-panel-edit .btn-primary {
       background: #204d74;
       border-color: #204d74; }
+    .guidance-panel.guidance-panel-top .guidance-panel-question textarea,
+    .guidance-panel.guidance-panel-top .guidance-panel-edit textarea {
+      font-size: 17px;
+      font-weight: 300 !important; }
+    .guidance-panel.guidance-panel-top .guidance-panel-question input,
+    .guidance-panel.guidance-panel-top .guidance-panel-edit input {
+      font-size: 15px;
+      font-weight: 300 !important; }
     .guidance-panel.guidance-panel-top .guidance-panel-question .form-control,
     .guidance-panel.guidance-panel-top .guidance-panel-edit .form-control {
       border-color: #006e9e;
       font-weight: normal;
-      margin-top: 15px; }
+      margin-top: 0;
+      margin-bottom: 15px; }
 
 /* Inline guidance */
 .form-group .guidance-toggle {
