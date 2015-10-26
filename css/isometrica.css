@@ -1688,6 +1688,12 @@ input:focus ~ .clear-field {
     .guidance-panel.guidance-panel-top .guidance-panel-question .btn,
     .guidance-panel.guidance-panel-top .guidance-panel-edit .btn {
       margin-bottom: 15px !important; }
+    .guidance-panel.guidance-panel-top .guidance-panel-question .row,
+    .guidance-panel.guidance-panel-top .guidance-panel-edit .row {
+      margin: 0 -7px; }
+      .guidance-panel.guidance-panel-top .guidance-panel-question .row > div,
+      .guidance-panel.guidance-panel-top .guidance-panel-edit .row > div {
+        padding: 0 7px; }
     .guidance-panel.guidance-panel-top .guidance-panel-question .btn-primary,
     .guidance-panel.guidance-panel-top .guidance-panel-edit .btn-primary {
       background: #204d74;
@@ -1734,8 +1740,9 @@ input:focus ~ .clear-field {
 
 .ios .guidance-panel-top {
   margin-top: 0 !important; }
-  .ios .guidance-panel-top textarea {
-    padding: 10px 15px !important; }
+  .ios .guidance-panel-top .form-control {
+    padding-left: 12px !important;
+    padding-right: 12px !important; }
 
 /* workbook */
 /* Guidance bar */
