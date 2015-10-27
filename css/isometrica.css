@@ -1670,6 +1670,12 @@ input:focus ~ .clear-field {
   .guidance-panel .guidance-panel-question .form-control,
   .guidance-panel .guidance-panel-edit .form-control {
     margin-bottom: 15px; }
+  .guidance-panel .guidance-panel-question .row,
+  .guidance-panel .guidance-panel-edit .row {
+    margin: 0 -7px; }
+    .guidance-panel .guidance-panel-question .row > div,
+    .guidance-panel .guidance-panel-edit .row > div {
+      padding: 0 7px; }
   .guidance-panel ul {
     padding-left: 20px; }
   .guidance-panel.guidance-panel-top {
@@ -1691,12 +1697,6 @@ input:focus ~ .clear-field {
     .guidance-panel.guidance-panel-top .guidance-panel-question .btn,
     .guidance-panel.guidance-panel-top .guidance-panel-edit .btn {
       margin-bottom: 15px !important; }
-    .guidance-panel.guidance-panel-top .guidance-panel-question .row,
-    .guidance-panel.guidance-panel-top .guidance-panel-edit .row {
-      margin: 0 -7px; }
-      .guidance-panel.guidance-panel-top .guidance-panel-question .row > div,
-      .guidance-panel.guidance-panel-top .guidance-panel-edit .row > div {
-        padding: 0 7px; }
     .guidance-panel.guidance-panel-top .guidance-panel-question .btn-primary,
     .guidance-panel.guidance-panel-top .guidance-panel-edit .btn-primary {
       background: #204d74;
