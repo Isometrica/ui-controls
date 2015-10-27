@@ -769,11 +769,12 @@ body > .bootcards-container > .row {
 
 /* ACCORDION */
 .bootcards-accordion .bootcards-list-subheading {
-  background-color: transparent !important;
+  background-color: #f5f5f5 !important;
   padding-left: 50px !important;
   padding-top: 12px;
   padding-bottom: 12px;
-  position: relative; }
+  position: relative;
+  padding-right: 15px !important; }
   .bootcards-accordion .bootcards-list-subheading.has-content:not(.active) {
     background-color: transparent !important; }
   .bootcards-accordion .bootcards-list-subheading.has-content:after {
@@ -804,7 +805,10 @@ body > .bootcards-container > .row {
     .bootcards-accordion .bootcards-list-subheading.active:before {
       color: white !important; }
   .bootcards-accordion .bootcards-list-subheading .list-group-item-heading {
-    font-weight: 500; }
+    font-weight: 500;
+    margin-bottom: 0; }
+    .bootcards-accordion .bootcards-list-subheading .list-group-item-heading.text-muted {
+      color: #777; }
   .bootcards-accordion .bootcards-list-subheading .list-group-item-text {
     font-weight: normal; }
 
