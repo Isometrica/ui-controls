@@ -2946,13 +2946,14 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
         line-height: 1;
         margin: 0; }
 
-.ios .isometrica-overview-items > .row {
-  margin: 0;
-  margin-right: -15px; }
-  .ios .isometrica-overview-items > .row > div {
-    padding: 0;
-    padding-right: 15px; }
-    .ios .isometrica-overview-items > .row > div .isometrica-overview-item {
+.ios .isometrica-overview-items hr {
+  margin-bottom: 15px; }
+
+.ios .isometrica-overview-items .row {
+  margin: 0 -8px; }
+  .ios .isometrica-overview-items .row > div {
+    padding: 0 8px; }
+    .ios .isometrica-overview-items .row > div .isometrica-overview-item {
       margin-bottom: 15px; }
 
 .android .isometrica-overview-items > .row {
@@ -3570,7 +3571,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     content: "";
     display: table;
     clear: both; }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
     .isometrica-dashboard-page .isometrica-dashboard-items .row > div {
       width: 20%; } }
   .isometrica-dashboard-page .isometrica-dashboard-items hr {

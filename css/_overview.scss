@@ -637,13 +637,17 @@ body.desktop.isometrica-overview-page {
 }
 
 .ios .isometrica-overview-items {
-  > .row  {
-    margin: 0;
-    margin-right: -15px;
+
+  hr {
+    margin-bottom: 15px;
+  }
+
+  .row  {
+    margin: 0 -8px;
 
     > div {
-      padding: 0;
-      padding-right: 15px;
+      padding: 0 8px;
+      //padding-right: 15px;
 
       .isometrica-overview-item {
         margin-bottom: 15px;
