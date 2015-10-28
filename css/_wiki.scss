@@ -5,16 +5,16 @@
 
 /* WIKI MODULE */
 
-.bootcards-wiki {
+.isometrica-wiki {
 
   .bootcards-list .list-group-item-heading {
     line-height: 20px;
   }
 
-  .bootcards-wiki-panel {
+  .isometrica-wiki-panel {
     overflow: hidden;
 
-    .bootcards-wiki-panel-text-read {
+    .isometrica-wiki-panel-text-read {
       font-size: 15px;
       line-height: 22px;
       padding: 25px;
@@ -22,7 +22,7 @@
     }
   }
 
-  .bootcards-wiki-panel-info {
+  .isometrica-wiki-panel-info {
     border-bottom: 1px solid #ddd;
 
     button {
@@ -64,7 +64,7 @@
     }
   }
 
-  .bootcards-wiki-panel-files {
+  .isometrica-wiki-panel-files {
     border-top: 1px solid #ddd;
     background: white;
 
@@ -78,7 +78,7 @@
       //overflow: hidden;
     }
 
-    .bootcards-wiki-panel-files-list {
+    .isometrica-wiki-panel-files-list {
       overflow: hidden;
     }
 
@@ -87,7 +87,7 @@
     }
   }
 
-  .bootcards-wiki-panel-metadata {
+  .isometrica-wiki-panel-metadata {
     padding-top: 0;
     padding-bottom: 0;
     //margin-bottom: 0;
@@ -124,7 +124,7 @@
     }
   }
 
-  .bootcards-wiki-issue-history {
+  .isometrica-wiki-issue-history {
     overflow: hidden;
     > .panel-body {
       padding-top: 0;
@@ -149,7 +149,7 @@
     }
   }
 
-  .bootcards-wiki-comments {
+  .isometrica-wiki-comments {
     p {
       margin: 0 !important;
       line-height: 1.5;
@@ -179,7 +179,7 @@
     }
   }
 
-  .bootcards-wiki-panel-controls {
+  .isometrica-wiki-panel-controls {
     border-bottom: 1px solid #ddd;
     text-align: center;
     padding-top: 5px;
@@ -194,7 +194,7 @@
     }
   }
 
-  .bootcards-wiki-panel-text-edit {
+  .isometrica-wiki-panel-text-edit {
     padding: 0;
     position: relative;
     font-size: 0;
@@ -204,7 +204,7 @@
     }
   }
 
-  .bootcards-wiki-panel-files {
+  .isometrica-wiki-panel-files {
     border-bottom: 0;
   }
 
@@ -216,8 +216,8 @@
 
 
 /* iOS
-.ios.bootcards-wiki {
-  .bootcards-wiki-panel {
+.ios.isometrica-wiki {
+  .isometrica-wiki-panel {
     .panel-heading {
       min-height: 44px;
 
@@ -253,7 +253,7 @@
 }*/
 
 /* Android
-.android.bootcards-wiki {
+.android.isometrica-wiki {
 
   .panel-heading {
     min-height: 44px;
@@ -288,7 +288,7 @@
     padding: 10px 15px;
   }
 
-  .bootcards-wiki-panel-metadata {
+  .isometrica-wiki-panel-metadata {
     //padding-top: 5px;
     //padding-bottom: 5px;
     //border-top: 1px solid #ddd;

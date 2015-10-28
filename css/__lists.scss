@@ -1,3 +1,11 @@
+.bootcards-list {
+  .list-group-item-text {
+    &.pull-right {
+      line-height: 24px;
+    }
+  }
+}
+
 /* Cards */
 
 .bootcards-cards {
@@ -70,6 +78,8 @@
         font-size: 14px;
         font-weight: normal;
         color: #777;
+
+
       }
 
       i {

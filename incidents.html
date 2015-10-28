@@ -94,8 +94,14 @@
           </div>
         </div>
         <div class="collapse" id="guidance-panel-top-more">
-          <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-          <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+          <div class="row">
+            <div class="col-sm-6">
+              <p>Sed id turpis sollicitudin, sagittis felis ut, dapibus ipsum. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nunc sollicitudin semper viverra. Sed vitae augue id neque dignissim molestie. Aliquam faucibus lacus augue, eget volutpat massa condimentum non. Nam vitae leo felis. Nunc orci massa, bibendum ut nulla ac, ornare sagittis urna.</p>
+            </div>
+            <div class="col-sm-6">
+              <p>Nam lobortis, enim a lacinia molestie, nibh diam blandit ante, eu scelerisque ipsum orci a ligula. Proin malesuada condimentum lacus, luctus pellentesque metus imperdiet id. Fusce tincidunt diam massa, non finibus ipsum varius quis. Vestibulum eget risus ut neque placerat sollicitudin. Cras imperdiet lacinia mauris eu pellentesque. Sed diam elit, posuere et mattis nec, gravida eu metus. Nunc finibus id ante id pharetra. </p>
+            </div>
+          </div>
           <p class="text-muted"><small>
             ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5
             <br>
@@ -133,8 +139,17 @@
               </div>
             </div>
           </div>
-          <div class="form-group">
-            <textarea class="form-control" rows="3" placeholder="Secondary help text"></textarea>
+          <div class="row">
+            <div class="col-sm-6">
+              <div class="form-group">
+                <textarea class="form-control" rows="6" placeholder="Secondary help text - column 1"></textarea>
+              </div>
+            </div>
+            <div class="col-sm-6">
+              <div class="form-group">
+                <textarea class="form-control" rows="6" placeholder="Secondary help text - column 2"></textarea>
+              </div>
+            </div>
           </div>
           <div class="row">
             <div class="col-sm-6">
@@ -310,38 +325,17 @@
               <p class="list-group-item-text">Details</p>
               <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h4>
             </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Notify interested party?</p>
+              <h4 class="list-group-item-heading">Yes</h4>
+            </div>
           </div>
           <div class="panel-heading panel-subheading">
-            <h4 class="panel-title">Notify interested party?</h4>
+            <h4 class="panel-title">Interested parties</h4>
           </div>
           <div class="list-group">
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Notify interested party?</p>
-                  <h4 class="list-group-item-heading">Yes</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Which interested party?</p>
-                  <h4 class="list-group-item-heading">UK Health &amp; Safety Executive</h4>
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Notified date</p>
-                  <h4 class="list-group-item-heading">15 Jul 2015</h4>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Notified by</p>
-                  <h4 class="list-group-item-heading">Mike Smith</h4>
-                </div>
-              </div>
+            <div class="list-group-item">
+              <h4 class="list-group-item-heading">UK Health &amp; Safety Executive</h4>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -692,29 +686,27 @@
                 <textarea class="form-control" rows="2" placeholder="Illness or injury details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
               </div>
             </div>
-
+            <div class="form-group">
+              <label class="control-label col-xs-4">Notify interested parties?</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">No</button>
+                  <button type="button" class="btn btn-info active">Yes</button>
+                </div>
+                <p class="help-block">Record this notification as a Corrective action below</p>
+              </div>
+            </div>
 
 
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#notify" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notify interested party?</h4>
-                  <h4 class="panel-title pull-right text-muted">Yes</h4>
+                  <h4 class="panel-title pull-left">Interested parties</h4>
+                  <h4 class="panel-title pull-right text-muted">1</h4>
                 </div>
                 <div class="collapse" id="notify">
                   <div class="panel-body">
-
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Notify interested parties?</label>
-                      <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">No</button>
-                          <button type="button" class="btn btn-info active">Yes</button>
-                        </div>
-                      </div>
-                    </div>
-
 
                     <div>
                       <div class="panel panel-default bootcards-panel-collapsing">

@@ -1274,6 +1274,9 @@ input:focus ~ .clear-field {
   border-color: transparent;
   padding-left: 0; }
 
+.bootcards-list .list-group-item-text.pull-right {
+  line-height: 24px; }
+
 /* Cards */
 .bootcards-cards .panel-title .label {
   padding-top: .25em;
@@ -1690,6 +1693,8 @@ input:focus ~ .clear-field {
     padding: 15px 0 0;
     font-weight: 300;
     border: 0; }
+    .guidance-panel.guidance-panel-top p {
+      margin: 0 0 15px; }
     .guidance-panel.guidance-panel-top .btn {
       color: white !important;
       margin-bottom: 0 !important;
@@ -3228,110 +3233,110 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
         padding-left: 15px; } }
 
 /* WIKI MODULE */
-.bootcards-wiki .bootcards-list .list-group-item-heading {
+.isometrica-wiki .bootcards-list .list-group-item-heading {
   line-height: 20px; }
 
-.bootcards-wiki .bootcards-wiki-panel {
+.isometrica-wiki .isometrica-wiki-panel {
   overflow: hidden; }
-  .bootcards-wiki .bootcards-wiki-panel .bootcards-wiki-panel-text-read {
+  .isometrica-wiki .isometrica-wiki-panel .isometrica-wiki-panel-text-read {
     font-size: 15px;
     line-height: 22px;
     padding: 25px;
     min-height: 500px; }
 
-.bootcards-wiki .bootcards-wiki-panel-info {
+.isometrica-wiki .isometrica-wiki-panel-info {
   border-bottom: 1px solid #ddd; }
-  .bootcards-wiki .bootcards-wiki-panel-info button .more-label {
+  .isometrica-wiki .isometrica-wiki-panel-info button .more-label {
     display: inline; }
-  .bootcards-wiki .bootcards-wiki-panel-info button .less-label {
+  .isometrica-wiki .isometrica-wiki-panel-info button .less-label {
     display: none; }
-  .bootcards-wiki .bootcards-wiki-panel-info button[aria-expanded="true"] .more-label {
+  .isometrica-wiki .isometrica-wiki-panel-info button[aria-expanded="true"] .more-label {
     display: none; }
-  .bootcards-wiki .bootcards-wiki-panel-info button[aria-expanded="true"] .less-label {
+  .isometrica-wiki .isometrica-wiki-panel-info button[aria-expanded="true"] .less-label {
     display: inline; }
-  .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input {
+  .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex; }
-    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input > :first-child {
+    .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input > :first-child {
       width: 70px; }
-    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input > :last-child {
+    .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input > :last-child {
       width: 100px; }
-    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input {
+    .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input input {
       margin-right: -1px; }
-      .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input:not(:first-child) {
+      .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input input:not(:first-child) {
         border-bottom-left-radius: 0;
         border-top-left-radius: 0; }
-      .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input:not(:nth-child(2)) {
+      .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input input:not(:nth-child(2)) {
         border-bottom-right-radius: 0;
         border-top-right-radius: 0; }
-    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input button {
+    .isometrica-wiki .isometrica-wiki-panel-info .isometrica-multi-input button {
       margin-left: 30px; }
 
-.bootcards-wiki .bootcards-wiki-panel-files {
+.isometrica-wiki .isometrica-wiki-panel-files {
   border-top: 1px solid #ddd;
   background: white; }
-  .bootcards-wiki .bootcards-wiki-panel-files label {
+  .isometrica-wiki .isometrica-wiki-panel-files label {
     float: left;
     margin-right: 15px;
     margin-top: 6px; }
-  .bootcards-wiki .bootcards-wiki-panel-files .bootcards-wiki-panel-files-list {
+  .isometrica-wiki .isometrica-wiki-panel-files .isometrica-wiki-panel-files-list {
     overflow: hidden; }
-  .bootcards-wiki .bootcards-wiki-panel-files .btn {
+  .isometrica-wiki .isometrica-wiki-panel-files .btn {
     margin: 0 0 5px; }
 
-.bootcards-wiki .bootcards-wiki-panel-metadata {
+.isometrica-wiki .isometrica-wiki-panel-metadata {
   padding-top: 0;
   padding-bottom: 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .bootcards-panel-collapsing {
+  .isometrica-wiki .isometrica-wiki-panel-metadata .bootcards-panel-collapsing {
     margin-top: 0;
     margin-bottom: 0;
     border-bottom: 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata strong {
+  .isometrica-wiki .isometrica-wiki-panel-metadata strong {
     display: block; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .label {
+  .isometrica-wiki .isometrica-wiki-panel-metadata .label {
     font-size: 12px; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata hr {
+  .isometrica-wiki .isometrica-wiki-panel-metadata hr {
     border-color: #ddd;
     margin: 10px 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row, .bootcards-wiki .bootcards-wiki-panel-metadata .collapsing .row {
+  .isometrica-wiki .isometrica-wiki-panel-metadata .collapse .row, .isometrica-wiki .isometrica-wiki-panel-metadata .collapsing .row {
     margin: 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .collapse .row > div, .bootcards-wiki .bootcards-wiki-panel-metadata .collapsing .row > div {
+  .isometrica-wiki .isometrica-wiki-panel-metadata .collapse .row > div, .isometrica-wiki .isometrica-wiki-panel-metadata .collapsing .row > div {
     padding: 0; }
-  .bootcards-wiki .bootcards-wiki-panel-metadata .modal-body {
+  .isometrica-wiki .isometrica-wiki-panel-metadata .modal-body {
     border-bottom: 1px solid #ddd;
     padding-top: 10px;
     padding-bottom: 10px; }
 
-.bootcards-wiki .bootcards-wiki-issue-history {
+.isometrica-wiki .isometrica-wiki-issue-history {
   overflow: hidden; }
-  .bootcards-wiki .bootcards-wiki-issue-history > .panel-body {
+  .isometrica-wiki .isometrica-wiki-issue-history > .panel-body {
     padding-top: 0;
     padding-bottom: 0; }
-  .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing {
+  .isometrica-wiki .isometrica-wiki-issue-history .bootcards-panel-collapsing {
     margin-top: 0;
     margin-bottom: 0; }
-    .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing:first-child {
+    .isometrica-wiki .isometrica-wiki-issue-history .bootcards-panel-collapsing:first-child {
       border-top: 0; }
-    .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing:last-child {
+    .isometrica-wiki .isometrica-wiki-issue-history .bootcards-panel-collapsing:last-child {
       border-bottom: 0; }
-    .bootcards-wiki .bootcards-wiki-issue-history .bootcards-panel-collapsing .panel-body {
+    .isometrica-wiki .isometrica-wiki-issue-history .bootcards-panel-collapsing .panel-body {
       padding-left: 50px; }
 
-.bootcards-wiki .bootcards-wiki-comments p {
+.isometrica-wiki .isometrica-wiki-comments p {
   margin: 0 !important;
   line-height: 1.5; }
 
-.bootcards-wiki .bootcards-wiki-comments .avatar {
+.isometrica-wiki .isometrica-wiki-comments .avatar {
   margin-top: 5px;
   width: 50px;
   height: 50px;
   margin-right: 15px; }
 
-.bootcards-wiki .bootcards-cards .list-group-item,
-.bootcards-wiki .modal .list-group-item {
+.isometrica-wiki .bootcards-cards .list-group-item,
+.isometrica-wiki .modal .list-group-item {
   border-radius: 0;
   border-left: 0;
   border-right: 0; }
@@ -3340,26 +3345,26 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   .isometrica-wiki-edit-modal .modal-dialog {
     width: 960px; } }
 
-.isometrica-wiki-edit-modal .bootcards-wiki-panel-controls {
+.isometrica-wiki-edit-modal .isometrica-wiki-panel-controls {
   border-bottom: 1px solid #ddd;
   text-align: center;
   padding-top: 5px;
   padding-bottom: 5px; }
-  .isometrica-wiki-edit-modal .bootcards-wiki-panel-controls .btn {
+  .isometrica-wiki-edit-modal .isometrica-wiki-panel-controls .btn {
     font-size: 14px;
     line-height: 20px;
     border-color: transparent;
     background: transparent;
     box-shadow: none; }
 
-.isometrica-wiki-edit-modal .bootcards-wiki-panel-text-edit {
+.isometrica-wiki-edit-modal .isometrica-wiki-panel-text-edit {
   padding: 0;
   position: relative;
   font-size: 0; }
-  .isometrica-wiki-edit-modal .bootcards-wiki-panel-text-edit iframe {
+  .isometrica-wiki-edit-modal .isometrica-wiki-panel-text-edit iframe {
     min-height: 600px; }
 
-.isometrica-wiki-edit-modal .bootcards-wiki-panel-files {
+.isometrica-wiki-edit-modal .isometrica-wiki-panel-files {
   border-bottom: 0; }
 
 .isometrica-wiki-edit-modal .modal-footer {
@@ -3367,8 +3372,8 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   text-align: center; }
 
 /* iOS
-.ios.bootcards-wiki {
-  .bootcards-wiki-panel {
+.ios.isometrica-wiki {
+  .isometrica-wiki-panel {
     .panel-heading {
       min-height: 44px;
 
@@ -3403,7 +3408,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 
 }*/
 /* Android
-.android.bootcards-wiki {
+.android.isometrica-wiki {
 
   .panel-heading {
     min-height: 44px;
@@ -3438,7 +3443,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     padding: 10px 15px;
   }
 
-  .bootcards-wiki-panel-metadata {
+  .isometrica-wiki-panel-metadata {
     //padding-top: 5px;
     //padding-bottom: 5px;
     //border-top: 1px solid #ddd;
