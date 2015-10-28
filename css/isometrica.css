@@ -130,12 +130,12 @@ body > .bootcards-container > .row {
   border-color: #ccc; }
 
 .panel-heading-alert {
-  padding: 12px 15px; }
+  padding: 15px 15px; }
   .panel-heading-alert h5 {
     margin: 0 0 10px;
     color: #8a6d3b; }
   .panel-heading-alert p {
-    margin: 0;
+    margin: 0 0 5px;
     color: #8a6d3b; }
 
 .android .panel-heading .btn {
