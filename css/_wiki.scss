@@ -22,6 +22,48 @@
     }
   }
 
+  .bootcards-wiki-panel-info {
+    border-bottom: 1px solid #ddd;
+
+    button {
+      .more-label { display: inline; }
+      .less-label { display: none; }
+
+      &[aria-expanded="true"] {
+        .more-label { display: none; }
+        .less-label { display: inline; }
+      }
+    }
+
+    .isometrica-multi-input {
+      @include flexbox();
+
+      > :first-child {
+        width: 70px;
+      }
+
+      > :last-child {
+        width: 100px;
+      }
+
+      input {
+        margin-right: -1px;
+        &:not(:first-child) {
+          border-bottom-left-radius: 0;
+          border-top-left-radius: 0;
+        }
+        &:not(:nth-child(2)) {
+          border-bottom-right-radius: 0;
+          border-top-right-radius: 0;
+        }
+      }
+
+      button {
+        margin-left: 30px;
+      }
+    }
+  }
+
   .bootcards-wiki-panel-files {
     border-top: 1px solid #ddd;
     background: white;

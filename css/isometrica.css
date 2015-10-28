@@ -3239,6 +3239,37 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     padding: 25px;
     min-height: 500px; }
 
+.bootcards-wiki .bootcards-wiki-panel-info {
+  border-bottom: 1px solid #ddd; }
+  .bootcards-wiki .bootcards-wiki-panel-info button .more-label {
+    display: inline; }
+  .bootcards-wiki .bootcards-wiki-panel-info button .less-label {
+    display: none; }
+  .bootcards-wiki .bootcards-wiki-panel-info button[aria-expanded="true"] .more-label {
+    display: none; }
+  .bootcards-wiki .bootcards-wiki-panel-info button[aria-expanded="true"] .less-label {
+    display: inline; }
+  .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input {
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex; }
+    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input > :first-child {
+      width: 70px; }
+    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input > :last-child {
+      width: 100px; }
+    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input {
+      margin-right: -1px; }
+      .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input:not(:first-child) {
+        border-bottom-left-radius: 0;
+        border-top-left-radius: 0; }
+      .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input input:not(:nth-child(2)) {
+        border-bottom-right-radius: 0;
+        border-top-right-radius: 0; }
+    .bootcards-wiki .bootcards-wiki-panel-info .isometrica-multi-input button {
+      margin-left: 30px; }
+
 .bootcards-wiki .bootcards-wiki-panel-files {
   border-top: 1px solid #ddd;
   background: white; }
