@@ -156,6 +156,13 @@ input.form-value {
   }
 }
 
+
+.desktop {
+  .form-horizontal .control-label {
+    padding-right: 0;
+  }
+}
+
 .ios {
 
   .modal-body {
