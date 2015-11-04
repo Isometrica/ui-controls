@@ -138,13 +138,6 @@
               <h4 class="list-group-item-heading">IBM UK mission &amp; goals</h4>
             </div>
           </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editPerformanceIndicators">
-            <span class="label label-success status-indicator pull-left"></span>
-            <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Performance indicators</h4>
-              <p class="list-group-item-text">7 areas</p>
-            </div>
-          </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editRiskTypes">
             <span class="label label-success status-indicator pull-left"></span>
             <div class="list-group-item-content">
@@ -152,10 +145,24 @@
               <p class="list-group-item-text">6 types</p>
             </div>
           </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editIncidents">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Incidents</h4>
+              <p class="list-group-item-text">6 types</p>
+            </div>
+          </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editManagementSystems">
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Management programs</h4>
+              <p class="list-group-item-text">4</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editMeetings">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Meetings &map; communications</h4>
               <p class="list-group-item-text">4</p>
             </div>
           </a>
@@ -173,18 +180,11 @@
               <p class="list-group-item-text">8</p>
             </div>
           </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editSupplierTypes">
+          <a class="list-group-item" data-toggle="modal" data-target="#editCompetencies">
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Suppliers &amp; partners</h4>
-              <p class="list-group-item-text">2 types</p>
-            </div>
-          </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editInterestedParties">
-            <span class="label label-warning status-indicator pull-left"></span>
-            <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Customers &amp; interested parties</h4>
-              <p class="list-group-item-text">10 types</p>
+              <h4 class="list-group-item-heading">Competencies</h4>
+              <p class="list-group-item-text">5</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editActivities">
@@ -201,11 +201,25 @@
               <p class="list-group-item-text">5</p>
             </div>
           </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editEnvironmental">
-            <span class="label label-danger status-indicator pull-left"></span>
+          <a class="list-group-item" data-toggle="modal" data-target="#editSupplierTypes">
+            <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Environmental aspects</h4>
-              <p class="list-group-item-text">6 types</p>
+              <h4 class="list-group-item-heading">Suppliers &amp; partners</h4>
+              <p class="list-group-item-text">2 types</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editPerformanceIndicators">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Performance indicators</h4>
+              <p class="list-group-item-text">7 areas</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editInterestedParties">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Customers &amp; interested parties</h4>
+              <p class="list-group-item-text">10 types</p>
             </div>
           </a>
           <a class="list-group-item">
@@ -214,6 +228,14 @@
               <h4 class="list-group-item-heading text-muted">Assets, resources &amp; dependencies</h4>
             </div>
           </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editEnvironmental">
+            <span class="label label-danger status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Environmental aspects</h4>
+              <p class="list-group-item-text">6 types</p>
+            </div>
+          </a>
+          
         </div>
       </div>
     </div>
@@ -270,6 +292,10 @@
             </div>
             <div class="panel-heading" data-toggle="modal" data-target="#editRoles">
               <h3 class="panel-title">Roles <span class="text-muted">(8)</span></h3>
+              <span class="label label-warning status-indicator"></span>
+            </div>
+            <div class="panel-heading" data-toggle="modal" data-target="#editCompetencies">
+              <h3 class="panel-title">Competencies <span class="text-muted">(5)</span></h3>
               <span class="label label-warning status-indicator"></span>
             </div>
             <div class="offset left">
@@ -799,6 +825,126 @@
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Edit Competencies -->
+  <div class="modal fade isometrica-orgsetup-modal" id="editCompetencies">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-editCompetencies">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Competencies</h4>
+        </div>
+        <div class="collapse in" id="guidance-panel-editCompetencies">
+          <div class="guidance-panel">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
+            <div class="collapse" id="guidance-panel-editCompetencies-more">
+              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
+              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
+              <ul class="text-muted">
+                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
+                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
+                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
+                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
+              </ul>
+            </div>
+            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-editCompetencies-more">
+              <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
+              <span class="expanded-label">Full help</span>
+            </a>
+            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-editCompetencies"><i class="fa fa-chevron-up"></i> Hide</a>
+            <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-editCompetencies-question">Ask question</a>
+            <div class="collapse guidance-panel-question" id="guidance-panel-editCompetencies-question">
+              <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
+              <a class="btn btn-primary" >Send</a>
+              <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-editCompetencies-question">Cancel</a>
+            </div>
+          </div>
+        </div>
+        <form class="form-horizontal isometrica-org-setup-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="None"></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-danger"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                    </div>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Limited"></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-warning"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                    </div>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Competent"></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-success"></i></button>
+                    </div>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Expert"></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-success"></i></button>
+                    </div>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Trainer"></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-success"></i></button>
+                    </div>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td>
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                      <button type="button" class="btn btn-default"><i class="fa fa-circle fa-lg no-margin text-muted"></i></button>
+                    </div>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
               </tbody>

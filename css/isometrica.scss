@@ -288,6 +288,17 @@ body.android {
   }
 }
 
+.btn + .btn {
+  margin-bottom: 5px;
+}
+
+.btn-group {
+  .btn + .btn {
+    margin-bottom: 0;
+  }  
+}
+
+
 .btn-primary,
 .ios .btn-primary {
   background: $blue-color;

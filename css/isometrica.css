@@ -202,6 +202,12 @@ body > .bootcards-container > .row {
     background: #e6e6e6;
     border-color: #bbb; }
 
+.btn + .btn {
+  margin-bottom: 5px; }
+
+.btn-group .btn + .btn {
+  margin-bottom: 0; }
+
 .btn-primary,
 .ios .btn-primary {
   background: #006e9e;
