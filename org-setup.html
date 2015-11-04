@@ -162,14 +162,14 @@
           <a class="list-group-item" data-toggle="modal" data-target="#editMeetings">
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Meetings &map; communications</h4>
+              <h4 class="list-group-item-heading">Meetings &amp; communications</h4>
               <p class="list-group-item-text">4</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editDepartments">
             <span class="label label-success status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Departments</h4>
+              <h4 class="list-group-item-heading">Departments &amp; sites</h4>
               <p class="list-group-item-text">7</p>
             </div>
           </a>
@@ -287,7 +287,7 @@
               <span class="label label-success status-indicator"></span>
             </div>
             <div class="panel-heading" data-toggle="modal" data-target="#editDepartments">
-              <h3 class="panel-title">Departments <span class="text-muted">(7)</span></h3>
+              <h3 class="panel-title">Departments &amp; sites <span class="text-muted">(7)</span></h3>
               <span class="label label-warning status-indicator"></span>
             </div>
             <div class="panel-heading" data-toggle="modal" data-target="#editRoles">
@@ -617,7 +617,7 @@
 
   <!-- Edit Departments -->
   <div class="modal fade isometrica-orgsetup-modal" id="editDepartments">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -628,7 +628,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Departments</h4>
+          <h4 class="modal-title">Departments &amp; sites</h4>
         </div>
         <div class="collapse in" id="guidance-panel-editDepartments">
           <div class="guidance-panel">
@@ -661,8 +661,9 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th class="long">Name</th>
                   <th>Manager</th>
+                  <th>Type</th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -675,6 +676,12 @@
                       <option selected="">Jane Smith</option>
                       <option>John Jones</option></select>
                   </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -682,8 +689,14 @@
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Adam Appleton</option>
-                      <option>John Jones</option></select>
+                      <option>Adam Appleton</option>
+                      <option selected="">John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
@@ -695,6 +708,12 @@
                       <option selected="">Brian Brown</option>
                       <option>John Jones</option></select>
                   </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -704,6 +723,12 @@
                       <option></option>
                       <option selected="">Cathy Cresswell</option>
                       <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
@@ -715,6 +740,12 @@
                       <option selected="">Jane Smith</option>
                       <option>John Jones</option></select>
                   </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -724,6 +755,12 @@
                       <option></option>
                       <option selected="">Jane Smith</option>
                       <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
@@ -735,6 +772,12 @@
                       <option selected="">Jane Smith</option>
                       <option>John Jones</option></select>
                   </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -745,6 +788,12 @@
                       <option selected="">Jane Smith</option>
                       <option>John Jones</option></select>
                   </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
@@ -754,6 +803,12 @@
                       <option selected=""></option>
                       <option>Jane Smith</option>
                       <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Department</option>
+                      <option>Site</option></select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
@@ -1188,7 +1243,7 @@
 
   <!-- Edit Interested Parties -->
   <div class="modal fade isometrica-orgsetup-modal" id="editInterestedParties">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -1232,7 +1287,9 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th class="long">Name</th>
+                  <th class="short">Short name</th>
+                  <th>Web URL</th>
                   <th>Type</th>
                   <th class="icon"></th>
                 </tr>
@@ -1240,6 +1297,8 @@
               <tbody>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="ABC Corp"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="ABC"></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1257,6 +1316,8 @@
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="UK Government ICO"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="ICO"></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1274,6 +1335,8 @@
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="UK Health &amp; Safety Executive"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="HSE"></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1291,6 +1354,8 @@
                 </tr>             
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="XYZ Inc"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="XYZ"></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1307,7 +1372,9 @@
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Name"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name"></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL"></td>
                   <td>
                     <select class="form-control">
                       <option selected=""></option>
