@@ -52,14 +52,28 @@ input.form-value {
   &:hover, &:focus, &:active { color: #23527c; }
 }
 
+
+
+
 .list-group-item {
   .btn {
-    margin-bottom: 8px;
+    margin-bottom: 5px;
   }
 
   .btn, .btn-group {
     margin-right: 3px;
   }
+}
+
+.form-group .btn,
+.form-group .btn-group {
+  margin-bottom: 5px;
+}
+
+.form-group .btn-group {
+  .btn {
+    margin-bottom: 0;
+  }  
 }
 
 

@@ -202,13 +202,6 @@ body > .bootcards-container > .row {
     background: #e6e6e6;
     border-color: #bbb; }
 
-.btn,
-.btn-group {
-  margin-bottom: 5px; }
-
-.btn-group .btn {
-  margin-bottom: 0; }
-
 .btn-primary,
 .ios .btn-primary {
   background: #006e9e;
@@ -1059,10 +1052,17 @@ input.form-value {
     color: #23527c; }
 
 .list-group-item .btn {
-  margin-bottom: 8px; }
+  margin-bottom: 5px; }
 
 .list-group-item .btn, .list-group-item .btn-group {
   margin-right: 3px; }
+
+.form-group .btn,
+.form-group .btn-group {
+  margin-bottom: 5px; }
+
+.form-group .btn-group .btn {
+  margin-bottom: 0; }
 
 .isometrica-rich-text-control {
   padding: 0;
