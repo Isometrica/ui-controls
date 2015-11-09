@@ -60,7 +60,8 @@
           <li><a data-toggle="modal" href="#changeIconModal">Customize logo</a></li>
         </ul>
       </div>
-	    <ul class="nav navbar-nav navbar-right">
+      <!-- STANDARD NAVIGATION -->
+	    <ul class="nav navbar-nav navbar-right hidden-xs">
         <li>
           <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
             <i class="fa fa-question-circle"></i>
@@ -83,6 +84,27 @@
             <li><a href="#">Settings</a></li>
             <li><a href="#">Logout</a></li>
           </ul>
+        </li>
+	    </ul>
+	    <!-- MOBILE NAVIGATION -->
+	    <ul class="nav navbar-nav navbar-left visible-xs">
+        <li class="dropdown">
+          <a data-toggle="dropdown">
+            <i class="fa fa-bars"></i>
+          </a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Chat (4)</a></li>
+            <li><a href="#">Account</a></li>
+            <li><a href="#">Settings</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right visible-xs">
+        <li>
+          <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+            <i class="fa fa-question-circle"></i>
+          </a>
         </li>
 	    </ul>
     </div>

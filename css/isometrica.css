@@ -575,29 +575,29 @@ body > .bootcards-container > .row {
       left: 3px; }
 
 /* NAVBAR FILTER DROPDOWN */
-.navbar-header .navbar-brand.dropdown-toggle {
+.navbar .navbar-brand.dropdown-toggle {
   cursor: pointer; }
-  .navbar-header .navbar-brand.dropdown-toggle i {
+  .navbar .navbar-brand.dropdown-toggle i {
     position: relative;
     top: -2px;
     left: 2px;
     transition: all 0.3s ease;
     font-size: 18px; }
-  .navbar-header .navbar-brand.dropdown-toggle[aria-expanded="true"] i {
+  .navbar .navbar-brand.dropdown-toggle[aria-expanded="true"] i {
     color: #aaa; }
 
-.navbar-header .dropdown-menu {
+.navbar .dropdown-menu {
   width: 200px;
   left: 50%;
   margin-left: -100px;
   text-align: center;
   border-radius: 0 0 4px 4px;
   margin-top: 0px; }
-  .navbar-header .dropdown-menu > .active > a {
+  .navbar .dropdown-menu > .active > a {
     background: #006e9e !important;
     color: white !important; }
 
-.ios .navbar-header .dropdown-menu {
+.ios .navbar .dropdown-menu {
   width: auto;
   left: 0;
   right: 0;
@@ -606,12 +606,13 @@ body > .bootcards-container > .row {
   border: 0;
   padding: 0;
   font-size: 15px;
-  font-weight: 500; }
-  .ios .navbar-header .dropdown-menu a {
+  font-weight: 500;
+  background: white !important; }
+  .ios .navbar .dropdown-menu a {
     padding: 12px 20px;
     font-size: 16px; }
 
-.android .navbar-header .dropdown-menu {
+.android .navbar .dropdown-menu {
   width: auto;
   left: 0;
   right: 0;
@@ -620,10 +621,10 @@ body > .bootcards-container > .row {
   border: 0;
   padding: 0;
   text-align: left; }
-  .android .navbar-header .dropdown-menu a {
+  .android .navbar .dropdown-menu a {
     padding: 15px 20px;
     font-size: 16px; }
-  .android .navbar-header .dropdown-menu .active a {
+  .android .navbar .dropdown-menu .active a {
     background: #33b5e5;
     color: white; }
 
@@ -3300,10 +3301,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
       padding: 25px;
       min-height: 500px; }
   .isometrica-wiki .isometrica-wiki-page-info {
-    padding-top: 0;
-    padding-bottom: 0; }
-    .isometrica-wiki .isometrica-wiki-page-info .bootcards-panel-collapsing.full-width {
-      margin-top: -1px; }
+    border-bottom: 1px solid #ddd; }
   .isometrica-wiki .isometrica-wiki-panel-files {
     border-top: 1px solid #ddd; }
     .isometrica-wiki .isometrica-wiki-panel-files label {

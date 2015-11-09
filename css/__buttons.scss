@@ -1,0 +1,281 @@
+/* LINKS & BUTTONS */
+
+.desktop,
+.android,
+.ios {
+  a:not(.btn):not(.list-group-item),
+  .btn-link {
+    color: $blue-color;
+
+    &:hover, &:focus, &:active, &.active {
+      color: $blue-color-hover;
+    }
+  }
+}
+
+
+
+.btn {
+  transition: all 0.3s ease;
+
+  i.no-margin {
+    margin: 0;
+  }
+
+  i.margin-left {
+    margin: 0 0 0 5px;
+  }
+}
+
+.btn-default {
+  background: white;
+  border-color: #bbb;
+
+  &:hover, &:focus, &:active, &.active {
+    background: #e6e6e6;
+    border-color: #bbb;
+  }
+}
+
+
+
+
+
+.btn-primary,
+.ios .btn-primary {
+  background: $blue-color;
+  color: white;
+
+  &:hover, &:focus, &:active, &.active {
+    background: $blue-color-hover;
+    color: white;
+  }
+}
+
+.btn-info {
+  background: $light-blue-color;
+
+  &:hover, &:focus, &:active, &.active {
+    background: $light-blue-color-hover;
+  }
+}
+
+.btn-progress {
+  opacity: 0.5;
+  position: relative;
+  overflow: hidden;
+
+  .progress-indicator {
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    background: #337ab7;
+    opacity: 0.3;
+  }
+}
+
+.ios .btn-progress {
+  opacity: 0.5 !important;
+}
+
+.ios {
+  .btn {
+    transition: all 0.3s ease;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    &:hover, &:focus, &:active, &.active {
+      outline: none;
+      opacity: 1 !important;
+      padding-left: 12px;
+      padding-right: 12px;
+    }
+  }
+
+  .form-horizontal .form-group .btn {
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+
+  .btn-info,
+  .btn-info[disabled] {
+    background: #33b5e5;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #23a5d5;
+      color: white;
+    }
+  }
+
+  .btn-default {
+    background: white;
+    border-color: #bbb;
+    color: #444;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #e6e6e6;
+      border: 1px solid #bbb;
+      color: #444;
+    }
+  }
+
+  .btn-warning,
+  .btn-warning[disabled] {
+    background: #f0ad4e;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #f0ad4e;
+      color: white;
+    }
+  }
+
+  .btn-danger,
+  .btn-danger[disabled] {
+    background: #d9534f;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #d9534f;
+      color: white;
+    }
+  }
+
+  .btn-success,
+  .btn-success[disabled] {
+    background: #4cae4c;
+    color: white;
+
+    &:hover, &:focus, &:active, &.active {
+      background: #4cae4c;
+      color: white;
+    }
+  }
+
+  .modal-header,
+  .panel-heading {
+    .btn {
+      background: transparent;
+      border-color: transparent;
+      color: $light-blue-color;
+      padding-left: 5px;
+      padding-right: 5px;
+    }
+  }
+}
+
+.android {
+  .btn {
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 14px;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+  }
+
+  .btn-primary,
+  .btn-primary[disabled] {
+    background: #337ab7;
+    border-color: #337ab7;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #337ab7;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
+  .btn-info,
+  .btn-info[disabled] {
+    background: #33b5e5;
+    border-color: #33b5e5;
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #23a5d5;
+      color: white;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
+  .btn-default,
+  .btn-default[disabled] {
+    background: #dfdfdf;
+    border-color: #dfdfdf;
+    font-size: 14px;
+    color: #444;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #cecece;
+      color: #444;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.3);
+      outline: none;
+    }
+  }
+
+  .btn-warning,
+  .btn-warning[disabled] {
+    background: #f0ad4e;
+    border-color: #f0ad4e;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #f0ad4e;
+      color: white;
+    }
+  }
+
+  .btn-danger,
+  .btn-danger[disabled] {
+    background: #d9534f;
+    border-color: #d9534f;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #d9534f;
+      color: white;
+    }
+  }
+
+  .btn-success,
+  .btn-success[disabled] {
+    background: #4cae4c;
+    border-color: #4cae4c;
+    color: white;
+    box-shadow: 0 1px 2px rgba(0,0,0,0.3);
+
+    &:hover, &:focus, &:active, &.active {
+      background: #4cae4c;
+      color: white;
+    }
+  }
+
+  .btn[disabled] {
+    box-shadow: none;
+  }
+
+  .modal-header,
+  .panel-heading {
+    .btn {
+      background: transparent;
+      border-color: transparent;
+      color: #23527c;
+      box-shadow: none;
+      font-size: 14px;
+    }
+  }
+}
