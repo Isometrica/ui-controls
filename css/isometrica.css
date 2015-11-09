@@ -3142,7 +3142,8 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   min-width: 180px; }
 
 .isometrica-org-setup-multiadd th.short {
-  min-width: 120px; }
+  min-width: 120px;
+  width: 120px; }
 
 .isometrica-org-setup-multiadd th.long {
   min-width: 300px; }
