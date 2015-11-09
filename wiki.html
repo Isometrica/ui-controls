@@ -487,69 +487,62 @@
             </div>
           </div>
         </div>
-        <form class="form-horizontal">
-          <div class="modal-body isometrica-wiki-panel-info">
-            <div class="form-group">
-              <label class="control-label col-sm-3">Section number/title</label>
-              <div class="col-sm-2">
-                <input type="text" class="form-control" placeholder="Num" value="1">
-              </div>
-              <div class="col-sm-5">
-                <input type="text" class="form-control" placeholder="Title" value="Overview">
-              </div>
-              <div class="col-sm-2">
-                <button type="button" class="btn btn-default btn-block" data-toggle="collapse" data-target="#document-info-more">
-                  <span class="more-label">More <i class="fa fa-caret-down"></i></span>
-                  <span class="less-label">Less <i class="fa fa-caret-up"></i></span>
-                </button>
-              </div>
+        <div class="panel-body isometrica-wiki-page-info">
+          <div class="panel panel-default bootcards-panel-collapsing full-width">
+            <div class="panel-heading clearfix collapsed" href="#edit-page-info" data-toggle="collapse">
+              <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+              <h4 class="panel-title">Page info</h4>
             </div>
-            <div class="collapse" id="document-info-more">
-              <div class="form-group">
-                <label class="control-label col-sm-3">Tags</label>
-                <div class="col-sm-9">
-                  <input type="text" class="form-control" placeholder="Add a tag">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3">Document reference 1</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" placeholder="Document reference 1">
-                </div>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" placeholder="Clause number(s)">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3">Document reference 2</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" placeholder="Document reference 2">
-                </div>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" placeholder="Clause number(s)">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3">Document reference 3</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" placeholder="Document reference 3">
-                </div>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" placeholder="Clause number(s)">
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="control-label col-sm-3">Document reference 4</label>
-                <div class="col-sm-4">
-                  <input type="text" class="form-control" placeholder="Document reference 4">
-                </div>
-                <div class="col-sm-5">
-                  <input type="text" class="form-control" placeholder="Clause number(s)">
-                </div>
+            <div class="collapse" id="edit-page-info">
+              <div class="panel-body">
+                <form class="form-horizontal">
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Section number/title</label>
+                    <div class="col-sm-2">
+                      <input type="text" class="form-control" placeholder="Num" value="1">
+                    </div>
+                    <div class="col-sm-7">
+                      <input type="text" class="form-control" placeholder="Title" value="Overview">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Tags</label>
+                    <div class="col-sm-9">
+                      <input type="text" class="form-control" placeholder="Add a tag">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Document reference 1</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Document reference 1" value="ISO 9001:2015">
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" placeholder="Clause number(s)" value="4.1, 4.2, 4.3">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Document reference 2</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Document reference 2" value="ISO 14001:2015">
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" placeholder="Clause number(s)" value="4.1, 5.2, 8.1.1, 8.4, 8.5">
+                    </div>
+                  </div>
+                  <div class="form-group">
+                    <label class="control-label col-sm-3">Document reference 3</label>
+                    <div class="col-sm-4">
+                      <input type="text" class="form-control" placeholder="Document reference 3">
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" placeholder="Clause number(s)">
+                    </div>
+                  </div>
+                </form>
               </div>
             </div>
           </div>
-        </form>
+        </div>
         <div class="clearfix isometrica-wiki-panel-controls">
           <div class="ql-toolbar-container btn-group" id="formatting-container">
             <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
@@ -594,11 +587,11 @@
 
           <div>
             <div class="panel panel-default bootcards-panel-collapsing full-width">
-              <div class="panel-heading clearfix collapsed" href="#edit-page-info" data-toggle="collapse">
+              <div class="panel-heading clearfix collapsed" href="#page-history" data-toggle="collapse">
                 <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                <h4 class="panel-title">Page info</h4>
+                <h4 class="panel-title">Page history</h4>
               </div>
-              <div class="collapse" id="edit-page-info">
+              <div class="collapse" id="page-history">
                 <div class="panel-body">
                   <div class="row">
                     <div class="col-sm-3 col-xs-6">
