@@ -288,15 +288,17 @@ body.android {
   }
 }
 
-.btn + .btn {
+.btn,
+.btn-group {
   margin-bottom: 5px;
 }
 
 .btn-group {
-  .btn + .btn {
+  .btn {
     margin-bottom: 0;
   }  
 }
+
 
 
 .btn-primary,

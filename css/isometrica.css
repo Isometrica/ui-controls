@@ -202,10 +202,11 @@ body > .bootcards-container > .row {
     background: #e6e6e6;
     border-color: #bbb; }
 
-.btn + .btn {
+.btn,
+.btn-group {
   margin-bottom: 5px; }
 
-.btn-group .btn + .btn {
+.btn-group .btn {
   margin-bottom: 0; }
 
 .btn-primary,
