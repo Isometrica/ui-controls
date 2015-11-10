@@ -1269,6 +1269,9 @@ input:focus ~ .clear-field {
   line-height: 26px; }
 
 /* Input groups */
+.input-group + .input-group {
+  margin-top: 8px; }
+
 .input-group .btn {
   margin-right: 0;
   margin-bottom: 0; }

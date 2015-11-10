@@ -395,6 +395,10 @@ input:focus ~ .clear-field {
   //&:last-child { margin-bottom: 0; }
 }
 
+.input-group + .input-group {
+  margin-top: 8px;
+}
+
 .input-group .btn {
   margin-right: 0;
   margin-bottom: 0;
