@@ -112,6 +112,10 @@
         color: #999;
       }
     }
+    
+    span + span {
+      margin-left: 8px;
+    }
 
     &:hover, &:focus, &:active {
     	background: #f5f5f5;
