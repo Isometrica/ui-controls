@@ -50,6 +50,15 @@
   <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
     <div class="container">
       <div class="navbar-header">
+	    <ul class="nav navbar-nav navbar-left visible-xs">
+        <li class="dropdown">
+          <a data-toggle="collapse" data-target="#overview-menu">
+            <i class="fa fa-bars"></i>
+          </a>
+        </li>
+	    </ul>
+
+
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
           <img src="img/teamstudio-logo.png"> <i class="fa fa-chevron-down"></i>
         </span>
@@ -59,7 +68,19 @@
           <li role="separator" class="divider"></li>
           <li><a data-toggle="modal" href="#changeIconModal">Customize logo</a></li>
         </ul>
+      
+        
       </div>
+
+	    <!-- MOBILE NAVIGATION -->
+	    <div class="collapse" id="overview-menu">
+        <ul class="dropdown-menu" style="display: block">
+          <li><a href="#">Chat (4)</a></li>
+          <li><a href="#">Account</a></li>
+          <li><a href="#">Settings</a></li>
+          <li><a href="#">Logout</a></li>
+        </ul>
+	    </div>  
       <!-- STANDARD NAVIGATION -->
 	    <ul class="nav navbar-nav navbar-right hidden-xs">
         <li>
@@ -86,20 +107,7 @@
           </ul>
         </li>
 	    </ul>
-	    <!-- MOBILE NAVIGATION -->
-	    <ul class="nav navbar-nav navbar-left visible-xs">
-        <li class="dropdown">
-          <a data-toggle="dropdown">
-            <i class="fa fa-bars"></i>
-          </a>
-          <ul class="dropdown-menu">
-            <li><a href="#">Chat (4)</a></li>
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-	    </ul>
+
 	    <ul class="nav navbar-nav navbar-right visible-xs">
         <li>
           <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">

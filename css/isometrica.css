@@ -622,10 +622,12 @@ body > .bootcards-container > .row {
   padding: 0;
   font-size: 15px;
   font-weight: 500;
-  background: white !important; }
+  background: white !important;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.175) !important; }
   .ios .navbar .dropdown-menu a {
-    padding: 12px 20px;
-    font-size: 16px; }
+    padding: 12px 20px !important;
+    font-size: 16px;
+    color: #006e9e !important; }
 
 .android .navbar .dropdown-menu {
   width: auto;
@@ -2645,7 +2647,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 
 .ios.isometrica-overview-page .navbar .navbar-brand img,
 .android.isometrica-overview-page .navbar .navbar-brand img {
-  height: 26px;
+  height: 22px;
   top: -3px; }
 
 .ios.isometrica-overview-page .navbar .navbar-right,
@@ -2655,6 +2657,10 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   right: 0;
   float: none !important;
   position: absolute; }
+
+.ios.isometrica-overview-page .navbar .navbar-left,
+.android.isometrica-overview-page .navbar .navbar-left {
+  top: 0; }
 
 .ios.isometrica-overview-page .navbar .navbar-nav > li > a,
 .android.isometrica-overview-page .navbar .navbar-nav > li > a {
@@ -2672,11 +2678,25 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 .android.isometrica-overview-page .navbar .navbar-nav > li.open > a {
   color: white; }
 
+.ios.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a,
+.ios.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a:focus,
+.ios.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a:hover,
+.android.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a, .android.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a:focus, .android.isometrica-overview-page .navbar-inverse .navbar-nav > .open > a:hover {
+  background: transparent; }
+
 .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav {
   margin: 0; }
 
 .android.isometrica-overview-page .navbar .navbar-brand {
   padding-left: 15px !important; }
+
+.android.isometrica-overview-page .navbar .navbar-nav > li > a {
+  padding-top: 14px;
+  padding-bottom: 15px; }
+
+.android.isometrica-overview-page .navbar .navbar-left a {
+  padding-left: 30px;
+  padding-right: 0; }
 
 @media (min-width: 768px) {
   .ios.isometrica-overview-page .navbar .navbar-collapse .navbar-nav:first-child,

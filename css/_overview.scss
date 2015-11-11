@@ -141,7 +141,7 @@ body.desktop.isometrica-overview-page {
 .android.isometrica-overview-page {
   .navbar {
     .navbar-brand  img {
-      height: 26px;
+      height: 22px;
       top: -3px;
     }
     .navbar-right {
@@ -151,6 +151,11 @@ body.desktop.isometrica-overview-page {
       float: none !important;
       position: absolute;
     }
+    
+    .navbar-left {
+      top: 0;
+    }
+    
     .navbar-nav>li>a {
       color: #ccc;
 
@@ -168,6 +173,10 @@ body.desktop.isometrica-overview-page {
       color: white;
     }
 
+  }
+  
+  .navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:focus, .navbar-inverse .navbar-nav>.open>a:hover {
+    background: transparent;
   }
 
 }
@@ -188,6 +197,16 @@ body.desktop.isometrica-overview-page {
   .navbar {
     .navbar-brand {
       padding-left: 15px !important;
+    }
+  
+    .navbar-nav > li > a {
+      padding-top: 14px;
+      padding-bottom: 15px;
+    }
+    
+    .navbar-left a {
+      padding-left: 30px;
+      padding-right: 0;
     }
   }
 }
