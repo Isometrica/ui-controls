@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Competencies</title>
+  <title>Competencies register</title>
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
@@ -426,51 +426,37 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Management system area</label>
-              <div class="col-xs-8">
-                <select class="form-control">
-                  <option></option>
-                  <option selected="">Quality</option>
-                  <option>Business continuity</option>
-                  <option>Information security</option>
-                </select>
-              </div>
-            </div>
-
-
-            <div class="form-group">
               <label class="control-label col-xs-4">Role(s) this applies to</label>
               <div class="col-xs-8">
-                <div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default">BCM Manager</button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
-                  </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="BCM Manager" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
                 </div>
-                <div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default">Environment Manager</button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
-                  </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="Environment Manager" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
                 </div>
-                <div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-default">IT Manager</button>
-                    <button type="button" class="btn btn-default"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
-                  </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="IT Manager" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
                 </div>
-                <div class="dropdown">
-                  <button type="button" class="btn btn-primary" data-toggle="dropdown">
-                    <i class="fa fa-plus"></i> Add a Role
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Another role here</a></li>
-                    <li><a href="#">Another role</a></li>
-                    <li><a href="#">Role name</a></li>
-                    <li><a href="#">Another role here</a></li>
-                    <li><a href="#">Another role</a></li>
-                    <li><a href="#">Role name</a></li>
-                    <li><a href="#">Another role here</a></li>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="" placeholder="Add role" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Environmental manager</a></li>
+                    <li><a href="#">IT manager</a></li>
+                    <li><a href="#">Quality manager</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new role</strong></a></li>
                   </ul>
                 </div>
               </div>

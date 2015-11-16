@@ -633,13 +633,25 @@
                     <div class="form-group">
                       <label class="control-label col-xs-4">Activity or process(es)</label>
                       <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Customer support" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Thermoforming" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
                         <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Customer support" placeholder="Activity or process" data-toggle="dropdown"/>
+                          <input type="text" class="form-control" value="" placeholder="Add activity or process" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
                             <button class="btn btn-default" type="button"><span class="caret"></span></button>
                           </span>
                           <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="active"><a href="#">Customer support</a></li>
+                            <li><a href="#">Customer support</a></li>
                             <li><a href="#">Extrusion</a></li>
                             <li><a href="#">Thermoforming</a></li>
                             <li role="separator" class="divider"></li>
@@ -648,17 +660,24 @@
                         </div>
                       </div>
                     </div>
+                    <hr>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Department or site(s)</label>
                       <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Customer service" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
                         <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Customer service" placeholder="Department/site(s)" data-toggle="dropdown"/>
+                          <input type="text" class="form-control" value="" placeholder="Add department/site" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
                             <button class="btn btn-default" type="button"><span class="caret"></span></button>
                           </span>
                           <ul class="dropdown-menu dropdown-menu-right">
                             <li><a href="#">Accounting</a></li>
-                            <li class="active"><a href="#">Customer service</a></li>
+                            <li><a href="#">Customer service</a></li>
                             <li><a href="#">HR</a></li>
                             <li><a href="#">Manufacturing</a></li>
                             <li><a href="#">Marketing</a></li>
@@ -671,11 +690,24 @@
                         </div>
                       </div>
                     </div>
+                    <hr>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Management system(s)</label>
                       <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Business Continuity Management" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Information Security Management" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
                         <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Information Security Management" placeholder="Management system(s)" data-toggle="dropdown"/>
+                          <input type="text" class="form-control" value="" placeholder="Add management system" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
                             <button class="btn btn-default" type="button"><span class="caret"></span></button>
                           </span>
@@ -703,16 +735,59 @@
                   <div class="panel-body">
                     <div class="form-group">
                       <div class="col-xs-12">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-link fa-lg"></i>
-                            <strong>4.3</strong> Leadership &amp; commitment
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
+                        <button type="button" class="btn btn-default pull-right">
+                          <i class="fa fa-times-circle no-margin fa-lg"></i>
+                        </button>
+                        <div><strong>2.1 Our Quality Objectives</strong></div>
+                        <div class="text-muted">ISO management framework manual (ISO Directives 2015 Annex SL)</div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="button" class="btn btn-default pull-right">
+                          <i class="fa fa-times-circle no-margin fa-lg"></i>
+                        </button>
+                        <div><strong>2.2.2 Longer subsection heading goes here lorem ipsum</strong></div>
+                        <div class="text-muted">Quality &amp; environment operating manual (ISO 9001:2015 &amp; 14001:2015)</div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Document" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Business continuity operating manual</a></li>
+                            <li><a href="#">ISO management framework manual</a></li>
+                            <li><a href="#">Information security operating manual</a></li>
+                            <li><a href="#">Quality &amp; environment operating manual</a></li>
+                          </ul>
                         </div>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+            	        </div>                        
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Section" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Business continuity operating manual</a></li>
+                            <li><a href="#">ISO management framework manual</a></li>
+                            <li><a href="#">Information security operating manual</a></li>
+                            <li class="active"><a href="#">Quality &amp; environment operating manual</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add document link</button>
                       </div>
                     </div>
                   </div>
@@ -743,20 +818,6 @@
                         </div>
                         <div class="collapse" id="corrective-action-1">
                           <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info active">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
@@ -823,6 +884,7 @@
                   		        </div>
                   	        </div>
                   	        <hr>
+                  	        
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Target completion date</label>
                   		        <div class="col-xs-8">
@@ -924,53 +986,6 @@
                         </div>
                         <div class="collapse" id="corrective-action-2">
                           <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-default">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-info active">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                    	        <label class="control-label col-xs-4">Existing action</label>
-                  		        <div class="col-xs-8">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="CA142 Replace sprockets" placeholder="Existing action" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#"><strong>CA146</strong> Train sales staff</a></li>
-                                    <li><a href="#"><strong>CA145</strong> Find better supplier</a></li>
-                                    <li><a href="#"><strong>CA144</strong> Refit old stock</a></li>
-                                    <li><a href="#"><strong>CA143</strong> Test all components</a></li>
-                                    <li class="active"><a href="#"><strong>CA142</strong> Replace sprockets</a></li>
-                                    <li><a href="#"><strong>CA141</strong> Fix machine calibration</a></li>
-                                    <li><a href="#"><strong>CA140</strong> Train sales staff</a></li>
-                                    <li><a href="#"><strong>CA139</strong> Find better supplier</a></li>
-                                    <li><a href="#"><strong>CA138</strong> Refit old stock</a></li>
-                                    <li><a href="#"><strong>CA137</strong> Test all components</a></li>
-                                    <li><a href="#"><strong>CA136</strong> Replace sprockets</a></li>
-                                    <li><a href="#"><strong>CA135</strong> Fix machine calibration</a></li>
-                                    <li><a href="#"><strong>CA134</strong> Train sales staff</a></li>
-                                    <li><a href="#"><strong>CA133</strong> Find better supplier</a></li>
-                                    <li><a href="#"><strong>CA132</strong> Refit old stock</a></li>
-                                    <li><a href="#"><strong>CA131</strong> Test all components</a></li>
-                                    <li><a href="#"><strong>CA130</strong> Replace sprockets</a></li>
-                                    <li><a href="#"><strong>CA129</strong> Fix machine calibration</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new corrective action</strong></a></li>
-                                  </ul>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
@@ -1083,6 +1098,36 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Creation date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Created by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
                   			        <div class="input-group">
@@ -1148,6 +1193,74 @@
                   	        </div>
                   	        <hr>
                   	        
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>                	        
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#corrective-action-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            Existing corrective action
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="corrective-action-4">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-info active">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                    	        <label class="control-label col-xs-4">Existing action</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Existing action" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><strong>CA146</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA145</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA144</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA143</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA142</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA141</strong> Fix machine calibration</a></li>
+                                    <li><a href="#"><strong>CA140</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA139</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA138</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA137</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA136</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA135</strong> Fix machine calibration</a></li>
+                                    <li><a href="#"><strong>CA134</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA133</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA132</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA131</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA130</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA129</strong> Fix machine calibration</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new corrective action</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+
                   	        <div class="form-group">
                               <div class="col-sm-8 col-sm-offset-4 clearfix">
                                 <button type="button" class="btn btn-default pull-left">Save</button>
@@ -1499,11 +1612,39 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Status</label>
+                  		        <label class="control-label col-xs-4">Notes</label>
                   		        <div class="col-xs-8">
-                                <button type="button" class="btn btn-danger active" disabled="">
-                                  Open - no actions
-                                </button>
+                                <textarea class="form-control" rows="3" placeholder="Notes"></textarea>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Reported date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Reported date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Reported by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Reported by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
                   		        </div>
                   	        </div>
                   	        <hr>
@@ -1550,20 +1691,6 @@
                         </div>
                         <div class="collapse" id="improvement-1">
                           <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info active">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
@@ -1736,47 +1863,6 @@
                         </div>
                         <div class="collapse" id="improvement-2">
                           <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-default">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-info active">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Existing improvement</label>
-                  		        <div class="col-xs-8">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="IM745 Change design of production station" placeholder="Owner" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#"><strong>IM747</strong> Install fire escape</a></li>
-                                    <li><a href="#"><strong>IM746</strong> Extend factory</a></li>
-                                    <li class="active"><a href="#"><strong>IM745</strong> Change design of production station</a></li>
-                                    <li><a href="#"><strong>IM744</strong> Install fire escape</a></li>
-                                    <li><a href="#"><strong>IM743</strong> Extend factory</a></li>
-                                    <li><a href="#"><strong>IM742</strong> Change design of production station</a></li>
-                                    <li><a href="#"><strong>IM741</strong> Install fire escape</a></li>
-                                    <li><a href="#"><strong>IM740</strong> Extend factory</a></li>
-                                    <li><a href="#"><strong>IM739</strong> Change design of production station</a></li>
-                                    <li><a href="#"><strong>IM738</strong> Install fire escape</a></li>
-                                    <li><a href="#"><strong>IM737</strong> Extend factory</a></li>
-                                    <li><a href="#"><strong>IM736</strong> Change design of production station</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new improvement</strong></a></li>
-                                  </ul>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
                   	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
@@ -1893,6 +1979,36 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Creation date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Created by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
                   		        <label class="control-label col-xs-4">Description</label>
                   		        <div class="col-xs-8">
                                 <div class="input-group">
@@ -1954,6 +2070,67 @@
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            Existing improvement
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-4">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-info active">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Existing improvement</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Existing improvement" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><strong>IM747</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM746</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM745</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM744</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM743</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM742</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM741</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM740</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM739</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM738</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM737</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM736</strong> Change design of production station</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new improvement</strong></a></li>
+                                  </ul>
+                                </div>
                   		        </div>
                   	        </div>
                   	        <hr>
