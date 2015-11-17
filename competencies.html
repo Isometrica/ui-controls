@@ -65,13 +65,13 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          Competencies - all
+          Competencies - by role
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">All</a></li>
-          <li><a href="#">By role</a></li>
-          <li><a href="#">By system</a></li>
+          <li class="active"><a href="#">By role</a></li>
+          <li><a href="#">By department/site</a></li>
+          <li><a href="#">By program</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
       </div>
@@ -463,6 +463,136 @@
             </div>
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#tags" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Tags</h4>
+                  <h4 class="panel-title pull-right text-muted">3</h4>
+                </div>
+                <div class="collapse" id="tags">
+                  <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Activity or process(es)</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Customer support" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Thermoforming" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Add activity or process" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Customer support</a></li>
+                            <li><a href="#">Extrusion</a></li>
+                            <li><a href="#">Thermoforming</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new activity or process</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Department or site(s)</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Customer service" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Add department/site" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Accounting</a></li>
+                            <li><a href="#">Customer service</a></li>
+                            <li><a href="#">HR</a></li>
+                            <li><a href="#">Manufacturing</a></li>
+                            <li><a href="#">Marketing</a></li>
+                            <li><a href="#">Operations</a></li>
+                            <li><a href="#">Sales</a></li>
+                            <li><a href="#">Technical support</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new department or site</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Management system(s)</label>
+                      <div class="col-xs-8">
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Business Continuity Management" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group">
+                          <input type="text" class="form-control" value="Information Security Management" disabled=""/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                          </span>
+                        </div>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Add management system" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Business Continuity Management</a></li>
+                            <li><a href="#">Environmental Management</a></li>
+                            <li class="active"><a href="#">Information Security Management</a></li>
+                            <li><a href="#">Quality Management</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new management system</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Files</h4>
@@ -470,9 +600,7 @@
                 </div>
                 <div class="collapse" id="files">
                   <div class="panel-body">
-
                     <div class="form-group">
-
                       <div class="col-xs-12">
                         <div class="btn-group">
                           <button type="button" class="btn btn-default">
@@ -493,46 +621,22 @@
                           </button>
                         </div>
                         <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-
                       </div>
                     </div>
                   </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-                </div>
-                <div class="collapse" id="notes">
-                  <div class="panel-body">
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                          <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                          <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                          <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                          <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-                        </div>
-                      </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
-                    </div>
-        	        </div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#assessments" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Individual assessments</h4>
-                  <h4 class="panel-title pull-right"><span class="label label-success">Competent</span></h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-success">Trainer</span>
+                    <span class="text-muted">1</span>
+                  </h4>
                 </div>
                 <div class="collapse" id="assessments">
                   <div class="panel-body">
-
                     <div>
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#assessment-1" data-toggle="collapse" aria-expanded="false">
@@ -547,209 +651,64 @@
                         </div>
                         <div class="collapse" id="assessment-1">
                           <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-3">Knowledge level</label>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-3">Competency level</label>
                   		        <div class="col-xs-9">
-                          	    <div class="btn-group">
-                                  <button type="button" class="btn btn-success">
-                                    Trainer
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Expert
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Competent
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Limited
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    None
-                                  </button>
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Trainer" placeholder="Competency level" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">None</a></li>
+                                    <li><a href="#">Limited</a></li>
+                                    <li><a href="#">Competent</a></li>
+                                    <li><a href="#">Expert</a></li>
+                                    <li class="active"><a href="#">Trainer</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new competency level</strong></a></li>
+                                  </ul>
                                 </div>
                   		        </div>
                   	        </div>
                             <div class="form-group">
-                              <label class="control-label col-xs-3">Last review date</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Assessed by</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                	        </div>
-
-                        </div>
-                      </div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#assessment-2" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>Sally Jason</strong><br>Environment Manager
-                          </div>
-                          <div class="pull-right text-right">
-                            <span class="label label-success">Expert</span><br>5 Jun 2015
-                          </div>
-                        </div>
-                        <div class="collapse" id="assessment-2">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Knowledge level</label>
+                  		        <label class="control-label col-xs-3">Assessed by</label>
                   		        <div class="col-xs-9">
-                          	    <div class="btn-group">
-                                  <button type="button" class="btn btn-default">
-                                    Trainer
-                                  </button>
-                                  <button type="button" class="btn btn-success">
-                                    Expert
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Competent
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Limited
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    None
-                                  </button>
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Assessed by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="dropdown-header">Users</li>
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li class="dropdown-header">Contacts</li>
+                                    <li><a href="#">Jim Brown</a></li>
+                                    <li><a href="#">Sarah Jones</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user or contact</strong></a></li>
+                                  </ul>
                                 </div>
                   		        </div>
                   	        </div>
                             <div class="form-group">
-                              <label class="control-label col-xs-3">Last review date</label>
+                              <label class="control-label col-xs-3">Assessed date</label>
                               <div class="col-xs-9">
-                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
+                                <input type="text" class="form-control" value="20 May 2015" placeholder="Assessed date"/>
                                 <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                               </div>
                             </div>
                             <div class="form-group">
-                              <label class="control-label col-xs-3">Assessed by</label>
+                              <label class="control-label col-xs-3">Notes</label>
                               <div class="col-xs-9">
-                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#assessment-3" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>Mike Tufnell</strong>
-                            <br>IT Manager
-                          </div>
-                          <div class="pull-right text-right">
-                            <span class="label label-success pull-right">Competent</span><br>3 Mar 2015
-                          </div>
-                        </div>
-                        <div class="collapse" id="assessment-3">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Knowledge level</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group">
-                                  <button type="button" class="btn btn-default">
-                                    Trainer
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Expert
-                                  </button>
-                                  <button type="button" class="btn btn-success">
-                                    Competent
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Limited
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    None
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Last review date</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Assessed by</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#assessment-4" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>Pete Robinson</strong>
-                            <br>Financial Manager
-                          </div>
-                          <div class="pull-right text-right">
-                            <span class="label label-warning pull-right">Limited knowledge</span><br>1 Jan 2015
-                          </div>
-                        </div>
-                        <div class="collapse" id="assessment-4">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Knowledge level</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group">
-                                  <button type="button" class="btn btn-default">
-                                    Trainer
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Expert
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Competent
-                                  </button>
-                                  <button type="button" class="btn btn-warning">
-                                    Limited
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    None
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Last review date</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="10 Oct 2014" placeholder="Last review date"/>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-3">Assessed by</label>
-                              <div class="col-xs-9">
-                                <input type="text" class="form-control" value="Steve Saunders" placeholder="Assessed by"/>
+                                <textarea class="form-control" placeholder="Notes" rows="3"></textarea>
                                 <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
@@ -769,10 +728,20 @@
                 <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Review</h4>
-                  <h4 class="panel-title pull-right"><span class="label label-danger">Overdue</span></h4>
+                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
+                  <h4 class="panel-title pull-right"><span class="label label-warning">Awaiting review</span></h4>
                 </div>
                 <div class="collapse" id="review-info">
                   <div class="panel-body">
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Status</label>
+                      <div class="col-xs-8">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-info active">Awaiting review</button>
+                          <button type="button" class="btn btn-default">Reviewed</button>
+                        </div>
+                      </div>
+                    </div>
                     <div class="form-group">
                       <label class="control-label col-xs-4">Last reviewed</label>
                       <div class="col-xs-8">
@@ -785,22 +754,47 @@
                     <div class="form-group">
                       <label class="control-label col-xs-4">Reviewed by</label>
                       <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Reviewed by" value="Peter Jones"/>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li class="dropdown-header">Users</li>
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Saunders</a></li>
+                            <li class="active"><a href="#">Mike Smith</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li class="dropdown-header">Contacts</li>
+                            <li><a href="#">Jim Brown</a></li>
+                            <li><a href="#">Sarah Jones</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new user or contact</strong></a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <label class="control-label col-xs-4">Next scheduled review</label>
+                      <div class="col-xs-8">
+                        <input type="text" class="form-control" placeholder="Next scheduled review" value="8 Dec 2015"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Review status</label>
+                      <label class="control-label col-xs-4">Comments</label>
                       <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">Reviewed</button>
-                          <button type="button" class="btn btn-default">Awaiting review</button>
-                          <button type="button" class="btn btn-danger active">Overdue</button>
-                        </div>
+                        <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
+                        <button type="button" class="btn btn-link clear-field">
+          			          <i class="fa fa-times-circle"></i>
+          			        </button>
                       </div>
                     </div>
+                    
                   </div>
                 </div>
               </div>

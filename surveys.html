@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Surveys</title>
+  <title>Customer surveys</title>
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
@@ -65,7 +65,7 @@
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          Surveys - all
+          Customer surveys - all
           <i class="fa fa-chevron-down"></i>
         </span>
         <ul class="dropdown-menu">
@@ -389,16 +389,122 @@
   			        </button>
               </div>
             </div>
+            
             <div class="form-group">
-              <label class="control-label col-xs-4">Type</label>
+              <label class="control-label col-xs-4">Regular survey</label>
+              <div class="col-xs-8">
+                <div class="btn-group isometrica-btn-toggle">
+                  <button type="button" class="btn btn-info">
+                    Yes
+                  </button>
+                  <button type="button" class="btn btn-default">
+                    No
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Frequency</label>
               <div class="col-xs-8">
                 <select class="form-control">
                   <option></option>
-                  <option selected="">Customer</option>
-                  <option>Supplier</option>
-                  <option>Partner</option>
-                  <option>Internal</option>
+                  <option selected="">Daily</option>
+                  <option>Weekly</option>
+                  <option>Monthly</option>
+                  <option>Quarterly</option>
+                  <option>Annual</option>
                 </select>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Period number</label>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" placeholder="Period number" value="366">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <hr>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Number contacted</label>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" placeholder="Number contacted" value="50">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Number responded</label>
+              <div class="col-xs-2">
+                <input type="text" class="form-control" placeholder="Number responded" value="35">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Recorded date</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Recorded date" value="8 Jun 2015">
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <div class="form-group">
+  		        <label class="control-label col-xs-4">Recorded by</label>
+  		        <div class="col-xs-8">
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Mike Smith" placeholder="Recorded by" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Jack Herbert</a></li>
+                    <li><a href="#">Steve Ives</a></li>
+                    <li><a href="#">Mark Leusink</a></li>
+                    <li><a href="#">Steve Saunders</a></li>
+                    <li class="active"><a href="#">Mike Smith</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new user</strong></a></li>
+                  </ul>
+                </div>
+  		        </div>
+  	        </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-4">Type</label>
+              <div class="col-xs-8">
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Customers" placeholder="Type" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li class="active"><a href="#">Customers</a></li>
+                    <li><a href="#">Employees</a></li>
+                    <li><a href="#">Management</a></li>
+                    <li><a href="#">Financial stakeholders</a></li>
+                    <li><a href="#">Local community</a></li>
+                    <li><a href="#">Legal &amp; regulatory bodies</a></li>
+                    <li><a href="#">Outsource partners</a></li>
+                    <li><a href="#">Suppliers</a></li>
+                    <li><a href="#">Trade unions</a></li>
+                    <li><a href="#">Trade associations</a></li>
+                    <li><a href="#">Other</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new interested party</strong></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -414,40 +520,6 @@
 
 
             <div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Files</h4>
-                  <h4 class="panel-title pull-right text-muted">2</h4>
-                </div>
-                <div class="collapse" id="files">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <div class="col-xs-12">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-word-o fa-lg"></i>
-                            Survey.docx
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-excel-o fa-lg"></i>
-                            Survey results.xls
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
                 <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -476,129 +548,261 @@
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Non-conformities identified</h4>
-                  <h4 class="panel-title pull-right text-muted"><span class="label label-danger">Overdue</span></h4>
+                  <h4 class="panel-title pull-left">Files</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
-                <div class="collapse" id="nonconformities">
+                <div class="collapse" id="files">
                   <div class="panel-body">
-
+                    <div class="form-group">
+                      <div class="col-xs-12">
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-image-o fa-lg"></i>
+                            Image name here.jpg
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <div class="btn-group">
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-file-video-o fa-lg"></i>
+                            Video filename goes here.mov
+                          </button>
+                          <button type="button" class="btn btn-default">
+                            <i class="fa fa-times-circle no-margin fa-lg"></i>
+                          </button>
+                        </div>
+                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#communications" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">SC11. Communications</h4>
+                  <h4 class="panel-title pull-right text-muted">1</h4>
+                </div>
+                <div class="collapse" id="communications">
+                  <div class="panel-body">
                     <div>
                       <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
+                        <div class="panel-heading clearfix collapsed" href="#communication-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>NC129</strong>
-                            Extrusion failed in service
-                          </div>
-                          <div class="pull-right">
-                            <span class="label label-danger">Overdue</span>
-                          </div>
+                          <strong>CN136</strong> Customer service survey
                         </div>
-                        <div class="collapse" id="nonconformity-1">
+                        <div class="collapse" id="communication-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Description</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Extrusion failed in service">
-                  			        <button type="button" class="btn btn-link clear-field">
+                  		        <label class="control-label col-sm-4 col-xs-12">Description</label>
+                  		        <div class="col-sm-8 col-xs-12">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">CN136</span>
+                                  <input type="text" class="form-control" placeholder="Description" value="Customer service survey"/>
+                                </div>
+                  		        </div>
+                  	        </div>
+                            <div class="form-group">
+                              <label class="control-label col-xs-4">Interested party type</label>
+                              <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Customers" placeholder="Interested party type" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Customers</a></li>
+                                    <li><a href="#">Employees</a></li>
+                                    <li><a href="#">Management</a></li>
+                                    <li><a href="#">Financial stakeholders</a></li>
+                                    <li><a href="#">Local community</a></li>
+                                    <li><a href="#">Legal &amp; regulatory bodies</a></li>
+                                    <li><a href="#">Outsource partners</a></li>
+                                    <li><a href="#">Suppliers</a></li>
+                                    <li><a href="#">Trade unions</a></li>
+                                    <li><a href="#">Trade associations</a></li>
+                                    <li><a href="#">Other</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new interested party type</strong></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                              <label class="control-label col-xs-4">Communication type</label>
+                              <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Ad hoc" placeholder="Communication type" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Ad hoc</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new communication type</strong></a></li>
+                                  </ul>
+                                </div>
+                              </div>
+                            </div>
+                            
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4">Logged by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Logged by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        
+                  	        <div class="form-group">
+                              <label class="control-label col-xs-4">Logged date</label>
+                              <div class="col-xs-8">
+                                <input type="text" class="form-control" placeholder="Logged date" value="8 Jun 2015">
+                                <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Closed
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Cancelled
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Plan exists?</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Yes
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    No
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                              </div>
+                            </div>
+                            
+                  	        <hr>
+                            <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
                                 <button type="button" class="btn btn-default pull-right">Delete</button>
                               </div>
                             </div>
                 	        </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link btn-add">Add communication</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">SC7. Non-conformities</h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-danger">Open - no actions</span>
+                    <span class="text-muted">1</span>
+                  </h4>
+                </div>
+                <div class="collapse" id="nonconformities">
+                  <div class="panel-body">
+                    <div>
                       <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#nonconformity-2" data-toggle="collapse" aria-expanded="false">
+                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>NC130</strong>
-                            Paint blemishes on panel
-                          </div>
                           <div class="pull-right">
-                            <span class="label label-success">Closed</span>
+                            <span class="label label-danger">Open - no actions</span>
                           </div>
+                          <strong>NC509</strong> Instrument calibration not properly documented
                         </div>
-                        <div class="collapse" id="nonconformity-2">
+                        <div class="collapse" id="nonconformity-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Description</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Paint blemishes on panel">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC509</span>
+                                  <input type="text" class="form-control" value="Instrument calibration not properly documented" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button> 
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">IA123</span>
+                                  <input type="text" class="form-control" value="Warehouse activities - receiving" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Notes</label>
+                  		        <div class="col-xs-8">
+                                <textarea class="form-control" rows="3" placeholder="Notes"></textarea>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Reported date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Reported date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Closed
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Cancelled
-                                  </button>
+                  		        <label class="control-label col-xs-4">Reported by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Reported by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
                                 </div>
                   		        </div>
                   	        </div>
+                  	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Plan exists?</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Yes
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    No
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
                                 <button type="button" class="btn btn-default pull-right">Delete</button>
                               </div>
                             </div>
@@ -608,73 +812,187 @@
                     </div>
 
                     <div class="text-center">
-                      <button type="button" class="btn btn-link">Add non-conformity</button>
+                      <button type="button" class="btn btn-link">Add a non-conformity</button>
                     </div>
 
                   </div>
                 </div>
               </div>
+              
               <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#patch-actions" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Patch actions</h4>
-                  <h4 class="panel-title pull-right text-muted"><span class="label label-warning">Open</span></h4>
+                  <h4 class="panel-title pull-left">SC5. Corrective actions</h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-warning">Open - with plan</span> 
+                    <span class="text-muted">1</span>
+                  </h4>
                 </div>
-                <div class="collapse" id="patch-actions">
+                <div class="collapse" id="corrective-actions">
                   <div class="panel-body">
-
                     <div>
                       <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
+                        <div class="panel-heading clearfix collapsed" href="#corrective-action-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="pull-left">
-                            <strong>PA129</strong> Replace wing mirror
+                            <strong>CA129</strong>
+                            Fix machine calibration
                           </div>
                           <div class="pull-right">
-                            9 Sep 2015 <span class="label label-warning">Open</span>
+                            9 Sep 2015 <span class="label label-success">Verified</span>
                           </div>
                         </div>
-                        <div class="collapse" id="action-1">
+                        <div class="collapse" id="corrective-action-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Action item</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Replace wing mirror">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">CA129</span>
+                                  <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button> 
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Status</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group pull-left">
+                                  <button type="button" class="btn btn-default">Open</button>
+                                  <button type="button" class="btn btn-default">Completed</button>
+                                  <button type="button" class="btn btn-info active">Verified</button>
+                                </div>
+                                <button type="button" class="btn btn-default pull-right">Cancelled</button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Owner</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="NC">
+                  		        <label class="control-label col-xs-4">Completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Sep 2015" placeholder="Completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Target date</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="20 Jun 2015">
-                      			    <button type="button" class="btn btn-link clear-field">
+                  		        <label class="control-label col-xs-4">Completed by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Completed by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li class="active"><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target verified date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="16 Sep 2015" placeholder="Target verified date">
+                  			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                  			        <div class="btn-group">
-                    			        <a class="btn btn-default">Open</a>
-                    			        <a class="btn btn-info">Closed</a>
-                  			        </div>
+                  		        <label class="control-label col-xs-4">Verified date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="19 Sep 2015" placeholder="Verified date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                  		        <label class="control-label col-xs-4">Verified as effective by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Steve Saunders" placeholder="Verified as effective by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
                                 <button type="button" class="btn btn-default pull-right">Delete</button>
                               </div>
                             </div>
@@ -682,56 +1000,781 @@
                         </div>
                       </div>
                       <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#action-2" data-toggle="collapse" aria-expanded="false">
+                        <div class="panel-heading clearfix collapsed" href="#corrective-action-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                           <div class="pull-left">
-                            <strong>PA130</strong> Paint blemishes on panel - repaint
+                            <strong>CA142</strong>
+                            Replace sprockets
                           </div>
                           <div class="pull-right">
-                            9 Sep 2015 <span class="label label-success">Closed</span>
+                            9 Jan 2016 <span class="label label-warning">Open - with plan</span>
                           </div>
                         </div>
-                        <div class="collapse" id="action-2">
+                        <div class="collapse" id="corrective-action-2">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Action item</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Paint blemishes on panel - repaint">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">CA142</span>
+                                  <input type="text" class="form-control" value="Replace sprockets" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button> 
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div> 
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Status</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group pull-left">
+                                  <button type="button" class="btn btn-info active">Open</button>
+                                  <button type="button" class="btn btn-default">Completed</button>
+                                </div>
+                                <button type="button" class="btn btn-default pull-right">Cancelled</button>
+                  		        </div>
+                  	        </div>
+                  	         
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>                	        
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#corrective-action-3" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            New corrective action
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="corrective-action-3">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Creation date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Owner</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="NC">
+                  		        <label class="control-label col-xs-4">Created by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                  			        <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">CA159</span>
+                                  <input type="text" class="form-control" value="" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button> 
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>               	         
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Target completion date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>                	        
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#corrective-action-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            Existing corrective action
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="corrective-action-4">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-info active">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                    	        <label class="control-label col-xs-4">Existing action</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Existing action" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><strong>CA146</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA145</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA144</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA143</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA142</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA141</strong> Fix machine calibration</a></li>
+                                    <li><a href="#"><strong>CA140</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA139</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA138</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA137</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA136</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA135</strong> Fix machine calibration</a></li>
+                                    <li><a href="#"><strong>CA134</strong> Train sales staff</a></li>
+                                    <li><a href="#"><strong>CA133</strong> Find better supplier</a></li>
+                                    <li><a href="#"><strong>CA132</strong> Refit old stock</a></li>
+                                    <li><a href="#"><strong>CA131</strong> Test all components</a></li>
+                                    <li><a href="#"><strong>CA130</strong> Replace sprockets</a></li>
+                                    <li><a href="#"><strong>CA129</strong> Fix machine calibration</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new corrective action</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>                	        
+                	        </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link">Add corrective action</button>
+                    </div>
+        	        </div>
+                </div>
+              </div>
+              
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">SC8. Improvements</h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-warning">Open - in progress</span>
+                    <span class="text-muted">1</span>
+                  </h4>
+                </div>
+                <div class="collapse" id="improvement-opportunities">
+                  <div class="panel-body">
+                    <div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>IM731</strong>
+                            Buy new machines
+                          </div>
+                          <div class="pull-right">
+                            <span class="label label-success">Verified</span>
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-1">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">IM731</span>
+                                  <input type="text" class="form-control" value="Buy new machines" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>                    		        
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Status</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group pull-left">
+                                  <button type="button" class="btn btn-default">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-info active">
+                                    Verified
+                                  </button>
+                                </div>
+                                <button type="button" class="btn btn-default pull-right">
+                                  Cancelled
+                                </button>                                
+                  		        </div>
+                  	        </div>
+                  	        
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Target date</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="20 Jun 2015">
-                      			    <button type="button" class="btn btn-link clear-field">
+                  		        <label class="control-label col-xs-4">Completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Sep 2015" placeholder="Completion date">
+                  			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
                   			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                  			        <div class="btn-group">
-                    			        <a class="btn btn-default">Open</a>
-                    			        <a class="btn btn-info">Closed</a>
-                  			        </div>
+                  		        <label class="control-label col-xs-4">Completed by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Completed by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target verified date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="16 Sep 2015" placeholder="Target verified date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
+                  		        <label class="control-label col-xs-4">Verified date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="19 Sep 2015" placeholder="Verified date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Verified as effective by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Steve Saunders" placeholder="Verified as effective by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            <strong>IM745</strong>
+                            Change design of production station
+                          </div>
+                          <div class="pull-right">
+                            <span class="label label-warning">Open - in progress</span>
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-2">
+                          <div class="panel-body">
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">IM745</span>
+                                  <input type="text" class="form-control" value="Change design of production station" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>                    		        
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Status</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group pull-left">
+                                  <button type="button" class="btn btn-info active">
+                                    Open
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Completed
+                                  </button>
+                                </div>
+                                <button type="button" class="btn btn-default pull-right">
+                                  Cancelled
+                                </button>                                
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-3" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            New improvement
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-3">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-info active">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Creation date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Created by</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Description</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">IM890</span>
+                                  <input type="text" class="form-control" value="" placeholder="Description">
+                                </div>
+                                <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>                    		        
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Linked to</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group">
+                                  <span class="input-group-addon" id="basic-addon1">NC123</span>
+                                  <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
+                                </div>
+                  		        </div>                    	        
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Owner</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Owner" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#">Jack Herbert</a></li>
+                                    <li><a href="#">Steve Ives</a></li>
+                                    <li><a href="#">Mark Leusink</a></li>
+                                    <li><a href="#">Steve Saunders</a></li>
+                                    <li class="active"><a href="#">Mike Smith</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new user</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Plan in place?</label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    Yes
+                                  </button>
+                                  <button type="button" class="btn btn-default">
+                                    No
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Target completion date</label>
+                  		        <div class="col-xs-8">
+                  			        <input type="text" class="form-control" value="" placeholder="Target completion date">
+                  			        <button type="button" class="btn btn-link clear-field">
+                  			          <i class="fa fa-times-circle"></i>
+                  			        </button>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
+                                <button type="button" class="btn btn-default pull-right">Delete</button>
+                              </div>
+                            </div>
+                	        </div>
+                        </div>
+                      </div>
+                      <div class="panel panel-default bootcards-panel-collapsing">
+                        <div class="panel-heading clearfix collapsed" href="#improvement-4" data-toggle="collapse" aria-expanded="false">
+                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                          <div class="pull-left">
+                            Existing improvement
+                          </div>
+                          <div class="pull-right">
+                          </div>
+                        </div>
+                        <div class="collapse" id="improvement-4">
+                          <div class="panel-body">
+                            <div class="form-group">
+                  		        <label class="control-label col-xs-4"></label>
+                  		        <div class="col-xs-8">
+                          	    <div class="btn-group isometrica-btn-toggle">
+                                  <button type="button" class="btn btn-default">
+                                    New
+                                  </button>
+                                  <button type="button" class="btn btn-info active">
+                                    Existing
+                                  </button>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <div class="form-group">
+                  		        <label class="control-label col-xs-4">Existing improvement</label>
+                  		        <div class="col-xs-8">
+                                <div class="input-group isometrica-typeahead">
+                                  <input type="text" class="form-control" value="" placeholder="Existing improvement" data-toggle="dropdown"/>
+                                  <span class="input-group-btn" data-toggle="dropdown">
+                                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                                  </span>
+                                  <ul class="dropdown-menu dropdown-menu-right">
+                                    <li><a href="#"><strong>IM747</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM746</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM745</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM744</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM743</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM742</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM741</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM740</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM739</strong> Change design of production station</a></li>
+                                    <li><a href="#"><strong>IM738</strong> Install fire escape</a></li>
+                                    <li><a href="#"><strong>IM737</strong> Extend factory</a></li>
+                                    <li><a href="#"><strong>IM736</strong> Change design of production station</a></li>
+                                    <li role="separator" class="divider"></li>
+                                    <li><a href="#"><strong>Add new improvement</strong></a></li>
+                                  </ul>
+                                </div>
+                  		        </div>
+                  	        </div>
+                  	        <hr>
+                  	        <div class="form-group">
+                              <div class="col-sm-8 col-sm-offset-4 clearfix">
+                                <button type="button" class="btn btn-default pull-left">Save</button>
                                 <button type="button" class="btn btn-default pull-right">Delete</button>
                               </div>
                             </div>
@@ -739,11 +1782,9 @@
                         </div>
                       </div>
                     </div>
-
                     <div class="text-center">
-                      <button type="button" class="btn btn-link btn-add">Add patch action</button>
+                      <button type="button" class="btn btn-link">Add improvement</button>
                     </div>
-
                   </div>
                 </div>
               </div>

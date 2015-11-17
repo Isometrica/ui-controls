@@ -3171,11 +3171,13 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 .isometrica-org-setup-multiadd th {
   min-width: 180px; }
 
-.isometrica-org-setup-multiadd th.short {
-  min-width: 120px;
-  width: 120px; }
+.isometrica-org-setup-multiadd th.short,
+.isometrica-org-setup-multiadd td.short {
+  min-width: 140px;
+  width: 140px; }
 
-.isometrica-org-setup-multiadd th.long {
+.isometrica-org-setup-multiadd th.long,
+.isometrica-org-setup-multiadd td.long {
   min-width: 300px; }
 
 .isometrica-org-setup-multiadd th.icon,
