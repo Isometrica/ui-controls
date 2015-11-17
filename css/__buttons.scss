@@ -305,3 +305,32 @@
     }
   }
 }
+
+
+
+.isometrica-documentlink-btn-group {
+  margin-right: 0 !important;
+  width: 100%;
+  
+  .btn {
+    text-align: left;
+    
+    &:first-child {
+      width: 90%;
+    }
+  
+    i.double-height {
+      line-height: 40px;
+    }
+    
+    i.pull-left {
+      margin-right: 15px;
+    }
+    
+    div {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+}

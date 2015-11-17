@@ -399,21 +399,41 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Name</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Name" value="John Smith"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
+  		        <label class="control-label col-xs-4">Person name</label>
+  		        <div class="col-xs-8">
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Mike Smith" placeholder="Person name" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Jack Herbert</a></li>
+                    <li><a href="#">Steve Ives</a></li>
+                    <li><a href="#">Mark Leusink</a></li>
+                    <li><a href="#">Steve Saunders</a></li>
+                    <li class="active"><a href="#">Mike Smith</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new user</strong></a></li>
+                  </ul>
+                </div>
+  		        </div>
+  	        </div>
+  	        <div class="form-group">
               <label class="control-label col-xs-4">Role</label>
               <div class="col-xs-8">
-                <input type="text" class="form-control" placeholder="Role" value="BCM manager"/>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Quality manager" placeholder="Role" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Environmental manager</a></li>
+                    <li><a href="#">IT manager</a></li>
+                    <li class="active"><a href="#">Quality manager</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new role</strong></a></li>
+                  </ul>
+                </div>
               </div>
             </div>
             <div class="form-group">
@@ -426,23 +446,114 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Competency description</label>
+  		        <label class="control-label col-xs-4">Competency description</label>
+  		        <div class="col-xs-8">
+    		        <div class="input-group">
+                  <input type="text" class="form-control" value="Good knowledge of the BCM lifecycle" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
+                </div>
+                <div class="input-group">
+                  <input type="text" class="form-control" value="Basic knowledge of the BCM" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
+                </div>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="" placeholder="Add competency" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Good knowledge of the BCM lifecycle</a></li>
+                    <li><a href="#">Good understanding of the management system</a></li>
+                    <li><a href="#">Good understanding of IS requirements</a></li>
+                    <li><a href="#">Basic knowledge of the BCM</a></li>
+                    <li><a href="#">Good understanding of risk assessment</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new competency</strong></a></li>
+                  </ul>
+                </div>
+  		        </div>
+  	        </div>
+  	        <hr>
+  	        <div class="form-group">
+              <label class="control-label col-xs-4">Date needed by</label>
               <div class="col-xs-8">
-                <textarea class="form-control" placeholder="Competency description">Understanding of ISO9001 management system</textarea>
+                <input type="text" class="form-control" placeholder="Date needed by" value="30 Jan 2016"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
               </div>
             </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Date trained</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" placeholder="Date trained" value="9 Nov 2015"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Outcome</label>
+              <div class="col-xs-8">
+                <select class="form-control">
+                  <option></option>
+                  <option>Attended</option>
+                  <option selected="">Passed</option>
+                  <option>Failed</option>
+                  <option>Rescheduled</option>
+                  <option>Cancelled</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Visibility</label>
+              <div class="col-xs-8">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-default">Open</button>
+                  <button type="button" class="btn btn-info active">Restricted</button>
+                </div>
+              </div>
+            </div>
 
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                <div class="panel-heading clearfix collapsed" href="#notes-1" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
                   <h4 class="panel-title pull-left">Notes on training required</h4>
                   <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
-                <div class="collapse" id="notes">
+                <div class="collapse" id="notes-1">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes-2" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes on training assessment</h4>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes-2">
                   <div class="panel-body">
 
                     <div class="isometrica-rich-text-control">
@@ -464,65 +575,11 @@
                 </div>
               </div>
 
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#report" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Training report</h4>
-                  <h4 class="panel-title pull-right"><span class="label label-success">Passed</span></h4>
-                </div>
-                <div class="collapse" id="report">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Date needed by</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Date needed by" value="30 Jun 2015"/>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Date trained</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Date trained" value="5 Jul 2015"/>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Outcome</label>
-                      <div class="col-xs-8">
-                        <div class="form-control-with-status">
-                          <select class="form-control">
-                            <option></option>
-                            <option>Attended</option>
-                            <option selected="">Passed</option>
-                            <option>Failed</option>
-                            <option>No longer required</option>
-                            <option>Rescheduled</option>
-                          </select>
-                          <span class="label label-success status-indicator"></span>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Visibility</label>
-                      <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-info">Open</button>
-                          <button type="button" class="btn btn-default">Restricted</button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
 
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">File(s)</h4>
+                  <h4 class="panel-title pull-left">Files</h4>
                   <h4 class="panel-title pull-right text-muted">1</h4>
                 </div>
                 <div class="collapse" id="files">
