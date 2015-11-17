@@ -371,13 +371,15 @@
 .list-group-item {
   i {
     opacity: 1;
-
+    
+    /*
     &.pull-left {
       position: relative;
       top: 4px;
       font-size: 32px;
       color: #999;
     }
+    */
   }
 
   .list-group-item-content {

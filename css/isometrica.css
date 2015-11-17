@@ -446,15 +446,21 @@ body > .bootcards-container > .row {
 
 .isometrica-documentlink-btn-group {
   margin-right: 0 !important;
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .isometrica-documentlink-btn-group .btn {
     text-align: left; }
     .isometrica-documentlink-btn-group .btn:first-child {
-      width: 90%; }
+      width: 100%;
+      border-radius: 4px !important; }
+    .isometrica-documentlink-btn-group .btn:nth-child(2) {
+      position: absolute;
+      right: 0;
+      top: 0; }
     .isometrica-documentlink-btn-group .btn i.double-height {
       line-height: 40px; }
     .isometrica-documentlink-btn-group .btn i.pull-left {
-      margin-right: 15px; }
+      margin-right: 15px !important; }
     .isometrica-documentlink-btn-group .btn div {
       white-space: nowrap;
       overflow: hidden;
@@ -1527,12 +1533,15 @@ input:focus ~ .clear-field {
 
 /* List group items - icon positioning */
 .list-group-item i {
-  opacity: 1; }
-  .list-group-item i.pull-left {
-    position: relative;
-    top: 4px;
-    font-size: 32px;
-    color: #999; }
+  opacity: 1;
+  /*
+    &.pull-left {
+      position: relative;
+      top: 4px;
+      font-size: 32px;
+      color: #999;
+    }
+    */ }
 
 .list-group-item .list-group-item-content {
   overflow: hidden;
