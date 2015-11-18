@@ -208,18 +208,6 @@ body > .bootcards-container > .row {
 .list-group-item .btn, .list-group-item .btn-group {
   margin-right: 5px; }
 
-.form-group .btn,
-.form-group .btn-group {
-  margin-bottom: 5px;
-  margin-right: 10px; }
-  .form-group .btn.pull-right,
-  .form-group .btn-group.pull-right {
-    margin-right: 0; }
-
-.form-group .btn-group .btn {
-  margin-bottom: 0;
-  margin-right: 0; }
-
 .btn-primary,
 .ios .btn-primary {
   background: #006e9e;
@@ -1054,38 +1042,34 @@ body > .bootcards-container > .row {
   .isometrica-risk-grading td {
     color: white !important; }
 
-/*
-.desktop .list-group label {
-  font-weight: bold;
-}
-*/
 .inline-dropdown {
   display: inline-block; }
 
-/*
-input.form-value {
-  border-color: transparent !important;
-  background: transparent !important;
-  color: #333 !important;
-  box-shadow: none !important;
-  padding-left: 0;
-}
-*/
-/*
-.isometrica-btn-toggle { // Toggle
-  //overflow: hidden;
-  //white-space: nowrap;
+/* Consistent bottom margin for form buttons, fields, etc */
+.form-group {
+  margin-bottom: 10px; }
+  .form-group .btn,
+  .form-group .btn-group,
+  .form-group .input-group,
+  .form-group .form-control {
+    margin-bottom: 5px; }
 
-  .btn {
-    @media (max-width: 767px) {
-      font-size: 12px !important;
-      line-height: 20px;
-      padding-left: 7px;
-      padding-right: 7px;
-    }
-  }
-}
-*/
+/* Consistent right margin for inline form buttons/groups */
+.form-group .btn,
+.form-group .btn-group {
+  margin-right: 10px; }
+  .form-group .btn.pull-right,
+  .form-group .btn-group.pull-right {
+    margin-right: 0; }
+
+/* Reset for nested elements */
+.form-group .btn-group .btn {
+  margin-bottom: 0;
+  margin-right: 0; }
+
+.form-group .input-group .form-control {
+  margin-bottom: 0; }
+
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
@@ -1262,6 +1246,11 @@ input:focus ~ .clear-field {
 
 .android .clear-field {
   right: 0; }
+
+/* Search form */
+.search-form .form-control,
+.search-form .btn {
+  margin-bottom: 0; }
 
 /* Form layout */
 .ios .form-horizontal .form-group,

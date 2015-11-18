@@ -1,42 +1,48 @@
 
 
-/*
-.desktop .list-group label {
-  font-weight: bold;
-}
-*/
+
 
 .inline-dropdown {
   display: inline-block;
 }
 
-/*
-input.form-value {
-  border-color: transparent !important;
-  background: transparent !important;
-  color: #333 !important;
-  box-shadow: none !important;
-  padding-left: 0;
-}
-*/
 
-/*
-.isometrica-btn-toggle { // Toggle
-  //overflow: hidden;
-  //white-space: nowrap;
 
-  .btn {
-    @media (max-width: 767px) {
-      font-size: 12px !important;
-      line-height: 20px;
-      padding-left: 7px;
-      padding-right: 7px;
-    }
+
+/* Consistent bottom margin for form buttons, fields, etc */
+
+.form-group {
+  margin-bottom: 10px;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
   }
 }
-*/
 
+/* Consistent right margin for inline form buttons/groups */
 
+.form-group .btn,
+.form-group .btn-group {
+  margin-right: 10px;
+  
+  &.pull-right {
+    margin-right: 0;
+  }
+}
+
+/* Reset for nested elements */
+
+.form-group .btn-group .btn {
+  margin-bottom: 0;
+  margin-right: 0; 
+}
+
+.form-group .input-group .form-control {
+  margin-bottom: 0;
+}
 
 
 
@@ -315,6 +321,15 @@ input:focus ~ .clear-field {
   right: 0;
 }
 
+
+/* Search form */
+
+.search-form {
+  .form-control,
+  .btn {
+    margin-bottom: 0;
+  }
+}
 
 /* Form layout */
 

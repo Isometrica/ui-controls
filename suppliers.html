@@ -122,7 +122,7 @@
       			<h4 class="panel-title pull-left text-success">
         			Reviewed Jun 2015
         		</h4>
-      			<button type="button" class="btn btn-default pull-right">
+      			<button type="button" class="btn btn-default pull-right" data-toggle="modal" data-target=".settings-modal">
       			  <i class="fa fa-gear fa-lg no-margin"></i>
       			</button>
     			</div>
@@ -987,6 +987,66 @@
                       </tr>
                     </tbody>
                   </table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal fade settings-modal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-left">
+      			<button type="button" class="btn btn-default" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="modal-title">Settings</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="modal-body">
+            <div class="form-group">
+              <label class="control-label col-xs-4">Review date</label>
+              <div class="col-xs-8">
+                <input type="text" class="form-control" value="31 Dec 2015" placeholder="Review date"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <hr>
+            <div class="form-group">
+              <label class="control-label col-xs-4">Notify me</label>
+              <div class="col-xs-8">
+                <div class="btn-group pull-left">
+                  <button type="button" class="btn btn-info active">Yes</button>
+                  <button type="button" class="btn btn-default">No</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-xs-4">When</label>
+              <div class="col-xs-8">
+                <div class="input-group">
+                  <input type="text" class="form-control" value="2" placeholder="Notification time"/>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">weeks before <span class="caret"></span></button>
+                    <ul class="dropdown-menu pull-right">
+                      <li><a href="#">days before</a></li>
+                      <li class="active"><a href="#">weeks before</a></li>
+                      <li><a href="#">months before</a></li>
+                    </ul>
+                  </div>
                 </div>
               </div>
             </div>
