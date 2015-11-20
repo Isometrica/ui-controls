@@ -295,15 +295,24 @@
 
 .isometrica-documentlink-btn-group {
   margin-right: 0 !important;
-  width: 100%;
+  //width: 100%;
   position: relative;
+  padding-right: 41px !important; /* Space for close button */
   
   .btn {
     text-align: left;
     
     &:first-child {
-      width: 100%;
-      border-radius: 4px !important;
+      //width: 100%;
+      //border-radius: 4px !important;
+      padding-left: 40px;
+      
+      i {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        margin-top: -20px;
+      }
     }
     
     &:nth-child(2) {

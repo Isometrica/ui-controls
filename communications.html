@@ -193,12 +193,21 @@
                   <h4 class="list-group-item-heading">CN136</h4>
                 </div>
               </div>
+            </div>
+            <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Interested party type</p>
+                  <h4 class="list-group-item-heading">Customers</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Communication type</p>
                   <h4 class="list-group-item-heading">Customer</h4>
                 </div>
               </div>
+              
             </div>
             <div class="row">
               <div class="col-sm-6">
@@ -460,18 +469,18 @@
               <label class="control-label col-xs-4">Interested party type</label>
               <div class="col-xs-8">
                 <div class="input-group isometrica-typeahead">
-                  <input type="text" class="form-control" value="Customer" placeholder="Interested party type" data-toggle="dropdown"/>
+                  <input type="text" class="form-control" value="Customers" placeholder="Interested party type" data-toggle="dropdown"/>
                   <span class="input-group-btn" data-toggle="dropdown">
                     <button class="btn btn-default" type="button"><span class="caret"></span></button>
                   </span>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li class="active"><a href="#">Customer</a></li>
-                    <li><a href="#">Supplier</a></li>
-                    <li><a href="#">Regulator</a></li>
+                    <li class="active"><a href="#">Customers</a></li>
+                    <li><a href="#">Employees</a></li>
+                    <li><a href="#">Financial stakeholders</a></li>
                     <li><a href="#">Local community</a></li>
-                    <li><a href="#">Trade union</a></li>
-                    <li><a href="#">Employee</a></li>
+                    <li><a href="#">Legal &amp; regulatory bodies</a></li>
                     <li><a href="#">Trade association</a></li>
+                    <li><a href="#">Trade unions</a></li>
                     <li><a href="#">Other</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#"><strong>Add new interested party type</strong></a></li>
@@ -488,13 +497,17 @@
                     <button class="btn btn-default" type="button"><span class="caret"></span></button>
                   </span>
                   <ul class="dropdown-menu dropdown-menu-right">
-                    <li class="active"><a href="#">Ad hoc</a></li>
+                    <li><a href="#">Internal meeting</a></li>
+                    <li><a href="#">Other internal</a></li>
+                    <li class="active"><a href="#">Customer</a></li>
+                    <li><a href="#">Supplier/partner</a></li>
+                    <li><a href="#">Other external</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#"><strong>Add new communication type</strong></a></li>
                   </ul>
                 </div>
               </div>
-            </div>
+            </div>            
             <div class="form-group">
   		        <label class="control-label col-xs-4">Logged by</label>
   		        <div class="col-xs-8">
@@ -522,6 +535,45 @@
             </div>
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#notifications" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notifications</h4>
+                  <h4 class="panel-title pull-right text-muted">2</h4>
+                </div>
+                <div class="collapse" id="notifications">
+                  <div class="panel-body">
+                    <div class="form-group">
+          		        <label class="control-label col-xs-4">User(s)</label>
+          		        <div class="col-xs-8">
+            		        <div class="btn-group">
+              		        <button class="btn btn-default" type="button" disabled="">Mike Smith</button>
+                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
+            		        </div>
+            		        <div class="btn-group">
+              		        <button class="btn btn-default" type="button" disabled="">Steve Ives</button>
+                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
+            		        </div>
+                        <div class="input-group isometrica-typeahead">
+                          <input type="text" class="form-control" value="" placeholder="Add user" data-toggle="dropdown"/>
+                          <span class="input-group-btn" data-toggle="dropdown">
+                            <button class="btn btn-default" type="button"><span class="caret"></span></button>
+                          </span>
+                          <ul class="dropdown-menu dropdown-menu-right">
+                            <li><a href="#">Jack Herbert</a></li>
+                            <li><a href="#">Steve Ives</a></li>
+                            <li><a href="#">Mark Leusink</a></li>
+                            <li><a href="#">Steve Saunders</a></li>
+                            <li><a href="#">Mike Smith</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#"><strong>Add new user</strong></a></li>
+                          </ul>
+                        </div>
+          		        </div>
+          	        </div>
+                  </div>
+                </div>
+              </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#contact-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -1279,7 +1331,7 @@
                                   <button type="button" class="btn btn-default">
                                     Yes
                                   </button>
-                                  <button type="button" class="btn btn-default">
+                                  <button type="button" class="btn btn-info active">
                                     No
                                   </button>
                                 </div>
@@ -1469,16 +1521,11 @@
                   		        <label class="control-label col-xs-4">Status</label>
                   		        <div class="col-xs-8">
                           	    <div class="btn-group pull-left">
-                                  <button type="button" class="btn btn-default">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-info active">
-                                    Verified
-                                  </button>
+                                  <button type="button" class="btn btn-default">Open</button>
+                                  <button type="button" class="btn btn-default">Completed</button>
+                                  <button type="button" class="btn btn-info active">Verified</button>
                                 </div>
-                                <button type="button" class="btn btn-default pull-right">
-                                  Cancelled
-                                </button>                                
+                                <button type="button" class="btn btn-default pull-right">Cancelled</button>
                   		        </div>
                   	        </div>
                   	        

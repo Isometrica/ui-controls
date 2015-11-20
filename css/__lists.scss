@@ -1,10 +1,4 @@
-.bootcards-list {
-  .list-group-item-text {
-    &.pull-right {
-      line-height: 24px;
-    }
-  }
-}
+
 
 /* Cards */
 
@@ -334,8 +328,17 @@
 /* List */
 
 .bootcards-list {
+  
   .panel-body {
     padding: 10px 15px;
+  }
+
+  .list-group-item {
+    .status-indicator.pull-left {
+      margin-left: 1px;
+      margin-right: 17px;
+      margin-top: 1px;
+    }
   }
 
   .list-group-item.active,
@@ -353,6 +356,13 @@
       color: #c7ddef !important;
     }
   }
+
+  .list-group-item-text {
+    &.pull-right {
+      line-height: 24px;
+    }
+  }  
+  
 }
 
 .desktop .bootcards-list {

@@ -434,13 +434,18 @@ body > .bootcards-container > .row {
 
 .isometrica-documentlink-btn-group {
   margin-right: 0 !important;
-  width: 100%;
-  position: relative; }
+  position: relative;
+  padding-right: 41px !important;
+  /* Space for close button */ }
   .isometrica-documentlink-btn-group .btn {
     text-align: left; }
     .isometrica-documentlink-btn-group .btn:first-child {
-      width: 100%;
-      border-radius: 4px !important; }
+      padding-left: 40px; }
+      .isometrica-documentlink-btn-group .btn:first-child i {
+        position: absolute;
+        left: 12px;
+        top: 50%;
+        margin-top: -20px; }
     .isometrica-documentlink-btn-group .btn:nth-child(2) {
       position: absolute;
       right: 0;
@@ -1057,7 +1062,7 @@ body > .bootcards-container > .row {
 /* Consistent right margin for inline form buttons/groups */
 .form-group .btn,
 .form-group .btn-group {
-  margin-right: 10px; }
+  margin-right: 5px; }
   .form-group .btn.pull-right,
   .form-group .btn-group.pull-right {
     margin-right: 0; }
@@ -1309,9 +1314,6 @@ input:focus ~ .clear-field {
   border-color: transparent;
   padding-left: 0; }
 
-.bootcards-list .list-group-item-text.pull-right {
-  line-height: 24px; }
-
 /* Cards */
 .bootcards-cards .panel-title .label {
   padding-top: .25em;
@@ -1499,6 +1501,11 @@ input:focus ~ .clear-field {
 .bootcards-list .panel-body {
   padding: 10px 15px; }
 
+.bootcards-list .list-group-item .status-indicator.pull-left {
+  margin-left: 1px;
+  margin-right: 17px;
+  margin-top: 1px; }
+
 .bootcards-list .list-group-item.active,
 .bootcards-list .list-group-item.active:focus,
 .bootcards-list .list-group-item.active:hover {
@@ -1513,6 +1520,9 @@ input:focus ~ .clear-field {
   .bootcards-list .list-group-item.active:focus .list-group-item-text,
   .bootcards-list .list-group-item.active:hover .list-group-item-text {
     color: #c7ddef !important; }
+
+.bootcards-list .list-group-item-text.pull-right {
+  line-height: 24px; }
 
 .desktop .bootcards-list .panel-heading {
   border-radius: 0; }
