@@ -163,7 +163,7 @@
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Meetings &amp; communications</h4>
-              <p class="list-group-item-text">4</p>
+              <p class="list-group-item-text">8 types</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editDepartments">
@@ -184,7 +184,7 @@
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Competencies</h4>
-              <p class="list-group-item-text">5</p>
+              <p class="list-group-item-text">5 levels</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editActivities">
@@ -281,7 +281,7 @@
           </div>
           <div class="org-setup-offset-container">
             <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
-              <h3 class="panel-title">Meetings &amp; communications <span class="text-muted">(6 types)</span></h3>
+              <h3 class="panel-title">Meetings &amp; communications <span class="text-muted">(8 types)</span></h3>
               <i class="fa fa-arrows-h arrow left"></i>
               <i class="fa fa-arrows-h arrow right"></i>
               <span class="label label-success status-indicator"></span>
@@ -295,7 +295,7 @@
               <span class="label label-warning status-indicator"></span>
             </div>
             <div class="panel-heading" data-toggle="modal" data-target="#editCompetencies">
-              <h3 class="panel-title">Competencies <span class="text-muted">(5)</span></h3>
+              <h3 class="panel-title">Competencies <span class="text-muted">(5 levels)</span></h3>
               <span class="label label-warning status-indicator"></span>
             </div>
             <div class="offset left">
@@ -309,7 +309,7 @@
             <div class="offset right">
               <div class="panel panel-default">
                 <div class="panel-heading first last" data-toggle="modal" data-target="#editInterestedParties">
-                  <h3 class="panel-title">Customers &amp; interested parties <span class="text-muted">(10)</span></h3>
+                  <h3 class="panel-title">Customers &amp; interested parties <br><span class="text-muted">(10)</span></h3>
                   <span class="label label-warning status-indicator"></span>
                 </div>
               </div>
@@ -350,7 +350,7 @@
 
   <!-- Edit Mission -->
   <div class="modal fade isometrica-orgsetup-modal" id="editMission">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -506,7 +506,7 @@
 
   <!-- Edit Management systemns -->
   <div class="modal fade isometrica-orgsetup-modal" id="editManagementSystems">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -661,9 +661,9 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th class="long">Name</th>
+                  <th>Name</th>
                   <th>Manager</th>
-                  <th>Type</th>
+                  <th class="short">Type</th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -1082,6 +1082,13 @@
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
             <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Description</th>
+                  <th class="short">Color code</th>
+                  <th class="icon"></th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="None"></td>
@@ -1171,7 +1178,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Meeting types</h4>
+          <h4 class="modal-title">Meeting &amp; communications types</h4>
         </div>
         <div class="collapse in" id="guidance-panel-editMeetingTypes">
           <div class="guidance-panel">
@@ -1202,45 +1209,138 @@
         <form class="form-horizontal isometrica-org-setup-multiadd">
           <div class="table-responsive">
             <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name</th>
+                  <th>Type</th>
+                  <th class="icon"></th>
+                </tr>
+              </thead>
               <tbody>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Ad hoc"></td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
-                </tr>
-                <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Weekly management"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Weekly operations"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Weekly sales"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Management review"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Weekly support"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Departmental meeting"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Monthly management"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="All hands meeting"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Quarterly management review"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Customer panel"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Internal meeting</option>
+                      <option>Other internal</option>
+                      <option selected="">Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="6-monthly management review"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Supplier review"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option selected="">Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Annual management review"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Shareholders meeting"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option selected="">Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Internal meeting</option>
+                      <option>Other internal</option>
+                      <option>Customer</option>
+                      <option>Supplier/partner</option>
+                      <option>Other external</option>
+                    </select>
+                  </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
               </tbody>
@@ -1254,7 +1354,7 @@
 
   <!-- Edit Products -->
   <div class="modal fade isometrica-orgsetup-modal" id="editProducts">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -1390,7 +1490,7 @@
 
   <!-- Edit Interested Parties -->
   <div class="modal fade isometrica-orgsetup-modal" id="editInterestedParties">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -1445,18 +1545,18 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="ABC Corp"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="ABC"></td>
-                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Customer</option>
-                      <option>Employee</option>
-                      <option>Financial stakeholder</option>
+                      <option selected="">Customers</option>
+                      <option>Employees</option>
+                      <option>Financial stakeholders</option>
                       <option>Local community</option>
-                      <option>Legal & regulatory</option>
-                      <option>Outsource partner</option>
-                      <option>Supplier</option>
-                      <option>Trade union</option>
+                      <option>Legal & regulatory bodies</option>
+                      <option>Trade associations</option>
+                      <option>Trade unions</option>
+                      <option>Other</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1464,18 +1564,18 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="UK Government ICO"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="ICO"></td>
-                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option>Customer</option>
-                      <option>Employee</option>
-                      <option>Financial stakeholder</option>
+                      <option selected="">Customers</option>
+                      <option>Employees</option>
+                      <option>Financial stakeholders</option>
                       <option>Local community</option>
-                      <option selected="">Legal & regulatory</option>
-                      <option>Outsource partner</option>
-                      <option>Supplier</option>
-                      <option>Trade union</option>
+                      <option>Legal & regulatory bodies</option>
+                      <option>Trade associations</option>
+                      <option>Trade unions</option>
+                      <option>Other</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1483,18 +1583,18 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="UK Health &amp; Safety Executive"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="HSE"></td>
-                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option>Customer</option>
-                      <option>Employee</option>
-                      <option>Financial stakeholder</option>
+                      <option selected="">Customers</option>
+                      <option>Employees</option>
+                      <option>Financial stakeholders</option>
                       <option>Local community</option>
-                      <option selected="">Legal & regulatory</option>
-                      <option>Outsource partner</option>
-                      <option>Supplier</option>
-                      <option>Trade union</option>
+                      <option>Legal & regulatory bodies</option>
+                      <option>Trade associations</option>
+                      <option>Trade unions</option>
+                      <option>Other</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1502,18 +1602,18 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="XYZ Inc"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="XYZ"></td>
-                  <td><input class="form-control" type="text" placeholder="Web URL" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Web URL" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option>Customer</option>
-                      <option>Employee</option>
-                      <option>Financial stakeholder</option>
+                      <option selected="">Customers</option>
+                      <option>Employees</option>
+                      <option>Financial stakeholders</option>
                       <option>Local community</option>
-                      <option>Legal & regulatory</option>
-                      <option>Outsource partner</option>
-                      <option selected="">Supplier</option>
-                      <option>Trade union</option>
+                      <option>Legal & regulatory bodies</option>
+                      <option>Trade associations</option>
+                      <option>Trade unions</option>
+                      <option>Other</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1524,15 +1624,15 @@
                   <td><input class="form-control" type="text" placeholder="Web URL"></td>
                   <td>
                     <select class="form-control">
-                      <option selected=""></option>
-                      <option>Customer</option>
-                      <option>Employee</option>
-                      <option>Financial stakeholder</option>
+                      <option></option>
+                      <option>Customers</option>
+                      <option>Employees</option>
+                      <option>Financial stakeholders</option>
                       <option>Local community</option>
-                      <option>Legal & regulatory</option>
-                      <option>Outsource partner</option>
-                      <option>Supplier</option>
-                      <option>Trade union</option>
+                      <option>Legal & regulatory bodies</option>
+                      <option>Trade associations</option>
+                      <option>Trade unions</option>
+                      <option>Other</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
@@ -1548,7 +1648,7 @@
 
   <!-- Edit Activities -->
   <div class="modal fade isometrica-orgsetup-modal" id="editActivities">
-    <div class="modal-dialog modal-lg">
+    <div class="modal-dialog modal-xl">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -1595,7 +1695,7 @@
                   <th>Name</th>
                   <th class="short">Short name</th>
                   <th>Link</th>
-                  <th>Owner</th>
+                  <th class="short">Owner</th>
                   <th class="short">Type</th>
                   <th class="icon"></th>
                 </tr>
@@ -1604,7 +1704,7 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Extrusion"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC015"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="Lorem ipsum"></td>
+                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1626,7 +1726,7 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Thermoforming"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC016"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="Lorem ipsum"></td>
+                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/est"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1646,9 +1746,9 @@
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Longer Title Goes Here Lorem Ipsum Dolor Est"></td>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Longer Title Goes Here Lorem "></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC017"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="Lorem ipsum"></td>
+                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/compendum"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -1711,7 +1811,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Suppliers &amp; partners</h4>
+          <h4 class="modal-title">Supplier &amp; partner types</h4>
         </div>
         <div class="collapse in" id="guidance-panel-editSupplierTypes">
           <div class="guidance-panel">

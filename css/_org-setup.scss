@@ -237,12 +237,12 @@
   }
 
   th {
-    min-width: 180px;
+    //min-width: 180px;
   }
 
   th.short,
   td.short {
-    min-width: 140px;
+    //min-width: 140px;
     width: 140px;
   }
   
@@ -254,7 +254,7 @@
   th.icon,
   td.icon {
     width: 40px;
-    min-width: 40px;
+    //min-width: 40px;
   }
 
   .form-control {
@@ -286,12 +286,6 @@
 /* Mission & goals edit */
 
 #editMission {
-  .modal-dialog {
-    @media (min-width: 992px) {
-      width: 960px;
-    }
-  }
-
   .modal-content {
     overflow: hidden;
   }
@@ -309,6 +303,25 @@
     }
   }
 }
+
+
+/* Modal widths */
+
+.isometrica-org-setup-page {
+  .modal-dialog {
+    &.modal-lg {
+      @media (min-width: 992px) {
+        width: 600px !important;
+      }      
+    }
+    &.modal-xl {
+      @media (min-width: 992px) {
+        width: 960px !important;
+      }      
+    }
+  } 
+}
+
 
 
 .ios.isometrica-org-setup-page {

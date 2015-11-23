@@ -3195,12 +3195,8 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 .isometrica-org-setup-multiadd .table > thead > tr > th:first-child {
   border-left: 0; }
 
-.isometrica-org-setup-multiadd th {
-  min-width: 180px; }
-
 .isometrica-org-setup-multiadd th.short,
 .isometrica-org-setup-multiadd td.short {
-  min-width: 140px;
   width: 140px; }
 
 .isometrica-org-setup-multiadd th.long,
@@ -3209,8 +3205,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 
 .isometrica-org-setup-multiadd th.icon,
 .isometrica-org-setup-multiadd td.icon {
-  width: 40px;
-  min-width: 40px; }
+  width: 40px; }
 
 .isometrica-org-setup-multiadd .form-control {
   border-color: transparent;
@@ -3232,10 +3227,6 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     display: inline-block; }
 
 /* Mission & goals edit */
-@media (min-width: 992px) {
-  #editMission .modal-dialog {
-    width: 960px; } }
-
 #editMission .modal-content {
   overflow: hidden; }
 
@@ -3246,6 +3237,15 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   border-bottom: 0; }
   #editMission .isometrica-rich-text-control .isometrica-rich-text-input {
     height: 400px; }
+
+/* Modal widths */
+@media (min-width: 992px) {
+  .isometrica-org-setup-page .modal-dialog.modal-lg {
+    width: 600px !important; } }
+
+@media (min-width: 992px) {
+  .isometrica-org-setup-page .modal-dialog.modal-xl {
+    width: 960px !important; } }
 
 .ios.isometrica-org-setup-page .org-setup-container {
   padding-top: 30px;
