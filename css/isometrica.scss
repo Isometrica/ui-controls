@@ -128,17 +128,6 @@ body > .bootcards-container > .row {
 
 
 
-/* BUTTONS */
-
-.btn[disabled] {
-  opacity: 1;
-}
-
-.btn {
-  i.margin-left {
-    margin-right: 0 !important;
-  }
-}
 
 
 
@@ -203,6 +192,7 @@ body > .bootcards-container > .row {
     .panel-title {
       color: #333;
       padding: 8px 0;
+      text-transform: none !important;
     }
   }
 

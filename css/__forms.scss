@@ -220,6 +220,11 @@
   .form-horizontal .form-group .btn {
     margin: 2px 0;
   }
+  
+  .control-label {
+    text-transform: none !important;
+    font-size: 14px !important;
+  }
 }
 
 
@@ -289,7 +294,7 @@
 .ios .form-control[disabled],
 .android .form-control[disabled] {
   background: transparent;
-  border-color: transparent;
+  //border-color: transparent;
 }
 
 
@@ -384,7 +389,11 @@ input:focus ~ .clear-field {
   }
 
   textarea {
-    line-height: 26px;
+    //line-height: 26px;
+  }
+  
+  .form-control {
+    padding-left: 0;
   }
 }
 

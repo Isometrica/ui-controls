@@ -613,20 +613,20 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Risk name</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4">Risk name</label>
+              <div class="col-sm-8">
                 <div class="input-group">
                   <span class="input-group-addon" id="basic-addon1">RK18</span>
                   <input type="text" class="form-control" placeholder="Name" value="Spillage of solvent"/>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
                 </div>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
               </div>
             </div>
             <div class="form-group">
-  		        <label class="control-label col-xs-4">Risk type</label>
-  		        <div class="col-xs-8">
+  		        <label class="control-label col-sm-4">Risk type</label>
+  		        <div class="col-sm-8">
                 <div class="input-group isometrica-typeahead">
                   <input type="text" class="form-control" value="Industrial accident" placeholder="Risk type" data-toggle="dropdown"/>
                   <span class="input-group-btn" data-toggle="dropdown">
@@ -649,19 +649,15 @@
   		        </div>
   	        </div>
   	        <div class="form-group">
-  		        <label class="control-label col-xs-4">Risk owner(s)</label>
-  		        <div class="col-xs-8">
-    		        <div class="input-group">
-                  <input type="text" class="form-control" value="Sarah Jones" disabled=""/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                  </span>
+  		        <label class="control-label col-sm-4">Risk owner(s)</label>
+  		        <div class="col-sm-8">
+    		        <div class="btn-group">
+                  <button class="btn btn-default" type="button" disabled="">Sarah Jones</button>
+                  <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                 </div>
-                <div class="input-group">
-                  <input type="text" class="form-control" value="Mike Smith" disabled=""/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                  </span>
+                <div class="btn-group">
+                  <button class="btn btn-default" type="button" disabled="">Mike Smith</button>
+                  <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                 </div>
                 <div class="input-group isometrica-typeahead">
                   <input type="text" class="form-control" value="" placeholder="Add risk owner" data-toggle="dropdown"/>
@@ -686,21 +682,15 @@
   		        </div>
   	        </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Related risks</label>
-              <div class="col-xs-8">
-                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">RK12</span>
-                  <input type="text" class="form-control" value="Explosion of binder" disabled=""/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                  </span>
+              <label class="control-label col-sm-4">Related risks</label>
+              <div class="col-sm-8">
+                <div class="btn-group">
+                  <button class="btn btn-default" type="button" disabled=""><strong>RK12</strong> Explosion of binder</button>
+                  <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                 </div>
-                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">RK17</span>
-                  <input type="text" class="form-control" value="Warehouse flood" disabled=""/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                  </span>
+                <div class="btn-group">
+                  <button class="btn btn-default" type="button" disabled=""><strong>RK17</strong> Warehouse flood</button>
+                  <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                 </div>
                 <div class="input-group isometrica-typeahead">
                   <input type="text" class="form-control" value="" placeholder="Add related risk" data-toggle="dropdown"/>
@@ -730,8 +720,8 @@
                 <div class="collapse" id="notifications">
                   <div class="panel-body">
                     <div class="form-group">
-          		        <label class="control-label col-xs-4">User(s)</label>
-          		        <div class="col-xs-8">
+          		        <label class="control-label col-sm-4">User(s)</label>
+          		        <div class="col-sm-8">
             		        <div class="btn-group">
               		        <button class="btn btn-default" type="button" disabled="">Mike Smith</button>
                           <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
@@ -769,19 +759,15 @@
                 <div class="collapse" id="tags">
                   <div class="panel-body">
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Activity or process(es)</label>
-                      <div class="col-xs-8">
-                        <div class="input-group">
-                          <input type="text" class="form-control" value="Customer support" disabled=""/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                          </span>
+                      <label class="control-label col-sm-4">Activity or process(es)</label>
+                      <div class="col-sm-8">
+                        <div class="btn-group">
+                          <button class="btn btn-default" type="button" disabled="">Customer support</button>
+                          <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                         </div>
-                        <div class="input-group">
-                          <input type="text" class="form-control" value="Thermoforming" disabled=""/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
-                          </span>
+                        <div class="btn-group">
+                          <button class="btn btn-default" type="button" disabled="">Thermoforming</button>
+                          <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
                         </div>
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="" placeholder="Add activity or process" data-toggle="dropdown"/>
@@ -800,8 +786,8 @@
                     </div>
                     <hr>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Department or site(s)</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Department or site(s)</label>
+                      <div class="col-sm-8">
                         <div class="input-group">
                           <input type="text" class="form-control" value="Customer service" disabled=""/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -830,8 +816,8 @@
                     </div>
                     <hr>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Management program(s)</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Management program(s)</label>
+                      <div class="col-sm-8">
                         <div class="input-group">
                           <input type="text" class="form-control" value="Business Continuity Management" disabled=""/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -901,7 +887,7 @@
                     <div class="form-group">
                       <div class="col-xs-12">
                         <div class="btn-group">
-                          <button type="button" class="btn btn-default">
+                          <button type="button" class="btn btn-default" disabled="">
                             <i class="fa fa-file-image-o fa-lg"></i>
                             Image name here.jpg
                           </button>
@@ -910,7 +896,7 @@
                           </button>
                         </div>
                         <div class="btn-group">
-                          <button type="button" class="btn btn-default">
+                          <button type="button" class="btn btn-default" disabled="">
                             <i class="fa fa-file-video-o fa-lg"></i>
                             Video filename goes here.mov
                           </button>
@@ -927,17 +913,18 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#risk-scoring-current" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Current risk score</h4>
+                  
                   <h4 class="panel-title pull-right">
                     <span class="label label-warning">59 - Medium</span>
                   </h4>
+                  <h4 class="panel-title">Current risk score</h4>
                 </div>
                 <div class="collapse" id="risk-scoring-current">
                   <div class="isometrica-risk-grading">
               	    <table class="table">
                 	    <tbody>
                   	    <tr>
-                    	    <th rowspan="6" class="impacts-heading"><span>Impacts</span></th>
+                    	    <th rowspan="6" class="impacts-heading hidden-xs"><span>Impacts</span></th>
                     	    <th class="impact-label">Catastrophic</th>
                     	    <td class="impact impact-low">45</td>
                     	    <td class="impact impact-medium">65</td>
@@ -985,7 +972,7 @@
                     	    <th class="impact-label">High</th>
                     	    <th class="impact-label">V.High</th>
                   	    </tr>
-                  	    <tr>
+                  	    <tr class="hidden-xs">
                     	    <th colspan="2">&nbsp;</th>
                     	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
                   	    </tr>
@@ -995,8 +982,8 @@
                   <div class="panel-body">
                     
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Scored by</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Scored by</label>
+                      <div class="col-sm-8">
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -1015,8 +1002,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Date</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Date</label>
+                      <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1029,14 +1016,15 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#evaluation" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Evaluation &amp; treatment</h4>
+                  
                   <h4 class="panel-title pull-right text-muted">Terminate</h4>
+                  <h4 class="panel-title">Evaluation &amp; treatment</h4>
                 </div>
                 <div class="collapse" id="evaluation">
                   <div class="panel-body">
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Comments</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Comments</label>
+                      <div class="col-sm-8">
                         <textarea class="form-control" rows="3" placeholder="Comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1044,8 +1032,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Previous loss experience</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Previous loss experience</label>
+                      <div class="col-sm-8">
                         <textarea class="form-control" rows="3" placeholder="Previous loss experience">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1053,8 +1041,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Treatment priority</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Treatment priority</label>
+                      <div class="col-sm-8">
                         <div class="btn-group">
                           <button type="button" class="btn btn-default">Low</button>
                           <button type="button" class="btn btn-default">Medium</button>
@@ -1063,8 +1051,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Treatment decision</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Treatment decision</label>
+                      <div class="col-sm-8">
                         <div class="btn-group">
                           <button type="button" class="btn btn-default">Tolerate</button>
                           <button type="button" class="btn btn-default">Treat</button>
@@ -1079,17 +1067,18 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#risk-scoring-target" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Target risk score</h4>
+                  
                   <h4 class="panel-title pull-right">
                     <span class="label label-success">8 - Low</span>
                   </h4>
+                  <h4 class="panel-title">Target risk score</h4>
                 </div>
                 <div class="collapse" id="risk-scoring-target">
                   <div class="isometrica-risk-grading">
               	    <table class="table">
                 	    <tbody>
                   	    <tr>
-                    	    <th rowspan="6" class="impacts-heading"><span>Impacts</span></th>
+                    	    <th rowspan="6" class="impacts-heading hidden-xs"><span>Impacts</span></th>
                     	    <th class="impact-label">Catastrophic</th>
                     	    <td class="impact impact-low">45</td>
                     	    <td class="impact impact-medium">65</td>
@@ -1137,7 +1126,7 @@
                     	    <th class="impact-label">High</th>
                     	    <th class="impact-label">V.High</th>
                   	    </tr>
-                  	    <tr>
+                  	    <tr class="hidden-xs">
                     	    <th colspan="2">&nbsp;</th>
                     	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
                   	    </tr>
@@ -1147,8 +1136,8 @@
                   <div class="panel-body">
                     
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Scored by</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Scored by</label>
+                      <div class="col-sm-8">
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -1167,8 +1156,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Date</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Date</label>
+                      <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -1181,11 +1170,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Corrective actions</h4>
                   <h4 class="panel-title pull-right">
                     <span class="label label-warning">Open - with plan</span> 
                     <span class="text-muted">1</span>
                   </h4>
+                  <h4 class="panel-title">Corrective actions</h4>
+                  
                 </div>
                 <div class="collapse" id="corrective-actions">
                   <div class="panel-body">
@@ -1193,19 +1183,17 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#corrective-action-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>CA129</strong>
-                            Fix machine calibration
-                          </div>
                           <div class="pull-right">
-                            9 Sep 2015 <span class="label label-success">Verified</span>
+                            <span class="hidden-xs">9 Sep 2015</span>
+                            <span class="label label-success">Verified</span>
                           </div>
+                          <strong>CA129</strong> Fix machine calibration
                         </div>
                         <div class="collapse" id="corrective-action-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                   			        <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">CA129</span>
                                   <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description">
@@ -1216,8 +1204,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -1225,8 +1213,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1245,8 +1233,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     Yes
@@ -1258,8 +1246,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Status</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Status</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group pull-left">
                                   <button type="button" class="btn btn-default">Open</button>
                                   <button type="button" class="btn btn-default">Completed</button>
@@ -1271,8 +1259,8 @@
                   	        <hr>
                   	        
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1280,8 +1268,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="12 Sep 2015" placeholder="Completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1289,8 +1277,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Completed by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Completed by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Jack Herbert" placeholder="Completed by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1310,8 +1298,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target verified date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target verified date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="16 Sep 2015" placeholder="Target verified date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1319,8 +1307,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Verified date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Verified date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="19 Sep 2015" placeholder="Verified date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1328,8 +1316,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Verified as effective by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Verified as effective by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Steve Saunders" placeholder="Verified as effective by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1361,19 +1349,17 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#corrective-action-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>CA142</strong>
-                            Replace sprockets
-                          </div>
+                          <strong>CA142</strong> Replace sprockets
                           <div class="pull-right">
-                            9 Jan 2016 <span class="label label-warning">Open - with plan</span>
+                            <span class="hidden-xs">9 Jan 2016</span>
+                            <span class="label label-warning">Open - with plan</span>
                           </div>
                         </div>
                         <div class="collapse" id="corrective-action-2">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                   			        <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">CA142</span>
                                   <input type="text" class="form-control" value="Replace sprockets" placeholder="Description">
@@ -1384,8 +1370,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -1393,8 +1379,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1413,8 +1399,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     Yes
@@ -1426,8 +1412,8 @@
                   		        </div>
                   	        </div> 
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Status</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Status</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group pull-left">
                                   <button type="button" class="btn btn-info active">Open</button>
                                   <button type="button" class="btn btn-default">Completed</button>
@@ -1438,8 +1424,8 @@
                   	         
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1469,8 +1455,8 @@
                         <div class="collapse" id="corrective-action-3">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4"></label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     New
@@ -1483,8 +1469,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Creation date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Creation date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1492,8 +1478,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Created by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Created by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1513,8 +1499,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                   			        <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">CA159</span>
                                   <input type="text" class="form-control" value="" placeholder="Description">
@@ -1525,8 +1511,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -1534,8 +1520,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1554,8 +1540,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-default">
                                     Yes
@@ -1568,8 +1554,8 @@
                   	        </div>               	         
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1599,8 +1585,8 @@
                         <div class="collapse" id="corrective-action-4">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4"></label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-default">
                                     New
@@ -1612,8 +1598,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                    	        <label class="control-label col-xs-4">Existing action</label>
-                  		        <div class="col-xs-8">
+                    	        <label class="control-label col-sm-4">Existing action</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="" placeholder="Existing action" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1665,11 +1651,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Improvements</h4>
                   <h4 class="panel-title pull-right">
                     <span class="label label-warning">Open - in progress</span>
                     <span class="text-muted">1</span>
                   </h4>
+                  <h4 class="panel-title">Improvements</h4>
+                  
                 </div>
                 <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">
@@ -1677,19 +1664,16 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM731</strong>
-                            Buy new machines
-                          </div>
                           <div class="pull-right">
                             <span class="label label-success">Verified</span>
                           </div>
+                          <strong>IM731</strong> Buy new machines
                         </div>
                         <div class="collapse" id="improvement-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">IM731</span>
                                   <input type="text" class="form-control" value="Buy new machines" placeholder="Description">
@@ -1700,8 +1684,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -1709,8 +1693,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1729,8 +1713,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     Yes
@@ -1742,8 +1726,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Status</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Status</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group pull-left">
                                   <button type="button" class="btn btn-default">Open</button>
                                   <button type="button" class="btn btn-default">Completed</button>
@@ -1755,8 +1739,8 @@
                   	        
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1764,8 +1748,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="12 Sep 2015" placeholder="Completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1773,8 +1757,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Completed by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Completed by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Jack Herbert" placeholder="Completed by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1794,8 +1778,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target verified date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target verified date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="16 Sep 2015" placeholder="Target verified date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1803,8 +1787,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Verified date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Verified date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="19 Sep 2015" placeholder="Verified date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1812,8 +1796,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Verified as effective by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Verified as effective by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Steve Saunders" placeholder="Verified as effective by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1844,19 +1828,16 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM745</strong>
-                            Change design of production station
-                          </div>
                           <div class="pull-right">
                             <span class="label label-warning">Open - in progress</span>
                           </div>
+                          <strong>IM745</strong> Change design of production station
                         </div>
                         <div class="collapse" id="improvement-2">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">IM745</span>
                                   <input type="text" class="form-control" value="Change design of production station" placeholder="Description">
@@ -1867,8 +1848,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -1876,8 +1857,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -1896,8 +1877,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     Yes
@@ -1909,8 +1890,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Status</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Status</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group pull-left">
                                   <button type="button" class="btn btn-info active">
                                     Open
@@ -1926,8 +1907,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="9 Sep 2015" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1956,8 +1937,8 @@
                         <div class="collapse" id="improvement-3">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4"></label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-info active">
                                     New
@@ -1970,8 +1951,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Creation date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Creation date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -1979,8 +1960,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Created by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Created by</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -2000,8 +1981,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Description</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Description</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">IM890</span>
                                   <input type="text" class="form-control" value="" placeholder="Description">
@@ -2012,8 +1993,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Linked to</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Linked to</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group">
                                   <span class="input-group-addon" id="basic-addon1">NC123</span>
                                   <input type="text" class="form-control" value="Brackets getting corroded" disabled="">
@@ -2021,8 +2002,8 @@
                   		        </div>                    	        
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Owner</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Owner</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="" placeholder="Owner" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -2041,8 +2022,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Plan in place?</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Plan in place?</label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-default">
                                     Yes
@@ -2055,8 +2036,8 @@
                   	        </div>
                   	        <hr>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Target completion date</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Target completion date</label>
+                  		        <div class="col-sm-8">
                   			        <input type="text" class="form-control" value="" placeholder="Target completion date">
                   			        <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -2085,8 +2066,8 @@
                         <div class="collapse" id="improvement-4">
                           <div class="panel-body">
                             <div class="form-group">
-                  		        <label class="control-label col-xs-4"></label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4"></label>
+                  		        <div class="col-sm-8">
                           	    <div class="btn-group isometrica-btn-toggle">
                                   <button type="button" class="btn btn-default">
                                     New
@@ -2098,8 +2079,8 @@
                   		        </div>
                   	        </div>
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Existing improvement</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4">Existing improvement</label>
+                  		        <div class="col-sm-8">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="" placeholder="Existing improvement" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -2144,15 +2125,14 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Review</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
                   <h4 class="panel-title pull-right"><span class="label label-warning">Awaiting review</span></h4>
+                  <h4 class="panel-title">Review</h4>
                 </div>
                 <div class="collapse" id="review-info">
                   <div class="panel-body">
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Status</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Status</label>
+                      <div class="col-sm-8">
                         <div class="btn-group">
                           <button type="button" class="btn btn-info active">Awaiting review</button>
                           <button type="button" class="btn btn-default">Reviewed</button>
@@ -2160,8 +2140,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Last reviewed</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Last reviewed</label>
+                      <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -2169,8 +2149,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Reviewed by</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Reviewed by</label>
+                      <div class="col-sm-8">
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -2189,8 +2169,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Next scheduled review</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Next scheduled review</label>
+                      <div class="col-sm-8">
                         <input type="text" class="form-control" placeholder="Next scheduled review" value="8 Dec 2015"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -2198,8 +2178,8 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Comments</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4">Comments</label>
+                      <div class="col-sm-8">
                         <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -2327,8 +2307,8 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Review date</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4">Review date</label>
+              <div class="col-sm-8">
                 <input type="text" class="form-control" value="31 Dec 2015" placeholder="Review date"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -2337,8 +2317,8 @@
             </div>
             <hr>
             <div class="form-group">
-              <label class="control-label col-xs-4">Notify me</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4">Notify me</label>
+              <div class="col-sm-8">
                 <div class="btn-group pull-left">
                   <button type="button" class="btn btn-info active">Yes</button>
                   <button type="button" class="btn btn-default">No</button>
@@ -2346,8 +2326,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">When</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4">When</label>
+              <div class="col-sm-8">
                 <div class="input-group">
                   <input type="text" class="form-control" value="2" placeholder="Notification time"/>
                   <div class="input-group-btn">

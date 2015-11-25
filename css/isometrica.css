@@ -96,13 +96,6 @@ body > .bootcards-container > .row {
     height: 24px;
     cursor: pointer; }
 
-/* BUTTONS */
-.btn[disabled] {
-  opacity: 1; }
-
-.btn i.margin-left {
-  margin-right: 0 !important; }
-
 /* COLORS */
 .text-danger {
   color: #d85250 !important; }
@@ -143,7 +136,8 @@ body > .bootcards-container > .row {
 
 .android .panel-heading .panel-title {
   color: #333;
-  padding: 8px 0; }
+  padding: 8px 0;
+  text-transform: none !important; }
 
 .android .panel-heading .btn, .android .panel-heading .btn-group .btn {
   margin-left: 0; }
@@ -157,7 +151,12 @@ body > .bootcards-container > .row {
 .ios .panel-heading .btn {
   font-size: 16px !important; }
 
-/* LINKS & BUTTONS */
+.btn[disabled] {
+  opacity: 1; }
+
+.btn i.margin-left {
+  margin-right: 0 !important; }
+
 .desktop a:not(.btn):not(.list-group-item),
 .desktop .btn-link,
 .android a:not(.btn):not(.list-group-item),
@@ -266,11 +265,16 @@ body > .bootcards-container > .row {
     background: #23a5d5;
     color: white; }
 
-.ios .btn-default {
+.ios .btn-default,
+.ios .btn-default[disabled] {
   background: white;
   border-color: #bbb;
   color: #444; }
-  .ios .btn-default:hover, .ios .btn-default:focus, .ios .btn-default:active, .ios .btn-default.active {
+  .ios .btn-default:hover,
+  .ios .btn-default:focus,
+  .ios .btn-default:active,
+  .ios .btn-default.active,
+  .ios .btn-default[disabled]:hover, .ios .btn-default[disabled]:focus, .ios .btn-default[disabled]:active, .ios .btn-default[disabled].active {
     background: #e6e6e6;
     border: 1px solid #bbb;
     color: #444; }
@@ -320,109 +324,103 @@ body > .bootcards-container > .row {
   padding-right: 5px; }
 
 .android .btn {
-  text-transform: uppercase;
   font-weight: 500;
   font-size: 14px;
   border-radius: 3px;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.3); }
+  .android .btn:hover, .android .btn:focus, .android .btn:active, .android .btn.active {
+    outline: none;
+    box-shadow: none; }
+
+.android .btn-link {
+  box-shadow: none; }
+  .android .btn-link:hover, .android .btn-link:focus, .android .btn-link:active, .android .btn-link.active {
+    background: transparent; }
 
 .android .btn-primary,
 .android .btn-primary[disabled] {
   background: #337ab7;
   border-color: #337ab7;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: white; }
   .android .btn-primary:hover,
   .android .btn-primary:focus,
   .android .btn-primary:active,
   .android .btn-primary.active,
   .android .btn-primary[disabled]:hover, .android .btn-primary[disabled]:focus, .android .btn-primary[disabled]:active, .android .btn-primary[disabled].active {
     background: #337ab7;
-    color: white;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    outline: none; }
+    border-color: #337ab7;
+    color: white; }
 
 .android .btn-info,
 .android .btn-info[disabled] {
   background: #33b5e5;
   border-color: #33b5e5;
-  color: white;
-  font-size: 14px;
-  text-transform: uppercase;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: white; }
   .android .btn-info:hover,
   .android .btn-info:focus,
   .android .btn-info:active,
   .android .btn-info.active,
   .android .btn-info[disabled]:hover, .android .btn-info[disabled]:focus, .android .btn-info[disabled]:active, .android .btn-info[disabled].active {
     background: #23a5d5;
-    color: white;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    outline: none; }
+    border-color: #23a5d5;
+    color: white; }
 
 .android .btn-default,
 .android .btn-default[disabled] {
   background: #dfdfdf;
   border-color: #dfdfdf;
-  font-size: 14px;
-  color: #444;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: #444; }
   .android .btn-default:hover,
   .android .btn-default:focus,
   .android .btn-default:active,
   .android .btn-default.active,
   .android .btn-default[disabled]:hover, .android .btn-default[disabled]:focus, .android .btn-default[disabled]:active, .android .btn-default[disabled].active {
     background: #cecece;
-    color: #444;
-    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.3);
-    outline: none; }
+    border-color: #cecece;
+    color: #444; }
 
 .android .btn-warning,
 .android .btn-warning[disabled] {
   background: #f0ad4e;
   border-color: #f0ad4e;
-  color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: white; }
   .android .btn-warning:hover,
   .android .btn-warning:focus,
   .android .btn-warning:active,
   .android .btn-warning.active,
   .android .btn-warning[disabled]:hover, .android .btn-warning[disabled]:focus, .android .btn-warning[disabled]:active, .android .btn-warning[disabled].active {
     background: #f0ad4e;
+    border-color: #f0ad4e;
     color: white; }
 
 .android .btn-danger,
 .android .btn-danger[disabled] {
   background: #d9534f;
   border-color: #d9534f;
-  color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: white; }
   .android .btn-danger:hover,
   .android .btn-danger:focus,
   .android .btn-danger:active,
   .android .btn-danger.active,
   .android .btn-danger[disabled]:hover, .android .btn-danger[disabled]:focus, .android .btn-danger[disabled]:active, .android .btn-danger[disabled].active {
     background: #d9534f;
+    border-color: #d9534f;
     color: white; }
 
 .android .btn-success,
 .android .btn-success[disabled] {
   background: #4cae4c;
   border-color: #4cae4c;
-  color: white;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3); }
+  color: white; }
   .android .btn-success:hover,
   .android .btn-success:focus,
   .android .btn-success:active,
   .android .btn-success.active,
   .android .btn-success[disabled]:hover, .android .btn-success[disabled]:focus, .android .btn-success[disabled]:active, .android .btn-success[disabled].active {
     background: #4cae4c;
+    border-color: #4cae4c;
     color: white; }
-
-.android .btn[disabled] {
-  box-shadow: none; }
 
 .android .modal-header .btn,
 .android .panel-heading .btn {
@@ -1187,6 +1185,10 @@ body > .bootcards-container > .row {
 .android .form-horizontal .form-group .btn {
   margin: 2px 0; }
 
+.android .control-label {
+  text-transform: none !important;
+  font-size: 14px !important; }
+
 .control-label-block,
 .form-horizontal .control-label-block {
   padding-top: 0;
@@ -1229,8 +1231,7 @@ body > .bootcards-container > .row {
 /* Disabled fields */
 .ios .form-control[disabled],
 .android .form-control[disabled] {
-  background: transparent;
-  border-color: transparent; }
+  background: transparent; }
 
 /* Clear field */
 .clear-field {
@@ -1298,8 +1299,8 @@ input:focus ~ .clear-field {
 .android .form-horizontal .form-group .control-label {
   padding-top: 7px; }
 
-.android textarea {
-  line-height: 26px; }
+.android .form-control {
+  padding-left: 0; }
 
 /* Input groups */
 .input-group + .input-group {
@@ -1635,7 +1636,13 @@ input:focus ~ .clear-field {
       position: relative;
       top: -1px;
       margin-left: 10px;
-      font-size: 12px; }
+      font-size: 12px;
+      /*
+      display: inline-block;
+      max-width: 70px;
+      white-space: normal;
+      line-height: 1.4;
+      */ }
       .bootcards-panel-collapsing .panel-heading .label.text-muted {
         color: #999; }
     .bootcards-panel-collapsing .panel-heading span + span {
