@@ -44,6 +44,14 @@
   margin-bottom: 0;
 }
 
+/* Smaller btn groups on mobile */
+
+.form-group .btn-group .btn {
+  @media (max-width:480px) {
+    font-size: 13px !important;
+  }
+}
+
 
 
 

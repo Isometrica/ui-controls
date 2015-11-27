@@ -1082,6 +1082,11 @@ body > .bootcards-container > .row {
 .form-group .input-group .form-control {
   margin-bottom: 0; }
 
+/* Smaller btn groups on mobile */
+@media (max-width: 480px) {
+  .form-group .btn-group .btn {
+    font-size: 13px !important; } }
+
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
