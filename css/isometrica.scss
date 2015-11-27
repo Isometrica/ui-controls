@@ -687,7 +687,6 @@ $status-indicator-size: 16px;
   .table>tfoot>tr>th,
   .table>thead>tr>td,
   .table>thead>tr>th {
-
     border-color: white !important;
     border-left: 2px solid white;
     border-top: 2px solid white;
@@ -695,6 +694,11 @@ $status-indicator-size: 16px;
     width: 14.2857%;
     padding: 10px !important;
     font-weight: 500;
+    
+    @media (max-width: 480px) {
+      max-width: 50px !important;
+      overflow: hidden;
+    }
 
     &.impacts-heading {
       position: relative;

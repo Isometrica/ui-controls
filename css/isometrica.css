@@ -935,6 +935,15 @@ body > .bootcards-container > .row {
     width: 14.2857%;
     padding: 10px !important;
     font-weight: 500; }
+    @media (max-width: 480px) {
+      .isometrica-risk-grading .table > tbody > tr > td,
+      .isometrica-risk-grading .table > tbody > tr > th,
+      .isometrica-risk-grading .table > tfoot > tr > td,
+      .isometrica-risk-grading .table > tfoot > tr > th,
+      .isometrica-risk-grading .table > thead > tr > td,
+      .isometrica-risk-grading .table > thead > tr > th {
+        max-width: 50px !important;
+        overflow: hidden; } }
     .isometrica-risk-grading .table > tbody > tr > td.impacts-heading,
     .isometrica-risk-grading .table > tbody > tr > th.impacts-heading,
     .isometrica-risk-grading .table > tfoot > tr > td.impacts-heading,
@@ -1633,18 +1642,11 @@ input:focus ~ .clear-field {
       color: #777;
       font-weight: normal; }
     .bootcards-panel-collapsing .panel-heading .label {
-      position: relative;
-      top: -1px;
-      margin-left: 10px;
-      font-size: 12px;
-      /*
-      display: inline-block;
-      max-width: 70px;
-      white-space: normal;
-      line-height: 1.4;
-      */ }
+      font-size: 13px; }
       .bootcards-panel-collapsing .panel-heading .label.text-muted {
-        color: #999; }
+        color: #999;
+        padding-left: 0;
+        padding-right: 0; }
     .bootcards-panel-collapsing .panel-heading span + span {
       margin-left: 8px; }
     .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
