@@ -380,7 +380,8 @@ input:focus ~ .clear-field {
 .search-form {
   .form-control,
   .btn {
-    margin-bottom: 0;
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
   }
 }
 

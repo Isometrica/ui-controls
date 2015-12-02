@@ -1299,7 +1299,8 @@ input:focus ~ .clear-field {
 /* Search form */
 .search-form .form-control,
 .search-form .btn {
-  margin-bottom: 0; }
+  margin-bottom: 0 !important;
+  margin-top: 0 !important; }
 
 /* Form layout */
 .ios .form-horizontal .form-group,
