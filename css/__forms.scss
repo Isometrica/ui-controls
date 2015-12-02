@@ -9,69 +9,7 @@
 
 
 
-/* Consistent bottom margin for form buttons, fields, etc */
 
-.form-group {
-  margin-bottom: 10px;
-  
-  .btn,
-  .btn-group,
-  .input-group,
-  .form-control {
-    margin-bottom: 5px;
-  }
-}
-
-.ios .form-group {
-  margin-bottom: 0;
-  
-  .btn,
-  .btn-group,
-  .input-group,
-  .form-control {
-    margin-bottom: 5px;
-    margin-top: 5px;
-  }  
-}
-
-/* Consistent right margin for inline form buttons/groups */
-
-.form-group .btn,
-.form-group .btn-group {
-  margin-right: 5px;
-  
-  &.pull-right {
-    margin-right: 0;
-  }
-}
-
-/* Reset for nested elements */
-
-.form-group .btn-group .btn {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  margin-top: 0 !important;
-}
-
-.form-group .input-group {
-  .form-control,
-  .btn {
-    margin-top: 0 !important;
-    margin-bottom: 0 !important;
-  }
-}
-
-.form-group .input-group .form-control {
-  margin-bottom: 0;
-}
-
-/* Smaller btn groups on mobile */
-
-.form-group .btn-group .btn {
-  @media (max-width:480px) {
-    font-size: 13px !important;
-  }
-}
 
 
 
@@ -198,10 +136,9 @@
   }
 
   .form-horizontal .form-group {
-    padding-top: 0;
-    padding-bottom: 0;
+    
     //border-color: transparent;
-    margin-left: 0 !important;
+    //margin-left: 0 !important;
     //border-bottom: 1px solid #ddd;
 
     label,
@@ -221,8 +158,8 @@
   }
 
   hr {
-    margin-top: 10px !important;
-    margin-bottom: 10px !important;
+    margin-top: 7px !important;
+    margin-bottom: 7px !important;
     //display: none !important;
     border-color: transparent !important;
   }
@@ -287,6 +224,13 @@
   display: inline-block;
 }
 
+.ios,
+.android { 
+  .form-group .label {
+    margin: 10px 0;
+  }
+}
+
 
 /* Dropdowns */
 
@@ -332,7 +276,8 @@
 
 .ios .form-control[disabled],
 .android .form-control[disabled] {
-  background: transparent;
+  background: #eee;
+  padding-left: 10px;
   //border-color: transparent;
 }
 
@@ -419,8 +364,8 @@ input:focus ~ .clear-field {
   }
 
   .bootcards-panel-collapsing:not(.full-width) .panel-body {
-    padding-top: 0;
-    padding-bottom: 0;
+    //padding-top: 0;
+    //padding-bottom: 0;
   }
 }
 
@@ -441,16 +386,8 @@ input:focus ~ .clear-field {
 
 /* Input groups */
 
-.input-group {
-  //margin-top: 8px;
-  //margin-bottom: 8px;
-
-  //&:first-child { margin-top: 0; }
-  //&:last-child { margin-bottom: 0; }
-}
-
 .input-group + .input-group {
-  margin-top: 8px;
+  //margin-top: 8px;
 }
 
 .input-group .btn {
@@ -458,22 +395,8 @@ input:focus ~ .clear-field {
   margin-bottom: 0;
 }
 
-.ios {
-  .input-group {
-    .input-group-btn > .btn {
-      border-radius: 3px;
-      border-width: 1px;
-      z-index: 9;
-    }
 
-    .input-group-addon {
-      background: transparent;
-      border-color: transparent;
-      padding-left: 0;
-    }
-  }
-}
-
+.ios,
 .android {
   .input-group {
     .input-group-btn > .btn {
@@ -493,3 +416,70 @@ input:focus ~ .clear-field {
   }
 }
 
+
+
+/* Consistent bottom margin for form buttons, fields, etc */
+
+.form-horizontal .form-group {
+  margin-bottom: 10px;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
+  }
+}
+
+.ios .form-horizontal .form-group {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }  
+}
+
+/* Consistent right margin for inline form buttons/groups */
+
+.form-group .btn,
+.form-group .btn-group {
+  margin-right: 5px;
+  
+  &.pull-right {
+    margin-right: 0;
+  }
+}
+
+/* Reset for nested elements */
+
+.form-group .btn-group .btn {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+
+.form-group .input-group {
+  .form-control,
+  .btn {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
+}
+
+.form-group .input-group .form-control {
+  margin-bottom: 0;
+}
+
+/* Smaller btn groups on mobile */
+
+.form-group .btn-group .btn {
+  @media (max-width:480px) {
+    font-size: 13px !important;
+  }
+}

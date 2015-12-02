@@ -1058,51 +1058,6 @@ body > .bootcards-container > .row {
 .inline-dropdown {
   display: inline-block; }
 
-/* Consistent bottom margin for form buttons, fields, etc */
-.form-group {
-  margin-bottom: 10px; }
-  .form-group .btn,
-  .form-group .btn-group,
-  .form-group .input-group,
-  .form-group .form-control {
-    margin-bottom: 5px; }
-
-.ios .form-group {
-  margin-bottom: 0; }
-  .ios .form-group .btn,
-  .ios .form-group .btn-group,
-  .ios .form-group .input-group,
-  .ios .form-group .form-control {
-    margin-bottom: 5px;
-    margin-top: 5px; }
-
-/* Consistent right margin for inline form buttons/groups */
-.form-group .btn,
-.form-group .btn-group {
-  margin-right: 5px; }
-  .form-group .btn.pull-right,
-  .form-group .btn-group.pull-right {
-    margin-right: 0; }
-
-/* Reset for nested elements */
-.form-group .btn-group .btn {
-  margin-bottom: 0 !important;
-  margin-right: 0 !important;
-  margin-top: 0 !important; }
-
-.form-group .input-group .form-control,
-.form-group .input-group .btn {
-  margin-top: 0 !important;
-  margin-bottom: 0 !important; }
-
-.form-group .input-group .form-control {
-  margin-bottom: 0; }
-
-/* Smaller btn groups on mobile */
-@media (max-width: 480px) {
-  .form-group .btn-group .btn {
-    font-size: 13px !important; } }
-
 .help-icon {
   margin-right: 5px;
   color: #bbb; }
@@ -1179,15 +1134,11 @@ body > .bootcards-container > .row {
 .ios .modal-body {
   padding-top: 0; }
 
-.ios .form-horizontal .form-group {
-  padding-top: 0;
-  padding-bottom: 0;
-  margin-left: 0 !important; }
-  .ios .form-horizontal .form-group label,
-  .ios .form-horizontal .form-group .form-control,
-  .ios .form-horizontal .form-group .btn {
-    margin-top: 5px;
-    margin-bottom: 5px; }
+.ios .form-horizontal .form-group label,
+.ios .form-horizontal .form-group .form-control,
+.ios .form-horizontal .form-group .btn {
+  margin-top: 5px;
+  margin-bottom: 5px; }
 
 .ios .form-horizontal .form-group .control-label {
   white-space: normal; }
@@ -1196,8 +1147,8 @@ body > .bootcards-container > .row {
   margin-top: 0; }
 
 .ios hr {
-  margin-top: 10px !important;
-  margin-bottom: 10px !important;
+  margin-top: 7px !important;
+  margin-bottom: 7px !important;
   border-color: transparent !important; }
 
 .ios textarea {
@@ -1239,6 +1190,10 @@ body > .bootcards-container > .row {
   padding: 5px 8px;
   display: inline-block; }
 
+.ios .form-group .label,
+.android .form-group .label {
+  margin: 10px 0; }
+
 /* Dropdowns */
 .dropdown-menu > li > a {
   padding: 7px 15px; }
@@ -1267,7 +1222,8 @@ body > .bootcards-container > .row {
 /* Disabled fields */
 .ios .form-control[disabled],
 .android .form-control[disabled] {
-  background: transparent; }
+  background: #eee;
+  padding-left: 10px; }
 
 /* Clear field */
 .clear-field {
@@ -1330,10 +1286,6 @@ input:focus ~ .clear-field {
   color: black;
   font-weight: 500; }
 
-.ios .bootcards-panel-collapsing:not(.full-width) .panel-body {
-  padding-top: 0;
-  padding-bottom: 0; }
-
 .android .form-horizontal .form-group .control-label {
   padding-top: 7px; }
 
@@ -1341,35 +1293,72 @@ input:focus ~ .clear-field {
   padding-left: 0; }
 
 /* Input groups */
-.input-group + .input-group {
-  margin-top: 8px; }
-
 .input-group .btn {
   margin-right: 0;
   margin-bottom: 0; }
 
-.ios .input-group .input-group-btn > .btn {
-  border-radius: 3px;
-  border-width: 1px;
-  z-index: 9; }
-
-.ios .input-group .input-group-addon {
-  background: transparent;
-  border-color: transparent;
-  padding-left: 0; }
-
+.ios .input-group .input-group-btn > .btn,
 .android .input-group .input-group-btn > .btn {
   border-radius: 3px;
   border-width: 1px;
   z-index: 9; }
 
+.ios .input-group .input-group-addon,
 .android .input-group .input-group-addon {
   background: #eee;
   border-color: transparent;
   color: #777; }
 
+.ios .input-group .form-control:not(:first-child),
 .android .input-group .form-control:not(:first-child) {
   padding-left: 10px; }
+
+/* Consistent bottom margin for form buttons, fields, etc */
+.form-horizontal .form-group {
+  margin-bottom: 10px; }
+  .form-horizontal .form-group .btn,
+  .form-horizontal .form-group .btn-group,
+  .form-horizontal .form-group .input-group,
+  .form-horizontal .form-group .form-control {
+    margin-bottom: 5px; }
+
+.ios .form-horizontal .form-group {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0; }
+  .ios .form-horizontal .form-group .btn,
+  .ios .form-horizontal .form-group .btn-group,
+  .ios .form-horizontal .form-group .input-group,
+  .ios .form-horizontal .form-group .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px; }
+
+/* Consistent right margin for inline form buttons/groups */
+.form-group .btn,
+.form-group .btn-group {
+  margin-right: 5px; }
+  .form-group .btn.pull-right,
+  .form-group .btn-group.pull-right {
+    margin-right: 0; }
+
+/* Reset for nested elements */
+.form-group .btn-group .btn {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important; }
+
+.form-group .input-group .form-control,
+.form-group .input-group .btn {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
+
+.form-group .input-group .form-control {
+  margin-bottom: 0; }
+
+/* Smaller btn groups on mobile */
+@media (max-width: 480px) {
+  .form-group .btn-group .btn {
+    font-size: 13px !important; } }
 
 /* Cards */
 .bootcards-cards .panel-title .label {
