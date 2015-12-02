@@ -1648,7 +1648,9 @@ input:focus ~ .clear-field {
       color: #777;
       font-weight: normal; }
     .bootcards-panel-collapsing .panel-heading .label {
-      font-size: 13px; }
+      font-size: 13px;
+      position: relative;
+      top: -1px; }
       .bootcards-panel-collapsing .panel-heading .label.status-indicator {
         position: relative;
         top: 2px; }
