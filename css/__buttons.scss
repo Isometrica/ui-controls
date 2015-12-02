@@ -303,6 +303,7 @@
 .isometrica-documentlink-btn-group {
   margin-right: 0 !important;
   //width: 100%;
+  max-width: 100%;
   position: relative;
   padding-right: 41px !important; /* Space for close button */
   
@@ -312,7 +313,8 @@
     &:first-child {
       //width: 100%;
       //border-radius: 4px !important;
-      padding-left: 40px;
+      padding-left: 40px !important;
+      max-width: 100%;
       
       i {
         position: absolute;
@@ -329,7 +331,7 @@
     }
   
     i.double-height {
-      line-height: 40px;
+      line-height: 2.15em;
     }
     
     i.pull-left {

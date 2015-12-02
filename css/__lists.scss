@@ -72,8 +72,6 @@
         font-size: 14px;
         font-weight: normal;
         color: #777;
-
-
       }
 
       i {
@@ -172,6 +170,7 @@
       .list-group-item {
         border-top: 0;
         margin-bottom: 0;
+        border-radius: 0;
       }
 
       .list-group {
@@ -206,6 +205,10 @@
     .bootcards-list {
       .panel-heading {
         border-bottom: 0;
+      }
+
+      .list-group-item {
+        border-radius: 0 !important;
       }
 
       .list-group-item-heading {
@@ -404,6 +407,7 @@
 
 .isometrica-mobile-list-view-container {
   padding-top: 15px;
+  overflow-y: auto;
 
   .bootcards-list {
     height: auto !important;
@@ -418,5 +422,9 @@
 }
 
 .ios .isometrica-mobile-list-view-container {
+  padding: 0;
+}
+
+.android .isometrica-mobile-list-view-container {
   padding: 0;
 }
