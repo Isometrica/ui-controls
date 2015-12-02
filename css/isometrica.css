@@ -1067,6 +1067,15 @@ body > .bootcards-container > .row {
   .form-group .form-control {
     margin-bottom: 5px; }
 
+.ios .form-group {
+  margin-bottom: 0; }
+  .ios .form-group .btn,
+  .ios .form-group .btn-group,
+  .ios .form-group .input-group,
+  .ios .form-group .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px; }
+
 /* Consistent right margin for inline form buttons/groups */
 .form-group .btn,
 .form-group .btn-group {
@@ -1077,8 +1086,14 @@ body > .bootcards-container > .row {
 
 /* Reset for nested elements */
 .form-group .btn-group .btn {
-  margin-bottom: 0;
-  margin-right: 0; }
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important; }
+
+.form-group .input-group .form-control,
+.form-group .input-group .btn {
+  margin-top: 0 !important;
+  margin-bottom: 0 !important; }
 
 .form-group .input-group .form-control {
   margin-bottom: 0; }
@@ -1166,7 +1181,8 @@ body > .bootcards-container > .row {
 
 .ios .form-horizontal .form-group {
   padding-top: 0;
-  padding-bottom: 0; }
+  padding-bottom: 0;
+  margin-left: 0 !important; }
   .ios .form-horizontal .form-group label,
   .ios .form-horizontal .form-group .form-control,
   .ios .form-horizontal .form-group .btn {
@@ -1178,6 +1194,11 @@ body > .bootcards-container > .row {
 
 .ios .form-horizontal .form-group:first-of-type {
   margin-top: 0; }
+
+.ios hr {
+  margin-top: 10px !important;
+  margin-bottom: 10px !important;
+  border-color: transparent !important; }
 
 .ios textarea {
   resize: none; }
@@ -1304,6 +1325,7 @@ input:focus ~ .clear-field {
 
 .ios .form-horizontal .form-group .control-label {
   padding-top: 8px;
+  color: #006e9e;
   color: black;
   font-weight: 500; }
 
@@ -1503,7 +1525,8 @@ input:focus ~ .clear-field {
 
 .ios .isometrica-container-listdetail .bootcards-cards .list-group > .row {
   margin: 0;
-  margin-bottom: -1px; }
+  margin-bottom: -1px;
+  clear: both; }
   .ios .isometrica-container-listdetail .bootcards-cards .list-group > .row > div {
     padding: 0; }
 

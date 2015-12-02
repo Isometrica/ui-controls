@@ -22,6 +22,18 @@
   }
 }
 
+.ios .form-group {
+  margin-bottom: 0;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px;
+  }  
+}
+
 /* Consistent right margin for inline form buttons/groups */
 
 .form-group .btn,
@@ -36,8 +48,17 @@
 /* Reset for nested elements */
 
 .form-group .btn-group .btn {
-  margin-bottom: 0;
-  margin-right: 0; 
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+
+.form-group .input-group {
+  .form-control,
+  .btn {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+  }
 }
 
 .form-group .input-group .form-control {
@@ -51,6 +72,8 @@
     font-size: 13px !important;
   }
 }
+
+
 
 
 
@@ -177,6 +200,9 @@
   .form-horizontal .form-group {
     padding-top: 0;
     padding-bottom: 0;
+    //border-color: transparent;
+    margin-left: 0 !important;
+    //border-bottom: 1px solid #ddd;
 
     label,
     .form-control,
@@ -194,7 +220,12 @@
     margin-top: 0;
   }
 
-
+  hr {
+    margin-top: 10px !important;
+    margin-bottom: 10px !important;
+    //display: none !important;
+    border-color: transparent !important;
+  }
 
   textarea {
     resize: none;
@@ -381,6 +412,7 @@ input:focus ~ .clear-field {
 .ios {
   .form-horizontal .form-group .control-label {
     padding-top: 8px;
+    color: $blue-color;
     color: black;
     font-weight: 500;
   }
