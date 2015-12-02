@@ -346,7 +346,7 @@
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Status</p>
-              <h4 class="list-group-item-heading">Awaiting review</h4>
+              <h4 class="list-group-item-heading"><span class="label label-warning">Awaiting review</span></h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Last reviewed</p>
@@ -355,10 +355,6 @@
             <div class="list-group-item">
               <p class="list-group-item-text">Reviewed by</p>
               <h4 class="list-group-item-heading">John Smith</h4>
-            </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Next scheduled review</p>
-              <h4 class="list-group-item-heading">8 Dec 2015</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Comments</p>
@@ -826,11 +822,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC5. Corrective actions</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-warning">Open - with plan</span> 
                     <span class="text-muted">1</span>
+                    <span class="label label-warning  status-indicator"></span> 
+
                   </h4>
+                  <h4 class="panel-title">SC5. Corrective actions</h4>
                 </div>
                 <div class="collapse" id="corrective-actions">
                   <div class="panel-body">
@@ -838,13 +835,12 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#corrective-action-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>CA129</strong>
-                            Fix machine calibration
-                          </div>
                           <div class="pull-right">
-                            9 Sep 2015 <span class="label label-success">Verified</span>
+                            <span class="text-muted">9 Sep 2015</span>
+                            <span class="label label-success status-indicator"></span> 
                           </div>
+                          <strong>CA129</strong>
+                          Fix machine calibration
                         </div>
                         <div class="collapse" id="corrective-action-1">
                           <div class="panel-body">
@@ -1006,13 +1002,12 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#corrective-action-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>CA142</strong>
-                            Replace sprockets
-                          </div>
                           <div class="pull-right">
-                            9 Jan 2016 <span class="label label-warning">Open - with plan</span>
+                            <span class="text-muted">9 Jan 2016</span>
+                            <span class="label label-warning status-indicator"></span> 
                           </div>
+                          <strong>CA142</strong>
+                          Replace sprockets
                         </div>
                         <div class="collapse" id="corrective-action-2">
                           <div class="panel-body">
@@ -1310,11 +1305,11 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#meeting-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC6. Actions</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-success">Completed</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-success status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">SC6. Actions</h4>
                 </div>
                 <div class="collapse" id="meeting-actions">
                   <div class="panel-body">
@@ -1322,12 +1317,11 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>AC110</strong> Ask Lyndsey to change DSO calculator
-                          </div>
                           <div class="pull-right">
-                            20 Jun 2015 <span class="label label-success">Completed</span>
+                            20 Jun 2015 
+                            <span class="label label-success status-indicator"></span>
                           </div>
+                          <strong>AC110</strong> Ask Lyndsey to change DSO calculator
                         </div>
                         <div class="collapse" id="action-1">
                           <div class="panel-body">
@@ -1581,11 +1575,11 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#nonconformities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC7. Non-conformities</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-danger">Open - no actions</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-danger status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">SC7. Non-conformities</h4>
                 </div>
                 <div class="collapse" id="nonconformities">
                   <div class="panel-body">
@@ -1593,9 +1587,7 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-right">
-                            <span class="label label-danger">Open - no actions</span>
-                          </div>
+                          <span class="label label-danger status-indicator pull-right"></span>
                           <strong>NC509</strong> Instrument calibration not properly documented
                         </div>
                         <div class="collapse" id="nonconformity-1">
@@ -1699,11 +1691,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC8. Improvements</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-warning">Open - in progress</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-warning status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">SC8. Improvements</h4>
+                  
                 </div>
                 <div class="collapse" id="improvement-opportunities">
                   <div class="panel-body">
@@ -1711,13 +1704,8 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM731</strong>
-                            Buy new machines
-                          </div>
-                          <div class="pull-right">
-                            <span class="label label-success">Verified</span>
-                          </div>
+                          <span class="label label-success status-indicator pull-right"></span>
+                          <strong>IM731</strong> Buy new machines
                         </div>
                         <div class="collapse" id="improvement-1">
                           <div class="panel-body">
@@ -1878,13 +1866,8 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM745</strong>
-                            Change design of production station
-                          </div>
-                          <div class="pull-right">
-                            <span class="label label-warning">Open - in progress</span>
-                          </div>
+                          <span class="label label-warning status-indicator pull-right"></span>
+                          <strong>IM745</strong> Change design of production station
                         </div>
                         <div class="collapse" id="improvement-2">
                           <div class="panel-body">
@@ -2512,11 +2495,11 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#assessments" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC13. Individual assessments</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-success">Trainer</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-success status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">SC13. Individual assessments</h4>
                 </div>
                 <div class="collapse" id="assessments">
                   <div class="panel-body">
@@ -2524,13 +2507,11 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#assessment-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>John Smith</strong>
-                            <br>BCM Manager
+                          <div class="pull-right">
+                            <span class="text-muted">20 May 2015</span>
+                            <span class="label label-success status-indicator"></span>
                           </div>
-                          <div class="pull-right text-right">
-                            <span class="label label-success pull-right">Trainer</span><br>20 May 2015
-                          </div>
+                          <strong>John Smith</strong> (BCM Manager)
                         </div>
                         <div class="collapse" id="assessment-1">
                           <div class="panel-body">
@@ -2612,19 +2593,17 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC14. Review</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
-                  <h4 class="panel-title pull-right"><span class="label label-warning">Awaiting review</span></h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-warning status-indicator"></span>
+                  </h4>
+                  <h4 class="panel-title">SC14. Review</h4>
                 </div>
                 <div class="collapse" id="review-info">
                   <div class="panel-body">
                     <div class="form-group">
                       <label class="control-label col-xs-4">Status</label>
                       <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-info active">Awaiting review</button>
-                          <button type="button" class="btn btn-default">Reviewed</button>
-                        </div>
+                        <span class="label label-warning">Awaiting review</span>
                       </div>
                     </div>
                     <div class="form-group">
@@ -2657,21 +2636,20 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Next scheduled review</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Next scheduled review" value="8 Dec 2015"/>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
                       <label class="control-label col-xs-4">Comments</label>
                       <div class="col-xs-8">
                         <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="col-xs-8 col-xs-offset-4">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa fa-check"></i>
+                          Mark as reviewed
+                        </button>
                       </div>
                     </div>
                     
@@ -2681,10 +2659,10 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#risk-scoring-after" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC15. Risk scoring</h4>
                   <h4 class="panel-title pull-right">
                     <span class="label label-warning">59 - Medium</span>
                   </h4>
+                  <h4 class="panel-title">SC15. Risk scoring</h4>
                 </div>
                 <div class="collapse" id="risk-scoring-after">
                   <div class="isometrica-risk-grading">
@@ -2783,8 +2761,11 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#evaluation" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-right">
+                    <span class="label text-muted">Terminate</span>
+                  </h4>
                   <h4 class="panel-title pull-left">SC16. Risk evaluation</h4>
-                  <h4 class="panel-title pull-right text-muted">Terminate</h4>
+                  
                 </div>
                 <div class="collapse" id="evaluation">
                   <div class="panel-body">
@@ -2871,11 +2852,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#key-requirements" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">SC18. Key requirements</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-danger">Not compliant</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-danger status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">SC18. Key requirements</h4>
+                  
                 </div>
                 <div class="collapse" id="key-requirements">
                   <div class="panel-body">

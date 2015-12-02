@@ -101,26 +101,19 @@
       font-weight: normal;
     }
 
-    .count {
-      //font-size: 16px;
-      //display: inline-block;
-      //position: relative;
-      //top: 4px;
-      //margin-left: 5px;
-      //margin-right: 5px;
-    }
-
     .label {
-      //margin-left: 5px;
-      //margin-right: 5px;
       font-size: 13px;
-      //position: relative;
-      //top: 5px;
+
+      &.status-indicator {
+        position: relative;
+        top: 2px;
+      }
       
       &.text-muted {
         color: #999;
         padding-left: 0;
         padding-right: 0;
+        font-weight: 700;
       }
       
 

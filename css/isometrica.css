@@ -688,8 +688,6 @@ body > .bootcards-container > .row {
       font-size: 26px; }
   .status-indicator.pull-left {
     margin-right: 10px; }
-  .status-indicator:not(.pull-left) {
-    left: 4px; }
 
 .risk-square {
   float: left;
@@ -1651,10 +1649,14 @@ input:focus ~ .clear-field {
       font-weight: normal; }
     .bootcards-panel-collapsing .panel-heading .label {
       font-size: 13px; }
+      .bootcards-panel-collapsing .panel-heading .label.status-indicator {
+        position: relative;
+        top: 2px; }
       .bootcards-panel-collapsing .panel-heading .label.text-muted {
         color: #999;
         padding-left: 0;
-        padding-right: 0; }
+        padding-right: 0;
+        font-weight: 700; }
     .bootcards-panel-collapsing .panel-heading span + span {
       margin-left: 8px; }
     .bootcards-panel-collapsing .panel-heading:hover, .bootcards-panel-collapsing .panel-heading:focus, .bootcards-panel-collapsing .panel-heading:active {
