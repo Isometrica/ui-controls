@@ -628,6 +628,9 @@ body > .bootcards-container > .row {
     background: #006e9e !important;
     color: white !important; }
 
+.navbar .navbar-right .dropdown-menu {
+  left: auto; }
+
 .ios .navbar .dropdown-menu {
   width: auto;
   left: 0;

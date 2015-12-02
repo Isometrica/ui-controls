@@ -270,6 +270,10 @@
       color: white !important;
     }
   }
+  
+  .navbar-right .dropdown-menu {
+    left: auto;
+  }
 }
 
 .ios .navbar {
