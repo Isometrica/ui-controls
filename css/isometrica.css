@@ -81,20 +81,30 @@ body > .bootcards-container > .row {
   margin-left: 5px;
   margin-right: 0; }
 
-.powered-by {
-  text-align: left;
-  /*
-  small {
-    font-weight: 500;
-    color: #aaa;
-    display: block;
-    text-transform: uppercase;
-    font-size: 10px;
-    margin-bottom: -1px;
-  }*/ }
-  .powered-by img {
-    height: 24px;
-    cursor: pointer; }
+.isometrica-overview-footer-buttons {
+  margin-bottom: 15px; }
+  @media (max-width: 767px) {
+    .isometrica-overview-footer-buttons {
+      text-align: center; } }
+  @media (min-width: 768px) {
+    .isometrica-overview-footer-buttons {
+      float: left; } }
+  .isometrica-overview-footer-buttons .btn {
+    margin-right: 10px;
+    margin-bottom: 15px; }
+    .isometrica-overview-footer-buttons .btn:last-child {
+      margin-right: 0; }
+
+.powered-by img {
+  height: 24px; }
+
+@media (max-width: 767px) {
+  .powered-by {
+    text-align: center; } }
+
+@media (min-width: 768px) {
+  .powered-by {
+    float: right; } }
 
 /* COLORS */
 .text-danger {
