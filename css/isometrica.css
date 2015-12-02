@@ -1175,6 +1175,9 @@ body > .bootcards-container > .row {
 
 .android .form-horizontal .form-group .control-label {
   padding-top: 6px; }
+  @media (max-width: 768px) {
+    .android .form-horizontal .form-group .control-label {
+      text-align: left; } }
 
 .android .form-horizontal .form-group .btn {
   margin: 2px 0; }

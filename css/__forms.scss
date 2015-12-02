@@ -191,6 +191,10 @@
 
   .form-horizontal .form-group .control-label {
     padding-top: 6px;
+    
+    @media(max-width: 768px) {
+      text-align: left;
+    }
   }
 
   .form-horizontal .form-group .btn {
