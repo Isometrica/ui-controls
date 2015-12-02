@@ -425,8 +425,7 @@ input:focus ~ .clear-field {
   margin-bottom: 0;
 }
 
-.ios,
-.android {
+.ios {
   .input-group {
     .input-group-btn > .btn {
       border-radius: 3px;
@@ -438,6 +437,25 @@ input:focus ~ .clear-field {
       background: transparent;
       border-color: transparent;
       padding-left: 0;
+    }
+  }
+}
+
+.android {
+  .input-group {
+    .input-group-btn > .btn {
+      border-radius: 3px;
+      border-width: 1px;
+      z-index: 9;
+    }
+    .input-group-addon {
+      background: #eee;
+      border-color: transparent;
+      //padding-left: 0;
+      color: #777;
+    }
+    .form-control:not(:first-child) {
+      padding-left: 10px;
     }
   }
 }

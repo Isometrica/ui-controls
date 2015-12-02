@@ -1325,17 +1325,28 @@ input:focus ~ .clear-field {
   margin-right: 0;
   margin-bottom: 0; }
 
-.ios .input-group .input-group-btn > .btn,
+.ios .input-group .input-group-btn > .btn {
+  border-radius: 3px;
+  border-width: 1px;
+  z-index: 9; }
+
+.ios .input-group .input-group-addon {
+  background: transparent;
+  border-color: transparent;
+  padding-left: 0; }
+
 .android .input-group .input-group-btn > .btn {
   border-radius: 3px;
   border-width: 1px;
   z-index: 9; }
 
-.ios .input-group .input-group-addon,
 .android .input-group .input-group-addon {
-  background: transparent;
+  background: #eee;
   border-color: transparent;
-  padding-left: 0; }
+  color: #777; }
+
+.android .input-group .form-control:not(:first-child) {
+  padding-left: 10px; }
 
 /* Cards */
 .bootcards-cards .panel-title .label {
