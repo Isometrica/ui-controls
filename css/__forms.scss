@@ -29,6 +29,21 @@
 
 
 
+/* Larget caret in dropdown buttons */
+
+.btn .fa-caret {
+  font-size: 16px;
+}
+
+/* Larger font size for inputs */
+
+.ios, .android {
+  .form-control,
+  .input-group-addon {
+    font-size: 16px;
+  }
+}
+
 
 .isometrica-rich-text-control {
   padding: 0;

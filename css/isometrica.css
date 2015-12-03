@@ -1078,6 +1078,16 @@ body > .bootcards-container > .row {
   .help-icon:hover, .help-icon:focus, .help-icon:active {
     color: #23527c; }
 
+/* Larget caret in dropdown buttons */
+.btn .fa-caret {
+  font-size: 16px; }
+
+/* Larger font size for inputs */
+.ios .form-control,
+.ios .input-group-addon, .android .form-control,
+.android .input-group-addon {
+  font-size: 16px; }
+
 .isometrica-rich-text-control {
   padding: 0;
   margin: 0 -15px;
@@ -1668,7 +1678,8 @@ input:focus ~ .clear-field {
     padding-left: 50px;
     cursor: pointer;
     position: relative;
-    transition: all 0.3s ease; }
+    transition: all 0.3s ease;
+    font-size: 15px; }
     .bootcards-panel-collapsing .panel-heading .bootcards-panel-collapsing-indicator {
       line-height: 20px;
       font-size: 24px;
