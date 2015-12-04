@@ -476,8 +476,8 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Description</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
                 <textarea class="form-control" rows="2" placeholder="Description">Understanding of ISO 9001 management system</textarea>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -485,8 +485,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">Role(s) this applies to</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4 col-xs-12">Role(s) this applies to</label>
+              <div class="col-sm-8 col-xs-12">
                 <div class="input-group">
                   <input type="text" class="form-control" value="BCM Manager" disabled=""/>
                   <span class="input-group-btn" data-toggle="dropdown">
@@ -530,8 +530,8 @@
                 <div class="collapse" id="notifications">
                   <div class="panel-body">
                     <div class="form-group">
-          		        <label class="control-label col-xs-4">User(s)</label>
-          		        <div class="col-xs-8">
+          		        <label class="control-label col-sm-4 col-xs-12">User(s)</label>
+          		        <div class="col-sm-8 col-xs-12">
             		        <div class="btn-group">
               		        <button class="btn btn-default" type="button" disabled="">Mike Smith</button>
                           <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
@@ -569,8 +569,8 @@
                 <div class="collapse" id="tags">
                   <div class="panel-body">
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Activity or process(es)</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Activity or process(es)</label>
+                      <div class="col-sm-8 col-xs-12">
                         <div class="input-group">
                           <input type="text" class="form-control" value="Customer support" disabled=""/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -600,8 +600,8 @@
                     </div>
                     <hr>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Department or site(s)</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Department or site(s)</label>
+                      <div class="col-sm-8 col-xs-12">
                         <div class="input-group">
                           <input type="text" class="form-control" value="Customer service" disabled=""/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -630,8 +630,8 @@
                     </div>
                     <hr>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Management program(s)</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Management program(s)</label>
+                      <div class="col-sm-8 col-xs-12">
                         <div class="input-group">
                           <input type="text" class="form-control" value="Business Continuity Management" disabled=""/>
                           <span class="input-group-btn" data-toggle="dropdown">
@@ -727,11 +727,12 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#assessments" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Individual assessments</h4>
                   <h4 class="panel-title pull-right">
-                    <span class="label label-success">Trainer</span>
                     <span class="text-muted">1</span>
+                    <span class="label label-success status-indicator"></span>
                   </h4>
+                  <h4 class="panel-title">Individual assessments</h4>
+                  
                 </div>
                 <div class="collapse" id="assessments">
                   <div class="panel-body">
@@ -739,19 +740,17 @@
                       <div class="panel panel-default bootcards-panel-collapsing">
                         <div class="panel-heading clearfix collapsed" href="#assessment-1" data-toggle="collapse" aria-expanded="false">
                           <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>John Smith</strong>
-                            <br>BCM Manager
-                          </div>
                           <div class="pull-right text-right">
-                            <span class="label label-success pull-right">Trainer</span><br>20 May 2015
+                            <span class="text-muted">20 May 2015</span>
+                            <span class="label label-success status-indicator"></span>
                           </div>
+                          <strong>John Smith</strong> (BCM Manager)
                         </div>
                         <div class="collapse" id="assessment-1">
                           <div class="panel-body">
                   	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Competency level</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4 col-xs-12">Competency level</label>
+                  		        <div class="col-sm-8 col-xs-12">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Trainer" placeholder="Competency level" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -770,8 +769,8 @@
                   		        </div>
                   	        </div>
                             <div class="form-group">
-                  		        <label class="control-label col-xs-4">Assessed by</label>
-                  		        <div class="col-xs-8">
+                  		        <label class="control-label col-sm-4 col-xs-12">Assessed by</label>
+                  		        <div class="col-sm-8 col-xs-12">
                                 <div class="input-group isometrica-typeahead">
                                   <input type="text" class="form-control" value="Mike Smith" placeholder="Assessed by" data-toggle="dropdown"/>
                                   <span class="input-group-btn" data-toggle="dropdown">
@@ -790,8 +789,8 @@
                   		        </div>
                   	        </div>
                             <div class="form-group">
-                              <label class="control-label col-xs-4">Assessed date</label>
-                              <div class="col-xs-8">
+                              <label class="control-label col-sm-4 col-xs-12">Assessed date</label>
+                              <div class="col-sm-8 col-xs-12">
                                 <input type="text" class="form-control" value="20 May 2015" placeholder="Assessed date"/>
                                 <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -799,8 +798,8 @@
                               </div>
                             </div>
                             <div class="form-group">
-                              <label class="control-label col-xs-4">Notes</label>
-                              <div class="col-xs-8">
+                              <label class="control-label col-sm-4 col-xs-12">Notes</label>
+                              <div class="col-sm-8 col-xs-12">
                                 <textarea class="form-control" placeholder="Notes" rows="3"></textarea>
                                 <button type="button" class="btn btn-link clear-field">
                   			          <i class="fa fa-times-circle"></i>
@@ -827,24 +826,22 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#review-info" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Review</h4>
-                  <i class="fa fa-chevron-right disclosure-indicator pull-right"></i>
-                  <h4 class="panel-title pull-right"><span class="label label-warning">Awaiting review</span></h4>
+                  <h4 class="panel-title pull-right">
+                    <span class="label label-warning status-indicator"></span>
+                  </h4>
+                  <h4 class="panel-title">Review</h4>
                 </div>
                 <div class="collapse" id="review-info">
                   <div class="panel-body">
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Status</label>
-                      <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-info active">Awaiting review</button>
-                          <button type="button" class="btn btn-default">Reviewed</button>
-                        </div>
+                      <label class="control-label col-sm-4 col-xs-12">Status</label>
+                      <div class="col-sm-8 col-xs-12">
+                        <span class="label label-warning">Awaiting review</span>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Last reviewed</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Last reviewed</label>
+                      <div class="col-sm-8 col-xs-12">
                         <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
@@ -852,49 +849,42 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Reviewed by</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Reviewed by</label>
+                      <div class="col-sm-8 col-xs-12">
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by" data-toggle="dropdown"/>
                           <span class="input-group-btn" data-toggle="dropdown">
                             <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
                           </span>
                           <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Users</li>
                             <li><a href="#">Jack Herbert</a></li>
                             <li><a href="#">Steve Ives</a></li>
                             <li><a href="#">Mark Leusink</a></li>
                             <li><a href="#">Steve Saunders</a></li>
                             <li class="active"><a href="#">Mike Smith</a></li>
                             <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Contacts</li>
-                            <li><a href="#">Jim Brown</a></li>
-                            <li><a href="#">Sarah Jones</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new user or contact</strong></a></li>
+                            <li><a href="#"><strong>Add new user</strong></a></li>
                           </ul>
                         </div>
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-xs-4">Next scheduled review</label>
-                      <div class="col-xs-8">
-                        <input type="text" class="form-control" placeholder="Next scheduled review" value="8 Dec 2015"/>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Comments</label>
-                      <div class="col-xs-8">
+                      <label class="control-label col-sm-4 col-xs-12">Comments</label>
+                      <div class="col-sm-8 col-xs-12">
                         <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
                         <button type="button" class="btn btn-link clear-field">
           			          <i class="fa fa-times-circle"></i>
           			        </button>
                       </div>
                     </div>
-                    
+                    <div class="form-group">
+                      <div class="col-sm-8 col-sm-offset-4">
+                        <button type="button" class="btn btn-success">
+                          <i class="fa fa-check"></i>
+                          Mark as reviewed
+                        </button>
+                      </div>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1014,8 +1004,8 @@
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
-              <label class="control-label col-xs-4">Review date</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4 col-xs-12">Review date</label>
+              <div class="col-sm-8 col-xs-12">
                 <input type="text" class="form-control" value="31 Dec 2015" placeholder="Review date"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
@@ -1024,8 +1014,8 @@
             </div>
             <hr>
             <div class="form-group">
-              <label class="control-label col-xs-4">Notify me</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4 col-xs-12">Notify me</label>
+              <div class="col-sm-8 col-xs-12">
                 <div class="btn-group pull-left">
                   <button type="button" class="btn btn-info active">Yes</button>
                   <button type="button" class="btn btn-default">No</button>
@@ -1033,8 +1023,8 @@
               </div>
             </div>
             <div class="form-group">
-              <label class="control-label col-xs-4">When</label>
-              <div class="col-xs-8">
+              <label class="control-label col-sm-4 col-xs-12">When</label>
+              <div class="col-sm-8 col-xs-12">
                 <div class="input-group">
                   <input type="text" class="form-control" value="2" placeholder="Notification time"/>
                   <div class="input-group-btn">
