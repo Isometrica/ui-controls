@@ -1154,7 +1154,7 @@ body > .bootcards-container > .row {
   padding-right: 0; }
 
 .ios .modal-body {
-  padding-top: 0; }
+  padding-top: 10px; }
 
 .ios .form-horizontal .form-group label,
 .ios .form-horizontal .form-group .form-control,
@@ -1185,9 +1185,11 @@ body > .bootcards-container > .row {
 
 .android .form-horizontal .form-group .control-label {
   padding-top: 6px; }
-  @media (max-width: 768px) {
+  @media (max-width: 767px) {
     .android .form-horizontal .form-group .control-label {
-      text-align: left; } }
+      text-align: left;
+      padding-top: 0 !important;
+      margin-top: 0; } }
 
 .android .form-horizontal .form-group .btn {
   margin: 2px 0; }
@@ -1306,6 +1308,9 @@ input:focus ~ .clear-field {
   color: #006e9e;
   color: black;
   font-weight: 500; }
+  @media (max-width: 767px) {
+    .ios .form-horizontal .form-group .control-label {
+      margin-bottom: 0; } }
 
 .android .form-horizontal .form-group .control-label {
   padding-top: 7px; }
@@ -1353,6 +1358,12 @@ input:focus ~ .clear-field {
   .ios .form-horizontal .form-group .form-control {
     margin-bottom: 5px;
     margin-top: 5px; }
+    @media (max-width: 767px) {
+      .ios .form-horizontal .form-group .btn,
+      .ios .form-horizontal .form-group .btn-group,
+      .ios .form-horizontal .form-group .input-group,
+      .ios .form-horizontal .form-group .form-control {
+        margin-bottom: 0; } }
 
 /* Consistent right margin for inline form buttons/groups */
 .form-group .btn,
@@ -1759,7 +1770,7 @@ input:focus ~ .clear-field {
     padding: 0; }
 
 .ios .bootcards-panel-collapsing:first-child {
-  margin-top: -1px; }
+  margin-top: 10px; }
 
 .android .bootcards-panel-collapsing .panel-title {
   padding: 2px 0; }

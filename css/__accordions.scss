@@ -197,7 +197,8 @@
 .ios {
   .bootcards-panel-collapsing {
     &:first-child {
-      margin-top: -1px;
+      //margin-top: -1px;
+      margin-top: 10px;
     }
   }
 }

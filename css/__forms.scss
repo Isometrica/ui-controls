@@ -147,7 +147,7 @@
 .ios {
 
   .modal-body {
-    padding-top: 0;
+    padding-top: 10px;
   }
 
   .form-horizontal .form-group {
@@ -207,8 +207,10 @@
   .form-horizontal .form-group .control-label {
     padding-top: 6px;
     
-    @media(max-width: 768px) {
+    @media(max-width: 767px) {
       text-align: left;
+      padding-top: 0 !important;
+      margin-top: 0;
     }
   }
 
@@ -381,6 +383,11 @@ input:focus ~ .clear-field {
     color: $blue-color;
     color: black;
     font-weight: 500;
+    
+    @media (max-width: 767px) {
+      //padding-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   .bootcards-panel-collapsing:not(.full-width) .panel-body {
@@ -462,6 +469,11 @@ input:focus ~ .clear-field {
   .form-control {
     margin-bottom: 5px;
     margin-top: 5px;
+    
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      //margin-top: 0;  
+    }
   }  
 }
 
