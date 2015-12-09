@@ -141,42 +141,42 @@
     				  <span class="label label-warning status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Recalibrate system</h4>
-                <p class="list-group-item-text">P.Myson, 5 Jun</p>
+                <p class="list-group-item-text">CA99999 - P.Myson, 5 Jun</p>
   						</div>
 						</a>
 						<a class="list-group-item active">
   						<span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Fix machine calibration</h4>
-                <p class="list-group-item-text">J.Jones, 3 Jun</p>
+                <p class="list-group-item-text">CA99998 - J.Jones, 3 Jun</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-danger status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Test all components</h4>
-                <p class="list-group-item-text">P.Smith, 30 May</p>
+                <p class="list-group-item-text">CA99997 - P.Smith, 30 May</p>
               </div>
 						</a>
   				  <a class="list-group-item">
     				  <span class="label label-empty status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Refit old stock</h4>
-                <p class="list-group-item-text">A.Andrews, 20 May</p>
+                <p class="list-group-item-text">CA99996 - A.Andrews, 20 May</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Find better supplier</h4>
-                <p class="list-group-item-text">C.Cox, 18 May</p>
+                <p class="list-group-item-text">CA99995 - C.Cox, 18 May</p>
               </div>
 						</a>
 						<a class="list-group-item">
   						<span class="label label-success status-indicator pull-left"></span>
   						<div class="list-group-item-content">
   							<h4 class="list-group-item-heading">Train sales staff</h4>
-                <p class="list-group-item-text">J.Johnson, 10 May</p>
+                <p class="list-group-item-text">CA99994 - J.Johnson, 10 May</p>
               </div>
 						</a>
   				</div>
@@ -210,14 +210,16 @@
               <p class="list-group-item-text">Linked to</p>
               <a href="#" class="btn btn-default"><strong>NC216</strong> Brackets getting corroded <i class="fa fa-circle margin-left text-success"></i></a>
             </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Owner</p>
-                  <h4 class="list-group-item-heading">Mike Smith</h4>
-                </div>
-              </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Owner</p>
+              <h4 class="list-group-item-heading">Mike Smith</h4>
             </div>
+            <div class="list-group-item">
+              <p class="list-group-item-text">Related corrective actions</p>
+              <a href="#" class="btn btn-default"><strong>CA142</strong> Replace sprockets <i class="fa fa-circle margin-left text-success"></i></a>
+            </div>
+          </div>
+          <div class="list-group">
             <div class="row">
               <div class="col-sm-6">
                 <div class="list-group-item">
@@ -323,6 +325,7 @@
               <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
             </div>
           </div>
+          <!--
           <div class="panel-heading panel-subheading">
             <h4 class="panel-title">Related corrective actions</h4>
           </div>
@@ -331,6 +334,7 @@
               <a href="#" class="btn btn-default"><strong>CA129</strong> Fix machine calibration <i class="fa fa-circle margin-left text-success"></i></a>
             </div>
           </div>
+          -->
           <div class="panel-heading panel-subheading">
             <h4 class="panel-title">Related improvements</h4>
           </div>
@@ -481,7 +485,7 @@
               <label class="control-label col-sm-4 col-xs-12">Description</label>
               <div class="col-sm-8 col-xs-12">
                 <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">CA129</span>
+                  <span class="input-group-addon" id="basic-addon1">CA99999</span>
                   <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
                 </div>
                 <button type="button" class="btn btn-link clear-field">
@@ -520,7 +524,32 @@
                 </div>
   		        </div>
   	        </div>
-
+            
+            <div class="form-group">
+              <label class="control-label col-sm-4 col-xs-12">Related corrective actions</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group">
+                  <button class="btn btn-default" type="button" disabled=""><strong>CA142</strong> Replace sprockets</button>
+                  <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                </div>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="" placeholder="Add related corrective action" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#"><strong>CA141</strong> Recalibrate system</a></li>
+                    <li><a href="#"><strong>CA140</strong> Test all components</a></li>
+                    <li><a href="#"><strong>CA139</strong> Refit old stock</a></li>
+                    <li><a href="#"><strong>CA138</strong> Find better supplier</a></li>
+                    <li><a href="#"><strong>CA137</strong> Train sales staff</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new corrective action</strong></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            
             <hr>
             
             <div class="form-group">
@@ -876,6 +905,7 @@
                 </div>
               </div>
               
+              <!--
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -1356,6 +1386,7 @@
         	        </div>
                 </div>
               </div>
+              -->
               
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
