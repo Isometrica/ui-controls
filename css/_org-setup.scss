@@ -215,6 +215,19 @@
 
   .table>tbody>tr>td {
     padding: 0 !important;
+    position: relative;
+    min-height: 34px;
+    
+    /*
+    > button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+    }
+    */
   }
 
   .table>tbody>tr:first-child>td {
@@ -264,6 +277,14 @@
     box-shadow: none;
     border-radius: 0;
     padding-left: 15px;
+  }
+  
+  .input-group {
+    .input-group-addon {
+      border: 0;
+      border-radius: 0;
+      border-right: 1px solid #ddd;
+    }
   }
 
   .btn {
@@ -321,7 +342,7 @@
   .modal-dialog {
     &.modal-lg {
       @media (min-width: 992px) {
-        width: 600px !important;
+        width: 700px !important;
       }      
     }
     &.modal-xl {

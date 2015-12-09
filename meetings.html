@@ -241,9 +241,13 @@
               <p class="list-group-item-text">Date</p>
               <h4 class="list-group-item-heading">20 May 2015</h4>
             </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Notes</h4>
+          </div>
+          <div class="list-group">
             <div class="list-group-item">
-              <p class="list-group-item-text">Notes</p>
-              <h4 class="list-group-item-heading">This meeting was held over from last week</h4>
+              <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed</h4>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -251,9 +255,9 @@
           </div>
           <div class="list-group">
             <div class="list-group-item">
-              <h4 class="list-group-item-heading">Nigel Cheshire</h4>
-              <h4 class="list-group-item-heading">Steve Ives</h4>
-              <h4 class="list-group-item-heading">Mark Dixon</h4>
+              <h4 class="list-group-item-heading">Nigel Cheshire - CEO</h4>
+              <h4 class="list-group-item-heading">Steve Ives - IT Manager</h4>
+              <h4 class="list-group-item-heading">Mark Dixon - Sales Manager</h4>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -490,7 +494,10 @@
                   <ul class="dropdown-menu dropdown-menu-right">
                     <li><a href="#">Ad hoc</a></li>
                     <li class="active"><a href="#">Weekly operations</a></li>
-                    <li><a href="#">Management review</a></li>
+                    <li><a href="#">Management review - ISO 9001</a></li>
+                    <li><a href="#">Management review - ISO 14001</a></li>
+                    <li><a href="#">Management review - OSHAS 18001</a></li>
+                    <li><a href="#">Management review - ISO 22301</a></li>
                     <li role="separator" class="divider"></li>
                     <li><a href="#"><strong>Add new meeting type</strong></a></li>
                   </ul>
@@ -520,6 +527,34 @@
             </div>
 
             <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
+                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title pull-left">Notes</h4>
+                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+                </div>
+                <div class="collapse" id="notes">
+                  <div class="panel-body">
+
+                    <div class="isometrica-rich-text-control">
+                      <div class="isometrica-rich-text-controls clearfix">
+                        <div class="ql-toolbar-container" id="formatting-container">
+                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+                        </div>
+                      </div>
+                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
+                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+              
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#notifications" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
@@ -1533,6 +1568,8 @@
                   </div>
                 </div>
               </div>
+              
+              
 
             </div>
 

@@ -3278,7 +3278,19 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   border-top: 0; }
 
 .isometrica-org-setup-multiadd .table > tbody > tr > td {
-  padding: 0 !important; }
+  padding: 0 !important;
+  position: relative;
+  min-height: 34px;
+  /*
+    > button {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 100%;
+    }
+    */ }
 
 .isometrica-org-setup-multiadd .table > tbody > tr:first-child > td {
   border-top: 0; }
@@ -3318,6 +3330,11 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   border-radius: 0;
   padding-left: 15px; }
 
+.isometrica-org-setup-multiadd .input-group .input-group-addon {
+  border: 0;
+  border-radius: 0;
+  border-right: 1px solid #ddd; }
+
 .isometrica-org-setup-multiadd .btn {
   border-color: transparent;
   border-radius: 0; }
@@ -3351,7 +3368,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
 /* Modal widths */
 @media (min-width: 992px) {
   .isometrica-org-setup-page .modal-dialog.modal-lg {
-    width: 600px !important; } }
+    width: 700px !important; } }
 
 @media (min-width: 992px) {
   .isometrica-org-setup-page .modal-dialog.modal-xl {

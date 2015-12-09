@@ -162,7 +162,7 @@
           <a class="list-group-item" data-toggle="modal" data-target="#editMeetingTypes">
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Meetings &amp; communications</h4>
+              <h4 class="list-group-item-heading">Meetings</h4>
               <p class="list-group-item-text">8 types</p>
             </div>
           </a>
@@ -281,7 +281,7 @@
           </div>
           <div class="org-setup-offset-container">
             <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
-              <h3 class="panel-title">Meetings &amp; communications <span class="text-muted">(8 types)</span></h3>
+              <h3 class="panel-title">Meetings <span class="text-muted">(8 types)</span></h3>
               <i class="fa fa-arrows-h arrow left"></i>
               <i class="fa fa-arrows-h arrow right"></i>
               <span class="label label-success status-indicator"></span>
@@ -1167,7 +1167,7 @@
 
   <!-- Edit Meeting Types -->
   <div class="modal fade isometrica-orgsetup-modal" id="editMeetingTypes">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -1178,7 +1178,7 @@
       				Done
       			</button>
           </div>
-          <h4 class="modal-title">Meeting &amp; communications types</h4>
+          <h4 class="modal-title">Meetings</h4>
         </div>
         <div class="collapse in" id="guidance-panel-editMeetingTypes">
           <div class="guidance-panel">
@@ -1211,134 +1211,279 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Type</th>
+                  <th class="long">Type</th>
+                  <th class="long">Standard agenda items</th>
                   <th class="icon"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Ad hoc"></td>
+                  <td><input class="form-control" type="text" placeholder="Type" value="Ad hoc"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option selected="">0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Weekly operations"></td>
+                  <td><input class="form-control" type="text" placeholder="Type" value="Weekly operations"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option selected="">0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Management review"></td>
+                  <td rowspan="4"><input class="form-control" type="text" placeholder="Type" value="Management review - ISO 9001"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option selected="">3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Departmental meeting"></td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Lorem ipsum">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Dolor">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="4"><input class="form-control" type="text" placeholder="Type" value="Management review - ISO 14001"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option selected="">3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="All hands meeting"></td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Lorem ipsum">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Dolor">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="4"><input class="form-control" type="text" placeholder="Type" value="Management review - OSHAS 18001"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option selected="">Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option selected="">3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Customer panel"></td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Lorem ipsum">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Dolor">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td rowspan="4"><input class="form-control" type="text" placeholder="Type" value="Management review - ISO 22301"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
-                      <option>Internal meeting</option>
-                      <option>Other internal</option>
-                      <option selected="">Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option selected="">3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Supplier review"></td>
                   <td>
-                    <select class="form-control">
-                      <option></option>
-                      <option>Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option selected="">Supplier/partner</option>
-                      <option>Other external</option>
-                    </select>
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Lorem ipsum">
+                    </div>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value="Shareholders meeting"></td>
                   <td>
-                    <select class="form-control">
-                      <option></option>
-                      <option>Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option selected="">Other external</option>
-                    </select>
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Dolor">
+                    </div>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td>
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="">
+                    </div>
+                  </td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Type" value=""></td>
                   <td>
                     <select class="form-control">
-                      <option></option>
-                      <option>Internal meeting</option>
-                      <option>Other internal</option>
-                      <option>Customer</option>
-                      <option>Supplier/partner</option>
-                      <option>Other external</option>
+                      <option selected=""></option>
+                      <option>0</option>
+                      <option>1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                      <option>5</option>
+                      <option>6</option>
+                      <option>7</option>
+                      <option>8</option>
+                      <option>9</option>
+                      <option>10</option>
+                      <option>11</option>
+                      <option>12</option>
+                      <option>13</option>
+                      <option>14</option>
+                      <option>15</option>
                     </select>
                   </td>
                   <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
