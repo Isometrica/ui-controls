@@ -287,6 +287,14 @@
               <p class="list-group-item-text">Related aspect(s)</p>
               <a href="#" class="btn btn-default"><strong>AS10</strong> Generation of waste paper in office <i class="fa fa-circle margin-left text-warning"></i></a>
             </div>
+            
+            <div class="list-group-item">
+              <p class="list-group-item-text">Relevant law(s)</p>
+              <h4 class="list-group-item-heading">Environmental Protection Act 1990</h4>
+              <h4 class="list-group-item-heading">Pollution Prevention and Control Act 1999</h4>
+            </div>
+            
+            
 
           </div>
           <div class="panel-heading panel-subheading">
@@ -663,13 +671,45 @@
                 </div>
   		        </div>
   	        </div>
+  	        
+  	        <div class="form-group">
+  		        <label class="control-label col-sm-4 col-xs-12">Relevant law(s)</label>
+  		        <div class="col-sm-8 col-xs-12">
+    		        <div class="input-group">
+                  <input type="text" class="form-control" value="Environmental Protection Act 1990" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
+                </div>
+    		        <div class="input-group">
+                  <input type="text" class="form-control" value="Pollution Prevention and Control Act 1999" disabled=""/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                  </span>
+                </div>
+                <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="" placeholder="Add relevant law" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Air Quality Limit Values Regulations 2003</a></li>
+                    <li><a href="#">Clean Air Act 1993</a></li>
+                    <li><a href="#">Transport Act 2000</a></li>
+                    <li><a href="#">Waste and Emissions Trading Act 2003</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new relevant law</strong></a></li>
+                  </ul>
+                </div>
+  		        </div>
+  	        </div>
 
 
             <div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#notifications" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notifications</h4>
+                  <h4 class="panel-title pull-left">Notify on changes</h4>
                   <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="notifications">
