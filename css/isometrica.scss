@@ -36,22 +36,19 @@ body > .bootcards-container {
   @include flex(1);
   top: 0 !important;
 
-  @media (max-width: 1199px) {
-    width: 100%;
-  }
+  @media (max-width: 1199px) { width: 100%; }
 
-  @media (min-width: 1200px) {
-    width: 1170px;
-  }
-}
+  @media (min-width: 1200px) { width: 1170px; }
 
-body > .bootcards-container > .row {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0;
-  height: 100%;
+   > .row {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: 0;
+    height: 100%;
+    padding-bottom: 0 !important;
+  }
 }
 
 .bootcards-cards,
