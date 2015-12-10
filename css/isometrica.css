@@ -3371,11 +3371,13 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     .isometrica-org-setup-multiadd .btn-group .btn {
       float: none;
       display: inline-block; }
-  .isometrica-org-setup-multiadd .agenda-item-title .input-group-addon {
-    min-width: 45px;
-    padding-left: 15px;
-    padding-right: 0;
-    text-align: left; }
+  .isometrica-org-setup-multiadd .agenda-item-title {
+    min-width: 360px; }
+    .isometrica-org-setup-multiadd .agenda-item-title .input-group-addon {
+      min-width: 45px;
+      padding-left: 15px;
+      padding-right: 0;
+      text-align: left; }
   .isometrica-org-setup-multiadd .agenda-item-description {
     min-width: 500px; }
 

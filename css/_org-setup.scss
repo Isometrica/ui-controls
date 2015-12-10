@@ -328,6 +328,8 @@
   /* Meetings */
   
   .agenda-item-title {
+    min-width: 360px;
+    
     .input-group-addon {
       min-width: 45px;
       padding-left: 15px;
