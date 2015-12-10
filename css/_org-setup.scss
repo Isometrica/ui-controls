@@ -279,6 +279,10 @@
     padding-left: 15px;
   }
   
+  select {
+    -webkit-appearance: none;
+  }
+  
   .input-group {
     .input-group-addon {
       border: 0;

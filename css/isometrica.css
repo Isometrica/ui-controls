@@ -1242,6 +1242,9 @@ body > .bootcards-container > .row {
   left: 0; }
 
 /* Disabled fields */
+.form-control[disabled] {
+  -webkit-text-fill-color: #555; }
+
 .ios .form-control[disabled],
 .android .form-control[disabled] {
   background: #eee;
@@ -1279,6 +1282,9 @@ input:focus ~ .clear-field {
 .search-form .btn {
   margin-bottom: 0 !important;
   margin-top: 0 !important; }
+
+.search-filters {
+  margin-top: 10px; }
 
 /* Form layout */
 .ios .form-horizontal .form-group,
@@ -3329,6 +3335,9 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   box-shadow: none;
   border-radius: 0;
   padding-left: 15px; }
+
+.isometrica-org-setup-multiadd select {
+  -webkit-appearance: none; }
 
 .isometrica-org-setup-multiadd .input-group .input-group-addon {
   border: 0;

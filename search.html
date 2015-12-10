@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Search</title>
+  <title>Non-conformities</title>
   <!-- 1.0.0 -->
 
 	<!-- Bootstrap and Bootcards JS -->
@@ -15,39 +15,17 @@
 	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
 
-	<!-- Typeahead JS -->
-	<script src="js/bootstrap3-typeahead.min.js"></script>
-
 	<!-- Bootcards CSS for desktop: -->
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 
-	<script>
-	// Platform Detection (testing only)
-	$( document ).ready(function() {
-		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('ios');
-     	}
-		else if( navigator.userAgent.match(/Android/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('android');
-		}
-		else
-		{
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('desktop');
-		}
-	});
-	</script>
+  <!-- Angular for partials -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/isometrica.js"></script>	
 
 	<link rel="stylesheet" href="css/isometrica.css">
-
 </head>
-<body class="bootcards-fullheight bootcards-nofooter isometrica-wiki">
+<body ng-app="isometrica">
 
   <!-- fixed top navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
@@ -67,1097 +45,215 @@
         </li>
       </ul>
       <div class="navbar-header">
-        <span class="navbar-brand">
-          Search
-        </span>
-        <!--
         <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          Search
+          Non-conformities - by date
           <i class="fa fa-chevron-down"></i>
         </span>
-
         <ul class="dropdown-menu">
-          <li class="active"><a href="#">All</a></li>
-          <li><a href="#">By activity/process</a></li>
-          <li><a href="#">By department</a></li>
-          <li><a href="#">By interested party</a></li>
+          <li class="active"><a href="#">By date</a></li>
+          <li><a href="#">By management program</a></li>
+          <li><a href="#">By department/site</a></li>
+          <li><a href="#">By financial impact</a></li>
+          <li><a href="#">Cancelled</a></li>
         </ul>
-        -->
       </div>
     </div>
   </div>
 
-  <!-- Guidance Bar -->
-  <div class="collapse in" id="guidance-panel-top">
-    <div class="guidance-panel guidance-panel-top guidance-panel-overview">
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex. Non laoreet neque tincidunt sed.</p>
-        <div class="collapse" id="guidance-panel-top-more">
-          <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-          <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-          <ul class="text-muted">
-            <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-            <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-            <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-            <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-          </ul>
-        </div>
-        <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-top-more">
-          <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
-          <span class="expanded-label">Full help</span>
-        </a>
-        <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-top"><i class="fa fa-chevron-up"></i> Hide</a>
-        <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-top-question">Ask question</a>
-        <div class="collapse guidance-panel-question" id="guidance-panel-top-question">
-          <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-          <a class="btn btn-primary" >Send</a>
-          <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-top-question">Cancel</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
 
   <div class="container bootcards-container isometrica-container-listdetail" id="main">
-
-
-
 		<div class="row">
-
       <div class="col-sm-4 bootcards-list" id="list">
   			<div class="panel panel-default">
-    			<div class="panel-heading clearfix">
-            <div class="btn-group pull-left">
-							<a class="btn btn-default">
-								<i class="fa fa-long-arrow-left"></i>
-								Back to Document
-							</a>
-						</div>
-    			</div>
   				<div class="panel-body">
   					<div class="search-form">
     					<div class="row">
-						    <div class="col-xs-12">
-    				      <div class="form-group" style="padding-right: 15px;">
-    					      <input type="text" class="form-control" placeholder="Search..." value="1.4">
+						    <div class="col-xs-8">
+    				      <div class="form-group">
+    					      <input type="text" class="form-control" placeholder="Search..." value="fail">
     					      <i class="fa fa-search"></i>
-                    <button type="button" class="btn btn-link clear-field">
-      			          <i class="fa fa-times-circle"></i>
-      			        </button>    					      
     				      </div>
+						    </div>
+						    <div class="col-xs-4">
+  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#edit-modal">
+  									<i class="fa fa-plus"></i>
+  									<span>Add</span>
+  								</button>
 						    </div>
   						</div>
   					</div>
+  					<div class="search-filters">
+				      <div class="form-group">
+					      <select class="form-control">
+  					      <option>Filter by...</option>
+  					      <option>Filter by activity or process</option>
+  					      <option>Filter by department or site</option>
+  					      <option selected="">Filter by management program</option>
+					      </select>
+				      </div>
+  					</div>
   				</div>
-
+  				
   				<div class="list-group bootcards-accordion">
-    				<a class="list-group-item bootcards-list-subheading clearfix" data-toggle="collapse" href="#collapse-1">
-  						<h4 class="list-group-item-heading pull-left">Business continuity management</h4>
-  						<p class="list-group-item-text pull-right text-muted">2</p>
+    				<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-1">
+  						<p class="list-group-item-text pull-right text-muted">3</p>
+  						<h4 class="list-group-item-heading">Business Continuity Management</h4>
   					</a>
-  					<div class="collapse in" id="collapse-1">
-    				  <a class="list-group-item active">
+  					<div id="collapse-1" class="collapse">
+              <a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
     						<div class="list-group-item-content">
-    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
-                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
     						</div>
   						</a>
   						<a class="list-group-item">
+      				  <span class="label label-empty status-indicator pull-left"></span>
     						<div class="list-group-item-content">
-    							<h4 class="list-group-item-heading">5.2 Lorem ipsum</h4>
-                  <p class="list-group-item-text">Ut ultricies leo quis vestibulum efficitur. Ut tempor luctus sem in porta aliquam...</p>
-    						</div>
+    							<h4 class="list-group-item-heading">Supplier failed to deliver</h4>
+                  <p class="list-group-item-text">NC99996 - Incident, 6 Mar 2015</p>
+                </div>
   						</a>
-  					</div>
-  					<a class="list-group-item bootcards-list-subheading clearfix collapsed" data-toggle="collapse" href="#collapse-2">
-  						<h4 class="list-group-item-heading pull-left">Health &amp; Safety management</h4>
-  						<p class="list-group-item-text pull-right text-muted">1</p>
-  					</a>
-  					<div class="collapse" id="collapse-2">
   						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
     						<div class="list-group-item-content">
-    							<h4 class="list-group-item-heading">5.2 Lorem ipsum</h4>
-                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
-    						</div>
+    							<h4 class="list-group-item-heading">Failure of brackets</h4>
+                  <p class="list-group-item-text">NC99998 - Incident, 3 Mar 2015</p>
+                </div>
   						</a>
   					</div>
-  					<a class="list-group-item bootcards-list-subheading clearfix collapsed" data-toggle="collapse" href="#collapse-3">
-  						<h4 class="list-group-item-heading pull-left">Quality management</h4>
-  						<p class="list-group-item-text pull-right text-muted">2</p>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-2">
+  						<p class="list-group-item-text pull-right text-muted">5</p>
+  						<h4 class="list-group-item-heading">Environmental Management</h4>
   					</a>
-  					<div class="collapse" id="collapse-3">
+  					<div id="collapse-2" class="collapse">
     				  <a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
     						<div class="list-group-item-content">
-    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
-                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
     						</div>
   						</a>
   						<a class="list-group-item">
+      				  <span class="label label-empty status-indicator pull-left"></span>
     						<div class="list-group-item-content">
-    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
-                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    							<h4 class="list-group-item-heading">Supplier failed to deliver</h4>
+                  <p class="list-group-item-text">NC99996 - Incident, 6 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Failure of brackets</h4>
+                  <p class="list-group-item-text">NC99998 - Incident, 3 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">IT system failure</h4>
+                  <p class="list-group-item-text">NC99997 - Communication, 6 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-success status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Supplier Y failed to replace item</h4>
+                  <p class="list-group-item-text">NC99995 - Audit, 6 Mar 2015</p>
+                </div>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-3">
+  						<p class="list-group-item-text pull-right text-muted">1</p>
+  						<h4 class="list-group-item-heading">Information Security Management</h4>
+  					</a>
+  					<div id="collapse-3" class="collapse">
+              <a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
     						</div>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading collapsed" data-toggle="collapse" href="#collapse-4">
+  						<p class="list-group-item-text pull-right text-muted">12</p>
+  						<h4 class="list-group-item-heading">Quality Management</h4>
+  					</a>
+  					<div id="collapse-4" class="collapse">
+              <a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item">
+      				  <span class="label label-empty status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Supplier failed to deliver</h4>
+                  <p class="list-group-item-text">NC99996 - Incident, 6 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Failure of brackets</h4>
+                  <p class="list-group-item-text">NC99998 - Incident, 3 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item">
+      				  <span class="label label-empty status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Supplier failed to deliver</h4>
+                  <p class="list-group-item-text">NC99996 - Incident, 6 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Failure of brackets</h4>
+                  <p class="list-group-item-text">NC99998 - Incident, 3 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+      				  <span class="label label-warning status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Extrusion failed in service</h4>
+                  <p class="list-group-item-text">NC99999 - Communication, 3 Mar 2015</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item">
+      				  <span class="label label-empty status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Supplier failed to deliver</h4>
+                  <p class="list-group-item-text">NC99996 - Incident, 6 Mar 2015</p>
+                </div>
+  						</a>
+  						<a class="list-group-item">
+    						<span class="label label-danger status-indicator pull-left"></span>
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Failure of brackets</h4>
+                  <p class="list-group-item-text">NC99998 - Incident, 3 Mar 2015</p>
+                </div>
   						</a>
   					</div>
   				</div>
   			</div>
   		</div>
 
-      <div class="col-sm-8 bootcards-cards hidden-xs">
-				<div class="panel panel-default isometrica-wiki-panel">
-					<div class="panel-heading clearfix">
-						<div class="btn-group pull-left">
-							<a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-								<i class="fa fa-ellipsis-v fa-lg no-margin"></i>
-							</a>
-							<ul class="dropdown-menu">
-                <li><a href="#">Rollback this page</a></li>
-                <li><a href="#">View changes</a></li>
-                <li><a href="#">Email this page</a></li>
-              </ul>
-						</div>
-						<div class="pull-right">
-							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-wiki-edit-modal">
-								Edit
-							</a>
-						</div>
-						<h3 class="panel-title text-center">5.1 Leadership &amp; commitment</h3>
-					</div>
-          <div class="panel-body isometrica-wiki-panel-text-read">
-            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
-            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
-            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
-          </div>
-          <div class="panel-body isometrica-wiki-panel-files">
-            <label class="control-label">Files</label>
-            <div class="isometrica-wiki-panel-files-list">
-              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt</a>
-              <a href="" class="btn btn-default"><i class="fa fa-file-pdf-o fa-lg"></i> brochure.pdf</a>
-            </div>
-          </div>
-
-          <div class="panel-body isometrica-wiki-panel-metadata">
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#page-info" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title">Page info</h4>
-                </div>
-                <div class="collapse" id="page-info">
-                  <div class="panel-body">
-                    <div class="row">
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Version</strong>
-                        <span>1</span>
-                        <hr>
-                        <strong>Status</strong>
-                        <span class="label label-warning">Awaiting approval</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Signed by</strong>
-                        <span>Steve Ives</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>20 Jan 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Last edited by</strong>
-                        <span>M.Smith</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>20 Mar 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                      <div class="col-sm-3 col-xs-6">
-                        <strong>Created by</strong>
-                        <span>P.Jones</span>
-                        <hr>
-                        <strong>Date</strong>
-                        <span>10 Jan 2015</span>
-                        <hr class="visible-xs">
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="panel panel-default isometrica-wiki-comments">
-          <div class="panel-heading clearfix">
-            <h3 class="panel-title pull-left">Comments (4)</h3>
-            <div class="pull-right">
-              <button type="button" class="btn btn-default">
-                <i class="fa fa-plus"></i>
-                Add comment
-              </button>
-            </div>
-          </div>
-          <div class="list-group">
-            <div class="list-group-item">
-              <img src="img/avatar-steve.gif" class="img-circle avatar pull-left"/>
-              <div class="list-group-item-content">
-                <p>
-                  <strong>Steve Ives</strong>
-                  <br>After finalising the design this week with Michael, we agreed on a simplification of the sub card structure.  Could you remove the sub-item field and make the Comment field triple height instead of double height?
-                  <br>
-                  <br>Also, can we increase the spacing slightly between the grouping of 4 sub cards and the New Meeting actions sub card in Edit mode?
-                  <br><small class="text-muted">Posted on 26 Aug 2015 - <a href="">Edit</a> - <a href="">Delete</a></small>
-                </p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <img src="img/avatar-jack.gif" class="img-circle avatar pull-left"/>
-              <div class="list-group-item-content">
-                <p>
-                  <strong>Jack Herbert</strong>
-                  <br>Unlike the list view, I don't think a right chevron is appropriate here. It implies a new view will open to the right, which is not true. A down chevron would be better (a new view will open below).
-                  <br><small class="text-muted">Posted 23 hours ago</small>
-                </p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <img src="img/avatar-steve.gif" class="img-circle avatar pull-left"/>
-              <div class="list-group-item-content">
-                <p>
-                  <strong>Steve Ives</strong>
-                  <br>OK, let's go for the down chevron (I guess it gets replaced by an up chevron after you've clicked on it)
-                  <br><small class="text-muted">Posted 23 hours ago - <a href="">Edit</a> - <a href="">Delete</a></small>
-                </p>
-              </div>
-            </div>
-            <div class="list-group-item">
-              <img src="img/avatar-jack.gif" class="img-circle avatar pull-left"/>
-              <div class="list-group-item-content">
-                <p>
-                  <strong>Jack Herbert</strong>
-                  <br><a href="#">http://ui2.isometrica.io/meetings.html</a>
-                  <br><small class="text-muted">Posted 27 minutes ago</small>
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+			<div class="col-sm-8 bootcards-cards hidden-xs">
 			</div>
 		</div>
   </div>
-
-
-  <!-- Edit Modal -->
-  <!--
-  <div class="modal fade isometrica-edit-modal" id="edit-modal">
-    <div class="modal-dialog">
-      <div class="modal-content">
-        <div class="modal-header clearfix">
-          <div class="pull-left">
-      			<button type="button" class="btn btn-default" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="pull-right">
-            <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
-      				<i class="fa fa-lg fa-question-circle"></i>
-      			</button>
-      			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Save
-      			</button>
-          </div>
-          <h4 class="modal-title">Incident</h4>
-        </div>
-        <div class="collapse in" id="guidance-panel">
-          <div class="guidance-panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
-            <div class="collapse" id="guidance-panel-more">
-              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-              <ul class="text-muted">
-                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-              </ul>
-            </div>
-            <div class="btn-group">
-              <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-more">
-                <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
-                <span class="expanded-label">Full help</span>
-              </a>
-              <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel"><i class="fa fa-chevron-up"></i> Hide</a>
-              <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-question">Ask question</a>
-              <a class="btn btn-link edit-guidance collapsed" data-toggle="collapse" href="#guidance-panel-edit">Edit</a>
-            </div>
-            <div class="collapse guidance-panel-question" id="guidance-panel-question">
-              <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-              <a class="btn btn-primary" >Send</a>
-              <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-question">Cancel</a>
-            </div>
-            <div class="collapse guidance-panel-edit" id="guidance-panel-edit">
-              <div class="form-group">
-                <textarea class="form-control" rows="3" placeholder="Primary help text"></textarea>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" rows="3" placeholder="Secondary help text"></textarea>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Document reference 1"/>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Clause number(s)"/>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Document reference 2"/>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Clause number(s)"/>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Document reference 3"/>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Clause number(s)"/>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Document reference 4"/>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="form-group">
-                    <input type="text" class="form-control" value="" placeholder="Clause number(s)"/>
-                  </div>
-                </div>
-              </div>
-              <a class="btn btn-primary" data-toggle="collapse" href="#guidance-panel-edit">Save</a>
-              <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-edit">Cancel</a>
-            </div>
-          </div>
-        </div>
-        <form class="form-horizontal">
-          <div class="modal-body">
-            <div class="form-group">
-              <label class="control-label col-xs-4">Description</label>
-              <div class="col-xs-8">
-                <div class="input-group">
-                  <span class="input-group-addon" id="basic-addon1">IN112</span>
-                  <input type="text" class="form-control" placeholder="Description" value="Fire in 1st floor office"/>
-                </div>
-                <button type="button" class="btn btn-link clear-field">
-  			          <i class="fa fa-times-circle"></i>
-  			        </button>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Category</label>
-              <div class="col-xs-8">
-                <div class="input-group isometrica-typeahead">
-                  <input type="text" class="form-control" value="Fire" placeholder="Category" data-toggle="dropdown"/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                  </span>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">Lifting-related incident</a></li>
-                    <li><a href="#">Fall leading to injury</a></li>
-                    <li><a href="#">Sharp object injury</a></li>
-                    <li><a href="#">Acute health episode (e.g. heart attack)</a></li>
-                    <li><a href="#">Pressure system failure</a></li>
-                    <li><a href="#">Electrical short circuit</a></li>
-                    <li><a href="#">Explosion</a></li>
-                    <li><a href="#">Release of harmful material</a></li>
-                    <li><a href="#">Collapse of structure</a></li>
-                    <li class="active"><a href="#">Fire</a></li>
-                    <li><a href="#">Other</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#"><strong>Add new incident category</strong></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Date</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="30 Jun 2015" placeholder="Date"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Location</label>
-              <div class="col-xs-8">
-                <input type="text" class="form-control" value="London HQ" placeholder="Location"/>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Reported by</label>
-              <div class="col-xs-8">
-                <div class="input-group isometrica-typeahead">
-                  <input type="text" class="form-control" value="Steve Saunders" placeholder="Reported by" data-toggle="dropdown"/>
-                  <span class="input-group-btn" data-toggle="dropdown">
-                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                  </span>
-                  <ul class="dropdown-menu dropdown-menu-right">
-                    <li><a href="#">Jack Herbert</a></li>
-                    <li><a href="#">Steve Ives</a></li>
-                    <li><a href="#">Mark Leusink</a></li>
-                    <li class="active"><a href="#">Steve Saunders</a></li>
-                    <li><a href="#">Mike Smith</a></li>
-                    <li role="separator" class="divider"></li>
-                    <li><a href="#"><strong>Add new user</strong></a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">Illness or injury?</label>
-              <div class="col-xs-8">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-default">No</button>
-                  <button type="button" class="btn btn-info active">Yes</button>
-                </div>
-              </div>
-            </div>
-            <div class="form-group">
-              <label class="control-label col-xs-4">&nbsp;</label>
-              <div class="col-xs-8">
-                <textarea class="form-control" rows="2" placeholder="Illness or injury details">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</textarea>
-              </div>
-            </div>
-
-
-
-            <div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#notify" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notify interested party?</h4>
-                  <h4 class="panel-title pull-right text-muted">Yes</h4>
-                </div>
-                <div class="collapse" id="notify">
-                  <div class="panel-body">
-
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Inform interested parties?</label>
-                      <div class="col-xs-8">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">No</button>
-                          <button type="button" class="btn btn-info active">Yes</button>
-                        </div>
-                      </div>
-                    </div>
-
-
-                    <div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#interestedparty-1" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>UK Health &amp; Safety Executive</strong>
-                          </div>
-                          <div class="pull-right">
-                            Regulator
-                          </div>
-                        </div>
-                        <div class="collapse" id="interestedparty-1">
-                          <div class="panel-body">
-                            <div class="form-group">
-                              <label class="control-label col-xs-4">Interested party</label>
-                              <div class="col-xs-8">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="UK Health & Safety Executive" placeholder="Which interested party?" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">UK customers</a></li>
-                                    <li><a href="#">UK Government ICO</a></li>
-                                    <li class="active"><a href="#">UK Health &amp; Safety Executive</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new interested party</strong></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-4">Type</label>
-                  		        <div class="col-xs-8">
-                  			        <select class="form-control">
-                    			        <option></option>
-                    			        <option selected="">Regulator</option>
-                    			        <option>Next of kin</option>
-                  			        </select>
-                  		        </div>
-                  	        </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-4">Notified date</label>
-                              <div class="col-xs-8">
-                                <input type="text" class="form-control" value="15 Jul 2015" placeholder="Notified date"/>
-                              </div>
-                            </div>
-                            <div class="form-group">
-                              <label class="control-label col-xs-4">Notified by</label>
-                              <div class="col-xs-8">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Notified by" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">Jack Herbert</a></li>
-                                    <li><a href="#">Steve Ives</a></li>
-                                    <li><a href="#">Mark Leusink</a></li>
-                                    <li><a href="#">Steve Saunders</a></li>
-                                    <li class="active"><a href="#">Mike Smith</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new user</strong></a></li>
-                                  </ul>
-                                </div>
-                              </div>
-                            </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-link">Add interested party</button>
-                    </div>
-
-
-
-
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#tags" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Tags</h4>
-                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-                </div>
-                <div class="collapse" id="tags">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Activity or process</label>
-                      <div class="col-xs-8">
-                        <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Customer support" placeholder="Activity or process" data-toggle="dropdown"/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                          </span>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="active"><a href="#">Customer support</a></li>
-                            <li><a href="#">Extrusion</a></li>
-                            <li><a href="#">Thermoforming</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new activity or process</strong></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-xs-4">Department(s)</label>
-                      <div class="col-xs-8">
-                        <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Customer service" placeholder="Department(s)" data-toggle="dropdown"/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                          </span>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="#">Accounting</a></li>
-                            <li class="active"><a href="#">Customer service</a></li>
-                            <li><a href="#">HR</a></li>
-                            <li><a href="#">Manufacturing</a></li>
-                            <li><a href="#">Marketing</a></li>
-                            <li><a href="#">Operations</a></li>
-                            <li><a href="#">Sales</a></li>
-                            <li><a href="#">Technical support</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new interested party</strong></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#notes" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notes</h4>
-                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-                </div>
-                <div class="collapse" id="notes">
-                  <div class="panel-body">
-
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
-                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
-                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
-                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
-                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
-                        </div>
-                      </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
-                    </div>
-
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#files" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Files</h4>
-                  <h4 class="panel-title pull-right text-muted">2</h4>
-                </div>
-                <div class="collapse" id="files">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <div class="col-xs-12">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-image-o fa-lg"></i>
-                            Image name here.jpg
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-video-o fa-lg"></i>
-                            Video filename goes here.mov
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width isometrica-rich-text-panel">
-                <div class="panel-heading clearfix collapsed" href="#findings" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Findings</h4>
-                  <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-                </div>
-                <div class="collapse" id="findings">
-                  <div class="panel-body">
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default icon-only" href="#" title="Bold"><i class="fa fa-bold"></i></a>
-                          <a class="ql-italic btn btn-default icon-only" href="#" title="Italic"><i class="fa fa-italic"></i></a>
-                          <a class="ql-bullet btn btn-default icon-only" href="#" title="Bullet"><i class="fa fa-list-ul"></i></a>
-                          <a class="ql-list btn btn-default icon-only" href="#" title="List"><i class="fa fa-list-ol"></i></a>
-                          <a class="ql-link btn btn-default icon-only" href="#" title="Link"><i class="fa fa-link"></i></a>
-                        </div>
-                      </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#corrective-actions" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Corrective actions</h4>
-                  <h4 class="panel-title pull-right"><span class="label label-danger">Overdue</span></h4>
-                </div>
-                <div class="collapse" id="corrective-actions">
-                  <div class="panel-body">
-
-                    <div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#action-1" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>CA129</strong>
-                            Fix machine calibration
-                          </div>
-                          <div class="pull-right">
-                            9 Sep 2015 <span class="label label-danger">Overdue</span>
-                          </div>
-                        </div>
-                        <div class="collapse" id="action-1">
-                          <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-3"></label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-
-                  		        <label class="control-label col-xs-3">Description</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Fix machine calibration">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Date</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="9 Sep 2015">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Closed
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Cancelled
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Plan exists?</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Yes
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    No
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="text-center">
-                      <button type="button" class="btn btn-link">Add corrective action</button>
-                    </div>
-        	        </div>
-                </div>
-              </div>
-              <div class="panel panel-default bootcards-panel-collapsing full-width">
-                <div class="panel-heading clearfix collapsed" href="#improvement-opportunities" data-toggle="collapse">
-                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Improvement opportunities</h4>
-                  <h4 class="panel-title pull-right"><span class="label label-warning">In progress</span></h4>
-                </div>
-                <div class="collapse" id="improvement-opportunities">
-                  <div class="panel-body">
-
-                    <div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#improvement-1" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM731</strong>
-                            Buy new machines
-                          </div>
-                          <div class="pull-right">
-                            <span class="label label-success">Closed</span>
-                          </div>
-                        </div>
-                        <div class="collapse" id="improvement-1">
-                          <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-3"></label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Description</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Fix machine calibration">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-default">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-info">
-                                    Closed
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Cancelled
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#improvement-2" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <div class="pull-left">
-                            <strong>IM732</strong>
-                            Change build process
-                          </div>
-                          <div class="pull-right">
-                            <span class="label label-warning">In progress</span>
-                          </div>
-                        </div>
-                        <div class="collapse" id="improvement-2">
-                          <div class="panel-body">
-                            <div class="form-group">
-                  		        <label class="control-label col-xs-3"></label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    New
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Existing
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Description</label>
-                  		        <div class="col-xs-9">
-                  			        <input type="text" class="form-control" value="Change build process">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Status</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Open
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Closed
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    Cancelled
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-xs-3">Plan exists?</label>
-                  		        <div class="col-xs-9">
-                          	    <div class="btn-group isometrica-btn-toggle">
-                                  <button type="button" class="btn btn-info">
-                                    Yes
-                                  </button>
-                                  <button type="button" class="btn btn-default">
-                                    No
-                                  </button>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                              <div class="col-sm-9 col-sm-offset-3 clearfix">
-                                <button type="button" class="btn btn-default pull-left">More Info</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-            </div>
-
-            <div class="text-center">
-              <button type="button" class="btn btn-default btn-delete">Delete</button>
-            </div>
-
-          </div>
-          <div class="modal-footer">
-            <div class="isometrica-changelog collapsed">
-              <div class="row isometrica-changelog-toggle collapsed" data-toggle="collapse" data-target="#changelog-2">
-                <div class="col-xs-4">
-                  <div><small>Created by: Nigel Cheshire</small></div>
-                  <div><small>Date: 20 May 2015</small></div>
-                </div>
-                <div class="col-xs-4">
-                  <div><small>Last edited by: Nigel Cheshire</small></div>
-                  <div><small>Date: 21 May 2015</small></div>
-                </div>
-                <i class="fa fa-chevron-up fa-lg disclosure-indicator"></i>
-              </div>
-              <div class="collapse" id="changelog-2">
-                <div class="table-responsive">
-                  <table class="table table-condensed">
-                    <thead>
-                      <tr>
-                        <th>Name</th>
-                        <th>Change summary</th>
-                        <th class="text-right">Date &amp; time</th>
-                      </tr>
-                    </thead>
-                    <tbody>
-                      <tr>
-                        <td>Mike Smith</td>
-                        <td>New agenda item added - Review non-conformities</td>
-                        <td class="text-right">15 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Mike Smith</td>
-                        <td>Removed meeting action - Test server-side performance</td>
-                        <td class="text-right">14 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Mark Dixon</td>
-                        <td>New meeting action added - Investigate Japan pricing</td>
-                        <td class="text-right">12 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Steve Ives</td>
-                        <td>New meeting action added - Renew EMEA prices</td>
-                        <td class="text-right">10 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Nigel Cheshire</td>
-                        <td>New agenda item added - Status of corrective and preventative measures</td>
-                        <td class="text-right">7 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Mike Smith</td>
-                        <td>New agenda item added - Review non-conformities</td>
-                        <td class="text-right">6 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Mike Smith</td>
-                        <td>Removed meeting action - Test server-side performance</td>
-                        <td class="text-right">4 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Mark Dixon</td>
-                        <td>New meeting action added - Investigate Japan pricing</td>
-                        <td class="text-right">2 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Steve Ives</td>
-                        <td>New meeting action added - Renew EMEA prices</td>
-                        <td class="text-right">2 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td>Nigel Cheshire</td>
-                        <td>New agenda item added - Status of corrective and preventative measures</td>
-                        <td class="text-right">1 Jun 2015  15:15</td>
-                      </tr>
-                      <tr>
-                        <td colspan="3"><a href="">View all changes (34 total)</a></td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-              </div>
-            </div>
-          </div>
-        </form>
-      </div>
-    </div>
-  </div>
-  -->
-
-  <script>
-
-    // DETAIL VIEW FOR MOBILE
-    if ($(window).width() < 768) {
-      $( ".bootcards-list .list-group a" ).click(function() {
-
-        // Hide list view
-        $(".bootcards-list").attr('style','display:none !important');
-
-        // Show detail view
-        $(".bootcards-cards").attr('style','display:block !important');
-      });
-    }
-
-    /* Tooltips */
-    $(function () {
-      $('[data-toggle="tooltip"]').tooltip()
-    });
-
-</script>
 
 </body>
 </html>

@@ -1,0 +1,304 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Search</title>
+  <!-- 1.0.0 -->
+
+	<!-- Bootstrap and Bootcards JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/bootstrap/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/bootcards/dist/js/bootcards.min.js"></script>
+
+	<!-- Bootcards CSS for desktop: -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
+
+  <!-- Angular for partials -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/isometrica.js"></script>	
+
+	<link rel="stylesheet" href="css/isometrica.css">
+</head>
+<body ng-app="isometrica" class="isometrica-wiki">
+
+  <!-- fixed top navbar -->
+  <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
+    <div class="container-fluid">
+      <ul class="nav navbar-nav navbar-left">
+        <li>
+          <a class="btn btn-link icon-only" href="dashboard.html">
+          	<i class="fa fa-lg fa-chevron-left"></i>
+          </a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li>
+          <a class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel-top">
+          	<i class="fa fa-lg fa-question-circle no-margin"></i>
+          </a>
+        </li>
+      </ul>
+      <div class="navbar-header">
+        <span class="navbar-brand">
+          Search
+        </span>
+        <!--
+        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
+          Search
+          <i class="fa fa-chevron-down"></i>
+        </span>
+
+        <ul class="dropdown-menu">
+          <li class="active"><a href="#">All</a></li>
+          <li><a href="#">By activity/process</a></li>
+          <li><a href="#">By department</a></li>
+          <li><a href="#">By interested party</a></li>
+        </ul>
+        -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="container bootcards-container isometrica-container-listdetail" id="main">
+
+
+
+		<div class="row">
+
+      <div class="col-sm-4 bootcards-list" id="list">
+  			<div class="panel panel-default">
+    			<div class="panel-heading clearfix">
+            <div class="btn-group pull-left">
+							<a class="btn btn-default">
+								<i class="fa fa-long-arrow-left"></i>
+								Back to Document
+							</a>
+						</div>
+    			</div>
+  				<div class="panel-body">
+  					<div class="search-form">
+    					<div class="row">
+						    <div class="col-xs-12">
+    				      <div class="form-group" style="padding-right: 15px;">
+    					      <input type="text" class="form-control" placeholder="Search..." value="1.4">
+    					      <i class="fa fa-search"></i>
+                    <button type="button" class="btn btn-link clear-field">
+      			          <i class="fa fa-times-circle"></i>
+      			        </button>    					      
+    				      </div>
+						    </div>
+  						</div>
+  					</div>
+  				</div>
+
+  				<div class="list-group bootcards-accordion">
+    				<a class="list-group-item bootcards-list-subheading clearfix" data-toggle="collapse" href="#collapse-1">
+  						<h4 class="list-group-item-heading pull-left">Business continuity management</h4>
+  						<p class="list-group-item-text pull-right text-muted">2</p>
+  					</a>
+  					<div class="collapse in" id="collapse-1">
+    				  <a class="list-group-item active">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
+                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">5.2 Lorem ipsum</h4>
+                  <p class="list-group-item-text">Ut ultricies leo quis vestibulum efficitur. Ut tempor luctus sem in porta aliquam...</p>
+    						</div>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading clearfix collapsed" data-toggle="collapse" href="#collapse-2">
+  						<h4 class="list-group-item-heading pull-left">Health &amp; Safety management</h4>
+  						<p class="list-group-item-text pull-right text-muted">1</p>
+  					</a>
+  					<div class="collapse" id="collapse-2">
+  						<a class="list-group-item">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">5.2 Lorem ipsum</h4>
+                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    						</div>
+  						</a>
+  					</div>
+  					<a class="list-group-item bootcards-list-subheading clearfix collapsed" data-toggle="collapse" href="#collapse-3">
+  						<h4 class="list-group-item-heading pull-left">Quality management</h4>
+  						<p class="list-group-item-text pull-right text-muted">2</p>
+  					</a>
+  					<div class="collapse" id="collapse-3">
+    				  <a class="list-group-item">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
+                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">5.1 Leadership and commitment</h4>
+                  <p class="list-group-item-text">Leadership and commitment to the management system is shown in OrgX by...</p>
+    						</div>
+  						</a>
+  					</div>
+  				</div>
+  			</div>
+  		</div>
+
+      <div class="col-sm-8 bootcards-cards hidden-xs">
+				<div class="panel panel-default isometrica-wiki-panel">
+					<div class="panel-heading clearfix">
+						<div class="btn-group pull-left">
+							<a class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+								<i class="fa fa-ellipsis-v fa-lg no-margin"></i>
+							</a>
+							<ul class="dropdown-menu">
+                <li><a href="#">Rollback this page</a></li>
+                <li><a href="#">View changes</a></li>
+                <li><a href="#">Email this page</a></li>
+              </ul>
+						</div>
+						<div class="pull-right">
+							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-wiki-edit-modal">
+								Edit
+							</a>
+						</div>
+						<h3 class="panel-title text-center">5.1 Leadership &amp; commitment</h3>
+					</div>
+          <div class="panel-body isometrica-wiki-panel-text-read">
+            <p>Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</p>
+            <p>Maecenas sed diam eget risus varius blandit sit amet non magna. Donec id elit non mi porta gravida at eget metus. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
+          </div>
+          <div class="panel-body isometrica-wiki-panel-files">
+            <label class="control-label">Files</label>
+            <div class="isometrica-wiki-panel-files-list">
+              <a href="" class="btn btn-default"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
+              <a href="" class="btn btn-default"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
+              <a href="" class="btn btn-default"><i class="fa fa-file-powerpoint-o fa-lg"></i> presentation.ppt</a>
+              <a href="" class="btn btn-default"><i class="fa fa-file-pdf-o fa-lg"></i> brochure.pdf</a>
+            </div>
+          </div>
+
+          <div class="panel-body isometrica-wiki-panel-metadata">
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+                <div class="panel-heading clearfix collapsed" href="#page-info" data-toggle="collapse">
+                  <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                  <h4 class="panel-title">Page info</h4>
+                </div>
+                <div class="collapse" id="page-info">
+                  <div class="panel-body">
+                    <div class="row">
+                      <div class="col-sm-3 col-xs-6">
+                        <strong>Version</strong>
+                        <span>1</span>
+                        <hr>
+                        <strong>Status</strong>
+                        <span class="label label-warning">Awaiting approval</span>
+                        <hr class="visible-xs">
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                        <strong>Signed by</strong>
+                        <span>Steve Ives</span>
+                        <hr>
+                        <strong>Date</strong>
+                        <span>20 Jan 2015</span>
+                        <hr class="visible-xs">
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                        <strong>Last edited by</strong>
+                        <span>M.Smith</span>
+                        <hr>
+                        <strong>Date</strong>
+                        <span>20 Mar 2015</span>
+                        <hr class="visible-xs">
+                      </div>
+                      <div class="col-sm-3 col-xs-6">
+                        <strong>Created by</strong>
+                        <span>P.Jones</span>
+                        <hr>
+                        <strong>Date</strong>
+                        <span>10 Jan 2015</span>
+                        <hr class="visible-xs">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="panel panel-default isometrica-wiki-comments">
+          <div class="panel-heading clearfix">
+            <h3 class="panel-title pull-left">Comments (4)</h3>
+            <div class="pull-right">
+              <button type="button" class="btn btn-default">
+                <i class="fa fa-plus"></i>
+                Add comment
+              </button>
+            </div>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <img src="img/avatar-steve.gif" class="img-circle avatar pull-left"/>
+              <div class="list-group-item-content">
+                <p>
+                  <strong>Steve Ives</strong>
+                  <br>After finalising the design this week with Michael, we agreed on a simplification of the sub card structure.  Could you remove the sub-item field and make the Comment field triple height instead of double height?
+                  <br>
+                  <br>Also, can we increase the spacing slightly between the grouping of 4 sub cards and the New Meeting actions sub card in Edit mode?
+                  <br><small class="text-muted">Posted on 26 Aug 2015 - <a href="">Edit</a> - <a href="">Delete</a></small>
+                </p>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <img src="img/avatar-jack.gif" class="img-circle avatar pull-left"/>
+              <div class="list-group-item-content">
+                <p>
+                  <strong>Jack Herbert</strong>
+                  <br>Unlike the list view, I don't think a right chevron is appropriate here. It implies a new view will open to the right, which is not true. A down chevron would be better (a new view will open below).
+                  <br><small class="text-muted">Posted 23 hours ago</small>
+                </p>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <img src="img/avatar-steve.gif" class="img-circle avatar pull-left"/>
+              <div class="list-group-item-content">
+                <p>
+                  <strong>Steve Ives</strong>
+                  <br>OK, let's go for the down chevron (I guess it gets replaced by an up chevron after you've clicked on it)
+                  <br><small class="text-muted">Posted 23 hours ago - <a href="">Edit</a> - <a href="">Delete</a></small>
+                </p>
+              </div>
+            </div>
+            <div class="list-group-item">
+              <img src="img/avatar-jack.gif" class="img-circle avatar pull-left"/>
+              <div class="list-group-item-content">
+                <p>
+                  <strong>Jack Herbert</strong>
+                  <br><a href="#">http://ui2.isometrica.io/meetings.html</a>
+                  <br><small class="text-muted">Posted 27 minutes ago</small>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+			</div>
+		</div>
+  </div>
+
+
+
+</body>
+</html>

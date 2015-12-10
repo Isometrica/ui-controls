@@ -295,11 +295,14 @@
 
 /* Disabled fields */
 
+.form-control[disabled] {
+  -webkit-text-fill-color: #555;
+}
+
 .ios .form-control[disabled],
 .android .form-control[disabled] {
   background: #eee;
   padding-left: 10px;
-  //border-color: transparent;
 }
 
 
@@ -350,6 +353,11 @@ input:focus ~ .clear-field {
     margin-top: 0 !important;
   }
 }
+
+.search-filters {
+  margin-top: 10px;
+}
+
 
 /* Form layout */
 

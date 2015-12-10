@@ -18,33 +18,13 @@
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 
-	<script>
-	// Platform Detection (testing only)
-	$( document ).ready(function() {
-		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('ios');
-     	}
-		else if( navigator.userAgent.match(/Android/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('android');
-		}
-		else
-		{
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('desktop');
-		}
-	});
-	</script>
+  <!-- Angular for partials -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/isometrica.js"></script>	
 
 	<link rel="stylesheet" href="css/isometrica.css">
-
-
 </head>
-<body class="bootcards-nofooter bootcards-fullheight isometrica-overview-page has-bootcards-navbar-double">
+<body ng-app="isometrica" class="isometrica-overview-page has-bootcards-navbar-double">
 
 
   <!-- fixed top navbar -->
@@ -294,16 +274,6 @@
     </div>
   </div>
 
-
-<script>
-
-  /* Tooltips */
-
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
-
-</script>
 
 </body>
 </html>

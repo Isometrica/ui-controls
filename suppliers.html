@@ -19,32 +19,13 @@
 	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap/dist/css/bootstrap.min.css">
 
-	<script>
-	// Platform Detection (testing only)
-	$( document ).ready(function() {
-		if( navigator.userAgent.match(/iPhone|iPad|iPod/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-ios.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('ios');
-     	}
-		else if( navigator.userAgent.match(/Android/i) ) {
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-android.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('android');
-		}
-		else
-		{
-			var cssLink = $("<link rel='stylesheet' type='text/css' href='assets/libs/bootcards/dist/css/bootcards-desktop.min.css'>");
-			$("head").append(cssLink);
-			$('body').addClass('desktop');
-		}
-	});
-	</script>
+  <!-- Angular for partials -->
+  <script src="js/angular.min.js"></script>
+  <script src="js/isometrica.js"></script>	
 
 	<link rel="stylesheet" href="css/isometrica.css">
-
 </head>
-<body class="bootcards-fullheight bootcards-nofooter">
+<body ng-app="isometrica">
 
   <!-- fixed top navbar -->
   <div class="navbar navbar-inverse navbar-fixed-top isometrica-navbar-centered" role="navigation">
@@ -80,34 +61,7 @@
   </div>
 
   <!-- Guidance Bar -->
-  <div class="collapse in" id="guidance-panel-top">
-    <div class="guidance-panel guidance-panel-top guidance-panel-overview">
-      <div class="container">
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex. Non laoreet neque tincidunt sed.</p>
-        <div class="collapse" id="guidance-panel-top-more">
-          <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-          <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-          <ul class="text-muted">
-            <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-            <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-            <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-            <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-          </ul>
-        </div>
-        <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-top-more">
-          <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
-          <span class="expanded-label">Full help</span>
-        </a>
-        <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-top"><i class="fa fa-chevron-up"></i> Hide</a>
-        <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-top-question">Ask question</a>
-        <div class="collapse guidance-panel-question" id="guidance-panel-top-question">
-          <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-          <a class="btn btn-primary" >Send</a>
-          <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-top-question">Cancel</a>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
 
 
   <div class="container bootcards-container isometrica-container-listdetail" id="main">
@@ -457,32 +411,7 @@
           </div>
           <h4 class="modal-title">Supplier details</h4>
         </div>
-        <div class="collapse in" id="guidance-panel">
-          <div class="guidance-panel">
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
-            <div class="collapse" id="guidance-panel-more">
-              <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-              <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-              <ul class="text-muted">
-                <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-                <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-                <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-                <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-              </ul>
-            </div>
-            <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-more">
-              <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
-              <span class="expanded-label">Full help</span>
-            </a>
-            <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel"><i class="fa fa-chevron-up"></i> Hide</a>
-            <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-question">Ask question</a>
-            <div class="collapse guidance-panel-question" id="guidance-panel-question">
-              <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-              <a class="btn btn-primary" >Send</a>
-              <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-question">Cancel</a>
-            </div>
-          </div>
-        </div>
+        <div ng-include="'includes/guidance-panel-modal.html'"></div>
         <form class="form-horizontal">
           <div class="modal-body">
             <div class="form-group">
@@ -596,36 +525,7 @@
                   <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="notifications">
-                  <div class="panel-body">
-                    <div class="form-group">
-          		        <label class="control-label col-sm-4 col-xs-12">User(s)</label>
-          		        <div class="col-sm-8 col-xs-12">
-            		        <div class="btn-group">
-              		        <button class="btn btn-default" type="button" disabled="">Mike Smith</button>
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
-            		        </div>
-            		        <div class="btn-group">
-              		        <button class="btn btn-default" type="button" disabled="">Steve Ives</button>
-                          <button class="btn btn-default" type="button"><i class="fa fa-lg fa-times-circle no-margin"></i></button>
-            		        </div>
-                        <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="" placeholder="Add user" data-toggle="dropdown"/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                          </span>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="#">Jack Herbert</a></li>
-                            <li><a href="#">Steve Ives</a></li>
-                            <li><a href="#">Mark Leusink</a></li>
-                            <li><a href="#">Steve Saunders</a></li>
-                            <li><a href="#">Mike Smith</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new user</strong></a></li>
-                          </ul>
-                        </div>
-          		        </div>
-          	        </div>
-                  </div>
+                  <div ng-include="'includes/subcards/notify.html'"></div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
@@ -635,60 +535,7 @@
                   <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="contact-info">
-                  <div class="panel-body">
-                    <div class="form-group">
-          		        <label class="control-label col-sm-4 col-xs-12">Contact name</label>
-          		        <div class="col-sm-8 col-xs-12">
-                        <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Mike Smith" placeholder="Contact name" data-toggle="dropdown"/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                          </span>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li class="dropdown-header">Users</li>
-                            <li><a href="#">Jack Herbert</a></li>
-                            <li><a href="#">Steve Ives</a></li>
-                            <li><a href="#">Mark Leusink</a></li>
-                            <li><a href="#">Steve Saunders</a></li>
-                            <li class="active"><a href="#">Mike Smith</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li class="dropdown-header">Contacts</li>
-                            <li><a href="#">Jim Brown</a></li>
-                            <li><a href="#">Sarah Jones</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new user or contact</strong></a></li>
-                          </ul>
-                        </div>
-          		        </div>
-          	        </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Email</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <input type="email" class="form-control" placeholder="Email" value="mlaurence@smith.co.uk">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Phone</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <input type="phone" class="form-control" placeholder="Phone" value="01257 682123">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Mobile</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <input type="phone" class="form-control" placeholder="Mobile" value="">
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <div ng-include="'includes/subcards/contact-details.html'"></div>
                 </div>
               </div>
               
@@ -702,110 +549,7 @@
                   <h4 class="panel-title">Non-conformities</h4>
                 </div>
                 <div class="collapse" id="nonconformities">
-                  <div class="panel-body">
-                    <div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#nonconformity-1" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          <span class="label label-danger status-indicator pull-right"></span>
-                          <strong>NC509</strong> Instrument calibration not properly documented
-                        </div>
-                        <div class="collapse" id="nonconformity-1">
-                          <div class="panel-body">
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Description</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                  			        <div class="input-group">
-                                  <span class="input-group-addon" id="basic-addon1">NC509</span>
-                                  <input type="text" class="form-control" value="Instrument calibration not properly documented" placeholder="Description">
-                                </div>
-                                <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button> 
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Linked to</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                                <div class="input-group">
-                                  <span class="input-group-addon" id="basic-addon1">IA123</span>
-                                  <input type="text" class="form-control" value="Warehouse activities - receiving" disabled="">
-                                </div>
-                  		        </div>                    	        
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Owner</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">Jack Herbert</a></li>
-                                    <li><a href="#">Steve Ives</a></li>
-                                    <li><a href="#">Mark Leusink</a></li>
-                                    <li><a href="#">Steve Saunders</a></li>
-                                    <li class="active"><a href="#">Mike Smith</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new user</strong></a></li>
-                                  </ul>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Notes</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                                <textarea class="form-control" rows="3" placeholder="Notes"></textarea>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Reported date</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Reported date">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Reported by</label>
-                  		        <div class="col-sm-8 col-xs-12">
-                                <div class="input-group isometrica-typeahead">
-                                  <input type="text" class="form-control" value="Jack Herbert" placeholder="Reported by" data-toggle="dropdown"/>
-                                  <span class="input-group-btn" data-toggle="dropdown">
-                                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                                  </span>
-                                  <ul class="dropdown-menu dropdown-menu-right">
-                                    <li><a href="#">Jack Herbert</a></li>
-                                    <li><a href="#">Steve Ives</a></li>
-                                    <li><a href="#">Mark Leusink</a></li>
-                                    <li><a href="#">Steve Saunders</a></li>
-                                    <li class="active"><a href="#">Mike Smith</a></li>
-                                    <li role="separator" class="divider"></li>
-                                    <li><a href="#"><strong>Add new user</strong></a></li>
-                                  </ul>
-                                </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
-                  	        <div class="form-group">
-                              <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default pull-left">Save</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                      <button type="button" class="btn btn-link">Add a non-conformity</button>
-                    </div>
-
-                  </div>
+                  <div ng-include="'includes/subcards/nonconformities.html'"></div>
                 </div>
               </div>
               
@@ -816,24 +560,7 @@
                   <i class="fa fa-align-left disclosure-indicator pull-right"></i>
                 </div>
                 <div class="collapse" id="notes">
-                  <div class="panel-body">
-
-                    <div class="isometrica-rich-text-control">
-                      <div class="isometrica-rich-text-controls clearfix">
-                        <div class="ql-toolbar-container" id="formatting-container">
-                          <a class="ql-bold btn btn-default" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
-                          <a class="ql-italic btn btn-default" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
-                          <a class="ql-bullet btn btn-default" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
-                          <a class="ql-list btn btn-default" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
-                          <a class="ql-link btn btn-default" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
-                        </div>
-                      </div>
-                      <div class="ql-container isometrica-rich-text-input" id="editor-container">
-                        <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
-                      </div>
-                    </div>
-
-                  </div>
+                  <div ng-include="'includes/subcards/notes.html'"></div>
                 </div>
               </div>
               <div class="panel panel-default bootcards-panel-collapsing full-width">
@@ -843,31 +570,7 @@
                   <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="files">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <div class="col-xs-12">
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-image-o fa-lg"></i>
-                            Image name here.jpg
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <div class="btn-group">
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-file-video-o fa-lg"></i>
-                            Video filename goes here.mov
-                          </button>
-                          <button type="button" class="btn btn-default">
-                            <i class="fa fa-times-circle no-margin fa-lg"></i>
-                          </button>
-                        </div>
-                        <button type="button" class="btn btn-primary"><i class="fa fa-plus"></i> Add</button>
-                      </div>
-                    </div>
-                  </div>
+                  <div ng-include="'includes/subcards/files.html'"></div>
                 </div>
               </div>
               
@@ -880,60 +583,7 @@
                   <h4 class="panel-title">Review</h4>
                 </div>
                 <div class="collapse" id="review-info">
-                  <div class="panel-body">
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Status</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <span class="label label-warning">Awaiting review</span>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Last reviewed</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Reviewed by</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <div class="input-group isometrica-typeahead">
-                          <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by" data-toggle="dropdown"/>
-                          <span class="input-group-btn" data-toggle="dropdown">
-                            <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
-                          </span>
-                          <ul class="dropdown-menu dropdown-menu-right">
-                            <li><a href="#">Jack Herbert</a></li>
-                            <li><a href="#">Steve Ives</a></li>
-                            <li><a href="#">Mark Leusink</a></li>
-                            <li><a href="#">Steve Saunders</a></li>
-                            <li class="active"><a href="#">Mike Smith</a></li>
-                            <li role="separator" class="divider"></li>
-                            <li><a href="#"><strong>Add new user</strong></a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Comments</label>
-                      <div class="col-sm-8 col-xs-12">
-                        <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
-                        <button type="button" class="btn btn-link clear-field">
-          			          <i class="fa fa-times-circle"></i>
-          			        </button>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <div class="col-sm-8 col-sm-offset-4">
-                        <button type="button" class="btn btn-success">
-                          <i class="fa fa-check"></i>
-                          Mark as reviewed
-                        </button>
-                      </div>
-                    </div>
-                  </div>
+                  <div ng-include="'includes/subcards/review.html'"></div>
                 </div>
               </div>
 
@@ -1093,27 +743,6 @@
     </div>
   </div>
 
-  <script>
-
-    // DETAIL VIEW FOR MOBILE
-    if ($(window).width() < 768) {
-      $( ".bootcards-list .list-group a" ).click(function() {
-
-        // Hide list view
-        $(".bootcards-list").attr('style','display:none !important');
-
-        // Show detail view
-        $(".bootcards-cards").attr('style','display:block !important');
-      });
-    }
-
-
-  /* Tooltips */
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
-  });
-
-</script>
 
 </body>
 </html>

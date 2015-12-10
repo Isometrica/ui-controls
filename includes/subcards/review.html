@@ -1,0 +1,54 @@
+<div class="panel-body">
+  <div class="form-group">
+    <label class="control-label col-sm-4 col-xs-12">Status</label>
+    <div class="col-sm-8 col-xs-12">
+      <span class="label label-warning">Awaiting review</span>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4 col-xs-12">Last reviewed</label>
+    <div class="col-sm-8 col-xs-12">
+      <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
+      <button type="button" class="btn btn-link clear-field">
+        <i class="fa fa-times-circle"></i>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4 col-xs-12">Reviewed by</label>
+    <div class="col-sm-8 col-xs-12">
+      <div class="input-group isometrica-typeahead">
+        <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by" data-toggle="dropdown"/>
+        <span class="input-group-btn" data-toggle="dropdown">
+          <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+        </span>
+        <ul class="dropdown-menu dropdown-menu-right">
+          <li><a href="#">Jack Herbert</a></li>
+          <li><a href="#">Steve Ives</a></li>
+          <li><a href="#">Mark Leusink</a></li>
+          <li><a href="#">Steve Saunders</a></li>
+          <li class="active"><a href="#">Mike Smith</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#"><strong>Add new user</strong></a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="form-group">
+    <label class="control-label col-sm-4 col-xs-12">Comments</label>
+    <div class="col-sm-8 col-xs-12">
+      <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
+      <button type="button" class="btn btn-link clear-field">
+        <i class="fa fa-times-circle"></i>
+      </button>
+    </div>
+  </div>
+  <div class="form-group">
+    <div class="col-sm-8 col-sm-offset-4">
+      <button type="button" class="btn btn-success">
+        <i class="fa fa-check"></i>
+        Mark as reviewed
+      </button>
+    </div>
+  </div>
+</div>
