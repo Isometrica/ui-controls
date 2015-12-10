@@ -3003,36 +3003,49 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     border-color: #5bc0de; }
   .isometrica-overview-item .label {
     font-size: 12px; }
-  .isometrica-overview-item .panel-body .isometrica-overview-item-heading .workbook-icon {
-    float: left;
-    margin: 3px 15px 0 3px;
-    height: 60px; }
-  .isometrica-overview-item .panel-body .isometrica-overview-item-heading h3 {
-    margin-top: 0;
-    padding: 0;
-    margin-bottom: 3px;
-    line-height: 20px;
-    font-size: 16px; }
-  .isometrica-overview-item .panel-body .isometrica-overview-item-heading .org-name {
-    margin-bottom: 0;
-    line-height: 20px;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis; }
-  .isometrica-overview-item .panel-body p {
-    overflow: hidden;
-    margin: 0;
-    margin-bottom: 5px; }
-  .isometrica-overview-item .panel-body .description {
-    margin-bottom: 15px;
-    line-height: 20px;
-    height: 50px;
-    overflow: hidden;
-    clear: both;
-    padding-top: 10px; }
-    @media (max-width: 767px) {
-      .isometrica-overview-item .panel-body .description {
-        height: auto; } }
+  .isometrica-overview-item .panel-body {
+    position: relative; }
+    .isometrica-overview-item .panel-body .isometrica-overview-item-heading .workbook-icon {
+      float: left;
+      margin: 3px 15px 0 3px;
+      height: 60px; }
+    .isometrica-overview-item .panel-body .isometrica-overview-item-heading .document-not-approved {
+      position: absolute;
+      left: 12px;
+      top: 12px;
+      border-radius: 50%;
+      font-size: 14px;
+      width: 20px;
+      height: 20px;
+      line-height: 20px;
+      padding: 0;
+      text-align: center; }
+    .isometrica-overview-item .panel-body .isometrica-overview-item-heading h3 {
+      margin-top: 0;
+      padding: 0;
+      margin-bottom: 3px;
+      line-height: 20px;
+      font-size: 16px; }
+    .isometrica-overview-item .panel-body .isometrica-overview-item-heading .org-name {
+      margin-bottom: 0;
+      line-height: 20px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis; }
+    .isometrica-overview-item .panel-body p {
+      overflow: hidden;
+      margin: 0;
+      margin-bottom: 5px; }
+    .isometrica-overview-item .panel-body .description {
+      margin-bottom: 15px;
+      line-height: 20px;
+      height: 50px;
+      overflow: hidden;
+      clear: both;
+      padding-top: 10px; }
+      @media (max-width: 767px) {
+        .isometrica-overview-item .panel-body .description {
+          height: auto; } }
   .isometrica-overview-item .status {
     margin-bottom: 0;
     border-top: 1px solid #ddd;
