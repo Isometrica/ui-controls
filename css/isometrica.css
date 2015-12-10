@@ -3372,7 +3372,7 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
       float: none;
       display: inline-block; }
   .isometrica-org-setup-multiadd .agenda-item-title {
-    min-width: 360px; }
+    min-width: 320px; }
     .isometrica-org-setup-multiadd .agenda-item-title .input-group-addon {
       min-width: 45px;
       padding-left: 15px;
