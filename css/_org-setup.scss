@@ -270,6 +270,14 @@
   td.icon {
     width: 40px;
     min-width: 40px;
+    
+    .btn {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+    }
   }
 
   .form-control {
@@ -277,6 +285,15 @@
     box-shadow: none;
     border-radius: 0;
     padding-left: 15px;
+  }
+  
+  textarea {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    resize:none;
   }
   
   select {
@@ -307,6 +324,23 @@
       display: inline-block;
     }
   }
+  
+  /* Meetings */
+  
+  .agenda-item-title {
+    .input-group-addon {
+      min-width: 45px;
+      padding-left: 15px;
+      padding-right: 0;
+      text-align: left;
+    }
+  }
+  
+  .agenda-item-description {
+    min-width: 500px;
+  }
+  
+  
 }
 
 .android .isometrica-org-setup-multiadd {
@@ -351,7 +385,7 @@
     }
     &.modal-xl {
       @media (min-width: 992px) {
-        width: 960px !important;
+        width: 1050px !important;
       }      
     }
   } 
@@ -428,9 +462,14 @@
 .modal.isometrica-orgsetup-modal {
 	z-index: 1051;
 
-	.modal-dialog:not(.modal-lg) {
+	.modal-dialog {
   	@media (min-width: 768px) {
     	width: 480px;
+    	
+    	&.modal-lg,
+    	&.modal-xl {
+      	width: auto;
+    	}
   	}
 	}
 
