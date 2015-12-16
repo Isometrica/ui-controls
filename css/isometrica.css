@@ -554,7 +554,12 @@ body > .bootcards-container {
     padding-left: 0 !important;
     color: white !important;
     margin-left: 0 !important;
-    position: absolute; }
+    position: absolute;
+    right: 45px;
+    left: 45px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding-right: 0; }
   .android .navbar .btn {
     line-height: 50px; }
 

@@ -137,6 +137,11 @@
       color: white !important;
       margin-left: 0 !important;
       position: absolute;
+      right: 45px;
+      left: 45px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      padding-right: 0;
     }
     .btn {
       line-height: 50px;
