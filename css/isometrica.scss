@@ -251,6 +251,23 @@ $status-indicator-size: 16px;
   &:empty {
     display: inline-block;
   }
+  
+  &.primary {
+    &:before {
+      content: '';
+      position: absolute;
+      left: -5px;
+      top: -5px;
+      right: -5px;
+      bottom: -5px;
+      border-radius: 50%;
+      border-width: 2px;
+      border-style: solid;
+    }
+    &.label-success:before  { border-color: #5cb85c; }
+    &.label-warning:before { border-color: #f0ad4e; }
+    &.label-danger:before { border-color: #d9534f; }
+  }
 
   i {
     color: white;

@@ -63,6 +63,14 @@
           position: relative;
           top: -1px;
           margin-right: 5px;
+          
+          &.ref-number {
+            background: #777;
+            color: white;
+            position: absolute;
+            right: 10px;
+            top: 10px;
+          }
         }
       }
 

@@ -222,9 +222,19 @@
               <p class="list-group-item-text">Type</p>
               <h4 class="list-group-item-heading">Management review - ISO 14001:2015</h4>
             </div>
-            <div class="list-group-item">
-              <p class="list-group-item-text">Date</p>
-              <h4 class="list-group-item-heading">20 May 2015</h4>
+            <div class="row">
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Planned date</p>
+                  <h4 class="list-group-item-heading">20 May 2015</h4>
+                </div>
+              </div>
+              <div class="col-sm-6">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Date meeting held</p>
+                  <h4 class="list-group-item-heading">20 May 2015</h4>
+                </div>
+              </div>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -240,9 +250,21 @@
           </div>
           <div class="list-group">
             <div class="list-group-item">
-              <h4 class="list-group-item-heading">Nigel Cheshire - CEO</h4>
-              <h4 class="list-group-item-heading">Steve Ives - IT Manager</h4>
-              <h4 class="list-group-item-heading">Mark Dixon - Sales Manager</h4>
+              <h4 class="list-group-item-heading">Nigel Cheshire</h4>
+              <p class="list-group-item-text">CEO</p>
+              <h4 class="list-group-item-heading">Steve Ives</h4>
+              <p class="list-group-item-text">IT Manager - Minute taker</p>              
+              <h4 class="list-group-item-heading">Mark Dixon</h4>
+              <p class="list-group-item-text">Sales Manager</p>
+            </div>
+          </div>
+          <div class="panel-heading panel-subheading">
+            <h4 class="panel-title">Apologies for absence</h4>
+          </div>
+          <div class="list-group">
+            <div class="list-group-item">
+              <h4 class="list-group-item-heading">Jack Herbert</h4>
+              <p class="list-group-item-text">Operations Manager</p>
             </div>
           </div>
           <div class="panel-heading panel-subheading">
@@ -309,7 +331,7 @@
             </div>
           </div>
           <div class="panel-heading panel-subheading">
-            <h4 class="panel-title">Actions - closed from last meeting</h4>
+            <h4 class="panel-title">Meeting actions - closed</h4>
           </div>
           <div class="list-group">
             <div class="list-group-item">
@@ -318,7 +340,7 @@
             </div>
           </div>
           <div class="panel-heading panel-subheading">
-            <h4 class="panel-title">Actions - open from last meeting</h4>
+            <h4 class="panel-title">Meeting actions - open</h4>
           </div>
           <div class="list-group">
             <div class="list-group-item">
@@ -326,7 +348,7 @@
             </div>
           </div>
           <div class="panel-heading panel-subheading">
-            <h4 class="panel-title">Actions - new</h4>
+            <h4 class="panel-title">Meeting actions - new</h4>
           </div>
           <div class="list-group">
             <div class="list-group-item">
@@ -470,10 +492,22 @@
 
             <div class="form-group">
               <label class="control-label col-xs-2 col-sm-4">
-                Date
+                Planned date
               </label>
               <div class="col-xs-10 col-sm-8">
-                <input type="text" class="form-control" value="20 May 2015" placeholder="Date"/>
+                <input type="text" class="form-control" value="20 May 2015" placeholder="Planned date"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <div class="form-group">
+              <label class="control-label col-xs-2 col-sm-4">
+                Date meeting held
+              </label>
+              <div class="col-xs-10 col-sm-8">
+                <input type="text" class="form-control" value="20 May 2015" placeholder="Date meeting held"/>
                 <button type="button" class="btn btn-link clear-field">
   			          <i class="fa fa-times-circle"></i>
   			        </button>
@@ -495,7 +529,7 @@
               <div class="panel panel-default bootcards-panel-collapsing full-width">
                 <div class="panel-heading clearfix collapsed" href="#notifications" data-toggle="collapse">
                   <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                  <h4 class="panel-title pull-left">Notify on changes</h4>
+                  <h4 class="panel-title pull-left">Users to notify</h4>
                   <h4 class="panel-title pull-right text-muted">2</h4>
                 </div>
                 <div class="collapse" id="notifications">
@@ -510,60 +544,7 @@
                 </div>
                 <div class="collapse" id="attendees">
                   <div class="panel-body">
-
-                    <div>
-                      <div class="panel panel-default bootcards-panel-collapsing">
-                        <div class="panel-heading clearfix collapsed" href="#attendee-1" data-toggle="collapse" aria-expanded="false">
-                          <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
-                          Nigel Cheshire
-                        </div>
-                        <div class="collapse" id="attendee-1">
-                          <div class="panel-body">
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">
-                  		          Name
-                  		        </label>
-                  		        <div class="col-sm-8 col-xs-12">
-                  			        <input type="text" class="form-control" value="Nigel Cheshire">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Initials</label>
-                  		        <div class="col-sm-3">
-                  			        <input type="text" class="form-control" value="NC">
-                  			        <button type="button" class="btn btn-link clear-field">
-                  			          <i class="fa fa-times-circle"></i>
-                  			        </button>
-                  		        </div>
-                  	        </div>
-                  	        <div class="form-group">
-                  		        <label class="control-label col-sm-4 col-xs-12">Regular attendee</label>
-                  		        <div class="col-sm-3">
-                  			        <div class="btn-group btn-group-justified">
-                    			        <a class="btn btn-info active">Yes</a>
-                    			        <a class="btn btn-default">No</a>
-                  			        </div>
-                  		        </div>
-                  	        </div>
-                  	        <hr>
-                  	        <div class="form-group">
-                              <div class="col-sm-8 col-sm-offset-4 clearfix">
-                                <button type="button" class="btn btn-default pull-left">Save</button>
-                                <button type="button" class="btn btn-default pull-right">Delete</button>
-                              </div>
-                            </div>
-                	        </div>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="text-center">
-                    <button type="button" class="btn btn-link">Add attendee</button>
-                    </div>
-
+                    <div ng-include="'includes/subcards/attendees.html'"></div>
                   </div>
                 </div>
               </div>
@@ -1275,7 +1256,7 @@
                     <span class="text-muted">1</span>
                     <span class="label label-success status-indicator"></span>
                   </h4>
-                  <h4 class="panel-title">Actions - closed from last meeting</h4>
+                  <h4 class="panel-title">Meeting actions - closed</h4>
                   
                 </div>
                 <div class="collapse" id="meeting-actions">
@@ -1346,10 +1327,7 @@
                                   <button type="button" class="btn btn-info active">
                                     Completed
                                   </button>
-                                </div>
-                                <button type="button" class="btn btn-default pull-right">
-                                  Cancelled
-                                </button>                                
+                                </div>                               
                   		        </div>
                   	        </div>
                   	        <hr>
@@ -1537,6 +1515,9 @@
                         </div>
                       </div>
                     </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link">Add meeting action</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1548,7 +1529,7 @@
                     <span class="text-muted">1</span>
                     <span class="label label-warning status-indicator"></span>
                   </h4>
-                  <h4 class="panel-title">Actions - open from last meeting</h4>
+                  <h4 class="panel-title">Meeting actions - open</h4>
                   
                 </div>
                 <div class="collapse" id="meeting-actions-2">
@@ -1618,10 +1599,7 @@
                                   <button type="button" class="btn btn-info active">
                                     Completed
                                   </button>
-                                </div>
-                                <button type="button" class="btn btn-default pull-right">
-                                  Cancelled
-                                </button>                                
+                                </div>                               
                   		        </div>
                   	        </div>
                   	        <hr>
@@ -1809,6 +1787,9 @@
                         </div>
                       </div>
                     </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link">Add meeting action</button>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -1820,7 +1801,7 @@
                     <span class="text-muted">1</span>
                     <span class="label label-warning status-indicator"></span>
                   </h4>
-                  <h4 class="panel-title">Actions - new</h4>
+                  <h4 class="panel-title">Meeting actions - new</h4>
                   
                 </div>
                 <div class="collapse" id="meeting-actions-3">
@@ -1890,10 +1871,7 @@
                                   <button type="button" class="btn btn-info active">
                                     Completed
                                   </button>
-                                </div>
-                                <button type="button" class="btn btn-default pull-right">
-                                  Cancelled
-                                </button>                                
+                                </div>                               
                   		        </div>
                   	        </div>
                   	        <hr>
@@ -2080,6 +2058,9 @@
                 	        </div>
                         </div>
                       </div>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-link">Add meeting action</button>
                     </div>
                   </div>
                 </div>

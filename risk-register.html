@@ -53,6 +53,7 @@
           <li class="active"><a href="#">All</a></li>
           <li><a href="#">By department/site</a></li>
           <li><a href="#">By activity</a></li>
+          <li><a href="#">By review status</a></li>
           <li><a href="#">Archived</a></li>
           <li><a href="#">Deleted</a></li>
         </ul>
@@ -261,7 +262,7 @@
           <div class="list-group">
             <div class="list-group-item">
               <p class="list-group-item-text">Risk name</p>
-              <h4 class="list-group-item-heading">Spillage of solvent</h4>
+              <h4 class="list-group-item-heading"><span class="label ref-number">RK987</span> Spillage of solvent</h4>
             </div>
             <div class="list-group-item">
               <p class="list-group-item-text">Risk type</p>
@@ -375,13 +376,13 @@
               
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">Scored by</p>
+                  <p class="list-group-item-text">Re-scored by</p>
                   <h4 class="list-group-item-heading">Mike Smith</h4>
                 </div>
               </div>
               <div class="col-sm-6">
                 <div class="list-group-item">
-                  <p class="list-group-item-text">Date</p>
+                  <p class="list-group-item-text">Re-scored date</p>
                   <h4 class="list-group-item-heading">8 Sep 2014</h4>
                 </div>
               </div>
@@ -643,7 +644,7 @@
                   <h4 class="panel-title pull-right">
                     <span class="text-muted">2</span>
                   </h4>
-                  <h4 class="panel-title">Notify on changes</h4>
+                  <h4 class="panel-title">Users to notify</h4>
                 </div>
                 <div class="collapse" id="notifications">
                   <div ng-include="'includes/subcards/notify.html'"></div>
@@ -908,7 +909,7 @@
                   <div class="panel-body">
                     
                     <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Scored by</label>
+                      <label class="control-label col-sm-4 col-xs-12">Re-scored by</label>
                       <div class="col-sm-8 col-xs-12">
                         <div class="input-group isometrica-typeahead">
                           <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by" data-toggle="dropdown"/>
@@ -928,7 +929,7 @@
                       </div>
                     </div>
                     <div class="form-group">
-                      <label class="control-label col-sm-4 col-xs-12">Date</label>
+                      <label class="control-label col-sm-4 col-xs-12">Re-scored date</label>
                       <div class="col-sm-8 col-xs-12">
                         <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
                         <button type="button" class="btn btn-link clear-field">

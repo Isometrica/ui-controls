@@ -43,6 +43,11 @@
           	<i class="fa fa-lg fa-question-circle no-margin"></i>
           </a>
         </li>
+        <li>
+          <a class="btn btn-link" data-toggle="modal" href="#org-settings-modal">
+          	<i class="fa fa-lg fa-gears no-margin"></i>
+          </a>
+        </li>
       </ul>
       <div class="navbar-header">
         <span class="navbar-brand">
@@ -62,27 +67,34 @@
       <div class="panel panel-default">
         <div class="list-group">
           <a class="list-group-item" data-toggle="modal" data-target="#editMission">
-            <span class="label label-success status-indicator pull-left"></span>
+            <span class="label label-success status-indicator primary pull-left"></span>
               <div class="list-group-item-content">
               <h4 class="list-group-item-heading">IBM UK mission &amp; goals</h4>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editRiskTypes">
-            <span class="label label-success status-indicator pull-left"></span>
+            <span class="label label-success status-indicator primary pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Risks</h4>
               <p class="list-group-item-text">6 types</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editIncidentTypes">
-            <span class="label label-success status-indicator pull-left"></span>
+            <span class="label label-success status-indicator primary pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Incidents</h4>
               <p class="list-group-item-text">6 types</p>
             </div>
           </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editPerformanceIndicators">
+            <span class="label label-success status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Performance indicators</h4>
+              <p class="list-group-item-text">7 areas</p>
+            </div>
+          </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editManagementSystems">
-            <span class="label label-warning status-indicator pull-left"></span>
+            <span class="label label-warning status-indicator primary pull-left"></span>
             <div class="list-group-item-content">
               <h4 class="list-group-item-heading">Management programs</h4>
               <p class="list-group-item-text">4</p>
@@ -95,6 +107,20 @@
               <p class="list-group-item-text">8 types</p>
             </div>
           </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editSupplierTypes">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading">Suppliers &amp; partners</h4>
+              <p class="list-group-item-text">2 types</p>
+            </div>
+          </a>
+          <a class="list-group-item" data-toggle="modal" data-target="#editInterestedParties">
+            <span class="label label-warning status-indicator pull-left"></span>
+            <div class="list-group-item-content">
+              <h4 class="list-group-item-heading secondary">Customers &amp; interested parties</h4>
+              <p class="list-group-item-text">10</p>
+            </div>
+          </a>          
           <a class="list-group-item" data-toggle="modal" data-target="#editDepartments">
             <span class="label label-success status-indicator pull-left"></span>
             <div class="list-group-item-content">
@@ -112,55 +138,37 @@
           <a class="list-group-item" data-toggle="modal" data-target="#editCompetencies">
             <span class="label label-warning status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Competencies</h4>
+              <h4 class="list-group-item-heading secondary">Competencies</h4>
               <p class="list-group-item-text">5 levels</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editActivities">
             <span class="label label-danger status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Activities &amp; processes</h4>
+              <h4 class="list-group-item-heading secondary">Activities &amp; processes</h4>
               <p class="list-group-item-text">3</p>
             </div>
           </a>
           <a class="list-group-item" data-toggle="modal" data-target="#editProducts">
             <span class="label label-danger status-indicator pull-left"></span>
-            <div class="list-group-item-content">
+            <div class="list-group-item-content secondary">
               <h4 class="list-group-item-heading">Products &amp; services</h4>
               <p class="list-group-item-text">5</p>
             </div>
           </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editSupplierTypes">
-            <span class="label label-warning status-indicator pull-left"></span>
-            <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Suppliers &amp; partners</h4>
-              <p class="list-group-item-text">2 types</p>
-            </div>
-          </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editPerformanceIndicators">
-            <span class="label label-success status-indicator pull-left"></span>
-            <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Performance indicators</h4>
-              <p class="list-group-item-text">7 areas</p>
-            </div>
-          </a>
-          <a class="list-group-item" data-toggle="modal" data-target="#editInterestedParties">
-            <span class="label label-warning status-indicator pull-left"></span>
-            <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Customers &amp; interested parties</h4>
-              <p class="list-group-item-text">10</p>
-            </div>
-          </a>
+          
+          <!--
           <a class="list-group-item">
             <span class="label label-empty status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading text-muted">Assets, resources &amp; dependencies</h4>
+              <h4 class="list-group-item-heading text-muted secondary">Assets, resources &amp; dependencies</h4>
             </div>
           </a>
+          -->
           <a class="list-group-item" data-toggle="modal" data-target="#editEnvironmental">
             <span class="label label-danger status-indicator pull-left"></span>
             <div class="list-group-item-content">
-              <h4 class="list-group-item-heading">Environmental aspects</h4>
+              <h4 class="list-group-item-heading secondary">Environmental aspects</h4>
               <p class="list-group-item-text">6 types</p>
             </div>
           </a>
@@ -179,7 +187,7 @@
               <h3 class="panel-title">IBM UK mission &amp; goals</h3>
               <i class="fa fa-long-arrow-right arrow left"></i>
               <i class="fa fa-long-arrow-left arrow right"></i>
-              <span class="label label-success status-indicator"></span>
+              <span class="label label-success status-indicator primary"></span>
             </div>
             <div class="panel-heading" data-toggle="modal" data-target="#editPerformanceIndicators">
               <h3 class="panel-title">Performance indicators <span class="text-muted">(7 areas)</span></h3>
@@ -190,7 +198,7 @@
               <div class="panel panel-default" data-toggle="modal" data-target="#editRiskTypes">
                 <div class="panel-heading first last">
                   <h3 class="panel-title">Risks <span class="text-muted">(6 types)</span></h3>
-                  <span class="label label-success status-indicator"></span>
+                  <span class="label label-success status-indicator primary"></span>
                 </div>
               </div>
             </div>
@@ -199,14 +207,14 @@
               <div class="panel panel-default" data-toggle="modal" data-target="#editIncidentTypes">
                 <div class="panel-heading first last">
                   <h3 class="panel-title">Incidents <span class="text-muted">(6 types)</span></h3>
-                  <span class="label label-success status-indicator"></span>
+                  <span class="label label-success status-indicator primary"></span>
                 </div>
               </div>
             </div>
           </div>
           <div class="panel-heading" data-toggle="modal" data-target="#editManagementSystems">
             <h3 class="panel-title">Management programs <span class="text-muted">(4)</span></h3>
-            <span class="label label-warning status-indicator"></span>
+            <span class="label label-warning status-indicator primary"></span>
           </div>
           <div class="org-setup-offset-container">
             <div class="panel-heading" data-toggle="modal" data-target="#editMeetingTypes">
@@ -246,18 +254,20 @@
             <div class="panel-heading" data-toggle="modal" data-target="#editActivities">
               <h3 class="panel-title">Activities &amp; processes <span class="text-muted">(3)</span></h3>
               <i class="fa fa-long-arrow-right arrow left"></i>
-              <span class="label label-danger status-indicator"></span>
+              <span class="label label-danger status-indicator primary"></span>
             </div>
-            <div class="panel-heading" data-toggle="modal" data-target="#editProducts">
+            <div class="panel-heading last" data-toggle="modal" data-target="#editProducts">
               <h3 class="panel-title">Products &amp; services <span class="text-muted">(5)</span></h3>
               <i class="fa fa-long-arrow-right arrow left"></i>
               <i class="fa fa-long-arrow-right arrow right"></i>
               <span class="label label-danger status-indicator"></span>
             </div>
+            <!--
             <div class="panel-heading last inactive" data-toggle="modal" data-target="#editAssets">
               <h3 class="panel-title">Assets, resources &amp; dependencies</h3>
               <i class="fa fa-long-arrow-right arrow left"></i>
             </div>
+            -->
           </div>
         </div>
 
@@ -479,8 +489,8 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Manager</th>
+                  <th>Name <span class="required">*</span></th>
+                  <th>Manager <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -590,9 +600,9 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th>Manager</th>
-                  <th class="short">Type</th>
+                  <th>Name <span class="required">*</span></th>
+                  <th>Manager <span class="required">*</span></th>
+                  <th class="short">Type <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -796,8 +806,8 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
-                  <th class="short">Type</th>
+                  <th>Name <span class="required">*</span></th>
+                  <th class="short">Type <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -1013,8 +1023,8 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Description</th>
-                  <th class="short">Color code</th>
+                  <th>Description <span class="required">*</span></th>
+                  <th class="short">Color code <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -1140,21 +1150,21 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Type</th>
+                  <th>Type <span class="required">*</span></th>
                   <th colspan="2">Standard agenda items</th>
                   <th class="icon"></th>
                 </tr>
               </thead>
               <tbody>
                 <tr>
-                  <td><textarea class="form-control" placeholder="Type">Ad hoc</textarea></td>
+                  <td rowspan="4"><textarea class="form-control" placeholder="Type">Ad hoc</textarea></td>
                   <td colspan="2">
                     <select class="form-control">
                       <option></option>
-                      <option selected="">0 agenda items</option>
+                      <option>0 agenda items</option>
                       <option>1 agenda item</option>
                       <option>2 agenda items</option>
-                      <option>3 agenda items</option>
+                      <option selected="">3 agenda items</option>
                       <option>4 agenda items</option>
                       <option>5 agenda items</option>
                       <option>6 agenda items</option>
@@ -1169,17 +1179,44 @@
                       <option>15 agenda items</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
                 </tr>
                 <tr>
-                  <td><textarea class="form-control" placeholder="Type">Weekly operations</textarea></td>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Review actions from last meeting">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                </tr>
+                <tr>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Discussion of key issues">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                </tr>
+                <tr>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Agree new actions">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                </tr>
+                <tr>
+                  <td rowspan="4"><textarea class="form-control" placeholder="Type">Weekly operations</textarea></td>
                   <td colspan="2">
                     <select class="form-control">
                       <option></option>
-                      <option selected="">0 agenda items</option>
+                      <option>0 agenda items</option>
                       <option>1 agenda item</option>
                       <option>2 agenda items</option>
-                      <option>3 agenda items</option>
+                      <option selected="">3 agenda items</option>
                       <option>4 agenda items</option>
                       <option>5 agenda items</option>
                       <option>6 agenda items</option>
@@ -1194,7 +1231,34 @@
                       <option>15 agenda items</option>
                     </select>
                   </td>
-                  <td class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                  <td rowspan="4" class="icon"><button type="button" class="btn btn-default"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">1</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Review actions from last meeting">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                </tr>
+                <tr>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">2</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Discussion of key issues">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
+                </tr>
+                <tr>
+                  <td class="agenda-item-title">
+                    <div class="input-group">
+                      <span class="input-group-addon">3</span>
+                      <input class="form-control" type="text" placeholder="Agenda item title" value="Agree new actions">
+                    </div>
+                  </td>
+                  <td class="agenda-item-description"><input class="form-control" type="text" placeholder="Description" value=""></td>
                 </tr>
                 <tr>
                   <td rowspan="12"><textarea class="form-control" placeholder="Type">Management review - ISO 9001:2015</textarea></td>
@@ -1745,10 +1809,10 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th>Name <span class="required">*</span></th>
                   <th class="short">Short name</th>
                   <th>Description</th>
-                  <th class="short">Type</th>
+                  <th class="short">Type <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -1881,10 +1945,10 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th class="long">Name</th>
+                  <th class="long">Name <span class="required">*</span></th>
                   <th class="short">Short name</th>
                   <th>Web URL</th>
-                  <th>Type</th>
+                  <th>Type <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -1995,7 +2059,7 @@
 
   <!-- Edit Activities -->
   <div class="modal fade isometrica-orgsetup-modal" id="editActivities">
-    <div class="modal-dialog modal-xl">
+    <div class="modal-dialog modal-lg">
       <div class="modal-content">
         <div class="modal-header clearfix">
           <div class="pull-right">
@@ -2039,11 +2103,10 @@
             <table class="table table-bordered">
               <thead>
                 <tr>
-                  <th>Name</th>
+                  <th>Name <span class="required">*</span></th>
                   <th class="short">Short name</th>
-                  <th>Link</th>
-                  <th class="short">Owner</th>
-                  <th class="short">Type</th>
+                  <th class="short">Owner <span class="required">*</span></th>
+                  <th class="short">Type <span class="required">*</span></th>
                   <th class="icon"></th>
                 </tr>
               </thead>
@@ -2051,7 +2114,6 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Extrusion"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC015"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/dolor"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -2073,7 +2135,6 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Thermoforming"></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC016"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/est"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -2095,7 +2156,6 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value="Longer Title Goes Here Lorem "></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value="PROC017"></td>
-                  <td><input class="form-control" type="text" placeholder="Link" value="www.lorem.ipsum/compendum"></td>
                   <td>
                     <select class="form-control">
                       <option></option>
@@ -2117,7 +2177,6 @@
                 <tr>
                   <td><input class="form-control" type="text" placeholder="Name" value=""></td>
                   <td><input class="form-control" type="text" placeholder="Short name" value=""></td>
-                  <td><input class="form-control" type="text" placeholder="Link"></td>
                   <td>
                     <select class="form-control">
                       <option selected=""></option>
@@ -2469,6 +2528,551 @@
             </table>
           </div>
         </form>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-- Org Settings -->
+  <div class="modal fade" id="org-settings-modal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header clearfix">
+          <div class="pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="modal-title">Org Settings</h4>
+        </div>
+        <div class="modal-body">
+          <form class="form-horizontal">
+            <div class="form-group">
+              <label class="control-label col-sm-3">Org owner</label>
+              <div class="col-sm-9">
+  			        <div class="input-group isometrica-typeahead">
+                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                  <span class="input-group-btn" data-toggle="dropdown">
+                    <button class="btn btn-default" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                  </span>
+                  <ul class="dropdown-menu dropdown-menu-right">
+                    <li><a href="#">Jack Herbert</a></li>
+                    <li><a href="#">Steve Ives</a></li>
+                    <li><a href="#">Mark Leusink</a></li>
+                    <li><a href="#">Steve Saunders</a></li>
+                    <li class="active"><a href="#">Mike Smith</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#"><strong>Add new user</strong></a></li>
+                  </ul>
+                </div>  
+              </div>
+            </div>
+            <div class="form-group">
+              <label class="control-label col-sm-3">Home timezone</label>
+              <div class="col-sm-9">
+  			        <select class="form-control">
+    			        <option selected="">(GMT) Dublin, Edinburgh, Lisbon, London</option>
+    			        <option>(GMT + 01:00) Amsterdam, Berlin, Rome</option>
+    			        <option>(GMT + 02:00) Athens, Bucharest, Istanbul</option>
+    			        <option>(GMT + 03:00) Baghdad, Moscow, Nairobi</option>
+  			        </select>
+              </div>
+            </div>  
+            <div class="form-group">
+              <label class="control-label col-sm-3">Default currency</label>
+              <div class="col-sm-9">
+  			        <select class="form-control">
+    			        <option selected="">GBP - British Pound</option>
+    			        <option>EUR - Euro</option>
+    			        <option>USD - US Dollar</option>
+  			        </select>
+              </div>
+            </div>
+            <div>
+              <div class="panel panel-default bootcards-panel-collapsing full-width">
+              <div class="panel-heading clearfix" href="#access" data-toggle="collapse">
+                <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                <h4 class="panel-title">Access to meeting records</h4>
+              </div>
+              <div class="collapse in" id="access">
+                <div class="panel-body">
+                  <div>
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-1" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Ad hoc</h4>
+                      </div>
+                      <div class="collapse" id="access-1">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-2" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Weekly operations</h4>
+                      </div>
+                      <div class="collapse" id="access-2">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-3" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Management review - ISO 9001:2015</h4>
+                      </div>
+                      <div class="collapse" id="access-3">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-4" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Management review - ISO 14001:2015</h4>
+                      </div>
+                      <div class="collapse" id="access-4">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-5" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Management review - ISO OSHAS 18001</h4>
+                      </div>
+                      <div class="collapse" id="access-5">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div> 
+                    <div class="panel panel-default bootcards-panel-collapsing">
+                      <div class="panel-heading clearfix collapsed" href="#access-6" data-toggle="collapse">
+                        <i class="fa fa-chevron-circle-down bootcards-panel-collapsing-indicator"></i>
+                        <h4 class="panel-title">Management review - ISO 22301:2012</h4>
+                      </div>
+                      <div class="collapse" id="access-6">
+                        <div class="panel-body">
+                          <div class="row">
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Sales manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Marketing manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Operations manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Production manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Customer service manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Technical support manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">IT manager</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Senior manager/director</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-success btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">CEO</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Consultant</label>
+                            </div>
+                            <div class="col-sm-6">
+                              <button type="button" class="btn btn-default btn-checkbox">
+                                <i class="fa fa-check"></i>
+                              </button>
+                              <label class="btn-checkbox-label">Auditor</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>                  
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>

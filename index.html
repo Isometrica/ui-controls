@@ -207,23 +207,7 @@
       							</div>
       						</div>
       						<div class="panel-footer">
-      							<ul class="users">
-      								<li>
-      									<img class="img-circle" src="img/avatar-steve.gif" data-toggle="tooltip" title="Steve Ives" alt="Steve Ives"/>
-      								</li>
-      								<li>
-      									<img class="img-circle" src="img/avatar-matt.gif" data-toggle="tooltip" title="Matt White" alt="Matt White"/>
-      								</li>
-      								<li>
-      									<img class="img-circle" src="img/avatar-jack.gif" data-toggle="tooltip" title="Jack Herbert" alt="=Jack Herbert"/>
-      								</li>
-      								<li>
-      									<img class="img-circle" src="img/avatar-mark.gif" data-toggle="tooltip" title="Mark Leusink" alt="Mark Leusink"/>
-      								</li>
-      								<li>
-      									<img class="img-circle" src="img/avatar-dan.png" data-toggle="tooltip" title="Dan Rodwell" alt="Dan Rodwell"/>
-      								</li>
-      							</ul>
+      							<a class="btn btn-link" href="#"><i class="fa fa-lg fa-plus-circle"></i>Invite users</a>
       						</div>
       					</div>
       				</div>
@@ -261,7 +245,7 @@
           <hr>
 
           <div class="isometrica-overview-document-items">
-          	<a href="" class="btn btn-link isometrica-overview-add">
+          	<a href="#chooseTemplateModal" data-toggle="modal" class="btn btn-link isometrica-overview-add">
             	<i class="fa fa-lg fa-plus-circle"></i>
             	Add a document
           	</a>
@@ -291,7 +275,7 @@
       								</li>
       								<li>
       									<a href="users.html" class="add-user" data-toggle="tooltip" title="Add a User">
-      										<i class="fa fa-plus"></i>
+      										<i class="fa fa-plus-circle"></i>
       									</a>
       								</li>
       							</ul>
@@ -315,7 +299,7 @@
       								</li>
       								<li>
       									<a href="users.html" class="add-user" data-toggle="tooltip" title="Add a User">
-      										<i class="fa fa-plus"></i>
+      										<i class="fa fa-plus-circle"></i>
       									</a>
       								</li>
       							</ul>
@@ -377,7 +361,7 @@
       								</li>
       								<li>
       									<a href="users.html" class="add-user" data-toggle="tooltip" title="Add a User">
-      										<i class="fa fa-plus"></i>
+      										<i class="fa fa-plus-circle"></i>
       									</a>
       								</li>
       							</ul>
@@ -390,10 +374,6 @@
     			<hr>
 
           <div class="isometrica-overview-footer-buttons">
-      			<button type="button" class="btn btn-primary">
-      			  <i class="fa fa-user-plus fa-lg"></i>
-      			  Invite users
-            </button>
       			<button type="button" class="btn btn-primary">
       			  <i class="fa fa-plus-circle fa-lg"></i>
       			  Report a non-conformity
@@ -427,6 +407,45 @@
         <div class="modal-footer">
           <button type="button" class="btn btn-primary pull-left"><i class="fa fa-arrow-up"></i> Upload new logo</button>
           <button type="button" class="btn btn-danger pull-right"><i class="fa fa-trash"></i> Remove logo</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  <!-- Add document - Choose template -->
+  <div class="modal fade" id="chooseTemplateModal">
+    <div class="modal-dialog modal-sm">
+      <div class="modal-content">
+  	    <div class="modal-header clearfix">
+  		    <div class="btn-group pull-left">
+  			    <button type="button" class="btn btn-default btn-back" data-dismiss="modal">
+  		      	Cancel
+  		      </button>
+  		    </div>
+  	      <h4 class="modal-title">Choose template</h4>
+  	    </div>
+        <div class="list-group">
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">Blank document</h4>
+            <p class="list-group-item-text">Description goes here lorem ipsum</p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">ISO 9001:2015 template (USA)</h4>
+            <p class="list-group-item-text">Description goes here lorem ipsum</p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">ISO 9001 + 14001:2015 template (USA)</h4>
+            <p class="list-group-item-text">Description goes here lorem ipsum</p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">ISO 9001:2015 template (UK)</h4>
+            <p class="list-group-item-text">Description goes here lorem ipsum</p>
+          </a>
+          <a class="list-group-item">
+            <h4 class="list-group-item-heading">ISO 9001 + 14001:2015 template (UK)</h4>
+            <p class="list-group-item-text">Description goes here lorem ipsum</p>
+          </a>
         </div>
       </div>
     </div>

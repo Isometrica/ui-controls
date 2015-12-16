@@ -188,6 +188,8 @@
             right: auto;
             margin-top: 0;
             margin-left: -9px;
+            
+
           }
         }
       }
@@ -197,7 +199,7 @@
 
 .isometrica-org-setup-page {
   .modal-content {
-    overflow: hidden;
+    //overflow: hidden;
   }
 }
 
@@ -211,6 +213,10 @@
 
   .table-responsive {
     border-top: 0;
+    
+    @media (min-width: 768px) {
+      overflow: visible;
+    }
   }
 
   .table>tbody>tr>td {
@@ -271,13 +277,17 @@
     width: 40px;
     min-width: 40px;
     
-    .btn {
+    /*.btn {
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
       right: 0;
-    }
+    }*/
+  }
+  
+  .required {
+    color: $red-color;
   }
 
   .form-control {
@@ -499,4 +509,14 @@
 
   	}
 	}
+}
+
+
+/* SETTINGS */
+
+#org-settings-modal {
+  .btn-checkbox,
+  .btn-checkbox-label {
+    margin-bottom: 5px;
+  }
 }

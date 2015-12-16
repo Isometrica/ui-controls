@@ -32,13 +32,13 @@ $( document ).ready(function() {
   
   
   /* Prevent form clicks from expanding/contracting accordion */
-  $( ".isometrica-orgsetup-modal .form-control").click(function() {
+  /*$( ".isometrica-orgsetup-modal .form-control").click(function() {
   	event.stopPropagation();
   });
   
   $( ".isometrica-orgsetup-modal .clear-field").click(function() {
   	event.stopPropagation();
-  });
+  });*/
   
   
   // DETAIL VIEW FOR MOBILE

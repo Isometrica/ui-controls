@@ -553,7 +553,8 @@ body > .bootcards-container {
     font-size: 20px;
     padding-left: 0 !important;
     color: white !important;
-    margin-left: 0 !important; }
+    margin-left: 0 !important;
+    position: absolute; }
   .android .navbar .btn {
     line-height: 50px; }
 
@@ -688,6 +689,22 @@ body > .bootcards-container {
   top: 1px; }
   .status-indicator:empty {
     display: inline-block; }
+  .status-indicator.primary:before {
+    content: '';
+    position: absolute;
+    left: -5px;
+    top: -5px;
+    right: -5px;
+    bottom: -5px;
+    border-radius: 50%;
+    border-width: 2px;
+    border-style: solid; }
+  .status-indicator.primary.label-success:before {
+    border-color: #5cb85c; }
+  .status-indicator.primary.label-warning:before {
+    border-color: #f0ad4e; }
+  .status-indicator.primary.label-danger:before {
+    border-color: #d9534f; }
   .status-indicator i {
     color: white;
     opacity: 1 !important;
@@ -1066,6 +1083,9 @@ body > .bootcards-container {
       background: #d85250; }
   .isometrica-risk-grading td {
     color: white !important; }
+
+.form-control {
+  color: #333; }
 
 .inline-dropdown {
   display: inline-block; }
@@ -1449,6 +1469,12 @@ input:focus ~ .clear-field {
         position: relative;
         top: -1px;
         margin-right: 5px; }
+        .bootcards-cards .list-group .list-group-item .list-group-item-heading .label.ref-number {
+          background: #777;
+          color: white;
+          position: absolute;
+          right: 10px;
+          top: 10px; }
     .bootcards-cards .list-group .list-group-item .list-group-item-text {
       margin-bottom: 0;
       line-height: 18px;
@@ -3083,6 +3109,13 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     .isometrica-overview-item .panel-footer .progress {
       border-radius: 3px;
       margin: 2px 0 3px; }
+    .isometrica-overview-item .panel-footer .btn-link {
+      text-decoration: none;
+      font-weight: 500; }
+      .isometrica-overview-item .panel-footer .btn-link i {
+        font-size: 38px;
+        line-height: 20px;
+        float: left; }
   .isometrica-overview-item .users {
     list-style: none;
     padding: 0;
@@ -3106,24 +3139,27 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
         height: 34px;
         width: 34px; }
       .isometrica-overview-item .users li .add-user {
-        display: block;
-        width: 34px;
-        height: 34px;
-        -webkit-border-radius: 50%;
-        background: #ddd;
-        color: white;
-        text-decoration: none;
-        -webkit-transition: all 0.5s ease;
-        margin: 0 auto; }
-        .isometrica-overview-item .users li .add-user:hover,
-        .isometrica-overview-item .users li .add-user:active {
-          background: #006e9e;
-          color: white; }
+        /*
+				display: block;
+				width: 34px;
+				height: 34px;
+				-webkit-border-radius: 50%;
+				background: #ddd;
+				color: white;
+				text-decoration: none;
+				-webkit-transition: all 0.5s ease;
+				margin: 0 auto;
+        */
+        text-decoration: none; }
         .isometrica-overview-item .users li .add-user i {
-          font-size: 20px;
+          font-size: 38px;
           line-height: 34px;
           display: block;
-          text-align: center; }
+          text-align: center;
+          color: #ddd; }
+          .isometrica-overview-item .users li .add-user i:hover,
+          .isometrica-overview-item .users li .add-user i:active {
+            color: #006e9e; }
   .isometrica-overview-item .stats {
     list-style: none;
     padding: 0;
@@ -3287,9 +3323,6 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
             margin-top: 0;
             margin-left: -9px; }
 
-.isometrica-org-setup-page .modal-content {
-  overflow: hidden; }
-
 /* Spreadsheet multiadd */
 .isometrica-org-setup-multiadd {
   /* Meetings */ }
@@ -3298,6 +3331,9 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     border: 0; }
   .isometrica-org-setup-multiadd .table-responsive {
     border-top: 0; }
+    @media (min-width: 768px) {
+      .isometrica-org-setup-multiadd .table-responsive {
+        overflow: visible; } }
   .isometrica-org-setup-multiadd .table > tbody > tr > td {
     padding: 0 !important;
     position: relative;
@@ -3335,14 +3371,16 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   .isometrica-org-setup-multiadd th.icon,
   .isometrica-org-setup-multiadd td.icon {
     width: 40px;
-    min-width: 40px; }
-    .isometrica-org-setup-multiadd th.icon .btn,
-    .isometrica-org-setup-multiadd td.icon .btn {
+    min-width: 40px;
+    /*.btn {
       position: absolute;
       top: 0;
       left: 0;
       bottom: 0;
-      right: 0; }
+      right: 0;
+    }*/ }
+  .isometrica-org-setup-multiadd .required {
+    color: #d85250; }
   .isometrica-org-setup-multiadd .form-control {
     border-color: transparent;
     box-shadow: none;
@@ -3468,6 +3506,11 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
       .modal.isometrica-orgsetup-modal .modal-header .modal-title {
         text-align: left;
         padding-left: 15px; } }
+
+/* SETTINGS */
+#org-settings-modal .btn-checkbox,
+#org-settings-modal .btn-checkbox-label {
+  margin-bottom: 5px; }
 
 /* WIKI MODULE */
 .isometrica-wiki {
@@ -3854,6 +3897,9 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
   @media (min-width: 992px) {
     .isometrica-dashboard-page .isometrica-dashboard-items .row > div {
       width: 20%; } }
+  .isometrica-dashboard-page .isometrica-dashboard-items .row hr {
+    margin-left: 15px;
+    margin-right: 15px; }
   .isometrica-dashboard-page .isometrica-dashboard-items hr {
     clear: both;
     border-color: #ddd;
