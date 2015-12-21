@@ -20,70 +20,29 @@
       padding: 25px;
       min-height: 500px;
     }
+    
+
   }
 
-  /*
-  .isometrica-wiki-panel-info {
-    border-bottom: 1px solid #ddd;
-
-    button {
-      .more-label { display: inline; }
-      .less-label { display: none; }
-
-      &[aria-expanded="true"] {
-        .more-label { display: none; }
-        .less-label { display: inline; }
-      }
-    }
-
-    .isometrica-multi-input {
-      @include flexbox();
-
-      > :first-child {
-        width: 70px;
-      }
-
-      > :last-child {
-        width: 100px;
-      }
-
-      input {
-        margin-right: -1px;
-        &:not(:first-child) {
-          border-bottom-left-radius: 0;
-          border-top-left-radius: 0;
-        }
-        &:not(:nth-child(2)) {
-          border-bottom-right-radius: 0;
-          border-top-right-radius: 0;
-        }
-      }
-
-      button {
-        margin-left: 30px;
-      }
-    }
-  }
-  */
-  
   .isometrica-wiki-page-info {
-    border-bottom: 1px solid #ddd;
+    //border-bottom: 1px solid #ddd;
+    padding-bottom: 0;
+
+    .bootcards-panel-collapsing {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
   }
 
   .isometrica-wiki-panel-files {
     border-top: 1px solid #ddd;
-    //background: white;
 
     label {
       float: left;
       margin-right: 15px;
       margin-top: 6px;
     }
-
-    div {
-      //overflow: hidden;
-    }
-
+    
     .isometrica-wiki-panel-files-list {
       overflow: hidden;
     }
