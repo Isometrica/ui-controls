@@ -3406,14 +3406,15 @@ body.desktop.isometrica-overview-page .navbar-nav > li > a {
     border-right: 1px solid #ddd; }
   .isometrica-org-setup-multiadd .btn {
     border-color: transparent;
-    border-radius: 0;
+    border-radius: 0; }
+  .isometrica-org-setup-multiadd td > .btn {
     position: absolute;
     left: 0;
     right: 0;
     top: 0;
     bottom: 0;
     text-align: left; }
-  .isometrica-org-setup-multiadd .icon .btn {
+  .isometrica-org-setup-multiadd td.icon > .btn {
     padding-left: 0;
     padding-right: 0;
     text-align: center; }

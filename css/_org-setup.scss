@@ -317,10 +317,13 @@
       border-right: 1px solid #ddd;
     }
   }
-
+  
   .btn {
     border-color: transparent;
     border-radius: 0;
+  }
+
+  td > .btn {
     position: absolute;
     left: 0;
     right: 0;
@@ -329,7 +332,7 @@
     text-align: left;
   }
   
-  .icon .btn {
+  td.icon > .btn {
     padding-left: 0;
     padding-right: 0;
     text-align: center;
