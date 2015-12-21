@@ -26,86 +26,17 @@
 </head>
 <body ng-app="isometrica" class="isometrica-dashboard-page isometrica-overview-page has-bootcards-navbar-double">
 
-  <!-- fixed top navbar -->
-  <div class="navbar navbar-inverse navbar-fixed-top bootcards-navbar-double" role="navigation">
-    <div class="container">
-      <div class="navbar-header">
-	    <ul class="nav navbar-nav navbar-left visible-xs">
-        <li class="dropdown">
-          <a data-toggle="collapse" data-target="#overview-menu">
-            <i class="fa fa-bars"></i>
-          </a>
-        </li>
-	    </ul>
+  <div ng-include="'includes/overview-navbar.html'"></div>
 
-
-        <span class="navbar-brand dropdown-toggle" data-toggle="dropdown">
-          <img src="img/teamstudio-logo.png"> <i class="fa fa-chevron-down"></i>
-        </span>
-        <ul class="dropdown-menu">
-          <li><a href="#"><strong>IBM UK</strong></a></li>
-          <li><a href="#"><strong>Ortus Technology</strong></a></li>
-          <li role="separator" class="divider"></li>
-          <li><a data-toggle="modal" href="#changeIconModal">Customize logo</a></li>
-        </ul>
-      
-        
-      </div>
-
-	    <!-- MOBILE NAVIGATION -->
-	    <div class="collapse" id="overview-menu">
-        <ul class="dropdown-menu" style="display: block">
-          <li><a href="#">Chat (4)</a></li>
-          <li><a href="#">Account</a></li>
-          <li><a href="#">Settings</a></li>
-          <li><a href="#">Logout</a></li>
-        </ul>
-	    </div>  
-      <!-- STANDARD NAVIGATION -->
-	    <ul class="nav navbar-nav navbar-right hidden-xs">
-        <li>
-          <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
-            <i class="fa fa-question-circle"></i>
-          </a>
-        </li>
-        <li>
-          <a href="#" class="chat-link">
-            <i class="fa fa-comment"></i>
-            <span class="label label-danger">4</span>
-          </a>
-        </li>
-        <li class="dropdown">
-          <a href="#" data-toggle="dropdown">
-	        	Stephen Ives
-	        	<i class="fa fa-caret-down no-margin"></i>
-	        	<!--<span class="label label-danger"><i class="fa fa-comment"></i> 5+</span>-->
-	        </a>
-	        <ul class="dropdown-menu">
-            <li><a href="#">Account</a></li>
-            <li><a href="#">Settings</a></li>
-            <li><a href="#">Logout</a></li>
-          </ul>
-        </li>
-	    </ul>
-
-	    <ul class="nav navbar-nav navbar-right visible-xs">
-        <li>
-          <a class="guidance-toggle" data-toggle="collapse" href="#guidance-panel">
-            <i class="fa fa-question-circle"></i>
-          </a>
-        </li>
-	    </ul>
-    </div>
-  </div>
 
   <!-- Guidance Bar -->
-  <div class="collapse in" id="guidance-panel">
+  <div class="collapse in" id="guidance-panel-top">
     <div class="guidance-panel guidance-panel-top guidance-panel-overview">
       <div class="container">
         <p>This is where you monitor all your compliance management activity.
           <br>Each panel shows summary data for each compliance area.
           <br>Click on a panel to create, read, update and delete individual compliance records.</p>
-        <div class="collapse" id="guidance-panel-more">
+        <div class="collapse" id="guidance-panel-top-more">
           <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
           <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
           <ul class="text-muted">
@@ -116,17 +47,17 @@
           </ul>
         </div>
         <div class="btn-group">
-          <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-more">
+          <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-top-more">
             <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
             <span class="expanded-label">Full help</span>
           </a>
-          <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel"><i class="fa fa-chevron-up"></i> Hide</a>
-          <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-question">Ask question</a>
+          <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-top"><i class="fa fa-chevron-up"></i> Hide</a>
+          <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-top-question">Ask question</a>
         </div>
-        <div class="collapse guidance-panel-question" id="guidance-panel-question">
+        <div class="collapse guidance-panel-top-question" id="guidance-panel-top-question">
           <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
           <a class="btn btn-primary" >Send</a>
-          <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-question">Cancel</a>
+          <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-top-question">Cancel</a>
         </div>
       </div>
     </div>
@@ -434,28 +365,9 @@
   </div>
 
 
-  <!-- Change icon -->
-  <div class="modal fade" id="changeIconModal">
-    <div class="modal-dialog modal-sm">
-      <div class="modal-content">
-  	    <div class="modal-header clearfix">
-  		    <div class="btn-group pull-left">
-  			    <button type="button" class="btn btn-default btn-back" data-dismiss="modal">
-  		      	Cancel
-  		      </button>
-  		    </div>
-  	      <h4 class="modal-title">Customize logo</h4>
-  	    </div>
-        <div class="modal-body overview-icon-preview">
-          <img src="img/teamstudio-logo.png" class="img-responsive">
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary pull-left"><i class="fa fa-arrow-up"></i> Upload new logo</button>
-          <button type="button" class="btn btn-danger pull-right"><i class="fa fa-trash"></i> Remove logo</button>
-        </div>
-      </div>
-    </div>
-  </div>
+  <div ng-include="'includes/chnage-icon-modal.html'"></div>
+
+  <div ng-include="'includes/org-settings-modal.html'"></div>
 
 
 

@@ -715,3 +715,43 @@ body.desktop.isometrica-overview-page {
     }
   }
 }
+
+#chooseTemplateModal {
+  .modal-content {
+    overflow: hidden;
+  }
+  
+  .list-group-item-toggle {
+    //border: 0;
+    margin-bottom: 1px;
+    
+    &:before {
+      transform: rotate(270deg);
+      transition: all .3s ease;
+    }
+    
+    &.collapsed {
+      border-bottom-color: transparent;
+      &:before {
+        transform: rotate(90deg);
+      }
+    }
+  }
+}
+
+#add-users-modal {
+  .form-group.user {
+    position: relative;
+    padding-left: 45px;
+    
+    .avatar {
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 34px;
+      height: 34px;
+    }    
+  }
+  
+
+}

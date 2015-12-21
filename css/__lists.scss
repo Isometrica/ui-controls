@@ -67,9 +67,13 @@
           &.ref-number {
             background: #777;
             color: white;
-            position: absolute;
-            right: 10px;
-            top: 10px;
+            float: right;
+            font-size: 1em;
+            display: inline-block;
+            border-radius: 3px;
+            padding: .25em .6em .3em;
+            margin-right: 0;
+            margin-left: 10px;
           }
         }
       }
