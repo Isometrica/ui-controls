@@ -1,0 +1,56 @@
+<div class="card-block">
+  <div class="form-group row">
+    <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+    <div class="col-sm-8 col-xs-12">
+      <span class="label label-warning">Awaiting review</span>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="form-control-label col-sm-4 col-xs-12">Last reviewed</label>
+    <div class="col-sm-8 col-xs-12">
+      <input type="text" class="form-control" placeholder="Last reviewed" value="8 Sep 2014"/>
+      <button type="button" class="btn btn-link clear-field">
+        <i class="fa fa-times-circle"></i>
+      </button>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="form-control-label col-sm-4 col-xs-12">Reviewed by</label>
+    <div class="col-sm-8 col-xs-12">
+      <div class="input-group-typeahead">
+        <div class="input-group" data-toggle="dropdown">
+          <input type="text" class="form-control" value="Mike Smith" placeholder="Reviewed by"/>
+          <span class="input-group-btn">
+            <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+          </span>
+        </div>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item" href="#">Jack Herbert</a>
+          <a class="dropdown-item" href="#">Steve Ives</a>
+          <a class="dropdown-item" href="#">Mark Leusink</a>
+          <a class="dropdown-item" href="#">Steve Saunders</a>
+          <a class="dropdown-item active" href="#">Mike Smith</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="form-control-label col-sm-4 col-xs-12">Comments</label>
+    <div class="col-sm-8 col-xs-12">
+      <textarea class="form-control" placeholder="Comments" rows="3"></textarea>
+      <button type="button" class="btn btn-link clear-field">
+        <i class="fa fa-times-circle"></i>
+      </button>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-8 col-sm-offset-4">
+      <button type="button" class="btn btn-success">
+        <i class="fa fa-check"></i>
+        Mark as reviewed
+      </button>
+    </div>
+  </div>
+</div>

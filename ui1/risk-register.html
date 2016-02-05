@@ -1,0 +1,977 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Risk register</title>
+
+	<!-- JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular for partials -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="js/isometrica.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="isometrica">
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-standard">
+    <span class="navbar-brand dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Risk register - all
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">All</a>
+        <a class="dropdown-item" href="#">By department/site</a>
+        <a class="dropdown-item" href="#">By activity</a>
+        <a class="dropdown-item" href="#">By review status</a>
+        <a class="dropdown-item" href="#">Archived</a>
+        <a class="dropdown-item" href="#">Deleted</a>
+      </div>   
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-chevron-left"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
+          <i class="fa fa-question-circle"></i>
+        </a>        
+      </li>
+    </ul>      
+  </div>
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="content">
+    <div class="container">
+  		<div class="row">
+        <div class="col-sm-4 content-list">
+    			<div class="card">
+    				<div class="card-block">
+    					<form class="search-form">
+  				      <div class="form-group row">
+  					      <input type="text" class="form-control" placeholder="Search...">
+  					      <i class="fa fa-search"></i>
+  				      </div>
+								<button class="btn btn-primary" data-toggle="modal" data-target="#isometrica-work-inbox-edit-modal">
+									<i class="fa fa-plus"></i>
+									<span>Add</span>
+								</button>
+    					</form>
+    				</div>
+    				<div class="list-group list-group-flush list-group-accordion">
+      				<a class="list-group-item" data-toggle="collapse" href="#collapse-1">
+    						<h4 class="list-group-item-heading">Industrial accident</h4>
+    					</a>      				
+      				<div class="collapse in" id="collapse-1">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item active" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+                    <span class="label label-warning risk-square">67</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Explosion of binder</h4>
+                      <p class="list-group-item-text">RK99998 - Industrial accidents</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+        						<span class="label label-warning risk-square">54</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Flu pandemic</h4>
+                      <p class="list-group-item-text">RK99997 - Human health</p>
+                    </div>
+      						</a>
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-success risk-square">43</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Warehouse flood</h4>
+                      <p class="list-group-item-text">RK99996 - Severe weather</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+        						<span class="label label-success risk-square">41</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Office fire</h4>
+                      <p class="list-group-item-text">RK99995 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-2">
+    						<h4 class="list-group-item-heading">Strike or stoppage</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-2">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-3">
+    						<h4 class="list-group-item-heading">Technical failure</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-3">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-4">
+    						<h4 class="list-group-item-heading">Transport accident</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-4">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-5">
+    						<h4 class="list-group-item-heading">Severe weather</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-5">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-6">
+    						<h4 class="list-group-item-heading">Human health</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-6">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-7">
+    						<h4 class="list-group-item-heading">Animal health</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-7">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-8">
+    						<h4 class="list-group-item-heading">Public protest</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-8">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item collapsed" data-toggle="collapse" href="#collapse-9">
+    						<h4 class="list-group-item-heading">International event</h4>
+    					</a>      				
+      				<div class="card-block-collapse collapse" id="collapse-9">
+        				<div class="list-group list-group-flush">
+        				  <a class="list-group-item" href="#">
+        						<span class="label label-danger risk-square">91</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Spillage of solvent</h4>
+                      <p class="list-group-item-text">RK99999 - Industrial accidents</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+    				</div>
+    			</div>
+    		</div>
+  
+  			<div class="col-sm-8 content-cards hidden-xs">
+  				<div class="card">
+  					<div class="card-block card-heading">
+  						<div class="card-heading-buttons pull-right">
+  							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+  								<i class="fa fa-pencil"></i>
+  								Edit
+  							</a>
+  						</div>
+  						<h3 class="card-title">
+                Risk statement
+              </h3>
+  					</div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Description</p>
+                <h4 class="list-group-item-heading"><span class="label ref-number">RK987</span> Spillage of solvent</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Risk type</p>
+                <h4 class="list-group-item-heading">Industrial accident</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Risk owner(s)</p>
+                <h4 class="list-group-item-heading">Sarah Jones</h4>
+                <h4 class="list-group-item-heading">Mike Smith</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Related risks</p>
+                <a href="#" class="btn btn-secondary"><strong>RK15</strong> Flu pandemic <i class="fa fa-circle margin-left text-success"></i></a>
+                <a href="#" class="btn btn-secondary"><strong>RK16</strong> Explosion of binder <i class="fa fa-circle margin-left text-warning"></i></a>
+              </div>
+            </div>
+  					<div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Tags</h4>
+            </div>
+            <div class="list-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Activity or process(es)</p>
+                    <h4 class="list-group-item-heading">Customer support</h4>
+                    <h4 class="list-group-item-heading">Thermoforming</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Department or site(s)</p>
+                    <h4 class="list-group-item-heading">Customer service</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Management program(s)</p>
+                    <h4 class="list-group-item-heading">Business Continuity Management</h4>
+                    <h4 class="list-group-item-heading">Information Security Management</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Text tags</p>
+                    <h4 class="list-group-item-heading">lorem</h4>
+                    <h4 class="list-group-item-heading">ispum dolor</h4>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Notify</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Steve Saunders</h4>
+                <h4 class="list-group-item-heading">Mike Smith</h4>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Current risk score</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading"><span class="label label-warning">59 - Medium</span></h4>
+              </div>
+              <div class="row">
+                
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Scored by</p>
+                    <h4 class="list-group-item-heading">Mike Smith</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Date</p>
+                    <h4 class="list-group-item-heading">8 Sep 2014</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Evaluation &amp; treatment</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Comments</p>
+                <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Previous loss experience</p>
+                <h4 class="list-group-item-heading">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Treatment decision</p>
+                    <h4 class="list-group-item-heading">Terminate</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Treatment priority</p>
+                    <h4 class="list-group-item-heading">High</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Target risk score</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading"><span class="label label-success">8 - Low</span></h4>
+              </div>
+              <div class="row">
+                
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Re-scored by</p>
+                    <h4 class="list-group-item-heading">Mike Smith</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Re-scored date</p>
+                    <h4 class="list-group-item-heading">8 Sep 2014</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Corrective actions</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="#" class="btn btn-secondary"><strong>CA129</strong> Fix machine calibration <i class="fa fa-circle margin-left text-success"></i></a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Preventative actions</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="#" class="btn btn-secondary"><strong>PA731</strong> Buy new machines <i class="fa fa-circle text-success"></i></a>
+                <a href="#" class="btn btn-secondary"><strong>PA732</strong> Change build process <i class="fa fa-circle text-warning"></i></a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Notes</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Fusce volutpat iaculis mauris, vulputate scelerisque ante aliquet viverra. Mauris ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Attachments</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="" class="btn btn-secondary"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
+                <a href="" class="btn btn-secondary"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">Verification</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">All corrective and preventative actions linked to this risk have been verified as effective as of 5 Feb 2016</h4>
+              </div>
+            </div>
+            <!-- Changelog -->
+            <div ng-include="'includes/card-footer-changelog.html'"></div>    
+  				</div>
+  			</div>
+  		</div>
+    </div>
+  </div>
+
+
+  <!-- Add Modal -->
+  <div class="modal fade isometrica-edit-modal" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Risk statement</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel-modal.html'"></div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Risk name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Name" value="Spillage of solvent"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Risk type</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Industrial accident" placeholder="Risk type"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item active" href="#">Industrial accident</a>
+                    <a class="dropdown-item" href="#">Strike or stoppage</a>
+                    <a class="dropdown-item" href="#">Technical failure</a>
+                    <a class="dropdown-item" href="#">Transport accident</a>
+                    <a class="dropdown-item" href="#">Severe weather</a>
+                    <a class="dropdown-item" href="#">Human health</a>
+                    <a class="dropdown-item" href="#">Animal health</a>
+                    <a class="dropdown-item" href="#">Public protest</a>
+                    <a class="dropdown-item" href="#">International event</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new impact type</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Risk owner(s)</label>
+  		        <div class="col-sm-8 col-xs-12">
+    		        <div class="btn-group">
+                  <button class="btn btn-secondary" type="button" disabled="">Sarah Jones</button>
+                  <button class="btn btn-secondary" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-secondary" type="button" disabled="">Mike Smith</button>
+                  <button class="btn btn-secondary" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                </div>
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="" placeholder="Add risk owner"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <h6 class="dropdown-header">Users</h6>
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <h6 class="dropdown-header">Contacts</h6>
+                    <a class="dropdown-item" href="#">Jim Brown</a>
+                    <a class="dropdown-item" href="#">Sarah Jones</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user or contact</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Related risks</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group">
+                  <button class="btn btn-secondary" type="button" disabled=""><strong>RK12</strong> Explosion of binder</button>
+                  <button class="btn btn-secondary" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                </div>
+                <div class="btn-group">
+                  <button class="btn btn-secondary" type="button" disabled=""><strong>RK17</strong> Warehouse flood</button>
+                  <button class="btn btn-secondary" type="button"><i class="fa fa-times-circle fa-lg no-margin"></i></button>
+                </div>
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="" placeholder="Add related risk"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#"><strong>RK12</strong> Explosion of binder</a>
+                    <a class="dropdown-item" href="#"><strong>RK11</strong> Flu pandemic</a>
+                    <a class="dropdown-item" href="#"><strong>RK10</strong> Warehouse flood</a>
+                    <a class="dropdown-item" href="#"><strong>RK9</strong> Office fire</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new risk</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notifications" data-toggle="collapse">
+            <h4 class="card-title pull-right">
+              <span class="text-muted">2</span>
+            </h4>
+            <h4 class="card-title pull-left">Users to notify</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notifications">
+            <div ng-include="'includes/subcards/notify.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#tags" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="text-muted">3</span>
+            </h4>
+            <h4 class="card-title pull-left">Tags</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="tags">
+            <div ng-include="'includes/subcards/tags.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            
+            <h4 class="card-title pull-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards/notes.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            
+            <h4 class="card-title count pull-right">
+              <span class="text-muted">2</span>
+            </h4>
+            <h4 class="card-title pull-left">Files</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards/files.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#risk-scoring-current" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="label label-warning risk-score">59</span>
+            </h4>
+            <h4 class="card-title pull-left">Current risk score</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="risk-scoring-current">
+            <div class="table-risk-grading">
+        	    <table class="table">
+          	    <tbody>
+            	    <tr>
+              	    <th rowspan="6" class="impacts-heading hidden-xs"><span>Impacts</span></th>
+              	    <th class="impact-label">Catastrophic</th>
+              	    <td class="impact impact-low">45</td>
+              	    <td class="impact impact-medium">65</td>
+              	    <td class="impact impact-high">91</td>
+              	    <td class="impact impact-high">95</td>
+              	    <td class="impact impact-high">100</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Significant</th>
+              	    <td class="impact impact-low">35</td>
+              	    <td class="impact impact-medium">60</td>
+              	    <td class="impact impact-high">75</td>
+              	    <td class="impact impact-high">80</td>
+              	    <td class="impact impact-high">85</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Moderate</th>
+              	    <td class="impact impact-low">26</td>
+              	    <td class="impact impact-medium">51</td>
+              	    <td class="impact impact-medium">54</td>
+              	    <td class="impact impact-medium active">59</td>
+              	    <td class="impact impact-medium">66</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Minor</th>
+              	    <td class="impact impact-vlow">15</td>
+              	    <td class="impact impact-low">26</td>
+              	    <td class="impact impact-low">30</td>
+              	    <td class="impact impact-low">36</td>
+              	    <td class="impact impact-low">42</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Limited</th>
+              	    <td class="impact impact-vlow">1</td>
+              	    <td class="impact impact-vlow">8</td>
+              	    <td class="impact impact-vlow">12</td>
+              	    <td class="impact impact-vlow">16</td>
+              	    <td class="impact impact-vlow">20</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">&nbsp;</th>
+              	    <th class="impact-label">V.Low</th>
+              	    <th class="impact-label">Low</th>
+              	    <th class="impact-label">Med</th>
+              	    <th class="impact-label">High</th>
+              	    <th class="impact-label">V.High</th>
+            	    </tr>
+            	    <tr class="hidden-xs">
+              	    <th colspan="2">&nbsp;</th>
+              	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
+            	    </tr>
+          	    </tbody>
+        	    </table>
+  	        </div>
+            <div class="card-block">
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Scored by</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="input-group-typeahead">
+                    <div class="input-group" data-toggle="dropdown">
+                      <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by"/>
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                      </span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Jack Herbert</a>
+                      <a class="dropdown-item" href="#">Steve Ives</a>
+                      <a class="dropdown-item" href="#">Mark Leusink</a>
+                      <a class="dropdown-item" href="#">Steve Saunders</a>
+                      <a class="dropdown-item active" href="#">Mike Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Date</label>
+                <div class="col-sm-8 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#evaluation" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="label text-muted">Terminate</span>
+            </h4>
+            <h4 class="card-title pull-left">Evaluation &amp; treatment</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="evaluation">
+            <div class="card-block">
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Comments</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3" placeholder="Comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Previous loss experience</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" rows="3" placeholder="Previous loss experience">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</textarea>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Treatment priority</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Low
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Medium
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> High
+                    </label>
+                  </div> 
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Treatment decision</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option1" autocomplete="off"> Tolerate
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Treat
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Transfer
+                    </label>
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option2" autocomplete="off" checked> Terminate
+                    </label>
+                  </div> 
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#risk-scoring-target" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="label label-success risk-score">8</span>
+            </h4>
+            <h4 class="card-title pull-left">Target risk score</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="risk-scoring-target">
+            <div class="table-risk-grading">
+        	    <table class="table">
+          	    <tbody>
+            	    <tr>
+              	    <th rowspan="6" class="impacts-heading hidden-xs"><span>Impacts</span></th>
+              	    <th class="impact-label">Catastrophic</th>
+              	    <td class="impact impact-low">45</td>
+              	    <td class="impact impact-medium">65</td>
+              	    <td class="impact impact-high">91</td>
+              	    <td class="impact impact-high">95</td>
+              	    <td class="impact impact-high">100</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Significant</th>
+              	    <td class="impact impact-low">35</td>
+              	    <td class="impact impact-medium">60</td>
+              	    <td class="impact impact-high">75</td>
+              	    <td class="impact impact-high">80</td>
+              	    <td class="impact impact-high">85</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Moderate</th>
+              	    <td class="impact impact-low">26</td>
+              	    <td class="impact impact-medium">51</td>
+              	    <td class="impact impact-medium">54</td>
+              	    <td class="impact impact-medium ">59</td>
+              	    <td class="impact impact-medium">66</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Minor</th>
+              	    <td class="impact impact-vlow">15</td>
+              	    <td class="impact impact-low">26</td>
+              	    <td class="impact impact-low">30</td>
+              	    <td class="impact impact-low">36</td>
+              	    <td class="impact impact-low">42</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Limited</th>
+              	    <td class="impact impact-vlow">1</td>
+              	    <td class="impact impact-vlow active">8</td>
+              	    <td class="impact impact-vlow">12</td>
+              	    <td class="impact impact-vlow">16</td>
+              	    <td class="impact impact-vlow">20</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">&nbsp;</th>
+              	    <th class="impact-label">V.Low</th>
+              	    <th class="impact-label">Low</th>
+              	    <th class="impact-label">Med</th>
+              	    <th class="impact-label">High</th>
+              	    <th class="impact-label">V.High</th>
+            	    </tr>
+            	    <tr class="hidden-xs">
+              	    <th colspan="2">&nbsp;</th>
+              	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
+            	    </tr>
+          	    </tbody>
+        	    </table>
+  	        </div>
+            <div class="card-block">
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Re-scored by</label>
+                <div class="col-sm-8 col-xs-12">
+                  <div class="input-group-typeahead">
+                    <div class="input-group" data-toggle="dropdown">
+                      <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by"/>
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                      </span>
+                    </div>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a class="dropdown-item" href="#">Jack Herbert</a>
+                      <a class="dropdown-item" href="#">Steve Ives</a>
+                      <a class="dropdown-item" href="#">Mark Leusink</a>
+                      <a class="dropdown-item" href="#">Steve Saunders</a>
+                      <a class="dropdown-item active" href="#">Mike Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Re-scored date</label>
+                <div class="col-sm-8 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning status-indicator"></span> 
+            </h4>
+            <h4 class="card-title pull-left">Corrective actions</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="corrective-actions">
+            <div ng-include="'includes/subcards/corrective-actions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-opportunities" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning status-indicator"></span> 
+            </h4>
+            <h4 class="card-title pull-left">Improvements</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="improvement-opportunities">
+            <div ng-include="'includes/subcards/improvements.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#review-info" data-toggle="collapse">
+            
+            <h4 class="card-title pull-right">
+              <span class="label label-warning status-indicator"></span>
+            </h4>
+            <h4 class="card-title pull-left">Review</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="review-info">
+            <div ng-include="'includes/subcards/review.html'"></div>
+          </div>
+
+
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- Settings Modal -->
+  <div class="modal fade settings-modal">
+    <div class="modal-dialog modal-sm">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Settings</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Review date</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" value="31 Dec 2015" placeholder="Review date"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Notify me</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group pull-left">
+                  <button type="button" class="btn btn-info active">Yes</button>
+                  <button type="button" class="btn btn-secondary">No</button>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">When</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" value="2" placeholder="Notification time"/>
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">weeks before</button>
+                    <ul class="dropdown-menu pull-right">
+                      <a class="dropdown-item" href="#">days before</a>
+                      <a class="dropdown-item active" href="#">weeks before</a>
+                      <a class="dropdown-item" href="#">months before</a>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

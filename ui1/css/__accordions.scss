@@ -1,0 +1,313 @@
+.card-block-collapse-toggle {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  
+  &:before {
+    content: "\f138";
+    font-family: "FontAwesome";
+    font-size: 24px;
+    width: 20px;
+    line-height: 24px;
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    margin-top: -12px;
+    color: $blue-color;
+    @include transition(all .3s ease);
+  }
+  
+  &:not(.collapsed):before {
+    @include rotate(90);
+  }
+  
+  .card-title {
+    margin: 0;
+
+    .text-muted {
+      color: #777;
+      font-weight: normal;
+    }    
+    
+  }
+
+	.disclosure-indicator {
+  	line-height: 1;
+  	font-size: 14px;
+  	color: #999;
+  	position: absolute;
+  	right: 16px;
+  	top: 50%;
+  	margin-top: -8px;
+  	color: #777;
+	}
+}
+
+.card-block-collapse {
+  .card-block {
+    border-top: 1px solid #ddd;
+    
+    .card .card-block-collapse-toggle {
+        border-top: 0;
+        background: #f5f5f5;
+    }
+  }
+}
+
+
+.list-group-accordion {
+  > .list-group-item {
+    background: #f5f5f5;
+    padding-left: 48px;
+    
+    &:before  {
+      font-family: "FontAwesome";
+      content: "\f138";
+      position: absolute;
+      left: 15px;
+      top: 50%;
+      font-size: 24px;
+      line-height: 20px;
+      width: 20px;
+      margin-top: -10px;
+      color: $blue-color;
+      @include transition(all 0.3s ease);        
+    }
+    
+    &:not(.collapsed):before {
+      @include rotate(90);
+    }
+    
+    .list-group-item-heading {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+    }
+  }
+  
+  .list-group {
+    &-item {
+      &:first-child {
+        border-top: 1px solid #ddd !important;
+      }
+    }
+  }
+}
+
+
+
+/*
+.bootcards-panel-collapsing {
+	margin-bottom: 0;
+	border-color: #bbb;
+
+  &:not(:first-child) {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+  }
+
+  &:not(:last-child) {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-width: 0;
+  }
+
+  &:first-child {
+    margin-top: 30px;
+  }
+
+  &:last-child {
+    margin-bottom: 15px;
+  }
+
+  &.full-width {
+    border-left: 0;
+    border-right: 0;
+    border-radius: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    box-shadow: none;
+    border-color: #ddd;
+
+    > .panel-heading {
+      background: white;
+    }
+
+    .panel-body {
+      padding-bottom: 30px;
+    }
+
+    .panel-body.indented {
+      padding-left: 50px;
+    }
+
+    .table-responsive {
+      border-top: 1px solid #ddd;
+
+      .table {
+        margin: 0;
+      }
+
+      th {
+        border-bottom-width: 1px;
+      }
+
+      &.indented {
+        padding-left: 50px;
+
+        td:first-child, th:first-child {
+          padding-left: 0 !important;
+        }
+      }
+    }
+
+
+  }
+
+	.panel-heading {
+  	border: 0;
+  	//padding: 10px 15px 0;
+  	padding-left: 50px;
+  	cursor: pointer;
+  	position: relative;
+  	transition: all 0.3s ease;
+  	font-size: 15px;
+
+  	.bootcards-panel-collapsing-indicator {
+    	line-height: 20px;
+    	font-size: 24px;
+    	width: 24px;
+    	text-align: center;
+    	color: #337ab7;
+    	position: absolute;
+    	left: 13px;
+    	top: 50%;
+    	margin-top: -11px;
+    	transition: all 0.3s ease;
+  	}
+
+  	.disclosure-indicator {
+    	line-height: 1;
+    	font-size: 14px;
+    	color: #999;
+    	position: absolute;
+    	right: 16px;
+    	top: 50%;
+    	margin-top: -8px;
+  	}
+
+    .text-muted {
+      color: #777;
+      font-weight: normal;
+    }
+
+    .label {
+      font-size: 13px;
+      position: relative;
+      top: -1px;
+
+      &.status-indicator {
+        position: relative;
+        top: 2px;
+      }
+      
+      &.text-muted {
+        color: #999;
+        padding-left: 0;
+        padding-right: 0;
+        font-weight: 700;
+      }
+      
+      &.risk-score {
+        width: 36px;
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
+        display: inline-block;
+      }
+      
+
+    }
+    
+    span + span {
+      margin-left: 8px;
+    }
+
+    &:hover, &:focus, &:active {
+    	background: #f5f5f5;
+
+    	.bootcards-panel-collapsing-indicator {
+    	  color: #23527c;
+      }
+  	}
+
+  	&.collapsed {
+    	border-radius: 4px;
+
+    	.bootcards-panel-collapsing-indicator {
+      	-webkit-transform: rotate(-90deg);
+    	}
+  	}
+	}
+
+	.panel-body {
+  	border-top: 1px solid #ddd;
+
+
+	}
+}
+
+
+.ios,
+.android {
+ .bootcards-panel-collapsing {
+    border: 1px solid #ccc;
+    margin-bottom: 0;
+    margin-top: -1px;
+
+    &:last-child {
+      margin-bottom: 15px;
+    }
+
+    &.full-width {
+      border-left: 0;
+      border-right: 0;
+    }
+
+    .panel-heading {
+      background-color: #f5f5f5;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-radius: 0;
+    }
+
+    .panel-body {
+      padding-bottom: 15px;
+    }
+
+    .panel-title {
+      padding: 0;
+    }
+  }
+}
+
+
+
+.ios {
+  .bootcards-panel-collapsing {
+    &:first-child {
+      //margin-top: -1px;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+.android {
+  .bootcards-panel-collapsing {
+    .panel-title {
+      padding: 2px 0;
+    }
+  }
+}
+*/

@@ -1,0 +1,117 @@
+  <!-- Org Settings -->
+  <div class="modal fade" id="org-settings-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Org Settings</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Org owner</label>
+              <div class="col-sm-9">
+  			        <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Mike Smith" placeholder="Owner"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>  
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Home timezone</label>
+              <div class="col-sm-9">
+  			        <select class="c-select">
+    			        <option selected="">(GMT) Dublin, Edinburgh, Lisbon, London</option>
+    			        <option>(GMT + 01:00) Amsterdam, Berlin, Rome</option>
+    			        <option>(GMT + 02:00) Athens, Bucharest, Istanbul</option>
+    			        <option>(GMT + 03:00) Baghdad, Moscow, Nairobi</option>
+  			        </select>
+              </div>
+            </div>  
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Default currency</label>
+              <div class="col-sm-9">
+  			        <select class="c-select">
+    			        <option selected="">GBP - British Pound</option>
+    			        <option>EUR - Euro</option>
+    			        <option>USD - US Dollar</option>
+  			        </select>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle" href="#starting-numbers" data-toggle="collapse">
+            <h4 class="card-title">Starting numbers</h4>
+          </div>
+          <div class="card-block-collapse collapse in" id="starting-numbers">
+            <div class="card-block">
+              <div class="form-group row">
+                <label class="form-control-label col-sm-3">Non-conformities</label>
+                <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon">NC</span>
+                    <input type="text" class="form-control" value="001" placeholder="1"/>
+                  </div>
+                </div>
+              </div> 
+              <div class="form-group row">
+                <label class="form-control-label col-sm-3">Corrective actions</label>
+                <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon">CA</span>
+                    <input type="text" class="form-control" value="001" placeholder="1"/>
+                  </div>
+                </div>
+              </div> 
+              <div class="form-group row">
+                <label class="form-control-label col-sm-3">Preventative actions</label>
+                <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon">PA</span>
+                    <input type="text" class="form-control" value="001" placeholder="1"/>
+                  </div>
+                </div>
+              </div> 
+              <div class="form-group row">
+                <label class="form-control-label col-sm-3">Lessons learned</label>
+                <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon">LL</span>
+                    <input type="text" class="form-control" value="001" placeholder="1"/>
+                  </div>
+                </div>
+              </div> 
+              <div class="form-group row">
+                <label class="form-control-label col-sm-3">Risks</label>
+                <div class="col-sm-3">
+                  <div class="input-group">
+                    <span class="input-group-addon">RK</span>
+                    <input type="text" class="form-control" value="001" placeholder="1"/>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+          <div class="card-block">
+            <h4 class="card-title">Billing <span class="text-muted">- coming soon</span></h4>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

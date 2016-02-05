@@ -1,0 +1,61 @@
+/*
+    local Segoe UI
+ */
+
+@font-face {
+   font-family: "Segoe UI Light";
+   font-weight: 200;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI Semilight";
+   font-weight: 300;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI";
+   font-weight: 400;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI Semibold";
+   font-weight: 600;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI Bold";
+   font-weight: 700;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI Italic";
+   font-style: italic;
+   font-weight: 400;
+   src: local("Segoe UI");
+}
+@font-face {
+   font-family: "Segoe UI Bold Italic";
+   font-style: italic;
+   font-weight: 700;
+   src: local("Segoe UI");
+}
+
+/*
+    cdn Segoe UI
+ */
+
+@include font-face(Segoe UI Light Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/light/latest');
+@include font-face(Segoe UI Semilight Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/semilight/latest');
+@include font-face(Segoe UI Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/normal/latest');
+@include font-face(Segoe UI Semibold Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/semibold/latest');
+@include font-face(Segoe UI Bold Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/bold/latest');
+@include font-face(Segoe UI Italic Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/italic/latest');
+@include font-face(Segoe UI Bold Italic Latest, 'http://i.s-microsoft.com/fonts/Segoe-UI/West-European/bolditalic/latest');
+
+$SegoeUILight       : "Segoe UI Light", "Segoe UI Light Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$SegoeUISemilight   : "Segoe UI Semilight", "Segoe UI Semilight Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$SegoeUI            : "Segoe UI", "Segoe UI Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$SegoeUISemibold    : "Segoe UI Semibold", "Segoe UI Semibold Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$SegoeUIBold        : "Segoe UI Bold", "Segoe UI Bold Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+$SegoeUIItalic      : "Segoe UI Italic", "Segoe UI Italic Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, serif;
+$SegoeUIBolditalic  : "Segoe UI Bold Italic", "Segoe UI Bold Italic Latest", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, serif;

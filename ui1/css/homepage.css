@@ -1,0 +1,136 @@
+body {
+  background: #444; }
+
+.homepage-image {
+  padding-top: 60px;
+  background: #d9edf1;
+  background-image: -moz-linear-gradient(90deg, #cce6ed 0%, #e6f3f6 100%);
+  background-image: -webkit-linear-gradient(90deg, #cce6ed 0%, #e6f3f6 100%);
+  background-image: -ms-linear-gradient(90deg, #cce6ed 0%, #e6f3f6 100%); }
+  @media (max-width: 767px) {
+    .homepage-image {
+      padding-top: 20px; } }
+  .homepage-image .sketch {
+    width: 100%; }
+
+.homepage-header {
+  padding-top: 60px;
+  padding-bottom: 20px;
+  background: white; }
+  @media (min-width: 768px) {
+    .homepage-header {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .homepage-header {
+      padding-top: 30px; } }
+  .homepage-header .logo {
+    width: 300px;
+    margin-bottom: 40px; }
+    @media (max-width: 767px) {
+      .homepage-header .logo {
+        width: 200px;
+        margin-bottom: 20px; } }
+  .homepage-header h1 {
+    font-size: 40px;
+    line-height: 1.2;
+    color: #444;
+    margin: 0 auto 20px;
+    font-weight: bold; }
+    @media (max-width: 767px) {
+      .homepage-header h1 {
+        font-size: 24px;
+        text-align: center; } }
+  .homepage-header p.lead {
+    margin-bottom: 30px;
+    text-align: center;
+    font-size: 20px; }
+  .homepage-header .label {
+    font-size: 24px;
+    display: inline-block;
+    margin-top: 30px; }
+
+@media (min-width: 768px) {
+  .homepage-key-facts {
+    text-align: center; } }
+
+.homepage-key-facts .fact {
+  margin-bottom: 40px;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .homepage-key-facts .fact {
+      margin-bottom: 20px; } }
+
+.homepage-key-facts .circle {
+  background: #006e9e;
+  border-radius: 50%; }
+  @media (max-width: 767px) {
+    .homepage-key-facts .circle {
+      float: left;
+      margin: 0 15px 0 0;
+      width: 48px;
+      height: 48px;
+      font-size: 28px; }
+      .homepage-key-facts .circle i {
+        line-height: 48px; } }
+  @media (min-width: 768px) {
+    .homepage-key-facts .circle {
+      width: 80px;
+      height: 80px;
+      font-size: 42px;
+      margin: 0 auto 10px; }
+      .homepage-key-facts .circle i {
+        line-height: 80px; } }
+  .homepage-key-facts .circle i {
+    color: #6fd5f1;
+    text-align: center;
+    display: block; }
+
+.homepage-key-facts h4 {
+  color: #7da1ac;
+  font-size: 16px;
+  line-height: 1.4;
+  font-weight: 400;
+  margin: 0;
+  overflow: hidden; }
+  @media (max-width: 767px) {
+    .homepage-key-facts h4 {
+      font-size: 14px; } }
+  .homepage-key-facts h4 strong {
+    color: #444;
+    display: block;
+    font-size: 32px;
+    line-height: 1;
+    margin-bottom: 4px; }
+    @media (max-width: 767px) {
+      .homepage-key-facts h4 strong {
+        font-size: 24px; } }
+
+.homepage-contact {
+  padding: 50px 0;
+  color: white; }
+  @media (min-width: 768px) {
+    .homepage-contact {
+      text-align: center; } }
+  @media (max-width: 767px) {
+    .homepage-contact {
+      padding: 30px 0; } }
+  .homepage-contact h4 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #bbb;
+    margin: 0 0 30px; }
+    @media (max-width: 767px) {
+      .homepage-contact h4 {
+        font-size: 24px; } }
+  @media (min-width: 768px) {
+    .homepage-contact form {
+      max-width: 400px;
+      margin: 0 auto; } }
+  .homepage-contact form .form-control {
+    border-color: #444; }
+  .homepage-contact form .btn {
+    border-color: #444;
+    transition: all 0.3s ease; }
+  .homepage-contact form .checkbox {
+    margin-top: 30px;
+    font-weight: bold; }

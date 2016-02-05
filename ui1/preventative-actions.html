@@ -1,0 +1,611 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Preventative actions</title>
+
+	<!-- JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular for partials -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="js/isometrica.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="isometrica">
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-standard">
+    <span class="navbar-brand dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Preventative actions - all
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">All</a>
+        <a class="dropdown-item" href="#">By standard</a>
+        <a class="dropdown-item" href="#">By status</a>
+        <a class="dropdown-item" href="#">By tracking state</a>
+        <a class="dropdown-item" href="#">Deleted</a>
+      </div>   
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-chevron-left"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
+          <i class="fa fa-question-circle"></i>
+        </a>        
+      </li>
+    </ul>      
+  </div>
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="content">
+    <div class="container">
+  		<div class="row">
+    		<div class="col-sm-4 content-list">
+    			<div class="card">
+    				<div class="card-block">
+    					<form class="search-form">
+  				      <div class="form-group row">
+  					      <input type="text" class="form-control" placeholder="Search...">
+  					      <i class="fa fa-search"></i>
+  				      </div>
+								<button class="btn btn-primary" data-toggle="modal" data-target="#editModal">
+									<i class="fa fa-plus"></i>
+									<span>Add</span>
+								</button>
+    					</form>
+    				</div>
+    				<div class="list-group list-group-flush">
+    				  <a class="list-group-item active" href="#">
+    						<span class="label label-warning status-indicator pull-left"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Recalibrate system</h4>
+                  <p class="list-group-item-text">PA99999 - P.Myson, 5 Jun</p>
+                </div>
+  						</a>
+  						<a class="list-group-item" href="#">
+                <span class="label label-danger status-indicator pull-left"></span>
+  							<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Fix machine calibration</h4>
+                  <p class="list-group-item-text">PA99998 - J.Jones, 3 Jun</p>
+  							</div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<span class="label label-warning status-indicator pull-left"></span>
+  							<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Test all components</h4>
+                  <p class="list-group-item-text">PA99997 - P.Smith, 30 May</p>
+  							</div>
+  						</a>
+    				  <a class="list-group-item" href="#">
+      				  <span class="label label-danger status-indicator pull-left"></span>
+  							<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Refit old stock</h4>
+                  <p class="list-group-item-text">PA99996 - A.Andrews, 20 May</p>
+  							</div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<span class="label label-success status-indicator pull-left"></span>
+  							<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Find better supplier</h4>
+                  <p class="list-group-item-text">PA99995 - C.Cox, 18 May</p>
+  							</div>
+  						</a>
+    				</div>
+    			</div>
+    		</div>
+ 
+  			<div class="col-sm-8 content-cards hidden-xs">
+  				<div class="card">
+  					<div class="card-block card-heading">
+  						<div class="card-heading-buttons pull-right">
+  							<button type="button" class="btn btn-warning">
+  								Reopen
+  							</button>
+  							<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editModal">
+  								<i class="fa fa-pencil"></i>
+  								Edit
+  							</button>
+  						</div>
+  						<h3 class="card-title">
+    						Preventative action
+    						
+    				  </h3>
+  					</div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Description</p>
+                <h4 class="list-group-item-heading"><span class="label ref-number">PA129</span> Fix machine calibration</h4>
+              </div>            
+              <div class="list-group-item">
+                <p class="list-group-item-text">Linked to</p>
+                <a href="#" class="btn btn-secondary"><strong>NC216</strong> Brackets getting corroded <i class="fa fa-circle margin-left text-success"></i></a>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Owner</p>
+                <h4 class="list-group-item-heading">Mike Smith</h4>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Status</p>
+                <h4 class="list-group-item-heading"><span class="label label-success">Verified</span></h4>
+              </div>
+            </div>
+            <div class="list-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Plan in place?</p>
+                    <h4 class="list-group-item-heading">Yes</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Creation date</p>
+                    <h4 class="list-group-item-heading">12 Aug 2015</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Created by</p>
+                    <h4 class="list-group-item-heading">Jack Herbert</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Target completion date</p>
+                    <h4 class="list-group-item-heading">20 Jun 2015</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">To be completed by</p>
+                    <h4 class="list-group-item-heading">Mike Smith</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Completed?</p>
+                    <h4 class="list-group-item-heading">Yes</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Completed by</p>
+                    <h4 class="list-group-item-heading">Mike Smith</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="list-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Target verified date</p>
+                    <h4 class="list-group-item-heading">16 Sep 2015</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">To be verified by</p>
+                    <h4 class="list-group-item-heading">Steve Saunders</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Verified?</p>
+                    <h4 class="list-group-item-heading">Yes</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Verified as effective on</p>
+                    <h4 class="list-group-item-heading">16 Sep 2015</h4>
+                  </div>
+                </div>
+              </div> 
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Tags</h4>
+            </div>
+            <div class="list-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Activity or process(es)</p>
+                    <h4 class="list-group-item-heading">Customer support</h4>
+                    <h4 class="list-group-item-heading">Thermoforming</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Department or site(s)</p>
+                    <h4 class="list-group-item-heading">Customer service</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Management program(s)</p>
+                    <h4 class="list-group-item-heading">Business Continuity Management</h4>
+                    <h4 class="list-group-item-heading">Information Security Management</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Text tags</p>
+                    <h4 class="list-group-item-heading">lorem</h4>
+                    <h4 class="list-group-item-heading">ispum dolor</h4>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Notify</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Steve Saunders</h4>
+                <h4 class="list-group-item-heading">Mike Smith</h4>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Plan notes</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Fusce volutpat iaculis mauris, vulputate scelerisque ante aliquet viverra. Mauris ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Attachments</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="" class="btn btn-secondary"><i class="fa fa-file-word-o fa-lg"></i> Alvca_letter_June_15.docx</a>
+                <a href="" class="btn btn-secondary"><i class="fa fa-file-excel-o fa-lg"></i> sales.xls</a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">Verification</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Preventative action(s) were verified as effective by John Smith on 15 Feb 2016</h4>
+              </div>
+            </div>
+            <!-- Changelog -->
+            <div ng-include="'includes/card-footer-changelog.html'"></div>    
+  				</div>
+  			</div>
+  		</div>
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="editModal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-right">
+            <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">PA129</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel-modal.html'"></div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" value="Fix machine calibration" placeholder="Description"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Linked to</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group">
+                  <span class="input-group-addon">NC216</span>
+                  <input type="text" class="form-control" value="Brackets getting corroded" disabled=""/>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Owner</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Mike Smith" placeholder="Owner"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>
+            
+            <hr>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Plan in place?</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> No
+                  </label>
+                </div>
+              </div>
+            </div>
+
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Creation date</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Creation date">
+  			        <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Created by</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Jack Herbert" placeholder="Created by"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>  
+
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Target completion date</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="20 Jun 2015" placeholder="Target completion date">
+      			    <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+  	        
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">To be completed by</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Jack Herbert" placeholder="To be completed by"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div> 
+  	        
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Completed date</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="27 Jun 2015" placeholder="Completed date">
+      			    <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Completed by</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Mike Smith" placeholder="Completed by"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Completed?</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> No
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Completed on</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="27 Jun 2015" placeholder="Completed on">
+      			    <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+            
+            <hr>
+
+
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Target verified date</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="16 Sep 2015" placeholder="Target verified date">
+  			        <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">To be verified by</label>
+  		        <div class="col-sm-8 col-xs-12">
+                <div class="input-group-typeahead">
+                  <div class="input-group" data-toggle="dropdown">
+                    <input type="text" class="form-control" value="Steve Saunders" placeholder="To be verified by"/>
+                    <span class="input-group-btn">
+                      <button class="btn btn-secondary" type="button"><i class="fa fa-caret-down no-margin"></i></button>
+                    </span>
+                  </div>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Verified?</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <span class="label label-info">Yes</span>
+  		        </div>
+  	        </div>
+  	        <div class="form-group row">
+  		        <label class="form-control-label col-sm-4 col-xs-12">Verified date</label>
+  		        <div class="col-sm-8 col-xs-12">
+  			        <input type="text" class="form-control" value="19 Sep 2015" placeholder="Verified date">
+  			        <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+  		        </div>
+  	        </div>
+  	        
+          </div>
+          
+          <div class="card-block card-block-collapse-toggle collapsed" href="#tags" data-toggle="collapse">
+            <h4 class="card-title pull-left">Tags</h4>
+            <h4 class="card-title pull-right text-muted">3</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="tags">
+            <div ng-include="'includes/subcards/tags.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notifications" data-toggle="collapse">
+            <h4 class="card-title pull-left">Notify</h4>
+            <h4 class="card-title pull-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notifications">
+            <div ng-include="'includes/subcards/notify.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            
+            <h4 class="card-title pull-left">Plan notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards/notes.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            
+            <h4 class="card-title pull-left">Attachments</h4>
+            <h4 class="card-title pull-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards/files.html'"></div>
+          </div>
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary btn-delete">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>

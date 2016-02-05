@@ -1,0 +1,66 @@
+.label {  
+  border-radius: 0;
+  display: inline-block;
+  font-weight: normal;
+  font-family: $SegoeUIBold;
+  
+  &-success {
+    background: $green-color;
+  }
+  &-warning {
+    background: $amber-color;
+  }
+  &-danger {
+    background: $red-color;
+  }
+  &-primary {
+    background: $blue-color;
+  }
+  &-info {
+    background: $light-blue-color;
+  }
+}
+
+.form-group .label {
+    font-size: 14px;
+    margin: 5px 0;
+    padding: 5px 8px;
+    display: inline-block;
+}
+
+.ref-number {
+  background: #777;
+  color: white;
+  float: right;
+  display: inline-block;
+  padding: .25em .6em .3em;
+  margin-right: 0;
+}
+
+.status-indicator {
+  $status-indicator-size: 16px;
+  border-radius: 50%;
+  z-index: 9;
+  height: $status-indicator-size;
+  width: $status-indicator-size;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 1px;
+
+  &:empty {
+    display: inline-block;
+  }
+} 
+
+.risk-square {
+  float: left;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  font-size: 20px;
+  padding: 0;
+  margin-right: 12px;
+  font-weight: normal;
+  font-family: $SegoeUILight;
+}

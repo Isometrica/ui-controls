@@ -1,0 +1,337 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Contacts</title>
+
+	<!-- JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular for partials -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="js/isometrica.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="isometrica">
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-standard">
+    <span class="navbar-brand dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Contacts
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="users.html">Users</a>
+        <a class="dropdown-item active" href="contacts.html">Contacts</a>
+        <a class="dropdown-item" href="#">Organizations</a>
+      </div>   
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-chevron-left"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
+          <i class="fa fa-question-circle"></i>
+        </a>        
+      </li>
+    </ul>      
+  </div>
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="content">
+    <div class="container">
+  		<div class="row">
+        <div class="col-sm-4 content-list">
+    			<div class="card">
+    				<div class="card-block">
+    					<form class="search-form">
+  				      <div class="form-group row">
+  					      <input type="text" class="form-control" placeholder="Search...">
+  					      <i class="fa fa-search"></i>
+  				      </div>
+								<button class="btn btn-primary" data-toggle="modal" data-target="#isometrica-work-inbox-edit-modal">
+									<i class="fa fa-plus"></i>
+									<span>Add</span>
+								</button>
+    					</form>
+    				</div>
+    				<div class="list-group list-group-flush">
+    				  <a class="list-group-item active" href="#">
+  							<h4 class="list-group-item-heading">Ben Bradshaw</h4>
+  							<p class="list-group-item-text">IT manager, IBM UK</p>
+  						</a>
+  						<a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Jeremy Fuller</h4>
+  							<p class="list-group-item-text">Purchasing manager, BT</p>
+  						</a>
+  						<a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Eugene Greene</h4>
+  							<p class="list-group-item-text">Sales manager, Microsoft</p>
+  						</a>
+    				  <a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Catherine Jones</h4>
+  							<p class="list-group-item-text">Tax consultant, HMRC</p>
+  						</a>
+  						<a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Simon Parr</h4>
+  							<p class="list-group-item-text">Purchasing manager, Sainsburys</p>
+  						</a>
+  						<a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Julia Sandoval</h4>
+  							<p class="list-group-item-text">Head of sales, IBM UK</p>
+  						</a>
+  						<a class="list-group-item" href="#">
+  							<h4 class="list-group-item-heading">Betty Thomas</h4>
+  							<p class="list-group-item-text">Technical director, ARM</p>
+  						</a>
+    				</div>
+    			</div>
+    		</div>
+  
+  			<div class="col-sm-8 content-cards hidden-xs">
+  				<div class="card">
+  					<div class="card-block card-heading">
+  						<div class="card-heading-buttons pull-right">
+  							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-addressbook-edit-modal">
+  								<i class="fa fa-pencil"></i>
+  								Edit
+  							</a>
+  						</div>
+  						<h3 class="card-title">Contact details</h3>
+  					</div>
+            <div class="list-group">
+  
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Name</p>
+                    <h4 class="list-group-item-heading">Simon Parr</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Title</p>
+                    <h4 class="list-group-item-heading">Purchasing manager</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Contacts type</p>
+                    <h4 class="list-group-item-heading">Customer</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Org name</p>
+                    <h4 class="list-group-item-heading">Sainsburys</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+  					<div class="card-block card-subheading">
+              <h4 class="card-title">Contact details</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Email</p>
+                <h4 class="list-group-item-heading"><a href="mailto:">simon.parr@sainsburys.co.uk</a></h4>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Work phone</p>
+                    <h4 class="list-group-item-heading"><a href="tel:">+1 750 123 4567</a></h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Mobile phone</p>
+                    <h4 class="list-group-item-heading"><a href="tel:">+1 609 234 5678</a></h4>
+                  </div>
+                </div>
+              </div>
+              <div class="list-group-item">
+                <p class="list-group-item-text">Address</p>
+                <h4 class="list-group-item-heading">London Road <br>Feltham, <br>Middlesex, <br>F21 0QT</h4>
+              </div>
+            </div>
+  					<div class="card-block card-subheading">
+              <h4 class="card-title">Notes</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</h4>
+              </div>
+            </div>
+            <!-- Changelog -->
+            <div ng-include="'includes/card-footer-changelog.html'"></div>    
+  				</div>
+  			</div>
+  		</div>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-addressbook-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-right">
+            <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Edit Contact</h4>
+
+        </div>
+        <div ng-include="'includes/guidance-panel-modal.html'"></div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Name" value="Simon Parr"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Title</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Title" value="Purchasing manager"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="fa fa-times-circle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Contacts type</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select">
+                  <option></option>
+                  <option selected="">Customer</option>
+                  <option>Supplier</option>
+                  <option>Partner</option>
+                  <option>Consultant</option>
+                  <option>Internal</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
+            <h4 class="card-title pull-left">Contact details</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="collapse in" id="contact">
+            <div class="card-block">
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Email</label>
+                <div class="col-sm-8 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Email" value="simon.parr@sainsburys.co.uk"/>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Phone number(s)</label>
+                <div class="col-sm-5 col-xs-7">
+                  <input type="text" class="form-control" placeholder="Number" value="+1 750 123 4567"/>
+                </div>
+                <div class="col-sm-3 col-xs-5">
+                  <select class="c-select">
+                    <option selected="">Work</option>
+                    <option>Home</option>
+                    <option>Mobile</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-5 col-sm-offset-4 col-xs-7">
+                  <input type="text" class="form-control" placeholder="Number" value="+1 609 234 5678"/>
+                </div>
+                <div class="col-sm-3 col-xs-5">
+                  <select class="c-select">
+                    <option>Work</option>
+                    <option>Home</option>
+                    <option selected="">Mobile</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="col-sm-8 col-sm-offset-4">
+                  <button type="button" class="btn btn-primary">Add another phone number</button>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Address</label>
+                <div class="col-sm-8 col-xs-12">
+                  <textarea class="form-control" placeholder="Address" rows="4">London Road,
+Feltham,
+Middlessex
+F21 0QT</textarea>
+                  <button type="button" class="btn btn-link clear-field">
+    			          <i class="fa fa-times-circle"></i>
+    			        </button>
+                </div>
+              </div>
+
+            </div>
+
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            
+            <h4 class="card-title pull-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards/notes.html'"></div>
+          </div>
+
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+.modal {
+  &-title {
+    text-align: center;
+    font-size: 18px;
+    line-height: 20px;
+  }
+  
+  .modal-dialog {
+    > .card {
+      border: 0;
+      
+      > .card-heading .card-title {
+        text-align: center !important;
+      }
+    }
+
+    .card-block {
+      &:not(:first-child) {
+        border-top: 1px solid #ddd;
+      }
+    }
+    
+    
+  }
+
+}

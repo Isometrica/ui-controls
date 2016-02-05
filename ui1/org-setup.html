@@ -1,0 +1,594 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Management system setup</title>
+
+	<!-- JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular for partials -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="js/isometrica.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="isometrica" class="page-orgsetup">
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-standard">
+    <span class="navbar-brand">
+      Management system setup 
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-chevron-left"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
+          <i class="fa fa-question-circle"></i>
+        </a>        
+      </li>
+    </ul>      
+  </div>
+
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="content">
+    <div class="container container-orgsetup">
+      <div class="row">
+        <div class="col-sm-12 content-cards">
+          <div class="card card-orgsetup">
+            <div class="card-block first" data-toggle="modal" data-target="#editMission">
+              <h3 class="card-title">Mission &amp; goals</h3>
+              <i class="fa fa-long-arrow-right arrow left"></i>
+              <span class="label label-success status-indicator"></span>
+            </div>
+            <div class="offset left">
+              <div class="card" data-toggle="modal" data-target="#editRiskTypes">
+                <div class="card-block first last">
+                  <h3 class="card-title">Risks <span class="text-muted">(6 types)</span></h3>
+                  <span class="label label-success status-indicator"></span>
+                </div>
+              </div>
+            </div>
+            <div class="card-block" data-toggle="modal" data-target="#editManagementSystems">
+              <h3 class="card-title">Management programs <span class="text-muted">(4)</span></h3>
+              <span class="label label-warning status-indicator primary"></span>
+            </div>
+            <div class="card-block" data-toggle="modal" data-target="#editStandards">
+              <h3 class="card-title">Standards <span class="text-muted">(4)</span></h3>
+              <span class="label label-warning status-indicator"></span>
+            </div>
+            <div class="card-block" data-toggle="modal" data-target="#editDepartments">
+              <h3 class="card-title">Departments &amp; sites <span class="text-muted">(7)</span></h3>
+              <span class="label label-warning status-indicator"></span>
+            </div>
+            <div class="card-block last" data-toggle="modal" data-target="#editProducts">
+              <h3 class="card-title">Products &amp; services <span class="text-muted">(5)</span></h3>
+              <span class="label label-danger status-indicator"></span>
+            </div>
+            <div class="offset right">
+              <div class="card card-orgsettings" data-toggle="modal" href="#org-settings-modal">
+                <div class="card-block first last">
+                  <h3 class="card-title">Org Settings</h3>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Mission -->
+  <div class="modal fade modal-orgsetup" id="editMission">
+    <div class="modal-dialog modal-xl">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-editMission">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Mission &amp; goals</h4>
+        </div>
+        <div class="collapse" id="guidance-panel-editMission">
+          <div ng-include="'includes/guidance-panel-content.html'"></div>
+        </div>
+        <div class="card-block">
+          <form class="form-horizontal">
+            <div class="form-group row">
+              <label class="form-control-label col-xs-3 col-md-5">Org name</label>
+              <div class="col-xs-9 col-md-4">
+                <input type="text" class="form-control" placeholder="Org name" value="IBM UK">
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="rich-text">
+          <div class="rich-text-controls clearfix">
+            <div class="ql-toolbar-container" id="formatting-container">
+              <a class="ql-bold btn btn-secondary" href="#" title="Bold"><i class="fa fa-bold no-margin"></i></a>
+              <a class="ql-italic btn btn-secondary" href="#" title="Italic"><i class="fa fa-italic no-margin"></i></a>
+              <a class="ql-bullet btn btn-secondary" href="#" title="Bullet"><i class="fa fa-list-ul no-margin"></i></a>
+              <a class="ql-list btn btn-secondary" href="#" title="List"><i class="fa fa-list-ol no-margin"></i></a>
+              <a class="ql-link btn btn-secondary" href="#" title="Link"><i class="fa fa-link  no-margin"></i></a>
+            </div>
+          </div>
+          <div class="ql-container rich-text-input" id="editor-container">
+            <iframe src="quill.html" frameborder="0" height="100%" width="100%" title="Quill Rich Text Editor" role="presentation"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Management systemns -->
+  <div class="modal fade modal-orgsetup" id="editManagementSystems">
+    <div class="modal-dialog modal-lg">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-editManagementSystems">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Management programs</h4>
+        </div>
+        <div class="collapse" id="guidance-panel-editManagementSystems">
+          <div ng-include="'includes/guidance-panel-content.html'"></div>
+        </div>
+        <form class="form-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name <span class="required">*</span></th>
+                  <th>Manager <span class="required">*</span></th>
+                  <th class="icon"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Quality Management"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Adam Appleton</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Environmental Management"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Bella Brown</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Business Continuity Management"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Cathy Cresswell</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Information Security Management"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">David Donaldson</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Ember Ernestsson</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Departments -->
+  <div class="modal fade modal-orgsetup" id="editDepartments">
+    <div class="modal-dialog modal-lg">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-editDepartments">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Departments &amp; sites</h4>
+        </div>
+        <div class="collapse" id="guidance-panel-editDepartments">
+          <div ng-include="'includes/guidance-panel-content.html'"></div>
+        </div>
+        <form class="form-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name <span class="required">*</span></th>
+                  <th>Manager <span class="required">*</span></th>
+                  <th class="short">Type <span class="required">*</span></th>
+                  <th class="icon"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Accounting"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="HR"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Adam Appleton</option>
+                      <option selected="">John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Sales"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Brian Brown</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Marketing"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Cathy Cresswell</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Manufacturing"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Operations"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Customer service"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Department</option>
+                      <option selected="">Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Technical support"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Jane Smith</option>
+                      <option>John Jones</option></select>
+                  </td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Department</option>
+                      <option>Site</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Edit Products -->
+  <div class="modal fade modal-orgsetup" id="editProducts">
+    <div class="modal-dialog modal-xl">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-editProducts">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Products &amp; services</h4>
+        </div>
+        <div class="collapse" id="guidance-panel-editProducts">
+          <div ng-include="'includes/guidance-panel-content.html'"></div>
+        </div>
+        <form class="form-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Name <span class="required">*</span></th>
+                  <th class="short">Short name</th>
+                  <th>Description</th>
+                  <th class="short">Type <span class="required">*</span></th>
+                  <th class="icon"></th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Unplugged"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="PROC015"></td>
+
+                  <td><input class="form-control" type="text" placeholder="Description" value="Instant, offline access to data and applications stored on smartphones & tablets"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="NotesTools"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="PROC016"></td>
+                  <td><input class="form-control" type="text" placeholder="Description" value="Develop and manage Notes applications faster, better, easier."></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Modernization Services"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="PROC017"></td>
+                  <td><input class="form-control" type="text" placeholder="Description" value="Mobilize or web enable IBM Notes and Domino applications"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Product</option>
+                      <option selected="">Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="XControls"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="PROC018"></td>
+                  <td><input class="form-control" type="text" placeholder="Description" value="A flexible framework for mobile and responsive web application development"></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option selected="">Product</option>
+                      <option>Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Developer Assistance Program"></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value="PROC019"></td>
+                  <td><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option></option>
+                      <option>Product</option>
+                      <option selected="">Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Short name" value=""></td>
+                  <td><input class="form-control" type="text" placeholder="Description" value=""></td>
+                  <td>
+                    <select class="form-control">
+                      <option selected=""></option>
+                      <option>Product</option>
+                      <option>Service</option></select>
+                  </td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Edit Risk types -->
+  <div class="modal fade modal-orgsetup" id="editRiskTypes">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-editRiskTypes">
+      				<i class="fa fa-lg fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Done
+      			</button>
+          </div>
+          <h4 class="card-title">Risk types</h4>
+        </div>
+        <div class="collapse" id="guidance-panel-editRiskTypes">
+          <div ng-include="'includes/guidance-panel-content.html'"></div>
+        </div>
+        <form class="form-multiadd">
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <tbody>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Financial"></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Strategic"></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Operational"></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Health"></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value="Weather"></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-times-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+                <tr>
+                  <td><input class="form-control" type="text" placeholder="Name" value=""></td>
+                  <td class="icon"><button type="button" class="btn btn-secondary"><i class="fa fa-plus-circle fa-lg no-margin text-muted"></i></button></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+  <div ng-include="'includes/org-settings-modal.html'"></div>
+
+
+
+</body>
+</html>
