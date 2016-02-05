@@ -2778,6 +2778,8 @@ input:focus ~ .clear-field {
       .workspace-items .card .card-footer .progress {
         height: 30px;
         margin: 2px 0; }
+      .workspace-items .card .card-footer .btn i {
+        margin-right: 5px; }
     .workspace-items .card .label {
       position: absolute;
       top: 5px;
