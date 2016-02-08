@@ -18,7 +18,7 @@
 	<script src="js/isometrica.js"></script>
 
 	<!-- CSS -->
-	<link rel="stylesheet" href="assets/libs/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/app.css">
 
@@ -45,12 +45,12 @@
       <ul class="nav navbar-nav pull-right">
         <li class="nav-item">
           <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
-            <i class="fa fa-question-circle"></i>
+            <i class="ms-Icon ms-Icon--question"></i>
           </a>        
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link chat-link" href="#">
-            <i class="fa fa-comment"></i>
+            <i class="ms-Icon ms-Icon--chat"></i>
             <span class="label label-danger">4</span>
           </a>  
         </li>
@@ -88,10 +88,10 @@
         </div>
         <div class="btn-group">
           <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-top-more">
-            <span class="collapsed-label"><i class="fa fa-chevron-down"></i> More</span>
+            <span class="collapsed-label"><i class="ms-Icon ms-Icon--chevronDown"></i> More</span>
             <span class="expanded-label">Full help</span>
           </a>
-          <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-top"><i class="fa fa-chevron-up"></i> Hide</a>
+          <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-top"><i class="ms-Icon ms-Icon--chevronUp"></i> Hide</a>
           <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-top-question">Ask question</a>
         </div>
         <div class="collapse guidance-panel-question" id="guidance-panel-top-question">
@@ -111,7 +111,7 @@
       			<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='org-setup.html';">
     						<div class="card-block">
-    							<i class="fa fa-fw fa-building-o workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--work workspace-item-icon"></i>
                   <h3 class="card-title">Organization setup</h3>
     						</div>
     						<div class="card-footer">
@@ -126,7 +126,7 @@
     				<div class="col-sm-3">
     					<div class="card workspace-item">
     						<div class="card-block" onclick="window.location='users.html';">
-    							<i class="fa fa-fw fa-users workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--group workspace-item-icon"></i>
                   <h3 class="card-title">Users</h3>
     						</div>
     						<div class="card-footer">
@@ -139,7 +139,7 @@
       			<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='nonconformities.html';">
     						<div class="card-block">
-      						<i class="fa fa-fw fa-question-circle workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--alertOutline workspace-item-icon"></i>
                   <h3 class="card-title">Non-conformities</h3>
                   <span class="label label-danger">2</span>
     						</div>
@@ -151,7 +151,7 @@
       			<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='corrective-actions.html';">
     						<div class="card-block">
-      						<i class="fa fa-fw fa-medkit workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--lifesaver workspace-item-icon"></i>
                   <h3 class="card-title">Corrective actions</h3>
     						</div>
     						<div class="card-footer">
@@ -162,7 +162,7 @@
     				<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='preventative-actions.html';">
     						<div class="card-block">
-      						<i class="fa fa-fw fa-lightbulb-o workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--shield workspace-item-icon"></i>
                   <h3 class="card-title">Preventative actions</h3>
     						</div>
     						<div class="card-footer">
@@ -173,7 +173,7 @@
       			<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='risk-register.html';">
     						<div class="card-block">
-    							<i class="fa fa-fw fa-exclamation-triangle workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--lightning workspace-item-icon"></i>
                   <h3 class="card-title">Risk register</h3>
                   <span class="label label-danger">2</span>
     						</div>
@@ -185,7 +185,7 @@
     				<div class="col-sm-3">
     					<div class="card workspace-item">
     						<div class="card-block" onclick="window.location='standards.html';">
-    							<i class="fa fa-fw fa-trophy workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--trophy workspace-item-icon"></i>
                   <h3 class="card-title">Standards</h3>
     						</div>
     						<div class="card-footer">
@@ -194,25 +194,24 @@
     					</div>
     				</div>
       			<div class="col-sm-3">
-    					<div class="card workspace-item" onclick="window.location='lessons.html';">
-    						<div class="card-block">
-      						<i class="fa fa-fw fa-book workspace-item-icon"></i>
-                  <h3 class="card-title">Lessons learned</h3>
-    						</div>
-    						<div class="card-footer">
-    							<span class="text-muted">5 lessons, 2 new</span>
-    						</div>
-    					</div>
-    				</div>
-      			<div class="col-sm-3">
     					<div class="card workspace-item" onclick="window.location='work-inbox.html';">
     						<div class="card-block">
-      						<i class="fa fa-fw fa-inbox workspace-item-icon"></i>
+    							<i class="ms-Icon ms-Icon--inboxCheck workspace-item-icon"></i>
                   <h3 class="card-title">Work inbox</h3>
                   <span class="label label-danger">2</span>
     						</div>
     						<div class="card-footer">
     							<span class="text-muted">5 actions, 2 new</span>
+    						</div>
+    					</div>
+    				</div>
+    				<div class="col-sm-3">
+    					<div class="card workspace-item" onclick="window.location='subcards.html';">
+    						<div class="card-block">
+    							<i class="ms-Icon ms-Icon--books workspace-item-icon"></i>
+                  <h3 class="card-title">Standard subcards</h3>
+    						</div>
+    						<div class="card-footer">
     						</div>
     					</div>
     				</div>
@@ -266,7 +265,7 @@
       		<div class="workspace-footer">
             <div class="workspace-footer-buttons">
         			<button type="button" class="btn btn-primary">
-        			  <i class="fa fa-plus-circle fa-lg"></i>
+        			  <i class="ms-Icon ms-Icon--plus-circle fa-lg"></i>
         			  Report a non-conformity
               </button>
             </div>
@@ -338,7 +337,7 @@
   	      <h4 class="modal-title">Add users</h4>
           <div class="pull-right">
             <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
-      				<i class="fa fa-lg fa-question-circle"></i>
+      				<i class="ms-Icon ms-Icon--question"></i>
       			</button>
   			    <button type="button" class="btn btn-primary" data-dismiss="modal">
   		      	Invite

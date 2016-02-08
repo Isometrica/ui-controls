@@ -38,7 +38,7 @@
     margin: 0;
     font-size: 18px;
     font-weight: normal;
-    font-family: $SegoeUISemilight;
+    //font-family: $SegoeUISemilight;
   }
   
   &-block {
@@ -77,7 +77,7 @@
         font-size: 18px;
         color: #777;
       font-weight: normal;
-      font-family: $SegoeUISemilight;        
+      //font-family: $SegoeUISemilight;        
       }
     }
     
@@ -102,14 +102,14 @@
           line-height: 24px;
           margin: 0 0 3px;
           font-weight: normal;
-          font-family: $SegoeUISemilight;
+          //font-family: $SegoeUISemilight;
         }
         
         &-text {
           font-size: 14px;
           color: #777;
           margin: 0 0 3px;
-          font-family: $SegoeUI;
+          //font-family: $SegoeUI;
           font-weight: normal;
         }
       }
@@ -140,7 +140,7 @@
     
     &:after {
       content: "\f077";
-      font-family: "FontAwesome";
+      font-family: 'Office365Icons';
       position: absolute;
       right: 15px;
       top: 50%;

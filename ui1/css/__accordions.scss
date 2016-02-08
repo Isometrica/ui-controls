@@ -4,8 +4,8 @@
   cursor: pointer;
   
   &:before {
-    content: "\f138";
-    font-family: "FontAwesome";
+    content: '\e08a';
+    font-family: 'Office365Icons';
     font-size: 24px;
     width: 20px;
     line-height: 24px;
@@ -61,8 +61,8 @@
     padding-left: 48px;
     
     &:before  {
-      font-family: "FontAwesome";
-      content: "\f138";
+      font-family: 'Office365Icons';
+      content: '\e08a';
       position: absolute;
       left: 15px;
       top: 50%;

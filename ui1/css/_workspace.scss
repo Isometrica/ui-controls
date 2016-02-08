@@ -49,7 +49,7 @@
 			padding: 0;
 			margin-bottom: 3px;
 			line-height: 20px;
-			font-size: 16px;
+			font-size: 18px;
 			text-align: center;
 		}
 
@@ -94,52 +94,6 @@
   }
 }
 
-.dashboard-items {
-  @include flexbox;
-  
-  > div {
-    @include flexbox;
-  }
-
-  .card {
-    @include flex(1);
-    cursor: pointer;
-    
-		.dashboard-item-icon {
-			float: left;
-			margin: 0 5px 0 0;
-			font-size: 46px;
-			color: #bbb;
-			text-align: center;
-		}   
-		 
-		.card-title {
-			margin-top: 0;
-			padding: 0;
-			margin-bottom: 3px;
-			line-height: 20px;
-			font-size: 16px;
-		}
-
-		.card-text {
-  		margin-bottom: 0;
-  		line-height: 20px;
-  		white-space: nowrap;
-  		overflow: hidden;
-  		text-overflow: ellipsis;
-  		color: #777;
-		}
-
-    .label {
-      position: absolute;
-      top: 5px;
-      right: 5px;
-      font-size: 13px;
-      padding: 4px 8px;
-    }		
-		
-  }
-}
 
 .workspace-footer {
   padding-top: 15px;

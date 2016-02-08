@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Non-conformities</title>
+
+	<!-- JS -->
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	
+	<!-- Angular for partials -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="js/isometrica.js"></script>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/app.css">
+</head>
+<body ng-app="isometrica">
+
+  <!-- NAVBAR -->
+  <div class="navbar navbar-standard">
+    <span class="navbar-brand dropdown">
+      Standard subcards   
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="ms-Icon ms-Icon--arrowLeft"></i>
+        </a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-right">
+      <li class="nav-item">
+        <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
+          <i class="ms-Icon ms-Icon--question"></i>
+        </a>        
+      </li>
+    </ul>      
+  </div>
+
+  <!-- Guidance Bar -->
+  <div ng-include="'includes/guidance-panel-top.html'"></div>
+
+  <div class="content">
+    <div class="container">
+  		<div class="row">
+        <div class="col-sm-4 content-list">
+    			<div class="card">
+    				<div class="card-block">
+    					<form class="search-form">
+  				      <div class="form-group row">
+  					      <input type="text" class="form-control" placeholder="Search...">
+  				      </div>
+								<button class="btn btn-primary" data-toggle="modal" data-target="#isometrica-work-inbox-edit-modal">
+									<i class="ms-Icon ms-Icon--plus"></i>
+									<span>Add</span>
+								</button>
+    					</form>
+    				</div>
+    				<div class="list-group list-group-flush">
+    				  <a class="list-group-item active" href="#">
+    						<h4 class="list-group-item-heading">Standard subcards</h4>
+  						</a>
+    				</div>
+    			</div>
+    		</div>
+  
+  			<div class="col-sm-8 content-cards hidden-xs">
+  				<div class="card">
+  					<div class="card-block card-heading">
+  						<div class="card-heading-buttons pull-right">
+  							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+  								<i class="ms-Icon ms-Icon--pencil"></i>
+  								Edit
+  							</a>
+  						</div>
+  						<h3 class="card-title">
+    						Standard subcards
+    				  </h3>
+  					</div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <p class="list-group-item-text">Description</p>
+                <h4 class="list-group-item-heading">Lorem ipsum
+                  <span class="label label-warning margin-left">In progress</span>
+                  <span class="label ref-number">AB12345</span></h4>
+              </div>  
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC1. Notes</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
+                  <br><br>
+                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</h4>
+              </div>              
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC2. Attachments</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--fileDocument fa-lg"></i> Alvca_letter_June_15.docx</a>
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--fileDocument fa-lg"></i> sales.xls</a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title pull-left">SC4. Tags</h4>
+            </div>
+            <div class="list-group">
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Activity or process(es)</p>
+                    <h4 class="list-group-item-heading">Customer support</h4>
+                    <h4 class="list-group-item-heading">Thermoforming</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Department or site(s)</p>
+                    <h4 class="list-group-item-heading">Customer service</h4>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Management program(s)</p>
+                    <h4 class="list-group-item-heading">Business Continuity Management</h4>
+                    <h4 class="list-group-item-heading">Information Security Management</h4>
+                  </div>
+                </div>
+                <div class="col-sm-6">
+                  <div class="list-group-item">
+                    <p class="list-group-item-text">Text tags</p>
+                    <h4 class="list-group-item-heading">lorem</h4>
+                    <h4 class="list-group-item-heading">ispum dolor</h4>
+                  </div>
+                </div>
+              </div>              
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC5. Corrective/preventative actions</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="#" class="btn btn-secondary"><strong>CA129</strong> Fix machine calibration <i class="ms-Icon ms-Icon--circleFilled margin-left text-success"></i></a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC7. Non conformities</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <a href="#" class="btn btn-secondary"><strong>NC129</strong> Fix machine calibration <i class="ms-Icon ms-Icon--circleFilled margin-left text-success"></i></a>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC20. Notify</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Steve Saunders</h4>
+                <h4 class="list-group-item-heading">Mike Smith</h4>
+              </div>
+            </div>
+            <div class="card-block card-subheading">
+              <h4 class="card-title">SC22. Root cause analysis</h4>
+            </div>
+            <div class="list-group">
+              <div class="list-group-item">
+                <h4 class="list-group-item-heading">Fusce volutpat iaculis mauris, vulputate scelerisque ante aliquet viverra. Mauris ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
+              </div>
+            </div>
+            
+            <!-- Changelog -->
+            <div ng-include="'includes/card-footer-changelog.html'"></div>    
+  				</div>
+  			</div>
+  		</div>
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade isometrica-edit-modal isometrica-meetings-modal" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-right">
+      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+      				<i class="ms-Icon ms-Icon--question"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Standard subcards</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel-modal.html'"></div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" value="Extrusion failed in service" placeholder="Description"/>
+              </div>
+            </div>            
+          </div>    
+          
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-left">SC1. Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards/notes.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            <h4 class="card-title pull-left">SC2. Attachments</h4>
+            <h4 class="card-title pull-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards/files.html'"></div>
+          </div>     
+          <div class="card-block card-block-collapse-toggle collapsed" href="#tags" data-toggle="collapse">
+            <h4 class="card-title pull-left">SC4. Tags</h4>
+            <h4 class="card-title pull-right text-muted">3</h4>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
+            <h4 class="card-title pull-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning status-indicator"></span> 
+            </h4>
+            <h4 class="card-title pull-left">SC5. Corrective/preventative actions</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="corrective-actions">
+            <div ng-include="'includes/subcards/corrective-actions.html'"></div>
+          </div>
+          <div class="card-block-collapse collapse" id="tags">
+            <div ng-include="'includes/subcards/tags.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notifications" data-toggle="collapse">
+            <h4 class="card-title pull-left">SC20. Notify</h4>
+            <h4 class="card-title pull-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notifications">
+            <div ng-include="'includes/subcards/notify.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#analysis" data-toggle="collapse">
+            <h4 class="card-title pull-left">SC22. Root cause analysis</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="analysis">
+            <div ng-include="'includes/subcards/notes.html'"></div>
+          </div>
+          
+
+ 
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary btn-delete">Delete</button>
+          </div>
+
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+</body>
+</html>
