@@ -13,7 +13,7 @@
 
 .form-control-label {
   font-weight: normal;
-  //font-family: $SegoeUISemibold;
+  font-family: $font-semibold;
   
   .form-horizontal & {
     text-align: right;
@@ -72,15 +72,42 @@
     color: white;
     font-size: 19px;
   }
+  
+  &-label {
+    font-family: $font-semibold;
+  }
 }
 
-/* Select dropdowns */
+/* 
+  Select dropdowns 
+*/
 
 .c-select {
   width: 100%;
   color: #333;
   border-radius: .25rem;
 }
+
+/*
+  Phone numbers
+*/
+
+.form-group-flex {
+  @include flexbox;
+  
+  &-flex {
+    @include flex(1);
+  }
+  
+  .margin-left {
+    margin-left: 15px;
+  }
+  
+  .margin-right {
+    margin-right: 15px;
+  }
+}
+
 
 /* Clear field */
 
@@ -151,7 +178,7 @@ input:focus ~ .clear-field {
     border-left: 2px solid white;
     border-top: 2px solid white;
     text-align: center;
-    width: 14.2857%;
+    width: 1%;
     padding: 10px !important;
     font-weight: 500;
     
@@ -162,15 +189,17 @@ input:focus ~ .clear-field {
 
     &.impacts-heading {
       position: relative;
-      width: 40px;
-      padding: 0;
+      width: 44px !important;
+      padding: 0 !important;
+      vertical-align: middle;
 
       span {
         -webkit-transform: rotate(-90deg);
         display: block;
-        position: absolute;
-        top: 50%;
-        margin-top: -30px;
+        //position: absolute;
+        //top: 50%;
+        //margin-top: -30px;
+      
       }
     }
 

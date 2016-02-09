@@ -38,7 +38,7 @@
     margin: 0;
     font-size: 18px;
     font-weight: normal;
-    //font-family: $SegoeUISemilight;
+    font-family: $font-semilight;
   }
   
   &-block {
@@ -76,8 +76,8 @@
         margin: 0;
         font-size: 18px;
         color: #777;
-      font-weight: normal;
-      //font-family: $SegoeUISemilight;        
+        font-weight: normal;
+        font-family: $font-semilight;       
       }
     }
     
@@ -102,7 +102,7 @@
           line-height: 24px;
           margin: 0 0 3px;
           font-weight: normal;
-          //font-family: $SegoeUISemilight;
+          font-family: $font-semilight;
         }
         
         &-text {

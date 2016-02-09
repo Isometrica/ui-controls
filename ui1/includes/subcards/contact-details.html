@@ -1,29 +1,11 @@
 <div class="card-block">
   <div class="form-group row">
-    <label class="form-control-label col-sm-4 col-xs-12">Contact name</label>
+    <label class="form-control-label col-sm-4 col-xs-12">Description</label>
     <div class="col-sm-8 col-xs-12">
-      <div class="input-group-typeahead">
-        <div class="input-group" data-toggle="dropdown">
-          <input type="text" class="form-control" value="Mike Lawrence" placeholder="Contact name"/>
-          <span class="input-group-btn">
-            <button class="btn btn-secondary" type="button"><i class="ms-Icon ms-Icon--caretDown"></i></button>
-          </span>
-        </div>
-        <div class="dropdown-menu dropdown-menu-right">
-          <h6 class="dropdown-header">Users</h6>
-          <a class="dropdown-item" href="#">Jack Herbert</a>
-          <a class="dropdown-item" href="#">Steve Ives</a>
-          <a class="dropdown-item active" href="#">Mike Lawrence</a>
-          <a class="dropdown-item" href="#">Mark Leusink</a>
-          <a class="dropdown-item" href="#">Steve Saunders</a>
-          <div class="dropdown-divider"></div>
-          <h6 class="dropdown-header">Contacts</h6>
-          <a class="dropdown-item" href="#">Jim Brown</a>
-          <a class="dropdown-item" href="#">Sarah Jones</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#"><strong>Add new user or contact</strong></a>
-        </div>
-      </div>
+      <input type="email" class="form-control" placeholder="Description" value="Lorem ipsum">
+      <button type="button" class="btn btn-link clear-field">
+        <i class="ms-Icon ms-Icon--xCircle"></i>
+      </button>
     </div>
   </div>
   <div class="form-group row">
@@ -36,21 +18,70 @@
     </div>
   </div>
   <div class="form-group row">
-    <label class="form-control-label col-sm-4 col-xs-12">Phone</label>
+    <label class="form-control-label col-sm-4 col-xs-12">Address</label>
     <div class="col-sm-8 col-xs-12">
-      <input type="phone" class="form-control" placeholder="Phone" value="01257 682123">
+      <textarea class="form-control" placeholder="Address" rows="4">London Road,
+Feltham,
+Middlessex
+F21 0QT</textarea>
       <button type="button" class="btn btn-link clear-field">
         <i class="ms-Icon ms-Icon--xCircle"></i>
       </button>
     </div>
   </div>
   <div class="form-group row">
-    <label class="form-control-label col-sm-4 col-xs-12">Mobile</label>
+    <label class="form-control-label col-sm-4 col-xs-12">Country</label>
     <div class="col-sm-8 col-xs-12">
-      <input type="phone" class="form-control" placeholder="Mobile" value="">
-      <button type="button" class="btn btn-link clear-field">
-        <i class="ms-Icon ms-Icon--xCircle"></i>
-      </button>
+      <select class="c-select">
+        <option>Australia</option>
+        <option>Canada</option>
+        <option>France</option>
+        <option>Germany</option>
+        <option>Italy</option>
+        <option>Japan</option>
+        <option>UK</option>
+        <option selected="">USA</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group row">
+    <label class="form-control-label col-sm-4">Phone number(s)</label>
+    <div class="col-sm-8 form-group-flex">
+      <div class="form-group-flex-flex margin-right">
+        <div class="input-group">
+          <span class="input-group-addon">+1</span>
+          <input type="text" class="form-control" placeholder="Number" value="750 123 4567"/>
+        </div>
+      </div>
+      <div>
+        <select class="c-select">
+          <option selected="">Work</option>
+          <option>Home</option>
+          <option>Mobile</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-8 col-sm-offset-4 form-group-flex">
+      <div class="form-group-flex-flex margin-right">
+        <div class="input-group">
+          <span class="input-group-addon">+1</span>
+          <input type="text" class="form-control" placeholder="Number" value="609 234 5678"/>
+        </div>
+      </div>
+      <div>
+        <select class="c-select">
+          <option>Work</option>
+          <option>Home</option>
+          <option selected="">Mobile</option>
+        </select>
+      </div>
+    </div>
+  </div>
+  <div class="form-group row">
+    <div class="col-sm-8 col-sm-offset-4">
+      <button type="button" class="btn btn-secondary">Add another phone number</button>
     </div>
   </div>
 </div>

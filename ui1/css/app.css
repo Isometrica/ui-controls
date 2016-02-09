@@ -87,6 +87,9 @@ strong {
     .btn-info:hover {
       background: #00a8d8;
       border-color: #00a8d8; }
+    .btn-info:disabled:hover {
+      background: #00BCF2;
+      border-color: #00BCF2; }
   .btn-success {
     background: #107C10;
     border-color: #107C10; }
@@ -477,11 +480,14 @@ strong {
   border-radius: 0; }
   .navbar .navbar-brand {
     color: white;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     font-weight: normal; }
     .navbar .navbar-brand .dropdown-toggle {
       color: white;
       text-decoration: none;
       display: inline-block; }
+    .navbar .navbar-brand .dropdown-menu {
+      font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .navbar .nav {
     /*&.pull-right {
       position: absolute;
@@ -900,7 +906,8 @@ strong {
 
 /* Labels */
 .form-control-label {
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .form-horizontal .form-control-label {
     text-align: right;
     padding-right: 0; }
@@ -937,12 +944,36 @@ strong {
     margin: 0;
     color: white;
     font-size: 19px; }
+  .btn-checkbox-label {
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
-/* Select dropdowns */
+/* 
+  Select dropdowns 
+*/
 .c-select {
   width: 100%;
   color: #333;
   border-radius: .25rem; }
+
+/*
+  Phone numbers
+*/
+.form-group-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .form-group-flex-flex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .form-group-flex .margin-left {
+    margin-left: 15px; }
+  .form-group-flex .margin-right {
+    margin-right: 15px; }
 
 /* Clear field */
 .clear-field {
@@ -987,7 +1018,7 @@ input:focus ~ .clear-field {
     border-left: 2px solid white;
     border-top: 2px solid white;
     text-align: center;
-    width: 14.2857%;
+    width: 1%;
     padding: 10px !important;
     font-weight: 500; }
     @media (max-width: 480px) {
@@ -996,14 +1027,12 @@ input:focus ~ .clear-field {
         overflow: hidden; } }
     .table-risk-grading th.impacts-heading, .table-risk-grading td.impacts-heading {
       position: relative;
-      width: 40px;
-      padding: 0; }
+      width: 44px !important;
+      padding: 0 !important;
+      vertical-align: middle; }
       .table-risk-grading th.impacts-heading span, .table-risk-grading td.impacts-heading span {
         -webkit-transform: rotate(-90deg);
-        display: block;
-        position: absolute;
-        top: 50%;
-        margin-top: -30px; }
+        display: block; }
     .table-risk-grading th.impact-label, .table-risk-grading td.impact-label {
       background: #eee; }
     .table-risk-grading th.impact, .table-risk-grading td.impact {
@@ -1554,6 +1583,7 @@ input:focus ~ .clear-field {
 
 .content-list .list-group-item-heading {
   font-size: 18px;
+  font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
   font-weight: normal; }
 
 .content-list .list-group-item-text {
@@ -1998,7 +2028,8 @@ input:focus ~ .clear-field {
 .label {
   border-radius: 0;
   display: inline-block;
-  font-weight: normal; }
+  font-weight: normal;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .label-success {
     background: #107C10; }
   .label-warning {
@@ -2049,7 +2080,8 @@ input:focus ~ .clear-field {
 .card-block-collapse-toggle {
   position: relative;
   padding-left: 50px;
-  cursor: pointer; }
+  cursor: pointer;
+  font-size: 15px; }
   .card-block-collapse-toggle:before {
     content: '\e08a';
     font-family: 'Office365Icons';
@@ -2085,6 +2117,10 @@ input:focus ~ .clear-field {
     top: 50%;
     margin-top: -8px;
     color: #777; }
+  .card-block-collapse-toggle .status-indicator {
+    margin-left: 7px;
+    position: relative;
+    top: 2px; }
 
 .card-block-collapse .card-block {
   border-top: 1px solid #ddd; }
@@ -2497,7 +2533,8 @@ input:focus ~ .clear-field {
   .card .card-title {
     margin: 0;
     font-size: 18px;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .card-block:after {
     content: "";
     display: table;
@@ -2520,7 +2557,8 @@ input:focus ~ .clear-field {
     margin: 0;
     font-size: 18px;
     color: #777;
-    font-weight: normal; }
+    font-weight: normal;
+    font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
 .content-cards .card .list-group {
   border-bottom: 1px solid #ddd;
@@ -2538,7 +2576,8 @@ input:focus ~ .clear-field {
       font-size: 18px;
       line-height: 24px;
       margin: 0 0 3px;
-      font-weight: normal; }
+      font-weight: normal;
+      font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
     .content-cards .card .list-group-item-text {
       font-size: 14px;
       color: #777;
@@ -2598,15 +2637,11 @@ input:focus ~ .clear-field {
     .card-changelog .table th:first-child, .card-changelog .table td:first-child {
       padding-left: 1.25rem; }
 
-.modal-title {
-  text-align: center;
-  font-size: 18px;
-  line-height: 20px; }
-
 .modal .modal-dialog > .card {
   border: 0; }
   .modal .modal-dialog > .card > .card-heading .card-title {
-    text-align: center !important; }
+    text-align: center !important;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
 .modal .modal-dialog .card-block:not(:first-child) {
   border-top: 1px solid #ddd; }

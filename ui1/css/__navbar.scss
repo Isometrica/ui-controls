@@ -10,7 +10,7 @@ $navbar-height-overview: 80px;
 
   .navbar-brand { 
     color: white;
-    //font-family: $SegoeUISemilight;
+    font-family: $font-semibold;
     font-weight: normal;
     
     .dropdown-toggle {
@@ -20,7 +20,7 @@ $navbar-height-overview: 80px;
     }
     
     .dropdown-menu {
-      //font-family: $SegoeUI;
+      font-family: $font-regular;
     }
   }
 

@@ -1,9 +1,4 @@
 .modal {
-  &-title {
-    text-align: center;
-    font-size: 18px;
-    line-height: 20px;
-  }
   
   .modal-dialog {
     > .card {
@@ -11,6 +6,7 @@
       
       > .card-heading .card-title {
         text-align: center !important;
+        font-family: $font-semibold;
       }
     }
 
