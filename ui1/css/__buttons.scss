@@ -76,6 +76,27 @@
 }
 
 /*
+  BUTTON ICONS
+*/
+
+.btn {
+  i {
+    &.ms-Icon {
+      font-size: 19px;
+      position: relative;
+      top: 1px;      
+
+      &--caretDown {
+        font-size: 18px;
+        position: relative;
+        top: 2px;
+      }
+    }
+  }
+}
+
+
+/*
 .btn[disabled] {
   opacity: 1;
 }

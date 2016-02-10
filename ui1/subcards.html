@@ -75,7 +75,7 @@
     			</div>
     		</div>
   
-  			<div class="col-sm-8 content-cards hidden-xs">
+  			<div class="col-sm-8 content-cards hidden-xs-down">
   				<div class="card">
   					<div class="card-block card-heading">
   						<div class="card-heading-buttons pull-right">
@@ -111,8 +111,10 @@
             </div>
             <div class="list-group">
               <div class="list-group-item">
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--fileDocument fa-lg"></i> Alvca_letter_June_15.docx</a>
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--fileDocument fa-lg"></i> sales.xls</a>
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> Alvca_letter_June_15.docx</a>
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> sales.xls</a>
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> presentation.ppt</a>
+                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> brochure.pdf</a>
               </div>
             </div>
             <div class="card-block card-subheading">
@@ -346,7 +348,7 @@
           
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
             <h4 class="card-title pull-left">SC1. Notes</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="notes">
             <div ng-include="'includes/subcards/notes.html'"></div>
@@ -387,7 +389,7 @@
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
             <h4 class="card-title pull-left">SC12. Contact details</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="contact">
             <div ng-include="'includes/subcards/contact-details.html'"></div>
@@ -401,42 +403,56 @@
         	    <table class="table">
           	    <tbody>
             	    <tr>
-              	    <th rowspan="5" class="impacts-heading hidden-xs"><span>Impacts</span></th>
-              	    <th class="impact-label">V.High</th>
+              	    <th rowspan="5" class="impacts-heading hidden-xs-down"><span>Impact</span></th>
+              	    <th class="impact-label">Catastrophic</th>
+              	    <td class="impact impact-low">45</td>
+              	    <td class="impact impact-medium">65</td>
+              	    <td class="impact impact-high">91</td>
+              	    <td class="impact impact-high">95</td>
+              	    <td class="impact impact-high">100</td>
+            	    </tr>
+            	    <tr>
+              	    <th class="impact-label">Significant</th>
               	    <td class="impact impact-low">35</td>
               	    <td class="impact impact-medium">60</td>
+              	    <td class="impact impact-high">75</td>
               	    <td class="impact impact-high">80</td>
               	    <td class="impact impact-high">85</td>
             	    </tr>
             	    <tr>
-              	    <th class="impact-label">High</th>
+              	    <th class="impact-label">Moderate</th>
               	    <td class="impact impact-low">26</td>
               	    <td class="impact impact-medium">51</td>
+              	    <td class="impact impact-medium">54</td>
               	    <td class="impact impact-medium active">59</td>
               	    <td class="impact impact-medium">66</td>
             	    </tr>
             	    <tr>
-              	    <th class="impact-label">Med</th>
+              	    <th class="impact-label">Minor</th>
               	    <td class="impact impact-vlow">15</td>
               	    <td class="impact impact-low">26</td>
+              	    <td class="impact impact-low">30</td>
               	    <td class="impact impact-low">36</td>
               	    <td class="impact impact-low">42</td>
             	    </tr>
             	    <tr>
-              	    <th class="impact-label">Low</th>
+              	    <th class="impact-label">Limited</th>
               	    <td class="impact impact-vlow">1</td>
               	    <td class="impact impact-vlow">8</td>
+              	    <td class="impact impact-vlow">12</td>
               	    <td class="impact impact-vlow">16</td>
               	    <td class="impact impact-vlow">20</td>
             	    </tr>
             	    <tr>
+              	    <th class="hidden-xs-down">&nbsp;</th>
               	    <th class="impact-label">&nbsp;</th>
+              	    <th class="impact-label">V.Low</th>
               	    <th class="impact-label">Low</th>
               	    <th class="impact-label">Med</th>
               	    <th class="impact-label">High</th>
               	    <th class="impact-label">V.High</th>
             	    </tr>
-            	    <tr class="hidden-xs">
+            	    <tr class="hidden-xs-down">
               	    <th>&nbsp;</th>
               	    <th>&nbsp;</th>
               	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
@@ -558,70 +574,10 @@
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#analysis" data-toggle="collapse">
             <h4 class="card-title pull-left">SC22. Root cause analysis</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="analysis">
-            <div class="card-block">
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Method</label>
-                <div class="col-sm-8 col-xs-12">
-                  <div class="btn-group btn-group-nomargin" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> 5 Whys
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Fishbone
-                    </label>
-                  </div> 
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Why 1</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Why 1">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Why 2</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Why 2">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Why 3</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Why 3">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Why 4</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Why 4">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Why 5</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Why 5">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              
-            </div> 
+            <div ng-include="'includes/subcards/root-cause-analysis.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#superpowers" data-toggle="collapse">
             <h4 class="card-title pull-left">SC23. Superpowers</h4>

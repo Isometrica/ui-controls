@@ -38,15 +38,14 @@
     margin: 0;
     font-size: 18px;
     font-weight: normal;
-    font-family: $font-semilight;
+    font-family: $font-regular;
   }
   
   &-block {
     @include clearfix;
     
     hr {
-      margin-left: -1.25rem;
-      margin-right: -1.25rem;
+      margin: 1.75rem -1.25rem;
       border-color: #ddd;
     }
     
@@ -75,9 +74,9 @@
       .card-title {
         margin: 0;
         font-size: 18px;
-        color: #777;
+        //color: #777;
         font-weight: normal;
-        font-family: $font-semilight;       
+        font-family: $font-regular;       
       }
     }
     

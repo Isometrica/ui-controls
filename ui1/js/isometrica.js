@@ -13,36 +13,26 @@ $( document ).ready(function() {
 	{
 		$('body').addClass('desktop');
 	}
+	
 
-  /* Tooltips */
-  $(function () {
-    $('[data-toggle="tooltip"]').tooltip()
+
+  // TABS 
+  
+  $('[data-toggle="btn-tabs"] .btn').on('click', function(){
+  	var $this = $(this);
+    	$this.parent().find('.active').removeClass('active');
+      $this.addClass('active');
   });
-  
-  $('.btn[data-toggle="collapse"]').click(function(){
-    $(this).toggleClass("active");
-  });
-  
-  
-  
-  /* Prevent form clicks from expanding/contracting accordion */
-  /*$( ".isometrica-orgsetup-modal .form-control").click(function() {
-  	event.stopPropagation();
-  });
-  
-  $( ".isometrica-orgsetup-modal .clear-field").click(function() {
-  	event.stopPropagation();
-  });*/
   
   
   // DETAIL VIEW FOR MOBILE
   //
-  $( ".bootcards-list .list-group a.list-group-item" ).click(function() {
+  $( ".content-list .list-group a.list-group-item" ).click(function() {
     if ($(window).width() < 768) {
       // Hide list view
-      $(".bootcards-list").attr('style','display:none !important');
+      $(".content-list").attr('style','display:none !important');
       // Show detail view
-      $(".bootcards-cards").attr('style','display:block !important');
+      $(".content-cards").attr('style','display:block !important');
     }
   });
 
