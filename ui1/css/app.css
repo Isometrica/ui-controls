@@ -2556,7 +2556,7 @@ input:focus ~ .clear-field {
     margin: 0;
     font-size: 18px;
     font-weight: normal;
-    font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .card-block:after {
     content: "";
     display: table;
