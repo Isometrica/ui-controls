@@ -18,11 +18,11 @@ $( document ).ready(function() {
 
   // TABS 
   
-  $('[data-toggle="btn-tabs"] .btn').on('click', function(){
-  	var $this = $(this);
-    	$this.parent().find('.active').removeClass('active');
-      $this.addClass('active');
-  });
+  //$('[data-toggle="btn-tabs"] .btn').on('click', function(){
+  //	var $this = $(this);
+  //  	$this.parent().find('.active').removeClass('active');
+  //    $this.addClass('active');
+  //});
   
   
   // DETAIL VIEW FOR MOBILE
@@ -34,6 +34,14 @@ $( document ).ready(function() {
       // Show detail view
       $(".content-cards").attr('style','display:block !important');
     }
+  });
+
+  // ACCORDION HELP BLOCKS
+  
+  $( ".card-block-collapse-toggle .guidance-toggle" ).click(function(e) {
+    e.stopPropagation(); // Prevent parent collapse toggle
+    var href = $(this).attr('href');
+    $(href).collapse();
   });
 
 });
