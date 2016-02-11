@@ -129,11 +129,12 @@ $navbar-height-overview: 80px;
       padding-bottom: 25px;
       height: $navbar-height-overview;
       color: rgba(255, 255, 255, .75); 
+      line-height: 0;
       
       @media (max-width: 767px) {
-        line-height: $navbar-height-standard;
         height: $navbar-height-standard;
-        padding: 0;
+        padding-top: 15px;
+        padding-bottom: 15px;
         margin: 0;
         position: absolute;
         left: 0;
@@ -145,7 +146,7 @@ $navbar-height-overview: 80px;
         height: $navbar-height-overview - 50px;
 
         @media (max-width: 767px) {
-          height: $navbar-height-standard - 20px;
+          height: $navbar-height-standard - 30px;
         }
       }
     }    

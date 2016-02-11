@@ -1,3 +1,16 @@
+.workspace-list {
+  .list-group-item {
+    .workspace-item-icon {
+      float: left;
+      text-align: center;
+      font-size: 40px;
+      width: 50px;
+      margin-right: 10px;
+      color: $light-blue-color;
+    }
+  }
+}
+
 .workspace-items {
   @include flexbox;
   @include flex-wrap(wrap);
@@ -33,13 +46,16 @@
     @include flex-direction(column);
     cursor: pointer;
     
+    @media (max-width:1199px) {
+      margin-bottom: 15px;
+    }
+    
 		.workspace-item-icon {
       display: block;
       text-align: center;
       font-size: 42px;
       margin: 10px auto 10px;
       color: $light-blue-color;
-      			
 		}   
 		
 		.card-block {
