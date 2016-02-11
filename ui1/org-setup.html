@@ -52,7 +52,64 @@
   <!-- Guidance Bar -->
   <div ng-include="'includes/guidance-panel-top.html'"></div>
 
-  <div class="content">
+  <!-- MOBILE CONTENT -->
+  <div class="content hidden-md-up">
+    <div class="container">
+  		<div class="row">
+        <div class="col-md-4 content-list">
+    			<div class="card">
+    				<div class="list-group list-group-flush orgsetup-list">
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editMission">
+    						<span class="label label-success status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Mission &amp; goals</h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editRiskTypes">
+    						<span class="label label-success status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Risks <span class="text-muted">(6 types)</span></h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editManagementSystems">
+    						<span class="label label-warning status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Management programs <span class="text-muted">(4)</span></h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editStandards">
+    						<span class="label label-warning status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Standards <span class="text-muted">(4)</span></h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editDepartments">
+    						<span class="label label-warning status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Departments &amp; sites <span class="text-muted">(7)</span></h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#editProducts">
+    						<span class="label label-danger status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Products &amp; services <span class="text-muted">(5)</span></h4>
+                </div>
+  						</a>
+    				  <a class="list-group-item" data-toggle="modal" data-target="#orgSettings">
+                <span class="label status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Org settings</h4>
+                </div>
+  						</a>
+    				</div>
+  				</div>
+        </div>
+  		</div>
+    </div>
+  </div>
+
+  <!-- DEKSTOP/TABLET CONTENT -->
+  <div class="content hidden-sm-down">
     <div class="container container-orgsetup">
       <div class="row">
         <div class="col-sm-12 content-cards">
@@ -87,7 +144,7 @@
               <span class="label label-danger status-indicator"></span>
             </div>
             <div class="offset right">
-              <div class="card card-orgsettings" data-toggle="modal" href="#org-settings-modal">
+              <div class="card card-orgsettings" data-toggle="modal" href="#orgSettings">
                 <div class="card-block first last">
                   <h3 class="card-title">Org Settings</h3>
                 </div>

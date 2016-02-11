@@ -29,10 +29,12 @@ $( document ).ready(function() {
   //
   $( ".content-list .list-group a.list-group-item" ).click(function() {
     if ($(window).width() < 768) {
-      // Hide list view
-      $(".content-list").attr('style','display:none !important');
-      // Show detail view
-      $(".content-cards").attr('style','display:block !important');
+      if ($(".content-cards").length > 0) {
+        // Hide list view
+        $(".content-list").attr('style','display:none !important');
+        // Show detail view
+        $(".content-cards").attr('style','display:block !important');        
+      }
     }
   });
 

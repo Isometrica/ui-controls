@@ -3589,7 +3589,8 @@ input:focus ~ .clear-field {
   .form-multiadd td.icon > .btn {
     padding-left: 0;
     padding-right: 0;
-    text-align: center; }
+    text-align: center;
+    width: 100%; }
   .form-multiadd .text-muted {
     color: #bbb; }
   .form-multiadd .btn-group {
@@ -3691,10 +3692,10 @@ input:focus ~ .clear-field {
         padding-left: 15px; } }
 
 /* SETTINGS */
-#org-settings-modal .btn-checkbox,
-#org-settings-modal .btn-checkbox-label {
+#orgSettings .btn-checkbox,
+#orgSettings .btn-checkbox-label {
   margin-bottom: 5px; }
 
-#org-settings-modal .full-width {
+#orgSettings .full-width {
   border-bottom: 0 !important;
   margin-bottom: 0 !important; }
