@@ -15,7 +15,7 @@
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
 	
 	<!-- Angular for partials -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="assets/libs/angular/angular.min.js"></script>
 	<script src="js/isometrica.js"></script>
 
 	<!-- CSS -->
@@ -39,14 +39,14 @@
     </span>
 
     <!-- STANDARD NAVIGATION -->
-    <ul class="nav navbar-nav pull-left">
+    <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item">
         <a class="nav-link" href="index.html">
         	<i class="ms-Icon ms-Icon--arrowLeft"></i>
         </a>
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-right">
+    <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
         <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
           <i class="ms-Icon ms-Icon--question"></i>
@@ -61,7 +61,7 @@
   <div class="content">
     <div class="container">
   		<div class="row">
-        <div class="col-sm-4 content-list">
+        <div class="col-md-4 content-list">
     			<div class="card">
     				<div class="card-block">
     					<form class="search-form">
@@ -107,10 +107,10 @@
     			</div>
     		</div>
   
-  			<div class="col-sm-8 content-cards hidden-xs">
+  			<div class="col-md-8 content-cards hidden-sm-down">
   				<div class="card">
   					<div class="card-block card-heading">
-  						<div class="card-heading-buttons pull-right">
+  						<div class="card-heading-buttons pull-xs-right">
   							<a class="btn btn-primary" data-toggle="modal" data-target=".isometrica-addressbook-edit-modal">
   								<i class="ms-Icon ms-Icon--pencil"></i>
   								Edit
@@ -152,38 +152,11 @@
   					<div class="card-block card-subheading">
               <h4 class="card-title">Contact details</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Email</p>
-                <h4 class="list-group-item-heading"><a href="mailto:">simon.parr@sainsburys.co.uk</a></h4>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Work phone</p>
-                    <h4 class="list-group-item-heading"><a href="tel:">+1 750 123 4567</a></h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Mobile phone</p>
-                    <h4 class="list-group-item-heading"><a href="tel:">+1 609 234 5678</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Address</p>
-                <h4 class="list-group-item-heading">London Road <br>Feltham, <br>Middlesex, <br>F21 0QT</h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/contact-details.html'"></div>
   					<div class="card-block card-subheading">
               <h4 class="card-title">Notes</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <h4 class="list-group-item-heading">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.</h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/notes.html'"></div>
             <!-- Changelog -->
             <div ng-include="'includes/card-footer-changelog.html'"></div>    
   				</div>
@@ -197,12 +170,12 @@
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-left">
+          <div class="card-heading-buttons pull-xs-left">
       			<button type="button" class="btn btn-secondary" data-dismiss="modal">
       				Cancel
       			</button>
           </div>
-          <div class="card-heading-buttons pull-right">
+          <div class="card-heading-buttons pull-xs-right">
             <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>
@@ -250,73 +223,18 @@
           </div>
 
           <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
-            <h4 class="card-title pull-left">Contact details</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-left">Contact details</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="collapse in" id="contact">
-            <div class="card-block">
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Email</label>
-                <div class="col-sm-8 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Email" value="simon.parr@sainsburys.co.uk"/>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Phone number(s)</label>
-                <div class="col-sm-5 col-xs-7">
-                  <input type="text" class="form-control" placeholder="Number" value="+1 750 123 4567"/>
-                </div>
-                <div class="col-sm-3 col-xs-5">
-                  <select class="c-select">
-                    <option selected="">Work</option>
-                    <option>Home</option>
-                    <option>Mobile</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-5 col-sm-offset-4 col-xs-7">
-                  <input type="text" class="form-control" placeholder="Number" value="+1 609 234 5678"/>
-                </div>
-                <div class="col-sm-3 col-xs-5">
-                  <select class="c-select">
-                    <option>Work</option>
-                    <option>Home</option>
-                    <option selected="">Mobile</option>
-                  </select>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-sm-8 col-sm-offset-4">
-                  <button type="button" class="btn btn-primary">Add another phone number</button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Address</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" placeholder="Address" rows="4">London Road,
-Feltham,
-Middlessex
-F21 0QT</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-
-            </div>
-
+            <div ng-include="'includes/subcards-edit/contact-details.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
-            
-            <h4 class="card-title pull-left">Notes</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="notes">
-            <div ng-include="'includes/subcards/notes.html'"></div>
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
           </div>
 
           <div class="card-block text-xs-center">

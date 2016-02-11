@@ -1,4 +1,24 @@
 .content-list {
+  
+  @media (max-width: 1199px) {
+    padding: 0 !important;
+    //background: white;
+  }
+  
+  @media (min-width:767px) and (max-width: 1199px) {
+    border-right: 1px solid #ccc;
+  }
+  
+  .card {
+    @media (max-width: 1199px) {
+      border-width: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      box-shadow: none;
+      border-bottom: 1px solid #ddd;
+    }
+  }
+  
   .search-form {
     margin: -7px;
     
@@ -31,11 +51,9 @@
   }
   
   .list-group {
-    
-    
     &-item {
       @include clearfix;
-      
+            
       img {
         height: 40px;
         width: 40px;
@@ -421,7 +439,7 @@
   }
 
   .list-group-item {
-    .status-indicator.pull-left {
+    .status-indicator.pull-xs-left {
       margin-left: 1px;
       margin-right: 17px;
       margin-top: 1px;
@@ -445,7 +463,7 @@
   }
 
   .list-group-item-text {
-    &.pull-right {
+    &.pull-xs-right {
       line-height: 24px;
     }
   }  

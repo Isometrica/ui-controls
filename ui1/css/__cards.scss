@@ -1,7 +1,23 @@
+.content-cards {
+  @media (max-width: 1199px) {
+    padding-top: 15px !important;
+  }
+  
+  @media (max-width:767px) {
+    padding: 0 !important;
+  }
+}
+
 .card {
   border-color: #ccc;
   box-shadow: 0 1px 1px rgba(0,0,0,.05);
   margin-bottom: 30px;
+
+  @media (max-width:767px) {
+    margin-bottom: 15px;
+    border-width: 0 0 1px;
+    border-radius: 0;
+  }
   
   &-heading {
     @include clearfix;
@@ -16,7 +32,7 @@
         float: left;
       }
       
-      &.pull-left {
+      &.pull-xs-left {
         left: 10px;
         
         .btn {
@@ -24,7 +40,7 @@
         }
       }
       
-      &.pull-right {
+      &.pull-xs-right {
         right: 10px;
         
         .btn {
@@ -136,16 +152,17 @@
     line-height: 22px;
     color: #777;
     position: relative;
+    padding-right: 40px;
     
     &:after {
-      content: "\f077";
+      content: '\e088';
       font-family: 'Office365Icons';
       position: absolute;
       right: 15px;
       top: 50%;
-      font-size: 18px;
+      font-size: 24px;
       line-height: 1;
-      margin-top: -9px;
+      margin-top: -12px;
       color: #aaa;
       @include transition(all .3s ease);
     }

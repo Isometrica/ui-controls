@@ -7,7 +7,7 @@
   <meta name="mobile-web-app-capable" content="yes" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
 
-  <title>Non-conformities</title>
+  <title>Standard subcards</title>
 
 	<!-- JS -->
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
@@ -15,7 +15,7 @@
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
 	
 	<!-- Angular for partials -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="assets/libs/angular/angular.min.js"></script>
 	<script src="js/isometrica.js"></script>
 
 	<!-- CSS -->
@@ -32,14 +32,14 @@
     </span>
 
     <!-- STANDARD NAVIGATION -->
-    <ul class="nav navbar-nav pull-left">
+    <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item">
         <a class="nav-link" href="index.html">
         	<i class="ms-Icon ms-Icon--arrowLeft"></i>
         </a>
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-right">
+    <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
         <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
           <i class="ms-Icon ms-Icon--question"></i>
@@ -54,7 +54,7 @@
   <div class="content">
     <div class="container">
   		<div class="row">
-        <div class="col-sm-4 content-list">
+        <div class="col-md-4 content-list">
     			<div class="card">
     				<div class="card-block">
     					<form class="search-form">
@@ -75,10 +75,13 @@
     			</div>
     		</div>
   
-  			<div class="col-sm-8 content-cards hidden-xs-down">
+  			<div class="col-md-8 content-cards hidden-sm-down">
   				<div class="card">
   					<div class="card-block card-heading">
-  						<div class="card-heading-buttons pull-right">
+  						<div class="card-heading-buttons pull-xs-right">
+  							<a class="btn btn-success" data-toggle="modal" data-target="#completeConfirmModal">
+  								Complete
+  							</a>
   							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
   								<i class="ms-Icon ms-Icon--pencil"></i>
   								Edit
@@ -99,41 +102,15 @@
             <div class="card-block card-subheading">
               <h4 class="card-title">SC1. Notes</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <h4 class="list-group-item-heading">Nullam quis risus eget urna mollis ornare vel eu leo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nullam id dolor id nibh ultricies vehicula.
-                  <br><br>
-                  Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec ullamcorper nulla non metus auctor fringilla. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Donec ullamcorper nulla non metus auctor fringilla.</h4>
-              </div>              
-            </div>
+            <div ng-include="'includes/subcards-read/notes.html'"></div>
             <div class="card-block card-subheading">
               <h4 class="card-title">SC2. Attachments</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> Alvca_letter_June_15.docx</a>
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> sales.xls</a>
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> presentation.ppt</a>
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> brochure.pdf</a>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/files.html'"></div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">SC4. Tags</h4>
+              <h4 class="card-title pull-xs-left">SC4. Tags</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Department or site(s)</p>
-                <h4 class="list-group-item-heading"><span class="label label-info">Customer service</span></h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Other</p>
-                <h4 class="list-group-item-heading">
-                  <span class="label label-info">Business Continuity Management</span> 
-                  <span class="label label-info">lorem</span>
-                  <span class="label label-info">ipsum</span>
-                </h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/tags.html'"></div>
             <div class="card-block card-subheading">
               <h4 class="card-title">SC5. Corrective/preventative actions</h4>
             </div>
@@ -153,46 +130,9 @@
             <div class="card-block card-subheading">
               <h4 class="card-title">SC12. Contact details</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Description</p>
-                <h4 class="list-group-item-heading">Lorem ipsum</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Email</p>
-                <h4 class="list-group-item-heading"><a href="mailto:">dan_colbert@teamstudio.com</a></h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Address</p>
-                <h4 class="list-group-item-heading">
-                  387 Cummings Center, 
-                  <br>Beverley Hills, 
-                  <br>CA 90902
-                  <br>USA
-                </h4>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Work phone</p>
-                    <h4 class="list-group-item-heading"><a href="tel:">+1 750 123 4567</a></h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Mobile phone</p>
-                    <h4 class="list-group-item-heading"><a href="tel:">+1 987 654 3210</a></h4>
-                  </div>
-                </div>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Skype name</p>
-                <h4 class="list-group-item-heading"><a href="skype:loremipsum?call">loremipsum</a></h4>
-              </div>
-              
-            </div>
+            <div ng-include="'includes/subcards-read/contact-details.html'"></div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">SC15. Risk scoring</h4>
+              <h4 class="card-title pull-xs-left">SC15. Risk scoring</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -214,32 +154,9 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">SC16. Risk evaluation</h4>
+              <h4 class="card-title pull-xs-left">SC16. Risk evaluation</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Comments</p>
-                <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Previous loss experience</p>
-                <h4 class="list-group-item-heading">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h4>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Treatment decision</p>
-                    <h4 class="list-group-item-heading">Terminate</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Treatment priority</p>
-                    <h4 class="list-group-item-heading">High</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/risk-evaluation.html'"></div>
             <div class="card-block card-subheading">
               <h4 class="card-title">SC20. Notify</h4>
             </div>
@@ -260,44 +177,11 @@
             <div class="card-block card-subheading">
               <h4 class="card-title">SC22. Root cause analysis</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Why 1</p>
-                <h4 class="list-group-item-heading">Ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Why 2</p>
-                <h4 class="list-group-item-heading">Fusce volutpat iaculis mauris, vulputate scelerisque ante aliquet viverra. Mauris ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum.</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Why 3</p>
-                <h4 class="list-group-item-heading">Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Why 4</p>
-                <h4 class="list-group-item-heading">Mauris ultricies egestas</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Why 5</p>
-                <h4 class="list-group-item-heading">Suspendisse rhoncus augue a porta posuere.</h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/root-cause-analysis.html'"></div>
             <div class="card-block card-subheading">
               <h4 class="card-title">SC23. Superpowers</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <h4 class="list-group-item-heading"><i class="ms-Icon ms-Icon--check text-success"></i> Create &amp; delete users</h4>
-                <h4 class="list-group-item-heading"><i class="ms-Icon ms-Icon--check text-success"></i> Change organization settings</h4>
-                <h4 class="list-group-item-heading"><i class="ms-Icon ms-Icon--check text-success"></i> Create new data entities</h4>
-              </div>
-              <div class="list-group-item">
-                <h4 class="list-group-item-heading text-muted"><i class="ms-Icon ms-Icon--x text-danger"></i> Edit user permissions</h4>
-                <h4 class="list-group-item-heading text-muted"><i class="ms-Icon ms-Icon--x text-danger"></i> View all work inboxes</h4>
-                <h4 class="list-group-item-heading text-muted"><i class="ms-Icon ms-Icon--x text-danger"></i> Create &amp; edit dashboard data</h4>
-                <h4 class="list-group-item-heading text-muted"><i class="ms-Icon ms-Icon--x text-danger"></i> Create &amp; edit standards documents</h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/superpowers.html'"></div> 
             
             <!-- Changelog -->
             <div ng-include="'includes/card-footer-changelog.html'"></div>    
@@ -313,13 +197,13 @@
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-left">
+          <div class="card-heading-buttons pull-xs-left">
       			<button type="button" class="btn btn-secondary" data-dismiss="modal">
       				Cancel
       			</button>
           </div>
-          <div class="card-heading-buttons pull-right">
-      			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
@@ -347,393 +231,115 @@
           </div>    
           
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC1. Notes</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-left">SC1. Notes</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="notes">
-            <div ng-include="'includes/subcards/notes.html'"></div>
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC2. Attachments</h4>
-            <h4 class="card-title pull-right text-muted">2</h4>
+            <h4 class="card-title pull-xs-left">SC2. Attachments</h4>
+            <h4 class="card-title pull-xs-right text-muted">2</h4>
           </div>
           <div class="card-block-collapse collapse" id="files">
-            <div ng-include="'includes/subcards/files.html'"></div>
+            <div ng-include="'includes/subcards-edit/files.html'"></div>
           </div>     
           <div class="card-block card-block-collapse-toggle collapsed" href="#tags" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC4. Tags</h4>
-            <h4 class="card-title pull-right text-muted">3</h4>
+            <h4 class="card-title pull-xs-left">SC4. Tags</h4>
+            <h4 class="card-title pull-xs-right text-muted">3</h4>
           </div>
           <div class="card-block-collapse collapse" id="tags">
-            <div ng-include="'includes/subcards/tags.html'"></div>
+            <div ng-include="'includes/subcards-edit/tags.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC5. Corrective/preventative actions</h4>
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-left">SC5. Corrective/preventative actions</h4>
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
               <span class="label label-warning status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="corrective-actions">
-            <div ng-include="'includes/subcards/corrective-actions.html'"></div>
+            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#non-conformities" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC7. Non conformities</h4>
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-left">SC7. Non conformities</h4>
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
               <span class="label label-warning status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="non-conformities">
-            <div ng-include="'includes/subcards/nonconformities.html'"></div>
+            <div ng-include="'includes/subcards-edit/nonconformities.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC12. Contact details</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-left">SC12. Contact details</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="contact">
-            <div ng-include="'includes/subcards/contact-details.html'"></div>
+            <div ng-include="'includes/subcards-edit/contact-details.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#risk-scoring" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC15. Risk scoring</h4>
-      			<button type="button" class="btn btn-link guidance-toggle collapsed pull-right" data-toggle="collapse" href="#guidance-panel-riskScoring">
+            <h4 class="card-title pull-xs-left">SC15. Risk scoring</h4>
+      			<button type="button" class="btn btn-primary guidance-toggle collapsed" data-toggle="collapse" data-target="#guidance-panel-riskScoring">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>            
-            <h4 class="card-title pull-right"><span class="label label-warning">59 - High</span></h4>
+            <span class="label label-warning pull-xs-right">59 - High</span>
           </div>
           <div class="card-block-collapse collapse" id="guidance-panel-riskScoring">
-            <div class="guidance-panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
-              <div class="collapse" id="guidance-panel-riskScoring-more">
-                <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-                <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-                <ul class="text-muted">
-                  <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-                  <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-                  <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-                  <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-                </ul>
-              </div>
-              <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-riskScoring-more">
-                <span class="collapsed-label"><i class="ms-Icon ms-Icon--chevronDown"></i> More</span>
-                <span class="expanded-label">Full help</span>
-              </a>
-              <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-riskScoring"><i class="ms-Icon ms-Icon--chevronUp"></i> Hide</a>
-              <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-riskScoring-question">Ask question</a>
-              <div class="collapse guidance-panel-question" id="guidance-panel-riskScoring-question">
-                <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-                <a class="btn btn-primary" >Send</a>
-                <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-riskScoring-question">Cancel</a>
-              </div>
-            </div>            
+            <div ng-include="'includes/guidance-panel-content.html'"></div>             
           </div>
           <div class="card-block-collapse collapse" id="risk-scoring">
-            <div class="table-risk-grading">
-        	    <table class="table">
-          	    <tbody>
-            	    <tr>
-              	    <th rowspan="5" class="impacts-heading hidden-xs-down"><span>Impact</span></th>
-              	    <th class="impact-label">Catastrophic</th>
-              	    <td class="impact impact-low">45</td>
-              	    <td class="impact impact-medium">65</td>
-              	    <td class="impact impact-high">91</td>
-              	    <td class="impact impact-high">95</td>
-              	    <td class="impact impact-high">100</td>
-            	    </tr>
-            	    <tr>
-              	    <th class="impact-label">Significant</th>
-              	    <td class="impact impact-low">35</td>
-              	    <td class="impact impact-medium">60</td>
-              	    <td class="impact impact-high">75</td>
-              	    <td class="impact impact-high">80</td>
-              	    <td class="impact impact-high">85</td>
-            	    </tr>
-            	    <tr>
-              	    <th class="impact-label">Moderate</th>
-              	    <td class="impact impact-low">26</td>
-              	    <td class="impact impact-medium">51</td>
-              	    <td class="impact impact-medium">54</td>
-              	    <td class="impact impact-medium active">59</td>
-              	    <td class="impact impact-medium">66</td>
-            	    </tr>
-            	    <tr>
-              	    <th class="impact-label">Minor</th>
-              	    <td class="impact impact-vlow">15</td>
-              	    <td class="impact impact-low">26</td>
-              	    <td class="impact impact-low">30</td>
-              	    <td class="impact impact-low">36</td>
-              	    <td class="impact impact-low">42</td>
-            	    </tr>
-            	    <tr>
-              	    <th class="impact-label">Limited</th>
-              	    <td class="impact impact-vlow">1</td>
-              	    <td class="impact impact-vlow">8</td>
-              	    <td class="impact impact-vlow">12</td>
-              	    <td class="impact impact-vlow">16</td>
-              	    <td class="impact impact-vlow">20</td>
-            	    </tr>
-            	    <tr>
-              	    <th class="hidden-xs-down">&nbsp;</th>
-              	    <th class="impact-label">&nbsp;</th>
-              	    <th class="impact-label">V.Low</th>
-              	    <th class="impact-label">Low</th>
-              	    <th class="impact-label">Med</th>
-              	    <th class="impact-label">High</th>
-              	    <th class="impact-label">V.High</th>
-            	    </tr>
-            	    <tr class="hidden-xs-down">
-              	    <th>&nbsp;</th>
-              	    <th>&nbsp;</th>
-              	    <th colspan="5" class="probability-heading"><span>Probability</span></th>
-            	    </tr>
-          	    </tbody>
-        	    </table>
-  	        </div>
-            <div class="card-block">
-              
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Scored by</label>
-                <div class="col-sm-8 col-xs-12">
-                  <div class="input-group-typeahead">
-                    <div class="input-group" data-toggle="dropdown">
-                      <input type="text" class="form-control" value="Mike Smith" placeholder="Scored by"/>
-                      <span class="input-group-btn">
-                        <button class="btn btn-secondary" type="button"><i class="ms-Icon ms-Icon--caretDown"></i></button>
-                      </span>
-                    </div>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a class="dropdown-item" href="#">Jack Herbert</a>
-                      <a class="dropdown-item" href="#">Steve Ives</a>
-                      <a class="dropdown-item" href="#">Mark Leusink</a>
-                      <a class="dropdown-item" href="#">Steve Saunders</a>
-                      <a class="dropdown-item active" href="#">Mike Smith</a>
-                      <div class="dropdown-divider"></div>
-                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Date</label>
-                <div class="col-sm-8 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Date" value="8 Sep 2014"/>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-            </div>            
+            <div ng-include="'includes/subcards-edit/risk-scoring.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#risk-evaluation" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC16. Risk evaluation</h4>
-            <button type="button" class="btn btn-link guidance-toggle collapsed pull-right" data-toggle="collapse" href="#guidance-panel-riskEvaluation">
+            <h4 class="card-title pull-xs-left">SC16. Risk evaluation</h4>
+            <button type="button" class="btn btn-primary guidance-toggle collapsed" data-toggle="collapse" data-target="#guidance-panel-riskEvaluation">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>    
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="label text-muted">Terminate</span>
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="guidance-panel-riskEvaluation">
-            <div class="guidance-panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
-              <div class="collapse" id="guidance-panel-riskEvaluation-more">
-                <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-                <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-                <ul class="text-muted">
-                  <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-                  <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-                  <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-                  <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-                </ul>
-              </div>
-              <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-riskEvaluation-more">
-                <span class="collapsed-label"><i class="ms-Icon ms-Icon--chevronDown"></i> More</span>
-                <span class="expanded-label">Full help</span>
-              </a>
-              <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-riskEvaluation"><i class="ms-Icon ms-Icon--chevronUp"></i> Hide</a>
-              <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-riskEvaluation-question">Ask question</a>
-              <div class="collapse guidance-panel-question" id="guidance-panel-riskEvaluation-question">
-                <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-                <a class="btn btn-primary" >Send</a>
-                <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-riskEvaluation-question">Cancel</a>
-              </div>
-            </div>            
+            <div ng-include="'includes/guidance-panel-content.html'"></div>             
           </div>
-
           <div class="card-block-collapse collapse" id="risk-evaluation">
-            <div class="card-block">
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Comments</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Comments">Lorem ipsum dolor sit amet, consectetur adipisicing elit</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Previous loss experience</label>
-                <div class="col-sm-8 col-xs-12">
-                  <textarea class="form-control" rows="3" placeholder="Previous loss experience">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</textarea>
-                  <button type="button" class="btn btn-link clear-field">
-    			          <i class="ms-Icon ms-Icon--xCircle"></i>
-    			        </button>
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Treatment priority</label>
-                <div class="col-sm-8 col-xs-12">
-                  <div class="btn-group btn-group-nomargin" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Low
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Medium
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> High
-                    </label>
-                  </div> 
-                </div>
-              </div>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Treatment decision</label>
-                <div class="col-sm-8 col-xs-12">
-                  <div class="btn-group btn-group-nomargin" data-toggle="buttons">
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option1" autocomplete="off"> Tolerate
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Treat
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Transfer
-                    </label>
-                    <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option2" autocomplete="off" checked> Terminate
-                    </label>
-                  </div> 
-                </div>
-              </div>
-            </div>         
+            <div ng-include="'includes/subcards-edit/risk-evaluation.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#notifications" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC20. Notify</h4>
-            <h4 class="card-title pull-right text-muted">2</h4>
+            <h4 class="card-title pull-xs-left">SC20. Notify</h4>
+            <h4 class="card-title pull-xs-right text-muted">2</h4>
           </div>
           <div class="card-block-collapse collapse" id="notifications">
-            <div ng-include="'includes/subcards/notify.html'"></div>
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC21. Lessons learned</h4>
-            <h4 class="card-title pull-right text-muted">2</h4>
+            <h4 class="card-title pull-xs-left">SC21. Lessons learned</h4>
+            <h4 class="card-title pull-xs-right text-muted">2</h4>
           </div>
           <div class="card-block-collapse collapse" id="lessons">
-            <div ng-include="'includes/subcards/lessons.html'"></div>
+            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#analysis" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC22. Root cause analysis</h4>
-            <button type="button" class="btn btn-link guidance-toggle collapsed pull-right" data-toggle="collapse" href="#guidance-panel-rootCauseAnalysis">
+            <h4 class="card-title pull-xs-left">SC22. Root cause analysis</h4>
+            <button type="button" class="btn btn-primary guidance-toggle collapsed" data-toggle="collapse" data-target="#guidance-panel-rootCauseAnalysis">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>    
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="guidance-panel-rootCauseAnalysis">
-            <div class="guidance-panel">
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris egestas placerat ex, non laoreet neque tincidunt sed.</p>
-              <div class="collapse" id="guidance-panel-rootCauseAnalysis-more">
-                <p>Etiam suscipit nec sapien sit amet placerat. Nulla facilisis mauris velit, eget gravida mi rhoncus ac. Sed ultricies in nisi nec suscipit. Cras pulvinar risus ac risus pharetra efficitur.</p>
-                <p>In dui felis, fermentum et lacus eu, pretium rhoncus dolor. Fusce in fringilla risus. Sed mauris sapien, vehicula at gravida in, venenatis in neque.</p>
-                <ul class="text-muted">
-                  <li><small>ISO 9001:2015 clauses 4.1, 5.2, 6.1.1. 7.5</small></li>
-                  <li><small>ISO 14001:2015 clauses 4.1, 5.2, 8.1.1, 8.4, 8.5</small></li>
-                  <li><small>ISO 22301:2012 clauses 4.1, 4.2, 4.3</small></li>
-                  <li><small>ISO 27001:2013 clauses 4.1, 5.5, 8.3.3, 8.4, 8.6</small></li>
-                </ul>
-              </div>
-              <a class="btn btn-link show-more collapsed" data-toggle="collapse" href="#guidance-panel-rootCauseAnalysis-more">
-                <span class="collapsed-label"><i class="ms-Icon ms-Icon--chevronDown"></i> More</span>
-                <span class="expanded-label">Full help</span>
-              </a>
-              <a class="btn btn-link hide-panel" data-toggle="collapse" href="#guidance-panel-rootCauseAnalysis"><i class="ms-Icon ms-Icon--chevronUp"></i> Hide</a>
-              <a class="btn btn-link ask-question collapsed" data-toggle="collapse" href="#guidance-panel-rootCauseAnalysis-question">Ask question</a>
-              <div class="collapse guidance-panel-question" id="guidance-panel-rootCauseAnalysis-question">
-                <textarea class="form-control" rows="2" placeholder="Ask a question"></textarea>
-                <a class="btn btn-primary" >Send</a>
-                <a class="btn btn-link" data-toggle="collapse" href="#guidance-panel-rootCauseAnalysis-question">Cancel</a>
-              </div>
-            </div>            
+            <div ng-include="'includes/guidance-panel-content.html'"></div>           
           </div>
-
           <div class="card-block-collapse collapse" id="analysis">
-            <div ng-include="'includes/subcards/root-cause-analysis.html'"></div>
+            <div ng-include="'includes/subcards-edit/root-cause-analysis.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#superpowers" data-toggle="collapse">
-            <h4 class="card-title pull-left">SC23. Superpowers</h4>
-            <h4 class="card-title pull-right text-muted">3</h4>
+            <h4 class="card-title pull-xs-left">SC23. Superpowers</h4>
+            <h4 class="card-title pull-xs-right text-muted">3</h4>
           </div>
           <div class="card-block-collapse collapse" id="superpowers">
-            <div class="card-block indented">
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Create &amp; delete users</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Edit user permissions</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Change organization settings</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">View all work inboxes</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Create &amp; edit dashboard data</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Create &amp; edit standards documents</label>
-                </div>
-              </div>
-              <div class="form-group row">
-                <div class="col-xs-12">
-                  <button type="button" class="btn btn-checkbox btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
-                    <i class="ms-Icon ms-Icon--check"></i>
-                  </button>
-                  <label class="btn-checkbox-label">Create new data entities</label>
-                </div>
-              </div>
-            </div>
-          </div>          
-
- 
+            <div ng-include="'includes/subcards-edit/superpowers.html'"></div>
+          </div>           
           <div class="card-block text-xs-center">
             <button type="button" class="btn btn-secondary btn-delete">Delete</button>
           </div>
@@ -742,7 +348,8 @@
       </div>
     </div>
   </div>
-
+  
+  <div ng-include="'includes/update-modal.html'"></div>
 
 </body>
 </html>

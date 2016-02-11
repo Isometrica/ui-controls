@@ -8,6 +8,12 @@ $navbar-height-overview: 80px;
   background: $navbar-background;
   border-radius: 0;
 
+  .container {
+    @media (max-width:1199px) {
+      padding: 0;
+    }
+  }
+
   .navbar-brand { 
     color: white;
     font-family: $font-semibold;
@@ -25,19 +31,6 @@ $navbar-height-overview: 80px;
   }
 
   .nav {
-    /*&.pull-right {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    
-    &.pull-left {
-      position: absolute;
-      left: 0;
-      top: 0;
-    }*/
-    
-    
     .nav-item {
       margin: 0;
     }
@@ -69,7 +62,25 @@ $navbar-height-overview: 80px;
       border-top-right-radius: 0;
       margin-top: 0;
       border-top: 0;
+      
+      @media (max-width: 767px) {
+        width: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 !important;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0;
+      }
     }    
+    
+    &-item {
+      line-height: 30px;
+      
+      @media (max-width: 767px) {
+        text-align: center;  
+      }
+    }
   }
   
   // STANDARD NAVBAR 
@@ -88,9 +99,9 @@ $navbar-height-overview: 80px;
       text-align: center;
       
       .dropdown-menu {
-        width: 160px;
+        width: 240px;
         left: 50%;
-        margin-left: -80px;
+        margin-left: -120px;
         text-align: center;
       }
     }
@@ -109,23 +120,50 @@ $navbar-height-overview: 80px;
   // OVERVIEW NAVBAR
   
   &-overview {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    
     .navbar-brand {
       padding-top: 25px;
       padding-bottom: 25px;
       height: $navbar-height-overview;
       color: rgba(255, 255, 255, .75); 
       
+      @media (max-width: 767px) {
+        line-height: $navbar-height-standard;
+        height: $navbar-height-standard;
+        padding: 0;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+  
       img {
         height: $navbar-height-overview - 50px;
+
+        @media (max-width: 767px) {
+          height: $navbar-height-standard - 20px;
+        }
       }
     }    
     
     .nav {
       height: $navbar-height-overview;
+      @media (max-width: 767px) {
+        height: $navbar-height-standard;
+      }
+      
       &-link {
         padding-top: 0;
         padding-bottom: 0;  
         line-height: $navbar-height-overview;
+        
+        @media (max-width: 767px) {
+          line-height: $navbar-height-standard;
+        }
         
         .label {
           position: absolute;

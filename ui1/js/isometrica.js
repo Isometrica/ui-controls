@@ -40,7 +40,7 @@ $( document ).ready(function() {
   
   $( ".card-block-collapse-toggle .guidance-toggle" ).click(function(e) {
     e.stopPropagation(); // Prevent parent collapse toggle
-    var href = $(this).attr('href');
+    var href = $(this).attr('data-target');
     $(href).collapse();
   });
 

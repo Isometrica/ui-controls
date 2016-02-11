@@ -12,14 +12,6 @@ body {
   font-family: $font-regular;
 }
 
-.pull-left {
-  float: left;
-}
-
-.pull-right {
-  float: right;
-}
-
 .container {
   @media (max-width:1199px) {
     max-width: none;
@@ -46,6 +38,7 @@ body {
       .content-list {
         overflow-x: hidden;
         overflow-y: auto;
+        -webkit-overflow-scrolling: touch;
         height: 100%;
         padding-top: 30px;
       

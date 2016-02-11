@@ -14,7 +14,7 @@
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
 	
 	<!-- Angular for partials -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="assets/libs/angular/angular.min.js"></script>
 	<script src="js/isometrica.js"></script>
 
 	<!-- CSS -->
@@ -35,26 +35,43 @@
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">IBM UK</a>
           <a class="dropdown-item" href="#">Ortus Technology</a>
+          <a class="dropdown-item active" href="#">Teamstudio</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" data-toggle="modal" href="#org-settings-modal">Org settings</a>
           <a class="dropdown-item" data-toggle="modal" href="#changeIconModal">Customize logo</a>
         </div>
       </span>
 
+      <!-- MOBILE NAVIGATION -->
+      <ul class="nav navbar-nav pull-xs-left hidden-md-up">
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="dropdown">
+            <i class="ms-Icon ms-Icon--menu"></i>
+          </a>        
+          <div class="dropdown-menu">
+            <a class="active dropdown-item" href="#">Workspace</a>
+            <a class="dropdown-item" href="#">Messages</a>
+            <a class="dropdown-item" href="#">Account</a>
+            <a class="dropdown-item" href="#">Settings</a>
+            <a class="dropdown-item" href="#">Logout</a>
+          </div>
+        </li>
+      </ul>
+
       <!-- STANDARD NAVIGATION -->
-      <ul class="nav navbar-nav pull-right">
+      <ul class="nav navbar-nav pull-xs-right">
         <li class="nav-item">
           <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
             <i class="ms-Icon ms-Icon--question"></i>
           </a>        
         </li>
-        <li class="nav-item">
+        <li class="nav-item hidden-sm-down">
           <a class="nav-item nav-link chat-link" href="#">
             <i class="ms-Icon ms-Icon--chat"></i>
             <span class="label label-danger">4</span>
           </a>  
         </li>
-        <li class="nav-item dropdown">
+        <li class="nav-item dropdown hidden-sm-down">
           <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
 	        	Stephen Ives
 	        </a>
@@ -131,7 +148,7 @@
     						</div>
     						<div class="card-footer">
     							<a class="btn btn-link" href="#add-users-modal" data-toggle="modal">
-    								<i class="fa fa-lg fa-plus-circle"></i>Invite users
+    								<i class="ms-Icon ms-Icon--circlePlus"></i>Invite users
     						  </a>
     						</div>
     					</div>
@@ -215,52 +232,7 @@
     						</div>
     					</div>
     				</div>
-    				
-    				
     			</div>
-    			
-    			<!--
-    			<div class="row dashboard-items">
-            <div class="col-sm-3">
-    					<div class="card isometrica-dashboard-item" onclick="window.location='nonconformities.html';">
-    						<div class="card-block">
-    							  <i class="fa fa-fw fa-question-circle dashboard-item-icon"></i>
-                    <h3 class="card-title">Non-conformities</h3>
-                    <p class="card-text">24 open, 2 new</p>
-    						</div>
-    					</div>
-    				</div>        
-    				<div class="col-sm-3">
-    					<div class="card isometrica-dashboard-item" onclick="window.location='corrective-actions.html';">
-    						<div class="card-block">
-    							  <i class="fa fa-fw fa-check-square-o dashboard-item-icon"></i>
-                    <h3 class="card-title">Corrective actions</h3>
-                    <p class="card-text">20 open, 3 new</p>
-                    <span class="label label-danger">1</span>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-sm-3">
-    					<div class="card isometrica-dashboard-item" onclick="window.location='improvement-opportunities.html';">
-    						<div class="card-block">
-    							  <i class="fa fa-fw fa-lightbulb-o dashboard-item-icon"></i>
-                    <h3 class="card-title">Improvements</h3>
-                    <p class="card-text">35 this year, 2 new</p>
-                    <span class="label label-danger">1</span>
-    						</div>
-    					</div>
-    				</div>
-    				<div class="col-sm-3">
-    					<div class="card isometrica-dashboard-item" onclick="window.location='risk-register.html';">
-    						<div class="card-block">
-    							  <i class="fa fa-fw fa-exclamation-triangle dashboard-item-icon"></i>
-                    <h3 class="card-title">Risk register</h3>
-                    <p class="card-text">23 risks, 2 new</p>
-    						</div>
-    					</div>
-    				</div>
-    			</div>	
-    			-->	
       		<hr>
       		<div class="workspace-footer">
             <div class="workspace-footer-buttons">
@@ -285,7 +257,7 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
-  		    <div class="btn-group pull-left">
+  		    <div class="btn-group pull-xs-left">
   			    <button type="button" class="btn btn-secondary btn-back" data-dismiss="modal">
   		      	Cancel
   		      </button>
@@ -329,13 +301,13 @@
     <div class="modal-dialog modal-sm">
       <div class="modal-content">
   	    <div class="modal-header clearfix">
-  		    <div class="btn-group pull-left">
+  		    <div class="btn-group pull-xs-left">
   			    <button type="button" class="btn btn-secondary btn-back" data-dismiss="modal">
   		      	Cancel
   		      </button>
   		    </div>
   	      <h4 class="modal-title">Add users</h4>
-          <div class="pull-right">
+          <div class="pull-xs-right">
             <button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>

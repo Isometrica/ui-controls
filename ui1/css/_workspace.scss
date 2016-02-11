@@ -1,11 +1,18 @@
 .workspace-items {
   @include flexbox;
   @include flex-wrap(wrap);
+
+  @media (max-width: 1199px) {
+    padding: 0 8px;
+  }
   
   > div {
     @include flexbox;
-    
     width: 20%;
+    
+    @media (max-width: 1199px) {
+      padding: 0 8px;
+    }
     
     @media (max-width:991px) {
       width: 33.333%;

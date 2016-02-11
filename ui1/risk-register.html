@@ -15,7 +15,7 @@
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
 	
 	<!-- Angular for partials -->
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.9/angular.min.js"></script>
+	<script src="assets/libs/angular/angular.min.js"></script>
 	<script src="js/isometrica.js"></script>
 
 	<!-- CSS -->
@@ -42,14 +42,14 @@
     </span>
 
     <!-- STANDARD NAVIGATION -->
-    <ul class="nav navbar-nav pull-left">
+    <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item">
         <a class="nav-link" href="index.html">
         	<i class="ms-Icon ms-Icon--arrowLeft"></i>
         </a>
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-right">
+    <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
         <a class="nav-link guidance-toggle collapsed" data-toggle="collapse" href="#guidance-panel-top">
           <i class="ms-Icon ms-Icon--question"></i>
@@ -64,7 +64,7 @@
   <div class="content">
     <div class="container">
   		<div class="row">
-        <div class="col-sm-4 content-list">
+        <div class="col-md-4 content-list">
     			<div class="card">
     				<div class="card-block">
     					<form class="search-form">
@@ -236,10 +236,10 @@
     			</div>
     		</div>
   
-  			<div class="col-sm-8 content-cards hidden-xs-down">
+  			<div class="col-md-8 content-cards hidden-sm-down">
   				<div class="card">
   					<div class="card-block card-heading">
-  						<div class="card-heading-buttons pull-right">
+  						<div class="card-heading-buttons pull-xs-right">
   							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
   								<i class="ms-Icon ms-Icon--pencil"></i>
   								Edit
@@ -270,41 +270,9 @@
               </div>
             </div>
   					<div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Tags</h4>
+              <h4 class="card-title pull-xs-left">Tags</h4>
             </div>
-            <div class="list-group">
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Activity or process(es)</p>
-                    <h4 class="list-group-item-heading">Customer support</h4>
-                    <h4 class="list-group-item-heading">Thermoforming</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Department or site(s)</p>
-                    <h4 class="list-group-item-heading">Customer service</h4>
-                  </div>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Management program(s)</p>
-                    <h4 class="list-group-item-heading">Business Continuity Management</h4>
-                    <h4 class="list-group-item-heading">Information Security Management</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Text tags</p>
-                    <h4 class="list-group-item-heading">lorem</h4>
-                    <h4 class="list-group-item-heading">ispum dolor</h4>
-                  </div>
-                </div>
-              </div>              
-            </div>
+            <div ng-include="'includes/subcards-read/tags.html'"></div>
             <div class="card-block card-subheading">
               <h4 class="card-title">Notify</h4>
             </div>
@@ -315,7 +283,7 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Current risk score</h4>
+              <h4 class="card-title pull-xs-left">Current risk score</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -337,34 +305,11 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Evaluation &amp; treatment</h4>
+              <h4 class="card-title pull-xs-left">Evaluation &amp; treatment</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Comments</p>
-                <h4 class="list-group-item-heading">Lorem ipsum dolor sit amet, consectetur adipisicing elit</h4>
-              </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Previous loss experience</p>
-                <h4 class="list-group-item-heading">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua</h4>
-              </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Treatment decision</p>
-                    <h4 class="list-group-item-heading">Terminate</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Treatment priority</p>
-                    <h4 class="list-group-item-heading">High</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/risk-evaluation.html'"></div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Target risk score</h4>
+              <h4 class="card-title pull-xs-left">Target risk score</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -387,7 +332,7 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Corrective actions</h4>
+              <h4 class="card-title pull-xs-left">Corrective actions</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -395,7 +340,7 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Preventative actions</h4>
+              <h4 class="card-title pull-xs-left">Preventative actions</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -404,24 +349,15 @@
               </div>
             </div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Notes</h4>
+              <h4 class="card-title pull-xs-left">Notes</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <h4 class="list-group-item-heading">Fusce volutpat iaculis mauris, vulputate scelerisque ante aliquet viverra. Mauris ultricies egestas malesuada. Mauris eleifend hendrerit nisl in rutrum. Suspendisse rhoncus augue a porta posuere.</h4>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/notes.html'"></div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Attachments</h4>
+              <h4 class="card-title pull-xs-left">Attachments</h4>
             </div>
-            <div class="list-group">
-              <div class="list-group-item">
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> Alvca_letter_June_15.docx</a>
-                <a href="" class="btn btn-secondary"><i class="ms-Icon ms-Icon--document fa-lg"></i> sales.xls</a>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-read/files.html'"></div>
             <div class="card-block card-subheading">
-              <h4 class="card-title pull-left">Verification</h4>
+              <h4 class="card-title pull-xs-left">Verification</h4>
             </div>
             <div class="list-group">
               <div class="list-group-item">
@@ -442,12 +378,12 @@
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-left">
+          <div class="card-heading-buttons pull-xs-left">
       			<button type="button" class="btn btn-secondary" data-dismiss="modal">
       				Cancel
       			</button>
           </div>
-          <div class="card-heading-buttons pull-right">
+          <div class="card-heading-buttons pull-xs-right">
       			<button type="button" class="btn btn-link guidance-toggle" data-toggle="collapse" href="#guidance-panel">
       				<i class="ms-Icon ms-Icon--question"></i>
       			</button>
@@ -562,48 +498,48 @@
           </div>
 
           <div class="card-block card-block-collapse-toggle collapsed" href="#notifications" data-toggle="collapse">
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">2</span>
             </h4>
-            <h4 class="card-title pull-left">Users to notify</h4>
+            <h4 class="card-title pull-xs-left">Users to notify</h4>
           </div>
           <div class="card-block-collapse collapse" id="notifications">
-            <div ng-include="'includes/subcards/notify.html'"></div>
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#tags" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">3</span>
             </h4>
-            <h4 class="card-title pull-left">Tags</h4>
+            <h4 class="card-title pull-xs-left">Tags</h4>
           </div>
           <div class="card-block-collapse collapse" id="tags">
-            <div ng-include="'includes/subcards/tags.html'"></div>
+            <div ng-include="'includes/subcards-edit/tags.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
             
-            <h4 class="card-title pull-left">Notes</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="notes">
-            <div ng-include="'includes/subcards/notes.html'"></div>
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
             
-            <h4 class="card-title count pull-right">
+            <h4 class="card-title count pull-xs-right">
               <span class="text-muted">2</span>
             </h4>
-            <h4 class="card-title pull-left">Attachments</h4>
+            <h4 class="card-title pull-xs-left">Attachments</h4>
           </div>
           <div class="card-block-collapse collapse" id="files">
-            <div ng-include="'includes/subcards/files.html'"></div>
+            <div ng-include="'includes/subcards-edit/files.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#risk-scoring-current" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="label label-warning risk-score">59</span>
             </h4>
-            <h4 class="card-title pull-left">Current risk score</h4>
+            <h4 class="card-title pull-xs-left">Current risk score</h4>
           </div>
           <div class="card-block-collapse collapse" id="risk-scoring-current">
             <div class="table-risk-grading">
@@ -702,10 +638,10 @@
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#evaluation" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="label text-muted">Terminate</span>
             </h4>
-            <h4 class="card-title pull-left">Evaluation &amp; treatment</h4>
+            <h4 class="card-title pull-xs-left">Evaluation &amp; treatment</h4>
           </div>
           <div class="card-block-collapse collapse" id="evaluation">
             <div class="card-block">
@@ -766,10 +702,10 @@
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#risk-scoring-target" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="label label-success risk-score">8</span>
             </h4>
-            <h4 class="card-title pull-left">Target risk score</h4>
+            <h4 class="card-title pull-xs-left">Target risk score</h4>
           </div>
           <div class="card-block-collapse collapse" id="risk-scoring-target">
             <div class="table-risk-grading">
@@ -868,35 +804,35 @@
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
               <span class="label label-warning status-indicator"></span> 
             </h4>
-            <h4 class="card-title pull-left">Corrective actions</h4>
+            <h4 class="card-title pull-xs-left">Corrective actions</h4>
           </div>
           <div class="card-block-collapse collapse" id="corrective-actions">
-            <div ng-include="'includes/subcards/corrective-actions.html'"></div>
+            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-opportunities" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed" href="#preventative-actions" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
               <span class="label label-warning status-indicator"></span> 
             </h4>
-            <h4 class="card-title pull-left">Improvements</h4>
+            <h4 class="card-title pull-xs-left">Preventative actions</h4>
           </div>
-          <div class="card-block-collapse collapse" id="improvement-opportunities">
-            <div ng-include="'includes/subcards/improvements.html'"></div>
+          <div class="card-block-collapse collapse" id="preventative-actions">
+            <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#review-info" data-toggle="collapse">
             
-            <h4 class="card-title pull-right">
+            <h4 class="card-title pull-xs-right">
               <span class="label label-warning status-indicator"></span>
             </h4>
-            <h4 class="card-title pull-left">Review</h4>
+            <h4 class="card-title pull-xs-left">Review</h4>
           </div>
           <div class="card-block-collapse collapse" id="review-info">
-            <div ng-include="'includes/subcards/review.html'"></div>
+            <div ng-include="'includes/subcards-edit/review.html'"></div>
           </div>
 
 
@@ -915,12 +851,12 @@
     <div class="modal-dialog modal-sm">
       <div class="card">
         <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-left">
+          <div class="card-heading-buttons pull-xs-left">
       			<button type="button" class="btn btn-secondary" data-dismiss="modal">
       				Cancel
       			</button>
           </div>
-          <div class="card-heading-buttons pull-right">
+          <div class="card-heading-buttons pull-xs-right">
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Save
       			</button>
@@ -942,7 +878,7 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Notify me</label>
               <div class="col-sm-8 col-xs-12">
-                <div class="btn-group pull-left">
+                <div class="btn-group pull-xs-left">
                   <button type="button" class="btn btn-info active">Yes</button>
                   <button type="button" class="btn btn-secondary">No</button>
                 </div>
@@ -955,7 +891,7 @@
                   <input type="text" class="form-control" value="2" placeholder="Notification time"/>
                   <div class="input-group-btn">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">weeks before</button>
-                    <ul class="dropdown-menu pull-right">
+                    <ul class="dropdown-menu pull-xs-right">
                       <a class="dropdown-item" href="#">days before</a>
                       <a class="dropdown-item active" href="#">weeks before</a>
                       <a class="dropdown-item" href="#">months before</a>
