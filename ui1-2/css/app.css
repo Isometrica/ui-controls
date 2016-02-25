@@ -1,0 +1,1483 @@
+/*
+  OVERALL
+*/
+/* FLEXBOX */
+/* TRANSFORM */
+/* CLEARFIX */
+/* BORDER RADIUS */
+/* TRANSITION */
+/* OPACITY */
+/* TEXT ELLIPSIS */
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+  font-size: 14px; }
+
+body {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  background: #f5f5f5;
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
+::-webkit-scrollbar {
+  width: 0px;
+  /* remove scrollbar space */
+  background: transparent;
+  /* optional: just make scrollbar invisible */ }
+
+.content {
+  overflow: hidden;
+  position: relative;
+  -webkit-box-flex: 1;
+  -moz-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1; }
+  .content .container {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    height: 100%;
+    padding: 0;
+    max-width: none; }
+  .content-list {
+    width: 300px;
+    border-right: 1px solid #ccc;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%; }
+    @media (max-width: 767px) {
+      .content-list {
+        width: 100%;
+        border: 0; } }
+  .content-detail {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    background: white; }
+
+strong {
+  font-weight: normal;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
+/*
+  ELEMENTS
+*/
+.guidance-icon {
+  background: #0078d7; }
+
+.btn {
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+  font-weight: normal;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease; }
+  .btn-primary {
+    background: #0078d7;
+    border-color: #0078d7; }
+    .btn-primary:hover {
+      background: #006abe;
+      border-color: #006abe; }
+  .btn-info {
+    background: #00BCF2;
+    border-color: #00BCF2; }
+    .btn-info:hover {
+      background: #00a8d8;
+      border-color: #00a8d8; }
+    .btn-info:disabled:hover {
+      background: #00BCF2;
+      border-color: #00BCF2; }
+  .btn-success {
+    background: #107C10;
+    border-color: #107C10; }
+    .btn-success:hover {
+      background: #0d650d;
+      border-color: #0d650d; }
+  .btn-warning {
+    background: #FF8C00;
+    border-color: #FF8C00; }
+    .btn-warning:hover {
+      background: #e67e00;
+      border-color: #e67e00; }
+  .btn-danger {
+    background: #E81123;
+    border-color: #E81123; }
+    .btn-danger:hover {
+      background: #d00f1f;
+      border-color: #d00f1f; }
+  .btn-link {
+    color: #0078d7; }
+  .btn:disabled {
+    opacity: 1; }
+
+.btn-group-nomargin {
+  margin-bottom: 0 !important; }
+  .btn-group-nomargin .btn {
+    margin-bottom: 0 !important; }
+
+.btn-group[data-toggle="buttons"] .btn.active {
+  background: #00BCF2;
+  border-color: #00BCF2;
+  color: white; }
+
+/*
+  BUTTON ICONS
+*/
+.btn i.ms-Icon {
+  font-size: 19px;
+  position: relative;
+  top: 1px; }
+  .btn i.ms-Icon--caretDown {
+    font-size: 18px;
+    position: relative;
+    top: 2px; }
+
+.navbar {
+  padding-top: 0;
+  padding-bottom: 0;
+  background: #444;
+  border-radius: 0;
+  /*
+  &-overview {
+    @media (max-width: 767px) {
+      padding: 0;
+    }
+    
+    .navbar-brand {
+      padding-top: 25px;
+      padding-bottom: 25px;
+      height: $navbar-height-overview;
+      color: rgba(255, 255, 255, .75); 
+      line-height: 0;
+      
+      @media (max-width: 767px) {
+        height: $navbar-height-standard;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0;
+        position: absolute;
+        left: 0;
+        right: 0;
+        text-align: center;
+      }
+  
+      img {
+        height: $navbar-height-overview - 50px;
+
+        @media (max-width: 767px) {
+          height: $navbar-height-standard - 30px;
+        }
+      }
+    }    
+    
+    .nav {
+      height: $navbar-height-overview;
+      @media (max-width: 767px) {
+        height: $navbar-height-standard;
+      }
+      
+      &-link {
+        padding-top: 0;
+        padding-bottom: 0;  
+        line-height: $navbar-height-overview;
+        
+        @media (max-width: 767px) {
+          line-height: $navbar-height-standard;
+        }
+        
+        .label {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          margin-top: -16px;
+          border-radius: 50%;
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          padding: 0;
+          font-size: 11px;
+        }
+      }
+    }
+  }  
+  */ }
+  @media (max-width: 1199px) {
+    .navbar .container {
+      padding: 0; } }
+  .navbar .navbar-brand {
+    color: white;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: normal;
+    font-size: 18px; }
+    .navbar .navbar-brand .dropdown-toggle {
+      color: white;
+      text-decoration: none;
+      display: inline-block; }
+    .navbar .navbar-brand .dropdown-menu {
+      font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  .navbar .nav .nav-item {
+    margin: 0; }
+  .navbar .nav .nav-link {
+    position: relative;
+    color: rgba(255, 255, 255, 0.75);
+    padding-left: 15px;
+    padding-right: 15px;
+    overflow: hidden;
+    font-size: 16px; }
+    .navbar .nav .nav-link:focus, .navbar .nav .nav-link:hover {
+      color: rgba(255, 255, 255, 0.9); }
+    .navbar .nav .nav-link i {
+      font-size: 24px;
+      float: left;
+      line-height: inherit; }
+    .navbar .nav .nav-link .label {
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin-top: -15px;
+      margin-left: 3px; }
+  .navbar .nav .nav-item.open .nav-link {
+    color: white; }
+  .navbar .dropdown-menu {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    margin-top: 0;
+    border-top: 0;
+    padding: 0; }
+    @media (max-width: 767px) {
+      .navbar .dropdown-menu {
+        width: auto !important;
+        left: 0 !important;
+        right: 0 !important;
+        margin: 0 !important;
+        border-left: 0;
+        border-right: 0;
+        border-radius: 0; } }
+  .navbar .dropdown-item {
+    padding: 10px 15px; }
+    @media (max-width: 767px) {
+      .navbar .dropdown-item {
+        text-align: center; } }
+  .navbar-standard {
+    min-height: 50px;
+    padding: 0; }
+    .navbar-standard .navbar-brand {
+      line-height: 50px;
+      padding: 0;
+      margin: 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      text-align: center; }
+      .navbar-standard .navbar-brand .dropdown-menu {
+        width: 240px;
+        left: 50%;
+        margin-left: -120px;
+        text-align: center; }
+    .navbar-standard .nav-link {
+      line-height: 50px;
+      padding: 0; }
+
+/* Inputs */
+.form-control {
+  color: #333; }
+  .form-control:disabled {
+    color: black; }
+
+/* Labels */
+.form-control-label {
+  font-weight: normal;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  @media (min-width: 768px) {
+    .form-horizontal .form-control-label {
+      text-align: right;
+      padding-right: 0; } }
+
+/* Rich text */
+.rich-text-controls {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 3px 0; }
+  .rich-text-controls .btn {
+    border: 0; }
+
+.rich-text-input {
+  font-size: 0;
+  height: 400px; }
+
+/* Form buttons */
+.form-group .btn {
+  margin-bottom: 7px; }
+
+/* Checkbox button */
+.btn-checkbox {
+  width: 34px;
+  padding-left: 0;
+  padding-right: 0;
+  margin-right: 10px; }
+  .btn-checkbox.active {
+    background: #00BCF2;
+    border-color: #00BCF2; }
+    .btn-checkbox.active:hover {
+      background: #00a8d8;
+      border-color: #00a8d8; }
+  .btn-checkbox i {
+    margin: 0;
+    color: white;
+    font-size: 19px; }
+  .btn-checkbox-label {
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
+/* 
+  Select dropdowns 
+*/
+.c-select {
+  width: 100%;
+  color: #333;
+  border-radius: .25rem; }
+
+/*
+  Dropdowns
+*/
+.dropdown-header {
+  margin-bottom: 0;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
+/*
+  Phone numbers
+*/
+.form-group-flex {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .form-group-flex-flex {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .form-group-flex .margin-left {
+    margin-left: 15px; }
+  .form-group-flex .margin-right {
+    margin-right: 15px; }
+
+/* Clear field */
+.clear-field {
+  position: absolute;
+  right: 7px;
+  top: 0;
+  font-size: 21px;
+  line-height: 22px;
+  color: #bbb !important;
+  transition: all 0.3s ease;
+  border: 0;
+  z-index: 9;
+  display: none;
+  margin-right: 0 !important; }
+  .clear-field:hover {
+    color: #99130f !important; }
+  .clear-field i {
+    margin: 0 !important;
+    font-size: 21px !important;
+    line-height: inherit;
+    top: 0 !important; }
+  .ios .clear-field {
+    padding-right: 0 !important; }
+  .android .clear-field {
+    right: 0; }
+
+input:focus ~ .clear-field {
+  display: block; }
+
+/* Typeahead */
+.input-group-typeahead {
+  position: relative; }
+  .input-group-typeahead .input-group-btn .btn {
+    margin-bottom: 0; }
+  .input-group-typeahead .dropdown-menu {
+    left: 0; }
+
+/* Risk Grading */
+.table-risk-grading {
+  border-top: 1px solid #ddd; }
+  .table-risk-grading table {
+    margin-bottom: 10px; }
+  .table-risk-grading th, .table-risk-grading td {
+    border-color: white !important;
+    border-left: 2px solid white;
+    border-top: 2px solid white;
+    text-align: center;
+    width: 1%;
+    padding: 10px !important;
+    font-weight: 500; }
+    @media (max-width: 480px) {
+      .table-risk-grading th, .table-risk-grading td {
+        max-width: 50px !important;
+        overflow: hidden; } }
+    .table-risk-grading th.impacts-heading, .table-risk-grading td.impacts-heading {
+      position: relative;
+      width: 44px !important;
+      padding: 0 !important;
+      vertical-align: middle; }
+      .table-risk-grading th.impacts-heading span, .table-risk-grading td.impacts-heading span {
+        -webkit-transform: rotate(-90deg);
+        display: block; }
+    .table-risk-grading th.impact-label, .table-risk-grading td.impact-label {
+      background: #eee; }
+    .table-risk-grading th.impact, .table-risk-grading td.impact {
+      cursor: pointer;
+      position: relative; }
+      .table-risk-grading th.impact:after, .table-risk-grading td.impact:after {
+        content: '';
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: -1px;
+        bottom: 0;
+        background: rgba(255, 255, 255, 0.6);
+        opacity: 1;
+        transition: all 0.3s ease; }
+      .table-risk-grading th.impact:hover:after, .table-risk-grading th.impact:focus:after, .table-risk-grading th.impact:active:after, .table-risk-grading th.impact.active:after, .table-risk-grading td.impact:hover:after, .table-risk-grading td.impact:focus:after, .table-risk-grading td.impact:active:after, .table-risk-grading td.impact.active:after {
+        opacity: 0; }
+    .table-risk-grading th.impact-vlow, .table-risk-grading td.impact-vlow {
+      background: #107C10; }
+    .table-risk-grading th.impact-low, .table-risk-grading td.impact-low {
+      background: #FFB900; }
+    .table-risk-grading th.impact-medium, .table-risk-grading td.impact-medium {
+      background: #FF8C00; }
+    .table-risk-grading th.impact-high, .table-risk-grading td.impact-high {
+      background: #E81123; }
+    .table-risk-grading th.impact-vhigh, .table-risk-grading td.impact-vhigh {
+      background: #E81123; }
+  .table-risk-grading td {
+    color: white;
+    font-weight: bold; }
+
+/*
+  FORM GROUP - BUTTONS (e.g. lists of file attachments)
+*/
+.form-group-buttons .btn, .form-group-buttons .btn-group {
+  margin-right: 3px; }
+
+.form-group-buttons .btn-group .btn {
+  margin-right: 0; }
+
+/*
+
+.form-control {
+  color: #333;
+}
+
+
+.inline-dropdown {
+  display: inline-block;
+}
+
+.help-icon {
+  margin-right: 5px;
+  color: #bbb;
+
+  i {
+    font-size: 21px;
+  }
+
+  &:hover, &:focus, &:active { color: #23527c; }
+}
+
+
+
+/* Larget caret in dropdown buttons 
+
+.btn .fa-caret {
+  font-size: 16px;
+}
+
+/* Larger font size for inputs 
+
+.ios, .android {
+  .form-control,
+  .input-group-addon {
+    font-size: 16px;
+  }
+}
+
+
+.isometrica-rich-text-control {
+  padding: 0;
+  margin: 0 -15px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 15px;
+
+  .isometrica-rich-text-controls {
+    border-bottom: 1px solid #ddd;
+    padding: 5px 10px;
+    text-align: center;
+    position: relative;
+
+    .btn {
+      border-color: transparent;
+      background: transparent;
+      box-shadow: none;
+      border-radius: 0;
+    }
+
+    .btn-expand {
+      position: absolute;
+      right: 10px;
+      top: 4px;
+    }
+  }
+
+  .isometrica-rich-text-input {
+    height: 300px;
+  }
+
+  &.isometrica-rich-text-control-condensed {
+    margin: 0;
+    border: 1px solid #ccc;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+    border-radius: 4px;
+
+    .isometrica-rich-text-input {
+      height: 120px;
+    }
+  }
+
+}
+
+.modal .isometrica-rich-text-control {
+  .isometrica-rich-text-input {
+    height: 120px;
+  }
+}
+
+.isometrica-rich-text-panel {
+  .panel-body {
+    padding-top: 0;
+    padding-bottom: 0;
+
+    .isometrica-rich-text-control {
+      border-top: 0;
+      border-bottom: 0;
+      margin-bottom: 0;
+    }
+
+    .isometrica-rich-text-input {
+      height: 340px;
+    }
+  }
+}
+
+.form-control-with-status {
+  padding-right: 35px !important;
+  position: relative;
+
+  .label {
+    position: absolute;
+    right: 8px;
+    left: auto !important;
+    top: 50%;
+    margin-top: -8px;
+  }
+}
+
+.btn-checkbox {
+  width: 34px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 10px !important;
+
+  i {
+    margin: 0 !important;
+    color: white;
+  }
+}
+
+
+.desktop {
+  .form-horizontal .control-label {
+    padding-right: 0;
+  }
+}
+
+.ios {
+
+  .modal-body {
+    padding-top: 10px;
+  }
+
+  .form-horizontal .form-group {
+    
+    //border-color: transparent;
+    //margin-left: 0 !important;
+    //border-bottom: 1px solid #ddd;
+
+    label,
+    .form-control,
+    .btn {
+      margin-top: 5px;
+      margin-bottom: 5px;
+    }
+  }
+
+  .form-horizontal .form-group .control-label {
+    white-space: normal;
+  }
+
+  .form-horizontal .form-group:first-of-type {
+    margin-top: 0;
+  }
+
+  hr {
+    //margin-top: 7px !important;
+    //margin-bottom: 7px !important;
+    //display: none !important;
+    //border-color: transparent !important;
+  }
+
+  textarea {
+    resize: none;
+  }
+
+  textarea:focus, input:focus{
+    outline: 0;
+    border-color: transparent;
+    box-shadow: none;
+  }
+
+  .form-horizontal .form-group .btn {
+    //margin: 1px 0;
+  }
+}
+
+.android {
+
+  textarea:focus, input:focus, select:focus {
+    outline: 0;
+    box-shadow: none;
+    border-left-color: transparent;
+    border-right-color: transparent;
+    border-top-color: transparent;
+  }
+
+  .form-horizontal .form-group .control-label {
+    padding-top: 6px;
+    
+    @media(max-width: 767px) {
+      text-align: left;
+      padding-top: 0 !important;
+      margin-top: 0;
+    }
+  }
+
+  .form-horizontal .form-group .btn {
+    margin: 2px 0;
+  }
+  
+  .control-label {
+    text-transform: none !important;
+    font-size: 14px !important;
+  }
+}
+
+
+
+.control-label-block,
+.form-horizontal .control-label-block {
+  padding-top: 0;
+  display: block;
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+
+
+/* Form group status label 
+
+.form-group .label {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 5px 8px;
+  display: inline-block;
+}
+
+.ios,
+.android { 
+  .form-group .label {
+    margin: 10px 0;
+  }
+}
+
+/* Dropdowns 
+
+.dropdown-menu>li>a {
+  padding: 7px 15px;
+}
+
+.dropdown-menu {
+  .divider {
+    margin: 4px 0;
+  }
+  .dropdown-header {
+    padding: 5px 15px 0;
+  }
+}
+
+.dropdown-menu>.active>a, .dropdown-menu>.active>a:focus, .dropdown-menu>.active>a:hover {
+  background: $blue-color;
+  color: white !important;
+}
+
+
+
+
+
+
+/* Disabled fields 
+
+.form-control[disabled] {
+  -webkit-text-fill-color: #555;
+}
+
+.ios .form-control[disabled],
+.android .form-control[disabled] {
+  background: #eee;
+  padding-left: 10px;
+}
+
+
+
+
+
+
+/* Search form 
+
+.search-form {
+  .form-control,
+  .btn {
+    margin-bottom: 0 !important;
+    margin-top: 0 !important;
+  }
+}
+
+.search-filters {
+  margin-top: 10px;
+}
+
+
+/* Form layout 
+
+.ios,
+.android {
+  .form-horizontal .form-group {
+    margin-left: -15px;
+    margin-right: -15px;
+    border: 0;
+  }
+
+  .form-horizontal .form-group:last-child {
+    margin-bottom: 0;
+  }
+
+  .form-horizontal .form-group .control-label:first-child {
+    padding-left: 15px;
+    padding-right: 0;
+  }
+
+  .form-horizontal .form-group > div,
+  .form-horizontal .form-group > div:last-child {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.ios {
+  .form-horizontal .form-group .control-label {
+    padding-top: 8px;
+    color: $blue-color;
+    color: black;
+    font-weight: 500;
+    
+    @media (max-width: 767px) {
+      //padding-top: 0;
+      margin-bottom: 0;
+    }
+  }
+
+  .bootcards-panel-collapsing:not(.full-width) .panel-body {
+    //padding-top: 0;
+    //padding-bottom: 0;
+  }
+}
+
+.android {
+  .form-horizontal .form-group .control-label {
+    padding-top: 7px;
+  }
+
+  textarea {
+    //line-height: 26px;
+  }
+  
+  .form-control {
+    padding-left: 0;
+  }
+}
+
+
+/* Input groups 
+
+.input-group + .input-group {
+  //margin-top: 8px;
+}
+
+.input-group .btn {
+  margin-right: 0;
+  margin-bottom: 0;
+}
+
+
+.ios,
+.android {
+  .input-group {
+    .input-group-btn > .btn {
+      border-radius: 3px;
+      border-width: 1px;
+      z-index: 9;
+    }
+    .input-group-addon {
+      background: #eee;
+      border-color: transparent;
+      //padding-left: 0;
+      color: #777;
+    }
+    .form-control:not(:first-child) {
+      padding-left: 10px;
+    }
+  }
+}
+
+
+
+/* Consistent bottom margin for form buttons, fields, etc 
+
+.form-horizontal .form-group {
+  margin-bottom: 10px;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
+  }
+}
+
+.ios .form-horizontal .form-group {
+  margin-bottom: 0;
+  padding-top: 0;
+  padding-bottom: 0;
+  
+  .btn,
+  .btn-group,
+  .input-group,
+  .form-control {
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+    @media (max-width: 767px) {
+      margin-bottom: 0;
+      //margin-top: 0;  
+    }
+  }  
+}
+
+/* Consistent right margin for inline form buttons/groups 
+
+.form-group .btn,
+.form-group .btn-group {
+  margin-right: 5px;
+  
+  &.pull-xs-right {
+    margin-right: 0;
+  }
+}
+
+/* Reset for nested elements 
+
+.form-group .btn-group .btn {
+  margin-bottom: 0 !important;
+  margin-right: 0 !important;
+  margin-top: 0 !important;
+}
+
+.form-group .input-group {
+  .form-control,
+  .btn {
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    margin-right: 0 !important;
+  }
+}
+
+.form-group .input-group .form-control {
+  margin-bottom: 0;
+}
+
+/* Smaller btn groups on mobile 
+
+.form-group .btn-group .btn {
+  @media (max-width:480px) {
+    font-size: 13px !important;
+  }
+}
+
+*/
+.content-list .search-form {
+  padding: .75rem;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .content-list .search-form .form-group {
+    position: relative;
+    margin: 0;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .content-list .search-form .form-group .form-control {
+      padding-left: 32px; }
+    .content-list .search-form .form-group:before {
+      content: '\e039';
+      font-family: 'Office365Icons';
+      position: absolute;
+      left: 1rem;
+      top: 0;
+      color: #999;
+      font-size: 16px;
+      line-height: 34px; }
+  .content-list .search-form .btn {
+    margin-left: 12px; }
+
+.content-list .list-group-item {
+  border-radius: 0;
+  border-left: 0;
+  border-right: 0;
+  padding: 0.75rem 1rem; }
+  .content-list .list-group-item:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .content-list .list-group-item img {
+    height: 40px;
+    width: 40px;
+    margin-right: 15px; }
+  .content-list .list-group-item .status-indicator {
+    float: left;
+    margin-right: 10px; }
+  .content-list .list-group-item-content {
+    overflow: hidden; }
+  .content-list .list-group-item-heading {
+    font-size: 18px;
+    font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    font-weight: normal; }
+  .content-list .list-group-item-text {
+    color: #777; }
+
+.list-group-collapse .list-group-item {
+  padding-left: 1rem !important; }
+
+.list-group-collapse .list-group-collapse .list-group-item {
+  padding-left: 2rem !important; }
+
+.list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  padding-left: 3rem !important; }
+
+.list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  padding-left: 4rem !important; }
+
+.list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  padding-left: 5rem !important; }
+
+.list-group-subheading {
+  background: #f5f5f5; }
+  .list-group-subheading .list-group-item-heading {
+    margin: 0;
+    font-size: 16px;
+    line-height: 22px; }
+
+.list-group-toggle {
+  padding-left: 2.5rem !important; }
+  .list-group-toggle:before {
+    font-family: 'Office365Icons';
+    content: '\e08a';
+    position: absolute;
+    left: .75rem;
+    top: 50%;
+    font-size: 24px;
+    line-height: 20px;
+    width: 20px;
+    margin-top: -10px;
+    color: #0078d7;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .list-group-toggle.active:before {
+    color: white; }
+  .list-group-toggle:not(.collapsed):before {
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .list-group-collapse .list-group-toggle {
+    padding-left: 3.5rem !important; }
+    .list-group-collapse .list-group-toggle:before {
+      left: 1.75rem; }
+  .list-group-collapse .list-group-collapse .list-group-toggle {
+    padding-left: 4.5rem !important; }
+    .list-group-collapse .list-group-collapse .list-group-toggle:before {
+      left: 2.75rem; }
+  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-toggle {
+    padding-left: 5.5rem !important; }
+    .list-group-collapse .list-group-collapse .list-group-collapse .list-group-toggle:before {
+      left: 3.75rem; }
+  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-toggle {
+    padding-left: 6.5rem !important; }
+    .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-toggle:before {
+      left: 4.75rem; }
+
+.list-group-collapse {
+  margin-bottom: -1px; }
+  .list-group-collapse.collapsing, .list-group-collapse .collapse {
+    margin-bottom: 0; }
+
+.label {
+  border-radius: 0;
+  display: inline-block;
+  font-weight: normal;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+  /* Colors */ }
+  .label-success {
+    background: #107C10; }
+  .label-warning {
+    background: #FF8C00; }
+  .label-danger {
+    background: #E81123; }
+  .label-primary {
+    background: #0078d7; }
+  .label-info {
+    background: #00BCF2; }
+  .label-standard {
+    float: left;
+    height: 36px;
+    width: 36px;
+    line-height: 36px;
+    font-size: 12px;
+    padding: 0;
+    margin-right: 12px;
+    margin-top: 3px; }
+  .label-status {
+    font-size: inherit !important;
+    margin-right: 5px; }
+
+.form-group .label {
+  font-size: 14px;
+  margin: 5px 0;
+  padding: 5px 8px;
+  display: inline-block; }
+
+.ref-number {
+  background: #777;
+  color: white;
+  float: right;
+  display: inline-block;
+  padding: 0.25em 0.6em 0.3em;
+  margin-right: 0; }
+
+.status-indicator {
+  border-radius: 50%;
+  z-index: 9;
+  height: 16px;
+  width: 16px;
+  padding: 0;
+  text-align: center;
+  position: relative;
+  top: 1px; }
+  .status-indicator:empty {
+    display: inline-block; }
+
+.card-block-collapse-toggle {
+  position: relative;
+  padding-left: 50px;
+  cursor: pointer;
+  font-size: 15px; }
+  .card-block-collapse-toggle:before {
+    content: '\e08a';
+    font-family: 'Office365Icons';
+    font-size: 24px;
+    width: 20px;
+    line-height: 24px;
+    position: absolute;
+    left: 13px;
+    top: 50%;
+    margin-top: -12px;
+    color: #0078d7;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .card-block-collapse-toggle:not(.collapsed):before {
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg); }
+  .card-block-collapse-toggle .card-title {
+    margin: 0;
+    line-height: 22px; }
+    .card-block-collapse-toggle .card-title .text-muted {
+      color: #777;
+      font-weight: normal; }
+  .card-block-collapse-toggle .label {
+    font-size: 14px; }
+  .card-block-collapse-toggle .disclosure-indicator {
+    font-size: 14px;
+    line-height: 20px;
+    color: #777; }
+  .card-block-collapse-toggle .status-indicator {
+    margin-left: 7px;
+    position: relative;
+    top: 2px; }
+  .card-block-collapse-toggle .guidance-toggle {
+    padding: 0;
+    margin: -1px 10px;
+    float: left;
+    width: 20px;
+    height: 20px; }
+    .card-block-collapse-toggle .guidance-toggle i {
+      font-size: 16px;
+      line-height: inherit;
+      top: -1px; }
+
+.card-block-collapse .card-block {
+  border-top: 1px solid #ddd; }
+  @media (max-width: 767px) {
+    .card-block-collapse .card-block > .card {
+      margin-left: -1.25rem;
+      margin-right: -1.25rem;
+      margin-top: -1.25rem; } }
+  .card-block-collapse .card-block .card .card-block-collapse-toggle {
+    border-top: 0;
+    background: #f5f5f5; }
+
+.card {
+  border-color: #ccc;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.05);
+  margin-bottom: 30px; }
+  @media (max-width: 767px) {
+    .card {
+      margin-bottom: 15px;
+      border-width: 0 0 1px;
+      border-radius: 0; } }
+  .card-heading {
+    border-bottom: 1px solid #ddd;
+    background: #f5f5f5; }
+    .card-heading:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .card-heading-buttons {
+      position: absolute;
+      top: 10px; }
+      .card-heading-buttons .btn {
+        float: left; }
+      .card-heading-buttons.pull-xs-left {
+        left: 10px; }
+        .card-heading-buttons.pull-xs-left .btn {
+          margin-right: 10px; }
+      .card-heading-buttons.pull-xs-right {
+        right: 10px; }
+        .card-heading-buttons.pull-xs-right .btn {
+          margin-left: 10px; }
+  .card .card-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: normal;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  .card-block:after {
+    content: "";
+    display: table;
+    clear: both; }
+  .card-block hr {
+    margin: 1.75rem -1.25rem;
+    border-color: #ddd; }
+  .card .table {
+    margin-bottom: 0; }
+    .card .table th, .card .table td {
+      border-color: #ddd; }
+      .card .table th:first-child, .card .table td:first-child {
+        padding-left: 17px; }
+
+/*
+.content-cards {
+  .card {    
+    &-subheading {
+      padding-bottom: 0;
+      border-bottom: 0;
+
+      
+      .card-title {
+        margin: 0;
+        font-size: 18px;
+        //color: #777;
+        font-weight: normal;
+        font-family: $font-regular;       
+      }
+    }
+    
+    .list-group {
+      border-bottom: 1px solid #ddd;
+      padding-top: 8px;
+      padding-bottom: 8px;
+      
+      &-item {
+        border: 0;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        
+        img {
+          height: 40px;
+          width: 40px;
+          margin-right: 15px;
+        }
+        
+        &-heading {
+          font-size: 18px;
+          line-height: 24px;
+          margin: 0 0 3px;
+          font-weight: normal;
+          font-family: $font-semilight;
+        }
+        
+        &-text {
+          font-size: 14px;
+          color: #777;
+          margin: 0 0 3px;
+          //font-family: $SegoeUI;
+          font-weight: normal;
+        }
+      }
+    }
+    
+    .table {
+      margin-top: 5px;
+      
+      border-bottom: 1px solid #ddd;
+      
+      th {
+        border-top: 0;
+      }
+    }
+  }
+}
+*/
+@media (max-width: 600px) {
+  .modal .modal-dialog {
+    width: auto;
+    margin: 0; } }
+
+.modal .modal-dialog > .card {
+  border: 0; }
+  .modal .modal-dialog > .card > .card-heading .card-title {
+    text-align: center !important;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
+.modal .modal-dialog .card-block:not(:first-child) {
+  border-top: 1px solid #ddd; }
+
+/* 
+  SCREENS
+*/
+.chat {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .chat-heading {
+    padding: 1rem 1.25rem;
+    min-height: 100px; }
+    .chat-heading .label-standard {
+      width: 70px;
+      height: 70px;
+      line-height: 70px;
+      font-size: 27px;
+      margin-right: 15px; }
+    .chat-heading .btn-link {
+      float: right;
+      padding: 0; }
+    .chat-heading .btn-group {
+      float: right;
+      margin-top: 5px; }
+    .chat-heading-title {
+      font-size: 27px; }
+    .chat-heading-text {
+      font-size: 14px;
+      margin: 0;
+      color: #777; }
+  .chat-content {
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+  .chat-item {
+    padding: 1rem 1.25rem;
+    border-top: 1px solid #eee; }
+    .chat-item-start {
+      border-top: 0; }
+    .chat-item-avatar {
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+      float: left;
+      margin-right: 15px;
+      margin-top: 3px; }
+    .chat-item-card:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .chat-item-author {
+      font-size: 13px;
+      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+      margin-right: 5px; }
+    .chat-item-time {
+      font-size: 13px;
+      color: #999;
+      float: right; }
+    .chat-item-level {
+      color: #999;
+      font-size: 13px; }
+    .chat-item-text {
+      margin: 0;
+      font-size: 16px; }
+      .chat-item-start .chat-item-text {
+        color: #777; }
+    .chat-item-dropdown {
+      float: right;
+      clear: right; }
+      .chat-item-dropdown .btn {
+        padding: 4px 2px;
+        outline: none !important;
+        color: #aaa; }
+        .chat-item-dropdown .btn:hover {
+          color: #0078d7; }
+      .chat-item-dropdown.open .btn {
+        color: #0078d7; }
+      .chat-item-dropdown .dropdown-menu {
+        margin: 0; }
+  .chat-form {
+    padding: 0 1.25rem 1.25rem; }
+    .chat-form .form-group {
+      margin: 0; }
+    .chat-form .form-control {
+      font-size: 16px;
+      padding: 0.5rem 1rem; }
+    .chat-form .btn {
+      padding: 0.5rem 0.75rem;
+      line-height: 20px; }
+      .chat-form .btn i {
+        font-size: 22px; }
+  .chat-sidebar {
+    padding: 1rem 1.25rem;
+    width: 20%;
+    border-left: 1px solid #ccc;
+    overflow-x: hidden;
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    height: 100%; }
+    .chat-sidebar-heading:after {
+      content: "";
+      display: table;
+      clear: both; }
+    .chat-sidebar-heading .btn {
+      float: right;
+      padding: 0;
+      color: #bbb; }
+      .chat-sidebar-heading .btn:hover {
+        color: #555; }
+    .chat-sidebar-title {
+      float: left;
+      font-size: 20px;
+      margin: 0; }
+    .chat-sidebar-subtitle {
+      font-size: 18px;
+      margin: 0 0 1.25rem; }
+    .chat-sidebar hr {
+      margin: 1.25rem -1.25rem; }
+    .chat-sidebar .card {
+      margin-bottom: .75rem;
+      cursor: pointer;
+      -moz-transition: all 0.3s ease;
+      -o-transition: all 0.3s ease;
+      -webkit-transition: all 0.3s ease;
+      transition: all 0.3s ease; }
+      .chat-sidebar .card:hover {
+        border-color: #0078d7; }
+      .chat-sidebar .card-block {
+        padding: 1rem; }
+      .chat-sidebar .card-title {
+        font-size: 14px; }
+      .chat-sidebar .card i {
+        float: left;
+        font-size: 30px;
+        width: 30px;
+        text-align: center;
+        color: #bbb;
+        margin-right: 0.75rem; }
+      .chat-sidebar .card img {
+        width: 30px;
+        height: 30px;
+        float: left;
+        margin-right: 0.75rem;
+        margin-top: 3px;
+        margin-left: 3px;
+        border-radius: 50%; }
+      .chat-sidebar .card p {
+        margin: .5rem 0 0; }
