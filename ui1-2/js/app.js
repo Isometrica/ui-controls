@@ -22,7 +22,14 @@ $( document ).ready(function() {
   	
   	$(this).addClass("active");
   });
+  
+  /*
+    SCROLLBAR
+  */
 	
+	$(".scroll").mCustomScrollbar({
+      theme:"dark"
+  });
 
   
   

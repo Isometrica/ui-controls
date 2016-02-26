@@ -13,13 +13,15 @@
       }
       
       &:before {
-        content: '\e039';
-        font-family: 'Office365Icons';
+        //content: '\e039';
+        //font-family: 'Office365Icons';
+        content: '\f002';
+        font-family: 'FontAwesome';
         position: absolute;
-        left: 1rem;
-        top: 0;
+        left: .8rem;
+        top: -1px;
         color: #999;
-        font-size: 16px;
+        font-size: 14px;
         line-height: 34px;
       }
     }
@@ -66,27 +68,33 @@
   }
 }
 
+$fixed-padding: 1rem;
+$variable-padding: .5rem;
+
 .list-group-item {
+  padding-left: $fixed-padding !important;
+  
   .list-group-collapse & {
-    padding-left: 1rem !important;
+    padding-left: $fixed-padding + $variable-padding !important;
   }
   
   .list-group-collapse .list-group-collapse & {
-    padding-left: 2rem !important;
+    padding-left: $fixed-padding + ($variable-padding * 2) !important;
   }
   
   .list-group-collapse .list-group-collapse .list-group-collapse & {
-    padding-left: 3rem !important;
+    padding-left: $fixed-padding + ($variable-padding * 3) !important;
   }  
   
   .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse & {
-    padding-left: 4rem !important;
+    padding-left: $fixed-padding + ($variable-padding * 4) !important;
   }
   
   .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse & {
-    padding-left: 5rem !important;
+    padding-left: $fixed-padding + ($variable-padding * 5) !important;
   }  
 }
+
 
 .list-group-subheading {
   background: #f5f5f5;
@@ -99,13 +107,13 @@
 }
 
 .list-group-toggle {    
-  padding-left: 2.5rem !important;
+  padding-left: $fixed-padding + 1.5rem !important;
     
   &:before  {
     font-family: 'Office365Icons';
     content: '\e08a';
     position: absolute;
-    left: .75rem;
+    left: $fixed-padding - 0.25rem;
     top: 50%;
     font-size: 24px;
     line-height: 20px;
@@ -124,31 +132,17 @@
   }
   
   .list-group-collapse & {
-    padding-left: 3.5rem !important;
-    &:before { left: 1.75rem; }
+    padding-left: $fixed-padding + $variable-padding + 1.5rem   !important;
+    &:before { left: $fixed-padding + $variable-padding - 0.25rem; }
   }
   
-  .list-group-collapse .list-group-collapse & {
-    padding-left: 4.5rem !important;
-    &:before { left: 2.75rem; }
-  }
-  
-  .list-group-collapse .list-group-collapse .list-group-collapse & {
-    padding-left: 5.5rem !important;
-    &:before { left: 3.75rem; }
-  } 
-  
-  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse & {
-    padding-left: 6.5rem !important;
-    &:before { left: 4.75rem; }
-  }  
 }
 
 .list-group-collapse {
   margin-bottom: -1px;
   
   &.collapsing, .collapse {
-    margin-bottom: 0;
+    //margin-bottom: 0;
   }
 }
 
