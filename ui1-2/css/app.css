@@ -914,8 +914,7 @@ input:focus ~ .clear-field {
     .standard-timeline:hover {
       background: #d7edff;
       border-top: 1px solid #a4d7ff;
-      border-bottom: 1px solid #a4d7ff;
-      color: #005ca4; }
+      border-bottom: 1px solid #a4d7ff; }
     .standard-timeline-summary {
       margin: 0;
       position: relative;
