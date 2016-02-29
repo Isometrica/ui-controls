@@ -333,6 +333,75 @@
   } 
 }
 
+.standard-edit {
+  @include flexbox;
+  @include flex-wrap(wrap);
+  position: relative;
+  top: -7px;
+  
+  &-category {
+    .form-control {
+      border:0;
+      box-shadow: none;
+      outline: none;
+      border-radius: 0;
+      background: transparent;
+      padding-left: 0;
+      font-family: $font-semibold;
+    }
+  }
+  
+  .form-control {
+    border:0;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  &-label {
+    width: 70px;
+    height: 70px;
+    padding: 8px 0;
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-right: 1.25rem;
+    
+    .form-group {
+      margin: 0;
+    }
+    
+    .form-control {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      line-height: 1;
+      padding: 0;
+      
+      @include placeholder {
+        color: rgba(255,255,255,0.5);
+      }
+    }
+  }
+  
+  &-content {    
+    .form-group {
+      margin: 0 0 .3rem;
+    }
+  }
+  
+  &-title {
+    font-size: 24px;
+  }
+  
+  > .form-group {
+    width: 100%;
+  }
+}
+
 
 
 

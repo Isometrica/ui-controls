@@ -303,12 +303,6 @@ strong {
       line-height: 50px;
       padding: 0; }
 
-.dropdown-menu {
-  padding: 0; }
-
-.dropdown-item {
-  padding: 10px 15px; }
-
 /* Inputs */
 .form-control {
   color: #333; }
@@ -371,6 +365,14 @@ strong {
 /*
   Dropdowns
 */
+.dropdown-menu {
+  padding: 0; }
+
+.dropdown-item {
+  padding: 10px 15px; }
+  .dropdown-item.indent {
+    padding-left: 30px; }
+
 .dropdown-header {
   margin-bottom: 0;
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
@@ -1105,3 +1107,62 @@ input:focus ~ .clear-field {
         border-radius: 50%; }
       .standard-sidebar .card p {
         margin: .5rem 0 0; }
+
+.standard-edit {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  -moz-flex-wrap: wrap;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  position: relative;
+  top: -7px; }
+  .standard-edit-category .form-control {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background: transparent;
+    padding-left: 0;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  .standard-edit .form-control {
+    border: 0;
+    box-shadow: none;
+    outline: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 0;
+    line-height: 1; }
+  .standard-edit-label {
+    width: 70px;
+    height: 70px;
+    padding: 8px 0;
+    float: left;
+    margin-bottom: 1rem;
+    margin-top: .5rem;
+    margin-right: 1.25rem; }
+    .standard-edit-label .form-group {
+      margin: 0; }
+    .standard-edit-label .form-control {
+      text-align: center;
+      color: white;
+      font-size: 20px;
+      line-height: 1;
+      padding: 0; }
+      .standard-edit-label .form-control::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .standard-edit-label .form-control:-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .standard-edit-label .form-control::-moz-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+      .standard-edit-label .form-control:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.5); }
+  .standard-edit-content .form-group {
+    margin: 0 0 0.3rem; }
+  .standard-edit-title {
+    font-size: 24px; }
+  .standard-edit > .form-group {
+    width: 100%; }

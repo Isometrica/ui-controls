@@ -176,3 +176,10 @@
  @mixin mobile {
    @media (max-width:767px) { @content ; }
 }
+
+@mixin placeholder {
+  &::-webkit-input-placeholder {@content}
+  &:-moz-placeholder           {@content}
+  &::-moz-placeholder          {@content}
+  &:-ms-input-placeholder      {@content}  
+}

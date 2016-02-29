@@ -1,12 +1,4 @@
-.dropdown {
-  &-menu {
-    padding: 0;
-    
-  }
-  &-item {
-    padding: 10px 15px;
-  }
-}
+
 
 
 /* Inputs */
@@ -107,6 +99,16 @@
 */
 
 .dropdown {
+  &-menu {
+    padding: 0;
+  }
+  &-item {
+    padding: 10px 15px;
+    
+    &.indent {
+      padding-left: 30px;
+    }
+  }
   &-header {
     margin-bottom: 0;
     font-family: $font-semibold;
