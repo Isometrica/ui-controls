@@ -1,6 +1,13 @@
 .standard {
   @include flexbox();
-  @include flex-direction(column);
+  padding-bottom: 30px;
+    
+  .card {
+    @include flexbox();
+    @include flex-direction(column);   
+    height: 100%;
+    margin-bottom: 30px; 
+  }
 
   &-heading {
     padding: 1rem 1.25rem;
@@ -57,7 +64,6 @@
     border-bottom: 1px solid lighten($blue-color,45%);
     padding: .75rem 1.25rem;
     min-height: 44px;
-    color: $blue-color;
     cursor: pointer;
     @include transition(all .3s ease);
     position: relative;
@@ -100,7 +106,6 @@
 
   &-item {
     padding: .5rem 1.25rem;
-    //border-top: 1px solid #eee;
     
     &-date {
       text-align: center;
@@ -127,11 +132,9 @@
         z-index: 2;
       }
     }
-    
     &-start {
       border-top: 0;
     }
-    
     &-avatar {
       $avatar-size: 40px;
       border-radius: 50%;
@@ -189,6 +192,25 @@
         margin: 0;
       }
     }
+    &-reply {
+      clear: both;
+      padding-top: .5rem;
+      .form-group {
+        margin: 0;
+        padding-left: 55px;
+      }
+      .form-control {
+        font-size: 16px;
+        line-height: 24px;
+        background: transparent;  
+        height: 38px;      
+      }
+      .btn {
+        line-height: 24px;
+        font-size: 22px;
+        margin: 0;
+      }
+    }
   }
   
   &-form {
@@ -207,6 +229,8 @@
       color: #777;
       padding: .3rem 1rem 0;
       font-size: 13px;
+      right: 40px;
+      top: 0;
     }
     
     .input-group {
@@ -225,15 +249,14 @@
       padding: 16px 12px;
       line-height: 24px;
       font-size: 22px;
+      margin-bottom: 0;
     }
   }  
 
   &-sidebar {
-    padding: 1rem 1.25rem;
-    width: 20%;
-    border-left: 1px solid #ccc;
     @include scroll;
     height: 100%; 
+    padding-top: 30px;
     
     &-heading {
       @include clearfix;
@@ -256,12 +279,12 @@
       float: left;
       font-size: 20px;
       line-height: 26px;
-      margin: 0;
+      margin: 0 0 1rem;
     }
     
     &-subtitle {
       font-size: 18px;
-      margin: 0 0 1.25rem;
+      margin: 0 0 1rem;
     }
     
     hr {
@@ -269,7 +292,7 @@
     }
   
     .card {
-      margin-bottom: .75rem;
+      margin-bottom: 1rem;
       cursor: pointer;
       @include transition(all .3s ease);
       

@@ -12,35 +12,37 @@ body {
   font-family: $font-regular;
 }
 
-/*
+
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
-*/
+
 
 .content {
   overflow: hidden;
   position: relative;
   @include flex(1);
+  @include flexbox;
   
-  .container {
+  > .container {
     @include flex(1);
     @include flexbox();
-    overflow: hidden;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    height: 100%;
-    padding: 0;
-    max-width: none;
+    position: relative;
+    
+    > .row {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: 0;
+      height: 100%;
+    }
   }
   
   &-list {
-    width: 300px;
-    border-right: 1px solid #ccc;
+    padding-top: 30px;
     @include scroll;
     height: 100%;
     
@@ -51,12 +53,8 @@ body {
   }
   
   &-detail {
-    @include flex(1);
-    background: white;
-  }
-  
-  &-sidebar {
-   
+    height: 100%;
+    padding-top: 30px;
   }
 }
 
