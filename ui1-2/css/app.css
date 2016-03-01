@@ -98,6 +98,9 @@ strong {
 .fa-file-word-o {
   color: #2e5fa2 !important; }
 
+.fa-file-pdf-o {
+  color: #bb0706 !important; }
+
 .btn {
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
   font-weight: normal;
@@ -931,7 +934,13 @@ input:focus ~ .clear-field {
     .standard-timeline-summary {
       margin: 0;
       position: relative;
-      z-index: 2; }
+      z-index: 2;
+      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+      .standard-timeline-summary .label {
+        font-size: 100%;
+        margin-right: 3px; }
+        .standard-timeline-summary .label:not(:first-child) {
+          margin-left: 10px; }
     .standard-timeline-item {
       position: absolute;
       top: 0;

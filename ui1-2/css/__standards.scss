@@ -78,10 +78,22 @@
       //border-bottom: 1px solid lighten($blue-color,40%);   
     }
     
+
+    
     &-summary {
       margin: 0;
       position: relative;
       z-index: 2;
+      font-family: $font-semibold;
+
+      .label {
+        font-size: 100%;
+        margin-right: 3px;
+        
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
     }
     
     &-item {
