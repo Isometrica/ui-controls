@@ -12,10 +12,17 @@ body {
   font-family: $font-regular;
 }
 
-
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
+}
+
+.container {
+  max-width: none;
+  
+  @media (min-width:1300px) {
+    max-width: 1300px;
+  }
 }
 
 

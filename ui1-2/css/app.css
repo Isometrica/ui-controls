@@ -29,6 +29,12 @@ body {
   width: 0px;
   background: transparent; }
 
+.container {
+  max-width: none; }
+  @media (min-width: 1300px) {
+    .container {
+      max-width: 1300px; } }
+
 .content {
   overflow: hidden;
   position: relative;
@@ -858,17 +864,24 @@ input:focus ~ .clear-field {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;
-  padding-bottom: 30px; }
-  .standard .card {
+  -webkit-flex-direction: column;
+  flex-direction: column; }
+  .standard-top {
+    overflow: hidden; }
+  .standard-chat {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    overflow: hidden;
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
-    flex-direction: column;
-    height: 100%;
-    margin-bottom: 30px; }
+    flex-direction: column; }
   .standard-heading {
     padding: 1rem 1.25rem;
     min-height: 127px; }
@@ -904,7 +917,6 @@ input:focus ~ .clear-field {
   .standard-timeline {
     background: #f1f9ff;
     border-top: 1px solid #bee2ff;
-    border-bottom: 1px solid #bee2ff;
     padding: 0.75rem 1.25rem;
     min-height: 44px;
     cursor: pointer;
@@ -915,8 +927,7 @@ input:focus ~ .clear-field {
     position: relative; }
     .standard-timeline:hover {
       background: #d7edff;
-      border-top: 1px solid #a4d7ff;
-      border-bottom: 1px solid #a4d7ff; }
+      border-top: 1px solid #a4d7ff; }
     .standard-timeline-summary {
       margin: 0;
       position: relative;
@@ -1013,39 +1024,36 @@ input:focus ~ .clear-field {
         padding-left: 55px; }
       .standard-item-reply .form-control {
         font-size: 16px;
-        line-height: 24px;
-        background: transparent;
-        height: 38px; }
+        background: transparent; }
       .standard-item-reply .btn {
-        line-height: 24px;
+        line-height: 22px;
         font-size: 22px;
         margin: 0; }
   .standard-form {
     padding: 0 1.25rem 1.25rem;
-    height: 80px;
-    min-height: 80px; }
-    .standard-form .form-group {
-      margin: 0;
-      position: relative; }
-    .standard-form-channel {
+    height: 60px;
+    min-height: 60px;
+    /*
+    &-channel {
       position: absolute;
       z-index: 1;
       color: #777;
-      padding: 0.3rem 1rem 0;
+      padding: .3rem 1rem 0;
       font-size: 13px;
       right: 40px;
-      top: 0; }
+      top: 0;
+    }*/ }
+    .standard-form .form-group {
+      margin: 0;
+      position: relative; }
     .standard-form .input-group {
       position: relative;
       z-index: 2; }
     .standard-form .form-control {
       font-size: 16px;
-      padding: 24px 14px 8px;
-      padding-top: 1.75rem;
       background: transparent; }
     .standard-form .btn {
-      padding: 16px 12px;
-      line-height: 24px;
+      line-height: 22px;
       font-size: 22px;
       margin-bottom: 0; }
   .standard-sidebar {
@@ -1117,9 +1125,7 @@ input:focus ~ .clear-field {
   -webkit-flex-wrap: wrap;
   -moz-flex-wrap: wrap;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  position: relative;
-  top: -7px; }
+  flex-wrap: wrap; }
   .standard-edit-category .form-control {
     border: 0;
     box-shadow: none;
@@ -1127,7 +1133,7 @@ input:focus ~ .clear-field {
     border-radius: 0;
     background: transparent;
     padding-left: 0;
-    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+    font-size: 16px; }
   .standard-edit .form-control {
     border: 0;
     box-shadow: none;
@@ -1135,11 +1141,15 @@ input:focus ~ .clear-field {
     border-radius: 0;
     background: transparent;
     padding: 0;
-    line-height: 1; }
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    font-size: 15px; }
+    .standard-edit .form-control:focus {
+      border-bottom-color: #0078d7; }
   .standard-edit-label {
-    width: 70px;
-    height: 70px;
-    padding: 8px 0;
+    width: 90px;
+    height: 90px;
+    padding: 8px;
     float: left;
     margin-bottom: 1rem;
     margin-top: .5rem;
@@ -1149,9 +1159,12 @@ input:focus ~ .clear-field {
     .standard-edit-label .form-control {
       text-align: center;
       color: white;
-      font-size: 20px;
-      line-height: 1;
-      padding: 0; }
+      font-size: 24px;
+      line-height: 1.5;
+      padding: 0;
+      border-bottom-color: rgba(255, 255, 255, 0.4); }
+      .standard-edit-label .form-control:focus {
+        border-bottom-color: rgba(255, 255, 255, 0.8); }
       .standard-edit-label .form-control::-webkit-input-placeholder {
         color: rgba(255, 255, 255, 0.5); }
       .standard-edit-label .form-control:-moz-placeholder {
@@ -1160,9 +1173,17 @@ input:focus ~ .clear-field {
         color: rgba(255, 255, 255, 0.5); }
       .standard-edit-label .form-control:-ms-input-placeholder {
         color: rgba(255, 255, 255, 0.5); }
-  .standard-edit-content .form-group {
-    margin: 0 0 0.3rem; }
+  .standard-edit-content {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .standard-edit-content .form-group {
+      margin: 0 0 0.3rem; }
   .standard-edit-title {
-    font-size: 24px; }
+    font-size: 24px !important; }
+  .standard-edit .dropdown-menu {
+    right: 0; }
   .standard-edit > .form-group {
     width: 100%; }

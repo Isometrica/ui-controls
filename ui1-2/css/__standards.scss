@@ -1,12 +1,16 @@
 .standard {
   @include flexbox();
-  padding-bottom: 30px;
-    
-  .card {
+  @include flex-direction(column);
+
+  &-top {
+    overflow: hidden;
+  }
+  
+  &-chat {
+    @include flex(1);
+    overflow: hidden;
     @include flexbox();
-    @include flex-direction(column);   
-    height: 100%;
-    margin-bottom: 30px; 
+    @include flex-direction(column);    
   }
 
   &-heading {
@@ -61,7 +65,7 @@
   &-timeline {
     background: lighten($blue-color,55%);
     border-top: 1px solid lighten($blue-color,45%);
-    border-bottom: 1px solid lighten($blue-color,45%);
+    //border-bottom: 1px solid lighten($blue-color,45%);
     padding: .75rem 1.25rem;
     min-height: 44px;
     cursor: pointer;
@@ -71,7 +75,7 @@
     &:hover {
       background: lighten($blue-color,50%);
       border-top: 1px solid lighten($blue-color,40%);
-      border-bottom: 1px solid lighten($blue-color,40%);   
+      //border-bottom: 1px solid lighten($blue-color,40%);   
     }
     
     &-summary {
@@ -200,12 +204,12 @@
       }
       .form-control {
         font-size: 16px;
-        line-height: 24px;
+        //line-height: 22px;
         background: transparent;  
-        height: 38px;      
+        //height: 38px;      
       }
       .btn {
-        line-height: 24px;
+        line-height: 22px;
         font-size: 22px;
         margin: 0;
       }
@@ -214,14 +218,15 @@
   
   &-form {
     padding: 0 1.25rem 1.25rem;
-    height: 80px;
-    min-height: 80px;
+    height: 60px;
+    min-height: 60px;
   
     .form-group {
       margin: 0;
       position: relative;
     }
     
+    /*
     &-channel {
       position: absolute;
       z-index: 1;
@@ -230,7 +235,7 @@
       font-size: 13px;
       right: 40px;
       top: 0;
-    }
+    }*/
     
     .input-group {
       position: relative;
@@ -239,14 +244,14 @@
 
     .form-control {
       font-size: 16px;
-      padding: 24px 14px 8px;
-      padding-top: 1.75rem;
+      //padding: 24px 14px 8px;
+      //padding-top: 1.75rem;
       background: transparent;
       
     }
     .btn {
-      padding: 16px 12px;
-      line-height: 24px;
+      //padding: 16px 12px;
+      line-height: 22px;
       font-size: 22px;
       margin-bottom: 0;
     }
@@ -336,8 +341,6 @@
 .standard-edit {
   @include flexbox;
   @include flex-wrap(wrap);
-  position: relative;
-  top: -7px;
   
   &-category {
     .form-control {
@@ -347,7 +350,8 @@
       border-radius: 0;
       background: transparent;
       padding-left: 0;
-      font-family: $font-semibold;
+      font-size: 16px;
+      //font-family: $font-semibold;
     }
   }
   
@@ -358,13 +362,19 @@
     border-radius: 0;
     background: transparent;
     padding: 0;
-    line-height: 1;
+    line-height: 1.6;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    font-size: 15px;
+    
+    &:focus {
+      border-bottom-color: $blue-color;
+    }
   }
   
   &-label {
-    width: 70px;
-    height: 70px;
-    padding: 8px 0;
+    width: 90px;
+    height: 90px;
+    padding: 8px;
     float: left;
     margin-bottom: 1rem;
     margin-top: .5rem;
@@ -377,9 +387,14 @@
     .form-control {
       text-align: center;
       color: white;
-      font-size: 20px;
-      line-height: 1;
+      font-size: 24px;
+      line-height: 1.5;
       padding: 0;
+      border-bottom-color: rgba(255,255,255,0.4);
+      
+      &:focus {
+        border-bottom-color: rgba(255,255,255,0.8);
+      }
       
       @include placeholder {
         color: rgba(255,255,255,0.5);
@@ -387,14 +402,19 @@
     }
   }
   
-  &-content {    
+  &-content {   
+    @include flex(1);
     .form-group {
       margin: 0 0 .3rem;
     }
   }
   
   &-title {
-    font-size: 24px;
+    font-size: 24px !important;
+  }
+  
+  .dropdown-menu {
+    right: 0;
   }
   
   > .form-group {
