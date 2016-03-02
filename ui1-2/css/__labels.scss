@@ -37,13 +37,30 @@
     font-size: inherit !important;
     margin-right: 5px;
   }
+
+  &-status-indicator {
+    $status-indicator-size: 16px;
+    border-radius: 50%;
+    z-index: 9;
+    height: $status-indicator-size;
+    width: $status-indicator-size;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    top: 1px;
+  
+    &:empty {
+      display: inline-block;
+    }
+  } 
 }
 
 .form-group .label {
-    font-size: 14px;
-    margin: 5px 0;
-    padding: 5px 8px;
+    font-size: 1rem;
+    line-height: 1.5;
+    padding: .375rem 0;
     display: inline-block;
+    border: 1px solid transparent;
 }
 
 .ref-number {
@@ -55,19 +72,5 @@
   margin-right: 0;
 }
 
-.status-indicator {
-  $status-indicator-size: 16px;
-  border-radius: 50%;
-  z-index: 9;
-  height: $status-indicator-size;
-  width: $status-indicator-size;
-  padding: 0;
-  text-align: center;
-  position: relative;
-  top: 1px;
 
-  &:empty {
-    display: inline-block;
-  }
-} 
 

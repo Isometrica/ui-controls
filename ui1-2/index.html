@@ -16,7 +16,7 @@
 	<link rel="stylesheet" href="css/app.css">
 
 </head>
-<body class="isometrica-workspace-page">
+<body ng-app="plio">
 
   <!-- NAVBAR -->
   <div class="navbar navbar-standard">
@@ -25,9 +25,9 @@
         Standards
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item active" href="#">Standards</a>
-        <a class="dropdown-item" href="#">To dos</a>
-        <a class="dropdown-item" href="#">Users</a>
+        <a class="dropdown-item active" href="index.html">Standards</a>
+        <a class="dropdown-item" href="todos.html">To dos</a>
+        <a class="dropdown-item" href="users.html">Users</a>
       </div>   
     </span>
 
@@ -232,262 +232,268 @@
     				</div>
           </div>
     		</div>
-    		<div class="content-detail standard col-sm-6 hidden-sm-down">
-      		<div class="card standard-top">
-        		<div class="standard-heading">
-              <span class="label label-danger label-standard">SOP</span>
-              <a href="#" class="btn btn-link">
-                <i class="fa fa-info-circle"></i>
-              </a>
-              <div class="standard-heading-dropdown dropdown">
-                <h2 class="standard-heading-title dropdown-toggle" data-toggle="dropdown">Inquiry handling</h2>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a href="#edit-modal" class="dropdown-item" data-toggle="modal">Edit details</a>
-                  <a href="#" class="dropdown-item">Go to linked document</a>
-                </div>            
+    		<div class="content-cards standard col-sm-6 hidden-sm-down">
+      		<div class="card standard">
+        		<div class="standard-top">
+          		<div class="standard-heading">
+                <span class="label label-danger label-standard">SOP</span>
+                <a href="#" class="btn btn-link">
+                  <i class="fa fa-info-circle"></i>
+                </a>
+                <div class="standard-heading-dropdown dropdown">
+                  <h2 class="standard-heading-title dropdown-toggle" data-toggle="dropdown">Inquiry handling</h2>
+                  <div class="dropdown-menu dropdown-menu-right">
+                    <a href="#edit-modal" class="dropdown-item" data-toggle="modal">Edit details</a>
+                    <a href="#" class="dropdown-item">Go to linked document</a>
+                  </div>            
+                </div>
+                <div class="btn-group">
+                  <a href="#" class="btn btn-secondary">6 actions</a>
+                  <a href="#" class="btn btn-primary">2 for you</a>
+                </div>
+                <p class="standard-heading-text">Mike Smith</p>
+                <p class="standard-heading-text">Issue 2</p>
+                <p class="standard-heading-text">Optional line of description</p>
+          		</div>
+              <div class="timeline timeline-mini" onclick="window.location='continuous-improvement.html';">
+                <div class="timeline-mini-summary">
+                  <span class="label label-default">NC101</span> &times; 3 
+                  <span class="label label-default">NC102</span> &times; 2
+                </div>
+                <span class="timeline-mini-item" style="left:22%"></span>
+                <span class="timeline-mini-item" style="left:30%"></span>
+                <span class="timeline-mini-item" style="left:70%"></span>
+                <span class="timeline-mini-item" style="left:75%"></span>
+                <span class="timeline-mini-item" style="left:89%"></span>
               </div>
-              <div class="btn-group">
-                <a href="#" class="btn btn-secondary">6 actions</a>
-                <a href="#" class="btn btn-primary">2 for you</a>
-              </div>
-              <p class="standard-heading-text">Mike Smith</p>
-              <p class="standard-heading-text">Issue 2</p>
-              <p class="standard-heading-text">Optional line of description</p>
         		</div>
-            <div class="standard-timeline">
-              <div class="standard-timeline-summary">
-                <span class="label label-default">NC101</span> &times; 3 
-                <span class="label label-default">NC102</span> &times; 2
-              </div>
-              <span class="standard-timeline-item" style="left:22%"></span>
-              <span class="standard-timeline-item" style="left:30%"></span>
-              <span class="standard-timeline-item" style="left:70%"></span>
-              <span class="standard-timeline-item" style="left:75%"></span>
-              <span class="standard-timeline-item" style="left:89%"></span>
-            </div>
-      		</div>
-      		<div class="card standard-chat">
-            <div class="standard-content">
-              <div class="standard-item standard-item-start">
-                <p class="standard-item-text">This procedure was created by <strong>Stephen Ives</strong> on <strong>February 24th, 2016</strong></p>
-              </div>
-              <div class="standard-item-date">
-                <span>February 24th</span>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:37</span>
-                  <span class="standard-item-author">Mike</span>
-                  <span class="standard-item-channel">Top level</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">Hi Steve, just testing out Plio</p>
+        		<div class="standard-chat">
+              <div class="standard-content">
+                <div class="standard-item standard-item-start">
+                  <p class="standard-item-text">This procedure was created by <strong>Stephen Ives</strong> on <strong>February 24th, 2016</strong></p>
                 </div>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Steve</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">Ok, that's cool</p>
+                <div class="standard-item-date">
+                  <span>February 24th</span>
                 </div>
-              </div>
-              <div class="standard-item-date">
-                <span>February 25th</span>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Mike</span>
-                  <span class="standard-item-channel">Top level</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">Have you uploaded any standards?</p>
-                </div>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Steve</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text"><a href="">http://www.plio.io/abc1234</a></p>
-                </div>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-11.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:39</span>
-                  <span class="standard-item-author">Ann</span>
-                  <span class="standard-item-channel">Inquiry handling</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">How many inquiries last week?</p>
-                </div>
-              </div>
-              <div class="standard-item-date">
-                <span>February 27th</span>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:37</span>
-                  <span class="standard-item-author">Mike</span>
-                  <span class="standard-item-channel">Top level</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">Hi Steve, just testing out Plio</p>
-                </div>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Steve</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">Ok, that's cool</p>
-                </div>
-                <div class="standard-item-reply">
-                  <form>
-                    <div class="form-group">
-                      <div class="input-group">
-                        <input type="text" class="form-control" placeholder="Reply to Steve">
-                        <span class="input-group-btn">
-                          <button class="btn btn-secondary">
-                            <i class="fa fa-paperclip"></i>
-                          </button>
-                        </span>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:37</span>
+                    <span class="standard-item-author">Mike</span>
+                    <span class="standard-item-channel">Top level</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
                       </div>
                     </div>
-                  </form>
-                </div>                
+                    <p class="standard-item-text">Hi Steve, just testing out Plio</p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Steve</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">Ok, that's cool</p>
+                  </div>
+                </div>
+                <div class="standard-item-date">
+                  <span>February 25th</span>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Mike</span>
+                    <span class="standard-item-channel">Top level</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">Have you uploaded any standards?</p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Steve</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text"><a href="">http://www.plio.io/abc1234</a></p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-11.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:39</span>
+                    <span class="standard-item-author">Ann</span>
+                    <span class="standard-item-channel">Inquiry handling</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">How many inquiries last week?</p>
+                  </div>
+                </div>
+                <div class="standard-item-date">
+                  <span>February 27th</span>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:37</span>
+                    <span class="standard-item-author">Mike</span>
+                    <span class="standard-item-channel">Top level</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">Hi Steve, just testing out Plio</p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Steve</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">Ok, that's cool</p>
+                  </div>
+                  <div class="standard-item-reply">
+                    <form>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <input type="text" class="form-control" placeholder="Reply to Steve">
+                          <span class="input-group-btn">
+                            <button class="btn btn-secondary">
+                              <i class="fa fa-paperclip"></i>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                
+                </div>
+                <div class="standard-item-date">
+                  <span>February 29th</span>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Mike</span>
+                    <span class="standard-item-channel">Top level</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">Have you uploaded any standards?</p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:38</span>
+                    <span class="standard-item-author">Steve</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text"><a href="">http://www.plio.io/abc1234</a></p>
+                  </div>
+                </div>
+                <div class="standard-item">
+                  <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-11.png">
+                  <div class="standard-item-card">
+                    <span class="standard-item-time">11:39</span>
+                    <span class="standard-item-author">Ann</span>
+                    <span class="standard-item-channel">Inquiry handling</span>
+                    <div class="standard-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="standard-item-text">How many inquiries last week?</p>
+                  </div>
+                </div>
               </div>
-              <div class="standard-item-date">
-                <span>February 29th</span>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-14.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Mike</span>
-                  <span class="standard-item-channel">Top level</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
+              <div class="standard-form">
+                <form>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Type message">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary">
+                          <i class="fa fa-paperclip"></i>
+                        </button>
+                      </span>
                     </div>
                   </div>
-                  <p class="standard-item-text">Have you uploaded any standards?</p>
-                </div>
+                </form>
               </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-1.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:38</span>
-                  <span class="standard-item-author">Steve</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text"><a href="">http://www.plio.io/abc1234</a></p>
-                </div>
-              </div>
-              <div class="standard-item">
-                <img class="standard-item-avatar" src="img/avatars/avatar-placeholder-11.png">
-                <div class="standard-item-card">
-                  <span class="standard-item-time">11:39</span>
-                  <span class="standard-item-author">Ann</span>
-                  <span class="standard-item-channel">Inquiry handling</span>
-                  <div class="standard-item-dropdown dropdown">
-                    <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">Reply</a>
-                      <a href="#" class="dropdown-item">Add to Improvements</a>
-                      <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                      <a href="#" class="dropdown-item">Pin it</a>
-                    </div>
-                  </div>
-                  <p class="standard-item-text">How many inquiries last week?</p>
-                </div>
-              </div>
-            </div>
-            <div class="standard-form">
-              <form>
-                <div class="form-group">
-                  <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Type message">
-                    <span class="input-group-btn">
-                      <button class="btn btn-secondary">
-                        <i class="fa fa-paperclip"></i>
-                      </button>
-                    </span>
-                  </div>
-                </div>
-              </form>
-            </div>
+        		</div>
       		</div>
     		</div>
         <div class="standard-sidebar col-sm-2 hidden-sm-down">
@@ -556,7 +562,7 @@
       				Save
       			</button>
           </div>
-          <h4 class="card-title">Risk statement</h4>
+          <h4 class="card-title">Standard</h4>
         </div>
         <form>
           <div class="card-block">
@@ -610,7 +616,6 @@
                 <input class="form-control standard-edit-text" value="" placeholder="Description (optional)"/>
               </div>
             </div>
-            <hr>
 
             <div class="form-group form-group-flex">
               <div class="btn-group" data-toggle="buttons">
@@ -628,13 +633,13 @@
             <div class="form-group form-group-flex">
               <div class="btn-group" data-toggle="buttons">
                 <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Link
+                  <input type="radio" name="options" id="option1" autocomplete="off" checked> File link
                 </label>
                 <label class="btn btn-secondary">
                   <input type="radio" name="options" id="option2" autocomplete="off"> Attachment
                 </label>
                 <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option1" autocomplete="off"> None
+                  <input type="radio" name="options" id="option1" autocomplete="off"> Text
                 </label>
               </div>
               <div class="form-group-flex-flex margin-left">
@@ -642,6 +647,7 @@
               </div>
             </div>
           </div>
+          <!--
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">         
             <h4 class="card-title pull-xs-left">Text</h4>
             <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
@@ -649,11 +655,12 @@
           <div class="card-block-collapse collapse" id="notes">
             <div ng-include="'includes/subcards-edit/notes.html'"></div>
           </div>
+          -->
           <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Non-conformities</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
+              <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="nonconformities">
@@ -663,7 +670,7 @@
             <h4 class="card-title pull-xs-left">Corrective actions</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
+              <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="corrective-actions">
@@ -673,7 +680,7 @@
             <h4 class="card-title pull-xs-left">Preventative actions</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
+              <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="preventative-actions">
@@ -683,41 +690,34 @@
             <h4 class="card-title pull-xs-left">Suggestions</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
+              <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="suggestions">
             <div ng-include="'includes/subcards-edit/suggestions.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons-learned" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Lessons learned</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
+              <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="lessons-learned">
-            <div ng-include="'includes/subcards-edit/lessons-learned.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Additional files</h4>
-            <h4 class="card-title count pull-xs-right">
-              <span class="text-muted">2</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="files">
-            <div ng-include="'includes/subcards-edit/files.html'"></div>
-          </div>          
+          <div class="card-block-collapse collapse" id="lessons">
+            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
+          </div>         
           <div class="card-block text-xs-center">
             <button type="button" class="btn btn-secondary">Delete</button>
           </div>
         </form>
+        <div ng-include="'includes/card-footer-changelog.html'"></div>
       </div>
     </div>
   </div>
 
 
 	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>

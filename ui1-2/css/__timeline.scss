@@ -1,0 +1,95 @@
+.timeline {
+  background: lighten($blue-color,20%);
+  min-height: 70px;
+  position: relative;
+  
+  &-items {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0; 
+    z-index: 2;
+  }
+  
+  &-item {
+    position: absolute;
+    top: 20px;
+    font-size: 100%;
+    cursor: pointer;
+  }
+  
+  &-scale {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    
+    @include flexbox;
+    z-index: 1;
+    
+    &-period {
+      @include flex(1);
+      text-align: center;
+      vertical-align: baseline;
+      position: relative;
+      &:not(:first-child) {
+        border-left: 1px solid rgba(255,255,255,0.4);
+      }
+      
+      &-label {
+        position: absolute;
+        bottom: 5px;
+        left: 0;
+        right: 0;
+        color: lighten($blue-color,50%);
+        text-transform: uppercase;
+      }
+    }
+  }
+  
+  &-mini {
+    background: lighten($blue-color,55%);
+    border-top: 1px solid lighten($blue-color,45%);
+    border-bottom: 1px solid lighten($blue-color,45%);
+    @include transition(all .3s ease);
+    cursor: pointer;
+    padding: .75rem 1.25rem;
+    min-height: 44px;
+
+    &:hover {
+      background: lighten($blue-color,50%);
+      border-color: lighten($blue-color,40%);
+    }
+
+    &-summary {
+      margin: 0;
+      position: relative;
+      z-index: 2;
+      font-family: $font-semibold;
+  
+      .label {
+        font-size: 100%;
+        margin-right: 3px;
+        
+        &:not(:first-child) {
+          margin-left: 10px;
+        }
+      }
+    }
+    
+    &-item {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      width: 1px;
+      z-index: 1;
+      background-color: lighten($blue-color,45%);
+    }
+    
+    &:hover &-item {
+      background-color: lighten($blue-color,40%);   
+    }    
+  }
+}

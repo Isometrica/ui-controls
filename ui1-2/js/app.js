@@ -1,4 +1,4 @@
-//var app = angular.module('isometrica', []);
+var app = angular.module('plio', []);
 
 $( document ).ready(function() {
 

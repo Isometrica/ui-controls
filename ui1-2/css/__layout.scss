@@ -12,10 +12,12 @@ body {
   font-family: $font-regular;
 }
 
+/*
 ::-webkit-scrollbar {
   width: 0px;
   background: transparent;
 }
+*/
 
 .container {
   max-width: none;
@@ -59,9 +61,10 @@ body {
     }
   }
   
-  &-detail {
+  &-cards {
     height: 100%;
     padding-top: 30px;
+    @include scroll;
   }
 }
 
