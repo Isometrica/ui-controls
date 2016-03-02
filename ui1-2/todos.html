@@ -22,75 +22,22 @@
   <div class="navbar navbar-standard">
     <span class="navbar-brand dropdown">
       <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-        To dos
+        My to dos
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item" href="index.html">Standards</a>
-        <a class="dropdown-item active" href="todos.html">To dos</a>
-        <a class="dropdown-item" href="users.html">Users</a>
+        <a class="dropdown-item active" href="#">My to dos</a>
+        <a class="dropdown-item" href="#">Team to dos</a>
       </div>   
     </span>
 
     <!-- STANDARD NAVIGATION -->
     <ul class="nav navbar-nav pull-xs-left">
-      <li class="nav-item dropdown dropdown-company">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        	<span class="hidden-xs-down">FE International Ltd</span>
-        	<i class="fa fa-building hidden-sm-up"></i>
-        </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item active" href="#">FE International Ltd</a>
-          <a class="dropdown-item" href="#">Ortus Technology</a>
-          <a class="dropdown-item" href="#">Teamstudio</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Org settings</a>
-        </div> 
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-arrow-left"></i>
+        </a> 
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item hidden-sm-down">
-        <a class="nav-link standard-link" href="#">
-          <i class="fa fa-comment"></i>
-          <span class="label label-info">4</span>
-        </a>  
-      </li>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        	<i class="fa fa-circle text-success label-status"></i>
-        	<span class="hidden-xs-down">Stephen</span> 
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item active" href="#">
-            <i class="fa fa-circle text-success label-status"></i>
-            Online
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-warning label-status"></i>
-            Away
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-danger label-status"></i>
-            Offline
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">
-            User preferences
-          </a>
-          <a class="dropdown-item" href="#">
-            User directory
-          </a>
-          <a class="dropdown-item" href="#">
-            Invite users
-          </a>
-          <a class="dropdown-item" href="#">
-            Account
-          </a>
-          <a class="dropdown-item" href="#">
-            Logout
-          </a>
-        </div> 
-      </li>
-    </ul>      
   </div>
 
   <div class="content">
@@ -107,128 +54,42 @@
     						<span>Add</span>
     					</a>
     				</form>
-    				<div class="list-group list-group-accordion" id="standardsAccordion">
-      				<a class="list-group-item list-group-subheading" href="#">
-    						<h4 class="list-group-item-heading">FEI standards book</h4>
-    					</a>      				
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
-    						<h4 class="list-group-item-heading">1. Client feedback</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-2">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading">2. Client onboarding</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse in" id="collapse-3">
-        				<div class="list-group">
-      						<a class="list-group-item" href="#">
-        						<span class="label label-default label-standard">REG</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.1. Dolor est compendum</h4>
-                      <p class="list-group-item-text">Regulation</p>
-                    </div>
-      						</a>  
-          				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3-1">
-        						<h4 class="list-group-item-heading">2.2 Subcategory</h4>
-        					</a> 
-        					<div class="list-group-collapse collapse in" id="collapse-3-1"> 
-          				  <a class="list-group-item active" href="#">
-          						<span class="label label-danger label-standard">SOP</span>
-                      <div class="list-group-item-content">
-          							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
-                        <p class="list-group-item-text">Procedure</p>
-                      </div>
-        						</a>
-        						<div class="list-group-collapse collapse in">
-          						<a class="list-group-item" href="#">
-            						<span class="label label-success label-standard">SPEC</span>
-                        <div class="list-group-item-content">
-            							<h4 class="list-group-item-heading">2.2.1.1 Lead handling</h4>
-                          <p class="list-group-item-text">Specification</p>
-                        </div>
-          						</a>
-          						<div class="list-group-collapse collapse in">
-            						<a class="list-group-item" href="#">
-              						<span class="label label-warning label-standard">POL</span>
-                          <div class="list-group-item-content">
-              							<h4 class="list-group-item-heading">2.2.1.1.1 Due diligence</h4>
-                            <p class="list-group-item-text">Policy</p>
-                          </div>
-            						</a>
-          						</div>
-        						</div>
-        					</div>
-      						<a class="list-group-item" href="#">
-        						<span class="label label-default label-standard">REG</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.3 Lorem ipsum</h4>
-                      <p class="list-group-item-text">Regulation</p>
-                    </div>
-      						</a>      					
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
-    						<h4 class="list-group-item-heading">3. Client deal execution</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-4">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
-    						<h4 class="list-group-item-heading">4. FEI policies</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-5">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-6">
-    						<h4 class="list-group-item-heading">Plio how to</h4>
-    					</a>     
-    					<div class="list-group-collapse collapse" id="collapse-6">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Lorem</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-      						<a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Ipsum</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-      						<a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Dolor</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div> 				
+    				<div class="list-group">
+    				  <a class="list-group-item active" href="#">
+    						<span class="label label-warning label-status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">CA156 <small class="pull-right text-muted">11 Mar 2016</small></h4>
+                  <p class="list-group-item-text">Train new joiners</p>
+                </div>
+  						</a>
+    				  <a class="list-group-item" href="#">
+    						<span class="label label-warning label-status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">CA157 <small class="pull-right text-muted">12 Mar 2016</small></h4>
+                  <p class="list-group-item-text">Speed up registrations</p>
+                </div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<span class="label label-danger label-status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">PA33 <small class="pull-right text-muted">12 Apr 2016</small></h4>
+                  <p class="list-group-item-text">Restructure software</p>
+                </div>
+  						</a>        						
+  						<a class="list-group-item" href="#">
+    						<span class="label label-default label-status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">NC101 <small class="pull-right text-muted">17 Apr 2016</small></h4>
+                  <p class="list-group-item-text">Awaiting root cause analysis</p>
+                </div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<span class="label label-default label-status-indicator"></span>
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">CA173 <small class="pull-right text-muted">17 Apr 2016</small></h4>
+                  <p class="list-group-item-text">Inform company of changes</p>
+                </div>
+  						</a>
     				</div>
           </div>
     		</div>
@@ -490,6 +351,7 @@
           </div> 
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
           </div>
           <div class="card-block-collapse collapse" id="notes">
             <div ng-include="'includes/subcards-edit/notes.html'"></div>
