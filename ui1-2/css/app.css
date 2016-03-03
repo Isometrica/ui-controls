@@ -78,9 +78,6 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     height: 100%; }
-    .fullwidth .content-list {
-      padding: 0;
-      border-right: 1px solid #ccc; }
     @media (max-width: 767px) {
       .content-list {
         width: 100%;
@@ -553,6 +550,11 @@ input:focus ~ .clear-field {
 .form-group-buttons .btn-group .btn {
   margin-right: 0; }
 
+.fullwidth .content-list {
+  padding: 0;
+  border-right: 1px solid #ccc;
+  background: #eaeaea; }
+
 .fullwidth .content-list .card {
   border: 0;
   border-radius: 0;
@@ -631,6 +633,8 @@ input:focus ~ .clear-field {
 
 .list-group-subheading {
   background: #f5f5f5; }
+  .fullwidth .list-group-subheading {
+    background: #eee; }
   .list-group-subheading .list-group-item-heading {
     margin: 0;
     font-size: 16px;

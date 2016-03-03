@@ -1,9 +1,9 @@
-$fullwidth-sidebar-bg: #666;
-
 .content-list {
   
   .fullwidth & {
-    //background: $fullwidth-sidebar-bg;  
+    padding: 0;
+    border-right: 1px solid #ccc;
+    background: #eaeaea;
   }
   
   .card {
@@ -138,6 +138,10 @@ $fullwidth-sidebar-bg: #666;
   
   .list-group-subheading {
     background: #f5f5f5;
+    
+    .fullwidth & {
+      background: #eee;
+    }
   
     .list-group-item-heading {
       margin: 0;
