@@ -552,8 +552,7 @@ input:focus ~ .clear-field {
 
 .fullwidth .content-list {
   padding: 0;
-  border-right: 1px solid #ccc;
-  background: #eaeaea; }
+  border-right: 1px solid #ccc; }
 
 .fullwidth .content-list .card {
   border: 0;
@@ -633,8 +632,6 @@ input:focus ~ .clear-field {
 
 .list-group-subheading {
   background: #f5f5f5; }
-  .fullwidth .list-group-subheading {
-    background: #eee; }
   .list-group-subheading .list-group-item-heading {
     margin: 0;
     font-size: 16px;
