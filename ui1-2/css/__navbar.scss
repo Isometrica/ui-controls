@@ -20,11 +20,13 @@ $navbar-height-overview: 80px;
     font-weight: normal;
     font-size: 18px;
     
-    .dropdown-toggle {
+    a {
       color: white;
       text-decoration: none;
       display: inline-block;
     }
+    
+
     
     .dropdown-menu {
       font-family: $font-regular;
