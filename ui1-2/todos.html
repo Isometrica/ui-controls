@@ -268,76 +268,71 @@
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">Target completion date</label>
     	        <div class="col-sm-8 col-xs-12">
-    		        <input type="text" class="form-control" value="20 Jun 2015" placeholder="Target completion date">
+    		        <input type="text" class="form-control" value="20 Jun 2015" placeholder="Target completion date" disabled="">
       			    <button type="button" class="btn btn-link clear-field">
     		          <i class="fa fa-times-circle"></i>
     		        </button>
     	        </div>
             </div>
-            
-            <div class="form-group row">
-    	        <label class="form-control-label col-sm-4 col-xs-12">Completed by</label>
-    	        <div class="col-sm-8 col-xs-12">
-                <div class="input-group-typeahead">
-                  <input type="text" class="form-control" value="Mike Smith" placeholder="Completed by" data-toggle="dropdown"/>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Jack Herbert</a>
-                    <a class="dropdown-item" href="#">Steve Ives</a>
-                    <a class="dropdown-item" href="#">Mark Leusink</a>
-                    <a class="dropdown-item" href="#">Steve Saunders</a>
-                    <a class="dropdown-item active" href="#">Mike Smith</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
-                  </div>
-                </div>
-    	        </div>
-            </div> 
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">Completed date</label>
     	        <div class="col-sm-8 col-xs-12">
-    		        <input type="text" class="form-control" value="20 Jun 2015" placeholder="Completed date">
+        		    <input type="text" class="form-control" value="20 Jun 2015" placeholder="Completed date" disabled="">
       			    <button type="button" class="btn btn-link clear-field">
     		          <i class="fa fa-times-circle"></i>
     		        </button>
     	        </div>
             </div>
-            <hr>     
             <div class="form-group row">
-    	        <label class="form-control-label col-sm-4 col-xs-12">Target verification date</label>
+    	        <label class="form-control-label col-sm-4 col-xs-12">Completed by</label>
     	        <div class="col-sm-8 col-xs-12">
-    		        <input type="text" class="form-control" value="27 Jun 2015" placeholder="Target verification date">
+      	        <div class="form-group-flex">
+                  <div class="dropdown form-group-flex-flex">
+                    <input type="text" class="form-control" value="Mike Smith" placeholder="Completed by" data-toggle="dropdown" disabled=""/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item" href="#">Jack Herbert</a>
+                      <a class="dropdown-item" href="#">Steve Ives</a>
+                      <a class="dropdown-item" href="#">Mark Leusink</a>
+                      <a class="dropdown-item" href="#">Steve Saunders</a>
+                      <a class="dropdown-item active" href="#">Mike Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
+                  </div>
+      	        </div>
+    	        </div>
+            </div>
+             
+            <hr>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Target verified date</label>
+    	        <div class="col-sm-8 col-xs-12">
+    		        <input type="text" class="form-control" value="20 Jun 2015" placeholder="Target verified date">
       			    <button type="button" class="btn btn-link clear-field">
     		          <i class="fa fa-times-circle"></i>
     		        </button>
     	        </div>
             </div>
-            
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">To be verified by</label>
     	        <div class="col-sm-8 col-xs-12">
-                <div class="input-group-typeahead">
-                  <input type="text" class="form-control" value="Mike Smith" placeholder="To be verified by" data-toggle="dropdown"/>
-                  <div class="dropdown-menu dropdown-menu-right">
-                    <a class="dropdown-item" href="#">Jack Herbert</a>
-                    <a class="dropdown-item" href="#">Steve Ives</a>
-                    <a class="dropdown-item" href="#">Mark Leusink</a>
-                    <a class="dropdown-item" href="#">Steve Saunders</a>
-                    <a class="dropdown-item active" href="#">Mike Smith</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+      	        <div class="form-group-flex">
+                  <div class="dropdown form-group-flex-flex">
+                    <input type="text" class="form-control" value="Mike Smith" placeholder="To be verified by" data-toggle="dropdown"/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item" href="#">Jack Herbert</a>
+                      <a class="dropdown-item" href="#">Steve Ives</a>
+                      <a class="dropdown-item" href="#">Mark Leusink</a>
+                      <a class="dropdown-item" href="#">Steve Saunders</a>
+                      <a class="dropdown-item active" href="#">Mike Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
                   </div>
-                </div>
+                  <button type="button" class="btn btn-success margin-left">Verify</button>
+      	        </div>
     	        </div>
-            </div>   
-            <div class="form-group row">
-    	        <label class="form-control-label col-sm-4 col-xs-12">Verified date</label>
-    	        <div class="col-sm-8 col-xs-12">
-    		        <input type="text" class="form-control" placeholder="Verified date">
-      			    <button type="button" class="btn btn-link clear-field">
-    		          <i class="fa fa-times-circle"></i>
-    		        </button>
-    	        </div>
-            </div>          
+            </div> 
                    
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
