@@ -63,8 +63,6 @@
     }
   }
   
-
-
   &-content {
     //border-top: 1px solid #ddd;
     //border-bottom: 1px solid #ddd;
@@ -227,6 +225,10 @@
     @include scroll;
     height: 100%; 
     padding-top: 30px;
+    
+    .fullwidth & {
+      padding: 30px 30px 0 0;  
+    }
     
     &-heading {
       @include clearfix;

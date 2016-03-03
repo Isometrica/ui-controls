@@ -36,6 +36,8 @@ body {
   @media (min-width: 1300px) {
     .container {
       max-width: 1300px; } }
+  .fullwidth .container {
+    max-width: none; }
 
 .content {
   overflow: hidden;
@@ -76,6 +78,9 @@ body {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     height: 100%; }
+    .fullwidth .content-list {
+      padding: 0;
+      border-right: 1px solid #ccc; }
     @media (max-width: 767px) {
       .content-list {
         width: 100%;
@@ -86,6 +91,8 @@ body {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
+    .fullwidth .content-cards {
+      padding: 30px 30px 0; }
 
 strong {
   font-weight: normal;
@@ -546,6 +553,11 @@ input:focus ~ .clear-field {
 .form-group-buttons .btn-group .btn {
   margin-right: 0; }
 
+.fullwidth .content-list .card {
+  border: 0;
+  border-radius: 0;
+  background: transparent; }
+
 .content-list .search-form {
   padding: .75rem;
   display: -webkit-box;
@@ -599,6 +611,10 @@ input:focus ~ .clear-field {
     font-weight: normal; }
   .content-list .list-group-item-text {
     color: #777; }
+  .content-list .list-group-item.active {
+    background: #0078d7; }
+    .content-list .list-group-item.active .list-group-item-text {
+      color: #a4d7ff; }
 
 .list-group-item {
   padding-left: 1.25rem !important; }
@@ -819,6 +835,12 @@ input:focus ~ .clear-field {
       border-color: #ddd; }
       .card .table th:first-child, .card .table td:first-child {
         padding-left: 17px; }
+  .card .alert {
+    border-radius: 0;
+    border-width: 1px 0;
+    margin: -1px 0 0; }
+    .card .alert .btn {
+      margin: 4px -5px 4px 10px; }
 
 .card-changelog-toggle {
   cursor: pointer;
@@ -1183,6 +1205,8 @@ input:focus ~ .clear-field {
     -webkit-overflow-scrolling: touch;
     height: 100%;
     padding-top: 30px; }
+    .fullwidth .standard-sidebar {
+      padding: 30px 30px 0 0; }
     .standard-sidebar-heading:after {
       content: "";
       display: table;

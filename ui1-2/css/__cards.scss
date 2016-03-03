@@ -68,6 +68,16 @@
     }
   }
   
+  .alert {
+    border-radius: 0;
+    border-width: 1px 0;
+    margin: -1px 0 0;
+    
+    .btn {
+      margin: 4px -5px 4px 10px;
+    }
+  }
+  
 
 }
 

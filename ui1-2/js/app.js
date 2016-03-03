@@ -16,9 +16,9 @@ $( document ).ready(function() {
 		$('body').addClass('desktop');
 	}
 	
-	$("#standardsAccordion .list-group-item").click(function() {
+	$(".content-list .list-group-item").click(function() {
   	// Remove existing active classes
-  	$("#standardsAccordion .list-group-item").removeClass("active");
+  	$(".content-list .list-group-item").removeClass("active");
   	
   	$(this).addClass("active");
   });
