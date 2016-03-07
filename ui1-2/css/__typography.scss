@@ -9,3 +9,9 @@
     color: $red-color !important;
   }
 }
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}

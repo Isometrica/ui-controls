@@ -82,6 +82,10 @@
 
 .btn {
   i {
+    &.margin-right {
+      margin-right: 5px;
+    }
+    
     &.ms-Icon {
       font-size: 19px;
       position: relative;

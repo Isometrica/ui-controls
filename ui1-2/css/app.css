@@ -113,6 +113,9 @@ strong {
 .text-danger {
   color: #E81123 !important; }
 
+a:hover {
+  text-decoration: none; }
+
 /*
   ELEMENTS
 */
@@ -186,6 +189,9 @@ strong {
 /*
   BUTTON ICONS
 */
+.btn i.margin-right {
+  margin-right: 5px; }
+
 .btn i.ms-Icon {
   font-size: 19px;
   position: relative;

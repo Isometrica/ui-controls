@@ -263,7 +263,18 @@
                 </div>
                 <div class="list-group-item">
                   <p class="list-group-item-text">File(s)</p>
-                  <h4 class="list-group-item-heading">Katrina Ives</h4>
+                  <h4 class="list-group-item-heading">
+                    <a href="#">
+                      <i class="fa fa-file-word-o"></i>
+                      NC101 Root Cause Analysis.docx 
+                    </a>
+                  </h4>
+                  <h4 class="list-group-item-heading">
+                    <a href="#">
+                      <i class="fa fa-file-excel-o"></i>
+                       NC101.xls  
+                    </a>
+                  </h4>
                 </div>
               </div>
               <div class="card-block card-subheading">
@@ -324,17 +335,17 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Title</label>
               <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control" placeholder="Title">
+                <input type="text" class="form-control" placeholder="Title" value="Deal valuation not carried out">
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Link to standard</label>
               <div class="col-sm-8 col-xs-12">
                 <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Link to standard"/>
+                  <input class="form-control" data-toggle="dropdown" placeholder="Link to standard" value="SOP - Client onboarding"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">1. Client feedback</a>
-                    <a class="dropdown-item" href="#">2. Client onboarding</a>
+                    <a class="dropdown-item active" href="#">2. Client onboarding</a>
                     <a class="dropdown-item indent" href="#">2.2 Subcategory</a>
                     <a class="dropdown-item" href="#">3. Client deal execution</a>
                     <a class="dropdown-item" href="#">4. FEI policies</a>
@@ -345,25 +356,25 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Description</label>
               <div class="col-sm-8 col-xs-12">
-                <textarea class="form-control" rows="3" placeholder="Description"></textarea>
+                <textarea class="form-control" rows="3" placeholder="Description">Deal valuations not carried out with new client resulting in problems agreing valuations later</textarea>
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Created date</label>
               <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control" placeholder="Created date">
+                <input type="text" class="form-control" placeholder="Created date" value="10 Jan 2016">
               </div>
             </div>
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Created by</label>
               <div class="col-sm-8 col-xs-12">
                 <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Created by"/>
+                  <input class="form-control" data-toggle="dropdown" placeholder="Created by" value="Steve Saunders"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">Jack Herbert</a>
                     <a class="dropdown-item" href="#">Steve Ives</a>
                     <a class="dropdown-item" href="#">Mark Leusink</a>
-                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
                     <a class="dropdown-item" href="#">Mike Smith</a>
                     <div class="dropdown-divider"></div>
                     <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
@@ -377,7 +388,7 @@
                 <select class="form-control c-select">
                   <option></option>
                   <option>Minor non-conformity</option>
-                  <option>Major non-conformity</option>
+                  <option selected="">Major non-conformity</option>
                   <option>Critical non-conformity</option>
                 </select>
               </div>
@@ -394,7 +405,7 @@
                       <a class="dropdown-item" href="#">USD</a>
                     </div>
                   </div>
-                  <input type="text" class="form-control" placeholder="Approx cost per occurrence"/>
+                  <input type="text" class="form-control" placeholder="Approx cost per occurrence" value="25,000"/>
                 </div>
               </div>
             </div>
@@ -408,16 +419,17 @@
           <div class="card-block-collapse collapse" id="root-cause-analysis">
             <div class="card-block">
               <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Done by</label>
+                <label class="form-control-label col-sm-4 col-xs-12">Who will do it</label>
                 <div class="col-sm-8 col-xs-12">
                   <div class="dropdown">
-                    <input class="form-control" data-toggle="dropdown" placeholder="Done by" value="Mike Smith"/>
+                    <input class="form-control" data-toggle="dropdown" placeholder="Who will do it" value="Katrina Ives"/>
                     <div class="dropdown-menu dropdown-menu-full">
                       <a class="dropdown-item" href="#">Jack Herbert</a>
+                      <a class="dropdown-item active" href="#">Katrina Ives</a>
                       <a class="dropdown-item" href="#">Steve Ives</a>
                       <a class="dropdown-item" href="#">Mark Leusink</a>
                       <a class="dropdown-item" href="#">Steve Saunders</a>
-                      <a class="dropdown-item active" href="#">Mike Smith</a>
+                      <a class="dropdown-item" href="#">Mike Smith</a>
                       <div class="dropdown-divider"></div>
                       <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
                     </div>
@@ -427,13 +439,13 @@
               <div class="form-group row">
                 <label class="form-control-label col-sm-4 col-xs-12">Target date</label>
                 <div class="col-sm-8 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Target date" value="16 Jan 2016">
+                  <input type="text" class="form-control" placeholder="Target date" value="10 Mar 2016">
                 </div>
               </div>
               <div class="form-group row">
                 <label class="form-control-label col-sm-4 col-xs-12">Completed date</label>
                 <div class="col-sm-8 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Completed date" value="16 Jan 2016">
+                  <input type="text" class="form-control" placeholder="Completed date" value="10 Mar 2016">
                 </div>
               </div>   
               <div class="form-group row">
@@ -441,7 +453,7 @@
                 <div class="col-sm-8 col-xs-12">
                   <div class="btn-group">
                     <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-file-o fa-lg"></i>
+                      <i class="fa fa-file-word-o fa-lg margin-right"></i>
                       NC101 Root Cause Analysis.docx
                     </button>
                     <button type="button" class="btn btn-secondary">
@@ -450,7 +462,7 @@
                   </div>
                   <div class="btn-group">
                     <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-file-o fa-lg"></i>
+                      <i class="fa fa-file-excel-o fa-lg margin-right"></i>
                       NC101.xls
                     </button>
                     <button type="button" class="btn btn-secondary">
