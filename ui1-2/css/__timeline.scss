@@ -99,3 +99,42 @@ $timeline-border-color: lighten($blue-color,30%);
     }
   }
 }
+
+.carousel-timeline {
+  .carousel-control {
+    background: transparent;
+    @include transition(all .3s ease);
+    width: 50px;
+    
+    &.left {
+      @include gradient-horizontal(rgba(0,0,0,.1), transparent);
+    }
+    
+    &.right {
+      @include gradient-horizontal(transparent, rgba(0,0,0,.1));
+    }
+    
+    i {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      margin-top: -10px;
+      line-height: 20px;
+      font-size: 24px;
+      //opacity: 0;
+      text-shadow: none;
+      @include transition(all .3s ease);
+    }
+    
+    &:hover {
+      &.left {
+        @include gradient-horizontal(rgba(0,0,0,.2), transparent);
+      }
+
+      i {
+        opacity: 1;
+      }
+    }
+  }
+}

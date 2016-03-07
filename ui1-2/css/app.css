@@ -1030,6 +1030,47 @@ input:focus ~ .clear-field {
       .timeline-mini:hover-item {
         background-color: #a4d7ff; }
 
+.carousel-timeline .carousel-control {
+  background: transparent;
+  -moz-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+  width: 50px; }
+  .carousel-timeline .carousel-control.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.1) 0%, transparent 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A000000', endColorstr='#00000000', GradientType=1); }
+  .carousel-timeline .carousel-control.right {
+    background-image: -webkit-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: -o-linear-gradient(left, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+    background-image: linear-gradient(to right, transparent 0%, rgba(0, 0, 0, 0.1) 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#00000000', endColorstr='#1A000000', GradientType=1); }
+  .carousel-timeline .carousel-control i {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 50%;
+    margin-top: -10px;
+    line-height: 20px;
+    font-size: 24px;
+    text-shadow: none;
+    -moz-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+  .carousel-timeline .carousel-control:hover.left {
+    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.2) 0%, transparent 100%);
+    background-repeat: repeat-x;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#33000000', endColorstr='#00000000', GradientType=1); }
+  .carousel-timeline .carousel-control:hover i {
+    opacity: 1; }
+
 /* 
   SCREENS
 */
