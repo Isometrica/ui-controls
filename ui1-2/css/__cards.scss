@@ -67,69 +67,18 @@
       }
     }
   }
-  
-  .alert {
-    border-radius: 0;
-    border-width: 1px 0;
-    margin: -1px 0 0;
-    
-    .btn {
-      margin: 4px -5px 4px 10px;
-    }
-  }
-  
-
 }
 
-.card-changelog {
-  &-toggle {
-    cursor: pointer;
-    border-top: 0;
-    @include flexbox;
-    font-size: 12px;
-    line-height: 22px;
-    color: #777;
-    position: relative;
-    padding-right: 40px;
-    
-    &:after {
-      content: '\e088';
-      font-family: 'Office365Icons';
-      position: absolute;
-      right: 15px;
-      top: 50%;
-      font-size: 24px;
-      line-height: 1;
-      margin-top: -12px;
-      color: #aaa;
-      @include transition(all .3s ease);
-    }
-    
-    &.collapsed:after {
-      @include rotate(180);
-    }
-    
-    .row {
-      @include flex(1);
-    }      
-  }
 
-  .table {
-    margin: 0;
-    font-size: 12px;
-    
-    th, td {
-      border-color: #ddd;
-      
-      &:first-child {
-        padding-left: 1.25rem;  
-      }
-    }
-  }
-}
 
 
 .content-cards {
+  .alert {
+    margin: 0;
+    border-radius: 0;
+    border-width: 0 0 1px;
+  }
+  
   .card {    
     &-subheading {
       padding-bottom: 0;
@@ -185,6 +134,54 @@
       
       th {
         border-top: 0;
+      }
+    }
+  }
+}
+
+
+.card-changelog {
+  &-toggle {
+    cursor: pointer;
+    border-top: 0;
+    @include flexbox;
+    font-size: 12px;
+    line-height: 22px;
+    color: #777;
+    position: relative;
+    padding-right: 40px;
+    
+    &:after {
+      content: '\e088';
+      font-family: 'Office365Icons';
+      position: absolute;
+      right: 15px;
+      top: 50%;
+      font-size: 24px;
+      line-height: 1;
+      margin-top: -12px;
+      color: #aaa;
+      @include transition(all .3s ease);
+    }
+    
+    &.collapsed:after {
+      @include rotate(180);
+    }
+    
+    .row {
+      @include flex(1);
+    }      
+  }
+
+  .table {
+    margin: 0;
+    font-size: 12px;
+    
+    th, td {
+      border-color: #ddd;
+      
+      &:first-child {
+        padding-left: 1.25rem;  
       }
     }
   }

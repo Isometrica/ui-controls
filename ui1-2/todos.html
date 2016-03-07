@@ -43,7 +43,7 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="content-list col-sm-4">
+        <div class="content-list scroll col-sm-4">
           <div class="card">
     				<form class="search-form">
     		      <div class="form-group row">
@@ -93,95 +93,97 @@
     				</div>
           </div>
     		</div>
-    		<div class="content-cards col-sm-8 hidden-sm-down">
-  				<div class="card">
-  					<div class="card-block card-heading">
-  						<div class="card-heading-buttons pull-xs-right">
-  							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
-  								<i class="fa fa-pencil"></i>
-  								Edit
-  							</a>
-  						</div>
-  						<h3 class="card-title">
-    						CA156
-    						<span class="label text-warning margin-left">Completed, not verified</span>
-    				  </h3>
-  					</div>
-  					<div class="alert alert-danger" role="alert">
-              <button type="button" class="btn btn-success pull-right">Verify</button>
-              <strong>To do</strong>
-              <br>Corrective action to be verified by Katrina Ives by 11 Mar 2016.
-            </div>  
-            <div class="list-group">
-              <div class="list-group-item">
-                <p class="list-group-item-text">Title</p>
-                <h4 class="list-group-item-heading">Train new joiners</h4>
+    		<div class="content-cards scroll flexbox-column col-sm-8 hidden-sm-down">
+					<div class="alert alert-danger" role="alert">
+            <button type="button" class="btn btn-success pull-right">Verify</button>
+            <strong>To do</strong>
+            <br>Corrective action to be verified by Katrina Ives by 11 Mar 2016.
+          </div> 
+					<div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						CA156
+      						<span class="label text-warning margin-left">Completed, not verified</span>
+      				  </h3>
+    					</div> 
+              <div class="list-group">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Title</p>
+                  <h4 class="list-group-item-heading">Train new joiners</h4>
+                </div>
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Linked to</p>
+                  <h4 class="list-group-item-heading"><a href=""><strong>NC101</strong> Deal valuation not carried out</a></h4>
+                </div>
+  
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Owner</p>
+                      <h4 class="list-group-item-heading">Katrina Ives</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Status</p>
+                      <h4 class="list-group-item-heading text-warning">Completed, not verified</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Completed date</p>
+                      <h4 class="list-group-item-heading">16 Jan 2016</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Completed by</p>
+                      <h4 class="list-group-item-heading">Mike Smith</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Target verification date</p>
+                      <h4 class="list-group-item-heading">4 Mar 2016</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">To be verified by</p>
+                      <h4 class="list-group-item-heading">Steve Saunders</h4>
+                    </div>
+                  </div>
+                </div>
               </div>
-              <div class="list-group-item">
-                <p class="list-group-item-text">Linked to</p>
-                <h4 class="list-group-item-heading"><a href=""><strong>NC101</strong> Deal valuation not carried out</a></h4>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Users to notify</h4>
               </div>
-
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Owner</p>
-                    <h4 class="list-group-item-heading">Katrina Ives</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Status</p>
-                    <h4 class="list-group-item-heading text-warning">Completed, not verified</h4>
-                  </div>
-                </div>
+              <div ng-include="'includes/subcards-read/notify.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Notes</h4>
               </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Completed date</p>
-                    <h4 class="list-group-item-heading">16 Jan 2016</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Completed by</p>
-                    <h4 class="list-group-item-heading">Mike Smith</h4>
-                  </div>
-                </div>
+              <div ng-include="'includes/subcards-read/notes.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Files</h4>
               </div>
-              <div class="row">
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">Target verification date</p>
-                    <h4 class="list-group-item-heading">4 Mar 2016</h4>
-                  </div>
-                </div>
-                <div class="col-sm-6">
-                  <div class="list-group-item">
-                    <p class="list-group-item-text">To be verified by</p>
-                    <h4 class="list-group-item-heading">Steve Saunders</h4>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card-block card-subheading">
-              <h4 class="card-title">Users to notify</h4>
-            </div>
-            <div ng-include="'includes/subcards-read/notify.html'"></div>
-            <div class="card-block card-subheading">
-              <h4 class="card-title">Notes</h4>
-            </div>
-            <div ng-include="'includes/subcards-read/notes.html'"></div>
-            <div class="card-block card-subheading">
-              <h4 class="card-title">Files</h4>
-            </div>
-            <div ng-include="'includes/subcards-read/files.html'"></div>
-
-            
-            <!-- Changelog -->
-            <div ng-include="'includes/card-footer-changelog.html'"></div>    
-  				</div>
+              <div ng-include="'includes/subcards-read/files.html'"></div>
+  
+              
+              <!-- Changelog -->
+              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+    				</div>
+					</div>
     		</div>
       </div> 		
     </div>

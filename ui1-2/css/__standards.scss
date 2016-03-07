@@ -4,6 +4,9 @@
 
   &-top {
     overflow: hidden;
+    margin: 0;
+    border-radius: 0;
+    border-width: 0;
   }
   
   &-chat {
@@ -11,7 +14,7 @@
     overflow: hidden;
     @include flexbox();
     @include flex-direction(column);  
-    box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);  
+    //box-shadow: inset 0 1px 2px rgba(0,0,0,0.1);  
   }
 
   &-heading {
@@ -59,16 +62,13 @@
     &-text {
       font-size: 14px;
       margin: 0;
-      color: #777;
+      
     }
   }
   
   &-content {
-    //border-top: 1px solid #ddd;
-    //border-bottom: 1px solid #ddd;
-    @include scroll;
-    @include flex(1);
-    padding: .5rem 0;
+    //@include flex(1);
+    //padding: .5rem 0;
   }
 
   &-item {
@@ -101,6 +101,7 @@
     }
     &-start {
       border-top: 0;
+      padding-top: 1rem;
     }
     &-avatar {
       $avatar-size: 40px;
@@ -222,12 +223,13 @@
   }  
 
   &-sidebar {
-    @include scroll;
     height: 100%; 
-    padding-top: 30px;
-    
-    .fullwidth & {
-      padding: 30px 30px 0 0;  
+    padding: 0;
+    background: #e5e5e5;
+    border-left: 1px solid #ccc;
+      
+    &-inner {
+      padding: 1rem 1.25rem 0;
     }
     
     &-heading {
@@ -257,6 +259,10 @@
     &-subtitle {
       font-size: 18px;
       margin: 0 0 1rem;
+    }
+    
+    h3 {
+      margin: 0 0 1.25rem;
     }
     
     hr {
@@ -359,10 +365,10 @@
       font-size: 24px;
       line-height: 1.5;
       padding: 0;
-      border-bottom-color: rgba(255,255,255,0.4);
+      border-bottom-color: white;
       
       &:focus {
-        border-bottom-color: rgba(255,255,255,0.8);
+        border-bottom-color: white;
       }
       
       @include placeholder {

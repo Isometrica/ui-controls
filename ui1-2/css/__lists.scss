@@ -1,21 +1,11 @@
-$fullwidth-sidebar-bg: #666;
-
 .content-list {
-  
-  .fullwidth & {
-    //background: $fullwidth-sidebar-bg;  
-
-    padding: 0;
-    border-right: 1px solid #ccc;
-    //background: #eaeaea;
-  }
+  padding: 0;
+  border-right: 1px solid #ccc;
   
   .card {
-    .fullwidth & {
-      border: 0;
-      border-radius: 0; 
-      background: transparent; 
-    }
+    border: 0;
+    border-radius: 0; 
+    background: transparent; 
   }
   
   .search-form {
@@ -58,11 +48,6 @@ $fullwidth-sidebar-bg: #666;
       border-left: 0;
       border-right: 0;
       padding: .75rem 1rem;
-
-      .fullwidth & {
-        //background: transparent;
-        //border-color: #444;
-      }
                   
       img {
         height: 40px;
@@ -83,18 +68,10 @@ $fullwidth-sidebar-bg: #666;
         font-size: 18px;
         font-family: $font-semilight;
         font-weight: normal;
-        
-        .fullwidth & {
-          //color: white;
-        }
       }
       
       &-text {
         color: #777;
-        
-        .fullwidth & {
-          //color: lighten($fullwidth-sidebar-bg,40%);
-        }
       }
       
       &.active {
