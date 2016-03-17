@@ -574,6 +574,8 @@ input:focus ~ .clear-field {
       color: #777; }
     .content-list .list-group-item.active {
       background: #0078d7; }
+      .content-list .list-group-item.active .list-group-item-heading {
+        color: white !important; }
       .content-list .list-group-item.active .list-group-item-text {
         color: #a4d7ff !important; }
   .content-list .list-group-item {

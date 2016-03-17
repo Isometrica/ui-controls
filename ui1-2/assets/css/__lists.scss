@@ -82,6 +82,10 @@
       &.active {
         background: $blue-color;
         
+        .list-group-item-heading {
+          color: white !important;
+        }
+        
         .list-group-item-text {
           color: lighten($blue-color,40%) !important;
         }
