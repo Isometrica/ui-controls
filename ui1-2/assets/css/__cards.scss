@@ -73,6 +73,8 @@
 
 
 .content-cards {
+  @include flex(1);
+  
   .alert {
     margin: 0;
     border-radius: 0;

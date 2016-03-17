@@ -1,12 +1,12 @@
 $navbar-background: #444;
 $navbar-height-standard: 50px;
-$navbar-height-overview: 80px;
+$navbar-height-branded: 80px;
 
 .navbar {
-  padding-top: 0;
-  padding-bottom: 0;
   background: $navbar-background;
   border-radius: 0;
+  min-height: $navbar-height-standard;
+  padding: 0;
 
   .container {
     @media (max-width:1199px) {
@@ -14,21 +14,34 @@ $navbar-height-overview: 80px;
     }
   }
 
-  .navbar-brand { 
+  &-title {
+    line-height: $navbar-height-standard;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
     color: white;
     font-family: $font-semibold;
     font-weight: normal;
     font-size: 18px;
+    
+    .navbar-branded & {
+      line-height: $navbar-height-branded;
+    }
     
     > a {
       color: white;
       text-decoration: none;
       display: inline-block;
     }
-    
 
-    
     .dropdown-menu {
+      width: 240px;
+      left: 50%;
+      margin-left: -120px;
+      text-align: center;
       font-family: $font-regular;
     }
   }
@@ -41,10 +54,10 @@ $navbar-height-overview: 80px;
     .nav-link {
       position: relative;  
       color: rgba(255, 255, 255, .75); 
-      padding-left: 15px;
-      padding-right: 15px;
       overflow: hidden;
       font-size: 16px;
+      line-height: $navbar-height-standard;
+      padding: 0 15px;
       
       &:focus, &:hover {
         color: rgba(255, 255, 255, .9); 
@@ -90,111 +103,29 @@ $navbar-height-overview: 80px;
     }    
     
     &-item {
-      
-      
       @media (max-width: 767px) {
         text-align: center;  
       }
     }
-  }
-  
-  // STANDARD NAVBAR 
-  
-  &-standard {
-    min-height: $navbar-height-standard;
-    padding: 0;
     
-    .navbar-brand {
-      line-height: $navbar-height-standard;
-      padding: 0;
-      margin: 0;
-      position: absolute;
-      left: 0;
-      right: 0;
-      text-align: center;
-      
-      .dropdown-menu {
-        width: 240px;
-        left: 50%;
-        margin-left: -120px;
-        text-align: center;
-      }
-    }
-    
-    .nav {
-      //height: $navbar-height-standard;
-      
-      &-link {
-        line-height: $navbar-height-standard;
-        padding: 0;
-      }
-    }
-    
-  }
 
-  // OVERVIEW NAVBAR
-  /*
-  &-overview {
-    @media (max-width: 767px) {
-      padding: 0;
-    }
-    
-    .navbar-brand {
-      padding-top: 25px;
-      padding-bottom: 25px;
-      height: $navbar-height-overview;
-      color: rgba(255, 255, 255, .75); 
-      line-height: 0;
-      
-      @media (max-width: 767px) {
-        height: $navbar-height-standard;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin: 0;
-        position: absolute;
-        left: 0;
-        right: 0;
-        text-align: center;
-      }
+  }
   
+  &-branded {
+    min-height: $navbar-height-branded;
+    
+    .nav-link,
+    .navbar-title {
+      line-height: $navbar-height-branded !important;
+    }
+
+    .dropdown-company {
       img {
-        height: $navbar-height-overview - 50px;
-
-        @media (max-width: 767px) {
-          height: $navbar-height-standard - 30px;
-        }
-      }
-    }    
-    
-    .nav {
-      height: $navbar-height-overview;
-      @media (max-width: 767px) {
-        height: $navbar-height-standard;
-      }
-      
-      &-link {
-        padding-top: 0;
-        padding-bottom: 0;  
-        line-height: $navbar-height-overview;
-        
-        @media (max-width: 767px) {
-          line-height: $navbar-height-standard;
-        }
-        
-        .label {
-          position: absolute;
-          left: 50%;
-          top: 50%;
-          margin-top: -16px;
-          border-radius: 50%;
-          width: 16px;
-          height: 16px;
-          line-height: 16px;
-          padding: 0;
-          font-size: 11px;
-        }
+        height: $navbar-height-branded - 20px;
+        margin-top: 10px;
+        margin-right: 10px;
+        float: left;
       }
     }
-  }  
-  */
+  }
 }

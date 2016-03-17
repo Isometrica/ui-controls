@@ -19,20 +19,21 @@
 <body ng-app="plio">
 
   <!-- NAVBAR -->
-  <div class="navbar navbar-standard">
-    <span class="navbar-brand">
-      Standards
+  <div class="navbar navbar-branded">
+    <span class="navbar-title">
+      Processes &amp; policies
     </span>
 
     <!-- STANDARD NAVIGATION -->
     <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item dropdown dropdown-company">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        	<span class="hidden-xs-down">FE International Ltd</span>
+        	<span class="hidden-xs-down"><img src="assets/img/cliftonassetmanagement.png"></span>
         	<i class="fa fa-building hidden-sm-up"></i>
         </a>
         <div class="dropdown-menu">
-          <a class="dropdown-item active" href="#">FE International Ltd</a>
+          <a class="dropdown-item active" href="#">Clifton Asset Management Plc</a>
+          <a class="dropdown-item " href="#">FE International Ltd</a>
           <a class="dropdown-item" href="#">Ortus Technology</a>
           <a class="dropdown-item" href="#">Teamstudio</a>
           <div class="dropdown-divider"></div>
@@ -119,17 +120,19 @@
     		      <div class="form-group row">
     			      <input type="text" class="form-control" placeholder="Search...">
     		      </div>
-    					<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
     						<i class="fa fa-plus"></i>
     						<span>Add</span>
     					</a>
     				</form>
     				<div class="list-group list-group-accordion" id="standardsAccordion">
       				<a class="list-group-item list-group-subheading" href="#">
-    						<h4 class="list-group-item-heading"><strong>FEI standards book</strong></h4>
+    						<h4 class="list-group-item-heading pull-left"><strong>FEI standards book</strong></h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;123,456</h4>
     					</a>      				
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
-    						<h4 class="list-group-item-heading">1. Client feedback</h4>
+    						<h4 class="list-group-item-heading pull-left">1. Client feedback</h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4,567</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-2">
         				<div class="list-group">
@@ -137,13 +140,15 @@
         						<span class="label label-danger label-standard">SOP</span>
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading">2. Client onboarding</h4>
+    						<h4 class="list-group-item-heading pull-left">2. Client onboarding</h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4567</h4>
     					</a>      				
       				<div class="list-group-collapse collapse in" id="collapse-3">
         				<div class="list-group">
@@ -151,18 +156,25 @@
         						<span class="label label-default label-standard">REG</span>
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">2.1. Dolor est compendum</h4>
-                      <p class="list-group-item-text">Regulation</p>
+                      <p class="list-group-item-text pull-left">Regulation</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;12</p>
                     </div>
       						</a>  
-          				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3-1">
-        						<h4 class="list-group-item-heading">2.2 Subcategory</h4>
-        					</a> 
+      						<a class="list-group-item" href="#">
+        						<span class="label label-default label-standard">REG</span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">2.2. Lorem ipsum dolor</h4>
+                      <p class="list-group-item-text pull-left">Regulation</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;2,345</p>
+                    </div>
+      						</a>  
         					<div class="list-group-collapse collapse in" id="collapse-3-1"> 
           				  <a class="list-group-item active" href="#">
           						<span class="label label-danger label-standard">SOP</span>
                       <div class="list-group-item-content">
           							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
-                        <p class="list-group-item-text">Procedure</p>
+                        <p class="list-group-item-text pull-left">Procedure</p>
+                        <p class="list-group-item-text pull-right text-danger">&pound;1,234</p>
                       </div>
         						</a>
         						<div class="list-group-collapse collapse in">
@@ -170,7 +182,8 @@
             						<span class="label label-success label-standard">SPEC</span>
                         <div class="list-group-item-content">
             							<h4 class="list-group-item-heading">2.2.1.1 Lead handling</h4>
-                          <p class="list-group-item-text">Specification</p>
+                          <p class="list-group-item-text pull-left">Specification</p>
+                          <p class="list-group-item-text pull-right text-danger">&pound;90</p>
                         </div>
           						</a>
           						<div class="list-group-collapse collapse in">
@@ -178,7 +191,8 @@
               						<span class="label label-warning label-standard">POL</span>
                           <div class="list-group-item-content">
               							<h4 class="list-group-item-heading">2.2.1.1.1 Due diligence</h4>
-                            <p class="list-group-item-text">Policy</p>
+                            <p class="list-group-item-text pull-left">Policy</p>
+                            <p class="list-group-item-text pull-right text-danger">&pound;123</p>
                           </div>
             						</a>
           						</div>
@@ -188,13 +202,15 @@
         						<span class="label label-default label-standard">REG</span>
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">2.3 Lorem ipsum</h4>
-                      <p class="list-group-item-text">Regulation</p>
+                      <p class="list-group-item-text pull-left pull-left">Regulation</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;789</p>
                     </div>
       						</a>      					
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
-    						<h4 class="list-group-item-heading">3. Client deal execution</h4>
+    						<h4 class="list-group-item-heading pull-left">3. Client deal execution</h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;890</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-4">
         				<div class="list-group">
@@ -202,13 +218,15 @@
         						<span class="label label-danger label-standard">SOP</span>
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
-    						<h4 class="list-group-item-heading">4. FEI policies</h4>
+    						<h4 class="list-group-item-heading pull-left">4. FEI policies</h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;654</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-5">
         				<div class="list-group">
@@ -216,7 +234,8 @@
         						<span class="label label-danger label-standard">SOP</span>
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">Inquiry handling</h4>
-                      <p class="list-group-item-text">Procedure</p>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
@@ -263,13 +282,13 @@
                   <a href="#" class="dropdown-item">Go to linked document</a>
                 </div>            
               </div>
-              <div class="btn-group" onclick="window.location='todos.html';">
-                <a href="#" class="btn btn-secondary">6 actions</a>
-                <a href="#" class="btn btn-primary">2 for you</a>
+              <div class="btn-group">
+                <a href="todos.html" class="btn btn-secondary">6 actions</a>
+                <a href="todos.html" class="btn btn-primary">2 for you</a>
               </div>
               <p class="standard-heading-text">Mike Smith</p>
-              <p class="standard-heading-text text-muted">Issue 2</p>
-              <p class="standard-heading-text text-muted">Optional line of description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              <p class="standard-heading-text standard-heading-issue">Issue 1 <a href="#" class="standard-heading-issue-draft">Issue 2 draft</a></p>
+              <p class="standard-heading-text">Optional line of description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
         		</div>
       		</div>
       		<div class="chat">
@@ -504,36 +523,81 @@
           <div class="standard-sidebar-inner">
             <div class="standard-sidebar-heading">
               <h3 class="standard-sidebar-title">Info</h3>
-              <a href="#" class="btn btn-link">
+              <a href="continuous-improvement.html" class="btn btn-secondary standard-sidebar-more">
+                More
+              </a>
+              <a href="#" class="btn btn-link standard-sidebar-close">
                 <i class="fa fa-times-circle"></i>
               </a>
             </div>
+            <hr>
             <h4 class="standard-sidebar-subtitle">Business impact analysis</h4>
             <h3 class="text-danger">£15,500</h3>
+            <div class="standard-sizebar-chart">
+              <canvas id="biaTrendChart" width="400" height="200"></canvas>
+            </div>
+            <hr>
             <h4 class="standard-sidebar-subtitle">Root cause analysis</h4>
             <div class="card">
-              <div class="card-block">
-                <i class="fa fa-file-word-o"></i>
-                <h5 class="card-title">NC101</h5>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>NC101</strong> Deal valuation not carried out</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>NC102</strong> Awaiting root cause analysis</h5>
+                </a>
               </div>
             </div>
+            <hr>
+            <h4 class="standard-sidebar-subtitle">Non-conformities &amp; incidents</h4>
             <div class="card">
-              <div class="card-block">
-                <i class="fa fa-file-word-o"></i>
-                <h5 class="card-title">NC102</h5>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>NC101</strong> Deal valuation not carried out</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>NC102</strong> Awaiting root cause analysis</h5>
+                </a>
               </div>
             </div>
+            <hr>
+            <h4 class="standard-sidebar-subtitle">Corrective &amp; preventative actions</h4>
+            <div class="card">
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>CA156</strong> Train new joiners</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>CA157</strong> Speed up registrations</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>CA158</strong> Inform company of changes</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-word-o"></i>
+                  <h5 class="card-title"><strong>PA33</strong> Restructure software</h5>
+                </a>
+              </div>
+            </div>
+            <hr>
             <h4 class="standard-sidebar-subtitle">Other shared files</h4>
             <div class="card">
-              <div class="card-block">
-                <i class="fa fa-file-excel-o"></i>
-                <h5 class="card-title">Cost spreadsheets</h5>
-              </div>
-            </div>
-            <div class="card">
-              <div class="card-block">
-                <i class="fa fa-file-pdf-o"></i>
-                <h5 class="card-title">Process flowchart</h5>
+              <div class="list-group list-group-flush">
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-excel-o"></i>
+                  <h5 class="card-title">Cost spreadsheets</h5>
+                </a>
+                <a href="#" class="list-group-item">
+                  <i class="fa fa-file-pdf-o"></i>
+                  <h5 class="card-title">Process flowchart</h5>
+                </a>
               </div>
             </div>
           </div>
@@ -543,7 +607,7 @@
   </div>
 
 
-  <!-- Add Modal -->
+  <!-- Edit Modal -->
   <div class="modal fade" id="edit-modal">
     <div class="modal-dialog">
       <div class="card">
@@ -643,15 +707,6 @@
               </div>
             </div>
           </div>
-          <!--
-          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">         
-            <h4 class="card-title pull-xs-left">Text</h4>
-            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
-          </div>
-          <div class="card-block-collapse collapse" id="notes">
-            <div ng-include="'includes/subcards-edit/notes.html'"></div>
-          </div>
-          -->
           <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Non-conformities</h4>
             <h4 class="card-title pull-xs-right">
@@ -720,6 +775,37 @@
       </div>
     </div>
   </div>
+  
+
+  <!-- Add Type Modal -->
+  <div class="modal fade" id="choose-add-type-modal">
+    <div class="modal-dialog modal-sm">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <h4 class="card-title">Add</h4>
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Process or Policy</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Non-conformity</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Incident</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+        </div>       
+      </div>
+    </div>
+  </div>
 
 
 	<!-- JS -->
@@ -727,7 +813,7 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
-	<script src="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>
