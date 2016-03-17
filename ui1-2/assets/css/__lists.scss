@@ -1,0 +1,166 @@
+.content-list {
+  padding: 0;
+  border-right: 1px solid #ccc;
+  
+  .card {
+    border: 0;
+    border-radius: 0; 
+    background: transparent; 
+  }
+  
+  .search-form {
+    padding: .75rem;
+    @include flexbox;
+    
+    .form-group {
+      position: relative;
+      margin: 0;
+      @include flex(1);
+      
+      .form-control {
+        padding-left: 32px;
+      }
+      
+      &:before {
+        //content: '\e039';
+        //font-family: 'Office365Icons';
+        content: '\f002';
+        font-family: 'FontAwesome';
+        position: absolute;
+        left: .8rem;
+        top: -1px;
+        color: #999;
+        font-size: 14px;
+        line-height: 34px;
+      }
+    }
+    
+    .btn {
+      margin-left: 12px;
+    }
+  }
+  
+  .list-group {    
+
+    &-item {
+      @include clearfix;
+      border-radius: 0 !important;
+      border-left: 0;
+      border-right: 0;
+      padding: .75rem 1rem;
+                  
+      img {
+        height: 40px;
+        width: 40px;
+        margin-right: 15px;
+      }
+      
+      .label-status-indicator {
+        float: left;
+        margin-right: 10px;
+      }
+      
+      &-content {
+        overflow: hidden;
+      }
+      
+      &-heading {
+        font-size: 18px;
+        font-family: $font-semilight;
+        font-weight: normal;
+      }
+      
+      &-text {
+        color: #777;
+      }
+      
+      &.active {
+        background: $blue-color;
+        
+        .list-group-item-text {
+          color: lighten($blue-color,40%);
+        }
+      }
+      
+    }
+  }
+
+
+
+
+}
+
+  $fixed-padding: 1.25rem;
+  $variable-padding: .75rem;
+  
+  .list-group-item {
+    padding-left: $fixed-padding !important;
+    
+    .list-group-collapse & {
+      padding-left: $fixed-padding !important;
+    }
+    
+    .list-group-collapse .list-group-collapse & {
+      padding-left: $fixed-padding + ($variable-padding * 1) !important;
+    }
+    
+    .list-group-collapse .list-group-collapse .list-group-collapse & {
+      padding-left: $fixed-padding + ($variable-padding * 2) !important;
+    }  
+    
+    .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse & {
+      padding-left: $fixed-padding + ($variable-padding * 3) !important;
+    }
+    
+    .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse & {
+      padding-left: $fixed-padding + ($variable-padding * 4) !important;
+    }  
+  }
+  
+  .list-group-subheading {
+    background: #f5f5f5;
+  
+    .list-group-item-heading {
+      margin: 0;
+      font-size: 16px;
+      line-height: 22px;
+    }    
+  }
+  
+  .list-group-toggle {    
+    padding-left: $fixed-padding + 1.5rem !important;
+      
+    &:before  {
+      font-family: 'Office365Icons';
+      content: '\e08a';
+      position: absolute;
+      left: $fixed-padding - 0.25rem;
+      top: 50%;
+      font-size: 24px;
+      line-height: 20px;
+      width: 20px;
+      margin-top: -10px;
+      color: $blue-color;
+      @include transition(all 0.3s ease);        
+    }
+    
+    &.active:before {
+      color: white;
+    }
+    
+    &:not(.collapsed):before {
+      @include rotate(90);
+    }
+    
+    .list-group-collapse & {
+      padding-left: $fixed-padding + $variable-padding + 1.5rem   !important;
+      &:before { left: $fixed-padding + $variable-padding - 0.25rem; }
+    }
+    
+  }
+  
+  .list-group-collapse {
+    margin-bottom: -1px;
+  }
+
+
