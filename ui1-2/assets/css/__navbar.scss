@@ -84,6 +84,11 @@ $navbar-height-branded: 80px;
   }
   
   .dropdown {  
+    
+    @media (max-width: 767px) {
+      position: static;   
+    }
+    
     &-menu {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -104,7 +109,11 @@ $navbar-height-branded: 80px;
     
     &-item {
       @media (max-width: 767px) {
-        text-align: center;  
+        text-align: center;
+        
+        .nav.pull-xs-left & {
+          text-align: left;
+        }
       }
     }
     

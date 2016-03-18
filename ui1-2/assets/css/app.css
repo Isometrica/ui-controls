@@ -291,6 +291,9 @@ a:hover {
       margin-left: 3px; }
   .navbar .nav .nav-item.open .nav-link {
     color: white; }
+  @media (max-width: 767px) {
+    .navbar .dropdown {
+      position: static; } }
   .navbar .dropdown-menu {
     border-top-left-radius: 0;
     border-top-right-radius: 0;
@@ -308,7 +311,9 @@ a:hover {
         border-radius: 0; } }
   @media (max-width: 767px) {
     .navbar .dropdown-item {
-      text-align: center; } }
+      text-align: center; }
+      .nav.pull-xs-left .navbar .dropdown-item {
+        text-align: left; } }
   .navbar-branded {
     min-height: 80px; }
     .navbar-branded .nav-link,
@@ -521,10 +526,12 @@ input:focus ~ .clear-field {
 
 .content-list {
   padding: 0;
-  border-right: 1px solid #ccc; }
+  min-width: 300px; }
   @media (min-width: 768px) {
     .content-list {
-      width: 360px; } }
+      width: 20%;
+      max-width: 360px;
+      border-right: 1px solid #ccc; } }
   .content-list .card {
     border: 0;
     border-radius: 0;
