@@ -4,8 +4,12 @@
   background: #e5e5e5;
   border-left: 1px solid #ccc;
   max-width: 300px;
-  min-width: 240px;
+  min-width: 220px;
   width: 20%;
+  
+  @media (max-width: 991px) {
+    display: none;
+  }
   
   &-inner {
     padding: 1rem 1.25rem 0;

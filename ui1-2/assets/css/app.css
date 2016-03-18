@@ -25,12 +25,10 @@ body {
   background: #f5f5f5;
   font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
-/*
 ::-webkit-scrollbar {
   width: 0px;
-  background: transparent;
-}
-*/
+  background: transparent; }
+
 .container {
   max-width: none; }
 
@@ -1266,8 +1264,7 @@ input:focus ~ .clear-field {
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
   .chat-form {
-    padding: 0 0 1.25rem;
-    margin: 0 2.25rem 0 1.25rem;
+    padding: 0 1.25rem 1.25rem;
     position: absolute;
     left: 0;
     right: 0;
@@ -1418,8 +1415,11 @@ input:focus ~ .clear-field {
   background: #e5e5e5;
   border-left: 1px solid #ccc;
   max-width: 300px;
-  min-width: 240px;
+  min-width: 220px;
   width: 20%; }
+  @media (max-width: 991px) {
+    .standard-sidebar {
+      display: none; } }
   .standard-sidebar-inner {
     padding: 1rem 1.25rem 0; }
   .standard-sidebar-heading:after {
