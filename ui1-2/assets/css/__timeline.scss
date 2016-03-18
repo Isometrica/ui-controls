@@ -1,28 +1,167 @@
 $timeline-bg-color: lighten($blue-color,45%);
 $timeline-border-color: lighten($blue-color,30%);
 
-.timeline {
-  min-height: 70px;
-  position: relative;
+.timeline {  
   background: $timeline-bg-color;
   border-bottom: 1px solid $timeline-border-color;
 
+  &-inner {
+    overflow-y: hidden;
+    overflow-x: auto; 
+    position: relative;
+    padding: 15px;   
+  }
+
   &-items {
-    position: absolute;
-    bottom: 0;
-    top: 0;
-    left: 0;
-    right: 0; 
-    z-index: 2;
+    white-space: nowrap;
+    position: relative;
+    z-index: 1;
+    min-width: 100%;
+    @include flexbox;
+    @include flex-wrap(nowrap);
   }
   
   &-item {
-    position: absolute;
-    top: 20px;
-    font-size: 100%;
-    cursor: pointer;
+    display: inline-block;
+    text-align: center;
+    min-width: 150px;
+    @include flex(1);
+    z-index: 1;
+    position: relative;
+  
+    // Lines
+    
+    &:before {
+      position: absolute;
+      content: '';
+      top: 56px;
+      left: 0;
+      right: 0;
+      height: 2px;
+      background: black;
+      z-index: -1;
+    }
+    
+    &:first-child:before {
+      left: 50%;
+    }
+    
+    &:last-child:before {
+      right: 50%;
+    }
+  
+    &-date {
+      display: block;
+      margin-bottom: 10px;
+    }
+    
+    &-icon {
+      display: inline-block;
+      font-family: $font-semibold;
+      margin-bottom: 10px;
+    
+      $icon-background: white;
+      $icon-border: 2px solid black;
+      $icon-height: 50px;
+      
+      &-rectangle {
+        background: white;
+        border: 2px solid black;
+        height: $icon-height;
+        line-height: $icon-height - 4;
+        padding: 0 10px;
+      }
+      
+      &-stack {
+        background: $icon-background;
+        border: $icon-border;
+        height: $icon-height;
+        line-height: $icon-height - 4;
+        padding: 0 10px;
+        position: relative;
+        left: -2px;
+        top: -2px;
+        
+        &:after {
+          position: absolute;
+          content: '';
+          top: 4px;
+          left: 4px;
+          bottom: -7px;
+          right: -7px;
+          background: $icon-background;
+          border: $icon-border;
+          z-index: -1;
+        }      
+      }
+      
+      &-diamond {
+        position: relative;
+        height: 50px;
+        line-height: 50px;
+        
+        &:after {
+          position: absolute;
+          content: '';
+          width: $icon-height - 5;
+          height: $icon-height - 5;
+          background: $icon-background;
+          border: $icon-border;
+          @include rotate(45);
+          z-index: -1;
+          left: 50%;
+          top: 50%;
+          margin-left: ( $icon-height - 5 ) / -2;
+          margin-top: ( $icon-height - 5 ) / -2;
+        }
+      }
+      
+      &-rounded {
+        width: $icon-height;
+        height: $icon-height;
+        background: $icon-background;
+        border: $icon-border;  
+        border-radius: 10px; 
+        line-height: 50px;    
+      }
+      
+      i {
+        font-size: 24px;
+        position: relative;
+        top: 4px;
+        
+        &.fa-flag-checkered {
+          font-size: 30px;
+        }
+      }
+    }
+    
+    &-details {
+      display: block;
+      white-space: nowrap;
+      
+      span {
+        display: block;
+      }
+    }
+    
+    &-events {
+      position: absolute;
+      top: 27px;
+      left: 50%;
+      margin-left: 45px;
+      line-height: 30px;
+      text-align: left;
+      
+      span {
+        display: block;
+        
+      }
+    }
+    
   }
   
+  /*
   &-scale {
     position: absolute;
     bottom: 0;
@@ -98,8 +237,10 @@ $timeline-border-color: lighten($blue-color,30%);
       }    
     }
   }
+  */
 }
 
+/*
 .carousel-timeline {
   .carousel-control {
     background: transparent;
@@ -138,3 +279,4 @@ $timeline-border-color: lighten($blue-color,30%);
     }
   }
 }
+*/
