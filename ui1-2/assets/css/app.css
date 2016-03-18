@@ -988,6 +988,12 @@ input:focus ~ .clear-field {
     overflow-x: auto;
     position: relative;
     padding: 15px; }
+  .timeline-today {
+    width: 2px;
+    background: #71c0ff;
+    position: absolute;
+    top: 0;
+    bottom: 0; }
   .timeline-items {
     white-space: nowrap;
     position: relative;

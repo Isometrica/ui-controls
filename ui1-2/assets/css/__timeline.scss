@@ -12,6 +12,15 @@ $timeline-border-color: lighten($blue-color,30%);
     padding: 15px;   
   }
 
+  &-today {
+    width: 2px;
+    background: $timeline-border-color;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+  }  
+  
+
   &-items {
     white-space: nowrap;
     position: relative;
