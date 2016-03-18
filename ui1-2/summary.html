@@ -190,12 +190,7 @@
     						<h4 class="list-group-item-heading">Incidents</h4>
     					</a>      			
     					<div class="list-group-collapse collapse" id="collapse-2">
-    					</div>	
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading">Suggestions</h4>
-    					</a>    
-    					<div class="list-group-collapse collapse" id="collapse-3">
-    					</div>  				
+    					</div>	   				
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
     						<h4 class="list-group-item-heading">Lessons learned</h4>
     					</a>      
@@ -238,6 +233,10 @@
                 <div class="list-group-item">
                   <p class="list-group-item-text">Standard</p>
                   <h4 class="list-group-item-heading"><a href="">SOP - Client onboarding</a></h4>
+                </div>
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Support ticket ref</p>
+                  <h4 class="list-group-item-heading">DESK-101</h4>
                 </div>
                 <div class="list-group-item">
                   <p class="list-group-item-text">Description</p>
@@ -327,9 +326,9 @@
               </div>
               <div ng-include="'includes/subcards-read/preventative-actions.html'"></div>
               <div class="card-block card-subheading">
-                <h4 class="card-title">Suggestions</h4>
+                <h4 class="card-title">Improvement plan</h4>
               </div>
-              <div ng-include="'includes/subcards-read/suggestions.html'"></div>
+              <div ng-include="'includes/subcards-read/improvement-plan.html'"></div>
               <div class="card-block card-subheading">
                 <h4 class="card-title">Lessons learned</h4>
               </div>
@@ -548,15 +547,12 @@
           <div class="card-block-collapse collapse" id="preventative-actions">
             <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#suggestions" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Suggestions</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
-            </h4>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Improvement plan</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
           </div>
-          <div class="card-block-collapse collapse" id="suggestions">
-            <div ng-include="'includes/subcards-edit/suggestions.html'"></div>
+          <div class="card-block-collapse collapse" id="improvement-plan">
+            <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Lessons learned</h4>
