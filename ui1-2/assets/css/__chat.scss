@@ -118,6 +118,7 @@
   
   &-content {
     @include scroll;
+    @include hide-scrollbar;
   }
   
   &-form {

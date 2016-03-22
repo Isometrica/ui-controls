@@ -6,6 +6,7 @@
   max-width: 300px;
   min-width: 220px;
   width: 20%;
+  @include hide-scrollbar;
   
   @media (max-width: 991px) {
     display: none;

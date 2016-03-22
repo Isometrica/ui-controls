@@ -536,6 +536,9 @@ input:focus ~ .clear-field {
 
 .content-list {
   padding: 0; }
+  .content-list::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
   @media (min-width: 768px) {
     .content-list {
       width: 25%;
@@ -1282,6 +1285,9 @@ input:focus ~ .clear-field {
     overflow-x: hidden;
     overflow-y: auto;
     -webkit-overflow-scrolling: touch; }
+    .chat-content::-webkit-scrollbar {
+      width: 0px;
+      background: transparent; }
   .chat-form {
     padding: 0 1.25rem 1.25rem;
     position: absolute;
@@ -1324,7 +1330,7 @@ input:focus ~ .clear-field {
     padding: 1rem 1.25rem 1.25rem;
     min-height: 127px;
     background: white;
-    z-index: 2; }
+    z-index: 3; }
     .standard-heading .label-standard {
       width: 70px;
       height: 70px;
@@ -1444,6 +1450,9 @@ input:focus ~ .clear-field {
   max-width: 300px;
   min-width: 220px;
   width: 20%; }
+  .standard-sidebar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; }
   @media (max-width: 991px) {
     .standard-sidebar {
       display: none; } }
