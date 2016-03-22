@@ -1,12 +1,25 @@
+.list-group { 
+  &-item {
+    &-heading {
+      font-size: 18px;
+      font-family: $font-semilight;
+      font-weight: normal;
+    }
+    
+    &-text {
+      color: #777;
+    }  
+  }
+}
+
 .content-list {
   padding: 0;
-  
-  min-width: 300px;
-  
+
   @media (min-width:768px) {
-    width: 20%;
-    max-width: 360px; 
-    border-right: 1px solid #ccc;
+    width: 25%;
+    min-width: 360px;
+    max-width: 480px; 
+    border-right: 1px solid #bbb;
   }
 
   .card {
@@ -71,15 +84,7 @@
         overflow: hidden;
       }
       
-      &-heading {
-        font-size: 18px;
-        font-family: $font-semilight;
-        font-weight: normal;
-      }
-      
-      &-text {
-        color: #777;
-      }
+
       
       &.active {
         background: $blue-color;

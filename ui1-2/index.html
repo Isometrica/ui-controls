@@ -37,20 +37,15 @@
           <a class="dropdown-item" href="#">Ortus Technology</a>
           <a class="dropdown-item" href="#">Teamstudio</a>
           <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">Org settings</a>
+          <a class="dropdown-item" href="#org-settings-modal" data-toggle="modal">Org settings</a>
         </div> 
       </li>
     </ul>
     <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item hidden-sm-down">
-        <a class="nav-link standard-link" href="#">
-          <i class="fa fa-comment"></i>
-          <span class="label label-info">4</span>
-        </a>   
-      </li>
       <li class="nav-item dropdown hidden-sm-down">
         <a class="nav-link standard-link" href="#" data-toggle="dropdown">
           <i class="fa fa-users"></i>
+          <span class="label label-info">2</span>
         </a>  
         <div class="dropdown-menu">
           <a class="dropdown-item" href="#">
@@ -127,12 +122,10 @@
     				</form>
     				<div class="list-group list-group-accordion" id="standardsAccordion">
       				<a class="list-group-item list-group-subheading" href="#">
-    						<h4 class="list-group-item-heading pull-left"><strong>FEI standards book</strong></h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;123,456</h4>
+    						<h4 class="list-group-item-heading pull-left"><strong>Clifton standards book</strong></h4>
     					</a>      				
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
     						<h4 class="list-group-item-heading pull-left">1. Client feedback</h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4,567</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-2">
         				<div class="list-group">
@@ -141,14 +134,13 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
                       <p class="list-group-item-text pull-left">Procedure</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
     						<h4 class="list-group-item-heading pull-left">2. Client onboarding</h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4567</h4>
+    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4,567</h4>
     					</a>      				
       				<div class="list-group-collapse collapse in" id="collapse-3">
         				<div class="list-group">
@@ -157,7 +149,6 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">2.1. Dolor est compendum</h4>
                       <p class="list-group-item-text pull-left">Regulation</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;12</p>
                     </div>
       						</a>  
       						<a class="list-group-item" href="#">
@@ -165,7 +156,6 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">2.2. Lorem ipsum dolor</h4>
                       <p class="list-group-item-text pull-left">Regulation</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;2,345</p>
                     </div>
       						</a>  
         					<div class="list-group-collapse collapse in" id="collapse-3-1"> 
@@ -174,7 +164,7 @@
                       <div class="list-group-item-content">
           							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
                         <p class="list-group-item-text pull-left">Procedure</p>
-                        <p class="list-group-item-text pull-right text-danger">&pound;1,234</p>
+                        <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                       </div>
         						</a>
         						<div class="list-group-collapse collapse in">
@@ -183,7 +173,6 @@
                         <div class="list-group-item-content">
             							<h4 class="list-group-item-heading">2.2.1.1 Lead handling</h4>
                           <p class="list-group-item-text pull-left">Specification</p>
-                          <p class="list-group-item-text pull-right text-danger">&pound;90</p>
                         </div>
           						</a>
           						<div class="list-group-collapse collapse in">
@@ -192,7 +181,6 @@
                           <div class="list-group-item-content">
               							<h4 class="list-group-item-heading">2.2.1.1.1 Due diligence</h4>
                             <p class="list-group-item-text pull-left">Policy</p>
-                            <p class="list-group-item-text pull-right text-danger">&pound;123</p>
                           </div>
             						</a>
           						</div>
@@ -203,14 +191,12 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">2.3 Lorem ipsum</h4>
                       <p class="list-group-item-text pull-left pull-left">Regulation</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;789</p>
                     </div>
       						</a>      					
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
     						<h4 class="list-group-item-heading pull-left">3. Client deal execution</h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;890</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-4">
         				<div class="list-group">
@@ -219,14 +205,12 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">Inquiry handling</h4>
                       <p class="list-group-item-text pull-left">Procedure</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
-    						<h4 class="list-group-item-heading pull-left">4. FEI policies</h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;654</h4>
+    						<h4 class="list-group-item-heading pull-left">4. Clifton policies</h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-5">
         				<div class="list-group">
@@ -235,7 +219,6 @@
                     <div class="list-group-item-content">
         							<h4 class="list-group-item-heading">Inquiry handling</h4>
                       <p class="list-group-item-text pull-left">Procedure</p>
-                      <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
                     </div>
       						</a>
         				</div>
@@ -269,27 +252,25 @@
           </div>
     		</div>
     		<div class="content-cards flexbox-column col-sm-6 hidden-sm-down">
-      		<div class="card standard-top">
-        		<div class="standard-heading">
-              <span class="label label-danger label-standard">SOP</span>
-              <a href="#" class="btn btn-link">
-                <i class="fa fa-info-circle"></i>
-              </a>
-              <div class="standard-heading-dropdown dropdown">
-                <h2 class="standard-heading-title dropdown-toggle" data-toggle="dropdown">2.2.1 Inquiry handling</h2>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a href="#edit-modal" class="dropdown-item" data-toggle="modal">Edit details</a>
-                  <a href="#" class="dropdown-item">Go to linked document</a>
-                </div>            
-              </div>
-              <div class="btn-group">
-                <a href="todos.html" class="btn btn-secondary">6 actions</a>
-                <a href="todos.html" class="btn btn-primary">2 for you</a>
-              </div>
-              <p class="standard-heading-text">Mike Smith</p>
-              <p class="standard-heading-text standard-heading-issue">Issue 1 <a href="#" class="standard-heading-issue-draft">Issue 2 draft</a></p>
-              <p class="standard-heading-text">Optional line of description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
+      		<div class="standard-heading">
+            <span class="label label-danger label-standard">SOP</span>
+            <a href="#" class="btn btn-link">
+              <i class="fa fa-info-circle"></i>
+            </a>
+            <div class="standard-heading-dropdown dropdown">
+              <h2 class="standard-heading-title dropdown-toggle" data-toggle="dropdown">2.2.1 Inquiry handling</h2>
+              <div class="dropdown-menu dropdown-menu-right">
+                <a href="#edit-modal" class="dropdown-item" data-toggle="modal">Edit details</a>
+                <a href="#" class="dropdown-item">Go to linked document</a>
+              </div>            
+            </div>
+            <div class="btn-group">
+              <a href="todos.html" class="btn btn-secondary">6 actions</a>
+              <a href="todos.html" class="btn btn-primary">2 for you</a>
+            </div>
+            <p class="standard-heading-text">Mike Smith</p>
+            <p class="standard-heading-text standard-heading-issue">Issue 1 <a href="#" class="btn btn-sm btn-secondary standard-heading-issue-draft">Issue 2 draft</a></p>
+            <p class="standard-heading-text">Optional line of description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       		</div>
       		<div class="chat">
             <div class="chat-content">
@@ -536,8 +517,8 @@
               <h3 class="standard-sidebar-bia-value">£15,500</h3>
               <a href="#bia-chart-modal" data-toggle="modal" class="standard-sidebar-bia-chart"><i class="fa fa-bar-chart"></i></a>              
             </div>
-
             <hr>
+            <a href="#worksheet-modal" data-toggle="modal" class="standard-sidebar-worksheet"><i class="fa fa-table"></i></a> 
             <h4 class="standard-sidebar-subtitle">Root cause analysis</h4>
             <div class="card">
               <div class="list-group list-group-flush">
@@ -552,6 +533,7 @@
               </div>
             </div>
             <hr>
+            <a href="#worksheet-modal" data-toggle="modal" class="standard-sidebar-worksheet"><i class="fa fa-table"></i></a> 
             <h4 class="standard-sidebar-subtitle">Non-conformities &amp; incidents</h4>
             <div class="card">
               <div class="list-group list-group-flush">
@@ -566,6 +548,7 @@
               </div>
             </div>
             <hr>
+            <a href="#worksheet-modal" data-toggle="modal" class="standard-sidebar-worksheet"><i class="fa fa-table"></i></a> 
             <h4 class="standard-sidebar-subtitle">Corrective &amp; preventative actions</h4>
             <div class="card">
               <div class="list-group list-group-flush">
@@ -646,7 +629,7 @@
                   <a class="dropdown-item" href="#">1. Client feedback</a>
                   <a class="dropdown-item" href="#">2. Client onboarding</a>
                   <a class="dropdown-item" href="#">3. Client deal execution</a>
-                  <a class="dropdown-item" href="#">4. FEI policies</a>
+                  <a class="dropdown-item" href="#">4. Clifton policies</a>
                 </div> 
               </div>
               <span class="label label-danger label-standard standard-edit-label">
@@ -797,7 +780,7 @@
 
   <!-- Add Type Modal -->
   <div class="modal fade" id="choose-add-type-modal">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
           <div class="card-heading-buttons pull-xs-right">
@@ -826,6 +809,111 @@
   </div>
   
   
+  <!-- Org Settings Modal -->
+  <div class="modal fade" id="org-settings-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Org settings</h4>
+        </div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4">Org name</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Org name" value="Clifton Asset Management Plc">
+                <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Org owner</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Org owner" value="Mike Smith"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4">Standards book name</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Standards book name" value="Clifton standards book">
+                <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Corrective actions workflow</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Single step
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Double step
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Default currency</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> EUR
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> GBP
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> USD
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4">Financial year end date</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Financial year end date" value="6 Apr 2016">
+                <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+              </div>
+            </div>
+     
+          </div>
+        </form>       
+      </div>
+    </div>
+  </div>
+  
+  
   <!-- BIA chart modal -->
   <div class="modal fade" id="bia-chart-modal">
     <div class="modal-dialog">
@@ -847,6 +935,57 @@
     </div>
   </div>
   
+
+  <!-- Worksheet: Corrective actions -->
+  <div class="modal fade modal-worksheet" id="worksheet-modal" tabindex="-1" role="dialog">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Close
+      			</button>
+          </div>
+          <h4 class="card-title">Corrective actions</h4>
+        </div>
+        <div class="table-responsive">
+  				<table class="table">
+  					<thead>
+  						<tr>
+  							<th rowspan="2">Non-conformity or incident</th>
+  							<th colspan="2" class="text-xs-center">Assigned to</th>
+  							<th rowspan="2">Description of action</th>
+  							<th rowspan="2">Result</th>
+                <th rowspan="2">Verified date</th>
+  						</tr>
+  						<tr>
+  							<th class="text-xs-center">Name</th>
+  							<th class="text-xs-center">Date</th>
+  						</tr>
+  					</thead>
+  					<tbody>
+  						<tr>
+  							<td><strong>NC101</strong> Deal valuation not carried out</td>
+  							<td class="text-xs-center">Mike Smith</td>
+  							<td class="text-xs-center">14 Feb 2015</td>
+  							<td><strong>CA123</strong> Restructure software</td>
+  							<td>Lorem ipsum dolor est</td>
+  							<td>22 Feb 2015</td>
+  						</tr>
+  						<tr>
+  							<td><strong>NC102</strong> Awaiting root cause analysis</td>
+  							<td class="text-xs-center">Stephen Ives</td>
+  							<td class="text-xs-center">17 Feb 2015</td>
+  							<td><strong>CA234</strong> Inform company of changes</td>
+  							<td>70% improvement</td>
+  							<td>23 Feb 2015</td>
+  						</tr>
+  					</tbody>
+  				</table>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 

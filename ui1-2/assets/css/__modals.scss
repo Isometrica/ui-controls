@@ -1,27 +1,44 @@
 .modal {
   
-  .modal-dialog {  
+  &-dialog {  
     @media (max-width: 600px) {
       width: auto;
       margin: 0;
     }
     
+    #choose-add-type-modal & {
+      width: 400px;
+    }
+    
     > .card {
       border: 0;
       
-      > .card-heading .card-title {
-        text-align: center !important;
-        font-family: $font-semibold;
+      > .card-heading {
+        border-radius: 4px 4px 0 0;
+        
+        .card-title {
+          text-align: center !important;
+          font-family: $font-semibold;
+        }
       }
+
+      .card-block {
+        &:not(:first-child) {
+          border-top: 1px solid #ddd;
+        }
+      }   
+      
+      .list-group {
+        &-item {
+          &:first-child {
+            border-top: 0;
+          }
+        }
+      }    
+      
     }
 
-    .card-block {
-      &:not(:first-child) {
-        border-top: 1px solid #ddd;
-      }
-    }
-    
-    
+
   }
-
 }
+

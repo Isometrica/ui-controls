@@ -146,17 +146,19 @@
 
 .clear-field {
 	position: absolute;
-	right: 7px;
+	right: 15px;
 	top: 0;
 	font-size: 21px;
-	line-height: 22px;
+	line-height: 1;
 	color: #bbb !important;
 	transition: all 0.3s ease;
 	border: 0;
   z-index: 9;
   display: none;
-  margin-right: 0 !important;
-
+  margin: 0 !important;
+  padding-left: 6px;
+  padding-right: 6px;
+  
 	&:hover {
   	color: #99130f !important;
 	}

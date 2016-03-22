@@ -1,6 +1,7 @@
 .chat {  
   background: white;
   
+  
   @include flex(1);
   @include flexbox;
   @include flex-direction(column);

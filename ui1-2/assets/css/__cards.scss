@@ -67,6 +67,10 @@
       }
     }
   }
+  
+  &-footer {
+    border-radius: 0 0 4px 4px;
+  }
 }
 
 
@@ -153,6 +157,11 @@
     position: relative;
     padding-right: 40px;
     
+    &:not(.collapsed) {
+      border-radius: 0;
+      border-bottom: 1px solid #ddd;
+    }
+    
     &:after {
       content: '\e088';
       font-family: 'Office365Icons';
@@ -178,9 +187,11 @@
   .table {
     margin: 0;
     font-size: 12px;
+    border-bottom: 0 !important;
     
     th, td {
       border-color: #ddd;
+      border-bottom-width: 1px;
       
       &:first-child {
         padding-left: 1.25rem;  

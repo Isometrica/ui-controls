@@ -2,17 +2,16 @@
   @include flexbox();
   @include flex-direction(column);
 
-  &-top {
+  &-heading {
     margin: 0;
     border-radius: 0;
     border-width: 0;
-    box-shadow: none;
-    border-bottom: 1px solid #ddd;
-  }
-
-  &-heading {
-    padding: 1rem 1.25rem;
+    border-bottom: 1px solid #ccc;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.1);
+    padding: 1rem 1.25rem 1.25rem;
     min-height: 127px;
+    background: white;
+    z-index: 2;
     
     .label-standard {
       $label-standard-size: 70px;
@@ -46,6 +45,7 @@
       font-size: 27px;
       cursor: pointer;
       display: inline-block;
+      margin-bottom: 5px;
       
       &:after {
         border-width: .2em; // dropdown chevron size 
@@ -54,12 +54,20 @@
     
     &-text {
       font-size: 14px;
-      margin: 0;
+      margin: 0 0 2px;
     }
     
     &-issue {
       &-draft {
-        color: #aaa;
+        //color: #aaa;
+        font-family: $font-regular;
+        color: #777;
+        position: relative;
+        top: -2px;
+        left: 5px;
+        font-size: 14px;
+        line-height: 14px;
+        //line-height: 14px;
       }
     }
   }
