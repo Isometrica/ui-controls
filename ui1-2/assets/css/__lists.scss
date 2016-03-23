@@ -85,6 +85,13 @@
         overflow: hidden;
       }
       
+      .btn-right {
+        float: right;
+        padding: 10px 15px;
+        margin: -10px -15px;
+        margin-left: 10px;
+      }
+      
 
       
       &.active {
@@ -109,24 +116,23 @@
     padding-left: $fixed-padding !important;
   }
 
-  .list-group-collapse .list-group-collapse .list-group-item {
+  .sub {
+    margin-bottom: -1px;
+  }
+
+  .sub .list-group-item {
     padding-left: $fixed-padding + ($variable-padding * 1) !important;
   }
   
-  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  .subsub .list-group-item {
     padding-left: $fixed-padding + ($variable-padding * 2) !important;
   }  
   
-  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  .subsubsub .list-group-item {
     padding-left: $fixed-padding + ($variable-padding * 3) !important;
   }
-  
-  .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
-    padding-left: $fixed-padding + ($variable-padding * 4) !important;
-  }  
-  
-  
-  
+
+
   .list-group-subheading {
     background: #f5f5f5;
   

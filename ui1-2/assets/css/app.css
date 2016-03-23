@@ -595,6 +595,11 @@ input:focus ~ .clear-field {
       margin-right: 10px; }
     .content-list .list-group-item-content {
       overflow: hidden; }
+    .content-list .list-group-item .btn-right {
+      float: right;
+      padding: 10px 15px;
+      margin: -10px -15px;
+      margin-left: 10px; }
     .content-list .list-group-item.active {
       background: #0078d7; }
       .content-list .list-group-item.active .list-group-item-heading {
@@ -603,14 +608,14 @@ input:focus ~ .clear-field {
         color: #a4d7ff !important; }
   .content-list .list-group-item {
     padding-left: 1.25rem !important; }
-  .content-list .list-group-collapse .list-group-collapse .list-group-item {
+  .content-list .sub {
+    margin-bottom: -1px; }
+  .content-list .sub .list-group-item {
     padding-left: 2rem !important; }
-  .content-list .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  .content-list .subsub .list-group-item {
     padding-left: 2.75rem !important; }
-  .content-list .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
+  .content-list .subsubsub .list-group-item {
     padding-left: 3.5rem !important; }
-  .content-list .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-collapse .list-group-item {
-    padding-left: 4.25rem !important; }
   .content-list .list-group-subheading {
     background: #f5f5f5; }
     .content-list .list-group-subheading .list-group-item-heading {

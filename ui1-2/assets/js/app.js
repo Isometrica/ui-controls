@@ -16,19 +16,64 @@ $( document ).ready(function() {
 		$('body').addClass('desktop');
 	}
 	
-	$(".content-list .list-group-item").click(function() {
+	/*
+  	STANDARDS ACCORDION
+  */
+	
+	$("#standardsAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$('#standardsAccordion .collapse').collapse("hide");  	
+  	}
+
   	// Remove existing active classes
-  	$(".content-list .list-group-item").removeClass("active");
-  	
+  	$("#standardsAccordion .list-group-item").removeClass("active");	
   	$(this).addClass("active");
   });
+  
+  /*
+  	SUMMARY ACCORDION
+  */
+	
+	// Ignore clicks on worksheet icon
+	$("#summaryAccordion .btn-right").click(function(e) {
+  	e.stopPropagation();
+  	var target = $(this).data( "target" );
+  	$(target).modal('show');
+  });
+  
+	$("#summaryAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$('#summaryAccordion .collapse').collapse("hide");  	
+  	} else {
+    	// Remove existing active classes
+    	$("#summaryAccordion .list-group-item").removeClass("active");	
+    	$(this).addClass("active");     	
+  	}
+  });
+  
+  /*
+    TODO LIST
+  */
 
+	$("#todoList .list-group-item").click(function() {
+  	// Remove existing active classes
+  	$("#todoList .list-group-item").removeClass("active");	
+  	$(this).addClass("active");     	
+  });  
+  
 
+  /*
+    CHAT SCROLL TO BOTTOM ON LOAD
+  */
 
   $('.chat-content').animate({scrollTop: $(document).height()}, 'slow');
   
-  
-  // BIA Chart 
+  /*
+    BIA CHART
+  */
+   
   var $biaTrendChart = $("#biaTrendChart");
   $('#bia-chart-modal').on('shown.bs.modal', function (e) {
     if ($biaTrendChart.length) {
@@ -56,12 +101,7 @@ $( document ).ready(function() {
       new Chart(ctx).Bar(data,options);  
     }
   });
-  
-  $('#bia-chart-modal').on('hidden.bs.modal', function (e) {
-    if ($biaTrendChart.length) {
-        biaTrendChart.clear();
-    }
-  });
+
 
 });
 
