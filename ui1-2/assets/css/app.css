@@ -956,7 +956,8 @@ input:focus ~ .clear-field {
     border-top: 0; }
 
 #invite-modal .avatar {
-  width: 34px; }
+  width: 34px;
+  height: 34px; }
 
 .timeline {
   background: #bee2ff;
