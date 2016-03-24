@@ -92,7 +92,7 @@
           <a class="dropdown-item" href="users.html">
             User directory
           </a>
-          <a class="dropdown-item" href="#">
+          <a class="dropdown-item" href="#invite-modal" data-toggle="modal">
             Invite users
           </a>
           <a class="dropdown-item" href="#">
@@ -139,7 +139,7 @@
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading pull-left">2. Client onboarding</h4>
+    						<h4 class="list-group-item-heading pull-left">2. Client onboarding <span class="label label-danger label-count">3</span></h4>
     						<h4 class="list-group-item-heading pull-right text-danger">&pound;4,567</h4>
     					</a>      				
       				<div class="list-group-collapse collapse in" id="collapse-3">
@@ -154,7 +154,7 @@
       						<a class="list-group-item" href="#">
         						<span class="label label-default label-standard">REG</span>
                     <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.2. Lorem ipsum dolor</h4>
+        							<h4 class="list-group-item-heading">2.2. Lorem ipsum dolor <span class="label label-danger label-count">1</span></h4>
                       <p class="list-group-item-text pull-left">Regulation</p>
                     </div>
       						</a>  
@@ -171,7 +171,7 @@
           						<a class="list-group-item" href="#">
             						<span class="label label-success label-standard">SPEC</span>
                         <div class="list-group-item-content">
-            							<h4 class="list-group-item-heading">2.2.1.1 Lead handling</h4>
+            							<h4 class="list-group-item-heading">2.2.1.1 Lead handling <span class="label label-danger label-count">2</span></h4>
                           <p class="list-group-item-text pull-left">Specification</p>
                         </div>
           						</a>
@@ -210,14 +210,14 @@
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
-    						<h4 class="list-group-item-heading pull-left">4. Clifton policies</h4>
+    						<h4 class="list-group-item-heading pull-left">4. Clifton policies <span class="label label-danger label-count">1</span></h4>
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-5">
         				<div class="list-group">
         				  <a class="list-group-item" href="#">
         						<span class="label label-danger label-standard">SOP</span>
                     <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Inquiry handling</h4>
+        							<h4 class="list-group-item-heading">Inquiry handling <span class="label label-danger label-count">1</span></h4>
                       <p class="list-group-item-text pull-left">Procedure</p>
                     </div>
       						</a>
@@ -524,11 +524,11 @@
               <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item">
                   <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>NC101</strong> Deal valuation not carried out</h5>
+                  <h5 class="card-title">Root cause analysis lorem ipsum</h5>
                 </a>
                 <a href="#" class="list-group-item">
                   <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>NC102</strong> Awaiting root cause analysis</h5>
+                  <h5 class="card-title">Another file</h5>
                 </a>
               </div>
             </div>
@@ -538,12 +538,12 @@
             <div class="card">
               <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>NC101</strong> Deal valuation not carried out</h5>
+                  <span class="label label-danger">NC101</span>
+                  <h5 class="card-title">Deal valuation not carried out</h5>
                 </a>
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>NC102</strong> Awaiting root cause analysis</h5>
+                  <span class="label label-success">NC102</span>
+                  <h5 class="card-title">Awaiting root cause analysis</h5>
                 </a>
               </div>
             </div>
@@ -553,20 +553,20 @@
             <div class="card">
               <div class="list-group list-group-flush">
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>CA156</strong> Train new joiners</h5>
+                  <span class="label label-warning">CA156</span>
+                  <h5 class="card-title">Train new joiners</h5>
                 </a>
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>CA157</strong> Speed up registrations</h5>
+                  <span class="label label-warning">CA157</span>
+                  <h5 class="card-title">Speed up registrations</h5>
                 </a>
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>CA158</strong> Inform company of changes</h5>
+                  <span class="label label-default">CA173</span>
+                  <h5 class="card-title">Inform company of changes</h5>
                 </a>
                 <a href="#" class="list-group-item">
-                  <i class="fa fa-file-word-o"></i>
-                  <h5 class="card-title"><strong>PA33</strong> Restructure software</h5>
+                  <span class="label label-danger">PA33</span>
+                  <h5 class="card-title">Restructure software</h5>
                 </a>
               </div>
             </div>
@@ -630,6 +630,8 @@
                   <a class="dropdown-item" href="#">2. Client onboarding</a>
                   <a class="dropdown-item" href="#">3. Client deal execution</a>
                   <a class="dropdown-item" href="#">4. Clifton policies</a>
+                  <div class="dropdown-divider"></div>
+                  <a class="dropdown-item" href="#"><strong>Add new category</strong></a>
                 </div> 
               </div>
               <span class="label label-danger label-standard standard-edit-label">
@@ -906,7 +908,97 @@
     		        </button>
               </div>
             </div>
-     
+
+
+            
+          </div>
+
+          <div class="card-block card-block-collapse-toggle" href="#categories" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Categories</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">4</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse in" id="categories">
+            <div class="card-block">
+              <div class="form-group form-group-flex margin-bottom-none ">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">1</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client feedback"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex margin-bottom-none ">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">2</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client onboarding"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex margin-bottom-none ">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">3</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client deal execution"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex margin-bottom-none ">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">4</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Clifton policies"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <button class="btn btn-primary" type="button">Add Category</button>
+            </div>
           </div>
         </form>       
       </div>
@@ -938,6 +1030,9 @@
 
   <!-- Worksheet modal -->
   <div ng-include="'includes/worksheet-modal.html'"></div>
+  
+  <!-- Invite users modal -->
+  <div ng-include="'includes/invite-modal.html'"></div>
 
 
 
