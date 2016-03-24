@@ -63,6 +63,17 @@ $( document ).ready(function() {
   	$(this).addClass("active");     	
   });  
   
+  
+  /*
+    USERS LIST
+  */
+
+	$("#usersList .list-group-item").click(function() {
+  	// Remove existing active classes
+  	$("#usersList .list-group-item").removeClass("active");	
+  	$(this).addClass("active");     	
+  });  
+  
 
   /*
     CHAT SCROLL TO BOTTOM ON LOAD
