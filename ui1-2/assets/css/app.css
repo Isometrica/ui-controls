@@ -798,6 +798,8 @@ input:focus ~ .clear-field {
       content: "";
       display: table;
       clear: both; }
+    .card-heading:first-child {
+      border-radius: 4px 4px 0 0; }
     .card-heading-buttons {
       position: absolute;
       top: 10px; }
