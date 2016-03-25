@@ -1477,14 +1477,10 @@ input:focus ~ .clear-field {
   -o-transition: all 0.35s ease;
   -webkit-transition: all 0.35s ease;
   transition: all 0.35s ease;
-  position: relative;
-  display: block !important; }
+  position: relative; }
   .standard-sidebar::-webkit-scrollbar {
     width: 0px;
     background: transparent; }
-  @media (max-width: 767px) {
-    .standard-sidebar {
-      display: none; } }
   .standard-sidebar-inner {
     padding: 1rem 1.25rem 0; }
   .standard-sidebar-heading:after {

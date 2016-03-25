@@ -9,11 +9,6 @@
   @include transition(all 0.35s ease);
   position: relative;
   @include hide-scrollbar;
-  display: block !important;
-  
-  @media (max-width: 767px) {
-    display: none;
-  } 
   
   &-inner {
     padding: 1rem 1.25rem 0;

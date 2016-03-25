@@ -16,7 +16,33 @@ $( document ).ready(function() {
 		$('body').addClass('desktop');
 	}
 	
-	/*
+	
+  
+  /*
+    STANDARDS SIDEBAR - collapse
+  */
+  
+  var sidebarToggles = $(".btn-sidebar-collapse");
+  
+  sidebarToggles.click(function(){
+    var sidebar = $(".standard-sidebar");
+    sidebar.toggleClass("hide");
+    sidebarToggles.toggleClass("collapsed");
+    
+    if (sidebar.hasClass("hide")) {
+      // Hide sidebar
+      var offset = sidebar.outerWidth() * -1;
+      sidebar.css("margin-right", offset);
+    } else {
+      // Show sidebar
+      sidebar.css("margin-right", 0);
+      
+    }
+    
+  });
+  
+  
+  /*
   	STANDARDS ACCORDION
   */
 	
@@ -31,33 +57,7 @@ $( document ).ready(function() {
   	$(this).addClass("active");
   });
   
-  /*
-    STANDARDS SIDEBAR - collapse
-  */
-  
-  var sidebarToggles = $(".btn-sidebar-collapse");
-  
-  sidebarToggles.click(function(){
-    var sidebar = $(".standard-sidebar");
-    sidebar.toggleClass("collapse");
-    sidebarToggles.toggleClass("collapsed");
-    
-    if (sidebar.hasClass("collapse")) {
-      // Hide sidebar
-      var offset = sidebar.outerWidth() * -1;
-      sidebar.css("margin-right", offset);
-    } else {
-      // Show sidebar
-      sidebar.css("margin-right", 0);
-      
-    }
-    
-  });
-  
-  
-  //$(".standard-sidebar").animate({width:'toggle'},350);
-  
-  
+
   /*
   	SUMMARY ACCORDION
   */
@@ -84,9 +84,10 @@ $( document ).ready(function() {
     TODO LIST
   */
 
-	$("#todoList .list-group-item").click(function() {
+  var toDoItems = $("#todoList .list-group-item");
+	toDoItems.click(function() {
   	// Remove existing active classes
-  	$("#todoList .list-group-item").removeClass("active");	
+  	toDoItems.removeClass("active");	
   	$(this).addClass("active");     	
   });  
   
@@ -95,12 +96,27 @@ $( document ).ready(function() {
     USERS LIST
   */
 
-	$("#usersList .list-group-item").click(function() {
+  var userItems = $("#usersList .list-group-item")
+	userItems.click(function() {
   	// Remove existing active classes
-  	$("#usersList .list-group-item").removeClass("active");	
+  	userItems.removeClass("active");	
   	$(this).addClass("active");     	
   });  
   
+
+  /* 
+    DETAIL VIEW FOR MOBILE
+  */
+  
+  $( ".bootcards-list .list-group a.list-group-item" ).click(function() {
+    if ($(window).width() < 768) {
+      // Hide list view
+      $(".bootcards-list").attr('style','display:none !important');
+      // Show detail view
+      $(".bootcards-cards").attr('style','display:block !important');
+    }
+  });
+
 
   /*
     CHAT SCROLL TO BOTTOM ON LOAD
