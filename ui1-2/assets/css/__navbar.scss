@@ -1,6 +1,4 @@
-$navbar-background: #444;
-$navbar-height-standard: 50px;
-$navbar-height-branded: 80px;
+
 
 .navbar {
   background: $navbar-background;
@@ -84,9 +82,7 @@ $navbar-height-branded: 80px;
   }
   
   .dropdown {      
-    @media (max-width: 767px) {
-      //position: static;   
-    }
+
     
     &-menu {
       border-top-left-radius: 0;
@@ -118,12 +114,28 @@ $navbar-height-branded: 80px;
     }
   }
   
-  .pull-xs-left .dropdown-menu {
-    left: 10px;
+  .pull-xs-left {
+    .dropdown {
+      @media (max-width: 767px) {
+        position: static;   
+      }      
+    }
+    
+    .dropdown-menu {
+      left: 10px;
+    }
   }
   
-  .pull-xs-right .dropdown-menu {
-    right: 10px;
+  .pull-xs-right {
+    .dropdown {
+      @media (max-width: 767px) {
+        position: static;   
+      }      
+    }
+    
+    .dropdown-menu {
+      right: 10px;
+    }
   }
   
   &-branded {

@@ -8,6 +8,16 @@
   position: relative;
   @include hide-scrollbar;
   
+  // Fixed position on mobile
+  
+  @media (max-width: 767px) {
+    position: fixed;
+    top: $navbar-height-branded;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+  }
+  
   &-inner {
     padding: 1rem 1.25rem 0;
   }
