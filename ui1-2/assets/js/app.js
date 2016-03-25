@@ -32,6 +32,33 @@ $( document ).ready(function() {
   });
   
   /*
+    STANDARDS SIDEBAR - collapse
+  */
+  
+  var sidebarToggles = $(".btn-sidebar-collapse");
+  
+  sidebarToggles.click(function(){
+    var sidebar = $(".standard-sidebar");
+    sidebar.toggleClass("collapse");
+    sidebarToggles.toggleClass("collapsed");
+    
+    if (sidebar.hasClass("collapse")) {
+      // Hide sidebar
+      var offset = sidebar.outerWidth() * -1;
+      sidebar.css("margin-right", offset);
+    } else {
+      // Show sidebar
+      sidebar.css("margin-right", 0);
+      
+    }
+    
+  });
+  
+  
+  //$(".standard-sidebar").animate({width:'toggle'},350);
+  
+  
+  /*
   	SUMMARY ACCORDION
   */
 	

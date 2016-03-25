@@ -1,16 +1,19 @@
 .standard-sidebar {
-  height: 100%; 
+  height: 100% !important; 
   padding: 0;
   background: #e5e5e5;
   border-left: 1px solid #bbb;
-  max-width: 300px;
-  min-width: 220px;
   width: 20%;
+  min-width: 240px;
+  max-width: 300px;
+  @include transition(all 0.35s ease);
+  position: relative;
   @include hide-scrollbar;
+  display: block !important;
   
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     display: none;
-  }
+  } 
   
   &-inner {
     padding: 1rem 1.25rem 0;
@@ -20,17 +23,12 @@
     @include clearfix;
   }
   
-  &-close {
+  .btn-sidebar-collapse {
     float: right;
     padding: 0;
-    color: #bbb;
     font-size: 26px;
     line-height: 32px;
     padding: 0;
-    
-    &:hover {
-      color: #555;
-    }
   }
   
   &-more {

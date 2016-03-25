@@ -1357,13 +1357,16 @@ input:focus ~ .clear-field {
       line-height: 70px;
       font-size: 25px;
       margin-right: 12px; }
-    .standard-heading .btn-link {
+    .standard-heading .btn-sidebar-collapse {
       float: right;
       padding: 0;
       font-size: 28px;
       line-height: 1;
       padding: 0;
-      margin-bottom: 3px; }
+      margin-bottom: 3px;
+      opacity: 0; }
+      .standard-heading .btn-sidebar-collapse.collapsed {
+        opacity: 1; }
     .standard-heading .btn-group {
       float: right;
       margin-top: 5px;
@@ -1463,17 +1466,23 @@ input:focus ~ .clear-field {
     width: 100%; }
 
 .standard-sidebar {
-  height: 100%;
+  height: 100% !important;
   padding: 0;
   background: #e5e5e5;
   border-left: 1px solid #bbb;
+  width: 20%;
+  min-width: 240px;
   max-width: 300px;
-  min-width: 220px;
-  width: 20%; }
+  -moz-transition: all 0.35s ease;
+  -o-transition: all 0.35s ease;
+  -webkit-transition: all 0.35s ease;
+  transition: all 0.35s ease;
+  position: relative;
+  display: block !important; }
   .standard-sidebar::-webkit-scrollbar {
     width: 0px;
     background: transparent; }
-  @media (max-width: 991px) {
+  @media (max-width: 767px) {
     .standard-sidebar {
       display: none; } }
   .standard-sidebar-inner {
@@ -1482,15 +1491,12 @@ input:focus ~ .clear-field {
     content: "";
     display: table;
     clear: both; }
-  .standard-sidebar-close {
+  .standard-sidebar .btn-sidebar-collapse {
     float: right;
     padding: 0;
-    color: #bbb;
     font-size: 26px;
     line-height: 32px;
     padding: 0; }
-    .standard-sidebar-close:hover {
-      color: #555; }
   .standard-sidebar-more {
     float: right;
     margin-left: 15px; }
