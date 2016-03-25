@@ -108,12 +108,12 @@ $( document ).ready(function() {
     DETAIL VIEW FOR MOBILE
   */
   
-  $( ".bootcards-list .list-group a.list-group-item" ).click(function() {
+  $( ".content-list a.list-group-item" ).click(function() {
     if ($(window).width() < 768) {
       // Hide list view
-      $(".bootcards-list").attr('style','display:none !important');
+      $(".content-list").attr('style','display:none !important');
       // Show detail view
-      $(".bootcards-cards").attr('style','display:block !important');
+      $(".content-cards").attr('style','display:block !important');
     }
   });
 

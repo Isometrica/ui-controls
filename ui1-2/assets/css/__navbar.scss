@@ -85,7 +85,7 @@ $navbar-height-branded: 80px;
   
   .dropdown {      
     @media (max-width: 767px) {
-      position: static;   
+      //position: static;   
     }
     
     &-menu {

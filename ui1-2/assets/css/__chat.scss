@@ -1,6 +1,6 @@
 .chat {  
   background: white;
-  
+  position: relative;
   
   @include flex(1);
   @include flexbox;
