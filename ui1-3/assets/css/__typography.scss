@@ -1,0 +1,18 @@
+.text {
+  &-success {
+    color: $green-color !important;
+  }
+  &-warning {
+    color: $amber-color !important;
+  }
+  &-danger {
+    color: $red-color !important;
+  }
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+

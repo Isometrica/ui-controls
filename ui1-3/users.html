@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title">
+      User directory  
+    </span>
+
+    <!-- STANDARD NAVIGATION -->
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-arrow-left"></i>
+        </a> 
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="content-list scroll col-sm-4">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#invite-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Invite</span>
+    					</a>
+    				</form>
+    				<div class="list-group" id="usersList">
+  						<a class="list-group-item" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-12.png">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Luke Elliott</h4>
+    							<p class="list-group-item-text">Quality manager</p>
+  							</div>
+  						</a>
+     				  <a class="list-group-item" href="#">
+      				  <img class="img-circle pull-xs-left" src="assets/img/avatar-steve.gif">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Stephen Ives</h4>
+    							<p class="list-group-item-text">CEO</p>
+  							</div>
+  						</a> 						
+  						
+  						<a class="list-group-item" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatar-jack.gif">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Peter Johnson</h4>
+    							<p class="list-group-item-text">IT manager</p>
+  							</div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-13.png">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Helen Molyneaux</h4>
+    							<p class="list-group-item-text">BCM consultant</p>
+  							</div>
+  						</a>
+  						<a class="list-group-item active" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-1.png">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Mike Smith</h4>
+    							<p class="list-group-item-text">VP of Sales</p>
+    						</div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-3.png">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Sally Smith</h4>
+    							<p class="list-group-item-text">HR manager</p>
+  							</div>
+  						</a>
+  						<a class="list-group-item" href="#">
+    						<img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-6.png">
+    						<div class="list-group-item-content">
+    							<h4 class="list-group-item-heading">Lorna Tomlinson</h4>
+    							<p class="list-group-item-text">Exec assistant</p>
+  							</div>
+  						</a>  
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards scroll flexbox-column col-sm-8 hidden-sm-down">
+					<div class="content-cards-inner flex scroll">
+            <div class="card">
+    					<div class="card-block card-heading clearfix">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    								<i class="ms-Icon ms-Icon--pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">User details</h3>
+    					</div>
+              <div class="list-group">
+    
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <img class="img-circle pull-xs-left" src="assets/img/avatars/avatar-placeholder-1.png">
+                      <p class="list-group-item-text">Name</p>
+                      <h4 class="list-group-item-heading">Mike Smith</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Initials</p>
+                      <h4 class="list-group-item-heading">MS</h4>
+                    </div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Description</p>
+                      <h4 class="list-group-item-heading">VP of Sales</h4>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Contact details</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/contact-details.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Mike's superpowers for Clifton Asset Management Plc</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/superpowers.html'"></div> 
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Edit User</h4>
+        </div>
+        <form class="form-horizontal">
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Photo</label>
+              <div class="col-sm-8 col-xs-12">
+                <img class="img-circle" src="assets/img/avatars/avatar-placeholder-1.png">
+                <span class="btn btn-secondary btn-file">
+                  Change <input type="file">
+                </span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Name" value="Mike Smith"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="ms-Icon ms-Icon--xCircle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Initials</label>
+              <div class="col-sm-3 col-xs-12">
+                <input type="text" class="form-control" placeholder="Initials" value="MS"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="ms-Icon ms-Icon--xCircle"></i>
+  			        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Description" value="VP of Sales"/>
+                <button type="button" class="btn btn-link clear-field">
+  			          <i class="ms-Icon ms-Icon--xCircle"></i>
+  			        </button>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Password</label>
+              <div class="col-sm-8 col-xs-12">
+                <button type="button" class="btn btn-primary">Change password</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Contact details</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="contact">
+            <div ng-include="'includes/subcards-edit/contact-details.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#superpowers" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Mike's superpowers for Clifton Asset Management Plc</h4>
+            <h4 class="card-title pull-xs-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="superpowers">
+            <div ng-include="'includes/subcards-edit/superpowers.html'"></div>
+          </div>
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Invite users modal -->
+  <div ng-include="'includes/invite-modal.html'"></div>
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
