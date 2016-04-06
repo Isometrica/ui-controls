@@ -1962,6 +1962,53 @@ legend {
     font-size: 13px;
     padding: 4px 8px; }
 
+.dashboard-stats {
+  padding: 5px 30px; }
+  .dashboard-stats-title {
+    font-family: "Segoe UI Light WestEuropean", "Segoe UI Light", "Segoe WP Light", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    margin: 0 0 10px; }
+    .dashboard-stats-title a {
+      margin-left: 5px; }
+  .dashboard-stats-user {
+    margin-right: 15px;
+    display: inline-block;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    padding: 5px 0; }
+    .dashboard-stats-user i {
+      margin-right: 5px;
+      color: #00BCF2; }
+  .dashboard-stats-message {
+    padding: 5px 0;
+    cursor: pointer;
+    display: block;
+    /*
+    a {
+      opacity: 0;
+      margin-left: 5px;
+      @include transition(opacity .3s ease);
+    }
+    
+    &:hover a {
+      opacity: 1;
+    }
+    */ }
+    .dashboard-stats-message i {
+      margin-right: 5px;
+      color: #00BCF2; }
+    .dashboard-stats-message span {
+      margin-left: 5px; }
+  .dashboard-stats-action {
+    padding: 5px 0;
+    cursor: pointer;
+    display: block; }
+    .dashboard-stats-action .label {
+      font-size: 14px;
+      position: relative;
+      top: -1px;
+      margin-right: 5px; }
+    .dashboard-stats-action .text-danger {
+      margin-left: 5px; }
+
 .dashboard-footer {
   padding: 15px 30px; }
   .dashboard-footer-buttons {
