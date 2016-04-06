@@ -22,152 +22,120 @@
   <div class="navbar">
     <span class="navbar-title dropdown">
       <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-        2.2.1 Inquiry handling
+        Non-conformities - by magnitude
       </a>
       <div class="dropdown-menu">
-        <a class="dropdown-item active" href="#">2.2.1 Inquiry handling</a>
-        <a class="dropdown-item" href="#">All</a>
+        <a class="dropdown-item active" href="#">By magnitude</a>
+        <a class="dropdown-item" href="#">By status</a>
+        <a class="dropdown-item" href="#">By department</a>
+        <a class="dropdown-item" href="#">Deleted</a>
       </div>   
     </span>
-
-    <!-- STANDARD NAVIGATION -->
     <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item">
         <a class="nav-link" href="index.html">
-        	<i class="fa fa-arrow-left"></i>
+        	<i class="fa fa-angle-left"></i>
         </a> 
       </li>
-    </ul>
-  </div>
-  
-  <div class="timeline">
-    <div class="timeline-inner">
-      <div class="timeline-items">
-        <div class="timeline-item">
-          <span class="timeline-item-date">1 Mar</span>
-          <span class="timeline-item-icon timeline-item-icon-rectangle">NC101</span>
-          <span class="timeline-item-details">Opened by <span>John Smith</span></span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-item-date">9 Mar</span>
-          <span class="timeline-item-icon timeline-item-icon-stack">CA101</span>
-          <span class="timeline-item-details">To be completed by <span>John Smith</span></span>
-          <span class="timeline-item-events">3 events <span>1 overdue</span></span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-item-date">6 Apr</span>
-          <span class="timeline-item-icon timeline-item-icon-rectangle">CA106</span>
-          <span class="timeline-item-details">To be verified by <span>Peter Jones</span></span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-item-date">10 Apr</span>
-          <span class="timeline-item-icon timeline-item-icon-diamond"><i class="fa fa-users"></i></span>
-          <span class="timeline-item-details">Improvements plan review</span>
-        </div>
-        <div class="timeline-item">
-          <span class="timeline-item-date">25 Apr</span>
-          <span class="timeline-item-icon timeline-item-icon-rounded"><i class="fa fa-flag-checkered"></i></span>
-        </div>
-      </div>
-    </div>
+    </ul> 
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item">
+        <a class="nav-link" href="#">
+        	<i class="fa fa-bar-chart-o"></i>
+        </a> 
+      </li>
+    </ul>     
   </div>
 
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="content-list scroll col-sm-4">
+        <div class="content-list scroll">
           <div class="card">
     				<form class="search-form">
     		      <div class="form-group row">
     			      <input type="text" class="form-control" placeholder="Search...">
     		      </div>
-    					<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
     						<i class="fa fa-plus"></i>
     						<span>Add</span>
     					</a>
     				</form>
-    				<div class="list-group list-group-accordion" id="summaryAccordion">    				
+    				<div class="list-group list-group-accordion" id="nonconformitiesAccordion">     				
       				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-1">
-    						<h4 class="list-group-item-heading pull-left">Non-conformities</h4>
-    						<button data-target="#worksheet-modal" data-toggle="modal" class="btn btn-link btn-right"><i class="fa fa-table"></i></button>
+    						<h4 class="list-group-item-heading pull-left">Critical</h4>
+    						<p class="list-group-item-text text-danger pull-right">&pound;8k</p>
     					</a>      				
       				<div class="list-group-collapse collapse in" id="collapse-1">
         				<div class="list-group">
-        				  <a class="list-group-item active" href="#">
-        						<span class="label label-danger label-status-indicator"></span>
+        				  <a class="list-group-item" href="#">
+          				  <span class="label label-warning label-status-indicator"></span>
                     <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">NC101 &times; 3</h4>
-                      <p class="list-group-item-text">Deal valuation not carried out</p>
+        							<h4 class="list-group-item-heading pull-left">Data file lost</h4>
+        							<p class="list-group-item-text text-danger pull-right">&pound;5k</p>
+                      <p class="list-group-item-text pull-left">NC123</p>
+                      <p class="list-group-item-text pull-right">20 Mar 2016</p>
                     </div>
       						</a>
-      						<div class="list-group-collapse collapse in">
-          				  <a class="list-group-item" href="#">
-          						<span class="label label-warning label-status-indicator"></span>
-                      <div class="list-group-item-content">
-          							<h4 class="list-group-item-heading">CA156 <small class="pull-right text-muted">20 Feb 16</small></h4>
-                        <p class="list-group-item-text">Train new joiners</p>
-                      </div>
-        						</a>
-        						<a class="list-group-item" href="#">
-          						<span class="label label-default label-status-indicator"></span>
-                      <div class="list-group-item-content">
-          							<h4 class="list-group-item-heading">CA158 <small class="pull-right text-muted">24 Feb 16</small></h4>
-                        <p class="list-group-item-text">Speed up process</p>
-                      </div>
-        						</a>        						
-      						</div>
-      						<a class="list-group-item" href="#">
-        						<span class="label label-success label-status-indicator"></span>
+      						<a class="list-group-item active" href="#">
+          				  <span class="label label-danger label-status-indicator"></span>
                     <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">NC102 &times; 2</h4>
-                      <p class="list-group-item-text">Due diligence not carried out</p>
+        							<h4 class="list-group-item-heading pull-left">Inquiry not recorded (&times; 3)</h4>
+        							<p class="list-group-item-text text-danger pull-right">&pound;3k</p>
+                      <p class="list-group-item-text pull-left">NC124</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
                     </div>
       						</a>
         				</div>
       				</div>
       				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
-    						<h4 class="list-group-item-heading pull-left">Incidents</h4>
-    						<button data-target="#worksheet-modal" data-toggle="modal" class="btn btn-link btn-right"><i class="fa fa-table"></i></button>
-    					</a>      			
-    					<div class="list-group-collapse collapse" id="collapse-2">
+    						<h4 class="list-group-item-heading pull-left">Major</h4>
+    						<p class="list-group-item-text text-danger pull-right">&pound;4k</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-2">
+        				<div class="list-group">
+      						<a class="list-group-item" href="#">
+          				  <span class="label label-warning label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">Data file lost</h4>
+        							<p class="list-group-item-text text-danger pull-right">&pound;2k</p>
+                      <p class="list-group-item-text pull-left">NC123</p>
+                      <p class="list-group-item-text pull-right">20 Mar 2016</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+          				  <span class="label label-danger label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">Inquiry not recorded (&times; 3)</h4>
+        							<p class="list-group-item-text text-danger pull-right">&pound;2k</p>
+                      <p class="list-group-item-text pull-left">NC124</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-3">
+    						<h4 class="list-group-item-heading pull-left">Minor</h4>
+    						<p class="list-group-item-text text-danger pull-right">&pound;0.5k</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-3">
         				<div class="list-group">
         				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-status-indicator"></span>
+          				  <span class="label label-warning label-status-indicator"></span>
                     <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">IN101</h4>
-                      <p class="list-group-item-text">Deal valuation not carried out</p>
+        							<h4 class="list-group-item-heading pull-left">Data file lost</h4>
+        							<p class="list-group-item-text text-danger pull-right">&pound;0.5k</p>
+                      <p class="list-group-item-text pull-left">NC123</p>
+                      <p class="list-group-item-text pull-right">20 Mar 2016</p>
                     </div>
       						</a>
         				</div>
-    					</div>	   				
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading pull-left">Lessons learned</h4>
-    						<button data-target="#worksheet-modal" data-toggle="modal" class="btn btn-link btn-right"><i class="fa fa-table"></i></button>
-    					</a>      
-    					<div class="list-group-collapse collapse" id="collapse-3">
-      					<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-status-indicator"></span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">LL345</h4>
-                      <p class="list-group-item-text">Deal valuation not carried out</p>
-                    </div>
-      						</a>
-        				</div>
-    					</div>								
+      				</div>
     				</div>
           </div>
     		</div>
-    		<div class="content-cards flexbox-column col-sm-8 hidden-sm-down">
-
-          <div class="alert alert-danger" role="alert">
-            <button type="button" class="btn btn-success pull-right">Verify</button>
-            <strong>Verification required</strong>
-            <br>John Smith has completed a corrective action for NC101 which needs verifying as effective.
-          </div>
-
-          <div class="content-cards-inner flex scroll">
-
+    		<div class="content-cards hidden-sm-down scroll">
+    		  <div class="content-cards-inner flex scroll">
     				<div class="card">
     					<div class="card-block card-heading">
     						<div class="card-heading-buttons pull-xs-right">
@@ -177,41 +145,36 @@
     							</a>
     						</div>
     						<h3 class="card-title">
-      						NC101
-      						<span class="label text-warning margin-left">In progress</span>
+      						NC124
+      						<span class="label text-warning margin-left">Open, just reported</span>
       				  </h3>
-    					</div>
-  
+    					</div> 
               <div class="list-group">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Title</p>
-                  <h4 class="list-group-item-heading">
-                    Deal valuation not carried out
-                  </h4>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Standard</p>
-                  <h4 class="list-group-item-heading"><a href="">SOP - Client onboarding</a></h4>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Support ticket ref</p>
-                  <h4 class="list-group-item-heading">DESK-101</h4>
+                  <h4 class="list-group-item-heading">Inquiry not recorded</h4>
                 </div>
                 <div class="list-group-item">
                   <p class="list-group-item-text">Description</p>
-                  <h4 class="list-group-item-heading">Deal valuations not carried out with new client resulting in problems agreing valuations later</h4>
+                  <h4 class="list-group-item-heading">Deal valuations not carried out with new client resulting in problems agreeing valuations later</h4>
                 </div>
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Standard</p>
+                  <h4 class="list-group-item-heading"><a href="">2.2.1 Inquiry handling</a></h4>
+                </div>
+                
+                
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Created date</p>
-                      <h4 class="list-group-item-heading">10 Jan 2016</h4>
+                      <p class="list-group-item-text">Reported by</p>
+                      <h4 class="list-group-item-heading">Steve Saunders</h4>
                     </div>
                   </div>
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Created by</p>
-                      <h4 class="list-group-item-heading">Steve Saunders</h4>
+                      <p class="list-group-item-text">Reported date</p>
+                      <h4 class="list-group-item-heading">10 Jan 2016</h4>
                     </div>
                   </div>
                 </div>
@@ -219,7 +182,7 @@
                   <div class="col-sm-6">
                     <div class="list-group-item">
                       <p class="list-group-item-text">Type</p>
-                      <h4 class="list-group-item-heading">Major non-conformity</h4>
+                      <h4 class="list-group-item-heading">Major</h4>
                     </div>
                   </div>
                   <div class="col-sm-6">
@@ -228,6 +191,10 @@
                       <h4 class="list-group-item-heading">£25,000</h4>
                     </div>
                   </div>
+                </div>
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Help desk ref</p>
+                  <h4 class="list-group-item-heading"><a href="#">JIRA-2070</a></h4>
                 </div>
               </div>
               <div class="card-block card-subheading">
@@ -252,24 +219,9 @@
                     </div>
                   </div>
                 </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">File(s)</p>
-                  <h4 class="list-group-item-heading">
-                    <a href="#">
-                      <i class="fa fa-file-word-o"></i>
-                      NC101 Root Cause Analysis.docx 
-                    </a>
-                  </h4>
-                  <h4 class="list-group-item-heading">
-                    <a href="#">
-                      <i class="fa fa-file-excel-o"></i>
-                       NC101.xls  
-                    </a>
-                  </h4>
-                </div>
               </div>
               <div class="card-block card-subheading">
-                <h4 class="card-title">Users to notify</h4>
+                <h4 class="card-title">Notify</h4>
               </div>
               <div ng-include="'includes/subcards-read/notify.html'"></div>
               <div class="card-block card-subheading">
@@ -292,18 +244,21 @@
                 <h4 class="card-title">Lessons learned</h4>
               </div>
               <div ng-include="'includes/subcards-read/lessons.html'"></div>
-              
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Other files</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/files.html'"></div>
               <!-- Changelog -->
-              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+              <div ng-include="'includes/card-footer-changelog.html'"></div>   
     				</div>
-  				
-          </div>
+					</div>
     		</div>
       </div> 		
     </div>
   </div>
-
-
+  
+  
+  
   <!-- Edit Modal -->
   <div class="modal fade" id="edit-modal">
     <div class="modal-dialog">
@@ -319,21 +274,33 @@
       				Save
       			</button>
           </div>
-          <h4 class="card-title">NC101</h4>
+          <h4 class="card-title">NC123</h4>
         </div>
         <form>
           <div class="card-block">
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Title</label>
               <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control" placeholder="Title" value="Deal valuation not carried out">
+                <input type="text" class="form-control" placeholder="Title" value="Inquiry not recorded">
               </div>
             </div>
             <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Link to standard</label>
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" rows="3" placeholder="Description">Deal valuations not carried out with new client resulting in problems agreeing valuations later</textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <span class="label text-success">Open - just reported</span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Standard(s)</label>
               <div class="col-sm-8 col-xs-12">
                 <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Link to standard" value="SOP - Client onboarding"/>
+                  <input class="form-control" data-toggle="dropdown" placeholder="Link to standard" value="2.2.1 Inquiry handling"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">1. Client feedback</a>
                     <a class="dropdown-item active" href="#">2. Client onboarding</a>
@@ -344,23 +311,13 @@
                 </div>
               </div>
             </div>
+            
+            
             <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
-              <div class="col-sm-8 col-xs-12">
-                <textarea class="form-control" rows="3" placeholder="Description">Deal valuations not carried out with new client resulting in problems agreing valuations later</textarea>
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Created date</label>
-              <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control" placeholder="Created date" value="10 Jan 2016">
-              </div>
-            </div>
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Created by</label>
+              <label class="form-control-label col-sm-4 col-xs-12">Reported by</label>
               <div class="col-sm-8 col-xs-12">
                 <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Created by" value="Steve Saunders"/>
+                  <input class="form-control" data-toggle="dropdown" placeholder="Reported by" value="Steve Saunders"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">Jack Herbert</a>
                     <a class="dropdown-item" href="#">Steve Ives</a>
@@ -374,19 +331,38 @@
               </div>
             </div>
             <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Type</label>
+              <label class="form-control-label col-sm-4 col-xs-12">Reported date</label>
               <div class="col-sm-8 col-xs-12">
-                <select class="form-control c-select">
-                  <option></option>
-                  <option>Minor non-conformity</option>
-                  <option selected="">Major non-conformity</option>
-                  <option>Critical non-conformity</option>
-                </select>
+                <input type="text" class="form-control" placeholder="Reported date" value="10 Jan 2016">
               </div>
             </div>
             <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Approx cost per occurrence</label>
+              <label class="form-control-label col-sm-4 col-xs-12">Magnitude</label>
               <div class="col-sm-8 col-xs-12">
+                <div class="form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <select class="form-control c-select">
+                      <option></option>
+                      <option>Minor</option>
+                      <option selected="">Major</option>
+                      <option>Critical</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-link btn-collapse collapsed" data-toggle="collapse" data-target="#magnitude-guidelines-collapse">
+                    <span class="btn-collapse-label-show">Guidelines</span>
+                    <span class="btn-collapse-label-hide">Hide guidelines</span>
+                  </button>
+                </div>
+                <div class="collapse" id="magnitude-guidelines-collapse">
+                  <p class="help-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac fermentum nunc. Aliquam bibendum facilisis leo, scelerisque dignissim libero facilisis at. Vivamus tincidunt erat nec dolor imperdiet ullamcorper. Vestibulum velit ante, faucibus ut laoreet facilisis, fringilla ac nisi.</p>
+                </div>
+              </div>
+
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Approx cost per occurrence</label>
+              <div class="col-sm-4 col-xs-12">
                 <div class="input-group">
                   <div class="input-group-btn">
                     <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GBP</button>
@@ -400,14 +376,24 @@
                 </div>
               </div>
             </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Help desk ref</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control margin-right" placeholder="ID" value="JIRA-2070">
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="URL" value="http://jira.com/example/2070">
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#root-cause-analysis" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle" href="#root-cause-analysis" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Root cause analysis</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">2 files</span>
-            </h4>
           </div>
-          <div class="card-block-collapse collapse" id="root-cause-analysis">
+          <div class="card-block-collapse collapse in" id="root-cause-analysis">
             <div class="card-block">
               <div class="form-group row">
                 <label class="form-control-label col-sm-4 col-xs-12">Who will do it</label>
@@ -434,41 +420,22 @@
                 </div>
               </div>
               <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Completed date</label>
+                <label class="form-control-label col-sm-4 col-xs-12">Status</label>
                 <div class="col-sm-8 col-xs-12">
-                  <input type="text" class="form-control" placeholder="Completed date" value="10 Mar 2016">
+                  <div class="btn-group margin-right" data-toggle="buttons">
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option2" autocomplete="off"> Not completed
+                    </label>
+                    <label class="btn btn-secondary active">
+                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Completed
+                    </label>
+                  </div>
                 </div>
               </div>   
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Files</label>
-                <div class="col-sm-8 col-xs-12">
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-file-word-o fa-lg margin-right"></i>
-                      NC101 Root Cause Analysis.docx
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-times-circle no-margin fa-lg"></i>
-                    </button>
-                  </div>
-                  <div class="btn-group">
-                    <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-file-excel-o fa-lg margin-right"></i>
-                      NC101.xls
-                    </button>
-                    <button type="button" class="btn btn-secondary">
-                      <i class="fa fa-times-circle no-margin fa-lg"></i>
-                    </button>
-                  </div>
-                  <span class="btn btn-primary btn-file">
-                    <i class="fa fa-plus"></i> Add <input type="file">
-                  </span>                  
-                </div>
-              </div>                    
             </div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Users to notify</h4>
+            <h4 class="card-title pull-xs-left">Notify</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">2</span>
             </h4>
@@ -522,19 +489,26 @@
           </div>
           <div class="card-block-collapse collapse" id="lessons">
             <div ng-include="'includes/subcards-edit/lessons.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Other files</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards-edit/files.html'"></div>
           </div>         
           <div class="card-block text-xs-center">
             <button type="button" class="btn btn-secondary">Delete</button>
           </div>
         </form>
-        <div ng-include="'includes/card-footer-changelog.html'"></div>
       </div>
     </div>
   </div>
 
+  
 
-  <!-- Worksheet modal -->
-  <div ng-include="'includes/worksheet-modal.html'"></div>
 
 
 	<!-- JS -->
@@ -542,6 +516,7 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>

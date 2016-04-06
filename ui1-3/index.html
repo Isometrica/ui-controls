@@ -20,13 +20,10 @@
 
   <!-- NAVBAR -->
   <div class="navbar navbar-branded">
-    <span class="navbar-title">
-      Processes &amp; policies
-    </span>
 
     <!-- STANDARD NAVIGATION -->
     <ul class="nav navbar-nav pull-xs-left">
-      <li class="nav-item dropdown dropdown-company">
+      <li class="nav-item dropdown dropdown-company hidden-sm-down">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
         	<span class="hidden-xs-down"><img src="assets/img/cliftonassetmanagement.png"></span>
         	<i class="fa fa-building hidden-sm-up"></i>
@@ -42,35 +39,10 @@
       </li>
     </ul>
     <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item dropdown hidden-sm-down">
-        <a class="nav-link standard-link" href="#" data-toggle="dropdown">
-          <i class="fa fa-users"></i>
-          <span class="label label-info">2</span>
-        </a>  
-        <div class="dropdown-menu">
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-success label-status"></i>
-            Steve Saunders
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-success label-status"></i>
-            John Smith
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-danger label-status"></i>
-            Jane Doe
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-danger label-status"></i>
-            Katrina Ives
-          </a>
-        </div> 
-      </li>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
         	<i class="fa fa-circle text-success label-status"></i>
-        	<span class="hidden-xs-down">Stephen</span> 
+        	<span>Stephen Ives</span> 
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item active" href="#">
@@ -109,934 +81,92 @@
   <div class="content">
     <div class="container">
       <div class="row">
-        <div class="content-list scroll">
-          <div class="card">
-    				<form class="search-form">
-    		      <div class="form-group row">
-    			      <input type="text" class="form-control" placeholder="Search...">
-    		      </div>
-    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
-    						<i class="fa fa-plus"></i>
-    						<span>Add</span>
+        <div class="content-cards col-sm-12 scroll">
+    			<div class="dashboard-items">
+      		  <div>
+    					<a href="standards.html" class="card dashboard-item">
+    						<div class="card-block">
+    							<i class="fa fa-fw fa-book dashboard-item-icon"></i>
+                  <h3 class="card-title">Standards book</h3>
+      						<div class="card-footer">
+      							<span class="text-muted">8 standards, 2 new</span>
+      						</div>
+    						</div>
     					</a>
-    				</form>
-    				<div class="list-group list-group-accordion" id="standardsAccordion">
-      				<a class="list-group-item list-group-subheading" href="#">
-    						<h4 class="list-group-item-heading pull-left"><strong>Clifton standards book</strong></h4>
-    					</a>      				
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
-    						<h4 class="list-group-item-heading pull-left">1. Client feedback</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-2">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
-                      <p class="list-group-item-text pull-left">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
-    						<h4 class="list-group-item-heading pull-left">2. Client onboarding <span class="label label-danger label-count">3</span></h4>
-    						<h4 class="list-group-item-heading pull-right text-danger">&pound;4,567</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse in" id="collapse-3">
-        				<div class="list-group">
-      						<a class="list-group-item" href="#">
-        						<span class="label label-default label-standard">REG</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.1. Dolor est compendum</h4>
-                      <p class="list-group-item-text pull-left">Regulation</p>
-                    </div>
-      						</a>  
-      						<a class="list-group-item" href="#">
-        						<span class="label label-default label-standard">REG</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.2. Lorem ipsum dolor <span class="label label-danger label-count">1</span></h4>
-                      <p class="list-group-item-text pull-left">Regulation</p>
-                    </div>
-      						</a>  
-        					<div class="sub"> 
-          				  <a class="list-group-item active" href="#">
-          						<span class="label label-danger label-standard">SOP</span>
-                      <div class="list-group-item-content">
-          							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
-                        <p class="list-group-item-text pull-left">Procedure</p>
-                        <p class="list-group-item-text pull-right text-danger">&pound;4,567</p>
-                      </div>
-        						</a>
-        						<div class="subsub">
-          						<a class="list-group-item" href="#">
-            						<span class="label label-success label-standard">SPEC</span>
-                        <div class="list-group-item-content">
-            							<h4 class="list-group-item-heading">2.2.1.1 Lead handling <span class="label label-danger label-count">2</span></h4>
-                          <p class="list-group-item-text pull-left">Specification</p>
-                        </div>
-          						</a>
-          						<div class="subsubsub">
-            						<a class="list-group-item" href="#">
-              						<span class="label label-warning label-standard">POL</span>
-                          <div class="list-group-item-content">
-              							<h4 class="list-group-item-heading">2.2.1.1.1 Due diligence</h4>
-                            <p class="list-group-item-text pull-left">Policy</p>
-                          </div>
-            						</a>
-          						</div>
-        						</div>
-        					</div>
-      						<a class="list-group-item" href="#">
-        						<span class="label label-default label-standard">REG</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">2.3 Lorem ipsum</h4>
-                      <p class="list-group-item-text pull-left pull-left">Regulation</p>
-                    </div>
-      						</a>      					
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
-    						<h4 class="list-group-item-heading pull-left">3. Client deal execution</h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-4">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Inquiry handling</h4>
-                      <p class="list-group-item-text pull-left">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
-    						<h4 class="list-group-item-heading pull-left">4. Clifton policies <span class="label label-danger label-count">1</span></h4>
-    					</a>      				
-      				<div class="list-group-collapse collapse" id="collapse-5">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-        						<span class="label label-danger label-standard">SOP</span>
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Inquiry handling <span class="label label-danger label-count">1</span></h4>
-                      <p class="list-group-item-text pull-left">Procedure</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div>
-      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-6">
-    						<h4 class="list-group-item-heading">Plio how to</h4>
-    					</a>     
-    					<div class="list-group-collapse collapse" id="collapse-6">
-        				<div class="list-group">
-        				  <a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Lorem</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-      						<a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Ipsum</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-      						<a class="list-group-item" href="#">
-                    <div class="list-group-item-content">
-        							<h4 class="list-group-item-heading">Dolor</h4>
-        							<p class="list-group-item-text">Lorem ipsum dolor est</p>
-                    </div>
-      						</a>
-        				</div>
-      				</div> 				
+      			</div>
+            <div>
+    					<a href="discussions.html" class="card dashboard-item">
+    						<div class="card-block">
+    							<i class="fa fa-fw fa-comments dashboard-item-icon"></i>
+                  <h3 class="card-title">Discussions</h3>
+      						<div class="card-footer">
+      							<span class="text-muted">3 discussions, 1 new</span>
+      						</div>
+    						</div>
+    					</a>
     				</div>
-          </div>
-    		</div>
-    		<div class="content-cards flexbox-row hidden-sm-down">
-      		<div class="flexbox-column">
-        		<div class="standard-heading">
-              <span class="label label-danger label-standard">SOP</span>
-              <button type="button" class="btn btn-link btn-sidebar-collapse">
-                <i class="fa fa-info-circle"></i>
-              </button>
-              <div class="standard-heading-dropdown dropdown">
-                <h2 class="standard-heading-title dropdown-toggle" data-toggle="dropdown">2.2.1 Inquiry handling</h2>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a href="#edit-modal" class="dropdown-item" data-toggle="modal">Edit details</a>
-                  <a href="#" class="dropdown-item">Go to linked document</a>
-                </div>            
-              </div>
-              <div class="btn-group">
-                <a href="todos.html" class="btn btn-secondary">6 actions</a>
-                <a href="todos.html" class="btn btn-primary">2 for you</a>
-              </div>
-              <p class="standard-heading-text">Mike Smith</p>
-              <p class="standard-heading-text standard-heading-issue">Issue 1 <a href="#" class="btn btn-sm btn-secondary standard-heading-issue-draft">Issue 2 draft</a></p>
-              <p class="standard-heading-text">Optional line of description lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        		</div>
-        		<div class="chat">
-              <div class="chat-content">
-                <div class="chat-item chat-item-start">
-                  <p class="chat-item-text">This procedure was created by <strong>Stephen Ives</strong> on <strong>February 24th, 2016</strong></p>
-                </div>
-                <div class="chat-item-date">
-                  <span>February 24th</span>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:37</span>
-                    <span class="chat-item-author">Mike</span>
-                    <span class="chat-item-channel">Top level</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Hi Steve, just testing out Plio</p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Steve</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                        <a href="#" class="dropdown-item">Delete</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Ok, that's cool</p>
-                  </div>
-                </div>
-                <div class="chat-item-date">
-                  <span>February 25th</span>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Mike</span>
-                    <span class="chat-item-channel">Top level</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Have you uploaded any standards?</p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Steve</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                        <a href="#" class="dropdown-item">Delete</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text"><a href="">http://www.plio.io/abc1234</a></p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-11.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:39</span>
-                    <span class="chat-item-author">Ann</span>
-                    <span class="chat-item-channel">Inquiry handling</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">How many inquiries last week?</p>
-                  </div>
-                </div>
-                <div class="chat-item-date">
-                  <span>February 27th</span>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:37</span>
-                    <span class="chat-item-author">Mike</span>
-                    <span class="chat-item-channel">Top level</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Hi Steve, just testing out Plio</p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Steve</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                        <a href="#" class="dropdown-item">Delete</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Ok, that's cool</p>
-                  </div>
-                  <div class="chat-item-reply">
-                    <form>
-                      <div class="form-group">
-                        <div class="input-group">
-                          <input type="text" class="form-control" placeholder="Reply to Steve">
-                          <span class="input-group-btn">
-                            <button class="btn btn-secondary">
-                              <i class="fa fa-paperclip"></i>
-                            </button>
-                          </span>
-                        </div>
-                      </div>
-                    </form>
-                  </div>                
-                </div>
-                <div class="chat-item-date">
-                  <span>February 29th</span>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Mike</span>
-                    <span class="chat-item-channel">Top level</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">Have you uploaded any standards?</p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:38</span>
-                    <span class="chat-item-author">Steve</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                        <a href="#" class="dropdown-item">Delete</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text"><a href="">http://www.plio.io/abc1234</a></p>
-                  </div>
-                </div>
-                <div class="chat-item">
-                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-11.png">
-                  <div class="chat-item-card">
-                    <span class="chat-item-time">11:39</span>
-                    <span class="chat-item-author">Ann</span>
-                    <span class="chat-item-channel">Inquiry handling</span>
-                    <div class="chat-item-dropdown dropup">
-                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">Reply</a>
-                        <a href="#" class="dropdown-item">Add to Suggestions</a>
-                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
-                        <a href="#" class="dropdown-item">Move to another channel</a>
-                      </div>
-                    </div>
-                    <p class="chat-item-text">How many inquiries last week?</p>
-                  </div>
-                </div>
-              </div>
-              <div class="chat-form">
-                <form>
-                  <div class="form-group">
-                    <div class="input-group">
-                      <input type="text" class="form-control" placeholder="Type message">
-                      <span class="input-group-btn">
-                        <button class="btn btn-secondary">
-                          <i class="fa fa-paperclip"></i>
-                        </button>
-                      </span>
-                    </div>
-                  </div>
-                </form>
-              </div>        		
-        		</div>
-      		</div>
-          <div class="standard-sidebar scroll">
-            <div class="standard-sidebar-inner">
-              <div class="standard-sidebar-heading">
-                <h3 class="standard-sidebar-title">Info</h3>
-                <a href="summary.html" class="btn btn-secondary standard-sidebar-more">
-                  More
-                </a>
-                <a href="#" class="btn btn-link btn-sidebar-collapse">
-                  <i class="fa fa-times-circle"></i>
-                </a>
-              </div>
-              <hr>
-              <h4 class="standard-sidebar-subtitle">Business impact analysis</h4>
-              <div class="standard-sidebar-bia">
-                <h3 class="standard-sidebar-bia-value">£15,500</h3>
-                <a href="#bia-chart-modal" data-toggle="modal" class="standard-sidebar-bia-chart"><i class="fa fa-bar-chart"></i></a>              
-              </div>
-              <hr>
-              
-              <a href="#worksheet-modal" data-toggle="modal" class="standard-sidebar-worksheet"><i class="fa fa-table"></i></a> 
-              <h4 class="standard-sidebar-subtitle">Non-conformities &amp; incidents</h4>
-              <div class="card">
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item">
-                    <span class="label label-danger">NC101</span>
-                    <h5 class="card-title">Deal valuation not carried out</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="label label-success">NC102</span>
-                    <h5 class="card-title">Awaiting root cause analysis</h5>
-                  </a>
-                </div>
-              </div>
-              <hr>
-              <h4 class="standard-sidebar-subtitle">Root cause analysis</h4>
-              <div class="card">
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item">
-                    <i class="fa fa-file-word-o"></i>
-                    <h5 class="card-title">Root cause analysis lorem ipsum</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <i class="fa fa-file-word-o"></i>
-                    <h5 class="card-title">Another file</h5>
-                  </a>
-                </div>
-              </div>
-              <hr>
-              <a href="#worksheet-modal" data-toggle="modal" class="standard-sidebar-worksheet"><i class="fa fa-table"></i></a> 
-              <h4 class="standard-sidebar-subtitle">Corrective &amp; preventative actions</h4>
-              <div class="card">
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item">
-                    <span class="label label-warning">CA156</span>
-                    <h5 class="card-title">Train new joiners</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="label label-warning">CA157</span>
-                    <h5 class="card-title">Speed up registrations</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="label label-default">CA173</span>
-                    <h5 class="card-title">Inform company of changes</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <span class="label label-danger">PA33</span>
-                    <h5 class="card-title">Restructure software</h5>
-                  </a>
-                </div>
-              </div>
-              <hr>
-              <h4 class="standard-sidebar-subtitle">Other shared files</h4>
-              <div class="card">
-                <div class="list-group list-group-flush">
-                  <a href="#" class="list-group-item">
-                    <i class="fa fa-file-excel-o"></i>
-                    <h5 class="card-title">Cost spreadsheets</h5>
-                  </a>
-                  <a href="#" class="list-group-item">
-                    <i class="fa fa-file-pdf-o"></i>
-                    <h5 class="card-title">Process flowchart</h5>
-                  </a>
-                </div>
-              </div>
+            <div>
+    					<a href="nonconformities.html" class="card dashboard-item">
+    						<div class="card-block">
+    							<i class="fa fa-fw fa-exclamation-triangle dashboard-item-icon"></i>
+                  <h3 class="card-title">Non-conformities</h3>
+                  <span class="label label-danger">2</span>
+      						<div class="card-footer">
+      							<span class="text-muted">5 NCs, 2 new</span>
+      						</div>
+    						</div>
+    					</a>
+    				</div>
+            <div>
+    					<a href="actions.html" class="card dashboard-item">
+    						<div class="card-block">
+    							<i class="fa fa-fw fa-inbox dashboard-item-icon"></i>
+                  <h3 class="card-title">Actions</h3>
+      						<div class="card-footer">
+      							<span class="text-muted">5 actions, 2 new</span>
+      						</div>
+    						</div>
+    					</a>
+    				</div>
+            <div>
+    					<a class="card dashboard-item dashboard-item-disabled">
+    						<div class="card-block">
+    							<i class="fa fa-fw fa-bolt dashboard-item-icon"></i>
+                  <h3 class="card-title">Risk register</h3>
+      						<div class="card-footer">
+      							<span class="text-muted">Coming soon</span>
+      						</div>
+    						</div>
+    					</a>
             </div>
-          </div>       		
-    		</div>
-
+    			</div>
+      		<hr>
+      		<div class="dashboard-footer">
+            <div class="dashboard-footer-buttons">
+        			<button type="button" class="btn btn-secondary" data-toggle="modal" data-target="#invite-modal">
+        			  <i class="fa fa-user-plus margin-right"></i>
+        			  Invite users
+              </button>
+              <button type="button" class="btn btn-secondary">
+        			  <i class="fa fa-plus margin-right"></i>
+        			  Report a non-conformity
+              </button>
+            </div>
+            <div class="dashboard-footer-logo">
+              <img src="assets/img/plio-logo.png"/>
+            </div>        		
+      		</div>
+        </div>
       </div> 		
     </div>
   </div>
 
-
-  <!-- Edit Modal -->
-  <div class="modal fade" id="edit-modal">
-    <div class="modal-dialog">
-      <div class="card">
-        <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-xs-left">
-      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="card-heading-buttons pull-xs-right">
-      			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Save
-      			</button>
-          </div>
-          <h4 class="card-title">Process</h4>
-        </div>
-        <form>
-          <div class="card-block">
-            <div class="form-group clearfix">
-              <div class="btn-group pull-left" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> Process
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2" autocomplete="off"> Policy
-                </label>
-              </div>
-              <button type="button" class="btn btn-secondary pull-right">Link to next draft</button>
-            </div>
-            
-            <div class="standard-edit">
-              <div class="form-group dropdown standard-edit-category">
-                <input class="form-control" value="" placeholder="Category" data-toggle="dropdown"/>
-                <div class="dropdown-menu">
-                  <a class="dropdown-item" href="#">1. Client feedback</a>
-                  <a class="dropdown-item" href="#">2. Client onboarding</a>
-                  <a class="dropdown-item" href="#">3. Client deal execution</a>
-                  <a class="dropdown-item" href="#">4. Clifton policies</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#"><strong>Add new category</strong></a>
-                </div> 
-              </div>
-              <span class="label label-danger label-standard standard-edit-label">
-                <div class="form-group dropdown">
-                  <input class="form-control" value="" placeholder="Type" data-toggle="dropdown"/>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Procedure (SOP)</a>
-                    <a class="dropdown-item" href="#">Policy (POL)</a>
-                    <a class="dropdown-item" href="#">Specification (SPEC)</a>
-                    <a class="dropdown-item" href="#">Test method (TEST)</a>
-                    <a class="dropdown-item" href="#">Regulation (REG)</a>
-                  </div> 
-                </div>
-                <div class="form-group">
-                  <input class="form-control" value="" placeholder="ID"/>
-                </div>
-              </span>
-              <div class="standard-edit-content">
-                <div class="form-group">
-                  <input class="form-control standard-edit-title" value="" placeholder="Title"/>
-                </div>
-                <div class="form-group dropdown">
-                  <input class="form-control standard-edit-text" value="" placeholder="Owner" data-toggle="dropdown"/>
-                  <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Jack Herbert</a>
-                    <a class="dropdown-item" href="#">Steve Ives</a>
-                    <a class="dropdown-item" href="#">Mark Leusink</a>
-                    <a class="dropdown-item" href="#">Steve Saunders</a>
-                    <a class="dropdown-item" href="#">Mike Smith</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
-                  </div>                  
-                </div>
-                <div class="form-group">
-                  <input class="form-control standard-edit-text" value="" placeholder="Issue number"/>
-                </div>
-              </div>
-              <div class="form-group">
-                <input class="form-control standard-edit-text" value="" placeholder="Description (optional)"/>
-              </div>
-            </div>
-
-            <div class="form-group form-group-flex">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option1" autocomplete="off"> Draft
-                </label>
-                <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option2" autocomplete="off" checked> Approved
-                </label>
-              </div>
-              <div class="form-group-flex-flex margin-left">
-                <input type="text" class="form-control" placeholder="Date"/>                
-              </div>
-            </div>
-            <div class="form-group form-group-flex">
-              <div class="btn-group" data-toggle="buttons">
-                <label class="btn btn-secondary active">
-                  <input type="radio" name="options" id="option1" autocomplete="off" checked> File link
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option2" autocomplete="off"> Attachment
-                </label>
-                <label class="btn btn-secondary">
-                  <input type="radio" name="options" id="option1" autocomplete="off"> Video link
-                </label>
-              </div>
-              <div class="form-group-flex-flex margin-left">
-                <input type="text" class="form-control" placeholder="File link"/>  
-              </div>
-            </div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Non-conformities</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning label-status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="nonconformities">
-            <div ng-include="'includes/subcards-edit/nonconformities.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#incidents" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Incidents</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning label-status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="incidents">
-            <div ng-include="'includes/subcards-edit/incidents.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Corrective actions</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning label-status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="corrective-actions">
-            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#preventative-actions" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Preventative actions</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning label-status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="preventative-actions">
-            <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Improvement plan</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-          </div>
-          <div class="card-block-collapse collapse" id="improvement-plan">
-            <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Lessons learned</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning label-status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="lessons">
-            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
-          </div> 
-          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Other files</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">2</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="files">
-            <div ng-include="'includes/subcards-edit/files.html'"></div>
-          </div>         
-          <div class="card-block text-xs-center">
-            <button type="button" class="btn btn-secondary">Delete</button>
-          </div>
-        </form>
-        <div ng-include="'includes/card-footer-changelog.html'"></div>
-      </div>
-    </div>
-  </div>
-  
-
-  <!-- Add Type Modal -->
-  <div class="modal fade" id="choose-add-type-modal">
-    <div class="modal-dialog">
-      <div class="card">
-        <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-xs-right">
-      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <h4 class="card-title">Add</h4>
-        </div>
-        <div class="list-group list-group-flush">
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">Process or Policy</h4>
-            <p class="list-group-item-text">Lorem ipsum dolor est</p>
-          </a> 
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">Non-conformity</h4>
-            <p class="list-group-item-text">Lorem ipsum dolor est</p>
-          </a> 
-          <a href="#" class="list-group-item">
-            <h4 class="list-group-item-heading">Incident</h4>
-            <p class="list-group-item-text">Lorem ipsum dolor est</p>
-          </a> 
-        </div>       
-      </div>
-    </div>
-  </div>
-  
-  
-  <!-- Org Settings Modal -->
-  <div class="modal fade" id="org-settings-modal">
-    <div class="modal-dialog">
-      <div class="card">
-        <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-xs-left">
-      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
-          <div class="card-heading-buttons pull-xs-right">
-      			<button type="button" class="btn btn-success" data-dismiss="modal">
-      				Save
-      			</button>
-          </div>
-          <h4 class="card-title">Org settings</h4>
-        </div>
-        <form>
-          <div class="card-block">
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4">Org name</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" placeholder="Org name" value="Clifton Asset Management Plc">
-                <button type="button" class="btn btn-link clear-field">
-    		          <i class="fa fa-times-circle"></i>
-    		        </button>
-              </div>
-            </div>
-
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Org owner</label>
-              <div class="col-sm-8 col-xs-12">
-                <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Org owner" value="Mike Smith"/>
-                  <div class="dropdown-menu dropdown-menu-full">
-                    <a class="dropdown-item" href="#">Jack Herbert</a>
-                    <a class="dropdown-item" href="#">Steve Ives</a>
-                    <a class="dropdown-item" href="#">Mark Leusink</a>
-                    <a class="dropdown-item" href="#">Steve Saunders</a>
-                    <a class="dropdown-item active" href="#">Mike Smith</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4">Standards book name</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" placeholder="Standards book name" value="Clifton standards book">
-                <button type="button" class="btn btn-link clear-field">
-    		          <i class="fa fa-times-circle"></i>
-    		        </button>
-              </div>
-            </div>
-            
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Corrective actions workflow</label>
-              <div class="col-sm-8 col-xs-12">
-                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
-                  <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Single step
-                  </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Double step
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4 col-xs-12">Default currency</label>
-              <div class="col-sm-8 col-xs-12">
-                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> EUR
-                  </label>
-                  <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> GBP
-                  </label>
-                  <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> USD
-                  </label>
-                </div>
-              </div>
-            </div>
-            
-            <div class="form-group row">
-              <label class="form-control-label col-sm-4">Financial year end date</label>
-              <div class="col-sm-8">
-                <input type="text" class="form-control" placeholder="Financial year end date" value="6 Apr 2016">
-                <button type="button" class="btn btn-link clear-field">
-    		          <i class="fa fa-times-circle"></i>
-    		        </button>
-              </div>
-            </div>
-
-
-            
-          </div>
-
-          <div class="card-block card-block-collapse-toggle" href="#categories" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Categories</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">4</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse in" id="categories">
-            <div class="card-block">
-              <div class="form-group form-group-flex margin-bottom-none ">
-                <div class="form-group-flex-flex">
-                  <div class="input-group">
-                    <span class="input-group-addon">1</span>
-                    <input type="text" class="form-control" placeholder="Title" value="Client feedback"/>
-                  </div>              
-                </div>
-                <div class="btn-group margin-left">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-up"></i>
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-down"></i>
-                  </button>                  
-                </div>
-                <button type="button" class="btn btn-secondary margin-left">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex margin-bottom-none ">
-                <div class="form-group-flex-flex">
-                  <div class="input-group">
-                    <span class="input-group-addon">2</span>
-                    <input type="text" class="form-control" placeholder="Title" value="Client onboarding"/>
-                  </div>              
-                </div>
-                <div class="btn-group margin-left">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-up"></i>
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-down"></i>
-                  </button>                  
-                </div>
-                <button type="button" class="btn btn-secondary margin-left">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex margin-bottom-none ">
-                <div class="form-group-flex-flex">
-                  <div class="input-group">
-                    <span class="input-group-addon">3</span>
-                    <input type="text" class="form-control" placeholder="Title" value="Client deal execution"/>
-                  </div>              
-                </div>
-                <div class="btn-group margin-left">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-up"></i>
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-down"></i>
-                  </button>                  
-                </div>
-                <button type="button" class="btn btn-secondary margin-left">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex margin-bottom-none ">
-                <div class="form-group-flex-flex">
-                  <div class="input-group">
-                    <span class="input-group-addon">4</span>
-                    <input type="text" class="form-control" placeholder="Title" value="Clifton policies"/>
-                  </div>              
-                </div>
-                <div class="btn-group margin-left">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-up"></i>
-                  </button>
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-arrow-down"></i>
-                  </button>                  
-                </div>
-                <button type="button" class="btn btn-secondary margin-left">
-                  <i class="fa fa-trash"></i>
-                </button>
-              </div>
-              <button class="btn btn-primary" type="button">Add Category</button>
-            </div>
-          </div>
-        </form>       
-      </div>
-    </div>
-  </div>
-  
-  
-  <!-- BIA chart modal -->
-  <div class="modal fade" id="bia-chart-modal">
-    <div class="modal-dialog">
-      <div class="card">
-        <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-xs-right">
-      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
-      				Close
-      			</button>
-          </div>
-          <h4 class="card-title">Business impact analysis</h4>
-        </div>
-        <div class="card-block">
-          <div class="chart-wrapper">
-            <canvas id="biaTrendChart" width="400" height="400"></canvas>
-          </div>
-        </div>      
-      </div>
-    </div>
-  </div>
-  
-
-  <!-- Worksheet modal -->
-  <div ng-include="'includes/worksheet-modal.html'"></div>
   
   <!-- Invite users modal -->
   <div ng-include="'includes/invite-modal.html'"></div>
-
+  
+  <!-- Org settings modal -->
+  <div ng-include="'includes/org-settings-modal.html'"></div>
 
 
 	<!-- JS -->

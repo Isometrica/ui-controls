@@ -1,0 +1,492 @@
+  <div class="modal fade" id="org-settings-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-success" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Org settings</h4>
+        </div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4">Org name</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" placeholder="Org name" value="Clifton Asset Management Plc">
+                <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+              </div>
+            </div>
+
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Org owner</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group">
+                  <input type="text" class="form-control" value="Mike Smith" disabled="">
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-primary no-margin">Transfer</button>
+                  </span>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Default currency</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> EUR
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> GBP
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> USD
+                  </label>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#departments" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Departments</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">8</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="departments">
+            <div class="card-block">
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Sales"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Marketing"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Customer Service"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Finance"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Administration"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Operations"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="R&D"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <input type="text" class="form-control" placeholder="Department" value="Compliance"/>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary margin-left">
+                      <i class="fa fa-trash"></i>
+                    </button>
+                  </span>
+                </div>
+              </div>
+              <button class="btn btn-primary" type="button">Add department</button>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#standards-types" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Standards types</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">8</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="standards-types">
+            <div class="card-block">
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Process"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="PRO" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Standard Operating Procedure"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="SOP" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Work instruction"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="WORK" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Policy"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="POL" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Specification"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="SPEC" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Test method"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="TEST" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Regulation"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="REG" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Standard type" value="Customer experience"/>
+                </div>
+                <input type="text" class="form-control margin-left" placeholder="Short" value="CEX" style="width:100px"/>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <button class="btn btn-primary" type="button">Add standards type</button>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#standards-book-sections" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Standards book sections</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">4</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="standards-book-sections">
+            <div class="card-block">
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">1</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client feedback"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">2</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client onboarding"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">3</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Client deal execution"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <div class="input-group">
+                    <span class="input-group-addon">4</span>
+                    <input type="text" class="form-control" placeholder="Title" value="Clifton policies"/>
+                  </div>              
+                </div>
+                <div class="btn-group margin-left">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-up"></i>
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-arrow-down"></i>
+                  </button>                  
+                </div>
+                <button type="button" class="btn btn-secondary margin-left">
+                  <i class="fa fa-trash"></i>
+                </button>
+              </div>
+              <button class="btn btn-primary" type="button">Add section</button>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#workflow-defaults" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Workflow defaults</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="workflow-defaults">
+            <div class="card-block">
+              <legend>Minor non-conformity</legend>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="input-group">
+                    <input type="number" class="form-control" value="1">
+                    <span class="input-group-btn dropdown">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">hours</a>
+                        <a href="#" class="dropdown-item active">days</a>
+                        <a href="#" class="dropdown-item">weeks</a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <legend>Major non-conformity</legend>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="input-group">
+                    <input type="number" class="form-control" value="2">
+                    <span class="input-group-btn dropdown">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">hours</a>
+                        <a href="#" class="dropdown-item active">days</a>
+                        <a href="#" class="dropdown-item">weeks</a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <legend>Critical non-conformity</legend>
+              <div class="form-group row">
+                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
+                <div class="col-sm-4 col-xs-12">
+                  <div class="input-group">
+                    <input type="number" class="form-control" value="3">
+                    <span class="input-group-btn dropdown">
+                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">hours</a>
+                        <a href="#" class="dropdown-item active">days</a>
+                        <a href="#" class="dropdown-item">weeks</a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#reminders" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Reminders</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="reminders">
+            <div class="card-block">
+              <legend>Minor non-conformity</legend>
+              <div class="form-group form-group-inline">
+                <label class="form-control-label">Remind every</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="1">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">day</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hour</a>
+                      <a href="#" class="dropdown-item active">day</a>
+                      <a href="#" class="dropdown-item">week</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">until</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="2">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hour</a>
+                      <a href="#" class="dropdown-item active">day</a>
+                      <a href="#" class="dropdown-item">week</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">past due</label>
+              </div>
+              <legend>Major non-conformity</legend>
+              <div class="form-group form-group-inline">
+                <label class="form-control-label">Remind every</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="2">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hours</a>
+                      <a href="#" class="dropdown-item active">days</a>
+                      <a href="#" class="dropdown-item">weeks</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">until</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="4">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hour</a>
+                      <a href="#" class="dropdown-item active">day</a>
+                      <a href="#" class="dropdown-item">week</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">past due</label>
+              </div>
+              <legend>Critical non-conformity</legend>
+              <div class="form-group form-group-inline">
+                <label class="form-control-label">Remind every</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="3">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hours</a>
+                      <a href="#" class="dropdown-item active">days</a>
+                      <a href="#" class="dropdown-item">weeks</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">until</label>
+                <div class="input-group margin-right">
+                  <input type="number" class="form-control" value="6">
+                  <span class="input-group-btn dropdown">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
+                    <div class="dropdown-menu dropdown-menu-right">
+                      <a href="#" class="dropdown-item">hour</a>
+                      <a href="#" class="dropdown-item active">day</a>
+                      <a href="#" class="dropdown-item">week</a>
+                    </div>
+                  </span>
+                </div>
+                <label class="form-control-label">past due</label>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformity-guidelines" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Non-conformity guidelines</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="nonconformity-guidelines">
+            <div class="card-block">
+              <div class="form-group">
+                <label class="form-control-label">Guideline for magnitude = minor</label>
+                <textarea class="form-control" placeholder="Guideline for minor non-conformities" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum nisi vitae libero ultricies facilisis. Mauris et condimentum felis, sed posuere dui.</textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Guideline for magnitude = major</label>
+                <textarea class="form-control" placeholder="Guideline for major non-conformities" rows="3">Vivamus ut diam in nulla pulvinar finibus. Phasellus dictum nibh in volutpat hendrerit. Duis eu lacus auctor, varius orci sit amet, sollicitudin sapien. </textarea>
+              </div>
+              <div class="form-group">
+                <label class="form-control-label">Guideline for magnitude = critical</label>
+                <textarea class="form-control" placeholder="Guideline for critical non-conformities" rows="3">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ut dapibus turpis. Aenean consequat tellus nec turpis hendrerit ullamcorper.</textarea>
+              </div>
+            </div>
+          </div>
+        </form>       
+      </div>
+    </div>
+  </div>

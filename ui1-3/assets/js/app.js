@@ -56,26 +56,20 @@ $( document ).ready(function() {
   	$("#standardsAccordion .list-group-item").removeClass("active");	
   	$(this).addClass("active");
   });
-  
 
-  /*
-  	SUMMARY ACCORDION
-  */
-	
-	// Ignore clicks on worksheet icon
-	$("#summaryAccordion .btn-right").click(function(e) {
-  	e.stopPropagation();
-  	var target = $(this).data( "target" );
-  	$(target).modal('show');
-  });
   
-	$("#summaryAccordion .list-group-item").click(function() {
+  /*
+  	NCs ACCORDION
+  */
+
+  
+	$("#nonconformitiesAccordion .list-group-item").click(function() {
   	if ($(this).hasClass("list-group-toggle")) {
     	// Collapse any open sections
-    	$('#summaryAccordion .collapse').collapse("hide");  	
+    	$('#nonconformitiesAccordion .collapse').collapse("hide");  	
   	} else {
     	// Remove existing active classes
-    	$("#summaryAccordion .list-group-item").removeClass("active");	
+    	$("#nonconformitiesAccordion .list-group-item").removeClass("active");	
     	$(this).addClass("active");     	
   	}
   });
@@ -84,10 +78,10 @@ $( document ).ready(function() {
     TODO LIST
   */
 
-  var toDoItems = $("#todoList .list-group-item");
-	toDoItems.click(function() {
+  var actionsList = $("#actionsList .list-group-item");
+	actionsList.click(function() {
   	// Remove existing active classes
-  	toDoItems.removeClass("active");	
+  	actionsList.removeClass("active");	
   	$(this).addClass("active");     	
   });  
   

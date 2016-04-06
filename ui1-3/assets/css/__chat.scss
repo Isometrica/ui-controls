@@ -6,6 +6,10 @@
   @include flexbox;
   @include flex-direction(column);
   
+  &-heading {
+    min-height: 55px;
+  }
+  
   &-item {
     padding: .5rem 1.25rem;
     

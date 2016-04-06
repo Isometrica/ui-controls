@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Standards book - by section
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">By section</a>
+        <a class="dropdown-item" href="#">By type</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="content-list scroll">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Add</span>
+    					</a>
+    				</form>
+    				<div class="list-group list-group-accordion" id="standardsAccordion">
+      				<a class="list-group-item list-group-subheading" href="#">
+    						<h4 class="list-group-item-heading pull-left"><strong>Clifton standards book</strong></h4>
+    					</a>      				
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
+    						<h4 class="list-group-item-heading pull-left">1. Client feedback</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-2">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
+    						<h4 class="list-group-item-heading pull-left">2. Client onboarding</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse in" id="collapse-3">
+        				<div class="list-group">
+      						<a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">2.1. Identification of needs</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>  
+      						<a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">2.2. Verification of ID</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>  
+        					<div class="sub"> 
+          				  <a class="list-group-item active" href="#">
+                      <div class="list-group-item-content">
+          							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
+                        <p class="list-group-item-text pull-left">Procedure</p>
+                      </div>
+        						</a>
+        						<div class="subsub">
+          						<a class="list-group-item" href="#">
+                        <div class="list-group-item-content">
+            							<h4 class="list-group-item-heading">2.2.1.1 Due diligence</h4>
+                          <p class="list-group-item-text pull-left">Regulation</p>
+                        </div>
+          						</a>
+        						</div>
+        					</div>     					
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
+    						<h4 class="list-group-item-heading pull-left">3. Client deal execution</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-4">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
+    						<h4 class="list-group-item-heading pull-left">4. Clifton policies</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-5">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards hidden-sm-down scroll">
+    		  <div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Standard
+      				  </h3>
+    					</div> 
+              <div class="list-group">
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Title</p>
+                  <h4 class="list-group-item-heading">2.2.1 Inquiry handling <span class="label label-default">Draft</span></h4>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Description</p>
+                  <h4 class="list-group-item-heading">This is the standard for dealing with client enquiries</h4>
+                </div>
+  
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Issue number</p>
+                      <h4 class="list-group-item-heading">1</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Section</p>
+                      <h4 class="list-group-item-heading">Client onboarding</h4>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Type</p>
+                      <h4 class="list-group-item-heading">Standard operating procedure</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Owner</p>
+                      <h4 class="list-group-item-heading">Mike Smith</h4>
+                    </div>
+                  </div>
+                  
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Department(s)</p>
+                  <h4 class="list-group-item-heading">Marketing</h4>
+                  <h4 class="list-group-item-heading">Sales</h4>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Source document/video 1</p>
+                  <h4 class="list-group-item-heading"><a href="#">http://www.clifton-asset.co.uk/example/12345</a></h4>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Source document/video 2</p>
+                  <h4 class="list-group-item-heading"><a href="#"><i class="fa fa-file-word-o margin-right"></i> source document filename</a></h4>
+                </div>
+
+                
+
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Notify</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notify.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Non-conformities</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/nonconformities.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Corrective actions</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/corrective-actions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Preventative actions</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/preventative-actions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Improvement plan</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/improvement-plan.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Lessons learned</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/lessons.html'"></div>
+              <!-- Changelog -->
+              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+
+
+  <!-- Edit Modal -->
+  <div class="modal fade" id="edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Standard</h4>
+        </div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Title</label>
+    	        <div class="col-sm-8 col-xs-12">
+    		        <input type="text" class="form-control" placeholder="Title" value="Inquiry handling">
+      			    <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+    	        <div class="col-sm-8 col-xs-12">
+    		        <textarea class="form-control" rows="3" placeholder="Description">This is the company standard for dealing with client enquiries</textarea>
+      			    <button type="button" class="btn btn-link clear-field">
+    		          <i class="fa fa-times-circle"></i>
+    		        </button>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Book section</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input type="text" class="form-control" value="2. Client onboarding" placeholder="Book section" data-toggle="dropdown"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">1. Client feedback</a>
+                    <a class="dropdown-item active" href="#">2. Client onboarding</a>
+                    <a class="dropdown-item" href="#">3. Client deal execution</a>
+                    <a class="dropdown-item" href="#">4. Clifton policies</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new section</strong></a>
+                  </div>
+                </div>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Type</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <select class="form-control c-select">
+                    <option></option>
+                    <option>Process</option>
+                    <option selected="">Procedure</option>
+                    <option>Policy</option>
+                    <option>Regulation</option>
+                    <option>Specification</option>
+                    <option>Customer experience</option>
+                    <option>Test spec</option>
+                  </select>
+                </div>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Owner</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Issue number</label>
+    	        <div class="col-sm-2 col-xs-12">
+                <input type="number" class="form-control" placeholder="1" value="1">
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Issued
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Draft
+                  </label>
+                </div>
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Department(s)</label>
+    	        <div class="col-sm-8 col-xs-12">
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled="">Client Services</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled="">Sales</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+                <div class="dropdown">
+                  <input type="text" class="form-control" value="" placeholder="Add a department" data-toggle="dropdown"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Administration</a>
+                    <a class="dropdown-item" href="#">Compliance</a>
+                    <a class="dropdown-item" href="#">Client Services</a>
+                    <a class="dropdown-item" href="#">Finance</a>
+                    <a class="dropdown-item" href="#">Marketing</a>
+                    <a class="dropdown-item" href="#">Operations</a>
+                    <a class="dropdown-item" href="#">R&amp;D</a>
+                    <a class="dropdown-item" href="#">Sales</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new department</strong></a>
+                  </div>
+                </div>
+    	        </div>
+            </div>   
+            <hr>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Source document/video 1</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> URL link
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Attachment
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Video
+                  </label>
+                </div>
+                <input type="text" class="form-control" placeholder="URL link" value="http://www.clifton-asset.co.uk/example/12345">
+    	        </div>
+            </div>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Source document/video 2</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <div class="btn-group" data-toggle="buttons">
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option1" autocomplete="off"> URL link
+                  </label>
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Attachment
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option3" autocomplete="off"> Video
+                  </label>
+                </div>
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary" disabled="">
+                    <i class="fa fa-file-word-o fa-lg margin-right"></i>
+                    source document filename
+                  </button>
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-times-circle no-margin"></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notify</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Non-conformities</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning label-status-indicator"></span> 
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="nonconformities">
+            <div ng-include="'includes/subcards-edit/nonconformities.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Corrective actions</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning label-status-indicator"></span> 
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="corrective-actions">
+            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#preventative-actions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Preventative actions</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning label-status-indicator"></span> 
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="preventative-actions">
+            <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Improvement plan</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="improvement-plan">
+            <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Lessons learned</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="lessons">
+            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
+          </div> 
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+  <!-- Add Type Modal -->
+  <div class="modal fade" id="choose-add-type-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <h4 class="card-title">Add</h4>
+        </div>
+        <div class="list-group list-group-flush">
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Process or Policy</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Non-conformity</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+          <a href="#" class="list-group-item">
+            <h4 class="list-group-item-heading">Incident</h4>
+            <p class="list-group-item-text">Lorem ipsum dolor est</p>
+          </a> 
+        </div>       
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

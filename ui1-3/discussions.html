@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Discussions - all
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">All</a>
+        <a class="dropdown-item" href="#">Starred</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <div class="container">
+      <div class="row">
+        <div class="content-list scroll">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Add</span>
+    					</a>
+    				</form>
+    				<div class="list-group list-group-accordion" id="standardsAccordion">
+      				<a class="list-group-item list-group-subheading" href="#">
+    						<h4 class="list-group-item-heading pull-left">All discussions <span class="label label-danger label-count">5</span></h4>
+    					</a>      				
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
+    						<h4 class="list-group-item-heading pull-left">1. Client feedback <span class="label label-danger label-count">1</span></h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-2">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">1.1 Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-3">
+    						<h4 class="list-group-item-heading pull-left">2. Client onboarding</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse in" id="collapse-3">
+        				<div class="list-group">
+      						<a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">2.1. Identification of needs <span class="label label-danger label-count">2</span></h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>  
+      						<a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">2.2. Verification of ID <span class="label label-danger label-count">2</span></h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>  
+        					<div class="sub"> 
+          				  <a class="list-group-item active" href="#">
+                      <div class="list-group-item-content">
+          							<h4 class="list-group-item-heading">2.2.1 Inquiry handling</h4>
+                        <p class="list-group-item-text pull-left">Procedure</p>
+                      </div>
+        						</a>
+        						<div class="subsub">
+          						<a class="list-group-item" href="#">
+                        <div class="list-group-item-content">
+            							<h4 class="list-group-item-heading">2.2.1.1 Due diligence</h4>
+                          <p class="list-group-item-text pull-left">Regulation</p>
+                        </div>
+          						</a>
+        						</div>
+        					</div>     					
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
+    						<h4 class="list-group-item-heading pull-left">3. Client deal execution</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-4">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-5">
+    						<h4 class="list-group-item-heading pull-left">4. Clifton policies</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-5">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading">Inquiry handling</h4>
+                      <p class="list-group-item-text pull-left">Procedure</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards hidden-sm-down flexbox-column">
+      		<div class="content-cards-inner flexbox-column">
+        		<div class="chat card">
+          		<div class="card-block card-heading chat-heading">
+    						<div class="card-heading-buttons pull-xs-left">
+    							<a class="btn btn-secondary btn-icon">
+    								<i class="fa fa-star-o"></i>
+    							</a>
+    						</div>
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-primary btn-icon">
+    								<i class="fa fa-info"></i>
+    							</a>
+    						</div>
+    						<h3 class="card-title text-xs-center">
+      						2.2.1 Inquiry handling
+      				  </h3>
+    					</div> 
+              <div class="chat-content scroll">
+                <div class="chat-item chat-item-start">
+                  <p class="chat-item-text">This procedure was created by <strong>Stephen Ives</strong> on <strong>February 22nd, 2016</strong></p>
+                </div>
+                <div class="chat-item-date">
+                  <span>February 24th</span>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:37</span>
+                    <span class="chat-item-author">Mike</span>
+                    <span class="chat-item-channel">Top level</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Hi Steve, just testing out Plio</p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Steve</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Ok, that's cool</p>
+                  </div>
+                </div>
+                <div class="chat-item-date">
+                  <span>February 25th</span>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Mike</span>
+                    <span class="chat-item-channel">Top level</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Have you uploaded any standards?</p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Steve</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text"><a href="">http://www.plio.io/abc1234</a></p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-11.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:39</span>
+                    <span class="chat-item-author">Ann</span>
+                    <span class="chat-item-channel">Inquiry handling</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">How many inquiries last week?</p>
+                  </div>
+                </div>
+                <div class="chat-item-date">
+                  <span>February 27th</span>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:37</span>
+                    <span class="chat-item-author">Mike</span>
+                    <span class="chat-item-channel">Top level</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Hi Steve, just testing out Plio</p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Steve</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Ok, that's cool</p>
+                  </div>
+                  <div class="chat-item-reply">
+                    <form>
+                      <div class="form-group">
+                        <div class="input-group">
+                          <span class="input-group-btn">
+                            <button class="btn btn-secondary">
+                              <i class="fa fa-paperclip"></i>
+                            </button>
+                          </span>
+                          <input type="text" class="form-control" placeholder="Reply to Steve">
+                          <span class="input-group-btn">
+                            <button class="btn btn-secondary">
+                              <i class="fa fa-angle-right"></i>
+                            </button>
+                          </span>
+                        </div>
+                      </div>
+                    </form>
+                  </div>                
+                </div>
+                <div class="chat-item-date">
+                  <span>February 29th</span>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-14.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Mike</span>
+                    <span class="chat-item-channel">Top level</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">Have you uploaded any standards?</p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-1.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:38</span>
+                    <span class="chat-item-author">Steve</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                        <a href="#" class="dropdown-item">Delete</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text"><a href="">http://www.plio.io/abc1234</a></p>
+                  </div>
+                </div>
+                <div class="chat-item">
+                  <img class="chat-item-avatar" src="assets/img/avatars/avatar-placeholder-11.png">
+                  <div class="chat-item-card">
+                    <span class="chat-item-time">11:39</span>
+                    <span class="chat-item-author">Ann</span>
+                    <span class="chat-item-channel">Inquiry handling</span>
+                    <div class="chat-item-dropdown dropup">
+                      <button type="button" class="btn btn-link" data-toggle="dropdown"><i class="fa fa-ellipsis-h"></i></button>
+                      <div class="dropdown-menu dropdown-menu-right">
+                        <a href="#" class="dropdown-item">Reply</a>
+                        <a href="#" class="dropdown-item">Add to Suggestions</a>
+                        <a href="#" class="dropdown-item">Add to Lessons Learned</a>
+                        <a href="#" class="dropdown-item">Move to another channel</a>
+                      </div>
+                    </div>
+                    <p class="chat-item-text">How many inquiries last week?</p>
+                  </div>
+                </div>
+              </div>
+              <div class="chat-form">
+                <form>
+                  <div class="form-group">
+                    <div class="input-group">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary">
+                          <i class="fa fa-paperclip"></i>
+                        </button>
+                      </span>
+                      <input type="text" class="form-control" placeholder="Reply to Steve">
+                      <span class="input-group-btn">
+                        <button class="btn btn-secondary">
+                          <i class="fa fa-angle-right"></i>
+                        </button>
+                      </span>
+                    </div>
+                  </div>
+                </form>
+              </div>        		
+        		</div>
+      		</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+
+
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
