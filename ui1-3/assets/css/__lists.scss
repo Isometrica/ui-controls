@@ -165,15 +165,14 @@
     padding-left: $fixed-padding + 1.5rem !important;
       
     &:before  {
-      font-family: 'Office365Icons';
-      content: '\e08a';
+      content: "\f105";
+      font-family: 'FontAwesome';
       position: absolute;
       left: $fixed-padding - 0.25rem;
       top: 50%;
       font-size: 24px;
-      line-height: 20px;
-      width: 20px;
-      margin-top: -10px;
+      line-height: 1;
+      margin-top: -12px;
       color: $blue-color;
       @include transition(all 0.3s ease);        
     }

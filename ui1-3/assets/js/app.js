@@ -50,11 +50,26 @@ $( document ).ready(function() {
   	if ($(this).hasClass("list-group-toggle")) {
     	// Collapse any open sections
     	$('#standardsAccordion .collapse').collapse("hide");  	
+  	} else {
+    	// Remove existing active classes
+    	$("#standardsAccordion .list-group-item").removeClass("active");	
+    	$(this).addClass("active");     	
   	}
-
+  });
+  
+  
+  /*
+  	DISCUSSION ACCORDION
+  */
+	
+	$("#discussionAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$('#discussionAccordion .collapse').collapse("hide");  	
+  	}
   	// Remove existing active classes
-  	$("#standardsAccordion .list-group-item").removeClass("active");	
-  	$(this).addClass("active");
+  	$("#discussionAccordion .list-group-item").removeClass("active");	
+  	$(this).addClass("active");     	
   });
 
   
@@ -62,7 +77,6 @@ $( document ).ready(function() {
   	NCs ACCORDION
   */
 
-  
 	$("#nonconformitiesAccordion .list-group-item").click(function() {
   	if ($(this).hasClass("list-group-toggle")) {
     	// Collapse any open sections

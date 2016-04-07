@@ -751,15 +751,14 @@ legend {
   .content-list .list-group-toggle {
     padding-left: 2.75rem !important; }
     .content-list .list-group-toggle:before {
-      font-family: 'Office365Icons';
-      content: '\e08a';
+      content: "\f105";
+      font-family: 'FontAwesome';
       position: absolute;
       left: 1rem;
       top: 50%;
       font-size: 24px;
-      line-height: 20px;
-      width: 20px;
-      margin-top: -10px;
+      line-height: 1;
+      margin-top: -12px;
       color: #0078d7;
       -moz-transition: all 0.3s ease;
       -o-transition: all 0.3s ease;
@@ -841,15 +840,16 @@ legend {
 
 .card-block-collapse-toggle {
   position: relative;
-  padding-left: 50px;
+  padding-left: 45px;
   cursor: pointer;
   font-size: 15px; }
   .card-block-collapse-toggle:before {
-    content: '\e08a';
-    font-family: 'Office365Icons';
+    content: "\f105";
+    font-family: 'FontAwesome';
     font-size: 24px;
-    width: 20px;
     line-height: 24px;
+    width: 24px;
+    text-align: center;
     position: absolute;
     left: 13px;
     top: 50%;
@@ -997,6 +997,14 @@ legend {
         color: #777;
         margin: 0 0 3px;
         font-weight: normal; }
+      .content-cards .card .list-group-item .file-link {
+        margin-right: 15px;
+        display: inline-block; }
+        .content-cards .card .list-group-item .file-link i {
+          font-size: 22px;
+          margin-right: 3px;
+          position: relative;
+          top: 1px; }
   .content-cards .card .table {
     margin-top: 5px;
     border-bottom: 1px solid #ddd; }
@@ -1020,8 +1028,8 @@ legend {
     border-radius: 0;
     border-bottom: 1px solid #ddd; }
   .card-changelog-toggle:after {
-    content: '\e088';
-    font-family: 'Office365Icons';
+    content: "\f106";
+    font-family: 'FontAwesome';
     position: absolute;
     right: 15px;
     top: 50%;
@@ -1082,6 +1090,15 @@ legend {
 #invite-modal .avatar {
   width: 34px;
   height: 34px; }
+
+#verify-modal .alert {
+  border-radius: 0;
+  margin: 0;
+  border-width: 1px 0;
+  margin-top: -1px; }
+
+#verify-modal .card-block:last-child {
+  border-top: 0; }
 
 .timeline {
   background: #bee2ff;

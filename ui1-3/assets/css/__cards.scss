@@ -134,6 +134,18 @@
           //font-family: $SegoeUI;
           font-weight: normal;
         }
+        
+        .file-link {
+          margin-right: 15px;
+          display: inline-block;
+          
+          i {
+            font-size: 22px;
+            margin-right: 3px;
+            position: relative;
+            top: 1px;
+          }
+        }
       }
     }
     
@@ -167,8 +179,8 @@
     }
     
     &:after {
-      content: '\e088';
-      font-family: 'Office365Icons';
+      content: "\f106";
+      font-family: 'FontAwesome';
       position: absolute;
       right: 15px;
       top: 50%;
