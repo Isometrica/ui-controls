@@ -120,7 +120,7 @@ $( document ).ready(function() {
   
   /*
     BIA CHART
-  */
+  
    
   var $biaTrendChart = $("#biaTrendChart");
   $('#bia-chart-modal').on('shown.bs.modal', function (e) {
@@ -148,6 +148,16 @@ $( document ).ready(function() {
       };
       new Chart(ctx).Bar(data,options);  
     }
+  });
+  */
+
+  /*
+    RICH TEXT EXPAND
+  */
+  $('.modal').on('shown.bs.modal', function (e) {
+    $( ".rich-text-expand-toggle" ).click(function() {
+      $(this).closest('.rich-text').toggleClass("expanded");
+    });
   });
 
 

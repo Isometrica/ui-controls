@@ -49,6 +49,21 @@
   &-input {
     font-size: 0;
     height: 400px;
+    
+    .expanded & {
+      height: 800px;
+    }
+  }
+  
+  &-expand-toggle {
+    .fa-compress { display: none; }
+    .fa-expand { display: inline-block; }
+    
+    .expanded & {
+      .fa-compress { display: inline-block; }
+      .fa-expand { display: none; }      
+    }
+    
   }
 }
 
@@ -358,4 +373,10 @@ legend {
   .margin-right {
     margin-right: 10px;
   }
+}
+
+
+
+.help-block {
+  margin: 10px 0;
 }

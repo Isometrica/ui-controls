@@ -53,6 +53,16 @@
       display: inline-block;
     }
   } 
+  
+  i {
+    &.margin-right {
+      margin-right: 5px;
+    }
+  }
+  
+  &.margin-left {
+    margin-left: 10px;
+  }
 }
 
 .form-group .label {

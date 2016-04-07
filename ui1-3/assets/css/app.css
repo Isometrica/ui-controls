@@ -133,6 +133,9 @@ strong {
 .text-danger {
   color: #E81123 !important; }
 
+.text-default {
+  color: #333 !important; }
+
 a:hover {
   text-decoration: none; }
 
@@ -150,6 +153,9 @@ a:hover {
 
 .fa-file-pdf-o {
   color: #bb0706 !important; }
+
+i.margin-left {
+  margin-left: 10px; }
 
 .btn {
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
@@ -398,6 +404,20 @@ a:hover {
 .rich-text-input {
   font-size: 0;
   height: 400px; }
+  .expanded .rich-text-input {
+    height: 800px; }
+
+.rich-text-expand-toggle .fa-compress {
+  display: none; }
+
+.rich-text-expand-toggle .fa-expand {
+  display: inline-block; }
+
+.expanded .rich-text-expand-toggle .fa-compress {
+  display: inline-block; }
+
+.expanded .rich-text-expand-toggle .fa-expand {
+  display: none; }
 
 /* Form buttons */
 .form-group .btn {
@@ -613,6 +633,9 @@ legend {
 .form-group-inline .margin-right {
   margin-right: 10px; }
 
+.help-block {
+  margin: 10px 0; }
+
 .list-group-item-heading {
   font-size: 18px;
   font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
@@ -793,6 +816,10 @@ legend {
     top: 1px; }
     .label-status-indicator:empty {
       display: inline-block; }
+  .label i.margin-right {
+    margin-right: 5px; }
+  .label.margin-left {
+    margin-left: 10px; }
 
 .form-group .label {
   font-size: 1rem;

@@ -274,14 +274,17 @@
       				Save
       			</button>
           </div>
-          <h4 class="card-title">NC123</h4>
+          <h4 class="card-title">Non-conformity</h4>
         </div>
         <form>
           <div class="card-block">
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Title</label>
               <div class="col-sm-8 col-xs-12">
-                <input type="text" class="form-control" placeholder="Title" value="Inquiry not recorded">
+                <div class="input-group">
+                  <span class="input-group-addon">NC123</span>
+                  <input type="text" class="form-control" placeholder="Title" value="Inquiry not recorded">
+                </div>
               </div>
             </div>
             <div class="form-group row">
@@ -293,7 +296,10 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Status</label>
               <div class="col-sm-8 col-xs-12">
-                <span class="label text-success">Open - just reported</span>
+                <span class="label text-default">
+                  <i class="fa fa-circle text-warning margin-right"></i>
+                  Open - just reported
+                </span>
               </div>
             </div>
             <div class="form-group row">
@@ -354,7 +360,9 @@
                   </button>
                 </div>
                 <div class="collapse" id="magnitude-guidelines-collapse">
-                  <p class="help-block">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac fermentum nunc. Aliquam bibendum facilisis leo, scelerisque dignissim libero facilisis at. Vivamus tincidunt erat nec dolor imperdiet ullamcorper. Vestibulum velit ante, faucibus ut laoreet facilisis, fringilla ac nisi.</p>
+                  <p class="help-block"><strong>Minor</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac fermentum nunc.</p>
+                  <p class="help-block"><strong>Major</strong><br>Aliquam bibendum facilisis leo, scelerisque dignissim libero facilisis at.</p>
+                  <p class="help-block"><strong>Critical</strong><br>Vivamus tincidunt erat nec dolor imperdiet ullamcorper. Vestibulum velit ante, faucibus ut laoreet facilisis, fringilla ac nisi.</p>
                 </div>
               </div>
 
@@ -423,11 +431,11 @@
                 <label class="form-control-label col-sm-4 col-xs-12">Status</label>
                 <div class="col-sm-8 col-xs-12">
                   <div class="btn-group margin-right" data-toggle="buttons">
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> Not completed
-                    </label>
                     <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Completed
+                      <input type="radio" name="options" id="option2" autocomplete="off" checked> Not completed
+                    </label>
+                    <label class="btn btn-secondary">
+                      <input type="radio" name="options" id="option1" autocomplete="off"> Completed
                     </label>
                   </div>
                 </div>
