@@ -12,10 +12,6 @@ body {
   font-family: $font-regular;
 }
 
-.container {
-  max-width: none;
-}
-
 .scroll {
   @include scroll;
 }
@@ -33,7 +29,8 @@ body {
 .flex {
   @include flex(1);
 }
-  
+
+
 .content {
   overflow: hidden;
   position: relative;
@@ -41,6 +38,13 @@ body {
   @include flexbox;
   
   > .container {
+    @media (max-width:1200px) {
+      max-width: none;
+    }
+  }
+  
+  > .container,
+  > .container-fluid {
     @include flex(1);
     @include flexbox();
     position: relative;
