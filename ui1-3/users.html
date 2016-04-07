@@ -107,7 +107,7 @@
             <div class="card">
     					<div class="card-block card-heading clearfix">
     						<div class="card-heading-buttons pull-xs-right">
-    							<a class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#user-edit-modal">
     								<i class="ms-Icon ms-Icon--pencil"></i>
     								Edit
     							</a>
@@ -157,7 +157,7 @@
 
 
   <!-- Edit Modal -->
-  <div class="modal fade" id="edit-modal">
+  <div class="modal fade" id="user-edit-modal">
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
@@ -167,13 +167,17 @@
       			</button>
           </div>
           <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Save
       			</button>
           </div>
           <h4 class="card-title">Edit User</h4>
         </div>
-        <form class="form-horizontal">
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
           <div class="card-block">
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Photo</label>

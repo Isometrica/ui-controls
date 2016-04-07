@@ -1,0 +1,18 @@
+.guidance-panel {
+  
+  .card-block {
+    border-bottom: 1px solid #ddd;
+  }
+  
+  &-open {
+    &:not(.collapsed) {
+      display: none;
+    }
+  }
+  
+  .btn-group {
+    .btn:first-child {
+      padding-left: 0;
+    }
+  }
+}

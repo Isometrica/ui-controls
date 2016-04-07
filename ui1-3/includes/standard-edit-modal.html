@@ -1,4 +1,4 @@
-  <div class="modal fade" id="edit-modal">
+  <div class="modal fade" id="standard-edit-modal">
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
@@ -8,12 +8,16 @@
       			</button>
           </div>
           <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Save
       			</button>
           </div>
           <h4 class="card-title">Standard</h4>
         </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
         <form>
           <div class="card-block">
             <div class="form-group row">

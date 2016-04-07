@@ -154,12 +154,33 @@ $( document ).ready(function() {
   /*
     RICH TEXT EXPAND
   */
-  $('.modal').on('shown.bs.modal', function (e) {
+  $(document).on("shown.bs.modal", ".modal", function() { 
     $( ".rich-text-expand-toggle" ).click(function() {
       $(this).closest('.rich-text').toggleClass("expanded");
     });
   });
 
+
+  /* GUIDANCE PANELS */
+
+  $(document).on("shown.bs.modal", ".modal", function() {    
+    // Open on guidance-panel-open click
+    $( ".guidance-panel-open" ).click(function() {
+      console.log("Open guidance panel");
+      // Expand panel
+      $(this).closest('.card').find('.guidance-panel').collapse('show');
+      // Hide toggle
+      $(this).removeClass("collapsed");
+    });      
+    
+    // Close on guidance-panel-close click
+    $( ".guidance-panel-close" ).click(function() {
+      // Collapse panel
+      $(this).closest('.card').find('.guidance-panel').collapse('hide');
+      // Show toggle
+      $(this).closest('.card').find('.guidance-panel-open').addClass("collapsed");
+    });     
+  });  
 
 });
 
