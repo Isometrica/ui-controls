@@ -199,7 +199,8 @@ a:hover {
 .btn-icon {
   width: 36px;
   padding-left: 0;
-  padding-right: 0; }
+  padding-right: 0;
+  text-align: center; }
   .btn-icon i {
     font-size: 22px;
     line-height: 21px;
@@ -1414,7 +1415,8 @@ legend {
     z-index: 2; }
     .chat-form .form-group {
       margin: 0;
-      position: relative; }
+      position: relative;
+      padding-left: 55px; }
     .chat-form .input-group {
       position: relative;
       z-index: 2; }

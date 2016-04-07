@@ -126,7 +126,7 @@
   }
   
   &-form {
-    padding: 0 1.25rem 1.25rem;
+    padding: 0 1.25rem 1.25rem ;
     position: absolute;
     left: 0;
     right: 0;
@@ -137,6 +137,7 @@
     .form-group {
       margin: 0;
       position: relative;
+      padding-left: 55px;
     }
     
     .input-group {
