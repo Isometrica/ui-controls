@@ -56,6 +56,10 @@
       font-size: 16px;
       line-height: $navbar-height-standard;
       padding: 0 15px;
+    
+      &:focus {
+        outline: none !important;
+      }
       
       &:focus, &:hover {
         color: rgba(255, 255, 255, .9); 

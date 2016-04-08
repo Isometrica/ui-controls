@@ -9,17 +9,48 @@
           </div>
           <h4 class="card-title">Verify</h4>
           <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<!--
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
       				Done
       			</button>
+      			-->
           </div>
         </div>
-				<div class="alert alert-danger" role="alert">
-          Corrective action to be verified by Katrina Ives by 11 Mar 2016.
-        </div>        
+        <div class="collapse guidance-panel">
+          <div class="card-block">
+            <p>Enter any verification comments below, then click either "Verified as effective" or "Assessed as ineffective"</p>
+            <div class="btn-group">
+              <a href="#" class="btn btn-link guidance-panel-close">Close</a>
+              <a href="#" class="btn btn-link">More info</a>
+            </div>
+          </div>
+        </div>              
         <div class="card-block">
           <form>
-            <textarea class="form-control" placeholder="Comments" rows="6"></textarea>          
+            <div class="form-group">
+              <textarea class="form-control" placeholder="Comments" rows="6"></textarea>          
+            </div>
+            <button type="button" class="btn btn-success pull-left">
+              <i class="fa fa-check margin-right"></i>
+              Verified as effective
+            </button>
+            <button type="button" class="btn btn-danger pull-right">
+              <i class="fa fa-times margin-right"></i>
+              Assessed as ineffective
+            </button>
+            <!--
+            <div class="btn-group" data-toggle="buttons">
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Verified as effective
+              </label>
+              <label class="btn btn-secondary">
+                <input type="radio" name="options" id="option1" autocomplete="off"> Assessed as ineffective
+              </label>
+            </div>
+            -->
           </form>
         </div>
       </div>
