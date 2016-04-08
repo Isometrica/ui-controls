@@ -177,8 +177,8 @@ $( document ).ready(function() {
 
   /* GUIDANCE PANELS */
 
-  $(document).on("shown.bs.modal", ".modal", function() {    
-    // Open on guidance-panel-open click
+  // Open on guidance-panel-open click
+  function openGuidanceClick() {
     $( ".guidance-panel-open" ).click(function() {
       console.log("Open guidance panel");
       // Expand panel
@@ -186,15 +186,28 @@ $( document ).ready(function() {
       // Hide toggle
       $(this).removeClass("collapsed");
     });      
-    
-    // Close on guidance-panel-close click
-    $( ".guidance-panel-close" ).click(function() {
+  }
+  
+  // Close on guidance-panel-close click
+  function closeGuidanceClick() {
+      $( ".guidance-panel-close" ).click(function() {
+      console.log("Close guidance panel");
       // Collapse panel
       $(this).closest('.card').find('.guidance-panel').collapse('hide');
       // Show toggle
       $(this).closest('.card').find('.guidance-panel-open').addClass("collapsed");
-    });     
-  });  
+    });
+  } 
+
+  openGuidanceClick();      
+      
+  $(document).on("shown.bs.collapse", ".guidance-panel", function() {    
+    closeGuidanceClick();    
+  });
+  
+  $(document).on("shown.bs.modal", ".modal", function() {    
+    openGuidanceClick();    
+  });
 
 });
 

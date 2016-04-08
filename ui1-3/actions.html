@@ -118,6 +118,9 @@
     				<div class="card">
     					<div class="card-block card-heading">
     						<div class="card-heading-buttons pull-xs-right">
+    							<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+            				<i class="fa fa-question-circle"></i>
+            			</button>
     							<a class="btn btn-primary" data-toggle="modal" data-target="#corrective-action-edit-modal">
     								<i class="fa fa-pencil"></i>
     								Edit
@@ -125,9 +128,9 @@
     						</div>
     						<h3 class="card-title">
       						Corrective action
-      						
       				  </h3>
     					</div> 
+    					<div ng-include="'includes/guidance-panel.html'"></div>
               <div class="list-group">
                 <div class="list-group-item">
                   <p class="list-group-item-text">Title</p>
@@ -163,7 +166,6 @@
                   <h4 class="list-group-item-heading text-success">Yes</h4>
                 </div>      
               </div>
-              <hr>
               <div class="list-group">          
                 <div class="row">
                   <div class="col-sm-6">
