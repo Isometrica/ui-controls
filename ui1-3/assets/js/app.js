@@ -197,7 +197,7 @@ $( document ).ready(function() {
       var ctx = $magnitudeChart.get(0).getContext("2d");
       var options = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         barShowStroke : false
         //scaleShowGridLines : false,
       };
@@ -243,7 +243,7 @@ $( document ).ready(function() {
       var ctx = $statusChart.get(0).getContext("2d");
       var options = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         barShowStroke : false
         //scaleShowGridLines : false,
       };
@@ -271,7 +271,7 @@ $( document ).ready(function() {
       var ctx = $departmentChart.get(0).getContext("2d");
       var options = {
         responsive: true,
-        maintainAspectRatio: false,
+        maintainAspectRatio: true,
         barShowStroke : false
         //scaleShowGridLines : false,
       };
