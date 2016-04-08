@@ -1093,6 +1093,9 @@ legend {
   width: 34px;
   height: 34px; }
 
+#invite-modal .card-block:last-child {
+  border-top: 0 !important; }
+
 #verify-modal .alert {
   border-radius: 0;
   margin: 0;

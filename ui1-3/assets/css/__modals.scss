@@ -51,6 +51,10 @@
     width: 34px;
     height: 34px;
   }
+  
+  .card-block:last-child {
+    border-top: 0 !important;
+  }
 }
 
 
