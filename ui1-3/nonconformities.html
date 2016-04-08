@@ -40,7 +40,7 @@
     </ul> 
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item">
-        <a class="nav-link" href="#">
+        <a class="nav-link" href="#" data-toggle="modal" data-target="#nonconformity-chart-modal">
         	<i class="fa fa-bar-chart-o"></i>
         </a> 
       </li>
@@ -282,8 +282,9 @@
   <div ng-include="'includes/nonconformity-edit-modal.html'"></div>
 
   
-
-
+  <!-- Non-conformity chart modal -->
+  <div ng-include="'includes/nonconformity-chart-modal.html'"></div>
+  
 
 	<!-- JS -->
 	<script src="assets/libs/angular/angular.min.js"></script>
@@ -291,6 +292,7 @@
 	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
 	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.StackedBar.js"></script>
 	<script src="assets/js/app.js"></script>
 
 </body>

@@ -1,0 +1,72 @@
+  <div class="modal fade" id="nonconformity-chart-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Close
+      			</button>
+          </div>
+          <h4 class="card-title">Non-conformities</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+
+
+        <!-- Nav tabs -->
+        <ul class="nav nav-tabs chart-tabs">
+          <li class="nav-item"><a class="nav-link active" href="#magnitudeChart" data-toggle="tab">By magnitude</a></li>
+          <li class="nav-item"><a class="nav-link" href="#statusChart" data-toggle="tab">By status</a></li>
+          <li class="nav-item"><a class="nav-link" href="#departmentChart" data-toggle="tab">By department</a></li>
+        </ul>        
+
+
+        <div class="card-block">
+          <div class="tab-content">
+            <div role="tabpanel" class="tab-pane fade in active" id="magnitudeChart">
+              <select class="form-control c-select chart-dropdown">
+                <option>Daily</option>
+                <option>Monthly</option>
+                <option selected="">Quarterly</option>
+                <option>Annually</option>
+              </select>
+              <div class="chart-legend"></div>
+              <div class="chart-wrapper">
+                <canvas height="400px"></canvas>
+              </div>              
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="statusChart">
+              <select class="form-control c-select chart-dropdown">
+                <option>Daily</option>
+                <option>Monthly</option>
+                <option selected="">Quarterly</option>
+                <option>Annually</option>
+              </select>
+              <div class="chart-legend"></div>
+              <div class="chart-wrapper">
+                <canvas height="400px"></canvas>
+              </div>
+            </div>
+            <div role="tabpanel" class="tab-pane fade" id="departmentChart">
+              <select class="form-control c-select chart-dropdown">
+                <option>Last week</option>
+                <option>Last month</option>
+                <option selected="">Last quarter</option>
+                <option>Last year</option>
+              </select>
+              <div class="chart-legend"></div>
+              <div class="chart-wrapper">
+                <canvas height="400px"></canvas>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+
+
+        
+      </div>
+    </div>
+  </div>

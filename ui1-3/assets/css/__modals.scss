@@ -57,6 +57,12 @@
   }
 }
 
+#nonconformity-chart-modal {
+  .card-block:last-child {
+    border-top: 0 !important;
+  }
+}
+
 
 #verify-modal {
   .alert {

@@ -132,38 +132,173 @@ $( document ).ready(function() {
 
   $('.chat-content').animate({scrollTop: $(document).height()}, 'slow');
   
-  /*
-    BIA CHART
   
-   
-  var $biaTrendChart = $("#biaTrendChart");
-  $('#bia-chart-modal').on('shown.bs.modal', function (e) {
-    if ($biaTrendChart.length) {
+  
+  /*
+    CHART CARDS
+  */
+  
+  function LightenDarkenColor(col, amt) {
+      var usePound = false;
+      if (col[0] == "#") {
+          col = col.slice(1);
+          usePound = true;
+      }
+      var num = parseInt(col,16);
+      var r = (num >> 16) + amt;
+      if (r > 255) r = 255;
+      else if  (r < 0) r = 0;
+      var b = ((num >> 8) & 0x00FF) + amt;
+      if (b > 255) b = 255;
+      else if  (b < 0) b = 0;
+      var g = (num & 0x0000FF) + amt;
+      if (g > 255) g = 255;
+      else if (g < 0) g = 0;
+      return (usePound?"#":"") + (g | (b << 8) | (r << 16)).toString(16);
+  }  
+  
+  var $colorGreen = "#16a916";
+  var $colorAmber = "#FF8C00";
+  var $colorRed = "#E81123";
+  var $colorLightBlue = "#00BCF2";
+
+  function showMagnitudeChart() {
+    var $magnitudeChart = $("#magnitudeChart canvas");
+    if ($magnitudeChart.length) {
       var data = {
-          labels: ["2014 Q2", "2014 Q3", "2014 Q4", "2015 Q1", "2015 Q2", "2015 Q3", "2015 Q4", "2016 Q1"],
+          labels: ["Q2", "Q3", "Q4", "2015 Q1", "Q2", "Q3", "Q4", "2016 Q1"],
           datasets: [
             {
-              fillColor: "#E81123",
+              label: "Minor",
+              fillColor: LightenDarkenColor($colorRed, 120),
               strokeColor: "transparent",
-              highlightFill: "#E81123",
+              highlightFill: LightenDarkenColor($colorRed, 120),
               highlightStroke: "transparent",
-              data: [6500, 5900, 8000, 8100, 5600, 5500, 4000, 12300]
+              data: [8500, 5900, 8000, 8100, 5600, 5500, 4000, 12300]
+            },
+            {
+              label: "Major",
+              fillColor: LightenDarkenColor($colorRed, 60),
+              strokeColor: "transparent",
+              highlightFill: LightenDarkenColor($colorRed, 60),
+              highlightStroke: "transparent",
+              data: [2500, 1900, 2000, 1100, 1600, 1500, 1000, 2300]
+            },
+            {
+              label: "Critical",
+              fillColor: $colorRed,
+              strokeColor: "transparent",
+              highlightFill: $colorRed,
+              highlightStroke: "transparent",
+              data: [500, 900, 0, 100, 600, 500, 1000, 300]
             }
           ]
       };
-      var ctx = $biaTrendChart.get(0).getContext("2d");
+      var ctx = $magnitudeChart.get(0).getContext("2d");
       var options = {
         responsive: true,
         maintainAspectRatio: false,
-        barShowStroke : false,
-        //scaleShowLabels: false,
-        scaleShowGridLines : false,
-        //barValueSpacing : 10
+        barShowStroke : false
+        //scaleShowGridLines : false,
       };
-      new Chart(ctx).Bar(data,options);  
+      var myChart = new Chart(ctx).StackedBar(data,options);  
+      $("#magnitudeChart .chart-legend").html(myChart.generateLegend());
     }
+  } 
+  
+  
+  function showStatusChart() {
+    var $statusChart = $("#statusChart canvas");
+    if ($statusChart.length) {
+      var data = {
+          labels: ["Q2", "Q3", "Q4", "2015 Q1", "Q2", "Q3", "Q4", "2016 Q1"],
+          datasets: [
+            {
+              label: "Open",
+              fillColor: LightenDarkenColor($colorRed, 60),
+              strokeColor: "transparent",
+              highlightFill: LightenDarkenColor($colorRed, 60),
+              highlightStroke: "transparent",
+              
+              data: [500, 900, 0, 100, 600, 500, 1000, 300]
+            },
+            {
+              label: "In progress",
+              fillColor: LightenDarkenColor($colorAmber, 60),
+              strokeColor: "transparent",
+              highlightFill: LightenDarkenColor($colorAmber, 60),
+              highlightStroke: "transparent",
+              data: [2500, 1900, 2000, 1100, 1600, 1500, 1000, 2300]
+            },
+            {
+              label: "Closed",
+              fillColor: LightenDarkenColor($colorGreen, 40),
+              strokeColor: "transparent",
+              highlightFill: LightenDarkenColor($colorGreen, 40),
+              highlightStroke: "transparent",
+              data: [8500, 5900, 8000, 8100, 5600, 5500, 4000, 12300]
+            }
+          ]
+      };
+      var ctx = $statusChart.get(0).getContext("2d");
+      var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        barShowStroke : false
+        //scaleShowGridLines : false,
+      };
+      var myChart = new Chart(ctx).StackedBar(data,options);  
+      $("#statusChart .chart-legend").html(myChart.generateLegend());
+    }
+  }  
+  
+  function showDepartmentChart() {
+    var $departmentChart = $("#departmentChart canvas");
+    if ($departmentChart.length) {
+      var data = {
+          labels: ["Sales", "Marketing", "Client services", "Finance", "Administration"],
+          datasets: [
+            {
+              label: "",
+              fillColor: $colorLightBlue,
+              strokeColor: "transparent",
+              highlightFill: $colorLightBlue,
+              highlightStroke: "transparent",
+              data: [2500, 1900, 2000, 4100, 600]
+            }
+          ]
+      };
+      var ctx = $departmentChart.get(0).getContext("2d");
+      var options = {
+        responsive: true,
+        maintainAspectRatio: false,
+        barShowStroke : false
+        //scaleShowGridLines : false,
+      };
+      var myChart = new Chart(ctx).Bar(data,options);  
+    }
+  }    
+  
+  
+  $(document).on("shown.bs.modal", "#nonconformity-chart-modal", function() { 
+    showMagnitudeChart();
   });
-  */
+  
+  $(document).on("shown.bs.tab", "a[href='#magnitudeChart']", function() { 
+    showMagnitudeChart();
+  });
+  
+  $(document).on("shown.bs.tab", "a[href='#statusChart']", function() { 
+    showStatusChart();
+  });
+  
+  $(document).on("shown.bs.tab", "a[href='#departmentChart']", function() { 
+    showDepartmentChart();
+  });
+  
+
+
+
 
   /*
     RICH TEXT EXPAND

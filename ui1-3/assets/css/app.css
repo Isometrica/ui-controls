@@ -1096,6 +1096,9 @@ legend {
 #invite-modal .card-block:last-child {
   border-top: 0 !important; }
 
+#nonconformity-chart-modal .card-block:last-child {
+  border-top: 0 !important; }
+
 #verify-modal .alert {
   border-radius: 0;
   margin: 0;
@@ -1491,6 +1494,48 @@ legend {
 
 .guidance-panel .btn-group .btn:first-child {
   padding-left: 0; }
+
+.chart-tabs {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex; }
+  .chart-tabs .nav-item {
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    text-align: center;
+    margin: 0 !important; }
+    .chart-tabs .nav-item .nav-link {
+      border: 0 !important;
+      border-radius: 0;
+      padding: 10px 0; }
+
+.chart-dropdown {
+  float: left;
+  width: auto;
+  margin-bottom: 1rem; }
+
+.chart-legend {
+  float: right;
+  padding: 5px 0; }
+  .chart-legend ul {
+    list-style: none;
+    padding: 0; }
+    .chart-legend ul li {
+      display: inline;
+      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+      margin-right: 15px; }
+      .chart-legend ul li span {
+        display: inline-block;
+        height: 12px;
+        width: 12px;
+        margin-right: 6px;
+        position: relative;
+        top: 1px; }
 
 /* 
   SCREENS
