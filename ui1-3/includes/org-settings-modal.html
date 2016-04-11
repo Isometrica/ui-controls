@@ -159,81 +159,7 @@
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="standards-types">
-            <div class="card-block">
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Process"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="PRO" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Standard Operating Procedure"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="SOP" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Work instruction"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="WORK" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Policy"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="POL" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Specification"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="SPEC" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Test method"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="TEST" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Regulation"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="REG" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <input type="text" class="form-control" placeholder="Standard type" value="Customer experience"/>
-                </div>
-                <input type="text" class="form-control margin-left" placeholder="Short" value="CEX" style="width:100px"/>
-                <button type="button" class="btn btn-secondary btn-icon margin-left">
-                  <i class="fa fa-times-circle"></i>
-                </button>
-              </div>
-              <button class="btn btn-primary" type="button">Add standards type</button>
-            </div>
+            <div ng-include="'includes/subcards-edit/settings-selection-list.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#standards-book-sections" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Standards book sections</h4>
@@ -282,169 +208,19 @@
             <h4 class="card-title pull-xs-left">Workflow defaults</h4>
           </div>
           <div class="card-block-collapse collapse" id="workflow-defaults">
-            <div class="card-block">
-              <legend>Minor non-conformity</legend>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="input-group">
-                    <input type="number" class="form-control" value="1">
-                    <span class="input-group-btn dropdown">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">hours</a>
-                        <a href="#" class="dropdown-item active">days</a>
-                        <a href="#" class="dropdown-item">weeks</a>
-                      </div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <legend>Major non-conformity</legend>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="input-group">
-                    <input type="number" class="form-control" value="2">
-                    <span class="input-group-btn dropdown">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">hours</a>
-                        <a href="#" class="dropdown-item active">days</a>
-                        <a href="#" class="dropdown-item">weeks</a>
-                      </div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <legend>Critical non-conformity</legend>
-              <div class="form-group row">
-                <label class="form-control-label col-sm-4 col-xs-12">Default step time</label>
-                <div class="col-sm-4 col-xs-12">
-                  <div class="input-group">
-                    <input type="number" class="form-control" value="3">
-                    <span class="input-group-btn dropdown">
-                      <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                      <div class="dropdown-menu dropdown-menu-right">
-                        <a href="#" class="dropdown-item">hours</a>
-                        <a href="#" class="dropdown-item active">days</a>
-                        <a href="#" class="dropdown-item">weeks</a>
-                      </div>
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-edit/settings-workflow-defaults.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#reminders" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Reminders</h4>
           </div>
           <div class="card-block-collapse collapse" id="reminders">
-            <div class="card-block">
-              <legend>Minor non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="1">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">day</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="2">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-              <legend>Major non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="2">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hours</a>
-                      <a href="#" class="dropdown-item active">days</a>
-                      <a href="#" class="dropdown-item">weeks</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="4">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-              <legend>Critical non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="3">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hours</a>
-                      <a href="#" class="dropdown-item active">days</a>
-                      <a href="#" class="dropdown-item">weeks</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="number" class="form-control" value="6">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-edit/settings-action-reminders.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformity-guidelines" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Non-conformity guidelines</h4>
           </div>
           <div class="card-block-collapse collapse" id="nonconformity-guidelines">
-            <div class="card-block">
-              <div class="form-group">
-                <label class="form-control-label">Guideline for magnitude = minor</label>
-                <textarea class="form-control" placeholder="Guideline for minor non-conformities" rows="3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc bibendum nisi vitae libero ultricies facilisis. Mauris et condimentum felis, sed posuere dui.</textarea>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label">Guideline for magnitude = major</label>
-                <textarea class="form-control" placeholder="Guideline for major non-conformities" rows="3">Vivamus ut diam in nulla pulvinar finibus. Phasellus dictum nibh in volutpat hendrerit. Duis eu lacus auctor, varius orci sit amet, sollicitudin sapien. </textarea>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label">Guideline for magnitude = critical</label>
-                <textarea class="form-control" placeholder="Guideline for critical non-conformities" rows="3">Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque ut dapibus turpis. Aenean consequat tellus nec turpis hendrerit ullamcorper.</textarea>
-              </div>
-            </div>
+            <div ng-include="'includes/subcards-edit/settings-nonconformity-guidelines.html'"></div>
           </div>
         </form>       
       </div>

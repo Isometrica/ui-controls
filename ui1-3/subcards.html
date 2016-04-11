@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title">
+        Standard subcards   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>     
+  </div>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-list scroll">
+    		</div>
+    		<div class="content-cards hidden-sm-down scroll">
+    		  <div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#subcards-edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Standard subcards
+      				  </h3>
+    					</div> 
+    					<div class="card-block card-subheading">
+                <h4 class="card-title">SC1. Notes</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notes.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC2. Files</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/files.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC5. Corrective/preventative actions</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/corrective-actions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC7. Non-conformities</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/nonconformities.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC8. Occurrences</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/occurrences.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC12. Contact details</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/contact-details.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC20. Notify</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notify.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC21. Lessons learned</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/lessons.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC22. Improvement plan</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/improvement-plan.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC23. Superpowers</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/superpowers.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">SC24. Root cause analysis</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/root-cause-analysis.html'"></div>
+              <div ng-include="'includes/card-footer-changelog.html'"></div>   
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+  
+  
+
+  <div class="modal fade" id="subcards-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Standard subcards</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC1. Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC2. Files</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards-edit/files.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC5. Corrective/preventative actions</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning status-indicator"></span> 
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="corrective-actions">
+            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC7. Non-conformities</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="nonconformities">
+            <div ng-include="'includes/subcards-edit/nonconformities.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#occurrences" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC8. Occurrences</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="occurrences">
+            <div ng-include="'includes/subcards-edit/occurrences.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#contact" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC12. Contact details</h4>
+            <i class="ms-Icon ms-Icon--menu disclosure-indicator pull-xs-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="contact">
+            <div ng-include="'includes/subcards-edit/contact-details.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC20. Notify</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC21. Lessons learned</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning status-indicator"></span> 
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="lessons">
+            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC22. Improvement plan</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="improvement-plan">
+            <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#superpowers" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC23. Superpowers</h4>
+            <h4 class="card-title pull-xs-right text-muted">2</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="superpowers">
+            <div ng-include="'includes/subcards-edit/superpowers.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#root-cause-analysis" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC24. Root cause analysis</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="root-cause-analysis">
+            <div ng-include="'includes/subcards-edit/root-cause-analysis.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#standards-types" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC25. Selection list</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">8</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="standards-types">
+            <div ng-include="'includes/subcards-edit/settings-selection-list.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#workflow-defaults" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC26. Workflow defaults</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="workflow-defaults">
+            <div ng-include="'includes/subcards-edit/settings-workflow-defaults.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#reminders" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC27. Reminders</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="reminders">
+            <div ng-include="'includes/subcards-edit/settings-action-reminders.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformity-guidelines" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">SC28. Non-conformity guidelines</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="nonconformity-guidelines">
+            <div ng-include="'includes/subcards-edit/settings-nonconformity-guidelines.html'"></div>
+          </div>
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+  
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.StackedBar.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>
