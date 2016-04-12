@@ -6,80 +6,165 @@
       </div>
       <div class="card-block-collapse collapse" id="nonconformity-1">
         <div class="card-block">
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Description</label>
-		        <div class="col-sm-8 col-xs-12">
-			        <input type="text" class="form-control" value="Instrument calibration not properly documented" placeholder="Description">
-              <button type="button" class="btn btn-link clear-field">
-			          <i class="fa fa-times-circle"></i>
-			        </button> 
-		        </div>
-	        </div>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Support ticket ref</label>
-		        <div class="col-sm-8 col-xs-12">
-              <input type="text" class="form-control" placeholder="Support ticket ref" value="DESK-101">
-		        </div>                    	        
-	        </div>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Linked to</label>
-		        <div class="col-sm-8 col-xs-12">
-              <div class="input-group">
-                <span class="input-group-addon">IA123</span>
-                <input type="text" class="form-control" value="Warehouse activities - receiving" disabled="">
-              </div>
-		        </div>                    	        
-	        </div>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Owner</label>
-		        <div class="col-sm-8 col-xs-12">
-              <div class="input-group-typeahead">
-                <input type="text" class="form-control" value="Mike Smith" placeholder="Owner" data-toggle="dropdown"/>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="#">Jack Herbert</a>
-                  <a class="dropdown-item" href="#">Steve Ives</a>
-                  <a class="dropdown-item" href="#">Mark Leusink</a>
-                  <a class="dropdown-item" href="#">Steve Saunders</a>
-                  <a class="dropdown-item active" href="#">Mike Smith</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Title</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group">
+                  <span class="input-group-addon">NC123</span>
+                  <input type="text" class="form-control" placeholder="Title" value="Inquiry not recorded">
                 </div>
               </div>
-		        </div>
-	        </div>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Notes</label>
-		        <div class="col-sm-8 col-xs-12">
-              <textarea class="form-control" rows="3" placeholder="Notes"></textarea>
-		        </div>
-	        </div>
-	        <hr>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Reported date</label>
-		        <div class="col-sm-8 col-xs-12">
-			        <input type="text" class="form-control" value="12 Aug 2015" placeholder="Reported date">
-			        <button type="button" class="btn btn-link clear-field">
-			          <i class="fa fa-times-circle"></i>
-			        </button>
-		        </div>
-	        </div>
-	        <div class="form-group row">
-		        <label class="form-control-label col-sm-4 col-xs-12">Reported by</label>
-		        <div class="col-sm-8 col-xs-12">
-              <div class="input-group-typeahead">
-                <input type="text" class="form-control" value="Jack Herbert" placeholder="Reported by" data-toggle="dropdown"/>
-                <div class="dropdown-menu dropdown-menu-right">
-                  <a class="dropdown-item" href="#">Jack Herbert</a>
-                  <a class="dropdown-item" href="#">Steve Ives</a>
-                  <a class="dropdown-item" href="#">Mark Leusink</a>
-                  <a class="dropdown-item" href="#">Steve Saunders</a>
-                  <a class="dropdown-item active" href="#">Mike Smith</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" rows="3" placeholder="Description">Deal valuations not carried out with new client resulting in problems agreeing valuations later</textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <span class="label text-default">
+                  <i class="fa fa-circle text-warning margin-right"></i>
+                  Open - just reported
+                </span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Standard(s)</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Link to standard" value="2.2.1 Inquiry handling"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">1. Client feedback</a>
+                    <a class="dropdown-item active" href="#">2. Client onboarding</a>
+                    <a class="dropdown-item indent" href="#">2.2 Subcategory</a>
+                    <a class="dropdown-item" href="#">3. Client deal execution</a>
+                    <a class="dropdown-item" href="#">4. FEI policies</a>
+                  </div>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary btn-icon">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
+                  </span>
+                </div>
+                <button type="button" class="btn btn-link">Add standard</button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Reported by</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Reported by" value="Steve Saunders"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
                 </div>
               </div>
-		        </div>
-	        </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Reported date</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Reported date" value="10 Jan 2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Magnitude</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <select class="form-control c-select">
+                      <option></option>
+                      <option>Minor</option>
+                      <option selected="">Major</option>
+                      <option>Critical</option>
+                    </select>
+                  </div>
+                  <button type="button" class="btn btn-link btn-collapse collapsed" data-toggle="collapse" data-target="#magnitude-guidelines-collapse">
+                    <span class="btn-collapse-label-show">Guidelines</span>
+                    <span class="btn-collapse-label-hide">Hide guidelines</span>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="collapse" id="magnitude-guidelines-collapse">
+              <div class="form-group row">
+                <div class="col-sm-8 col-sm-offset-4">
+                  <p class="help-block"><strong>Minor</strong><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent ac fermentum nunc.</p>
+                  <p class="help-block"><strong>Major</strong><br>Aliquam bibendum facilisis leo, scelerisque dignissim libero facilisis at.</p>
+                  <p class="help-block"><strong>Critical</strong><br>Vivamus tincidunt erat nec dolor imperdiet ullamcorper. Vestibulum velit ante, faucibus ut laoreet facilisis, fringilla ac nisi.</p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Approx cost per occurrence</label>
+              <div class="col-sm-4 col-xs-12">
+                <div class="input-group">
+                  <div class="input-group-btn">
+                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">GBP</button>
+                    <div class="dropdown-menu">
+                      <a class="dropdown-item" href="#">EUR</a>
+                      <a class="dropdown-item active" href="#">GBP</a>
+                      <a class="dropdown-item" href="#">USD</a>
+                    </div>
+                  </div>
+                  <input type="text" class="form-control" placeholder="Approx cost per occurrence" value="25,000"/>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Help desk ref</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <input type="text" class="form-control margin-right" placeholder="ID" value="JIRA-2070">
+                  </div>
+                  <div class="col-sm-8">
+                    <input type="text" class="form-control" placeholder="URL" value="http://jira.com/example/2070">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <hr>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Who will do root cause analysis?</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Who will do root cause analysis?" value="Steve Saunders"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Target date</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Target date" value="10 Mar 2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <span class="label text-default">
+                  <i class="fa fa-circle text-warning margin-right"></i>
+                  Not complete
+                </span>
+              </div>
+            </div>     
+          </div>
 	        <hr>
 	        <div class="form-group row">
             <div class="col-sm-8 col-sm-offset-4 clearfix">

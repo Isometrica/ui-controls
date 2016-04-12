@@ -47,7 +47,7 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Standard(s)</label>
               <div class="col-sm-8 col-xs-12">
-                <div class="dropdown">
+                <div class="input-group dropdown">
                   <input class="form-control" data-toggle="dropdown" placeholder="Link to standard" value="2.2.1 Inquiry handling"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">1. Client feedback</a>
@@ -56,11 +56,15 @@
                     <a class="dropdown-item" href="#">3. Client deal execution</a>
                     <a class="dropdown-item" href="#">4. FEI policies</a>
                   </div>
+                  <span class="input-group-btn">
+                    <button type="button" class="btn btn-secondary btn-icon">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
+                  </span>
                 </div>
+                <button type="button" class="btn btn-link">Add standard</button>
               </div>
             </div>
-            
-            
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Reported by</label>
               <div class="col-sm-8 col-xs-12">
@@ -102,10 +106,7 @@
                   </button>
                 </div>
               </div>
-
             </div>
-            
-
             <div class="collapse" id="magnitude-guidelines-collapse">
               <div class="form-group row">
                 <div class="col-sm-8 col-sm-offset-4">
@@ -115,7 +116,6 @@
                 </div>
               </div>
             </div>
-            
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Approx cost per occurrence</label>
               <div class="col-sm-4 col-xs-12">
@@ -145,9 +145,63 @@
                 </div>
               </div>
             </div>
+            <hr>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Who will do root cause analysis?</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Who will do root cause analysis?" value="Steve Saunders"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Target date</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Target date" value="10 Mar 2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <span class="label text-default">
+                  <i class="fa fa-circle text-success margin-right"></i>
+                  Completed
+                </span>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Completed date</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Completed date" value="10 Mar 2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Completed by</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Completed by" value="Steve Saunders"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
-
-
 
           <div class="card-block card-block-collapse-toggle collapsed" href="#root-cause-analysis" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Root cause analysis</h4>
