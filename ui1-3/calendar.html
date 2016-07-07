@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title">
+      Compliance Calendar
+      <!--
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">By magnitude</a>
+        <a class="dropdown-item" href="#">By status</a>
+        <a class="dropdown-item" href="#">By department</a>
+        <a class="dropdown-item" href="#">Deleted</a>
+      </div> 
+      -->  
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>    
+  </div>
+
+  <div class="content scroll">
+
+		<table class="table calendar calendar-year">
+			<thead>
+				<tr>
+  				<th>
+            <div class="search-form">
+    					<div class="row">
+						    <div class="col-xs-8">
+    				      <div class="form-group">
+    					      <input type="text" class="form-control" placeholder="Search...">
+    					      <i class="fa fa-search"></i>
+    				      </div>
+						    </div>
+						    <div class="col-xs-4">
+  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#edit-modal">
+  									<span>Add</span>
+  								</button>
+						    </div>
+  						</div>
+  					</div>
+  				</th>
+  				<th colspan="12">
+    				<button type="button" class="btn btn-secondary pull-left">
+    				  <i class="fa fa-chevron-left no-margin"></i>
+    				</button>
+    				<button type="button" class="btn btn-secondary pull-right">
+    				  <i class="fa fa-chevron-right no-margin"></i>
+    				</button>
+    				<h4 class="calendar-title">2016</h4>
+  				</th>
+				</tr>
+				<tr class="calendar-headings">
+  				<th>&nbsp;</th>
+  				<th>Jan</th>
+  				<th>Feb</th>
+  				<th>Mar</th>
+  				<th>Apr</th>
+  				<th>May</th>
+  				<th>Jun</th>
+  				<th>Jul</th>
+  				<th>Aug</th>
+  				<th>Sep</th>
+  				<th>Oct</th>
+  				<th>Nov</th>
+  				<th>Dec</th>
+				</tr>
+			</thead>
+			<thead>
+				<tr>
+  				<th class="calendar-accordion-toggle" data-toggle="collapse" data-target="#quality">
+    				Quality
+    		  </th>
+    		  <th colspan="12"></th>
+				</tr>
+			</thead>
+			<tbody class="collapse in" id="quality">
+				<tr>
+  				<th>Awareness</th>
+  				<td colspan="12">
+    				<div class="calendar-row">
+      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:13.1%">
+        				FCA Fees Tariff Data Return 
+        				<small class="date">28 Feb</small>
+        		  </a>
+    				</div>
+    				<div class="calendar-row">
+      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:33.1%">
+        				Annual audited accounts
+        				<small class="date">30 Apr</small>
+        		  </a>
+    				</div>
+    				<div class="calendar-row">
+      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:33.1%">
+        				Controllers and Close Links Report to FCA 
+        				<small class="date">30 Apr</small>
+        		  </a>
+    				</div>
+    				<div class="calendar-row">
+      				<a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; right:0;" data-tooltip="true" data-html="true" title="Training on money laundering <br>(31 Sep - 31 Dec)">
+        				Training on money laundering 
+        				<small class="date">31 Sep - 31 Dec</small>
+        		  </a>
+    				</div>
+    				<div class="calendar-row">
+      				<a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; right:0;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
+        				Training on market abuse
+        				<small class="date">31 Sep - 31 Dec</small>
+        		  </a>
+    				</div>
+  				</td>
+				</tr>
+				<tr>
+  				<th>Training</th>
+  				<td colspan="12">
+    				
+  				</td>
+				</tr>
+				<tr>
+  				<th>Customer survey</th>
+  				<td colspan="12"></td>
+				</tr>
+				<tr>
+  				<th>Supplier survey</th>
+  				<td colspan="12"></td>
+				</tr>
+				<tr>
+  				<th>Internal audit</th>
+  				<td colspan="12"></td>
+				</tr>
+				<tr>
+  				<th>External audit</th>
+  				<td colspan="12"></td>
+				</tr>
+				<tr>
+  				<th>Management review</th>
+  				<td colspan="12"></td>
+				</tr>
+			</tbody>
+			<thead>
+				<tr>
+  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#environment">
+    				Environment
+    		  </th>
+    		  <th colspan="12"></th>
+				</tr>
+			</thead>
+			<tbody class="collapse" id="environment">
+				<tr>
+  				<th>Awareness</th>
+  				<td colspan="12"></td>
+				</tr>
+			</tbody>
+			<thead>
+				<tr>
+  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#infosec">
+    				Information security
+    		  </th>
+				</tr>
+			</thead>
+			<tbody class="collapse" id="infosec">
+				<tr>
+  				<th>Awareness</th>
+  				<td colspan="12"></td>
+				</tr>
+			</tbody>
+			<thead>
+				<tr>
+  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#business-continuity">
+    				Business continuity
+    		  </th>
+    		  <th colspan="12"></th>
+				</tr>
+			</thead>
+			<tbody class="collapse" id="business-continuity">
+				<tr>
+  				<th>Awareness</th>
+  				<td colspan="12"></td>
+				</tr>
+			</tbody>
+		</table>
+
+  </div>
+  
+  
+  
+  <!-- Non-conformity Edit Modal -->
+  <div ng-include="'includes/nonconformity-edit-modal.html'"></div>
+
+  
+  <!-- Non-conformity chart modal -->
+  <div ng-include="'includes/nonconformity-chart-modal.html'"></div>
+  
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.StackedBar.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

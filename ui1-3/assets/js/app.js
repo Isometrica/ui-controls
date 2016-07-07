@@ -1,6 +1,13 @@
 var app = angular.module('plio', []);
 
 $( document ).ready(function() {
+  
+  /*
+    Tooltips
+  */
+  
+  $('[data-tooltip="true"]').tooltip();
+  
 
   /* 
     Platform Detection
