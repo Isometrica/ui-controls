@@ -88,7 +88,10 @@
     
     .calendar-months {
       font-family: $font-semibold;
-      font-weight: normal !important;
+      
+      th {
+        font-weight: normal !important;
+      }
     }
   }
 

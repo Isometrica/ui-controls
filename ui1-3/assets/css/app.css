@@ -2258,8 +2258,9 @@ legend {
       text-align: center;
       vertical-align: middle !important; }
     .calendar thead .calendar-months {
-      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
-      font-weight: normal !important; }
+      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+      .calendar thead .calendar-months th {
+        font-weight: normal !important; }
   .calendar th, .calendar td {
     padding: 8px !important;
     border-color: #ddd !important; }
