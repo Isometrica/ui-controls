@@ -2193,105 +2193,14 @@ legend {
   margin-bottom: 0;
   border-bottom: 1px solid #ddd;
   width: 100%;
-  margin-top: -1px;
-  /*
-  &-row {
-    border-bottom: 1px solid #ddd;
-    @include clearfix;
-    
-    &-sidebar {
-      float: left;
-      width: 25%;
-    }
-    
-    &-content {
-      float: left;
-      width: 75%;
-      border-left: 1px solid #ddd;
-    }
-  }
-  
-  &-header {
-    border-bottom: 1px solid #ddd;
-    
-    > div {
-      padding: .75rem;
-      
-      &:last-child {
-        border-left: 1px solid #ddd;
-      }
-    }
-  }
-  
-  &-title {
-    text-align: center;
-    font-size: 18px;
-    line-height: 34px;
-    margin: 0;
-    font-family: $font-semibold;
-  }
-
-
-
-  &-months {
-    > div {
-      padding: 0;
-    }
-    
-    &-title {
-      float: left;
-      width: 8.33333%;
-      text-align: center;
-      
-      padding: .5rem .75rem;
-      color: #777;
-      
-      &:not(:first-child) {
-        border-left: 1px solid #ddd;
-      }
-    }
-  }
-  
-  &-category {
-    &-title {
-      font-weight: 500;
-      z-index: 6;
-      padding: 10px 10px 10px 2.5rem !important;
-      font-size: 16px;
-      text-align: left;
-      cursor: pointer;
-      position: relative;
-  
-      &:before  {
-        content: "\f105";
-        font-family: 'FontAwesome';
-        position: absolute;
-        left: 1rem;
-        top: 50%;
-        font-size: 24px;
-        line-height: 1;
-        margin-top: -12px;
-        color: $blue-color;
-        @include transition(all 0.3s ease);        
-      }
-  
-      &:not(.collapsed):before {
-        -webkit-transform: rotate(90deg);
-      }
-    }
-  }
-  */ }
+  margin-top: -1px; }
   .calendar-title {
     text-align: center;
     font-size: 18px;
     line-height: 34px;
     margin: 0;
     font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
-  .calendar .search-form .row > div:first-child {
-    padding-right: 5px; }
-  .calendar .search-form .row > div:last-child {
-    padding-left: 5px; }
-  .calendar .search-form .form-group {
+  .calendar .search-form .form-group-flex-flex {
     position: relative;
     margin: 0;
     padding: 0; }
@@ -2303,36 +2212,41 @@ legend {
     top: 10px;
     color: #999;
     font-size: 14px; }
+  .calendar .search-form .btn {
+    margin-left: 8px; }
+    @media (min-width: 768px) {
+      .calendar .search-form .btn i {
+        margin-right: 4px; } }
+    @media (max-width: 767px) {
+      .calendar .search-form .btn span {
+        display: none; } }
   .calendar .collapse.in {
     display: table-row-group; }
-  .calendar.calendar-year th:first-child,
-  .calendar.calendar-quarter th:first-child {
-    width: 20%;
-    border-right: 1px solid #bbb; }
-    @media (max-width: 1199px) {
-      .calendar.calendar-year th:first-child,
-      .calendar.calendar-quarter th:first-child {
-        width: 25%; } }
-  .calendar.calendar-year th {
+  .calendar th:first-child {
+    border-right: 1px solid #bbb !important;
+    min-width: 250px; }
+    @media (max-width: 543px) {
+      .calendar th:first-child {
+        min-width: 180px; } }
+    @media (min-width: 544px) and (max-width: 767px) {
+      .calendar th:first-child {
+        min-width: 250px; } }
+  .calendar th:not(:first-child) {
     width: 6.6666%; }
-    @media (max-width: 1199px) {
-      .calendar.calendar-year th {
-        width: 6.25%; } }
-  .calendar.calendar-quarter th {
-    width: 6.1538%; }
-    @media (max-width: 1199px) {
-      .calendar.calendar-quarter th {
-        width: 5.769%; } }
   .calendar thead {
     background: #f5f5f5; }
     .calendar thead th {
       border-width: 1px !important;
       text-align: center;
-      font-weight: 500;
       vertical-align: middle !important; }
+    .calendar thead .calendar-months {
+      font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+      font-weight: normal; }
   .calendar th, .calendar td {
     padding: 8px !important;
     border-color: #ddd !important; }
+  .calendar td {
+    position: relative; }
   .calendar th:first-child {
     border-right: 1px solid #ddd; }
   .calendar tbody th {
@@ -2364,9 +2278,18 @@ legend {
       transition: all 0.3s ease; }
     .calendar th.calendar-accordion-toggle:not(.collapsed):before {
       -webkit-transform: rotate(90deg); }
+  .calendar .calendar-timeline {
+    background: #fafafa;
+    background: #f7fdff;
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    border-right: 2px solid #d8f6ff; }
   .calendar .calendar-row {
     position: relative;
-    height: 30px; }
+    height: 30px;
+    overflow: hidden; }
   .calendar .btn-date-specific,
   .calendar .btn-date-range {
     text-align: left;
@@ -2376,29 +2299,69 @@ legend {
     overflow: hidden;
     padding: 0.15rem 0.5rem; }
   .calendar .btn-date-specific {
-    position: relative;
     padding-right: 0;
     padding-left: 15px !important;
-    color: #00BCF2;
-    right: 0; }
+    color: #0078d7;
+    right: 0;
+    /*
+    &.completed {
+      color: #777;
+      &:hover {
+        color: #555;
+      }
+    }
+    */ }
     .calendar .btn-date-specific .date {
       color: #999; }
     .calendar .btn-date-specific:before {
-      content: '';
-      display: block;
-      height: 10px;
-      width: 10px;
-      border-radius: 50%;
-      background: #00BCF2;
+      content: "\f111";
+      font-family: "FontAwesome";
+      line-height: 1;
       position: absolute;
       left: 0;
       top: 50%;
-      margin-top: -5px; }
+      font-size: 12px;
+      margin-top: -6px; }
+    .calendar .btn-date-specific:hover {
+      color: #003f71; }
+    .calendar .btn-date-specific.custom {
+      color: #00BCF2; }
+      .calendar .btn-date-specific.custom:hover {
+        color: #0094bf; }
+    .calendar .btn-date-specific.overdue {
+      color: #E81123; }
+      .calendar .btn-date-specific.overdue:hover {
+        color: #b80e1c; }
   .calendar .btn-date-range {
     display: block;
-    text-align: left; }
+    text-align: left;
+    color: white;
+    background: #0078d7;
+    /*
+    &.completed {
+      background: #777;
+      &:hover {
+        background: #555;
+      }
+      .date {
+        color: #ddd;
+      }
+    }
+    */ }
+    .calendar .btn-date-range:hover {
+      background: #005ca4; }
     .calendar .btn-date-range .date {
       color: #cde9f0; }
+    .calendar .btn-date-range.custom {
+      background: #00BCF2; }
+      .calendar .btn-date-range.custom:hover {
+        background: #0094bf; }
+    .calendar .btn-date-range.overdue {
+      background: #E81123; }
+      .calendar .btn-date-range.overdue:hover {
+        background: #b80e1c; }
+      .calendar .btn-date-range.overdue .date {
+        color: #fbcace; }
   .calendar tbody .label {
     display: block;
     font-size: 14px;

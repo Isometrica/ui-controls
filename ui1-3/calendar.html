@@ -21,7 +21,7 @@
   <!-- NAVBAR -->
   <div class="navbar">
     <span class="navbar-title">
-      Compliance Calendar
+      Compliance planner
       <!--
       <div class="dropdown-menu">
         <a class="dropdown-item active" href="#">By magnitude</a>
@@ -41,167 +41,223 @@
   </div>
 
   <div class="content scroll">
-
-		<table class="table calendar calendar-year">
-			<thead>
-				<tr>
-  				<th>
-            <div class="search-form">
-    					<div class="row">
-						    <div class="col-xs-8">
-    				      <div class="form-group">
-    					      <input type="text" class="form-control" placeholder="Search...">
-    					      <i class="fa fa-search"></i>
-    				      </div>
-						    </div>
-						    <div class="col-xs-4">
-  								<button class="btn btn-primary btn-block" data-toggle="modal" data-target="#edit-modal">
+    <div class="table-responsive">
+  		<table class="table calendar calendar-year">
+  			<thead>
+  				<tr>
+    				<th>
+              <div class="search-form">
+      				  <div class="form-group-flex">
+        				  <div class="form-group-flex-flex">
+      					    <input type="text" class="form-control" placeholder="Search...">
+                    <i class="fa fa-search"></i>
+  						    </div>
+  								<button class="btn btn-primary" data-toggle="modal" data-target="#edit-modal">
+  								  <i class="fa fa-plus"></i>
   									<span>Add</span>
   								</button>
-						    </div>
-  						</div>
-  					</div>
-  				</th>
-  				<th colspan="12">
-    				<button type="button" class="btn btn-secondary pull-left">
-    				  <i class="fa fa-chevron-left no-margin"></i>
-    				</button>
-    				<button type="button" class="btn btn-secondary pull-right">
-    				  <i class="fa fa-chevron-right no-margin"></i>
-    				</button>
-    				<h4 class="calendar-title">2016</h4>
-  				</th>
-				</tr>
-				<tr class="calendar-headings">
-  				<th>&nbsp;</th>
-  				<th>Jan</th>
-  				<th>Feb</th>
-  				<th>Mar</th>
-  				<th>Apr</th>
-  				<th>May</th>
-  				<th>Jun</th>
-  				<th>Jul</th>
-  				<th>Aug</th>
-  				<th>Sep</th>
-  				<th>Oct</th>
-  				<th>Nov</th>
-  				<th>Dec</th>
-				</tr>
-			</thead>
-			<thead>
-				<tr>
-  				<th class="calendar-accordion-toggle" data-toggle="collapse" data-target="#quality">
-    				Quality
-    		  </th>
-    		  <th colspan="12"></th>
-				</tr>
-			</thead>
-			<tbody class="collapse in" id="quality">
-				<tr>
-  				<th>Awareness</th>
-  				<td colspan="12">
-    				<div class="calendar-row">
-      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:13.1%">
-        				FCA Fees Tariff Data Return 
-        				<small class="date">28 Feb</small>
-        		  </a>
-    				</div>
-    				<div class="calendar-row">
-      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:33.1%">
-        				Annual audited accounts
-        				<small class="date">30 Apr</small>
-        		  </a>
-    				</div>
-    				<div class="calendar-row">
-      				<a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:33.1%">
-        				Controllers and Close Links Report to FCA 
-        				<small class="date">30 Apr</small>
-        		  </a>
-    				</div>
-    				<div class="calendar-row">
-      				<a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; right:0;" data-tooltip="true" data-html="true" title="Training on money laundering <br>(31 Sep - 31 Dec)">
-        				Training on money laundering 
-        				<small class="date">31 Sep - 31 Dec</small>
-        		  </a>
-    				</div>
-    				<div class="calendar-row">
-      				<a class="btn btn-info btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; right:0;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
-        				Training on market abuse
-        				<small class="date">31 Sep - 31 Dec</small>
-        		  </a>
-    				</div>
-  				</td>
-				</tr>
-				<tr>
-  				<th>Training</th>
-  				<td colspan="12">
-    				
-  				</td>
-				</tr>
-				<tr>
-  				<th>Customer survey</th>
-  				<td colspan="12"></td>
-				</tr>
-				<tr>
-  				<th>Supplier survey</th>
-  				<td colspan="12"></td>
-				</tr>
-				<tr>
-  				<th>Internal audit</th>
-  				<td colspan="12"></td>
-				</tr>
-				<tr>
-  				<th>External audit</th>
-  				<td colspan="12"></td>
-				</tr>
-				<tr>
-  				<th>Management review</th>
-  				<td colspan="12"></td>
-				</tr>
-			</tbody>
-			<thead>
-				<tr>
-  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#environment">
-    				Environment
-    		  </th>
-    		  <th colspan="12"></th>
-				</tr>
-			</thead>
-			<tbody class="collapse" id="environment">
-				<tr>
-  				<th>Awareness</th>
-  				<td colspan="12"></td>
-				</tr>
-			</tbody>
-			<thead>
-				<tr>
-  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#infosec">
-    				Information security
-    		  </th>
-				</tr>
-			</thead>
-			<tbody class="collapse" id="infosec">
-				<tr>
-  				<th>Awareness</th>
-  				<td colspan="12"></td>
-				</tr>
-			</tbody>
-			<thead>
-				<tr>
-  				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#business-continuity">
-    				Business continuity
-    		  </th>
-    		  <th colspan="12"></th>
-				</tr>
-			</thead>
-			<tbody class="collapse" id="business-continuity">
-				<tr>
-  				<th>Awareness</th>
-  				<td colspan="12"></td>
-				</tr>
-			</tbody>
-		</table>
-
+    						</div>
+    					</div>
+    				</th>
+    				<th colspan="12">
+      				<button type="button" class="btn btn-secondary pull-left">
+      				  <i class="fa fa-chevron-left no-margin"></i>
+      				</button>
+      				<button type="button" class="btn btn-secondary pull-right">
+      				  <i class="fa fa-chevron-right no-margin"></i>
+      				</button>
+      				<h4 class="calendar-title">2016</h4>
+    				</th>
+  				</tr>
+  				<tr class="calendar-months">
+    				<th>&nbsp;</th>
+    				<th>Jan</th>
+    				<th>Feb</th>
+    				<th>Mar</th>
+    				<th>Apr</th>
+    				<th>May</th>
+    				<th>Jun</th>
+    				<th>Jul</th>
+    				<th>Aug</th>
+    				<th>Sep</th>
+    				<th>Oct</th>
+    				<th>Nov</th>
+    				<th>Dec</th>
+  				</tr>
+  			</thead>
+  			<thead>
+  				<tr>
+    				<th class="calendar-accordion-toggle" data-toggle="collapse" data-target="#quality">
+      				Quality
+      		  </th>
+      		  <th colspan="12"></th>
+  				</tr>
+  			</thead>
+  			<tbody class="collapse in" id="quality">
+  				<tr>
+    				<th>Awareness</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+      				<div class="calendar-row">
+        				<a class="btn btn-link btn-date-specific completed" data-toggle="modal" data-target="#edit-modal" style="left:13.1%">
+          				Completed event 
+          				<small class="date">28 Feb</small>
+          		  </a>
+          		  <a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:60.1%">
+          				FCA Fees Tariff Data Return 
+          				<small class="date">28 July</small>
+          		  </a>
+      				</div>
+      				
+      				<div class="calendar-row">
+        				<a class="btn btn-link btn-date-specific overdue" data-toggle="modal" data-target="#edit-modal" style="left:33%; width: 37%;">
+          				Overdue event title
+          				<small class="date">30 Apr</small>
+          		  </a>
+          		  <a class="btn btn-link btn-date-specific custom" data-toggle="modal" data-target="#edit-modal" style="left:70%">
+          				Custom event title
+          				<small class="date">15 Sep</small>
+          		  </a>
+      				</div>
+      				<div class="calendar-row">
+        				<a class="btn btn-link btn-date-specific completed" data-toggle="modal" data-target="#edit-modal" style="left:33.1%">
+          				Annual audited accounts
+          				<small class="date">30 Apr</small>
+          		  </a>
+      				</div>
+      				<div class="calendar-row">
+        				<a class="btn btn-date-range completed" data-toggle="modal" data-target="#edit-modal" style="left:7%; width: 19%;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
+          				Completed event title
+          				<small class="date">31 Jan - 31 Mar</small>
+          		  </a>
+        				<a class="btn btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; width: 25%;" data-tooltip="true" data-html="true" title="Training on money laundering <br>(31 Sep - 31 Dec)">
+          				Training on money laundering 
+          				<small class="date">31 Sep - 31 Dec</small>
+          		  </a>
+      				</div>
+      				<div class="calendar-row">
+        				<a class="btn btn-date-range overdue" data-toggle="modal" data-target="#edit-modal" style="left:7%; width: 19%;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
+          				Overdue event title
+          				<small class="date">31 Jan - 31 Mar</small>
+          		  </a>
+        				<a class="btn btn-date-range" data-toggle="modal" data-target="#edit-modal" style="left:75%; width: 25%;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
+          				Training on market abuse
+          				<small class="date">31 Sep - 31 Dec</small>
+          		  </a>
+      				</div>
+      				<div class="calendar-row">
+        				<a class="btn btn-date-range custom" data-toggle="modal" data-target="#edit-modal" style="left:75%; width: 25%;" data-tooltip="true" data-html="true" title="Training on market abuse <br>(31 Sep - 31 Dec)">
+          				Custom event title
+          				<small class="date">31 Sep - 31 Dec</small>
+          		  </a>
+      				</div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>Training</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+      				<div class="calendar-row">
+        				<a class="btn btn-link btn-date-specific completed" data-toggle="modal" data-target="#edit-modal" style="left:5%; width: 25%;">
+          				AML Review
+          				<small class="date">28 Feb</small>
+          		  </a>
+          		  <a class="btn btn-link btn-date-specific completed" data-toggle="modal" data-target="#edit-modal" style="left:30%; width: 25%;">
+          				AML Review
+          				<small class="date">28 Feb</small>
+          		  </a>
+          		  <a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:55%; width: 25%;">
+          				AML Review
+          				<small class="date">28 Feb</small>
+          		  </a>
+          		  <a class="btn btn-link btn-date-specific" data-toggle="modal" data-target="#edit-modal" style="left:80%; width: 20%;">
+          				AML Review
+          				<small class="date">28 Feb</small>
+          		  </a>
+      				</div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>Customer survey</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>Supplier survey</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>Internal audit</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>External audit</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  				<tr>
+    				<th>Management review</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  			</tbody>
+  			<thead>
+  				<tr>
+    				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#environment">
+      				Environment
+      		  </th>
+      		  <th colspan="12"></th>
+  				</tr>
+  			</thead>
+  			<tbody class="collapse" id="environment">
+  				<tr>
+    				<th>Awareness</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  			</tbody>
+  			<thead>
+  				<tr>
+    				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#infosec">
+      				Information security
+      		  </th>
+      		  <th colspan="12"></th>
+  				</tr>
+  			</thead>
+  			<tbody class="collapse" id="infosec">
+  				<tr>
+    				<th>Awareness</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  			</tbody>
+  			<thead>
+  				<tr>
+    				<th class="calendar-accordion-toggle collapsed" data-toggle="collapse" data-target="#business-continuity">
+      				Business continuity
+      		  </th>
+      		  <th colspan="12"></th>
+  				</tr>
+  			</thead>
+  			<tbody class="collapse" id="business-continuity">
+  				<tr>
+    				<th>Awareness</th>
+    				<td colspan="12">
+      				<div class="calendar-timeline" style="width: 43.42%"></div>
+    				</td>
+  				</tr>
+  			</tbody>
+  		</table>
+    </div>
   </div>
   
   
