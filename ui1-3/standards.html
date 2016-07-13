@@ -22,7 +22,7 @@
   <div class="navbar">
     <span class="navbar-title dropdown">
       <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-        Standards book - by section
+        Compliance standards - by section
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item active" href="#">By section</a>
@@ -132,7 +132,24 @@
     		</div>
     		<div class="content-cards hidden-sm-down scroll">
     		  <div class="content-cards-inner flex scroll">
-    				<div ng-include="'includes/standard-card.html'"></div>
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<a class="btn btn-secondary" href="standard-discussion.html">
+    								<i class="fa fa-comments"></i>
+    								<span class="label label-danger label-chat-count">6</span>
+    							</a>
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#standard-edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Compliance standard
+      				  </h3>
+    					</div> 
+    					<div ng-include="'includes/standard-card-content.html'"></div>
+    				</div>
 					</div>
     		</div>
       </div> 		

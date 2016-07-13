@@ -123,21 +123,23 @@
   &-content {
     @include scroll;
     @include hide-scrollbar;
+    margin-bottom: 70px;
   }
   
   &-form {
-    padding: 0 1.25rem 1.25rem ;
+    padding: 0 1.25rem 1.25rem;
     position: absolute;
     left: 0;
     right: 0;
     bottom: 0;
     background: white;
+    border-radius: 0 0 4px 4px;
     z-index: 2;
   
     .form-group {
       margin: 0;
       position: relative;
-      padding-left: 55px;
+      //padding-left: 55px;
     }
     
     .input-group {
@@ -159,4 +161,17 @@
       margin-bottom: 0;
     }
   } 
+}
+
+.label-chat-count {
+  border-radius: 10px;
+  padding: 0 6px;
+  line-height: 20px;
+  font-size: 14px;
+  display: inline-block;
+  
+  .card-title & {
+    position: relative;
+    top: -1px;
+  }
 }

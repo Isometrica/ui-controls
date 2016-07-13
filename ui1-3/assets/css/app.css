@@ -1015,6 +1015,13 @@ legend {
     .content-cards .card .table th {
       border-top: 0; }
 
+.content-cards-flush .content-cards-inner {
+  padding: 0; }
+  .content-cards-flush .content-cards-inner .card {
+    border-width: 0 0 0 1px;
+    border-radius: 0;
+    margin: 0; }
+
 .card-changelog-toggle {
   cursor: pointer;
   border-top: 0;
@@ -1467,7 +1474,8 @@ legend {
   .chat-content {
     overflow-x: hidden !important;
     overflow-y: auto !important;
-    -webkit-overflow-scrolling: touch !important; }
+    -webkit-overflow-scrolling: touch !important;
+    margin-bottom: 70px; }
     .chat-content::-webkit-scrollbar {
       width: 0px;
       background: transparent; }
@@ -1478,11 +1486,11 @@ legend {
     right: 0;
     bottom: 0;
     background: white;
+    border-radius: 0 0 4px 4px;
     z-index: 2; }
     .chat-form .form-group {
       margin: 0;
-      position: relative;
-      padding-left: 55px; }
+      position: relative; }
     .chat-form .input-group {
       position: relative;
       z-index: 2; }
@@ -1493,6 +1501,16 @@ legend {
       line-height: 22px;
       font-size: 22px;
       margin-bottom: 0; }
+
+.label-chat-count {
+  border-radius: 10px;
+  padding: 0 6px;
+  line-height: 20px;
+  font-size: 14px;
+  display: inline-block; }
+  .card-title .label-chat-count {
+    position: relative;
+    top: -1px; }
 
 .guidance-panel .card-block {
   border-bottom: 1px solid #ddd; }
