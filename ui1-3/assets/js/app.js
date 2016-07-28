@@ -126,18 +126,22 @@ $( document ).ready(function() {
   // Audit question attachments
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-nc", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
     $(this).closest('.card-block').find('.collapse-nc').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-risk", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
     $(this).closest('.card-block').find('.collapse-risk').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-comment", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
     $(this).closest('.card-block').find('.collapse-comment').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-file", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
     $(this).closest('.card-block').find('.collapse-file').collapse('show');
   });
   
