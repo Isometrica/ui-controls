@@ -1,0 +1,543 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Completed audits
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="#">Completed audits</a>
+        <a class="dropdown-item" href="#">Conducted audits - by status</a>
+        <a class="dropdown-item" href="#">e-Audits - by status</a>
+        <a class="dropdown-item" href="#">Audit templates</a>
+        <a class="dropdown-item" href="#">Questions database</a>
+        <a class="dropdown-item" href="#">Audits - deleted</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>    
+  </div>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-list scroll">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Add</span>
+    					</a>
+    				</form>
+    				<div class="list-group list-group-accordion" id="auditsAccordion">     				
+      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-1">
+    						<h4 class="list-group-item-heading pull-left">Share Capital Partners</h4>
+    						<p class="list-group-item-text pull-right">3</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse in" id="collapse-1">
+        				<div class="list-group">
+        				  <a class="list-group-item active" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2016</h4>
+        							<p class="list-group-item-text pull-right">Q2</p>
+                      <p class="list-group-item-text pull-left">AU567</p>
+                      <p class="list-group-item-text pull-right">20 Jun 2016</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2016</h4>
+        							<p class="list-group-item-text pull-right">Q1</p>
+                      <p class="list-group-item-text pull-left">AU512</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+      						<a class="list-group-item" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+        							<p class="list-group-item-text pull-right">Q4</p>
+                      <p class="list-group-item-text pull-left">AU469</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2">
+    						<h4 class="list-group-item-heading pull-left">Aegon Capital</h4>
+    						<p class="list-group-item-text pull-right">1</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-2">
+        				<div class="list-group">
+      						<a class="list-group-item" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+        							<p class="list-group-item-text pull-right">Q4</p>
+                      <p class="list-group-item-text pull-left">AU469</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-3">
+    						<h4 class="list-group-item-heading pull-left">Waterfall Partners</h4>
+    						<p class="list-group-item-text pull-right">1</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-3">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+        							<p class="list-group-item-text pull-right">Q4</p>
+                      <p class="list-group-item-text pull-left">AU469</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-4">
+    						<h4 class="list-group-item-heading pull-left">Clear Direction Fund</h4>
+    						<p class="list-group-item-text pull-right">1</p>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-4">
+        				<div class="list-group">
+        				  <a class="list-group-item" href="#">
+          				  <span class="label label-success label-status-indicator"></span>
+                    <div class="list-group-item-content">
+        							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+        							<p class="list-group-item-text pull-right">Q4</p>
+                      <p class="list-group-item-text pull-left">AU469</p>
+                      <p class="list-group-item-text pull-right">21 Mar 2016</p>
+                    </div>
+      						</a>
+        				</div>
+      				</div>
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards scroll flexbox-column col-sm-8 hidden-sm-down">
+					<div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+            				<i class="fa fa-question-circle"></i>
+            			</button>
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#corrective-action-edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Audit
+      				  </h3>
+    					</div> 
+    					<div ng-include="'includes/guidance-panel.html'"></div>
+    					<div class="card-block card-block-branding" style="border-top-color:#ee2d24;">
+      					<img class="card-block-branding-logo" src="assets/img/d&p-logo.png"/>
+    					</div>
+              <div class="list-group">
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Organisation audited</p>
+                      <h4 class="list-group-item-heading">Share Capital Partners</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Represented by</p>
+                      <h4 class="list-group-item-heading">Mike Hanna</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Organisation conducting audit</p>
+                      <h4 class="list-group-item-heading">Duff &amp; Phelps London</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Completed by</p>
+                      <h4 class="list-group-item-heading">John Smith</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Date completed</p>
+                      <h4 class="list-group-item-heading">20 Jun 2016</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Previous audit date</p>
+                      <h4 class="list-group-item-heading">16 Mar 2016</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">To be reviewed by</p>
+                      <h4 class="list-group-item-heading">Peter Simpson</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Reference number</p>
+                      <h4 class="list-group-item-heading">AU567</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Repeats</p>
+                      <h4 class="list-group-item-heading">Every 3 months</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Time period</p>
+                      <h4 class="list-group-item-heading">Q2 2016</h4>
+                    </div>
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Audit template</p>
+                      <h4 class="list-group-item-heading">CMP-FCA-2016</h4>
+                    </div>
+                  </div>
+                  <div class="col-sm-6">
+                    
+                  </div>
+                </div>
+    
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Section 1</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/audit-questions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Section 2</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/audit-questions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Section 3</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/audit-questions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Actions</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/corrective-actions.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Files</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/files.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Notify changes</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notify.html'"></div>
+              
+              
+              <!-- Changelog -->
+              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+  
+  
+  
+  <!-- Edit Modal -->
+  <div class="modal fade" id="corrective-action-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Audit</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <div class="card-block card-block-branding" style="border-top-color:#ee2d24;">
+					<img class="card-block-branding-logo" src="assets/img/d&p-logo.png"/>
+				</div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row form-group-nomargin">
+              <label class="form-control-label col-sm-5">Audit template</label>
+              <div class="col-sm-7">
+                <select class="c-select">
+                  <option selected>CMP-FCA-2016</option>
+                  <option>CMP-FCA-2015</option>
+                </select>
+              </div>
+            </div>       
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#key-info" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Key info</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="key-info">
+            <div class="card-block">
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5">Audit title</label>
+                <div class="col-sm-7">
+                  <div class="input-group">
+                    <span class="input-group-addon">AU567</span>
+                    <input type="text" class="form-control" placeholder="Title" value="CMP-FCA-2016">
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5">Organisation to be audited</label>
+                <div class="col-sm-7">
+                  <div class="dropdown">
+                    <input class="form-control" data-toggle="dropdown" placeholder="Organisation to be audited" value="Share Capital Partners"/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item active" href="#">Share Capital Partners</a>
+                      <a class="dropdown-item" href="#">Aegon Capital</a>
+                      <a class="dropdown-item" href="#">Waterfall Partners</a>
+                      <a class="dropdown-item" href="#">Clear Direction Fund</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new organisation</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">To be represented by</label>
+                <div class="col-sm-7 col-xs-12">
+                  <div class="dropdown">
+                    <input class="form-control" data-toggle="dropdown" placeholder="To be represented by" value="Mike Hanna"/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item active" href="#">Mike Hanna</a>
+                      <a class="dropdown-item" href="#">Mike Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new contact</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5">Organisation conducting audit</label>
+                <div class="col-sm-7">
+                    <input class="form-control" value="Duff &amp; Phelps London" disabled=""/>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">To be conducted by</label>
+                <div class="col-sm-7 col-xs-12">
+                  <div class="dropdown">
+                    <input class="form-control" data-toggle="dropdown" placeholder="To be conducted by" value="John Smith"/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item" href="#">Mary Jones</a>
+                      <a class="dropdown-item active" href="#">John Smith</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">Date of previous audit</label>
+                <div class="col-sm-7 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Date of previous audit" value="16 Mar 2016">
+                </div>
+              </div>
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">To be reviewed by</label>
+                <div class="col-sm-7 col-xs-12">
+                  <div class="dropdown">
+                    <input class="form-control" data-toggle="dropdown" placeholder="To be reviewed by" value="Peter Simpson"/>
+                    <div class="dropdown-menu dropdown-menu-full">
+                      <a class="dropdown-item active" href="#">Peter Simpson</a>
+                      <a class="dropdown-item" href="#">Karen Taylor</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <!--
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">Repeats</label>
+                <div class="col-sm-7 col-xs-12">
+
+                  <div class="form-group-inline">
+                    <label class="form-control-label margin-right">every</label>
+                    <div class="input-group">
+                      <input type="number" class="form-control" value="3">
+                      <span class="input-group-btn dropdown">
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">months</button>
+                        <div class="dropdown-menu dropdown-menu-right">
+                          <a href="#" class="dropdown-item">weeks</a>
+                          <a href="#" class="dropdown-item active">months</a>
+                          <a href="#" class="dropdown-item">years</a>
+                        </div>
+                      </span>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+              -->
+              
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">Time period</label>
+                <div class="col-sm-7 col-xs-12">
+                  <input class="form-control" placeholder="Time period" value="Q2 2016"/>
+                </div>
+              </div>
+                            
+              <div class="form-group row">
+                <label class="form-control-label col-sm-5 col-xs-12">Completed date</label>
+                <div class="col-sm-7 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Completed date" value="20 Jun 2016">
+                </div>
+              </div>
+              
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-1" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 1</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">16</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="section-1">
+            <div ng-include="'includes/subcards-edit/audit-questions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-2" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 2</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">16</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="section-2">
+            <div ng-include="'includes/subcards-edit/audit-questions.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-3" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 3</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">5</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="section-3">
+            <div ng-include="'includes/subcards-edit/audit-questions.html'"></div>
+          </div> 
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-success">Mark as complete</button>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#actions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Actions</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">7</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="actions">
+            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Files</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="files">
+            <div ng-include="'includes/subcards-edit/files.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notify changes</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>        
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

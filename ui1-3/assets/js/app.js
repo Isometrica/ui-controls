@@ -107,6 +107,37 @@ $( document ).ready(function() {
   });  
   
   
+  
+  /*
+    AUDITS ACCORDION
+  */
+
+  $("#auditsAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$('#auditsAccordion .collapse').collapse("hide");  	
+  	} else {
+    	// Remove existing active classes
+    	$("#auditsAccordion .list-group-item").removeClass("active");	
+    	$(this).addClass("active");     	
+  	}
+  }); 
+  
+  // Audit question attachments
+  
+  $(document).on("click", ".audit-question-dropdown .dropdown-item", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('show');
+  });
+  
+  $(document).on("click", ".audit-question-attachment-cancel", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
+  });
+  
+  $(document).on("click", ".audit-question-attachment-add", function() {
+    $(this).closest('.card-block').find('.collapse').collapse('hide');
+  });
+  
+  
   /*
     USERS LIST
   */

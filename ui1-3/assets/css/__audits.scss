@@ -1,0 +1,69 @@
+.card-block-branding {
+  border-top-width: 4px !important;
+  border-top-style: solid;
+  border-bottom: 1px solid #ddd;
+  margin-top: -1px;
+  
+  &-logo {
+    //height: 30px;
+  }
+}
+
+.audit-question {
+  padding-left: 4.5rem;
+  padding-top: 1rem;
+  position: relative;
+  
+  &-number {
+    position: absolute;
+    left: 1.25rem;
+    top: 1rem;
+  }
+  
+  .form-control-label {
+    padding: 0;
+    margin-bottom: 15px;
+  }
+  
+  .help-block {
+    display: inline-block;
+    margin: 0;
+    border: 1px solid transparent;
+    padding: .375rem .5rem;
+    vertical-align: middle;
+  }
+
+  .form-group:last-child {
+    margin-bottom: 0;
+  }
+  
+  
+  &-attachment {
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    position: relative;
+    
+    /*
+    &:before,
+    &:after {
+      position: absolute;
+      right: 6px;
+      display: block;
+      content: '';
+      border-width: 10px;
+      border-style: solid;
+      border-color: transparent;
+    }
+    
+    &:before {
+      border-bottom-color: #ddd;
+      top: -20px;
+    }
+    
+    &:after {
+      border-bottom-color: white;
+      top: -19px;
+    }
+    */
+  }
+}

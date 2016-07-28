@@ -1,5 +1,7 @@
 
-
+.form-group-nomargin {
+  margin-bottom: 0;
+}
 
 /* Inputs */
 
@@ -366,7 +368,7 @@ legend {
     float: left;
   }
   .input-group {
-    max-width: 130px;
+    max-width: 160px;
     float: left;
   }
   

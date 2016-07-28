@@ -84,15 +84,19 @@
       margin-bottom: 0 !important;
     }
   }
-  
-  &[data-toggle="buttons"] {
-    .btn.active {
-      background: $light-blue-color;
-      border-color: $light-blue-color;
-      color: white;
-    }
-  }
 }
+
+.btn-secondary.active {
+  &[data-toggle="button"],
+  .btn-group[data-toggle="buttons"] & {
+    background: $light-blue-color;
+    border-color: $light-blue-color;
+    color: white;
+  }  
+}
+
+
+
 
 /*
   BUTTON ICONS
@@ -102,18 +106,6 @@
   i {
     &.margin-right {
       margin-right: 5px;
-    }
-    
-    &.ms-Icon {
-      font-size: 19px;
-      position: relative;
-      top: 1px;      
-
-      &--caretDown {
-        font-size: 18px;
-        position: relative;
-        top: 2px;
-      }
     }
   }
 }
