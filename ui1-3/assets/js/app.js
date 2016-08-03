@@ -126,31 +126,41 @@ $( document ).ready(function() {
   // Audit question attachments
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-nc", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
-    $(this).closest('.card-block').find('.collapse-nc').collapse('show');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-nc').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-risk", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
-    $(this).closest('.card-block').find('.collapse-risk').collapse('show');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-risk').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-comment", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
-    $(this).closest('.card-block').find('.collapse-comment').collapse('show');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-comment').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-file", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
-    $(this).closest('.card-block').find('.collapse-file').collapse('show');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-file').collapse('show');
   });
   
   $(document).on("click", ".audit-question-attachment-cancel", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
   });
   
   $(document).on("click", ".audit-question-attachment-add", function() {
-    $(this).closest('.card-block').find('.collapse').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+  });
+  
+  // Audit question: show comments 
+  
+  $(document).on("click", ".audit-question-answers .btn", function() {
+    if ($(this).hasClass("btn-yes")) {
+      $(this).closest('.audit-question').find('.collapse-comment').collapse('hide');
+    } else {
+      $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
+    }
   });
   
   

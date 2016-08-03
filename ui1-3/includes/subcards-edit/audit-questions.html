@@ -1,92 +1,366 @@
-            <div class="card-block audit-question">
-              <label class="form-control-label"><span class="audit-question-number">Q107.</span> Does the firm have retail permissions?</label>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option1" autocomplete="off" checked> Yes
-                    </label>
-                    <label class="btn btn-secondary">
-                      <input type="radio" name="options" id="option2" autocomplete="off"> No
-                    </label>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.1</span> Are there any activities contained in the Firm’s scope of permission that it no longer requires?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off"> Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
                   </div>
-                  <p class="help-block text-muted">Q1 2015 - Yes</p>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Q1 2015 comments in here lorem ipsum dolor est dolor"></textarea>
-              </div>
-              <div class="form-group form-group-buttons">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary">
-                    NC101
-                  </button>
-                  <button type="button" class="btn btn-secondary btn-icon">
-                    <i class="fa fa-times-circle no-margin"></i>
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary">
-                    RK17
-                  </button>
-                  <button type="button" class="btn btn-secondary btn-icon">
-                    <i class="fa fa-times-circle no-margin"></i>
-                  </button>
-                </div>
-                <div class="btn-group">
-                  <button type="button" class="btn btn-secondary">
-                    <i class="fa fa-file-excel-o fa-lg margin-right"></i>
-                    attachment.xls
-                  </button>
-                  <button type="button" class="btn btn-secondary btn-icon">
-                    <i class="fa fa-times-circle no-margin"></i>
-                  </button>
-                </div>
-              </div>
-              <div ng-include="'includes/audit-question-attachment-form.html'"></div>
-            </div>
-            <div class="card-block audit-question">
-              <label class="form-control-label"><span class="audit-question-number">Q108.</span> Which other categories can the firm deal with?</label>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
-                    Distribution
-                  </button>
-                  <button type="button" class="btn btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
-                    Marketing
-                  </button>
-                  <button type="button" class="btn btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
-                    Sales
-                  </button>
-                  <p class="help-block text-muted">Q1 2015 - Marketing, Sales</p>
-                </div>
-                <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
-              </div>
-              <div class="form-group">
-                <textarea class="form-control" placeholder="Q1 2015 comments in here lorem ipsum dolor est dolor">Updated comments in here lorem ipsum</textarea>
-              </div>
-              <div ng-include="'includes/audit-question-attachment-form.html'"></div>
-            </div>
-            <div class="card-block audit-question">
-              <label class="form-control-label"><span class="audit-question-number">Q109.</span> Does the firm make personal recommendations?</label>
-              <div class="form-group form-group-flex">
-                <div class="form-group-flex-flex">
-                  <div class="btn-group" data-toggle="buttons">
-                    <label class="btn btn-secondary ">
-                      <input type="radio" name="options" id="option1" autocomplete="off" > Yes
-                    </label>
-                    <label class="btn btn-secondary active">
-                      <input type="radio" name="options" id="option2" autocomplete="off" checked> No
-                    </label>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="form-group form-group-buttons audit-question-attachments">
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-link">
+                      NC101
+                    </button>
+                    <button type="button" class="btn btn-link btn-icon">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
                   </div>
-                  <p class="help-block text-muted">Q1 2015 - No</p>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-link">
+                      RK17
+                    </button>
+                    <button type="button" class="btn btn-link btn-icon">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
+                  </div>
+                  <div class="btn-group">
+                    <button type="button" class="btn btn-link">
+                      <i class="fa fa-file-o fa-lg margin-right"></i>
+                      attachment.xls
+                    </button>
+                    <button type="button" class="btn btn-link btn-icon">
+                      <i class="fa fa-times-circle"></i>
+                    </button>
+                  </div>
                 </div>
-                <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
-              <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
-            <div class="card-block audit-question">
-              <button type="button" class="btn btn-success">Mark section as complete</button>
-              <button type="button" class="btn btn-secondary pull-xs-right" data-target="#section-1" data-toggle="collapse">Close</button>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.2</span> Does the Firm plan to extend any of the following?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex audit-question-answers">
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      Products
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                      Customer types
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                      Regulated activities
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      Passported services
+                    </button>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.3</span> Has the Firm held a board/governing body meeting during the period under review?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.4</span> Have any staff members reported personal account deals to the Compliance Officer during the period under review?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.5</span> Where the Firm’s policy requires advance permission to be obtained for PAD: has the Firm monitored to ensure that reported PAD is in accordance with the permission given?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.6</span> Is PAD monitored against the following?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex audit-question-answers">
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                      Firm’s business undertakings
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                      PAD policy
+                    </button>
+                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                      Restricted list
+                    </button>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.7</span> What types of financial promotion has the Firm issued during the period under review?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <textarea class="form-control" placeholder="Comment"></textarea>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>              
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.8</span> Has the Firm retained records of promotions issued and the recipient clients?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.9</span> Has the Firm made any changes to its website?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.10</span> Are there sections of the website that are password-protected so that they can only be accessed by eligible persons?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.11</span> Do all promotions, including newsletters, meet the “fair, clear and not misleading” rule?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.12</span> Do promotions contain appropriate disclaimers?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>                
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.13</span> Have any gifts or entertainments been provided or received during the period under review? </label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.14</span> Has the Firm identified any problems or any inducements which appear to be inappropriate?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.15</span> Where the Compliance Officer’s approval is required in relation to an inducement, gift or entertainment, has this been obtained and filed?</label>
+                
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="audit-question">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label"><span class="audit-question-number">1.16</span> Does the Firm monitor third party payments/inducements to ensure that these do not impair its duty to act in the best interests of its clients?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
+              <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
+            </div>
+            <div class="card-block text-xs-center">
+              <button type="button" class="btn btn-secondary">Mark section as complete</button>
+              <button type="button" class="btn btn-link" data-target="#section-1" data-toggle="collapse">Close</button>
             </div>
