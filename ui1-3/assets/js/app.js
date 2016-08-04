@@ -163,6 +163,38 @@ $( document ).ready(function() {
     }
   });
   
+  // Audit question: change from previous comment style to current
+  
+  $(document).on("focus", ".audit-question-comment", function() {
+    // remove class
+    $(this).removeClass("audit-question-comment-previous");
+    // remove date text
+    $(this).val(
+      $(this).val().replace(" – Q4 2015","")
+    );
+  });
+  
+  // Repeat response
+  
+  $(document).on("click", ".audit-question-previous .btn", function() {
+    var $previousAnswers = $(this).closest('.audit-question').find('.btn-previous');
+    // Mark previous answers .active
+    $previousAnswers.addClass('active');
+    // Show comments if applicable
+    if (!$previousAnswers.hasClass("btn-yes")) {
+      $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
+    }
+    // Scroll down to next answer
+    $(this).closest('.audit-question').find('.collapse-comment').on("shown.bs.collapse", function(){
+      var $modal = $(this).closest('.modal')
+      var $questionHeight = $(this).closest('.audit-question').outerHeight(true);
+      console.log($questionHeight);
+      $modal.animate({ scrollTop: $modal.scrollTop() + $questionHeight }, 200);      
+    });
+
+  });
+  
+  
   
   /*
     USERS LIST

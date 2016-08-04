@@ -1,20 +1,24 @@
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.1</span> Are there any activities contained in the Firm’s scope of permission that it no longer requires?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.1</span> Are there any activities contained in the Firm’s scope of permission that it no longer requires?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off"> Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div class="form-group form-group-buttons audit-question-attachments">
                   <div class="btn-group">
                     <button type="button" class="btn btn-link">
@@ -48,16 +52,16 @@
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.2</span> Does the Firm plan to extend any of the following?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.2</span> Does the Firm plan to extend any of the following?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex audit-question-answers">
                     <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
                       Products
                     </button>
-                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <button type="button" class="btn btn-secondary btn-previous" data-toggle="button" aria-pressed="true" autocomplete="off">
                       Customer types
                     </button>
-                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <button type="button" class="btn btn-secondary btn-previous" data-toggle="button" aria-pressed="true" autocomplete="off">
                       Regulated activities
                     </button>
                     <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -66,77 +70,93 @@
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.3</span> Has the Firm held a board/governing body meeting during the period under review?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.3</span> Has the Firm held a board/governing body meeting during the period under review?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.4</span> Have any staff members reported personal account deals to the Compliance Officer during the period under review?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.4</span> Have any staff members reported personal account deals to the Compliance Officer during the period under review?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.5</span> Where the Firm’s policy requires advance permission to be obtained for PAD: has the Firm monitored to ensure that reported PAD is in accordance with the permission given?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.5</span> Where the Firm’s policy requires advance permission to be obtained for PAD: has the Firm monitored to ensure that reported PAD is in accordance with the permission given?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.6</span> Is PAD monitored against the following?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.6</span> Is PAD monitored against the following?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex audit-question-answers">
                     <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
@@ -145,23 +165,27 @@
                     <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
                       PAD policy
                     </button>
-                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <button type="button" class="btn btn-secondary btn-previous" data-toggle="button" aria-pressed="true" autocomplete="off">
                       Restricted list
                     </button>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.7</span> What types of financial promotion has the Firm issued during the period under review?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.7</span> What types of financial promotion has the Firm issued during the period under review?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
-                    <textarea class="form-control" placeholder="Comment"></textarea>
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
@@ -171,77 +195,89 @@
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.8</span> Has the Firm retained records of promotions issued and the recipient clients?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.8</span> Has the Firm retained records of promotions issued and the recipient clients?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.9</span> Has the Firm made any changes to its website?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.9</span> Has the Firm made any changes to its website?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.10</span> Are there sections of the website that are password-protected so that they can only be accessed by eligible persons?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.10</span> Are there sections of the website that are password-protected so that they can only be accessed by eligible persons?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.11</span> Do all promotions, including newsletters, meet the “fair, clear and not misleading” rule?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.11</span> Do all promotions, including newsletters, meet the “fair, clear and not misleading” rule?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
@@ -249,77 +285,93 @@
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
                 
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.12</span> Do promotions contain appropriate disclaimers?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.12</span> Do promotions contain appropriate disclaimers?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>                
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.13</span> Have any gifts or entertainments been provided or received during the period under review? </label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.13</span> Have any gifts or entertainments been provided or received during the period under review? </label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.14</span> Has the Firm identified any problems or any inducements which appear to be inappropriate?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.14</span> Has the Firm identified any problems or any inducements which appear to be inappropriate?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.15</span> Where the Compliance Officer’s approval is required in relation to an inducement, gift or entertainment, has this been obtained and filed?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.15</span> Where the Compliance Officer’s approval is required in relation to an inducement, gift or entertainment, has this been obtained and filed?</label>
                 
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
@@ -327,35 +379,43 @@
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">
-                <label class="form-control-label"><span class="audit-question-number">1.16</span> Does the Firm monitor third party payments/inducements to ensure that these do not impair its duty to act in the best interests of its clients?</label>
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.16</span> Does the Firm monitor third party payments/inducements to ensure that these do not impair its duty to act in the best interests of its clients?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex">
                     <div class="btn-group audit-question-answers" data-toggle="buttons">
                       <label class="btn btn-secondary btn-yes">
                         <input type="radio" name="options" id="option1" autocomplete="off" > Yes
                       </label>
-                      <label class="btn btn-secondary btn-no">
+                      <label class="btn btn-secondary btn-no btn-previous">
                         <input type="radio" name="options" id="option2" autocomplete="off"> No
                       </label>
                     </div>
                   </div>
                   <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
                 </div>
-                <div ng-include="'includes/audit-question-comment-form.html'"></div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015</textarea>
+                  </div>
+                </div>
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>
