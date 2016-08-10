@@ -125,6 +125,16 @@ $( document ).ready(function() {
   
   // Audit question attachments
   
+  $(document).on("click", ".audit-question-dropdown .dropdown-item-pa", function() {
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-pa').collapse('show');
+  });
+  
+  $(document).on("click", ".audit-question-dropdown .dropdown-item-ca", function() {
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-ca').collapse('show');
+  });
+  
   $(document).on("click", ".audit-question-dropdown .dropdown-item-nc", function() {
     $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
     $(this).closest('.card-block').find('.collapse-attachment-nc').collapse('show');
@@ -133,6 +143,11 @@ $( document ).ready(function() {
   $(document).on("click", ".audit-question-dropdown .dropdown-item-risk", function() {
     $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
     $(this).closest('.card-block').find('.collapse-attachment-risk').collapse('show');
+  });
+  
+  $(document).on("click", ".audit-question-dropdown .dropdown-item-risk-control", function() {
+    $(this).closest('.card-block').find('.collapse-attachment').collapse('hide');
+    $(this).closest('.card-block').find('.collapse-attachment-risk-control').collapse('show');
   });
   
   $(document).on("click", ".audit-question-dropdown .dropdown-item-comment", function() {
@@ -170,20 +185,24 @@ $( document ).ready(function() {
     $(this).removeClass("audit-question-comment-previous");
     // remove date text
     $(this).val(
-      $(this).val().replace(" – Q4 2015","")
+      // Much too aggressive and reliant on specific date - need better function to remove paretheses and date
+      $(this).val().replace(" – Q4 2015)","").replace("(","")
     );
   });
   
   // Repeat response
   
-  $(document).on("click", ".audit-question-previous .btn", function() {
+  $(document).on("click", ".btn-repeat", function() {
     var $previousAnswers = $(this).closest('.audit-question').find('.btn-previous');
-    // Mark previous answers .active
-    $previousAnswers.addClass('active');
-    // Show comments if applicable
-    if (!$previousAnswers.hasClass("btn-yes")) {
-      $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
+    if ($previousAnswers.length > 0) {
+      // Mark previous answers .active
+      $previousAnswers.addClass('active');
+      // Show comments if applicable
+      if (!$previousAnswers.hasClass("btn-yes")) {
+        $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
+      }      
     }
+
     // Scroll down to next answer
     $(this).closest('.audit-question').find('.collapse-comment').on("shown.bs.collapse", function(){
       var $modal = $(this).closest('.modal')
@@ -192,6 +211,21 @@ $( document ).ready(function() {
       $modal.animate({ scrollTop: $modal.scrollTop() + $questionHeight }, 200);      
     });
 
+  });
+  
+  // Hide Repeat button when interact with form
+  
+  
+  $(document).on("click", ".audit-question .btn-repeat", function() {
+    $(this).closest('.audit-question').find('.btn-repeat').hide();
+  });
+  
+  $(document).on("click", ".audit-question-answers .btn", function() {
+    $(this).closest('.audit-question').find('.btn-repeat').hide();
+  });
+  
+  $(document).on("focus", ".audit-question-comment", function() {
+    $(this).closest('.audit-question').find('.btn-repeat').hide();
   });
   
   
