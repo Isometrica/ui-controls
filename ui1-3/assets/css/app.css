@@ -973,6 +973,9 @@ legend {
       color: #777;
       font-weight: normal;
       font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+    .content-cards .card-subheading.card-block-collapse-toggle {
+      padding-bottom: 1.25rem;
+      border-bottom: 1px solid #ddd; }
   .content-cards .card .list-group {
     border-bottom: 1px solid #ddd;
     padding-top: 8px;
@@ -2473,7 +2476,8 @@ legend {
     -moz-transition: color 0.4s ease;
     -o-transition: color 0.4s ease;
     -webkit-transition: color 0.4s ease;
-    transition: color 0.4s ease; }
+    transition: color 0.4s ease;
+    max-width: 600px; }
     .audit-question-comment-previous {
       color: #777; }
   .audit-question-attachments {
@@ -2521,3 +2525,16 @@ legend {
       top: -19px;
     }
     */ }
+
+.audit-read-question {
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+  margin: 0 0 5px; }
+
+.audit-read-answer {
+  font-size: 18px;
+  line-height: 24px;
+  margin: 0 0 5px; }
+
+.audit-read-comment {
+  color: #777;
+  margin: 0 0 5px; }

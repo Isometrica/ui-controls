@@ -135,6 +135,7 @@
   
   &-comment {
     @include transition(color 0.4s ease);
+    max-width: 600px;
     
     &-previous {
       color: #777;
@@ -204,5 +205,21 @@
       top: -19px;
     }
     */
+  }
+}
+
+.audit-read {
+  &-question {
+    font-family: $font-semibold;
+    margin: 0 0 5px;
+  }
+  &-answer {
+    font-size: 18px;
+    line-height: 24px;
+    margin: 0 0 5px;
+  }
+  &-comment {
+    color: #777;
+    margin: 0 0 5px;
   }
 }
