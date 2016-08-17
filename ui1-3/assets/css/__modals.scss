@@ -1,4 +1,13 @@
 .modal {
+
+  &-lg {
+    width: 900px;
+    
+    @media (max-width: 899px) {
+      width: auto !important;
+      margin: 10px;
+    }
+  }
   
   &-dialog {  
     @media (max-width: 600px) {
@@ -13,6 +22,8 @@
         max-width: 400px;
       }
     }
+    
+
     
     > .card {
       border: 0;

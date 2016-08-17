@@ -1073,6 +1073,13 @@ legend {
     .card-changelog .table th:first-child, .card-changelog .table td:first-child {
       padding-left: 1.25rem; }
 
+.modal-lg {
+  width: 900px; }
+  @media (max-width: 899px) {
+    .modal-lg {
+      width: auto !important;
+      margin: 10px; } }
+
 @media (max-width: 600px) {
   .modal-dialog {
     width: auto;
@@ -2425,7 +2432,27 @@ legend {
   .audit-question-question {
     padding: 0;
     margin-bottom: 12px;
-    font-size: 17px; }
+    font-size: 17px;
+    padding-right: 40px; }
+    @media (min-width: 768px) {
+      .audit-question-question {
+        padding-right: 140px; } }
+  .audit-question-guidance-content {
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+    padding-bottom: 10px; }
+    .audit-question-guidance-content p {
+      margin-bottom: .5rem; }
+  .audit-question-guidance-open {
+    position: absolute;
+    right: 15px;
+    top: 15px; }
+    .audit-question-guidance-open:not(.collapsed) {
+      display: none; }
+    .audit-question-guidance-open i {
+      font-size: 24px; }
+  .audit-question-guidance-close {
+    padding-left: 0; }
   .audit-question-previous {
     background: #f5f5f5;
     border-left: 1px solid #ddd;
@@ -2476,8 +2503,7 @@ legend {
     -moz-transition: color 0.4s ease;
     -o-transition: color 0.4s ease;
     -webkit-transition: color 0.4s ease;
-    transition: color 0.4s ease;
-    max-width: 600px; }
+    transition: color 0.4s ease; }
     .audit-question-comment-previous {
       color: #777; }
   .audit-question-attachments {

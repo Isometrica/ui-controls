@@ -473,6 +473,34 @@ $( document ).ready(function() {
   $(document).on("shown.bs.modal", ".modal", function() {    
     openGuidanceClick();    
   });
+  
+  
+  
+  
+  /* AUDIT GUIDANCE */
+    
+  // Open on audit-question-guidance-open click    
+  $(document).on("shown.bs.modal", ".modal", function() {    
+    $( ".audit-question-guidance-open" ).click(function() {
+      console.log("Open audit guidance panel");
+      // Expand panel
+      $(this).closest('.audit-question').find('.audit-question-guidance').collapse('show');
+      // Hide toggle
+      $(this).removeClass("collapsed");
+    });  
+  });
+  
+  // Close on audit-question-guidance-close click
+  $(document).on("shown.bs.collapse", ".audit-question-guidance", function() {    
+    $( ".audit-question-guidance-close" ).click(function() {
+      console.log("Close audit guidance panel");
+      // Collapse panel
+      $(this).closest('.audit-question').find('.audit-question-guidance').collapse('hide');
+      // Show toggle
+      $(this).closest('.audit-question').find('.audit-question-guidance-open').addClass("collapsed");
+    });
+  });
+  
 
 });
 
