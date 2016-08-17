@@ -206,6 +206,11 @@
   
   
   .collapse-comment {
+    
+    @media (min-width:768px) {
+      padding-right: 140px;
+    }
+    
     .form-group {
       margin: 0;
       overflow: hidden;

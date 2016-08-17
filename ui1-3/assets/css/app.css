@@ -2520,6 +2520,9 @@ legend {
         padding-right: 0;
         text-decoration: none;
         font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  @media (min-width: 768px) {
+    .audit-question .collapse-comment {
+      padding-right: 140px; } }
   .audit-question .collapse-comment .form-group {
     margin: 0;
     overflow: hidden; }
