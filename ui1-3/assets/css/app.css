@@ -869,7 +869,7 @@ legend {
     line-height: 22px; }
     .card-block-collapse-toggle .card-title .text-muted {
       color: #777;
-      font-weight: normal; }
+      font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .card-block-collapse-toggle .label {
     font-size: 14px; }
   .card-block-collapse-toggle .disclosure-indicator {
