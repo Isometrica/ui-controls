@@ -378,7 +378,9 @@ i.margin-right {
 
 /* Inputs */
 .form-control {
-  color: #333; }
+  color: #333;
+  font-weight: normal;
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .form-control:disabled {
     color: black; }
 
@@ -529,7 +531,8 @@ i.margin-right {
   .android .clear-field {
     right: 0; }
 
-input:focus ~ .clear-field {
+input:focus ~ .clear-field,
+textarea:focus ~ .clear-field {
   display: block; }
 
 /* Input group */
@@ -2228,7 +2231,8 @@ legend {
     margin: 0;
     padding: 0; }
   .calendar .search-form input {
-    padding-left: 32px; }
+    padding-left: 32px;
+    font-weight: normal; }
   .calendar .search-form i.fa-search {
     position: absolute;
     left: 12px;
@@ -2276,7 +2280,7 @@ legend {
   .calendar tbody th {
     font-size: 16px;
     padding: 10px 15px !important;
-    font-weight: 500; }
+    font-weight: normal; }
   .calendar th.calendar-accordion-toggle {
     margin-left: 0;
     font-weight: 500;

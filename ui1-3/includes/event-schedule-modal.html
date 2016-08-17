@@ -1,0 +1,223 @@
+  <div class="modal fade" id="event-schedule-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Event schedule</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Schedule type</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select form-control" disabled="">
+                  <option selected>Audits</option>
+                  <option>e-Audits</option>
+                  <option>Other</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Audit/survey template</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select form-control">
+                  <option selected>CMP-FCA-2016</option>
+                  <option>CMP-FCA-2015</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Audit/survey type</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select form-control" disabled="">
+                  <option selected>Conducted audit</option>
+                  <option>e-Audit</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Audit/survey title</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Reported date" value="D&P compliance audit">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Description</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" rows="2" placeholder="Description">Lorem ipsum dolor est</textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Management program</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select form-control">
+                  <option>Business Continuity</option>
+                  <option selected>Compliance</option>
+                  <option>Performance and Quality</option>
+                  <option>Risk</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Line number</label>
+              <div class="col-sm-2 col-xs-12">
+                <input type="number" class="form-control" placeholder="" value="1">
+              </div>
+            </div>
+
+            <hr>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Repeat</label>
+              <div class="col-sm-8 col-xs-12">
+                <select class="c-select form-control">
+                  <option selected>Never</option>
+                  <option>Every month</option>
+                  <option>Every 3 months</option>
+                  <option>Every 6 months</option>
+                  <option>Every 12 months</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Start date</label>
+              <div class="col-sm-3 col-xs-12">
+                <input type="text" class="form-control" placeholder="Start date" value="17 Aug 2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Finish date</label>
+              <div class="col-sm-3 col-xs-12">
+                <input type="text" class="form-control" placeholder="Finish date" value="17 Sep 2016">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Who will confirm dates?</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Who will confirm dates?" value="Steve Saunders"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item active" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Confirmed
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> Not confirmed
+                  </label>
+                </div>
+              </div>
+            </div>
+            
+            <hr>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Confirmed date</label>
+              <div class="col-sm-3 col-xs-12">
+                <input type="text" class="form-control" placeholder="Confirmed date" value="17 Oct 2016">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Start time</label>
+              <div class="col-sm-2 col-xs-12">
+                <input type="text" class="form-control" placeholder="Start time" value="09:00">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">End time</label>
+              <div class="col-sm-2 col-xs-12">
+                <input type="text" class="form-control" placeholder="End time" value="14:00">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Location</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Location" value="">
+              </div>
+            </div>
+            
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">To be conducted by</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="To be conducted by" value="Mike Smith"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item" href="#">Steve Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item active" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            
+          </div>
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#event-actions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Event actions</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="event-actions">
+            <div ng-include="'includes/subcards-edit/event-actions.html'"></div>
+          </div> 
+
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notify changes</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>         
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

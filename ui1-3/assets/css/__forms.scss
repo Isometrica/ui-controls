@@ -7,6 +7,8 @@
 
 .form-control {
   color: #333;
+  font-weight: normal;
+  font-family: $font-regular;
   
   &:disabled {
     color: black;
@@ -222,7 +224,8 @@
   }	
 }
 
-input:focus ~ .clear-field {
+input:focus ~ .clear-field,
+textarea:focus ~ .clear-field {
   display: block;
 }
 
