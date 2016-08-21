@@ -195,23 +195,32 @@ $( document ).ready(function() {
   $(document).on("click", ".btn-repeat", function() {
     
     var $previousAnswers = $(this).closest('.audit-question').find('.btn-previous');
+    var $nextQuestion = $(this).closest('.audit-question').next('.audit-question');
+    var $currentButtonOffset = $(this).closest('.audit-question').find('.btn-repeat').offset().top;
+    
     if ($previousAnswers.length > 0) {
       // Mark previous answers .active
       $previousAnswers.addClass('active');
       // Show comments if applicable
       if (!$previousAnswers.hasClass("btn-yes")) {
         $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
-      }      
+      } 
+      // Scroll to next question
+      if ($nextQuestion.length > 0) {
+        $(this).closest('.audit-question').find('.collapse-comment').on("shown.bs.collapse", function(){
+          var $modal = $(this).closest('.modal');
+          $nextButtonOffset = $(this).closest('.audit-question').next('.audit-question').find('.btn-repeat').offset().top;      
+          $modal.animate({ scrollTop: $modal.scrollTop() + $nextButtonOffset - $currentButtonOffset }, 200);      
+        });    
+      }
     }
-    
-    $currentButtonOffset = $(this).closest('.audit-question').find('.btn-repeat').offset().top;
-
-    // Scroll down to next answer
-    $(this).closest('.audit-question').find('.collapse-comment').on("shown.bs.collapse", function(){
+    else 
+    {
+      // Scroll to next question
       var $modal = $(this).closest('.modal');
       $nextButtonOffset = $(this).closest('.audit-question').next('.audit-question').find('.btn-repeat').offset().top;      
-      $modal.animate({ scrollTop: $modal.scrollTop() + $nextButtonOffset - $currentButtonOffset }, 200);      
-    });
+      $modal.animate({ scrollTop: $modal.scrollTop() + $nextButtonOffset - $currentButtonOffset }, 200); 
+    }
 
   });
   
