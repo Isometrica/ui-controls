@@ -2419,6 +2419,11 @@ legend {
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex; }
+  .audit-question-helptext {
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem; }
   .audit-question-current,
   .audit-question-previous {
     padding-top: 1rem; }
@@ -2529,7 +2534,11 @@ legend {
       padding-right: 140px; } }
   .audit-question .collapse-comment .form-group {
     margin: 0;
-    overflow: hidden; }
+    overflow: hidden;
+    position: relative; }
+    .audit-question .collapse-comment .form-group .clear-field {
+      top: 3px;
+      right: 3px; }
   .audit-question-attachment-form {
     border-top: 1px solid #ddd;
     padding-top: 1rem;

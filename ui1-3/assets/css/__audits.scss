@@ -25,6 +25,14 @@
   position: relative;
   @include flexbox;
   
+  &-helptext {
+    font-family: $font-semibold;
+    border-top: 1px solid #ddd;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  
+  
   &-current,
   &-previous {
     padding-top: 1rem;
@@ -214,7 +222,13 @@
     .form-group {
       margin: 0;
       overflow: hidden;
+      position: relative;
       //padding-bottom: .9rem;
+      
+      .clear-field {
+        top: 3px;
+        right: 3px;
+      }
     }
   }
   

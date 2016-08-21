@@ -193,6 +193,7 @@ $( document ).ready(function() {
   // Repeat response
   
   $(document).on("click", ".btn-repeat", function() {
+    
     var $previousAnswers = $(this).closest('.audit-question').find('.btn-previous');
     if ($previousAnswers.length > 0) {
       // Mark previous answers .active
@@ -202,19 +203,19 @@ $( document ).ready(function() {
         $(this).closest('.audit-question').find('.collapse-comment').collapse('show');
       }      
     }
+    
+    $currentButtonOffset = $(this).closest('.audit-question').find('.btn-repeat').offset().top;
 
     // Scroll down to next answer
     $(this).closest('.audit-question').find('.collapse-comment').on("shown.bs.collapse", function(){
-      var $modal = $(this).closest('.modal')
-      var $questionHeight = $(this).closest('.audit-question').outerHeight(true);
-      console.log($questionHeight);
-      $modal.animate({ scrollTop: $modal.scrollTop() + $questionHeight }, 200);      
+      var $modal = $(this).closest('.modal');
+      $nextButtonOffset = $(this).closest('.audit-question').next('.audit-question').find('.btn-repeat').offset().top;      
+      $modal.animate({ scrollTop: $modal.scrollTop() + $nextButtonOffset - $currentButtonOffset }, 200);      
     });
 
   });
   
   // Hide Repeat button when interact with form
-  
   
   $(document).on("click", ".audit-question .btn-repeat", function() {
     $(this).closest('.audit-question').find('.btn-repeat').hide();
