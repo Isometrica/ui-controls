@@ -1,30 +1,99 @@
-<div class="card-block">
-  <div class="card">
-    <div class="card-block card-block-collapse-toggle collapsed audit-question-template-toggle">
-      <strong>1. Does the firm have retail permissions?</strong>
-    </div>
-    <div class="card-block-collapse collapse audit-question-template">
-      <div ng-include="'includes/subcards-edit/audit-question-template.html'"></div>
-    </div>
-    <div class="card-block card-block-collapse-toggle collapsed audit-question-template-toggle">
-      <strong>2. Which other categories can the firm deal with?</strong>
-    </div>
-    <div class="card-block-collapse collapse audit-question-template">
-      <div ng-include="'includes/subcards-edit/audit-question-template.html'"></div>
-    </div>
-    <div class="card-block card-block-collapse-toggle collapsed audit-question-template-toggle">
-      <strong>3. Does the firm make personal recommendations?</strong>
-    </div>
-    <div class="card-block-collapse collapse audit-question-template">
-      <div ng-include="'includes/subcards-edit/audit-question-template.html'"></div>
-    </div>
-  </div>
-  <div class="text-xs-center">
-    <button type="button" class="btn btn-link">Add a question</button>
-  </div>
-  <hr>
-  <div class="text-xs-center">
-    <button type="button" class="btn btn-secondary">Delete section</button>
-  </div>
-</div>
-
+                  <div class="card-block">
+                    <div class="form-group row">
+            	        <label class="form-control-label col-sm-4 col-xs-12">Title</label>
+            	        <div class="col-sm-8 col-xs-12">
+            		        <input type="text" class="form-control" value="BIPRU" placeholder="Title">
+              			    <button type="button" class="btn btn-link clear-field">
+            		          <i class="fa fa-times-circle"></i>
+            		        </button>
+            	        </div>
+                    </div>
+                    <div class="audit-section-scoring">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Points</th>
+                            <th>Do what?</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="0">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="10">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option>Trigger evaluation &amp; recommendation in report</option>
+                                <option selected="">Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="11">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="15">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option>Trigger evaluation &amp; recommendation in report</option>
+                                <option selected="">Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="16">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="20">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option selected="">Trigger evaluation &amp; recommendation in report</option>
+                                <option>Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                              <textarea class="form-control" rows="3" placeholder="Enter evaluation text"></textarea>
+                              <textarea class="form-control" rows="3" placeholder="Enter recommendation text"></textarea>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td colspan="3">
+                              <a href="#" class="btn btn-secondary">
+                                <i class="fa fa-plus margin-right"></i>
+                                Add a scoring range
+                                </i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                      <div class="col-sm-8 col-sm-offset-4 clearfix">
+                        <button type="button" class="btn btn-secondary pull-xs-left">Save</button>
+                        <button type="button" class="btn btn-secondary pull-xs-right">Delete</button>
+                      </div>
+                    </div>
+                  </div>

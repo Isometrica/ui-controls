@@ -163,48 +163,48 @@
                 <h4 class="card-title">Audit sections</h4>
               </div>
               <div class="list-group">
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Range 1</p>
-                      <h4 class="list-group-item-heading">0 to 10 points</h4>
-                    </div>                   
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Action</p>
-                      <h4 class="list-group-item-heading">Nothing</h4>
-                    </div>                    
-                  </div>
+                <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Section 1: BIPRU</h4>
+                  <h4 class="list-group-item-heading">Section 2: CASS - controlling client money</h4>
+                  <h4 class="list-group-item-heading">Section 3: CASS - general WP</h4>
+                </div>                                     
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title pull-xs-left">Report sections</h4>
+              </div>
+              <div class="list-group">
+                <div class="list-group-item">
+                  <h4 class="list-group-item-heading">Section 1: Lorem ipsum</h4>
+                  <h4 class="list-group-item-heading">Section 2: Dolor</h4>
+                  <h4 class="list-group-item-heading">Section 3: Est artus</h4>
                 </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Range 2</p>
-                      <h4 class="list-group-item-heading">11 to 15 points</h4>
-                    </div>                   
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Action</p>
-                      <h4 class="list-group-item-heading">Nothing</h4>
-                    </div>                    
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Range 3</p>
-                      <h4 class="list-group-item-heading">16 to 20 points</h4>
-                    </div>                   
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Action</p>
-                      <h4 class="list-group-item-heading">Trigger evaluation &amp; recommendation in report</h4>
-                    </div>                    
-                  </div>
-                </div>
+              </div>
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-1">
+                <h4 class="card-title pull-xs-left">Section 1: BIPRU</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-1">
+                <div ng-include="'includes/subcards-read/audit-questions-template.html'"></div>
+              </div>
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-2">
+                <h4 class="card-title pull-xs-left">Section 2: CASS - controlling client money</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-2">
+                <div ng-include="'includes/subcards-read/audit-questions-template.html'"></div>
+              </div>
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-3">
+                <h4 class="card-title pull-xs-left">Section 3: CASS - general WP</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-3">
+                <div ng-include="'includes/subcards-read/audit-questions-template.html'"></div>
               </div>
               <div class="card-block card-subheading">
                 <h4 class="card-title">Template notes</h4>
@@ -322,114 +322,43 @@
                   <div class="pull-xs-right">
                     <span class="hidden-xs-down">3</span>
                   </div>
-                  <strong>BIPRU</strong>
+                  <strong>Section 1: BIPRU</strong>
                 </div>
                 <div class="card-block-collapse collapse" id="audit-section-1">
-                  <div class="card-block">
-                    <div class="form-group row">
-            	        <label class="form-control-label col-sm-4 col-xs-12">Title</label>
-            	        <div class="col-sm-8 col-xs-12">
-            		        <input type="text" class="form-control" value="BIPRU" placeholder="Title">
-              			    <button type="button" class="btn btn-link clear-field">
-            		          <i class="fa fa-times-circle"></i>
-            		        </button>
-            	        </div>
-                    </div>
-                    <div class="audit-section-scoring">
-                      <table class="table">
-                        <thead>
-                          <tr>
-                            <th></th>
-                            <th>Points</th>
-                            <th>Do what?</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>1</td>
-                            <td>
-                              <input type="number" class="form-control audit-section-scoring-points" value="0">
-                              to
-                              <input type="number" class="form-control audit-section-scoring-points" value="10">
-                            </td>
-                            <td>
-                              <select class="form-control c-select">
-                                <option>Trigger an evaluation in report</option>
-                                <option>Trigger a recommendation in report</option>
-                                <option>Trigger evaluation &amp; recommendation in report</option>
-                                <option selected="">Nothing</option>
-                              </select>
-                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
-                                <i class="fa fa-times-circle"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>2</td>
-                            <td>
-                              <input type="number" class="form-control audit-section-scoring-points" value="11">
-                              to
-                              <input type="number" class="form-control audit-section-scoring-points" value="15">
-                            </td>
-                            <td>
-                              <select class="form-control c-select">
-                                <option>Trigger an evaluation in report</option>
-                                <option>Trigger a recommendation in report</option>
-                                <option>Trigger evaluation &amp; recommendation in report</option>
-                                <option selected="">Nothing</option>
-                              </select>
-                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
-                                <i class="fa fa-times-circle"></i>
-                              </button>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td>3</td>
-                            <td>
-                              <input type="number" class="form-control audit-section-scoring-points" value="16">
-                              to
-                              <input type="number" class="form-control audit-section-scoring-points" value="20">
-                            </td>
-                            <td>
-                              <select class="form-control c-select">
-                                <option>Trigger an evaluation in report</option>
-                                <option>Trigger a recommendation in report</option>
-                                <option selected="">Trigger evaluation &amp; recommendation in report</option>
-                                <option>Nothing</option>
-                              </select>
-                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
-                                <i class="fa fa-times-circle"></i>
-                              </button>
-                              <textarea class="form-control" rows="3" placeholder="Enter evaluation text"></textarea>
-                              <textarea class="form-control" rows="3" placeholder="Enter recommendation text"></textarea>
-                            </td> 
-                          </tr>
-                          <tr>
-                            <td colspan="3">
-                              <a href="#" class="btn btn-secondary">
-                                <i class="fa fa-plus margin-right"></i>
-                                Add a scoring range
-                                </i>
-                              </a>
-                            </td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <hr>
-                    <div class="form-group row">
-                      <div class="col-sm-8 col-sm-offset-4 clearfix">
-                        <button type="button" class="btn btn-secondary pull-xs-left">Save</button>
-                        <button type="button" class="btn btn-secondary pull-xs-right">Delete</button>
-                      </div>
-                    </div>
+                  <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+                </div>
+                <div class="card-block card-block-collapse-toggle collapsed" href="#audit-section-2" data-toggle="collapse" aria-expanded="false">
+                  <div class="pull-xs-right">
+                    <span class="hidden-xs-down">3</span>
                   </div>
+                  <strong>Section 2: CASS - controlling client money</strong>
+                </div>
+                <div class="card-block-collapse collapse" id="audit-section-2">
+                  <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+                </div>
+                <div class="card-block card-block-collapse-toggle collapsed" href="#audit-section-3" data-toggle="collapse" aria-expanded="false">
+                  <div class="pull-xs-right">
+                    <span class="hidden-xs-down">3</span>
+                  </div>
+                  <strong>Section 3: CASS - general WP</strong>
+                </div>
+                <div class="card-block-collapse collapse" id="audit-section-3">
+                  <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
                 </div>
               </div>
               <div class="text-xs-center">
                 <button type="button" class="btn btn-link">Add a section</button>
               </div>
             </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#report-sections" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Report sections</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">3</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="report-sections">
+            <div ng-include="'includes/subcards-edit/report-template.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#section-1" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Section 1: BIPRU</h4>
@@ -438,7 +367,7 @@
             </h4>
           </div>
           <div class="card-block-collapse collapse audit-section-template" id="section-1">
-            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+            <div ng-include="'includes/subcards-edit/audit-questions-template.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#section-2" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Section 2: CASS - controlling client money</h4>
@@ -447,7 +376,7 @@
             </h4>
           </div>
           <div class="card-block-collapse collapse audit-section-template" id="section-2">
-            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+            <div ng-include="'includes/subcards-edit/audit-questions-template.html'"></div>
           </div> 
           <div class="card-block card-block-collapse-toggle collapsed" href="#section-3" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Section 3: CASS - general WP</h4>
@@ -456,7 +385,7 @@
             </h4>
           </div>
           <div class="card-block-collapse collapse audit-section-template" id="section-3">
-            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+            <div ng-include="'includes/subcards-edit/audit-questions-template.html'"></div>
           </div> 
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Template notes</h4>

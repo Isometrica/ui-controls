@@ -2581,6 +2581,10 @@ legend {
   color: #777;
   margin: 0 0 5px; }
 
+.audit-read-responses {
+  color: #777;
+  margin: 0 0 5px; }
+
 .audit-section-scoring {
   margin: 0 -1.25rem; }
   .audit-section-scoring th {
