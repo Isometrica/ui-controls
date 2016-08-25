@@ -1,0 +1,295 @@
+      <div class="card-block">
+        <div class="form-group row">
+          <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+            <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> New
+              </label>
+              <label class="btn btn-secondary ">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Choose from existing questions
+              </label>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <label class="form-control-label col-sm-4 col-xs-12">Wording</label>
+          <div class="col-sm-8 col-xs-12">
+            <textarea class="form-control" placeholder="Wording" rows="2">Does the firm have retail permissions?</textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+	        <label class="form-control-label col-sm-4 col-xs-12">Type</label>
+	        <div class="col-sm-8 col-xs-12">
+		        <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+              <label class="btn btn-secondary active">
+                <input type="radio" name="options" id="option1" autocomplete="off" checked> Question
+              </label>
+              <label class="btn btn-secondary ">
+                <input type="radio" name="options" id="option2" autocomplete="off"> Sub-question
+              </label>
+            </div>
+	        </div>
+        </div>
+        <div class="form-group row">
+	        <label class="form-control-label col-sm-4 col-xs-12">Section (or Question)</label>
+	        <div class="col-sm-8 col-xs-12">
+            <select class="form-control c-select">
+              <option selected="">Section 1: BIPRU</option>
+              <option>Section 2: CASS - controlling client money</option>
+              <option>Section 3: CASS - general WP</option>
+            </select>
+	        </div>
+        </div>
+        <div class="form-group row">
+          <label class="form-control-label col-sm-4 col-xs-12">Guidance text?</label>
+          <div class="col-sm-8 col-xs-12">
+            <textarea class="form-control" placeholder="Enter guidance text here" rows="2"></textarea>
+          </div>
+        </div>
+        <div class="form-group row">
+	        <label class="form-control-label col-sm-4 col-xs-12">Possible responses</label>
+	        <div class="col-sm-8 col-xs-12">
+            <select class="form-control c-select">
+              <option>Yes – No with buttons</option>
+              <option>Yes – No with checkboxes</option>
+              <option selected="">Yes – Partial – No – N/A with buttons</option>
+              <option>Yes – Partial – No – N/A with checkboxes</option>
+            </select>
+	        </div>
+        </div>
+        <div class="form-group row">
+	        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+            <button type="button" class="btn btn-link audit-question-template-advanced-toggle collapsed">
+              <span class="collapsed-label">Show advanced settings</span>
+              <span class="expanded-label">Hide advanced settings</span>
+            </button>
+	        </div>
+        </div>
+                
+        <div class="collapse audit-question-template-advanced">
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Frequency</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <select class="form-control c-select">
+                <option>Every audit</option>
+                <option>No more than Monthly</option>
+                <option>No more than Quarterly</option>
+                <option selected>No more than Annually</option>
+              </select>
+  	        </div>
+          </div>
+           <div class="form-group row">
+  	        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+              <div class="row audit-question-template-advanced-columns">
+                <div class="col-xs-3">
+                  <strong>If "Yes"</strong>
+                </div>
+                <div class="col-xs-3">
+                  <strong>If "No"</strong>
+                </div>
+                <div class="col-xs-3">
+                  <strong>If "Partial"</strong>
+                </div>
+                <div class="col-xs-3">
+                  <strong>If "N/A"</strong>
+                </div>
+              </div>              
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Suggest an action</label>
+  	        <div class="col-sm-8 col-xs-12">
+    	        <div class="row audit-question-template-advanced-columns">
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+              </div>
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Action type if "No"</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <select class="form-control c-select">
+                <option selected="">Corrective action</option>
+                <option>Preventative action</option>
+                <option>Risk control</option>
+              </select>    
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Action title if "No"</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <input type="text" class="form-control" placeholder="Action title if &ldquo;No&rdquo;" value="Fix the identified problem">   
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Display a dependent section</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <div class="row audit-question-template-advanced-columns">
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+              </div>             
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Add a report evaluation</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <div class="row audit-question-template-advanced-columns">
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+              </div>            
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Add a report recommendation</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <div class="row audit-question-template-advanced-columns">
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+                <div class="col-xs-3">
+                  <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <i class="fa fa-check"></i>
+                  </button>
+                </div>
+              </div>             
+  	        </div>
+          </div>
+          <div class="form-group row">
+  	        <label class="form-control-label col-sm-4 col-xs-12">Award scoring points</label>
+  	        <div class="col-sm-8 col-xs-12">
+              <div class="row audit-question-template-advanced-columns">
+                <div class="col-sm-3">
+                  <select class="form-control c-select">
+                    <option></option>
+                    <option>1 pt</option>
+                    <option>2 pts</option>
+                    <option>3 pts</option>
+                    <option selected="">4 pts</option>
+                    <option>5 pts</option>
+                    <option>6 pts</option>
+                    <option>7 pts</option>
+                    <option>8 pts</option>
+                    <option>9 pts</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select class="form-control c-select">
+                    <option></option>
+                    <option>1 pt</option>
+                    <option>2 pts</option>
+                    <option>3 pts</option>
+                    <option>4 pts</option>
+                    <option>5 pts</option>
+                    <option>6 pts</option>
+                    <option>7 pts</option>
+                    <option>8 pts</option>
+                    <option>9 pts</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select class="form-control c-select">
+                    <option></option>
+                    <option>1 pt</option>
+                    <option selected="">2 pts</option>
+                    <option>3 pts</option>
+                    <option>4 pts</option>
+                    <option>5 pts</option>
+                    <option>6 pts</option>
+                    <option>7 pts</option>
+                    <option>8 pts</option>
+                    <option>9 pts</option>
+                  </select>
+                </div>
+                <div class="col-sm-3">
+                  <select class="form-control c-select">
+                    <option></option>
+                    <option>1 pt</option>
+                    <option>2 pts</option>
+                    <option>3 pts</option>
+                    <option>4 pts</option>
+                    <option>5 pts</option>
+                    <option>6 pts</option>
+                    <option>7 pts</option>
+                    <option>8 pts</option>
+                    <option>9 pts</option>
+                  </select>
+                </div>
+              </div>             
+  	        </div>
+          </div>
+        </div>
+        <hr>
+        <div class="form-group row">
+          <div class="col-sm-8 col-sm-offset-4 clearfix">
+            <button type="button" class="btn btn-secondary pull-xs-left">Save</button>
+            <button type="button" class="btn btn-secondary pull-xs-right">Delete</button>
+          </div>
+        </div>
+      </div>

@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/malihu-custom-scrollbar-plugin/jquery.mCustomScrollbar.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Audit templates
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="audits.html">Completed audits</a>
+        <a class="dropdown-item" href="#">Conducted audits - by status</a>
+        <a class="dropdown-item" href="#">e-Audits - by status</a>
+        <a class="dropdown-item active" href="audit-templates.html">Audit templates</a>
+        <a class="dropdown-item" href="#">Questions database</a>
+        <a class="dropdown-item" href="#">Audits - deleted</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>    
+  </div>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-list scroll">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Add</span>
+    					</a>
+    				</form>
+    				<div class="list-group">  
+  						<a class="list-group-item active" href="#">
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading pull-left">CMP-FCA-2016</h4>
+    							<p class="list-group-item-text pull-right">18 Jun 2016</p>
+                  <p class="list-group-item-text pull-left">3 sections</p>
+                  <p class="list-group-item-text pull-right">28 questions</p>
+                </div>
+  						</a> 
+  						<a class="list-group-item" href="#">
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+    							<p class="list-group-item-text pull-right">12 Aug 2015</p>
+                  <p class="list-group-item-text pull-left">3 sections</p>
+                  <p class="list-group-item-text pull-right">26 questions</p>
+                </div>
+  						</a> 
+  						<a class="list-group-item" href="#">
+                <div class="list-group-item-content">
+    							<h4 class="list-group-item-heading pull-left">CMP-SEC-2016</h4>
+    							<p class="list-group-item-text pull-right">15 May 2016</p>
+                  <p class="list-group-item-text pull-left">4 sections</p>
+                  <p class="list-group-item-text pull-right">56 questions</p>
+                </div>
+  						</a>      				
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards scroll flexbox-column col-sm-8 hidden-sm-down">
+					<div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+            				<i class="fa fa-question-circle"></i>
+            			</button>
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#audit-template-edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Audit template
+      				  </h3>
+    					</div> 
+    					<div ng-include="'includes/guidance-panel.html'"></div>
+              <div class="list-group">
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Audit template title</p>
+                      <h4 class="list-group-item-heading">CMP-FCA-2016</h4>
+                    </div>                    
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Type of audit</p>
+                      <h4 class="list-group-item-heading">Conducted audit – full</h4>
+                    </div>                    
+                  </div>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Audit report title</p>
+                  <h4 class="list-group-item-heading">D&amp;P compliance audit</h4>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Audit guidance text</p>
+                  <h4 class="list-group-item-heading">To create a new audit, verify the information in the Key Info section below</h4>
+                </div>
+
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Created date</p>
+                      <h4 class="list-group-item-heading">16 Jun 2016</h4>
+                    </div>                    
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Last audited date</p>
+                      <h4 class="list-group-item-heading">18 Jun 2016</h4>
+                    </div>                    
+                  </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Template created by</p>
+                      <h4 class="list-group-item-heading">John Smith</h4>
+                    </div>                   
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Internal or external?</p>
+                      <h4 class="list-group-item-heading">Internal</h4>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Audit sections</h4>
+              </div>
+              <div class="list-group">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Range 1</p>
+                      <h4 class="list-group-item-heading">0 to 10 points</h4>
+                    </div>                   
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Action</p>
+                      <h4 class="list-group-item-heading">Nothing</h4>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Range 2</p>
+                      <h4 class="list-group-item-heading">11 to 15 points</h4>
+                    </div>                   
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Action</p>
+                      <h4 class="list-group-item-heading">Nothing</h4>
+                    </div>                    
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Range 3</p>
+                      <h4 class="list-group-item-heading">16 to 20 points</h4>
+                    </div>                   
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Action</p>
+                      <h4 class="list-group-item-heading">Trigger evaluation &amp; recommendation in report</h4>
+                    </div>                    
+                  </div>
+                </div>
+              </div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Template notes</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notes.html'"></div>
+              <div class="card-block card-subheading">
+                <h4 class="card-title">Notify changes</h4>
+              </div>
+              <div ng-include="'includes/subcards-read/notify.html'"></div>
+              
+              
+              <!-- Changelog -->
+              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+  
+  
+  
+  <!-- Edit Modal -->
+  <div class="modal fade" id="audit-template-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Audit template</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Audit template title</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" placeholder="Audit template title" value="CMP-FCA-2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Audit report title</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" placeholder="Audit report title" value="D&P compliance audit">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Audit type</label>
+              <div class="col-sm-7">
+                <select class="form-control c-select" class="form-control">
+                  <option></option>
+                  <option selected="">Conducted audit – full</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Internal or external?</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" placeholder="Audit template title" value="CMP-FCA-2016">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Guidance text</label>
+              <div class="col-sm-7">
+                <textarea class="form-control" placeholder="Guidance text" rows="5">To create a new audit, verify the information in the Key Info section below.</textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Branding image</label>
+              <div class="col-sm-7">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-secondary">
+                    <i class="fa fa-file-image-o fa-lg margin-right"></i>
+                    image.png
+                  </button>
+                  <button type="button" class="btn btn-secondary btn-icon">
+                    <i class="fa fa-times-circle no-margin"></i>
+                  </button>
+                </div> 
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Template created by</label>
+              <div class="col-sm-7">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Template created by" value="Mike Hanna"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item active" href="#">Mike Hanna</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>       
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#audit-sections" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Audit sections</h4>
+          </div>
+          <div class="card-block-collapse collapse" id="audit-sections">
+            <div class="card-block">
+              <div class="card">
+                <div class="card-block card-block-collapse-toggle collapsed" href="#audit-section-1" data-toggle="collapse" aria-expanded="false">
+                  <div class="pull-xs-right">
+                    <span class="hidden-xs-down">3</span>
+                  </div>
+                  <strong>BIPRU</strong>
+                </div>
+                <div class="card-block-collapse collapse" id="audit-section-1">
+                  <div class="card-block">
+                    <div class="form-group row">
+            	        <label class="form-control-label col-sm-4 col-xs-12">Title</label>
+            	        <div class="col-sm-8 col-xs-12">
+            		        <input type="text" class="form-control" value="BIPRU" placeholder="Title">
+              			    <button type="button" class="btn btn-link clear-field">
+            		          <i class="fa fa-times-circle"></i>
+            		        </button>
+            	        </div>
+                    </div>
+                    <div class="audit-section-scoring">
+                      <table class="table">
+                        <thead>
+                          <tr>
+                            <th></th>
+                            <th>Points</th>
+                            <th>Do what?</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>1</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="0">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="10">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option>Trigger evaluation &amp; recommendation in report</option>
+                                <option selected="">Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>2</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="11">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="15">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option>Trigger evaluation &amp; recommendation in report</option>
+                                <option selected="">Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td>3</td>
+                            <td>
+                              <input type="number" class="form-control audit-section-scoring-points" value="16">
+                              to
+                              <input type="number" class="form-control audit-section-scoring-points" value="20">
+                            </td>
+                            <td>
+                              <select class="form-control c-select">
+                                <option>Trigger an evaluation in report</option>
+                                <option>Trigger a recommendation in report</option>
+                                <option selected="">Trigger evaluation &amp; recommendation in report</option>
+                                <option>Nothing</option>
+                              </select>
+                              <button type="button" class="btn btn-secondary btn-icon btn-remove">
+                                <i class="fa fa-times-circle"></i>
+                              </button>
+                              <textarea class="form-control" rows="3" placeholder="Enter evaluation text"></textarea>
+                              <textarea class="form-control" rows="3" placeholder="Enter recommendation text"></textarea>
+                            </td> 
+                          </tr>
+                          <tr>
+                            <td colspan="3">
+                              <a href="#" class="btn btn-secondary">
+                                <i class="fa fa-plus margin-right"></i>
+                                Add a scoring range
+                                </i>
+                              </a>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <hr>
+                    <div class="form-group row">
+                      <div class="col-sm-8 col-sm-offset-4 clearfix">
+                        <button type="button" class="btn btn-secondary pull-xs-left">Save</button>
+                        <button type="button" class="btn btn-secondary pull-xs-right">Delete</button>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="text-xs-center">
+                <button type="button" class="btn btn-link">Add a section</button>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-1" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 1: BIPRU</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">16</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-section-template" id="section-1">
+            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-2" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 2: CASS - controlling client money</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">5</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-section-template" id="section-2">
+            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#section-3" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Section 3: CASS - general WP</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">7</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-section-template" id="section-3">
+            <div ng-include="'includes/subcards-edit/audit-section-template.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Template notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notify changes</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>        
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

@@ -2580,3 +2580,44 @@ legend {
 .audit-read-comment {
   color: #777;
   margin: 0 0 5px; }
+
+.audit-section-scoring {
+  margin: 0 -1.25rem; }
+  .audit-section-scoring th {
+    border-top: 0 !important;
+    border-bottom-width: 1px !important;
+    font-weight: normal;
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  .audit-section-scoring td {
+    white-space: nowrap;
+    line-height: 32px; }
+    .audit-section-scoring td:last-child {
+      width: 66.66666667%;
+      padding-right: 4.5rem;
+      position: relative; }
+      .audit-section-scoring td:last-child .btn-remove {
+        position: absolute;
+        right: 1.25rem;
+        top: .75rem; }
+  .audit-section-scoring-points {
+    width: 60px;
+    display: inline-block; }
+  .audit-section-scoring textarea {
+    margin-top: 10px; }
+
+.audit-question-template-advanced {
+  overflow: hidden; }
+  .audit-question-template-advanced-toggle .expanded-label {
+    display: inline; }
+  .audit-question-template-advanced-toggle .collapsed-label {
+    display: none; }
+  .audit-question-template-advanced-toggle.collapsed .expanded-label {
+    display: none; }
+  .audit-question-template-advanced-toggle.collapsed .collapsed-label {
+    display: inline; }
+  .audit-question-template-advanced-columns {
+    margin: 0 -7.5px !important; }
+    .audit-question-template-advanced-columns > div {
+      padding: 0 7.5px !important; }
+      .audit-question-template-advanced-columns > div .btn-checkbox {
+        margin: 0; }

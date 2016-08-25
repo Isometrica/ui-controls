@@ -279,3 +279,69 @@
     margin: 0 0 5px;
   }
 }
+
+.audit-section-scoring {
+  margin: 0 -1.25rem;
+  
+  th {
+    border-top: 0 !important;
+    border-bottom-width: 1px !important;
+    font-weight: normal;
+    font-family: $font-semibold;
+  }
+  
+  td {
+    white-space: nowrap;
+    line-height: 32px;
+    
+    &:last-child {
+      width: 66.66666667%;
+      padding-right: 4.5rem; // Space for delete button
+      position: relative;
+      
+      .btn-remove {
+        position: absolute;
+        right: 1.25rem;
+        top: .75rem;
+      }
+    }
+  }
+  
+  &-points {
+    width: 60px;
+    display: inline-block;
+  }
+  
+  textarea {
+    margin-top: 10px;
+  }
+}
+
+
+
+
+.audit-question-template-advanced {
+  overflow: hidden;
+  
+  &-toggle {
+    .expanded-label { display: inline; }
+    .collapsed-label { display: none; }
+    
+    &.collapsed {
+      .expanded-label { display: none; }
+      .collapsed-label { display: inline; }      
+    }
+  }
+  
+  &-columns {
+    margin: 0 -7.5px !important;
+    
+    > div {
+      padding: 0 7.5px !important;
+      
+      .btn-checkbox {
+        margin: 0;
+      }
+    }
+  }
+}
