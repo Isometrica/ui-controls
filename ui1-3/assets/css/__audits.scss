@@ -26,10 +26,12 @@
   @include flexbox;
   
   &-helptext {
-    font-family: $font-semibold;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
+    //font-family: $font-semibold;
+    //border-top: 1px solid #ddd;
+    border-top: 0 !important;
+    padding-top: 0;
     padding-bottom: 1rem;
+    padding-left: 45px;
   }
   
   

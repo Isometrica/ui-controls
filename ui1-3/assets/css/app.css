@@ -2420,10 +2420,10 @@ legend {
   display: -webkit-flex;
   display: flex; }
   .audit-question-helptext {
-    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
-    border-top: 1px solid #ddd;
-    padding-top: 1rem;
-    padding-bottom: 1rem; }
+    border-top: 0 !important;
+    padding-top: 0;
+    padding-bottom: 1rem;
+    padding-left: 45px; }
   .audit-question-current,
   .audit-question-previous {
     padding-top: 1rem; }
