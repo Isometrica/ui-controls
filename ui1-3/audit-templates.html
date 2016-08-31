@@ -51,7 +51,7 @@
     		      <div class="form-group row">
     			      <input type="text" class="form-control" placeholder="Search...">
     		      </div>
-    					<a class="btn btn-primary" data-toggle="modal" data-target="#choose-add-type-modal">
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#audit-template-edit-modal">
     						<i class="fa fa-plus"></i>
     						<span>Add</span>
     					</a>
@@ -169,6 +169,34 @@
                   <h4 class="list-group-item-heading">CASS - general WP</h4>
                 </div>                                     
               </div>
+              
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-1">
+                <h4 class="card-title pull-xs-left">Questions: BIPRU</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-1">
+                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
+              </div>
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-2">
+                <h4 class="card-title pull-xs-left">Questions: CASS - controlling client money</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-2">
+                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
+              </div>
+              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-3">
+                <h4 class="card-title pull-xs-left">Questions: CASS - general WP</h4>
+                <h4 class="card-title pull-xs-right">
+                  16
+                </h4>
+              </div>
+              <div class="collapse" id="read-section-3">
+                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
+              </div>
               <div class="card-block card-subheading">
                 <h4 class="card-title pull-xs-left">Report sections</h4>
               </div>
@@ -178,33 +206,6 @@
                   <h4 class="list-group-item-heading">Dolor</h4>
                   <h4 class="list-group-item-heading">Est artus</h4>
                 </div>
-              </div>
-              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-1">
-                <h4 class="card-title pull-xs-left">BIPRU</h4>
-                <h4 class="card-title pull-xs-right">
-                  16
-                </h4>
-              </div>
-              <div class="collapse" id="read-section-1">
-                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
-              </div>
-              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-2">
-                <h4 class="card-title pull-xs-left">CASS - controlling client money</h4>
-                <h4 class="card-title pull-xs-right">
-                  16
-                </h4>
-              </div>
-              <div class="collapse" id="read-section-2">
-                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
-              </div>
-              <div class="card-block card-subheading card-block-collapse-toggle collapsed" data-toggle="collapse" data-target="#read-section-3">
-                <h4 class="card-title pull-xs-left">CASS - general WP</h4>
-                <h4 class="card-title pull-xs-right">
-                  16
-                </h4>
-              </div>
-              <div class="collapse" id="read-section-3">
-                <div ng-include="'includes/subcards-read/audit-template-questions.html'"></div>
               </div>
               <div class="card-block card-subheading">
                 <h4 class="card-title">Template notes</h4>
@@ -351,6 +352,34 @@
               </div>
             </div>
           </div>
+          
+          <div class="card-block card-block-collapse-toggle collapsed" href="#audit-template-questions-1" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Questions: BIPRU</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">16</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-template-questions" id="audit-template-questions-1">
+            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#audit-template-questions-2" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Questions: CASS - controlling client money</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">5</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-template-questions" id="audit-template-questions-2">
+            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#audit-template-questions-3" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Questions: CASS - general WP</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">7</span>
+            </h4>
+          </div>
+          <div class="card-block-collapse collapse audit-template-questions" id="audit-template-questions-3">
+            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
+          </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#report-sections" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Report sections</h4>
             <h4 class="card-title pull-xs-right">
@@ -359,33 +388,6 @@
           </div>
           <div class="card-block-collapse collapse" id="report-sections">
             <div ng-include="'includes/subcards-edit/report-template.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#section-1" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">BIPRU</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">16</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse audit-template-questions" id="section-1">
-            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#section-2" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">CASS - controlling client money</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">5</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse audit-template-questions" id="section-2">
-            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
-          </div> 
-          <div class="card-block card-block-collapse-toggle collapsed" href="#section-3" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">CASS - general WP</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">7</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse audit-template-questions" id="section-3">
-            <div ng-include="'includes/subcards-edit/audit-template-questions.html'"></div>
           </div> 
           <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
             <h4 class="card-title pull-xs-left">Template notes</h4>
