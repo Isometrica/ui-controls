@@ -518,23 +518,31 @@ $( document ).ready(function() {
     AUDIT QUESTION TEMPLATES - collapse behaviour
   */
   
-  $(document).on("shown.bs.collapse", ".audit-section-template", function() { 
-    $( ".audit-question-template-toggle" ).click(function() {
-      $(this).next(".audit-question-template").collapse("toggle");
+  $(document).on("shown.bs.collapse", ".audit-template-section", function() { 
+    $( ".audit-template-question-toggle" ).click(function() {
+      $(this).next(".audit-template-question").collapse("toggle");
     });
   });
   
-  $(document).on("shown.bs.collapse", ".audit-question-template", function() {
-    $( ".audit-question-template-advanced-toggle" ).click(function() {
-      $(this).closest(".audit-question-template").find(".audit-question-template-advanced").collapse("toggle");
+  $(document).on("shown.bs.collapse", ".audit-template-question", function() {
+    $( ".audit-template-question-advanced-toggle" ).click(function() {
+      $(this).closest(".audit-template-question").find(".audit-template-question-advanced").collapse("toggle");
     });
-    $('.audit-question-template-advanced').on('hidden.bs.collapse', function () {
-      $(this).closest(".audit-question-template").find(".audit-question-template-advanced-toggle").addClass("collapsed");
+    $('.audit-template-question-advanced').on('hidden.bs.collapse', function () {
+      $(this).closest(".audit-template-question").find(".audit-template-question-advanced-toggle").addClass("collapsed");
     });
-    $('.audit-question-template-advanced').on('shown.bs.collapse', function () {
-      $(this).closest(".audit-question-template").find(".audit-question-template-advanced-toggle").removeClass("collapsed");
+    $('.audit-template-question-advanced').on('shown.bs.collapse', function () {
+      $(this).closest(".audit-template-question").find(".audit-template-question-advanced-toggle").removeClass("collapsed");
     });
-    
+  });
+  
+  
+  /* 
+    AUDIT SECTION EDIT - collapse behaviour
+  */
+  
+  $( ".audit-question-guidance-open" ).click(function() {
+    $(this).closest(".audit-template-question").find(".audit-template-question-advanced").collapse("toggle");
   });
 
 });
