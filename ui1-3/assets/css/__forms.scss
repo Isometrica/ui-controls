@@ -385,3 +385,29 @@ legend {
 .help-block {
   margin: 0 0 10px;
 }
+
+
+/*
+  COLORPICKER
+*/
+.colorpicker-component {
+  width: 34px;
+  
+  input {
+    display: none !important;
+  }
+  
+  .add-on {
+    width: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-radius: .25rem !important;
+    
+    i {
+      position: relative;
+      top: 1px;
+    }
+  }
+}
+

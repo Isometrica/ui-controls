@@ -10,74 +10,73 @@
                     </div>
                     <div class="form-group row">
             	        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
-            		        <button type="button" class="btn btn-link audit-section-scoring-toggle">
+            		        <button type="button" class="btn btn-link audit-template-section-scoring-toggle collapsed">
                           <span class="collapsed-label">Show scoring actions</span>
                           <span class="expanded-label">Hide scoring actions</span>
                         </button>
             	        </div>
                     </div>
-                    <div class="audit-section-scoring-collapse">
-                      <div class="audit-section-scoring">
+                    <div class="collapse audit-template-section-scoring-collapse">
+                      <div class="audit-template-section-scoring">
                         <table class="table">
                           <thead>
                             <tr>
                               <th></th>
                               <th>Points</th>
-                              <th>Do what?</th>
+                              <th>Trigger in report</th>
                             </tr>
                           </thead>
                           <tbody>
                             <tr>
                               <td>1</td>
                               <td>
-                                <input type="number" class="form-control audit-section-scoring-points" value="0">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="0">
                                 to
-                                <input type="number" class="form-control audit-section-scoring-points" value="10">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="10">
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option>Trigger an evaluation in report</option>
-                                  <option>Trigger a recommendation in report</option>
-                                  <option>Trigger evaluation &amp; recommendation in report</option>
-                                  <option selected="">Nothing</option>
+                                  <option selected="">1. Evaluation</option>
+                                  <option>2. Recommendation</option>
+                                  <option>3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">
                                   <i class="fa fa-times-circle"></i>
                                 </button>
+                                <textarea class="form-control" rows="3" placeholder="Enter evaluation text"></textarea>
                               </td> 
                             </tr>
                             <tr>
                               <td>2</td>
                               <td>
-                                <input type="number" class="form-control audit-section-scoring-points" value="11">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="11">
                                 to
-                                <input type="number" class="form-control audit-section-scoring-points" value="15">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="15">
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option>Trigger an evaluation in report</option>
-                                  <option>Trigger a recommendation in report</option>
-                                  <option>Trigger evaluation &amp; recommendation in report</option>
-                                  <option selected="">Nothing</option>
+                                  <option>1. Evaluation</option>
+                                  <option selected="">2. Recommendation</option>
+                                  <option>3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">
                                   <i class="fa fa-times-circle"></i>
                                 </button>
+                                <textarea class="form-control" rows="3" placeholder="Enter recommendation text"></textarea>
                               </td> 
                             </tr>
                             <tr>
                               <td>3</td>
                               <td>
-                                <input type="number" class="form-control audit-section-scoring-points" value="16">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="16">
                                 to
-                                <input type="number" class="form-control audit-section-scoring-points" value="20">
+                                <input type="number" class="form-control audit-template-section-scoring-points" value="20">
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option>Trigger an evaluation in report</option>
-                                  <option>Trigger a recommendation in report</option>
-                                  <option selected="">Trigger evaluation &amp; recommendation in report</option>
-                                  <option>Nothing</option>
+                                  <option>1. Evaluation</option>
+                                  <option>2. Recommendation</option>
+                                  <option selected="">3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">
                                   <i class="fa fa-times-circle"></i>

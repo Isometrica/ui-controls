@@ -286,8 +286,18 @@
   }
 }
 
-.audit-section-scoring {
+.audit-template-section-scoring {
   margin: 0 -1.25rem;
+
+  &-toggle {
+    .expanded-label { display: inline; }
+    .collapsed-label { display: none; }
+    
+    &.collapsed {
+      .expanded-label { display: none; }
+      .collapsed-label { display: inline; }      
+    }
+  }
   
   th {
     border-top: 0 !important;

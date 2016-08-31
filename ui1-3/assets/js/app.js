@@ -8,6 +8,9 @@ $( document ).ready(function() {
   
   $('[data-tooltip="true"]').tooltip();
   
+  
+
+  
 
   /* 
     Platform Detection
@@ -518,7 +521,7 @@ $( document ).ready(function() {
     AUDIT QUESTION TEMPLATES - collapse behaviour
   */
   
-  $(document).on("shown.bs.collapse", ".audit-template-section", function() { 
+  $(document).on("shown.bs.collapse", ".audit-template-questions", function() { 
     $( ".audit-template-question-toggle" ).click(function() {
       $(this).next(".audit-template-question").collapse("toggle");
     });
@@ -538,11 +541,23 @@ $( document ).ready(function() {
   
   
   /* 
-    AUDIT SECTION EDIT - collapse behaviour
+    AUDIT TEMPLATE SECTION EDIT - collapse behaviour
+  */
+  $(document).on("shown.bs.collapse", ".audit-template-section", function() {
+    $( ".audit-template-section-scoring-toggle" ).click(function() {
+      console.log("Show section scoring");
+      $(this).closest(".audit-template-section").find(".audit-template-section-scoring-collapse").collapse("toggle");
+      $(this).toggleClass("collapsed");
+    });
+  });
+  
+  
+  /*
+    Color selector in org settings -> response sets
   */
   
-  $( ".audit-question-guidance-open" ).click(function() {
-    $(this).closest(".audit-template-question").find(".audit-template-question-advanced").collapse("toggle");
+  $(document).on("shown.bs.collapse", "#response-sets", function() {
+    $('.colorpicker-component').colorpicker();
   });
 
 });

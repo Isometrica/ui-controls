@@ -653,6 +653,23 @@ legend {
 .help-block {
   margin: 0 0 10px; }
 
+/*
+  COLORPICKER
+*/
+.colorpicker-component {
+  width: 34px; }
+  .colorpicker-component input {
+    display: none !important; }
+  .colorpicker-component .add-on {
+    width: 34px;
+    padding-left: 0;
+    padding-right: 0;
+    text-align: center;
+    border-radius: .25rem !important; }
+    .colorpicker-component .add-on i {
+      position: relative;
+      top: 1px; }
+
 .list-group-item-heading {
   font-size: 18px;
   font-family: "Segoe UI Semilight WestEuropean", "Segoe UI Semilight", "Segoe WP Semilight", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
@@ -2618,28 +2635,36 @@ legend {
   color: #777;
   margin: 0 0 5px; }
 
-.audit-section-scoring {
+.audit-template-section-scoring {
   margin: 0 -1.25rem; }
-  .audit-section-scoring th {
+  .audit-template-section-scoring-toggle .expanded-label {
+    display: inline; }
+  .audit-template-section-scoring-toggle .collapsed-label {
+    display: none; }
+  .audit-template-section-scoring-toggle.collapsed .expanded-label {
+    display: none; }
+  .audit-template-section-scoring-toggle.collapsed .collapsed-label {
+    display: inline; }
+  .audit-template-section-scoring th {
     border-top: 0 !important;
     border-bottom-width: 1px !important;
     font-weight: normal;
     font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
-  .audit-section-scoring td {
+  .audit-template-section-scoring td {
     white-space: nowrap;
     line-height: 32px; }
-    .audit-section-scoring td:last-child {
+    .audit-template-section-scoring td:last-child {
       width: 66.66666667%;
       padding-right: 4.5rem;
       position: relative; }
-      .audit-section-scoring td:last-child .btn-remove {
+      .audit-template-section-scoring td:last-child .btn-remove {
         position: absolute;
         right: 1.25rem;
         top: .75rem; }
-  .audit-section-scoring-points {
+  .audit-template-section-scoring-points {
     width: 60px;
     display: inline-block; }
-  .audit-section-scoring textarea {
+  .audit-template-section-scoring textarea {
     margin-top: 10px; }
 
 .audit-template-question-advanced {
