@@ -70,12 +70,7 @@ body {
   -moz-box-flex: 1;
   -moz-flex: 1;
   -ms-flex: 1;
-  flex: 1;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  flex: 1; }
   @media (max-width: 1200px) {
     .content > .container {
       max-width: none; } }
