@@ -112,6 +112,22 @@ $( document ).ready(function() {
   
   
   /*
+    CLIENT PROFILES ACCORDION
+  */
+
+  $("#clientProfilesAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$('#clientProfilesAccordion .collapse').collapse("hide");  	
+  	} else {
+    	// Remove existing active classes
+    	$("#clientProfilesAccordion .list-group-item").removeClass("active");	
+    	$(this).addClass("active");     	
+  	}
+  }); 
+  
+  
+  /*
     AUDITS ACCORDION
   */
 
