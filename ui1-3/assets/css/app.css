@@ -2465,12 +2465,7 @@ legend {
 
 .audit-question {
   padding: 0;
-  position: relative;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex; }
+  position: relative; }
   .audit-question-helptext {
     border-top: 0 !important;
     padding-top: 0;
@@ -2487,7 +2482,7 @@ legend {
     -ms-flex: 1;
     flex: 1;
     position: relative;
-    padding-left: 3.5rem; }
+    padding-left: 4rem; }
     .audit-question-current textarea {
       margin-top: 2px;
       margin-bottom: 2px; }

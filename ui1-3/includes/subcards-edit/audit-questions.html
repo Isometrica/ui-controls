@@ -74,7 +74,7 @@
                 <label class="form-control-label audit-question-question"><span class="audit-question-number">1.2</span> Does the Firm plan to extend any of the following?</label>
                 <div class="form-group form-group-flex">
                   <div class="form-group-flex-flex audit-question-answers">
-                    <button type="button" class="btn btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                    <button type="button" class="btn btn-secondary btn-subquestion" data-toggle="button" aria-pressed="false" autocomplete="off" data-subquestion="#question-1.2.1">
                       Products
                     </button>
                     <button type="button" class="btn btn-secondary btn-previous" data-toggle="button" aria-pressed="true" autocomplete="off">
@@ -98,6 +98,31 @@
                 <div ng-include="'includes/audit-question-attachment-form.html'"></div>
               </div>
               <!--<div ng-include="'includes/audit-question-previous.html'" class="card-block audit-question-previous"></div>-->
+            </div>
+            <div class="audit-question collapse" id="audit-question-1.2.1">
+              <div class="card-block audit-question-current">
+                <label class="form-control-label audit-question-question"><span class="audit-question-number">1.2.1</span> Supplementary question goes here lorem ipsum?</label>
+                <div class="form-group form-group-flex">
+                  <div class="form-group-flex-flex">
+                    <div class="btn-group audit-question-answers" data-toggle="buttons">
+                      <label class="btn btn-secondary btn-yes">
+                        <input type="radio" name="options" id="option1" autocomplete="off" > Yes
+                      </label>
+                      <label class="btn btn-secondary btn-no btn-previous">
+                        <input type="radio" name="options" id="option2" autocomplete="off"> No
+                      </label>
+                    </div>
+                  </div>
+                  <div class="margin-left"><button type="button" class="btn btn-secondary btn-repeat">Repeat</button></div>
+                  <div ng-include="'includes/audit-question-attachment-dropdown.html'"></div>
+                </div>
+                <div class="collapse collapse-comment">
+                  <div class="form-group">
+                    <textarea class="form-control audit-question-comment audit-question-comment-previous" placeholder="Comment">(Comment goes here lorem ipsum dolor est compendum lorem ipsum – Q4 2015)</textarea>
+                  </div>
+                </div>
+                <div ng-include="'includes/audit-question-attachment-form.html'"></div>
+              </div>
             </div>
             <div class="audit-question">
               <div class="card-block audit-question-current">

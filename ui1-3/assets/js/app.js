@@ -257,6 +257,12 @@ $( document ).ready(function() {
     $(this).closest('.audit-question').find('.btn-repeat').hide();
   });
   
+  // Subquestions
+  
+  $(document).on("click", ".audit-question .btn-subquestion", function() {
+    $(this).closest('.audit-question').next('.audit-question.collapse').collapse('toggle');
+  });
+  
   
   
   /*

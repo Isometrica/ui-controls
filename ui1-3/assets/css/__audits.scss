@@ -23,7 +23,7 @@
 .audit-question {
   padding: 0;
   position: relative;
-  @include flexbox;
+  
   
   &-helptext {
     //font-family: $font-semibold;
@@ -43,7 +43,7 @@
   &-current {
     @include flex(1);
     position: relative;
-    padding-left: 3.5rem;
+    padding-left: 4rem;
 
     textarea {
       margin-top: 2px;
