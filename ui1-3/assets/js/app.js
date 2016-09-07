@@ -260,7 +260,10 @@ $( document ).ready(function() {
   // Subquestions
   
   $(document).on("click", ".audit-question .btn-subquestion", function() {
-    $(this).closest('.audit-question').next('.audit-question.collapse').collapse('toggle');
+    // What question is it
+    subquestion = $(this).data('subquestion');
+    console.log(subquestion);
+    $(subquestion).collapse('toggle');
   });
   
   
