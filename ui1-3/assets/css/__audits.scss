@@ -394,3 +394,30 @@
     }
   }
 }
+
+
+#eAuditsAccordion {
+  > .list-group-collapse {
+    > .list-group > .list-group-item {
+      padding-left: 2.5rem !important;
+
+      &.list-group-toggle {
+        padding-left: 4rem !important;
+        &:before {
+          left: 2.65rem;
+        }
+      }
+      
+      .list-group-item-heading {
+        margin: 0;
+      }
+    }
+    
+    .list-group-collapse {
+      .list-group-item {
+        padding-left: 2.5rem !important;
+      }
+    }
+
+  }
+}

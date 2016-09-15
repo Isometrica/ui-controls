@@ -282,6 +282,24 @@ $( document ).ready(function() {
     	$(this).addClass("active");     	
   	}
   }); 
+  
+  
+  /*
+    E-AUDITS
+  */
+
+  $("#eAuditsAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any open sections
+    	$(this).siblings('.collapse.in').collapse("hide");  
+    	$(this).closest('#eAuditsAccordion').find('.list-group-item.active').removeClass("active");		
+  	} else {
+    	// Remove existing active classes
+    	$(this).closest('#eAuditsAccordion').find('.list-group-item.active').removeClass("active");	
+    	$(this).siblings('.collapse.in').collapse("hide");  
+    	$(this).addClass("active");     	
+  	}
+  }); 
 
   
   

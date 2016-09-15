@@ -2710,3 +2710,15 @@ legend {
     margin-left: 10px; }
   #auditsQuestionsDatabaseAccordion .list-group-collapse .list-group-item:before {
     left: 2rem; }
+
+#eAuditsAccordion > .list-group-collapse > .list-group > .list-group-item {
+  padding-left: 2.5rem !important; }
+  #eAuditsAccordion > .list-group-collapse > .list-group > .list-group-item.list-group-toggle {
+    padding-left: 4rem !important; }
+    #eAuditsAccordion > .list-group-collapse > .list-group > .list-group-item.list-group-toggle:before {
+      left: 2.65rem; }
+  #eAuditsAccordion > .list-group-collapse > .list-group > .list-group-item .list-group-item-heading {
+    margin: 0; }
+
+#eAuditsAccordion > .list-group-collapse .list-group-collapse .list-group-item {
+  padding-left: 2.5rem !important; }

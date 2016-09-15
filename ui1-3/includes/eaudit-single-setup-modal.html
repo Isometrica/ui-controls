@@ -1,0 +1,85 @@
+  <div class="modal fade" id="eaudit-single-setup-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">e-Audit single setup</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">e-Audit template</label>
+              <div class="col-sm-9">
+                <select class="c-select">
+                  <option selected>Staff AML</option>
+                  <option>Staff XYZ</option>
+                </select>
+              </div>
+            </div>  
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">e-Audit title</label>
+              <div class="col-sm-9">
+                <input type="text" class="form-control" placeholder="e-Audit title" value="Staff AML Q2 2016">
+              </div>
+            </div>   
+            <hr>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Recipients</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" placeholder="Recipients" rows="5">steve.ives@pliohub.com
+mike.smith@google.com
+peter.wilson@shorecapital.com</textarea>
+              </div>
+            </div> 
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Instructions in email</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" placeholder="Instructions in email" rows="5">Please click on the URL below to start the compliance certification questionnaire.</textarea>
+              </div>
+            </div> 
+            <div class="form-group row">
+              <label class="form-control-label col-sm-3">Sent out by</label>
+              <div class="col-sm-9">
+                <select class="c-select">
+                  <option selected>Steve Ives</option>
+                  <option>John Smith</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-9 col-sm-offset-3">
+                <button type="button" class="btn btn-primary">Send now</button>
+                <p class="help-block">Invitations emailed to 25 recipients on 23 Jul 2016 at 2:30pm</p>
+              </div>
+            </div> 
+            
+                
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
+          </div>
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
