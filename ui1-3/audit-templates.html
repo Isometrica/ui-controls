@@ -60,24 +60,24 @@
   						<a class="list-group-item active" href="#">
                 <div class="list-group-item-content">
     							<h4 class="list-group-item-heading pull-left">CMP-FCA-2016</h4>
-    							<p class="list-group-item-text pull-right">18 Jun 2016</p>
-                  <p class="list-group-item-text pull-left">3 sections</p>
+    							<p class="list-group-item-text pull-right">Issue 1</p>
+    							<p class="list-group-item-text pull-left">18 Jun 2016</p>
                   <p class="list-group-item-text pull-right">28 questions</p>
                 </div>
   						</a> 
   						<a class="list-group-item" href="#">
                 <div class="list-group-item-content">
     							<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
-    							<p class="list-group-item-text pull-right">12 Aug 2015</p>
-                  <p class="list-group-item-text pull-left">3 sections</p>
+    							<p class="list-group-item-text pull-right">Issue 1</p>
+    							<p class="list-group-item-text pull-left">12 Aug 2015</p>
                   <p class="list-group-item-text pull-right">26 questions</p>
                 </div>
   						</a> 
   						<a class="list-group-item" href="#">
                 <div class="list-group-item-content">
     							<h4 class="list-group-item-heading pull-left">CMP-SEC-2016</h4>
-    							<p class="list-group-item-text pull-right">15 May 2016</p>
-                  <p class="list-group-item-text pull-left">4 sections</p>
+    							<p class="list-group-item-text pull-right">Issue 1</p>
+    							<p class="list-group-item-text pull-left">15 May 2016</p>
                   <p class="list-group-item-text pull-right">56 questions</p>
                 </div>
   						</a>      				
@@ -113,35 +113,47 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Type of audit</p>
-                      <h4 class="list-group-item-heading">Conducted audit – full</h4>
+                      <p class="list-group-item-text">Status</p>
+                      <h4 class="list-group-item-heading">Issued</h4>
                     </div>                    
                   </div>
                 </div>
                 
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Audit report title</p>
-                  <h4 class="list-group-item-heading">D&amp;P compliance audit</h4>
-                </div>
-                
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Audit guidance text</p>
-                  <h4 class="list-group-item-heading">To create a new audit, verify the information in the Key Info section below</h4>
-                </div>
-
                 <div class="row">
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Created date</p>
-                      <h4 class="list-group-item-heading">16 Jun 2016</h4>
-                    </div>                    
+                      <p class="list-group-item-text">Audit report title</p>
+                      <h4 class="list-group-item-heading">D&amp;P compliance audit</h4>
+                    </div>                  
                   </div>
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Last audited date</p>
-                      <h4 class="list-group-item-heading">18 Jun 2016</h4>
+                      <p class="list-group-item-text">Issue number</p>
+                      <h4 class="list-group-item-heading">1</h4>
                     </div>                    
                   </div>
+                </div>
+                
+                <div class="row">
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Audit type</p>
+                      <h4 class="list-group-item-heading">Conducted audit - full</h4>
+                    </div>                  
+                  </div>
+                  <div class="col-sm-6">
+                    <div class="list-group-item">
+                      <p class="list-group-item-text">Internal or external?</p>
+                      <h4 class="list-group-item-heading">Internal</h4>
+                    </div>                    
+                  </div>
+                </div>
+                
+
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Auditor guidance text</p>
+                  <h4 class="list-group-item-heading">To run a new audit, select the type of audit, then complete the key info section below. You then have the option to start the audit immediately or save the key info and start the audit later.</h4>
                 </div>
                 
                 <div class="row">
@@ -153,9 +165,9 @@
                   </div>
                   <div class="col-sm-6">
                     <div class="list-group-item">
-                      <p class="list-group-item-text">Internal or external?</p>
-                      <h4 class="list-group-item-heading">Internal</h4>
-                    </div>                    
+                      <p class="list-group-item-text">Last audited date</p>
+                      <h4 class="list-group-item-heading">18 Jun 2016</h4>
+                    </div>                   
                   </div>
                 </div>
               </div>
@@ -258,9 +270,21 @@
               </div>
             </div>
             <div class="form-group row">
+              <label class="form-control-label col-sm-5">Status</label>
+              <div class="col-sm-7">
+                <input type="text" class="form-control" placeholder="Status" value="Issued" disabled="">
+              </div>
+            </div>
+            <div class="form-group row">
               <label class="form-control-label col-sm-5">Audit report title</label>
               <div class="col-sm-7">
                 <input type="text" class="form-control" placeholder="Audit report title" value="D&P compliance audit">
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-5">Issue number</label>
+              <div class="col-sm-2">
+                <input type="number" class="form-control" value="1">
               </div>
             </div>
             <div class="form-group row">
@@ -275,13 +299,20 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-5">Internal or external?</label>
               <div class="col-sm-7">
-                <input type="text" class="form-control" placeholder="Audit template title" value="CMP-FCA-2016">
+                <div class="btn-group btn-group-nomargin" data-toggle="buttons">
+                  <label class="btn btn-secondary active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked> Internal
+                  </label>
+                  <label class="btn btn-secondary">
+                    <input type="radio" name="options" id="option2" autocomplete="off"> External
+                  </label>
+                </div>
               </div>
             </div>
             <div class="form-group row">
-              <label class="form-control-label col-sm-5">Guidance text</label>
+              <label class="form-control-label col-sm-5">Auditor guidance text</label>
               <div class="col-sm-7">
-                <textarea class="form-control" placeholder="Guidance text" rows="5">To create a new audit, verify the information in the Key Info section below.</textarea>
+                <textarea class="form-control" placeholder="Guidance text" rows="5">To run a new audit, select the type of audit, then complete the key info section below. You then have the option to start the audit immediately or save the key info and start the audit later.</textarea>
               </div>
             </div>
             <div class="form-group row">
@@ -302,7 +333,7 @@
               <label class="form-control-label col-sm-5">Template created by</label>
               <div class="col-sm-7">
                 <div class="dropdown">
-                  <input class="form-control" data-toggle="dropdown" placeholder="Template created by" value="Mike Hanna"/>
+                  <input class="form-control" data-toggle="dropdown" placeholder="Template created by" value="Mike Hanna" disabled=""/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item active" href="#">Mike Hanna</a>
                     <a class="dropdown-item" href="#">Mike Smith</a>
