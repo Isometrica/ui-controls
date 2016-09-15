@@ -554,6 +554,10 @@ textarea:focus ~ .clear-field {
 .input-group-btn .btn {
   margin-bottom: 0 !important; }
 
+.input-group-textarea .input-group-addon {
+  vertical-align: top;
+  line-height: 21px; }
+
 /* Typeahead */
 .input-group-typeahead {
   position: relative; }
@@ -2660,8 +2664,14 @@ legend {
         right: 1.25rem;
         top: .75rem; }
   .audit-template-section-scoring-points {
-    width: 70px;
+    width: 60px !important;
+    vertical-align: middle; }
+  .audit-template-section-scoring td > input {
     display: inline-block; }
+  .audit-template-section-scoring .input-group {
+    display: inline-table;
+    vertical-align: middle;
+    max-width: 90px; }
   .audit-template-section-scoring textarea {
     margin-top: 10px; }
 
@@ -2681,3 +2691,14 @@ legend {
       padding: 0 7.5px !important; }
       .audit-template-question-advanced-columns > div .btn-checkbox {
         margin: 0; }
+
+#auditsQuestionsDatabaseAccordion .list-group-collapse .list-group-item {
+  padding-left: 3.65rem !important; }
+  #auditsQuestionsDatabaseAccordion .list-group-collapse .list-group-item .list-group-item-heading {
+    line-height: 24px;
+    margin: 0; }
+  #auditsQuestionsDatabaseAccordion .list-group-collapse .list-group-item .list-group-item-text {
+    line-height: 24px;
+    margin-left: 10px; }
+  #auditsQuestionsDatabaseAccordion .list-group-collapse .list-group-item:before {
+    left: 2rem; }

@@ -266,6 +266,23 @@ $( document ).ready(function() {
     $(subquestion).collapse('toggle');
   });
   
+
+
+  /*
+    AUDIT QUESTIONS ACCORDION
+  */
+
+  $("#auditsQuestionsDatabaseAccordion .list-group-item").click(function() {
+  	if ($(this).hasClass("list-group-toggle")) {
+    	// Collapse any SIBLING open sections
+    	$(this).siblings('.collapse.in').collapse("hide");  	
+  	} else {
+    	// Remove existing active classes
+    	$("#auditsQuestionsDatabaseAccordion .list-group-item.active").removeClass("active");	
+    	$(this).addClass("active");     	
+  	}
+  }); 
+
   
   
   /*
@@ -563,6 +580,7 @@ $( document ).ready(function() {
       $(this).closest(".audit-template-question").find(".audit-template-question-advanced-toggle").removeClass("collapsed");
     });
   });
+
   
   
   /* 

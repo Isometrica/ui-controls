@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        Questions database
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item" href="audits.html">Completed audits</a>
+        <a class="dropdown-item" href="#">Conducted audits - by status</a>
+        <a class="dropdown-item" href="#">e-Audits - by status</a>
+        <a class="dropdown-item" href="audit-templates.html">Audit templates</a>
+        <a class="dropdown-item active" href="audits-questions-database.html">Questions database</a>
+        <a class="dropdown-item" href="#">Audits - deleted</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">
+        	<i class="fa fa-angle-left"></i>
+        </a> 
+      </li>
+    </ul>    
+  </div>
+
+  <div class="content">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-list scroll">
+          <div class="card">
+    				<form class="search-form">
+    		      <div class="form-group row">
+    			      <input type="text" class="form-control" placeholder="Search...">
+    		      </div>
+    					<a class="btn btn-primary" data-toggle="modal" data-target="#question-edit-modal">
+    						<i class="fa fa-plus"></i>
+    						<span>Add</span>
+    					</a>
+    				</form>
+    				<div class="list-group list-group-accordion" id="auditsQuestionsDatabaseAccordion">     				
+      				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-1">
+    						<h4 class="list-group-item-heading pull-left">CMP-FCA-2015</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse" id="collapse-1">
+        				<div class="list-group">
+          				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-1-1">
+        						<h4 class="list-group-item-heading pull-left">Questions: BIPRU</h4>
+        					</a>
+          				<div class="list-group-collapse collapse" id="collapse-1-1">
+            				<div class="list-group">
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div> 
+          				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-1-2">
+        						<h4 class="list-group-item-heading pull-left">Questions: CASS - controlling client's money</h4>
+        					</a>
+          				<div class="list-group-collapse collapse" id="collapse-1-2">
+            				<div class="list-group">
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div> 
+          				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-1-3">
+        						<h4 class="list-group-item-heading pull-left">Questions: CASS - general WP</h4>
+        					</a>
+          				<div class="list-group-collapse collapse" id="collapse-1-3">
+            				<div class="list-group">
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div>        					   
+        				</div>
+      				</div>
+      				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-2">
+    						<h4 class="list-group-item-heading pull-left">CMP-FCA-2016</h4>
+    					</a>      				
+      				<div class="list-group-collapse collapse in" id="collapse-2">
+        				<div class="list-group">
+          				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2-1">
+        						<h4 class="list-group-item-heading pull-left">Questions: BIPRU</h4>
+        					</a>
+          				<div class="list-group-collapse collapse" id="collapse-2-1">
+            				<div class="list-group">
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div> 
+          				<a class="list-group-item list-group-subheading list-group-toggle collapsed" data-toggle="collapse" href="#collapse-2-2">
+        						<h4 class="list-group-item-heading pull-left">Questions: CASS - controlling client's money</h4>
+        					</a>
+          				<div class="list-group-collapse collapse" id="collapse-2-2">
+            				<div class="list-group">
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div> 
+          				<a class="list-group-item list-group-subheading list-group-toggle" data-toggle="collapse" href="#collapse-2-3">
+        						<h4 class="list-group-item-heading pull-left">Questions: CASS - general WP</h4>
+        					</a>
+          				<div class="list-group-collapse collapse in" id="collapse-2-3">
+            				<div class="list-group">
+              				<a class="list-group-item active">
+                				<p class="list-group-item-text pull-right">Q107</p>
+            						<h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+            					</a>   
+              				<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q108</p>
+            						<h4 class="list-group-item-heading">Are there any activities contained in the firm's scope of permission?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q109</p>
+            						<h4 class="list-group-item-heading">Does the firm plan to extend any of the following?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q110</p>
+            						<h4 class="list-group-item-heading">Has the firm held a board meeting during the period under review?</h4>
+            					</a>   
+            					<a class="list-group-item">
+                				<p class="list-group-item-text pull-right">Q111</p>
+            						<h4 class="list-group-item-heading">Have the staff members reported personal account details during the period?</h4>
+            					</a>   
+            				</div>
+          				</div>        					   
+        				</div>
+      				</div>
+      				
+
+
+      				
+    				</div>
+          </div>
+    		</div>
+    		<div class="content-cards scroll flexbox-column col-sm-8 hidden-sm-down">
+					<div class="content-cards-inner flex scroll">
+    				<div class="card">
+    					<div class="card-block card-heading">
+    						<div class="card-heading-buttons pull-xs-right">
+    							<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+            				<i class="fa fa-question-circle"></i>
+            			</button>
+    							<a class="btn btn-primary" data-toggle="modal" data-target="#question-edit-modal">
+    								<i class="fa fa-pencil"></i>
+    								Edit
+    							</a>
+    						</div>
+    						<h3 class="card-title">
+      						Q107
+      				  </h3>
+    					</div> 
+    					<div ng-include="'includes/guidance-panel.html'"></div>
+              <div class="list-group">
+
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Wording</p>
+                  <h4 class="list-group-item-heading">Does the firm have retail permissions?</h4>
+                </div>
+  
+
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Guidance text</p>
+                  <h4 class="list-group-item-heading">Firms can either have retail permissions or other permissions.</h4>
+                </div>
+
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Possible responses</p>
+                  <h4 class="list-group-item-heading">Yes - Partial - No - N/A</h4>
+                </div>
+
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Created date</p>
+                  <h4 class="list-group-item-heading">22 Mar 2015</h4>
+                </div>
+
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Advanced settings</p>
+                  <h4 class="list-group-item-heading">If no, suggest a Corrective action with title "Fix the identified problem".</h4>
+                </div>
+                
+                <div class="list-group-item">
+                  <p class="list-group-item-text">Notes</p>
+                  <h4 class="list-group-item-heading">This question is the new version, corresponding to the 2016 FCA guidelines.</h4>
+                </div>
+              </div>
+
+              <!-- Changelog -->
+              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+    				</div>
+					</div>
+    		</div>
+      </div> 		
+    </div>
+  </div>
+  
+  
+  
+  <!-- Edit Modal -->
+  <div class="modal fade" id="question-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Cancel
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Save
+      			</button>
+          </div>
+          <h4 class="card-title">Q107</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Wording</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="input-group input-group-textarea">
+                  <span class="input-group-addon">Q107</span>
+                  <textarea class="form-control" placeholder="Wording" rows="2">Does the firm have retail permissions?</textarea>
+                </div>
+              </div>
+            </div> 
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Guidance text</label>
+              <div class="col-sm-8 col-xs-12">
+                <textarea class="form-control" placeholder="Guidance text" rows="2">Firms can either have retail permissions or other permissions.</textarea>
+              </div>
+            </div>  
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Possible responses</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <select class="form-control c-select">
+                  <option>Yes – No</option>
+                  <option selected="">Yes – Partial – No – N/A</option>
+                </select>
+    	        </div>
+            </div> 
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Created date</label>
+    	        <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Created date" value="22 Mar 2015">
+    	        </div>
+            </div>  
+            <div class="form-group row">
+    	        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                <button type="button" class="btn btn-link audit-template-question-advanced-toggle collapsed" data-toggle="collapse" data-target="#question-advanced-settings">
+                  <span class="collapsed-label">Show advanced settings</span>
+                  <span class="expanded-label">Hide advanced settings</span>
+                </button>
+    	        </div>
+            </div>
+                    
+            <div class="collapse audit-template-question-advanced" id="question-advanced-settings">
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Frequency</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <select class="form-control c-select">
+                    <option>Every audit</option>
+                    <option>No more than Monthly</option>
+                    <option>No more than Quarterly</option>
+                    <option selected>No more than Annually</option>
+                  </select>
+      	        </div>
+              </div>
+               <div class="form-group row">
+      	        <div class="col-sm-8 col-sm-offset-4 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <strong>If "Yes"</strong>
+                    </div>
+                    <div class="col-xs-3">
+                      <strong>If "No"</strong>
+                    </div>
+                    <div class="col-xs-3">
+                      <strong>If "Partial"</strong>
+                    </div>
+                    <div class="col-xs-3">
+                      <strong>If "N/A"</strong>
+                    </div>
+                  </div>              
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Suggest an action</label>
+      	        <div class="col-sm-8 col-xs-12">
+        	        <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary active" data-toggle="button" aria-pressed="true" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                  </div>
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Action type if "No"</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <select class="form-control c-select">
+                    <option selected="">Corrective action</option>
+                    <option>Preventative action</option>
+                    <option>Risk control</option>
+                  </select>    
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Action title if "No"</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <input type="text" class="form-control" placeholder="Action title if &ldquo;No&rdquo;" value="Fix the identified problem">   
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Display a dependent question</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                  </div>             
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Display a dependent section</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                  </div>             
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Add a report evaluation</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                  </div>            
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Add a report recommendation</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                    <div class="col-xs-3">
+                      <button type="button" class="btn btn-checkbox btn-secondary" data-toggle="button" aria-pressed="false" autocomplete="off">
+                        <i class="fa fa-check"></i>
+                      </button>
+                    </div>
+                  </div>             
+      	        </div>
+              </div>
+              <div class="form-group row">
+      	        <label class="form-control-label col-sm-4 col-xs-12">Change scoring points</label>
+      	        <div class="col-sm-8 col-xs-12">
+                  <div class="row audit-template-question-advanced-columns">
+                    <div class="col-sm-3">
+                      <select class="form-control c-select">
+                        <option></option>
+                        <option>1 pt</option>
+                        <option>2 pts</option>
+                        <option>3 pts</option>
+                        <option selected="">4 pts</option>
+                        <option>5 pts</option>
+                        <option>6 pts</option>
+                        <option>7 pts</option>
+                        <option>8 pts</option>
+                        <option>9 pts</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control c-select">
+                        <option></option>
+                        <option>1 pt</option>
+                        <option>2 pts</option>
+                        <option>3 pts</option>
+                        <option>4 pts</option>
+                        <option>5 pts</option>
+                        <option>6 pts</option>
+                        <option>7 pts</option>
+                        <option>8 pts</option>
+                        <option>9 pts</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control c-select">
+                        <option></option>
+                        <option>1 pt</option>
+                        <option selected="">2 pts</option>
+                        <option>3 pts</option>
+                        <option>4 pts</option>
+                        <option>5 pts</option>
+                        <option>6 pts</option>
+                        <option>7 pts</option>
+                        <option>8 pts</option>
+                        <option>9 pts</option>
+                      </select>
+                    </div>
+                    <div class="col-sm-3">
+                      <select class="form-control c-select">
+                        <option></option>
+                        <option>1 pt</option>
+                        <option>2 pts</option>
+                        <option>3 pts</option>
+                        <option>4 pts</option>
+                        <option>5 pts</option>
+                        <option>6 pts</option>
+                        <option>7 pts</option>
+                        <option>8 pts</option>
+                        <option>9 pts</option>
+                      </select>
+                    </div>
+                  </div>             
+      	        </div>
+              </div>
+            </div>            
+                          
+          </div>        
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notes" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notes</h4>
+            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+          </div>
+          <div class="card-block-collapse collapse" id="notes">
+            <div ng-include="'includes/subcards-edit/notes.html'"></div>
+          </div> 
+          <div class="card-block text-xs-center">
+            <button type="button" class="btn btn-secondary">Delete</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/libs/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

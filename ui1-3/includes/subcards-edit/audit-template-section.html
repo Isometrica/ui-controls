@@ -12,8 +12,8 @@
             	        <label class="form-control-label col-sm-4 col-xs-12">Type</label>
             	        <div class="col-sm-8 col-xs-12">
             		        <select class="form-control c-select">
-              		        <option selected="">Standard</option>
-              		        <option>Dependent</option>
+              		        <option selected="">Standard section</option>
+              		        <option>Dependent section</option>
             		        </select>
             	        </div>
                     </div>
@@ -31,8 +31,8 @@
                           <thead>
                             <tr>
                               <th></th>
-                              <th>Points</th>
-                              <th>Trigger in report</th>
+                              <th>Scoring range</th>
+                              <th>Trigger what in report?</th>
                             </tr>
                           </thead>
                           <tbody>
@@ -41,12 +41,15 @@
                               <td>
                                 <input type="number" class="form-control audit-template-section-scoring-points" value="0">
                                 to
-                                <input type="number" class="form-control audit-template-section-scoring-points" value="10">
+                                <div class="input-group">
+                                  <input type="number" class="form-control audit-template-section-scoring-points" value="10">
+                                  <span class="input-group-addon">pts</span>
+                                </div>
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option selected="">1. Evaluation</option>
-                                  <option>2. Recommendation</option>
+                                  <option selected="">1. Evaluation comment</option>
+                                  <option>2. Recommendation comment</option>
                                   <option>3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">
@@ -60,12 +63,15 @@
                               <td>
                                 <input type="number" class="form-control audit-template-section-scoring-points" value="11">
                                 to
-                                <input type="number" class="form-control audit-template-section-scoring-points" value="15">
+                                <div class="input-group">
+                                  <input type="number" class="form-control audit-template-section-scoring-points" value="15">
+                                  <span class="input-group-addon">pts</span>
+                                </div>
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option>1. Evaluation</option>
-                                  <option selected="">2. Recommendation</option>
+                                  <option>1. Evaluation comment</option>
+                                  <option selected="">2. Recommendation comment</option>
                                   <option>3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">
@@ -79,12 +85,15 @@
                               <td>
                                 <input type="number" class="form-control audit-template-section-scoring-points" value="16">
                                 to
-                                <input type="number" class="form-control audit-template-section-scoring-points" value="20">
+                                <div class="input-group">
+                                  <input type="number" class="form-control audit-template-section-scoring-points" value="20">
+                                  <span class="input-group-addon">pts</span>
+                                </div>
                               </td>
                               <td>
                                 <select class="form-control c-select">
-                                  <option>1. Evaluation</option>
-                                  <option>2. Recommendation</option>
+                                  <option>1. Evaluation comment</option>
+                                  <option>2. Recommendation comment</option>
                                   <option selected="">3. Evaluation &amp; recommendation</option>
                                 </select>
                                 <button type="button" class="btn btn-secondary btn-icon btn-remove">

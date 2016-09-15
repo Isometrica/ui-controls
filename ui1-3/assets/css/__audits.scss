@@ -324,8 +324,18 @@
   }
   
   &-points {
-    width: 70px;
+    width: 60px !important;
+    vertical-align: middle;
+  }
+  
+  td > input {
     display: inline-block;
+  }
+  
+  .input-group {
+    display: inline-table;
+    vertical-align: middle;
+    max-width: 90px;
   }
   
   textarea {
@@ -357,6 +367,29 @@
       
       .btn-checkbox {
         margin: 0;
+      }
+    }
+  }
+}
+
+
+#auditsQuestionsDatabaseAccordion {
+  .list-group-collapse {
+    .list-group-item {
+      padding-left: 3.65rem !important;
+  
+      .list-group-item-heading {
+        line-height: 24px;
+        margin: 0;
+      }
+      
+      .list-group-item-text {
+        line-height: 24px;
+        margin-left: 10px;
+      }
+  
+      &:before {
+        left: 2rem;
       }
     }
   }

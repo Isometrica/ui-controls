@@ -238,6 +238,15 @@ textarea:focus ~ .clear-field {
       margin-bottom: 0 !important;
     }
   }
+  
+  // Textarea version
+  &-textarea {
+    .input-group-addon {
+      vertical-align: top;
+      line-height: 21px;
+    }
+  }
+
 }
 
 
