@@ -22,12 +22,12 @@
   <div class="navbar">
     <span class="navbar-title dropdown">
       <a class="dropdown-toggle" href="#" data-toggle="dropdown">
-        e-Audits - by status
+        E-audits - by category
       </a>
       <div class="dropdown-menu">
         <a class="dropdown-item" href="audits.html">Completed audits</a>
         <a class="dropdown-item" href="#">Conducted audits - by status</a>
-        <a class="dropdown-item active" href="e-audits.html">e-Audits - by status</a>
+        <a class="dropdown-item active" href="e-audits.html">E-audits - by category</a>
         <a class="dropdown-item" href="audit-templates.html">Audit templates</a>
         <a class="dropdown-item" href="audits-questions-database.html">Questions database</a>
         <a class="dropdown-item" href="#">Audits - deleted</a>
@@ -63,11 +63,11 @@
     					</a>      				
       				<div class="list-group-collapse collapse" id="collapse-1">
         				<div class="list-group">
-        				  <a class="list-group-item" href="#">
+        				  <a class="list-group-item" href="#eaudit-single-setup-modal-recipients" data-toggle="modal">
       							<h4 class="list-group-item-heading pull-left">Recipients</h4>
       							<p class="list-group-item-text pull-right">26</p>
       						</a>
-      						<a class="list-group-item" href="e-audits-overdue.html">
+      						<a class="list-group-item" href="#eaudit-single-setup-modal-overdue" data-toggle="modal">
       							<h4 class="list-group-item-heading pull-left">Overdue</h4>
       							<p class="list-group-item-text pull-right">3</p>
       						</a>
@@ -112,11 +112,11 @@
     					</a>      				
       				<div class="list-group-collapse collapse in" id="collapse-2">
         				<div class="list-group">
-        				  <a class="list-group-item" href="#">
+        				  <a class="list-group-item" href="#eaudit-single-setup-modal-recipients" data-toggle="modal">
       							<h4 class="list-group-item-heading pull-left">Recipients</h4>
       							<p class="list-group-item-text pull-right">26</p>
       						</a>
-      						<a class="list-group-item" href="e-audits-overdue.html">
+      						<a class="list-group-item" href="#eaudit-single-setup-modal-overdue" data-toggle="modal">
       							<h4 class="list-group-item-heading pull-left">Overdue</h4>
       							<p class="list-group-item-text pull-right">3</p>
       						</a>
@@ -176,7 +176,7 @@
     							-->
     						</div>
     						<h3 class="card-title">
-      						e-Audit
+      						E-audit
       				  </h3>
     					</div> 
     					<div ng-include="'includes/guidance-panel.html'"></div>
@@ -244,8 +244,14 @@
   
   
   
-  <!-- e-Audit Single Setup Modal -->
-  <div ng-include="'includes/eaudit-single-setup-modal.html'"></div> 
+  <!-- E-audit Single Setup Modal -->
+  <div ng-include="'includes/eaudit-single-setup-modal.html'"></div>
+  
+  <!-- E-audit Single Setup Modal - Recipients -->
+  <div ng-include="'includes/eaudit-single-setup-modal-recipients.html'"></div>
+  
+  <!-- E-audit Single Setup Modal - Overdue -->
+  <div ng-include="'includes/eaudit-single-setup-modal-overdue.html'"></div> 
 
   
   
