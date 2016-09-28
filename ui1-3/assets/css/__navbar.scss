@@ -90,6 +90,31 @@
   }
   
   .dropdown {      
+    &-toggle {
+      &:after {
+        content: "\f107";
+        font-family: "FontAwesome";
+        border: 0;
+        width: auto;
+        height: 24px;
+        line-height: 20px;
+        font-size: 24px;
+      }
+      
+      .text-muted,
+      &:after {
+        @include transition(color .4s ease);
+        color: $light-blue-color;
+      }         
+    }
+    
+    &.open,
+    &-toggle:hover {
+      .text-muted,
+      &:after {
+        color: lighten($light-blue-color,20%);
+      }        
+    }
 
     
     &-menu {
