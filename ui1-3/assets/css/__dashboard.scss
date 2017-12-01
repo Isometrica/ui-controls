@@ -35,11 +35,12 @@
 }
 
 .dashboard-item {
-  @include flexbox;
+  @include flexbox();
   @include flex(1);
   @include flex-direction(column);
   cursor: pointer;
   @include transition(all .3s ease);
+  text-decoration: none !important;
   
   @media (max-width:767px) {
     margin-bottom: 0;  
@@ -62,6 +63,7 @@
     font-size: 42px;
     margin: 10px auto 10px;
     color: $light-blue-color;
+    text-decoration: none !important;
     
     @media (max-width:767px) {
       float: left;
@@ -71,6 +73,12 @@
 	
 	.card-block {
 		@include clearfix;
+		
+		@media (min-width: 768px) {
+			@include flexbox();
+			@include flex-direction(column);
+	    @include flex(1);
+		}
 	}
 	 
 	.card-title {
@@ -81,10 +89,15 @@
 		font-size: 18px;
 		text-align: center;
 		color: #333;
+		text-decoration: none !important;
 		
 		@media (max-width:767px) {
   	  text-align: left;	
     }
+    
+    @media (min-width: 768px) {
+	    @include flex(1);
+	  }
 	}
 
 	.card-text {
@@ -94,6 +107,7 @@
 		overflow: hidden;
 		text-overflow: ellipsis;
 		color: #777;
+		text-decoration: none !important;
 	}
 	
 	.card-footer {
@@ -109,7 +123,7 @@
     }
     
     @media (min-width: 768px) {
-      margin: 1.5rem -1.25rem -1rem;
+      margin: 1.5rem -1.25rem -1.25rem;
     }
 	}
 	
@@ -141,7 +155,21 @@
     margin: 0 0 10px;
     
     a {
-      margin-left: 5px;
+      text-decoration: none !important;
+      color: $body-color;
+
+      &[data-toggle="collapse"] {
+	      
+	      i {
+		      transition: all .4s ease;
+	      }
+	      
+	      &.collapsed {
+		      i {
+			      transform: rotate(-90deg);
+		      }
+	      }
+      }
     }
   }
   
@@ -253,4 +281,150 @@
       height: 34px;
     }
   }
+}
+
+
+.dashboard-goals {
+	overflow-x: auto;
+	overflow-y: hidden;
+	position: relative;
+	
+	&-inner {
+		//width: 3000px;
+	}
+	
+	&-timeline {
+		&-dates {
+			list-style: none;
+			padding: 0;
+			@include flexbox();
+			margin: 0;
+			
+			li {
+				@include flex(1);
+			}
+		}
+		&-today {
+			position: absolute;
+			display: block;
+			width: 2px;
+			top: 0;
+			bottom: 0;
+			background: #ddd;
+		}
+	}
+	
+	&-collapse {
+		overflow: hidden;
+	}
+}
+
+.dashboard-goal {
+	margin-bottom: 1.25rem;
+	$marker-size: 16px;
+	position: relative;
+	padding: 0 $marker-size/2;
+	
+	&-markers {
+		list-style: none;
+		padding: 0;
+		position: relative;
+		height: $marker-size + 6;
+		margin: 0;
+		padding: 0;
+		margin-bottom: .25rem;
+		
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: $marker-size/2;
+			right: $marker-size/2;
+			top: 50%;
+			height: 2px;
+			margin-top: -1px;
+			background: $light-blue-color;
+			z-index: 1;
+		}
+
+		li {
+			display: block;
+			text-align: center;
+			position: absolute;
+			top: 50%;
+			width: $marker-size;
+			height: $marker-size;
+			margin-top: $marker-size * -0.5;
+			margin-left: $marker-size * -0.5;
+			border: 2px solid $light-blue-color;
+			cursor: pointer;
+			z-index: 2;
+			
+			&:hover {
+				border-color: darken($light-blue-color, 15%);
+			}
+			
+			&.start,
+			&.finish {
+				border-radius: 50%;
+				background: $light-blue-color;
+	
+				&:hover {
+					background: darken($light-blue-color, 15%);
+				}
+			}
+			
+			&.milestone {
+				$milestone-marker-size:15px;
+				transform-origin: 50% 50%;
+				transform: rotate(45deg);
+				width: $milestone-marker-size;
+				height: $milestone-marker-size;
+				margin-top: $milestone-marker-size * -0.5;
+				margin-left: $milestone-marker-size * -0.5;				
+			}
+			
+			&.completed {
+				background: $light-blue-color;
+				
+				&:hover {
+					background: darken($light-blue-color, 15%);
+				}
+			}
+			
+			&.outstanding {
+				background: white;
+			}
+		}
+	}
+	
+
+	
+	&-dates {
+		position: relative;
+		height: 20px;
+		text-align: center;
+		margin: 0 0 .5rem;
+		@include flexbox();
+		@include flex-wrap(no-wrap);
+	}
+	
+	&-title {
+		font-family: $font-semibold;
+		@include flex(1);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin: 0 .5rem;
+		//font-weight: bold;
+	}
+	
+	&-tasks {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+	}
 }

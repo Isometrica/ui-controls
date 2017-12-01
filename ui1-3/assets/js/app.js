@@ -27,6 +27,17 @@ $( document ).ready(function() {
 	}
 	
 	
+	
+	/*
+		DASHBOARD - Goals collapse
+	*/
+	
+	$(".dashboard-goals-collapse-toggle").click(function() {
+		$(this).toggleClass("collapsed");
+		$(".dashboard-goals-collapse").collapse("toggle");
+	});
+	
+	
   
   /*
     STANDARDS SIDEBAR - collapse

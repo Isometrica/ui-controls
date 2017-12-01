@@ -2144,7 +2144,8 @@ legend {
   -moz-transition: all 0.3s ease;
   -o-transition: all 0.3s ease;
   -webkit-transition: all 0.3s ease;
-  transition: all 0.3s ease; }
+  transition: all 0.3s ease;
+  text-decoration: none !important; }
   @media (max-width: 767px) {
     .dashboard-item {
       margin-bottom: 0; } }
@@ -2160,7 +2161,8 @@ legend {
     text-align: center;
     font-size: 42px;
     margin: 10px auto 10px;
-    color: #00BCF2; }
+    color: #00BCF2;
+    text-decoration: none !important; }
     @media (max-width: 767px) {
       .dashboard-item-icon {
         float: left;
@@ -2169,6 +2171,25 @@ legend {
     content: "";
     display: table;
     clear: both; }
+  @media (min-width: 768px) {
+    .dashboard-item .card-block {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-direction: normal;
+      -webkit-box-orient: vertical;
+      -webkit-flex-direction: column;
+      -moz-flex-direction: column;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
   .dashboard-item .card-title {
     margin-top: 0;
     padding: 0;
@@ -2176,17 +2197,27 @@ legend {
     line-height: 20px;
     font-size: 18px;
     text-align: center;
-    color: #333; }
+    color: #333;
+    text-decoration: none !important; }
     @media (max-width: 767px) {
       .dashboard-item .card-title {
         text-align: left; } }
+    @media (min-width: 768px) {
+      .dashboard-item .card-title {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; } }
   .dashboard-item .card-text {
     margin-bottom: 0;
     line-height: 20px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-    color: #777; }
+    color: #777;
+    text-decoration: none !important; }
   .dashboard-item .card-footer {
     background: transparent;
     border-color: #ddd;
@@ -2199,7 +2230,7 @@ legend {
         padding: 0; } }
     @media (min-width: 768px) {
       .dashboard-item .card-footer {
-        margin: 1.5rem -1.25rem -1rem; } }
+        margin: 1.5rem -1.25rem -1.25rem; } }
   .dashboard-item .label {
     position: absolute;
     top: 5px;
@@ -2221,7 +2252,12 @@ legend {
     font-family: "Segoe UI Light WestEuropean", "Segoe UI Light", "Segoe WP Light", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     margin: 0 0 10px; }
     .dashboard-stats-title a {
-      margin-left: 5px; }
+      text-decoration: none !important;
+      color: #373a3c; }
+      .dashboard-stats-title a[data-toggle="collapse"] i {
+        transition: all 0.4s ease; }
+      .dashboard-stats-title a[data-toggle="collapse"].collapsed i {
+        transform: rotate(-90deg); }
   .dashboard-stats-user {
     margin-right: 15px;
     display: inline-block;
@@ -2299,6 +2335,127 @@ legend {
       float: right; } }
   .dashboard-footer-logo img {
     height: 34px; }
+
+.dashboard-goals {
+  overflow-x: auto;
+  overflow-y: hidden;
+  position: relative; }
+  .dashboard-goals-timeline-dates {
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0; }
+    .dashboard-goals-timeline-dates li {
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+  .dashboard-goals-timeline-today {
+    position: absolute;
+    display: block;
+    width: 2px;
+    top: 0;
+    bottom: 0;
+    background: #ddd; }
+  .dashboard-goals-collapse {
+    overflow: hidden; }
+
+.dashboard-goal {
+  margin-bottom: 1.25rem;
+  position: relative;
+  padding: 0 8px; }
+  .dashboard-goal-markers {
+    list-style: none;
+    padding: 0;
+    position: relative;
+    height: 22px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .25rem; }
+    .dashboard-goal-markers:after {
+      content: '';
+      display: block;
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      top: 50%;
+      height: 2px;
+      margin-top: -1px;
+      background: #00BCF2;
+      z-index: 1; }
+    .dashboard-goal-markers li {
+      display: block;
+      text-align: center;
+      position: absolute;
+      top: 50%;
+      width: 16px;
+      height: 16px;
+      margin-top: -8px;
+      margin-left: -8px;
+      border: 2px solid #00BCF2;
+      cursor: pointer;
+      z-index: 2; }
+      .dashboard-goal-markers li:hover {
+        border-color: #0081a5; }
+      .dashboard-goal-markers li.start,
+      .dashboard-goal-markers li.finish {
+        border-radius: 50%;
+        background: #00BCF2; }
+        .dashboard-goal-markers li.start:hover,
+        .dashboard-goal-markers li.finish:hover {
+          background: #0081a5; }
+      .dashboard-goal-markers li.milestone {
+        transform-origin: 50% 50%;
+        transform: rotate(45deg);
+        width: 15px;
+        height: 15px;
+        margin-top: -7.5px;
+        margin-left: -7.5px; }
+      .dashboard-goal-markers li.completed {
+        background: #00BCF2; }
+        .dashboard-goal-markers li.completed:hover {
+          background: #0081a5; }
+      .dashboard-goal-markers li.outstanding {
+        background: white; }
+  .dashboard-goal-dates {
+    position: relative;
+    height: 20px;
+    text-align: center;
+    margin: 0 0 0.5rem;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: no-wrap;
+    -moz-flex-wrap: no-wrap;
+    -ms-flex-wrap: no-wrap;
+    flex-wrap: no-wrap; }
+  .dashboard-goal-title {
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0 0.5rem; }
+  .dashboard-goal-tasks {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    position: relative;
+    z-index: 2;
+    overflow: hidden; }
 
 .calendar-container {
   width: 100%; }
