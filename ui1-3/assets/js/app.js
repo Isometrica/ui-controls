@@ -35,6 +35,7 @@ $( document ).ready(function() {
 	$(".dashboard-goals-collapse-toggle").click(function() {
 		$(this).toggleClass("collapsed");
 		$(".dashboard-goals-collapse").collapse("toggle");
+		return false;
 	});
 	
 	
