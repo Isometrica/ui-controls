@@ -426,5 +426,20 @@
 		position: relative;
 		z-index: 2;
 		overflow: hidden;
+		
+		li {
+			i {
+				float: left;
+				margin-top: 4px;
+			}
+			> span {
+				display: block;
+				overflow: hidden;
+				
+				span {
+					white-space: nowrap;
+				}
+			}
+		}
 	}
 }

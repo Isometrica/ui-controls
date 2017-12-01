@@ -2456,6 +2456,14 @@ legend {
     position: relative;
     z-index: 2;
     overflow: hidden; }
+    .dashboard-goal-tasks li i {
+      float: left;
+      margin-top: 4px; }
+    .dashboard-goal-tasks li > span {
+      display: block;
+      overflow: hidden; }
+      .dashboard-goal-tasks li > span span {
+        white-space: nowrap; }
 
 .calendar-container {
   width: 100%; }
