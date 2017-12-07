@@ -2258,6 +2258,14 @@ legend {
         transition: all 0.4s ease; }
       .dashboard-stats-title a[data-toggle="collapse"].collapsed i {
         transform: rotate(-90deg); }
+    .dashboard-stats-title .btn-add {
+      padding: 0;
+      width: 26px;
+      height: 26px;
+      line-height: 24px;
+      margin-right: 5px;
+      position: relative;
+      top: -2px; }
   .dashboard-stats-user {
     margin-right: 15px;
     display: inline-block;

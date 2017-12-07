@@ -153,7 +153,9 @@
   &-title {
     font-family: $font-light;
     margin: 0 0 10px;
-    
+
+
+
     a {
       text-decoration: none !important;
       color: $body-color;
@@ -171,6 +173,17 @@
 	      }
       }
     }
+    
+ 		.btn-add {
+			padding: 0;
+			width: 26px;
+			height: 26px;
+			line-height: 24px;
+			margin-right: 5px;
+			position: relative;
+			top: -2px;
+		}   
+    
   }
   
   &-user {
@@ -451,6 +464,8 @@
 		text-overflow: ellipsis;
 		margin: 0 .5rem;
 		//font-weight: bold;
+		
+
 	}
 	
 	&-tasks {
