@@ -38,6 +38,18 @@ $( document ).ready(function() {
 		return false;
 	});
 	
+	/*
+		DASHBOARD - Goals dropdowns - reposition if not enough space
+	*/
+	
+	$(document).on("click", ".dashboard-goal .dropdown-toggle", function() {
+		var $goalsContainerWidth = $(".dashboard-goals").outerWidth();
+		var $space = $goalsContainerWidth - $(this).offset().left;
+		//console.log($space);
+		if ($space < 160) {
+			$(this).siblings(".dropdown-menu").addClass("dropdown-menu-right");
+		}
+	});
 	
   
   /*

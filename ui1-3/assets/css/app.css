@@ -2337,8 +2337,6 @@ legend {
     height: 34px; }
 
 .dashboard-goals {
-  overflow-x: auto;
-  overflow-y: hidden;
   position: relative; }
   .dashboard-goals-timeline-dates {
     list-style: none;
@@ -2390,44 +2388,55 @@ legend {
       background: #00BCF2;
       z-index: 1; }
     .dashboard-goal-markers li {
-      display: block;
-      text-align: center;
       position: absolute;
       top: 50%;
       width: 16px;
       height: 16px;
       margin-top: -8px;
-      margin-left: -8px;
-      border: 2px solid #00BCF2;
-      cursor: pointer;
-      z-index: 2; }
-      .dashboard-goal-markers li:hover {
+      margin-left: -8px; }
+      .dashboard-goal-markers li .dropdown-toggle {
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        display: block;
+        text-align: center;
+        border: 2px solid #00BCF2;
+        cursor: pointer;
+        z-index: 2; }
+        .dashboard-goal-markers li .dropdown-toggle:after {
+          display: none; }
+      .dashboard-goal-markers li:hover .dropdown-toggle {
         border-color: #0081a5; }
-      .dashboard-goal-markers li.start,
-      .dashboard-goal-markers li.finish {
+      .dashboard-goal-markers li.start .dropdown-toggle,
+      .dashboard-goal-markers li.finish .dropdown-toggle {
         border-radius: 50%;
         background: #00BCF2; }
-        .dashboard-goal-markers li.start:hover,
-        .dashboard-goal-markers li.finish:hover {
+        .dashboard-goal-markers li.start .dropdown-toggle:hover,
+        .dashboard-goal-markers li.finish .dropdown-toggle:hover {
           background: #0081a5; }
-      .dashboard-goal-markers li.milestone {
-        transform-origin: 50% 50%;
+      .dashboard-goal-markers li.start {
+        left: 0; }
+      .dashboard-goal-markers li.finish {
+        left: 100%; }
+      .dashboard-goal-markers li.milestone .dropdown-toggle {
         transform: rotate(45deg);
         width: 15px;
         height: 15px;
-        margin-top: -7.5px;
         margin-left: -7.5px; }
-      .dashboard-goal-markers li.completed {
+      .dashboard-goal-markers li.completed .dropdown-toggle {
         background: #00BCF2; }
-        .dashboard-goal-markers li.completed:hover {
+        .dashboard-goal-markers li.completed .dropdown-toggle:hover {
           background: #0081a5; }
-      .dashboard-goal-markers li.outstanding {
+      .dashboard-goal-markers li.outstanding .dropdown-toggle {
         background: white; }
   .dashboard-goal-dates {
     position: relative;
     height: 20px;
     text-align: center;
     margin: 0 0 0.5rem;
+    left: -8px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2453,6 +2462,7 @@ legend {
     list-style: none;
     padding: 0;
     margin: 0;
+    left: -8px;
     position: relative;
     z-index: 2;
     overflow: hidden; }

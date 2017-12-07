@@ -285,8 +285,8 @@
 
 
 .dashboard-goals {
-	overflow-x: auto;
-	overflow-y: hidden;
+	//overflow-x: auto;
+	//overflow-y: hidden;
 	position: relative;
 	
 	&-inner {
@@ -348,52 +348,85 @@
 		}
 
 		li {
-			display: block;
-			text-align: center;
 			position: absolute;
 			top: 50%;
 			width: $marker-size;
 			height: $marker-size;
 			margin-top: $marker-size * -0.5;
 			margin-left: $marker-size * -0.5;
-			border: 2px solid $light-blue-color;
-			cursor: pointer;
-			z-index: 2;
+			
+			.dropdown-toggle {
+				position: absolute;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				top: 0;
+				display: block;
+				text-align: center;
+				border: 2px solid $light-blue-color;
+				cursor: pointer;
+				z-index: 2;
+				&:after {
+					display: none;
+				}				
+			}
 			
 			&:hover {
-				border-color: darken($light-blue-color, 15%);
+				.dropdown-toggle {
+					border-color: darken($light-blue-color, 15%);
+				}
 			}
 			
 			&.start,
 			&.finish {
-				border-radius: 50%;
-				background: $light-blue-color;
-	
-				&:hover {
-					background: darken($light-blue-color, 15%);
+				.dropdown-toggle {
+					border-radius: 50%;
+					background: $light-blue-color;
+		
+					&:hover {
+						background: darken($light-blue-color, 15%);
+					}
 				}
 			}
 			
+			&.start {
+				left: 0;
+			}
+			
+			&.finish {
+				left: 100%;
+			}
+			
 			&.milestone {
-				$milestone-marker-size:15px;
-				transform-origin: 50% 50%;
-				transform: rotate(45deg);
-				width: $milestone-marker-size;
-				height: $milestone-marker-size;
-				margin-top: $milestone-marker-size * -0.5;
-				margin-left: $milestone-marker-size * -0.5;				
+				.dropdown-toggle {
+					$milestone-marker-size:15px;
+					//transform-origin: 50% 50%;
+					transform: rotate(45deg);
+					width: $milestone-marker-size;
+					height: $milestone-marker-size;
+					//margin-top: $milestone-marker-size * -0.5;
+					margin-left: $milestone-marker-size * -0.5;				
+				}
 			}
 			
 			&.completed {
-				background: $light-blue-color;
-				
-				&:hover {
-					background: darken($light-blue-color, 15%);
+				.dropdown-toggle {
+					background: $light-blue-color;
+					
+					&:hover {
+						background: darken($light-blue-color, 15%);
+					}
 				}
 			}
 			
 			&.outstanding {
-				background: white;
+				.dropdown-toggle {
+					background: white;
+				}
+			}
+			
+			.dropdown-toggle {
+
 			}
 		}
 	}
@@ -405,6 +438,7 @@
 		height: 20px;
 		text-align: center;
 		margin: 0 0 .5rem;
+		left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
 	}
@@ -423,6 +457,7 @@
 		list-style: none;
 		padding: 0;
 		margin: 0;
+		left: $marker-size * -0.5;
 		position: relative;
 		z-index: 2;
 		overflow: hidden;
