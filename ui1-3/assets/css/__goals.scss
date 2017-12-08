@@ -1,0 +1,204 @@
+.goals {
+	//overflow-x: auto;
+	//overflow-y: hidden;
+	position: relative;
+	
+	&-inner {
+		//width: 3000px;
+	}
+	
+	&-timeline {
+		&-dates {
+			list-style: none;
+			padding: 0;
+			@include flexbox();
+			margin: 0;
+			
+			li {
+				@include flex(1);
+			}
+		}
+		&-today {
+			position: absolute;
+			display: block;
+			width: 2px;
+			top: 0;
+			bottom: 0;
+			background: #ddd;
+		}
+	}
+	
+	&-collapse {
+		overflow: hidden;
+	}
+}
+
+.goal {
+	margin-bottom: 1.25rem;
+	$marker-size: 16px;
+	position: relative;
+	padding: 0 $marker-size/2;
+
+	$marker-color-default: #373a3c;
+	$marker-color-custom-1: #FCCF31;
+	$marker-color-custom-2: #94135E;
+	$marker-color-custom-3: #F0889C;
+	
+	&-markers {
+		list-style: none;
+		padding: 0;
+		position: relative;
+		height: $marker-size + 6;
+		margin: 0;
+		padding: 0;
+		margin-bottom: .25rem;
+		
+		&:after {
+			content: '';
+			display: block;
+			position: absolute;
+			left: $marker-size/2;
+			right: $marker-size/2;
+			top: 50%;
+			height: 2px;
+			margin-top: -1px;
+			z-index: 1;
+			background: $marker-color-default;
+			.goal-custom-color-1 & { background: $marker-color-custom-1; }
+			.goal-custom-color-2 & { background: $marker-color-custom-2; }
+			.goal-custom-color-3 & { background: $marker-color-custom-3; }
+		}
+
+	}
+	
+	&-marker {
+		position: absolute;
+		top: 50%;
+		width: $marker-size;
+		height: $marker-size;
+		margin-top: $marker-size * -0.5;
+		margin-left: $marker-size * -0.5;
+		
+		&-toggle {
+			position: absolute;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			top: 0;
+			display: block;
+			text-align: center;
+			border: 2px solid $marker-color-default;
+			.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
+			.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
+			.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
+			cursor: pointer;
+			z-index: 2;
+			background: white;
+			
+			&:after {
+				display: none;
+			}				
+		}
+		
+		&.start {
+			left: 0;
+		}
+		
+		&.finish {
+			left: 100%;
+		}
+		
+		&.start,
+		&.finish {
+			.dropdown-toggle {
+				border-radius: 50%;
+			}
+		}
+
+		&:hover {
+			.dropdown-toggle {
+				border-color: darken($marker-color-default, 15%);
+				.goal-custom-color-1 & { border-color: darken($marker-color-custom-1, 15%); }
+				.goal-custom-color-2 & { border-color: darken($marker-color-custom-2, 15%); }
+				.goal-custom-color-3 & { border-color: darken($marker-color-custom-3, 15%); }
+			}
+		}
+		
+		&.start,
+		&.finish,
+		&.completed {
+			.dropdown-toggle {
+				background: $marker-color-default;
+				.goal-custom-color-1 & { background: $marker-color-custom-1; }
+				.goal-custom-color-2 & { background: $marker-color-custom-2; }
+				.goal-custom-color-3 & { background: $marker-color-custom-3; }
+	
+				&:hover {
+					background: darken($marker-color-default, 15%);
+					.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
+					.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
+					.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }					
+				}
+			}
+		}
+		
+
+		
+		&.milestone {
+			.dropdown-toggle {
+				$milestone-marker-size:15px;
+				transform: rotate(45deg);
+				width: $milestone-marker-size;
+				height: $milestone-marker-size;				
+			}
+		}
+	}
+
+	
+	&-dates {
+		position: relative;
+		height: 20px;
+		text-align: center;
+		margin: 0 0 .5rem;
+		left: $marker-size * -0.5;
+		@include flexbox();
+		@include flex-wrap(no-wrap);
+	}
+	
+	&-title {
+		font-family: $font-semibold;
+		@include flex(1);
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		margin: 0 .5rem;
+		//font-weight: bold;
+		
+
+	}
+	
+	&-tasks {
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		left: $marker-size * -0.5;
+		position: relative;
+		z-index: 2;
+		overflow: hidden;
+		
+		li {
+			i {
+				float: left;
+				margin-top: 4px;
+			}
+			> span {
+				display: block;
+				overflow: hidden;
+				
+				span {
+					white-space: nowrap;
+				}
+			}
+		}
+	}
+}

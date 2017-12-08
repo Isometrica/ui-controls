@@ -32,9 +32,9 @@ $( document ).ready(function() {
 		DASHBOARD - Goals collapse
 	*/
 	
-	$(".dashboard-goals-collapse-toggle").click(function() {
+	$(".goals-collapse-toggle").click(function() {
 		$(this).toggleClass("collapsed");
-		$(".dashboard-goals-collapse").collapse("toggle");
+		$(".goals-collapse").collapse("toggle");
 		return false;
 	});
 	
@@ -42,8 +42,8 @@ $( document ).ready(function() {
 		DASHBOARD - Goals dropdowns - reposition if not enough space
 	*/
 	
-	$(document).on("click", ".dashboard-goal .dropdown-toggle", function() {
-		var $goalsContainerWidth = $(".dashboard-goals").outerWidth();
+	$(document).on("click", ".goal .dropdown-toggle", function() {
+		var $goalsContainerWidth = $(".goals").outerWidth();
 		var $space = $goalsContainerWidth - $(this).offset().left;
 		//console.log($space);
 		if ($space < 160) {
