@@ -34,15 +34,16 @@
 }
 
 .goal {
-	margin-bottom: 1.25rem;
 	$marker-size: 16px;
-	position: relative;
-	padding: 0 $marker-size/2;
-
-	$marker-color-default: #373a3c;
+	$marker-border-size: 4px;
+	$marker-color-default: #777;
 	$marker-color-custom-1: #FCCF31;
 	$marker-color-custom-2: #94135E;
 	$marker-color-custom-3: #F0889C;
+		
+	margin-bottom: 1.25rem;
+	position: relative;
+	padding: 0 $marker-size/2;
 	
 	&-markers {
 		list-style: none;
@@ -60,8 +61,8 @@
 			left: $marker-size/2;
 			right: $marker-size/2;
 			top: 50%;
-			height: 2px;
-			margin-top: -1px;
+			height: 4px;
+			margin-top: -2px;
 			z-index: 1;
 			background: $marker-color-default;
 			.goal-custom-color-1 & { background: $marker-color-custom-1; }
@@ -87,7 +88,9 @@
 			top: 0;
 			display: block;
 			text-align: center;
-			border: 2px solid $marker-color-default;
+			border: 4px solid $marker-color-default;
+			transition: background-color 0.4s ease, border-color 0.4s ease;
+			
 			.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
 			.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
 			.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
@@ -146,10 +149,10 @@
 		
 		&.milestone {
 			.dropdown-toggle {
-				$milestone-marker-size:15px;
+				//$milestone-marker-size:15px;
 				transform: rotate(45deg);
-				width: $milestone-marker-size;
-				height: $milestone-marker-size;				
+				//width: $milestone-marker-size;
+				//height: $milestone-marker-size;				
 			}
 		}
 	}
