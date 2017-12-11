@@ -1784,6 +1784,19 @@ legend {
         .goal-custom-color-3 .goal-marker.finish .dropdown-toggle:hover,
         .goal-custom-color-3 .goal-marker.completed .dropdown-toggle:hover {
           background: #e74463; }
+    .goal-marker.start.arrow .dropdown-toggle,
+    .goal-marker.finish.arrow .dropdown-toggle,
+    .goal-marker.completed.arrow .dropdown-toggle {
+      background: transparent !important;
+      border-left-color: transparent !important;
+      border-bottom-color: transparent !important;
+      border-width: 8px;
+      border-radius: 0 !important;
+      transform: rotate(45deg);
+      width: 0;
+      height: 0;
+      right: 8px;
+      left: auto; }
     .goal-marker.milestone .dropdown-toggle {
       transform: rotate(45deg); }
   .goal-dates {
@@ -1791,7 +1804,6 @@ legend {
     height: 20px;
     text-align: center;
     margin: 0 0 0.5rem;
-    left: -8px;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -1801,6 +1813,10 @@ legend {
     -moz-flex-wrap: no-wrap;
     -ms-flex-wrap: no-wrap;
     flex-wrap: no-wrap; }
+    .goal-dates-start {
+      margin-left: -8px; }
+    .goal-dates-end {
+      margin-right: -8px; }
   .goal-title {
     font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     -webkit-box-flex: 1;

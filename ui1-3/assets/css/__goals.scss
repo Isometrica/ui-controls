@@ -143,6 +143,22 @@
 					.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }					
 				}
 			}
+			
+			&.arrow {
+				.dropdown-toggle {
+					background: transparent !important;
+					border-left-color: transparent !important;
+					border-bottom-color: transparent !important;
+					border-width: $marker-size/2;
+					border-radius: 0 !important;
+					transform: rotate(45deg);
+					width: 0;
+					height: 0;
+					right: $marker-size/2;
+					left: auto;
+					
+				}
+			}
 		}
 		
 
@@ -163,9 +179,17 @@
 		height: 20px;
 		text-align: center;
 		margin: 0 0 .5rem;
-		left: $marker-size * -0.5;
+		//left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
+		
+		&-start {
+			margin-left: $marker-size * -0.5;
+		}
+		
+		&-end {
+			margin-right: $marker-size * -0.5;
+		}
 	}
 	
 	&-title {
