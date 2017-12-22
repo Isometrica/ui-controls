@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+
+  <title>Plio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/libs/bootstrap-colorpicker/css/bootstrap-colorpicker.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+
+</head>
+<body ng-app="plio">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <span class="navbar-title dropdown">
+      <a class="dropdown-toggle" href="#" data-toggle="dropdown">
+        <img src="assets/img/plio-logo-white.png"/> <span class="text-muted">Design</span>
+      </a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item active" href="canvas.html">Design</a>
+        <a class="dropdown-item" href="index.html">Operations</a>
+      </div>   
+    </span>
+    <ul class="nav navbar-nav pull-xs-left">
+      <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+	        Clifton Asset Management
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item active" href="#">Clifton Asset Management</a>
+	        <a class="dropdown-item" href="#">FE International Ltd</a>
+	        <a class="dropdown-item" href="#">Ortus Technology</a>
+	        <a class="dropdown-item" href="#">Teamstudio Ltd</a>
+	        <div class="dropdown-divider"></div>
+	        <a class="dropdown-item" href="#">Org Settings</a>
+	      </div> 
+      </li>
+    </ul>
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+        	<i class="fa fa-circle text-success label-status"></i>
+        	<span>Stephen Ives</span> 
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <a class="dropdown-item active" href="#">
+            <i class="fa fa-circle text-success label-status"></i>
+            Online
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-circle text-warning label-status"></i>
+            Away
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-circle text-danger label-status"></i>
+            Offline
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            User preferences
+          </a>
+          <a class="dropdown-item" href="users.html">
+            User directory
+          </a>
+          <a class="dropdown-item" href="#invite-modal" data-toggle="modal">
+            Invite users
+          </a>
+          <a class="dropdown-item" href="subcards.html">
+            Standard subcards
+          </a>
+          <a class="dropdown-item" href="#">
+            Logout
+          </a>
+        </div> 
+      </li>
+    </ul> 
+    <!--
+    <ul class="nav navbar-nav pull-xs-right">
+      <li class="nav-item dropdown">
+	      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
+	        Business Model Canvas
+	      </a>
+	      <div class="dropdown-menu">
+	        <a class="dropdown-item active" href="#">Business Model Canvas</a>
+	        <a class="dropdown-item" href="#">Another Canvas Type</a>
+	        <a class="dropdown-item" href="#">Yet Another</a>
+	      </div>  
+      </li>
+    </ul>
+    -->
+  </div>
+
+  <div class="content">
+	  <div class="canvases">
+		  <ul class="nav canvases-nav">
+			  <li class="nav-item">
+			  	<a class="nav-link active" data-toggle="tab" href="#canvas-1">Business Model Canvas</a>
+			  </li>
+			  <li class="nav-item">
+			  	<a class="nav-link" data-toggle="tab" href="#canvas-2">Lean Canvas</a>
+			  </li>
+			  <li class="nav-item dropdown">
+			  	<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Add a canvas</a>
+			  	<div class="dropdown-menu">
+				  	<a href="#" class="dropdown-item disabled">Business Model Canvas</a>
+				  	<a href="#" class="dropdown-item">Internal Communication Canvas</a>
+				  	<a href="#" class="dropdown-item disabled">Lean Canvas</a>
+			  	</div>
+			  </li>
+		  </ul>		  
+		  <div class="tab-content" id="nav-tabContent">
+			  <div class="tab-pane fade in active" id="canvas-1">
+					<div class="canvas">
+						<div class="canvas-row canvas-row-2thirds">
+							<div class="canvas-col">
+								<div class="canvas-section">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Partnerships</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Who are our key partners/suppliers?</p>
+									<p class="canvas-section-help text-muted">Which Key Resources do they provide?</p>
+									<ul class="canvas-section-items">
+										<li>
+											<i class="fa fa-square canvas-item-color-1"></i> 
+											<span>Total Scientific Ltd</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-2"></i>
+											<span>Jackson Laboratory</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-3"></i>
+											<span>Boult (international patent lawyers)</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-1"></i>
+											<span>Clinical &amp; research collaborators (TBD, may include J. Cleland, A. Schapira, U. Newcastle)</span>
+										</li>
+									</ul>
+									<div class="canvas-section-footer">
+										<i class="fa fa-th-large pull-right text-muted"></i>
+										<span class="label label-muted">2K</span>
+										<span class="label label-muted">3R</span>
+										<span class="label label-muted">1S</span>
+									</div>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Key Activities</h4>
+									</div>
+									<p class="canvas-section-help text-muted">What are the key activities we need to create our Value Propositions?</p>
+									<ul class="canvas-section-items">
+										<li>
+											<i class="fa fa-square canvas-item-color-3"></i>
+											<span>mtDNA profiling (per disease)</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-1"></i> 
+											<span>In vivo validation</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-1"></i>
+											<span>Promotion to influencers &amp; investors</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-2"></i>
+											<span>In vitro target characterisation</span>
+										</li>
+										<li>
+											<i class="fa fa-square canvas-item-color-1"></i>
+											<span>Patent filing</span>
+										</li>
+									</ul>
+								</div>
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Key Resources</h4>
+									</div>
+									<p class="canvas-section-help text-muted">What Key Resources do our Key Activities require?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Value Propositions</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Which of our customer's problems are we helping to solve?</p>
+									<p class="canvas-section-help text-muted">What does a winning Value Proposition look like, vs today's?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Customer Relationships</h4>
+									</div>
+									<p class="canvas-section-help text-muted">What type of relationship do you want with customers?</p>
+									<p class="canvas-section-help text-muted">Which fits best with each Segment?</p>
+								</div>
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Channels</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Through which channels do each of our Segments want to be reached?</p>
+									<p class="canvas-section-help text-muted">Which ones are most cost-efficient?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Customer Segments</h4>
+									</div>
+									<p class="canvas-section-help text-muted">For whom are we creating value?</p>
+									<p class="canvas-section-help text-muted">Who are our most important customers?</p>
+								</div>
+							</div>
+						</div>
+						<div class="canvas-row canvas-row-1third">
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Cost Structure</h4>
+									</div>
+									<p class="canvas-section-help text-muted">What are the main elements of operational expense (including variable costs, inventory, WIP and capital assets)?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Revenue Streams</h4>
+									</div>
+									<p class="canvas-section-help text-muted">From which Channels and Segments?</p>
+									<p class="canvas-section-help text-muted">How much does each contribute to overall revenue?</p> 
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			  <div class="tab-pane fade" id="canvas-2">
+					<div class="canvas">
+						<div class="canvas-row canvas-row-2thirds">
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Problem</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Solution</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Key Metrics</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Unique Value Proposition</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Unfair Advantage</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Channels</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty" href="#customer-segment-edit-modal">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Customer Segments</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+						</div>
+						<div class="canvas-row canvas-row-1third">
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Cost Structure</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+							<div class="canvas-col">
+								<div class="canvas-section empty">
+									<div class="canvas-section-heading">
+										<i class="fa fa-plus pull-right text-muted"></i>
+										<h4>Revenue Streams</h4>
+									</div>
+									<p class="canvas-section-help text-muted">Lorem ipsum dolor est?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+			  </div>
+		  </div>
+		</div>
+  </div>
+
+  <!-- Non-conformity Edit Modal -->
+  <div ng-include="'includes/customer-segment-edit-modal.html'"></div>
+
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
+	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
+	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="assets/libs/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.0/autosize.min.js"></script>
+	
+	<script src="assets/js/app.js"></script>
+
+</body>
+</html>

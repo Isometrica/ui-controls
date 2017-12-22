@@ -23,6 +23,12 @@
     font-weight: normal;
     font-size: 18px;
     
+    img {
+	    height: 21px;
+			position: relative;
+			top: -3px;
+    }
+    
     .navbar-branded & {
       @media (min-width: 768px) {
         line-height: $navbar-height-branded;

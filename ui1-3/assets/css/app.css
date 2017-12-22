@@ -311,6 +311,10 @@ i.margin-right {
     font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     font-weight: normal;
     font-size: 18px; }
+    .navbar-title img {
+      height: 21px;
+      position: relative;
+      top: -3px; }
     @media (min-width: 768px) {
       .navbar-branded .navbar-title {
         line-height: 80px; } }
@@ -866,6 +870,8 @@ legend {
     background: #0078d7; }
   .label-info {
     background: #00BCF2; }
+  .label-muted {
+    background: #bbb; }
   .label-standard {
     float: left;
     height: 36px;
@@ -2984,3 +2990,280 @@ legend {
 
 #eAuditsAccordion > .list-group-collapse .list-group-collapse .list-group-item {
   padding-left: 2.5rem !important; }
+
+.canvases {
+  width: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+  .canvases-nav {
+    width: 100%;
+    padding: 0;
+    min-height: 50px;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+    background: #666;
+    z-index: 3;
+    position: relative; }
+    .canvases-nav > li {
+      display: inline-block;
+      line-height: 20px;
+      padding: 15px; }
+      .canvases-nav > li > a {
+        color: #bbb;
+        transition: color 0.4s ease;
+        text-decoration: none !important; }
+        .canvases-nav > li > a[data-toggle="tab"] {
+          font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+        .canvases-nav > li > a:hover {
+          color: #ddd; }
+        .canvases-nav > li > a.active {
+          color: #373a3c;
+          color: white; }
+  .canvases .tab-content {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    position: relative; }
+    .canvases .tab-content .tab-pane {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      overflow-x: hidden;
+      overflow-y: auto;
+      -webkit-overflow-scrolling: touch; }
+
+.canvas {
+  background: white;
+  border: 1px solid #aaa;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-direction: normal;
+  -webkit-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -moz-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  min-height: 100%; }
+  .canvas-row {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1; }
+    .canvas-row-1third {
+      min-height: 33.33333%; }
+    .canvas-row-2thirds {
+      min-height: 66.66666%; }
+  .canvas-col {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+  .canvas-section {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+    -moz-box-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
+    min-height: 200px;
+    border: 2px solid #aaa;
+    transition: background-color 0.4s ease, border-color 0.4s ease;
+    margin: -1px;
+    z-index: 1;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-direction: normal;
+    -webkit-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column; }
+    .canvas-section.empty .canvas-section-help {
+      display: block; }
+    .canvas-section.empty:hover {
+      cursor: pointer;
+      background: #f5f5f5;
+      border-color: #0078d7;
+      z-index: 2; }
+      .canvas-section.empty:hover i {
+        color: #0078d7; }
+    .canvas-section-heading {
+      padding: 1rem; }
+      .canvas-section-heading h4 {
+        font-size: 18px;
+        line-height: 1.2;
+        font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+        margin: 0; }
+    .canvas-section-help {
+      display: none;
+      padding: 0px 1rem;
+      margin: 0 0 0.5rem; }
+    .canvas-section i {
+      font-size: 18px;
+      transition: color 0.4s ease;
+      margin: 3px; }
+      .canvas-section i:hover {
+        cursor: pointer;
+        color: #0078d7; }
+    .canvas-section .fa-th-large {
+      font-size: 18px; }
+    .canvas-section-items {
+      list-style: none;
+      margin: 0;
+      padding: 0px 1rem;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      overflow-x: hidden;
+      overflow-y: auto; }
+      .canvas-section-items li {
+        margin: 0 -0.5rem 0.5rem;
+        border-radius: 3px;
+        transition: background 0.4s ease;
+        padding: 0 0.5rem;
+        cursor: move; }
+        .canvas-section-items li:hover {
+          background: #eee; }
+        .canvas-section-items li.placeholder {
+          position: relative;
+          height: 21px;
+          border: 1px dashed #ddd;
+          /** More li styles **/ }
+        .canvas-section-items li.placeholder:before {
+          position: absolute;
+          /** Define arrowhead **/ }
+        .canvas-section-items li i {
+          float: left;
+          margin-right: 8px;
+          margin-top: 4px; }
+          .canvas-section-items li i.canvas-item-color-1 {
+            color: #FCCF31; }
+          .canvas-section-items li i.canvas-item-color-2 {
+            color: #94135E; }
+          .canvas-section-items li i.canvas-item-color-3 {
+            color: #F0889C; }
+        .canvas-section-items li span {
+          overflow: hidden;
+          display: block; }
+    .canvas-section-footer {
+      padding: 1rem; }
+
+/*
+	Sortable plugin CSS
+*/
+body.dragging, body.dragging * {
+  cursor: move !important; }
+  body.dragging .canvas-section li, body.dragging * .canvas-section li {
+    background: transparent !important; }
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000; }
+
+/*
+	Value proposition canvas
+*/
+.valuepropositioncanvas {
+  padding-bottom: 50%;
+  height: 0;
+  overflow: hidden;
+  position: relative; }
+  .valuepropositioncanvas-valueproposition {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 2px;
+    overflow: hidden; }
+    .valuepropositioncanvas-valueproposition-gaincreators:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 50%;
+      border-bottom: 2px solid black; }
+    .valuepropositioncanvas-valueproposition-painrelievers:before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      height: 50%; }
+    .valuepropositioncanvas-valueproposition-products:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: -70.25%;
+      height: 100%;
+      width: 100%;
+      border: 2px solid black;
+      transform: rotate(45deg);
+      background: white; }
+  .valuepropositioncanvas-customersegment {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 50%;
+    height: 100%;
+    border: 2px solid black;
+    border-radius: 50%; }

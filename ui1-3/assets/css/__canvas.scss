@@ -1,0 +1,321 @@
+$canvas-border-color: #aaa;
+$canvas-item-color-1: #FCCF31;
+$canvas-item-color-2: #94135E;
+$canvas-item-color-3: #F0889C;
+$canvas-section-padding: 1rem;
+
+.canvases {
+	//max-width: 1400px;
+	//padding: 15px;
+	width: 100%;
+	@include flexbox();
+	@include flex();
+	@include flex-direction(column);		
+	//overflow: hidden;
+
+	&-nav {
+		width: 100%;
+		padding: 0;
+		min-height: 50px;
+		margin: 0;
+		list-style: none;
+		text-align: center;
+		background: #666;
+		z-index: 3;
+		position: relative;
+		
+		> li {
+			display: inline-block;
+			line-height: 20px;
+			padding: 15px;
+			
+			> a {
+				
+				color: #bbb;
+				transition: color 0.4s ease;
+				text-decoration: none !important;
+				
+				&[data-toggle="tab"] {
+					font-family: $font-semibold;
+				}
+				
+				&:hover {
+					color: #ddd;
+				}
+				&.active {
+					color: $body-color;
+					color: white;
+				}
+
+			}
+			
+
+		}
+	}
+
+	.tab-content {
+		@include flex();
+		position: relative;
+		
+		.tab-pane {
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			overflow-x: hidden;
+			overflow-y: auto;
+			-webkit-overflow-scrolling: touch;
+		}
+	}
+}
+
+.canvas {
+	background: white;
+	border: 1px solid $canvas-border-color;
+	@include flexbox();
+	@include flex-direction(column);
+	@include flex();
+	min-height: 100%;
+	//margin: -2px;
+	//min-height: 100%;
+	
+
+	
+
+	
+
+	
+	&-row {
+		@include flexbox();
+		@include flex();
+		
+		&-1third {
+			min-height: 33.33333%;
+		}
+		
+		&-2thirds {
+			min-height: 66.66666%;
+		}
+	}
+	
+	&-col {
+		@include flex();
+		@include flexbox();
+		@include flex-direction(column);
+	}
+	
+	&-section {
+		@include flex();
+		min-height: 200px;
+		border: 2px solid $canvas-border-color;
+		transition: background-color 0.4s ease, border-color 0.4s ease;
+		margin: -1px;
+		z-index: 1;
+		@include flexbox();
+		@include flex-direction(column);
+
+		&.empty {
+			.canvas-section-help {
+				display: block;
+			}
+			
+			&:hover {
+				cursor: pointer;
+				background: #f5f5f5;
+				border-color: $blue-color;
+				z-index: 2;
+				
+				i {
+					color: $blue-color;
+					
+				}
+			}			
+		}
+		
+		&-heading {
+			padding: $canvas-section-padding;
+
+			h4 {
+				font-size: 18px;
+				line-height: 1.2;
+				font-family: $font-semibold;
+				margin: 0;
+			}
+		}
+		
+
+		
+
+		
+		&-help {
+			display: none;
+			padding: 0px $canvas-section-padding;
+			margin: 0 0 .5rem;
+		}
+		
+		i {
+			font-size: 18px;
+			transition: color 0.4s ease;
+			margin: 3px;
+			
+			&:hover {
+				cursor: pointer;
+				color: $blue-color;
+			}
+		}
+		
+		.fa-th-large {
+			font-size: 18px;
+		}
+
+		&-items {
+			list-style: none;
+			margin: 0;
+			padding: 0px $canvas-section-padding;
+			@include flex();
+			overflow-x: hidden;
+			overflow-y: auto;
+					
+			li {
+				margin: 0 -0.5rem .5rem;
+				border-radius: 3px;
+				transition: background 0.4s ease;
+				padding: 0 0.5rem;
+				cursor: move;
+				
+				&:hover {
+					background: #eee;
+				}
+				
+				&.placeholder {
+				  position: relative;
+				  height: 21px;
+				  border: 1px dashed #ddd;
+				  
+				  /** More li styles **/
+				}
+				&.placeholder:before {
+				  position: absolute;
+				  /** Define arrowhead **/
+				}
+				
+				i {
+					float: left;
+					margin-right: 8px;
+					margin-top: 4px;
+
+					&.canvas-item {
+						&-color {
+							&-1 {
+								color: $canvas-item-color-1;
+							}
+							&-2 {
+								color: $canvas-item-color-2;
+							}
+							&-3 {
+								color: $canvas-item-color-3;
+							}
+						}
+					}
+				}
+				
+				span {
+					overflow: hidden;
+					display: block;
+				}
+			}
+		}
+		
+		&-footer {
+			padding: $canvas-section-padding;
+		}
+	}
+}
+
+/*
+	Sortable plugin CSS
+*/
+
+body.dragging, body.dragging * {
+  cursor: move !important;
+  
+  .canvas-section li {
+	  background: transparent !important;
+  }
+}
+
+.dragged {
+  position: absolute;
+  opacity: 0.5;
+  z-index: 2000;
+}
+
+
+/*
+	Value proposition canvas
+*/
+.valuepropositioncanvas {
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	
+	&-valueproposition {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		border: 2px solid black;
+		border-radius: 2px;
+		overflow: hidden;
+		
+		&-gaincreators {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 50%;
+				border-bottom: 2px solid black;				
+			}
+		}
+		
+		&-painrelievers {
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 50%;
+			}
+		}
+		
+		&-products {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -70.25%;
+				height: 100%;
+				width: 100%;
+				border: 2px solid black;
+				transform: rotate(45deg);
+				background: white;
+			}
+		}
+	}
+	
+	&-customersegment {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		border: 2px solid black;
+		border-radius: 50%;
+	}
+}

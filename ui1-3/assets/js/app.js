@@ -644,6 +644,27 @@ $( document ).ready(function() {
   $(document).on("shown.bs.collapse", "#response-sets", function() {
     $('.colorpicker-component').colorpicker();
   });
+  
+  /*
+	  Autosize textareas
+	*/
+	autosize($('textarea.autosize'));
+  
+  
+  /*
+	  CANVAS
+	*/
+	
+	// Sortable lists for items 
+  $('.canvas-section-items').sortable();
+	
+	// Customer segments modal
+	$(document).on("shown.bs.modal", "#customer-segment-edit-modal", function() {
+		// Colorpicker
+    $('.colorpicker-component').colorpicker();
+    // Autosize
+    autosize($('textarea.autosize'));
+  });
 
 });
 

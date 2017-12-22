@@ -20,6 +20,9 @@
   &-info {
     background: $light-blue-color;
   }
+  &-muted {
+    background: #bbb;
+  }
 
   &-standard {
     $label-standard-size: 36px;
