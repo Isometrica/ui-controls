@@ -58,7 +58,7 @@
               <label class="form-control-label col-sm-4 col-xs-12">Market size</label>
               <div class="col-sm-8 col-xs-12">
 	              <div class="input-group" style="max-width: 90px">
-                	<input type="text" class="form-control" placeholder="Target date" value="25">
+                	<input type="text" class="form-control" placeholder="Target date" value="25"/>
                 	<span class="input-group-addon">%</span>
 	              </div>
               </div>
@@ -70,112 +70,42 @@
               </div>
             </div>
           </div>
-					<hr>
-					<div class="valuepropositioncanvas">
-						<div class="valuepropositioncanvas-valueproposition">
-							<div class="valuepropositioncanvas-valueproposition-gaincreators">
-								<strong>Gain creators</strong>
-								<span class="text-muted">2/3 matched</span>
-							</div>
-							<div class="valuepropositioncanvas-valueproposition-painrelievers">
-								<strong>Pains relievers</strong>
-								<span class="text-muted">2/4 matched</span>
-							</div>
-							<div class="valuepropositioncanvas-valueproposition-products">
-								<strong>Products &amp; services</strong>
-								<span class="text-muted">4</span>
-							</div>
-						</div>
-						<div class="valuepropositioncanvas-customersegment">
-							<div class="valuepropositioncanvas-customersegment-gains">
-								<strong>Gains</strong>
-								<span class="text-muted">2/3 matched</span>
-							</div>
-							<div class="valuepropositioncanvas-customersegment-pains">
-								<strong>Pains</strong>
-								<span class="text-muted">2/4 matched</span>
-							</div>
-							<div class="valuepropositioncanvas-customersegment-jobs">
-								<strong>Customer jobs</strong>
-								<span class="text-muted">3</span>
-							</div>
+					<hr/>
+					<div class="valuepropositioncanvas">					
+					  <div ng-include="'includes/subcards-edit/customersegment-pains.html'"></div>
+					  <div ng-include="'includes/subcards-edit/customersegment-gains.html'"></div>
+					  <div ng-include="'includes/subcards-edit/customersegment-jobs.html'"></div>			
+						<div class="valuepropositioncanvas-chart">
+							<div ng-include="'includes/subcards-edit/customersegment-chart.html'"></div>
 						</div>
 					</div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#root-cause-analysis" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Root cause analysis</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-          </div>
-          <div class="card-block-collapse collapse" id="root-cause-analysis">
-            <div ng-include="'includes/subcards-edit/root-cause-analysis.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Notify</h4>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#questions" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Questions to ask</h4>
             <h4 class="card-title pull-xs-right">
-              <span class="text-muted">2</span>
+              <span class="text-muted">3</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="notify">
-            <div ng-include="'includes/subcards-edit/notify.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#occurrences" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Occurrences</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="occurrences">
-            <div ng-include="'includes/subcards-edit/occurrences.html'"></div>
-          </div>
-          
-          <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Corrective actions</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="corrective-actions">
-            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#preventative-actions" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Preventative actions</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="preventative-actions">
-            <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Improvement plan</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
-          </div>
-          <div class="card-block-collapse collapse" id="improvement-plan">
-            <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Lessons learned</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">1</span>
-              <span class="label label-warning status-indicator"></span> 
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse" id="lessons">
-            <div ng-include="'includes/subcards-edit/lessons.html'"></div>
+          <div class="card-block card-block-collapse-toggle collapsed" href="#manage" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Actively manage</h4>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#files" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Other files</h4>
+            <h4 class="card-title pull-xs-left">Files</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">2</span>
             </h4>
           </div>
           <div class="card-block-collapse collapse" id="files">
             <div ng-include="'includes/subcards-edit/files.html'"></div>
-          </div>         
-          <div class="card-block text-xs-center">
-            <button type="button" class="btn btn-secondary">Delete</button>
+          </div> 
+          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+            <h4 class="card-title pull-xs-left">Notify changes</h4>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">2</span>
+            </h4>
           </div>
+          <div class="card-block-collapse collapse" id="notify">
+            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+          </div>         
         </form>
       </div>
     </div>

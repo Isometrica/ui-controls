@@ -3221,49 +3221,120 @@ body.dragging, body.dragging * {
 	Value proposition canvas
 */
 .valuepropositioncanvas {
-  padding-bottom: 50%;
-  height: 0;
-  overflow: hidden;
-  position: relative; }
-  .valuepropositioncanvas-valueproposition {
+  position: relative;
+  min-height: 300px;
+  overflow: hidden; }
+  .valuepropositioncanvas #gains, .valuepropositioncanvas #pains, .valuepropositioncanvas #jobs {
+    display: none !important; }
+  .valuepropositioncanvas #gains,
+  .valuepropositioncanvas #pains {
+    margin-right: 170px; }
+  .valuepropositioncanvas #jobs {
+    margin-left: 170px; }
+  .valuepropositioncanvas-chart {
+    width: 300px;
     position: absolute;
-    left: 0;
+    left: 50%;
+    margin-left: -150px;
     top: 0;
-    width: 50%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 2px;
-    overflow: hidden; }
-    .valuepropositioncanvas-valueproposition-gaincreators:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      height: 50%;
-      border-bottom: 2px solid black; }
-    .valuepropositioncanvas-valueproposition-painrelievers:before {
-      content: '';
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      height: 50%; }
-    .valuepropositioncanvas-valueproposition-products:before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: -70.25%;
-      height: 100%;
-      width: 100%;
-      border: 2px solid black;
-      transform: rotate(45deg);
-      background: white; }
-  .valuepropositioncanvas-customersegment {
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-    border: 2px solid black;
-    border-radius: 50%; }
+    transition: left 1s ease, margin-left 1s ease; }
+  .valuepropositioncanvas.show-gains #customersegmentschart-gains {
+    fill: #eee; }
+  .valuepropositioncanvas.show-gains .valuepropositioncanvas-chart {
+    left: 100%;
+    margin-left: -170px; }
+  .valuepropositioncanvas.show-gains #gains {
+    display: block !important; }
+  .valuepropositioncanvas.show-pains #customersegmentschart-pains {
+    fill: #eee; }
+  .valuepropositioncanvas.show-pains .valuepropositioncanvas-chart {
+    left: 100%;
+    margin-left: -170px; }
+  .valuepropositioncanvas.show-pains #pains {
+    display: block !important; }
+  .valuepropositioncanvas.show-customerJobs #customersegmentschart-customerJobs {
+    fill: #eee; }
+  .valuepropositioncanvas.show-customerJobs .valuepropositioncanvas-chart {
+    left: 0%;
+    margin-left: -130px; }
+  .valuepropositioncanvas.show-customerJobs #jobs {
+    display: block !important; }
+  .valuepropositioncanvas text {
+    font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif !important;
+    pointer-events: none !important; }
+  .valuepropositioncanvas #customersegmentschart-gains,
+  .valuepropositioncanvas #customersegmentschart-pains,
+  .valuepropositioncanvas #customersegmentschart-customerJobs {
+    cursor: pointer; }
+    .valuepropositioncanvas #customersegmentschart-gains:hover,
+    .valuepropositioncanvas #customersegmentschart-pains:hover,
+    .valuepropositioncanvas #customersegmentschart-customerJobs:hover {
+      fill: #eee;
+      transition: all 0.4s ease; }
+
+/* HTML/CSS version
+.valuepropositioncanvas {
+	padding-bottom: 50%;
+	height: 0;
+	overflow: hidden;
+	position: relative;
+	
+	&-valueproposition {
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		border: 2px solid black;
+		border-radius: 2px;
+		overflow: hidden;
+		
+		&-gaincreators {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				height: 50%;
+				border-bottom: 2px solid black;				
+			}
+		}
+		
+		&-painrelievers {
+			&:before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				right: 0;
+				height: 50%;
+			}
+		}
+		
+		&-products {
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -70.25%;
+				height: 100%;
+				width: 100%;
+				border: 2px solid black;
+				transform: rotate(45deg);
+				background: white;
+			}
+		}
+	}
+	
+	&-customersegment {
+		position: absolute;
+		right: 0;
+		top: 0;
+		width: 50%;
+		height: 100%;
+		border: 2px solid black;
+		border-radius: 50%;
+	}
+}
+*/

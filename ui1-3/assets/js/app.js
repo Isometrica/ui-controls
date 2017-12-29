@@ -665,6 +665,24 @@ $( document ).ready(function() {
     // Autosize
     autosize($('textarea.autosize'));
   });
+  
+  
+  
+  /*
+	  CUSTOMER SEGMENTS CHART
+	*/
+	
+	$(document).on("click", "#customersegmentschart-pains", function() {
+		$(".valuepropositioncanvas").removeClass("show-gains").removeClass("show-customerJobs").toggleClass("show-pains");
+	});
+	
+	$(document).on("click", "#customersegmentschart-gains", function() {
+		$(".valuepropositioncanvas").removeClass("show-pains").removeClass("show-customerJobs").toggleClass("show-gains");
+	});
+	
+	$(document).on("click", "#customersegmentschart-customerJobs", function() {
+		$(".valuepropositioncanvas").removeClass("show-pains").removeClass("show-gains").toggleClass("show-customerJobs");
+	});
 
 });
 

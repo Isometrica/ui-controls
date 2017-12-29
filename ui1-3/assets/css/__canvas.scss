@@ -255,6 +255,71 @@ body.dragging, body.dragging * {
 /*
 	Value proposition canvas
 */
+
+.valuepropositioncanvas {
+	position: relative;
+	min-height: 300px;
+	overflow: hidden;
+	
+	#gains, #pains, #jobs {
+		display: none !important;
+	}
+	
+	#gains,
+	#pains {
+		margin-right: 170px;		
+	}
+	
+	#jobs {
+		margin-left: 170px;
+	}
+	
+	&-chart {
+		width: 300px;
+		position: absolute;
+		left: 50%;
+		margin-left: -150px;
+		top: 0;
+		transition: left 1s ease, margin-left 1s ease;
+	}
+	
+	&.show-gains {
+		#customersegmentschart-gains { fill: #eee; }
+		.valuepropositioncanvas-chart { left: 100%; margin-left: -170px; }
+		#gains { display: block !important;}
+	} 
+	
+	&.show-pains {
+		#customersegmentschart-pains { fill: #eee; }
+		.valuepropositioncanvas-chart { left: 100%; margin-left: -170px; }
+		#pains { display: block !important; }
+	} 
+	
+	&.show-customerJobs {
+		#customersegmentschart-customerJobs { fill: #eee; }
+		.valuepropositioncanvas-chart { left: 0%; margin-left: -130px; }	
+		#jobs { display: block !important;  }
+	} 	
+	
+	text {
+		font-family: $font-semibold !important;
+		pointer-events: none !important;
+	}
+	
+	#customersegmentschart {
+		&-gains,
+		&-pains,
+		&-customerJobs {
+			cursor: pointer;
+			&:hover {
+				fill:#eee;
+				transition: all 0.4s ease;
+			}			
+		}
+	}
+}
+
+/* HTML/CSS version
 .valuepropositioncanvas {
 	padding-bottom: 50%;
 	height: 0;
@@ -319,3 +384,4 @@ body.dragging, body.dragging * {
 		border-radius: 50%;
 	}
 }
+*/
