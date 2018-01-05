@@ -659,7 +659,7 @@ $( document ).ready(function() {
   $('.canvas-section-items').sortable();
 	
 	// Customer segments modal
-	$(document).on("shown.bs.modal", "#customer-segment-edit-modal", function() {
+	$(document).on("shown.bs.modal", ".modal", function() {
 		// Colorpicker
     $('.colorpicker-component').colorpicker();
     // Autosize
@@ -673,15 +673,50 @@ $( document ).ready(function() {
 	*/
 	
 	$(document).on("click", "#customersegmentschart-pains", function() {
-		$(".valuepropositioncanvas").removeClass("show-gains").removeClass("show-customerJobs").toggleClass("show-pains");
+		$(this).closest(".customersegmentcanvas").removeClass("show-gains").removeClass("show-customerJobs").toggleClass("show-pains");
 	});
 	
 	$(document).on("click", "#customersegmentschart-gains", function() {
-		$(".valuepropositioncanvas").removeClass("show-pains").removeClass("show-customerJobs").toggleClass("show-gains");
+		$(this).closest(".customersegmentcanvas").removeClass("show-pains").removeClass("show-customerJobs").toggleClass("show-gains");
 	});
 	
 	$(document).on("click", "#customersegmentschart-customerJobs", function() {
-		$(".valuepropositioncanvas").removeClass("show-pains").removeClass("show-gains").toggleClass("show-customerJobs");
+		$(this).closest(".customersegmentcanvas").removeClass("show-pains").removeClass("show-gains").toggleClass("show-customerJobs");
+	});
+	
+	/*
+	  VALUE PROPOSITION CHART
+	*/
+	
+	$(document).on("click", "#valuepropositionchart-painRelievers", function() {
+		$(this).closest(".valuepropositioncanvas").removeClass("show-gainCreators").removeClass("show-productsAndServices").toggleClass("show-painRelievers");
+	});
+	
+	$(document).on("click", "#valuepropositionchart-gainCreators", function() {
+		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-productsAndServices").toggleClass("show-gainCreators");
+	});
+	
+	$(document).on("click", "#valuepropositionchart-productsAndServices", function() {
+		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-gaincCreators").toggleClass("show-productsAndServices");
+	});
+	
+	// Switch views: Match/Canvas
+	
+	$(document).on("click", ".valuepropositioncanvas .btn-match", function(e) {
+		e.preventDefault();
+		$("#valueproposition-match-tab").tab('show');
+	});
+	$(document).on("click", ".valuepropositioncanvas .btn-canvas", function(e) {
+		e.preventDefault();
+		$("#valueproposition-canvas-tab").tab('show');
+	});
+	$(document).on("click", ".customersegmentcanvas .btn-match", function(e) {
+		e.preventDefault();
+		$("#customersegment-match-tab").tab('show');
+	});
+	$(document).on("click", ".customersegmentcanvas .btn-canvas", function(e) {
+		e.preventDefault();
+		$("#customersegment-canvas-tab").tab('show');
 	});
 
 });

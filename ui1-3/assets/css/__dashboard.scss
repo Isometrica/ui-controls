@@ -41,6 +41,7 @@
   cursor: pointer;
   @include transition(all .3s ease);
   text-decoration: none !important;
+  border-color: #aaa;
   
   @media (max-width:767px) {
     margin-bottom: 0;  

@@ -1,4 +1,4 @@
-  <div class="modal fade" id="customer-segment-edit-modal">
+  <div class="modal fade" id="value-proposition-edit-modal">
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
@@ -15,7 +15,7 @@
       				Save
       			</button>
           </div>
-          <h4 class="card-title">Customer segment</h4>
+          <h4 class="card-title">Value proposition</h4>
         </div>
         <div ng-include="'includes/guidance-panel.html'"></div>
         <form>
@@ -71,34 +71,34 @@
             </div>
           </div>
 					<hr/>
-					<!-- start: CUSTOMER SEGMENT CANVAS -->
-					<div class="customersegmentcanvas">
-						<!-- start: CUSTOMER SEGMENT CANVAS - TABS (HIDDEN) -->
+					<!-- start: VALUE PROPOSITION CANVAS -->
+					<div class="valuepropositioncanvas">
+						<!-- start: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
 						<ul class="nav nav-tabs hidden-xs-up" id="myTab" role="tablist">
 						  <li class="nav-item">
-						    <a class="nav-link active" id="customersegment-canvas-tab" data-toggle="tab" href="#customersegment-canvas" role="tab" aria-controls="canvas" aria-selected="true">Canvas view</a>
+						    <a class="nav-link active" id="valueproposition-canvas-tab" data-toggle="tab" href="#valueproposition-canvas" role="tab" aria-controls="canvas" aria-selected="true">Canvas view</a>
 						  </li>
 						  <li class="nav-item">
-						    <a class="nav-link" id="customersegment-match-tab" data-toggle="tab" href="#customersegment-match" role="tab" aria-controls="match" aria-selected="false">Match view</a>
+						    <a class="nav-link" id="valueproposition-match-tab" data-toggle="tab" href="#valueproposition-match" role="tab" aria-controls="match" aria-selected="false">Match view</a>
 						  </li>
 						</ul>
-						<!-- end: CUSTOMER SEGMENT CANVAS - TABS (HIDDEN) -->
+						<!-- end: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
 						<div class="tab-content">
-						  <div class="tab-pane fade in active" id="customersegment-canvas">
-								<!-- start: CUSTOMER SEGMENT CANVAS - CANVAS VIEW -->
+						  <div class="tab-pane fade in active" id="valueproposition-canvas">
+								<!-- start: VALUE PROPOSITION CANVAS - CANVAS VIEW -->
 								<a class="btn btn-secondary btn-match">Match</a>				
-							  <div ng-include="'includes/subcards-edit/customersegment-pains.html'"></div>
-							  <div ng-include="'includes/subcards-edit/customersegment-gains.html'"></div>
-							  <div ng-include="'includes/subcards-edit/customersegment-jobs.html'"></div>			
+							  <div ng-include="'includes/subcards-edit/valueproposition-painrelievers.html'"></div>
+							  <div ng-include="'includes/subcards-edit/valueproposition-gaincreators.html'"></div>
+							  <div ng-include="'includes/subcards-edit/valueproposition-products.html'"></div>			
 								<div class="valuepropositioncanvas-canvas">
-									<div ng-include="'includes/subcards-edit/customersegment-canvas.html'"></div>
+									<div ng-include="'includes/subcards-edit/valueproposition-canvas.html'"></div>
 								</div>
-								<!-- end: CUSTOMER SEGMENT CANVAS - CANVAS VIEW -->							  
+								<!-- end: VALUE PROPOSITION CANVAS - CANVAS VIEW -->							  
 						  </div>
-						  <div class="tab-pane fade" id="customersegment-match">
-							  <!-- start: CUSTOMER SEGMENT CANVAS - MATCH VIEW -->		
+						  <div class="tab-pane fade" id="valueproposition-match">
+							  <!-- start: VALUE PROPOSITION CANVAS - MATCH VIEW -->		
 							  <div ng-include="'includes/subcards-edit/valueproposition-match.html'"></div>
-							  <!-- end: CUSTOMER SEGMENT CANVAS - MATCH VIEW -->
+							  <!-- end: VALUE PROPOSITION CANVAS - MATCH VIEW -->
 						  </div>
 						</div>
 						

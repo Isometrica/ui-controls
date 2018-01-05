@@ -131,8 +131,12 @@
 
 }
 
- @mixin mobile {
+@mixin mobile {
    @media (max-width:767px) { @content ; }
+}
+
+@mixin not-mobile {
+   @media (min-width:768px) { @content ; }
 }
 
 @mixin placeholder {

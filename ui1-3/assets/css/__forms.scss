@@ -138,6 +138,23 @@
     &.indent {
       padding-left: 30px;
     }
+    
+    &.checked {
+	    padding-right: 40px;
+	    position: relative;
+	    
+	    &:after {
+		    position: absolute;
+		    content: "\f00c"; // Checkmark
+		    font-family: "FontAwesome";
+		    right: 15px;
+		    top: 50%;
+		    font-size: 12px;
+		    line-height: 1;
+		    margin-top: -6px;
+		    color: $blue-color;
+	    }
+    }
   }
   &-header {
     margin-bottom: 0;
