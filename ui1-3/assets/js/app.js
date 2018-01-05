@@ -27,6 +27,17 @@ $( document ).ready(function() {
 	}
 	
 	
+	/*
+		SUBCARDS ACCORDION
+	*/
+	
+	
+	
+	$(document).on("click", ".card-block-collapse-toggle", function() {
+		// Toggle state
+		$(this).toggleClass("collapsed").next(".card-block-collapse").collapse("toggle");
+	});
+	
 	
 	/*
 		DASHBOARD - Goals collapse
