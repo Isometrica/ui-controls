@@ -33,8 +33,9 @@ $( document ).ready(function() {
 	
 	
 	
-	$(document).on("click", ".card-block-collapse-toggle", function() {
+	$(document).on("click", ".card-block-collapse-toggle", function(e) {
 		// Toggle state
+		e.preventDefault();
 		$(this).toggleClass("collapsed").next(".card-block-collapse").collapse("toggle");
 	});
 	
