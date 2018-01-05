@@ -28,7 +28,13 @@ $canvas-section-padding: 1rem;
 	}
 	
 	&-row {
-		@include not-mobile {
+		@include tablet-portrait {
+			@include flexbox();
+			@include flex();
+			@include flex-wrap(wrap);
+		}
+		
+		@include desktop {
 			@include flexbox();
 			@include flex();
 			
@@ -43,10 +49,32 @@ $canvas-section-padding: 1rem;
 	}
 	
 	&-col {
-		@include not-mobile {
-			@include flex();
-			@include flexbox();
-			@include flex-direction(column);
+		@include flexbox();
+		@include flex-direction(column);
+		@include flex();
+		
+		&-sm {
+			width: 100%;
+			
+			@include not-mobile {
+				@include flexbox();
+				@include flex-direction(column);
+				@include flex();
+			}			
+		}
+		
+		&-md {
+			width: 100%;
+			
+			@include tablet-portrait {
+				@include flexbox();
+			}
+			
+			@include desktop {
+				@include flexbox();
+				@include flex();
+				@include flex-direction(column);
+			}			
 		}
 	}
 	
