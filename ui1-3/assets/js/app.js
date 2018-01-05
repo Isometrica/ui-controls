@@ -697,7 +697,7 @@ $( document ).ready(function() {
 	});
 	
 	$(document).on("click", "#valuepropositionchart-productsAndServices", function() {
-		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-gaincCreators").toggleClass("show-productsAndServices");
+		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-gainCreators").toggleClass("show-productsAndServices");
 	});
 	
 	// Switch views: Match/Canvas
