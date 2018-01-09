@@ -3224,12 +3224,14 @@ legend {
       padding: 0px 1rem;
       margin: 0 0 0.5rem; }
     .canvas-section .fa-plus,
-    .canvas-section .fa-th-large {
+    .canvas-section .fa-th-large,
+    .canvas-section .fa-pie-chart {
       font-size: 18px;
       transition: color 0.4s ease;
       margin: 3px; }
       .canvas-section .fa-plus:hover,
-      .canvas-section .fa-th-large:hover {
+      .canvas-section .fa-th-large:hover,
+      .canvas-section .fa-pie-chart:hover {
         cursor: pointer;
         color: #0078d7; }
     .canvas-section-items {

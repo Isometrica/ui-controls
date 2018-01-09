@@ -216,13 +216,34 @@
 				</div>
 				<div class="canvas-row canvas-row-1third">
 					<div class="canvas-col-sm">
-						<div class="canvas-section empty">
+						<div class="canvas-section">
 							<div class="canvas-section-heading">
 								<i class="fa fa-plus pull-right text-muted"></i>
 								<h4>Cost Structure</h4>
 							</div>
 							<div class="canvas-section-help text-muted">
 								<p>What are the main elements of operational expense (including variable costs, inventory, WIP and capital assets)?</p>
+							</div>
+							<ul class="canvas-section-items">
+								<li>
+									<i class="fa fa-square canvas-item-color-3"></i> 
+									<span>Staff costs (R&amp;D, operational)</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-2"></i>
+									<span>Outsourced contract research</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-1"></i>
+									<span>Outsourced DNA sequencing</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-3"></i>
+									<span>Patenting costs</span>
+								</li>
+							</ul>
+							<div class="canvas-section-footer">
+								<i class="fa fa-pie-chart pull-right text-muted" data-toggle="modal" data-target="#cost-structure-chart-modal"></i>
 							</div>
 						</div>
 					</div>
@@ -251,6 +272,9 @@
   
   <!-- Customer Segment Edit Modal -->
   <div ng-include="'includes/customer-segment-edit-modal.html'"></div>
+  
+  <!-- Cost Structure Chart Modal -->
+  <div ng-include="'includes/cost-structure-chart-modal.html'"></div>
 
 
 	<!-- JS -->
@@ -263,6 +287,7 @@
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.0/autosize.min.js"></script>
 	<script src="assets/js/app.js"></script>
+	<script src="assets/js/canvas.js"></script>
 
 </body>
 </html>
