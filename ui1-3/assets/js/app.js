@@ -731,6 +731,146 @@ $( document ).ready(function() {
 		$("#customersegment-canvas-tab").tab('show');
 	});
 
+
+
+
+	/* 
+		PARTNERSHIPS CHART
+	*/
+	
+	function showPartnershipsChart() {
+		var ctx = $(".chart-wrapper canvas");
+		var scatterChart = new Chart(ctx, {
+	    type: 'scatter',
+	    data: {
+        datasets: [
+        {
+          label: 'Total Scientific Ltd',
+          pointRadius: 10,
+          pointHoverRadius: 12,
+          pointBorderWidth: 0,
+          borderColor: "#F0889C",
+          backgroundColor: "#F0889C",
+          pointBackgroundColor: "#F0889C",
+          data: [{
+            x: 900000,
+            y: 60
+          }]
+        },
+        {
+	        label: 'Jackson Laboratory',
+	        pointRadius: 10,
+	        pointHoverRadius: 12,
+          pointBorderWidth: 0,
+          borderColor: "#FCCF31",
+          backgroundColor: "#FCCF31",
+          pointBackgroundColor: "#FCCF31",
+          data: [{
+            x: 600000,
+            y: 75
+          }]
+        },
+        {
+	        label: 'Boult',
+	        pointRadius: 10,
+	        pointHoverRadius: 12,
+          pointBorderWidth: 0,
+          borderColor: "#94135E",
+          backgroundColor: "#94135E",
+          pointBackgroundColor: "#94135E",
+          data: [{
+            x: 400000,
+            y: 25
+          }]
+        },
+        {
+	        label: 'Clinical & research collaborators',
+	        pointRadius: 10,
+	        pointHoverRadius: 12,
+          pointBorderWidth: 0,
+          borderColor: "#00BCF2",
+          backgroundColor: "#00BCF2",
+          pointBackgroundColor: "#00BCF2",
+          data: [{
+            x: 100000,
+            y: 10
+          }]
+        }
+        ]
+	    },
+	    options: {
+        scales: {
+          xAxes: [{
+	          type: 'linear',
+	          scaleLabel: {
+		          display: true,
+	            labelString: 'Spend',
+	            fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+	            fontSize: 16        
+	          },
+	          ticks: {
+		        	//display: false,
+		        	beginAtZero: true,
+		        	min:0,
+		        	max: 1000000,
+		        	maxTicksLimit: 4
+		        }
+          }],
+          yAxes: [{
+	          type: 'linear',
+	          scaleLabel: {
+		          display: true,
+	            labelString: 'Criticality',
+	            fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+	            fontSize: 16           
+	          },
+	          ticks: {
+		        	//display: false,
+		        	beginAtZero: true,
+		        	min: 0,
+		        	max: 100,
+		        	maxTicksLimit: 4
+		        }
+          }]
+        },
+        legend: {
+	        position: 'bottom',
+	        display: true,
+	        labels: {
+		        fontFamily: '"Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+		        padding: 20,
+		        usePointStyle: true
+	        }
+        },
+        tooltips: {
+	        custom: function(tooltip) {
+		        if (!tooltip) return;
+		        // disable displaying the color box;
+		        tooltip.displayColors = false;
+		      },
+	        callbacks: {
+            title: function(tooltipItem, data) {
+	            var index = tooltipItem[0].datasetIndex;
+	            var title = data.datasets[index].label;
+              return title;
+            },
+            label: function(tooltipItem, data) {
+	            return "Criticality: " + tooltipItem.yLabel;
+            },
+            afterLabel: function(tooltipItem, data) {
+				      return "Spend: $" + tooltipItem.xLabel;
+				    }
+	        }
+        }
+	    }
+		});
+	}
+	
+	$(document).on("shown.bs.modal", "#partnerships-chart-modal", function() { 
+    showPartnershipsChart();
+  });
+
+
 });
 
 

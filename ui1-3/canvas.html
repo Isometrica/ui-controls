@@ -83,20 +83,6 @@
         </div> 
       </li>
     </ul> 
-    <!--
-    <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item dropdown">
-	      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-	        Business Model Canvas
-	      </a>
-	      <div class="dropdown-menu">
-	        <a class="dropdown-item active" href="#">Business Model Canvas</a>
-	        <a class="dropdown-item" href="#">Another Canvas Type</a>
-	        <a class="dropdown-item" href="#">Yet Another</a>
-	      </div>  
-      </li>
-    </ul>
-    -->
   </div>
 
   <div class="content">
@@ -132,7 +118,7 @@
 								</li>
 							</ul>
 							<div class="canvas-section-footer">
-								<i class="fa fa-th-large pull-right text-muted"></i>
+								<i class="fa fa-th-large pull-right text-muted" data-toggle="modal" data-target="#partnerships-chart-modal"></i>
 								<a class="label label-muted" data-tooltip="true" title="2 key goals">2 KG</a>
 								<a class="label label-muted" data-tooltip="true" title="1 risks">3 RK</a>
 								<a class="label label-muted" data-tooltip="true" title="3 non-conformities">1 NC</a>
@@ -257,6 +243,9 @@
 	  </div>
   </div>
 
+	<!-- Partnerships Chart Modal -->
+  <div ng-include="'includes/partnerships-chart-modal.html'"></div>
+
   <!-- Value Proposition Edit Modal -->
   <div ng-include="'includes/value-proposition-edit-modal.html'"></div>
   
@@ -269,7 +258,7 @@
 	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
 	<script src="assets/libs/tether-1.1.1/dist/js/tether.min.js"></script>
 	<script src="assets/libs/bootstrap-4.0.0-alpha.2/dist/js/bootstrap.min.js"></script>
-	<script src="assets/libs/chart-js/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
 	<script src="assets/libs/bootstrap-colorpicker/js/bootstrap-colorpicker.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-sortable/0.9.13/jquery-sortable-min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/autosize.js/4.0.0/autosize.min.js"></script>
