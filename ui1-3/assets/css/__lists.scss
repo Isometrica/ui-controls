@@ -12,6 +12,15 @@
   }
 }
 
+.card > .list-group > .list-group-item {
+	border-left: 0;
+	border-right: 0;
+	
+	&:last-child {
+		border-bottom: 0;
+	}
+}
+
 .content-list {
   padding: 0;
   @include hide-scrollbar;

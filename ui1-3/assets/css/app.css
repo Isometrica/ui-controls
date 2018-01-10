@@ -164,6 +164,12 @@ strong {
 .margin-bottom-10 {
   margin-bottom: 10px !important; }
 
+.margin-bottom-15 {
+  margin-bottom: 15px !important; }
+
+.margin-top-4 {
+  margin-top: 4px !important; }
+
 .padding-left-0 {
   padding-left: 0 !important; }
 
@@ -765,6 +771,12 @@ legend {
 
 .list-group-item-text {
   color: #777; }
+
+.card > .list-group > .list-group-item {
+  border-left: 0;
+  border-right: 0; }
+  .card > .list-group > .list-group-item:last-child {
+    border-bottom: 0; }
 
 .content-list {
   padding: 0; }
