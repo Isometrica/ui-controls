@@ -140,6 +140,9 @@ strong {
   font-weight: normal;
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
+.tooltip {
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+
 .margin-top {
   margin-top: 5px !important; }
 
@@ -3225,25 +3228,41 @@ legend {
       .canvas-section.empty:hover i {
         color: #0078d7; }
     .canvas-section-heading {
-      padding: 1rem; }
+      padding: 1rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
       .canvas-section-heading h4 {
         font-size: 18px;
         line-height: 1.2;
         font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
-        margin: 0; }
+        margin: 0;
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
     .canvas-section-help {
       display: none;
       padding: 0px 1rem;
       margin: 0 0 0.5rem; }
-    .canvas-section .fa-plus,
-    .canvas-section .fa-th-large,
-    .canvas-section .fa-pie-chart {
-      font-size: 18px;
+    .canvas-section .btn-chart,
+    .canvas-section .btn-add {
+      font-size: 24px;
       transition: color 0.4s ease;
-      margin: 3px; }
-      .canvas-section .fa-plus:hover,
-      .canvas-section .fa-th-large:hover,
-      .canvas-section .fa-pie-chart:hover {
+      color: #bbb;
+      margin: -10px;
+      margin-left: 10px; }
+      .canvas-section .btn-chart:hover,
+      .canvas-section .btn-add:hover {
         cursor: pointer;
         color: #0078d7; }
     .canvas-section-items {
@@ -3288,9 +3307,27 @@ legend {
           overflow: hidden;
           display: block; }
     .canvas-section-footer {
-      padding: 1rem; }
+      padding: 1rem;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      -moz-align-items: center;
+      align-items: center; }
+      .canvas-section-footer-labels {
+        -webkit-box-flex: 1;
+        -webkit-flex: 1;
+        -moz-box-flex: 1;
+        -moz-flex: 1;
+        -ms-flex: 1;
+        flex: 1; }
       .canvas-section-footer a.label {
-        transition: background 0.4s ease; }
+        transition: background 0.4s ease;
+        font-size: 14px; }
         .canvas-section-footer a.label:hover {
           background: #0078d7; }
 

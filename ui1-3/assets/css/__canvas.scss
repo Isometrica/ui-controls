@@ -112,12 +112,15 @@ $canvas-section-padding: 1rem;
 		
 		&-heading {
 			padding: $canvas-section-padding;
+			@include flexbox();
+			@include align-items(center);
 
 			h4 {
 				font-size: 18px;
 				line-height: 1.2;
 				font-family: $font-semibold;
 				margin: 0;
+				@include flex();
 			}
 		}
 		
@@ -127,17 +130,18 @@ $canvas-section-padding: 1rem;
 			margin: 0 0 .5rem;
 		}
 		
-		.fa-plus,
-		.fa-th-large,
-		.fa-pie-chart {
-			font-size: 18px;
+		.btn-chart,
+		.btn-add {
+			font-size: 24px;
 			transition: color 0.4s ease;
-			margin: 3px;
+			color: #bbb;
+			margin: -10px;
+			margin-left: 10px;
 			
 			&:hover {
 				cursor: pointer;
 				color: $blue-color;
-			}
+			}				
 		}
 
 		&-items {
@@ -200,9 +204,16 @@ $canvas-section-padding: 1rem;
 		
 		&-footer {
 			padding: $canvas-section-padding;
+			@include flexbox();
+			@include align-items(center);
+			
+			&-labels {
+				@include flex();
+			}
 			
 			a.label {
 				transition: background 0.4s ease;
+				font-size: 14px;
 				
 				&:hover {
 					background: $blue-color;
