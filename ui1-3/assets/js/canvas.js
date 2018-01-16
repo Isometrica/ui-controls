@@ -6,12 +6,19 @@ $( document ).ready(function() {
 	// Sortable lists for items 
   $('.canvas-section-items').sortable();
 	
-	// Customer segments modal
 	$(document).on("shown.bs.modal", ".modal", function() {
 		// Colorpicker
     $('.colorpicker-component').colorpicker();
     // Autosize
-    autosize($('textarea.autosize'));
+    autosize($('.autosize'));
+  });
+  
+	$(document).on("shown.bs.collapse", ".collapse", function() {
+    // Autosize
+    autosize($('.autosize'));
+    
+    
+    autosize.update($('.autosize'));
   });
   
   
