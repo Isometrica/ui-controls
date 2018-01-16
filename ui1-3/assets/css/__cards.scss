@@ -51,6 +51,11 @@
     font-family: $font-semibold;
   }
   
+  .card-subtitle {
+	  font-size: 14px;
+	  
+  }
+  
   &-block {
     @include clearfix;
     
