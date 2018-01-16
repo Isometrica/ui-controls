@@ -249,7 +249,7 @@ body.dragging, body.dragging * {
 .valuepropositioncanvas,
 .customersegmentcanvas {
 	position: relative;
-	min-height: 300px;
+	min-height: 330px;
 	overflow: hidden;
 	
 	.btn-match {
@@ -286,7 +286,7 @@ body.dragging, body.dragging * {
 		position: absolute;
 		left: 50%;
 		margin-left: -150px;
-		top: 0;
+		top: 15px;
 		transition: left .4s ease, margin-left .4s ease;
 	}
 	
@@ -313,21 +313,21 @@ body.dragging, body.dragging * {
 	
 	&.show-gainCreators {
 		#valuepropositionchart-gainCreators { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 0%; margin-left: -110px; }
+		.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }
 		#gainCreators { display: block !important;}
 		.btn-match { opacity: 0; }
 	} 
 	
 	&.show-painRelievers {
 		#valuepropositionchart-painRelievers { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 0%; margin-left: -110px; }
+		.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }
 		#painRelievers { display: block !important; }
 		.btn-match { opacity: 0; }
 	} 
 	
 	&.show-productsAndServices {
 		#valuepropositionchart-productsAndServices { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }	
+		.valuepropositioncanvas-canvas { left: 100%; margin-left: -160px; }	
 		#productsAndServices { display: block !important;  }
 		.btn-match { opacity: 0; }
 	} 	

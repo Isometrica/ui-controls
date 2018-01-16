@@ -3350,7 +3350,7 @@ body.dragging, body.dragging * {
 .valuepropositioncanvas,
 .customersegmentcanvas {
   position: relative;
-  min-height: 300px;
+  min-height: 330px;
   overflow: hidden; }
   .valuepropositioncanvas .btn-match,
   .customersegmentcanvas .btn-match {
@@ -3392,7 +3392,7 @@ body.dragging, body.dragging * {
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    top: 0;
+    top: 15px;
     transition: left 0.4s ease, margin-left 0.4s ease; }
   .valuepropositioncanvas.show-gains #customersegmentschart-gains,
   .customersegmentcanvas.show-gains #customersegmentschart-gains {
@@ -3439,7 +3439,7 @@ body.dragging, body.dragging * {
   .valuepropositioncanvas.show-gainCreators .valuepropositioncanvas-canvas,
   .customersegmentcanvas.show-gainCreators .valuepropositioncanvas-canvas {
     left: 0%;
-    margin-left: -110px; }
+    margin-left: -120px; }
   .valuepropositioncanvas.show-gainCreators #gainCreators,
   .customersegmentcanvas.show-gainCreators #gainCreators {
     display: block !important; }
@@ -3452,7 +3452,7 @@ body.dragging, body.dragging * {
   .valuepropositioncanvas.show-painRelievers .valuepropositioncanvas-canvas,
   .customersegmentcanvas.show-painRelievers .valuepropositioncanvas-canvas {
     left: 0%;
-    margin-left: -110px; }
+    margin-left: -120px; }
   .valuepropositioncanvas.show-painRelievers #painRelievers,
   .customersegmentcanvas.show-painRelievers #painRelievers {
     display: block !important; }
@@ -3465,7 +3465,7 @@ body.dragging, body.dragging * {
   .valuepropositioncanvas.show-productsAndServices .valuepropositioncanvas-canvas,
   .customersegmentcanvas.show-productsAndServices .valuepropositioncanvas-canvas {
     left: 100%;
-    margin-left: -170px; }
+    margin-left: -160px; }
   .valuepropositioncanvas.show-productsAndServices #productsAndServices,
   .customersegmentcanvas.show-productsAndServices #productsAndServices {
     display: block !important; }
