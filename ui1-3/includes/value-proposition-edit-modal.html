@@ -57,87 +57,92 @@
             <div class="form-group row">
               <label class="form-control-label col-sm-4 col-xs-12">Market size</label>
               <div class="col-sm-8 col-xs-12">
-	              <div class="input-group" style="max-width: 90px">
-                	<input type="text" class="form-control" placeholder="Target date" value="25"/>
+	              <div class="input-group" style="max-width: 95px">
+                	<input type="number" class="form-control" placeholder="" value=""/>
                 	<span class="input-group-addon">%</span>
 	              </div>
               </div>
             </div>            
-            <div class="form-group row">
+            <div class="form-group row margin-bottom-0">
               <label class="form-control-label col-sm-4 col-xs-12">Notes</label>
               <div class="col-sm-8 col-xs-12">
 								<textarea class="form-control autosize" rows="3" placeholder="Notes"></textarea>
               </div>
             </div>
           </div>
-					<hr/>
-					<!-- start: VALUE PROPOSITION CANVAS -->
-					<div class="valuepropositioncanvas">
-						<!-- start: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
-						<ul class="nav nav-tabs hidden-xs-up" id="myTab" role="tablist">
-						  <li class="nav-item">
-						    <a class="nav-link active" id="valueproposition-canvas-tab" data-toggle="tab" href="#valueproposition-canvas" role="tab" aria-controls="canvas" aria-selected="true">Canvas view</a>
-						  </li>
-						  <li class="nav-item">
-						    <a class="nav-link" id="valueproposition-match-tab" data-toggle="tab" href="#valueproposition-match" role="tab" aria-controls="match" aria-selected="false">Match view</a>
-						  </li>
-						</ul>
-						<!-- end: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
-						<div class="tab-content">
-						  <div class="tab-pane fade in active" id="valueproposition-canvas">
-								<!-- start: VALUE PROPOSITION CANVAS - CANVAS VIEW -->
-								<a class="btn btn-secondary btn-match">Match</a>				
-							  <div ng-include="'includes/subcards-edit/valueproposition-painrelievers.html'"></div>
-							  <div ng-include="'includes/subcards-edit/valueproposition-gaincreators.html'"></div>
-							  <div ng-include="'includes/subcards-edit/valueproposition-products.html'"></div>			
-								<div class="valuepropositioncanvas-canvas">
-									<div ng-include="'includes/subcards-edit/valueproposition-canvas.html'"></div>
-								</div>
-								<!-- end: VALUE PROPOSITION CANVAS - CANVAS VIEW -->							  
-						  </div>
-						  <div class="tab-pane fade" id="valueproposition-match">
-							  <!-- start: VALUE PROPOSITION CANVAS - MATCH VIEW -->		
-							  <div ng-include="'includes/subcards-edit/valueproposition-match.html'"></div>
-							  <!-- end: VALUE PROPOSITION CANVAS - MATCH VIEW -->
-						  </div>
+					<div class="card-footer card-more-toggle collapsed">
+          	<span class="card-more-toggle-more">More</span>
+          	<span class="card-more-toggle-less">Less</span>
+          </div>
+          <div class="collapse card-more">
+						<!-- start: VALUE PROPOSITION CANVAS -->
+						<div class="valuepropositioncanvas">
+							<!-- start: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
+							<ul class="nav nav-tabs hidden-xs-up" id="myTab" role="tablist">
+							  <li class="nav-item">
+							    <a class="nav-link active" id="valueproposition-canvas-tab" data-toggle="tab" href="#valueproposition-canvas" role="tab" aria-controls="canvas" aria-selected="true">Canvas view</a>
+							  </li>
+							  <li class="nav-item">
+							    <a class="nav-link" id="valueproposition-match-tab" data-toggle="tab" href="#valueproposition-match" role="tab" aria-controls="match" aria-selected="false">Match view</a>
+							  </li>
+							</ul>
+							<!-- end: VALUE PROPOSITION CANVAS - TABS (HIDDEN) -->
+							<div class="tab-content">
+							  <div class="tab-pane fade in active" id="valueproposition-canvas">
+									<!-- start: VALUE PROPOSITION CANVAS - CANVAS VIEW -->
+									<a class="btn btn-secondary btn-match">Match</a>				
+								  <div ng-include="'includes/subcards-edit/valueproposition-painrelievers.html'"></div>
+								  <div ng-include="'includes/subcards-edit/valueproposition-gaincreators.html'"></div>
+								  <div ng-include="'includes/subcards-edit/valueproposition-products.html'"></div>			
+									<div class="valuepropositioncanvas-canvas">
+										<div ng-include="'includes/subcards-edit/valueproposition-canvas.html'"></div>
+									</div>
+									<!-- end: VALUE PROPOSITION CANVAS - CANVAS VIEW -->							  
+							  </div>
+							  <div class="tab-pane fade" id="valueproposition-match">
+								  <!-- start: VALUE PROPOSITION CANVAS - MATCH VIEW -->		
+								  <div ng-include="'includes/subcards-edit/valueproposition-match.html'"></div>
+								  <!-- end: VALUE PROPOSITION CANVAS - MATCH VIEW -->
+							  </div>
+							</div>
+							
 						</div>
-						
-					</div>
-					<!-- end: CUSTOMER SEGMENTS -->
-          <div class="card-block card-block-collapse-toggle collapsed">
-            <h4 class="card-title pull-xs-left">Questions to ask</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">3</span>
-            </h4>
+						<!-- end: CUSTOMER SEGMENTS -->
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Questions to ask</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">3</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/questions.html'"></div>
+	          </div>
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title">Actively manage</h4>
+	            <p class="card-subtitle text-muted margin-top-5">Only by actively managing your canvas will you be able to translate your business design into better business performance.</p>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/actively-manage.html'"></div>
+	          </div> 
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Files</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/files.html'"></div>
+	          </div> 
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Notify changes</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+	          </div>         
           </div>
-          <div class="card-block-collapse collapse">
-            <div ng-include="'includes/subcards-edit/questions.html'"></div>
-          </div>
-          <div class="card-block card-block-collapse-toggle collapsed">
-            <h4 class="card-title">Actively manage</h4>
-            <p class="card-subtitle text-muted margin-top-5">Only by actively managing your canvas will you be able to translate your business design into better business performance.</p>
-          </div>
-          <div class="card-block-collapse collapse">
-            <div ng-include="'includes/subcards-edit/actively-manage.html'"></div>
-          </div> 
-          <div class="card-block card-block-collapse-toggle collapsed">
-            <h4 class="card-title pull-xs-left">Files</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">2</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse">
-            <div ng-include="'includes/subcards-edit/files.html'"></div>
-          </div> 
-          <div class="card-block card-block-collapse-toggle collapsed">
-            <h4 class="card-title pull-xs-left">Notify changes</h4>
-            <h4 class="card-title pull-xs-right">
-              <span class="text-muted">2</span>
-            </h4>
-          </div>
-          <div class="card-block-collapse collapse">
-            <div ng-include="'includes/subcards-edit/notify.html'"></div>
-          </div>         
         </form>
       </div>
     </div>

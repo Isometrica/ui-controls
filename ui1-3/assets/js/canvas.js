@@ -6,7 +6,7 @@ $( document ).ready(function() {
 	// Sortable lists for items 
   $('.canvas-section-items').sortable();
 	
-	$(document).on("shown.bs.modal", ".modal", function() {
+	$(document).on("show.bs.modal", ".modal", function() {
 		// Colorpicker
     $('.colorpicker-component').colorpicker();
     // Autosize
@@ -16,11 +16,22 @@ $( document ).ready(function() {
 	$(document).on("shown.bs.collapse", ".collapse", function() {
     // Autosize
     autosize($('.autosize'));
-    
-    
     autosize.update($('.autosize'));
   });
   
+  // Clicking canvas section Add button launches modal
+  
+  $(document).on("click", ".canvas-section .btn-add", function() {
+	  var target = $(this).closest(".canvas-section").data("target");
+	  $(target).modal("show");
+	});
+	
+	// Clicking anywhere in *empty* canvas section launches modal
+  
+  $(document).on("click", ".canvas-section.empty", function() {
+	  var target = $(this).data("target");
+	  $(target).modal("show");
+	});
   
   
   /*
@@ -78,14 +89,14 @@ $( document ).ready(function() {
 
 
 	/* 
-		PARTNERSHIPS CHART
+		KEY PARTNERS CHART
 	*/
 	
-	$(document).on("shown.bs.modal", "#partnerships-chart-modal", function() { 
-    showPartnershipsChart();
+	$(document).on("shown.bs.modal", "#key-partners-chart-modal", function() { 
+    showKeyPartnersChart();
   });
 	
-	function showPartnershipsChart() {
+	function showKeyPartnersChart() {
 		var ctx = $(".chart-wrapper canvas");
 		var scatterChart = new Chart(ctx, {
 	    type: 'scatter',

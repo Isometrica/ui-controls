@@ -79,6 +79,33 @@
   
   &-footer {
     border-radius: 0 0 4px 4px;
+    
+    &.card-more-toggle {
+	    color: $muted-color;
+	    text-align: center;
+	    transition: color .4s ease, background-color .4s ease, border-color .4s ease;
+	    cursor: pointer;
+	    border-bottom: 1px solid transparent;
+	    
+	    &:hover {
+		    color: darken($muted-color, 20%);
+		    background-color: #eee;
+	    }
+
+	    &:not(.collapsed) {
+		    border-radius: 0;
+		    border-bottom-color: #ddd;
+	    }
+	    
+	    // Labels 
+	    .card-more-toggle-more { display: none; }
+	    .card-more-toggle-less { display: inline; }
+	    
+	    &.collapsed {
+		    .card-more-toggle-more { display: inline; }
+		    .card-more-toggle-less { display: none; }		    
+	    }
+    }
   }
 }
 

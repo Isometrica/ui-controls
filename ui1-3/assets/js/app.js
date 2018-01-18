@@ -28,11 +28,17 @@ $( document ).ready(function() {
 	
 	
 	/*
-		SUBCARDS ACCORDION
+		CARD - SHOW MORE/LESS
 	*/
 	
+	$(document).on("click", ".card-more-toggle", function() {
+		$(this).toggleClass("collapsed").next(".card-more").collapse("toggle");
+	});
 	
-	
+	/*
+		SUBCARDS ACCORDION
+	*/
+
 	$(document).on("click", ".card-block-collapse-toggle", function(e) {
 		// Toggle state
 		e.preventDefault();

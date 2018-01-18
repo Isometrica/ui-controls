@@ -1095,6 +1095,26 @@ legend {
         padding-left: 17px; }
   .card-footer {
     border-radius: 0 0 4px 4px; }
+    .card-footer.card-more-toggle {
+      color: #818a91;
+      text-align: center;
+      transition: color 0.4s ease, background-color 0.4s ease, border-color 0.4s ease;
+      cursor: pointer;
+      border-bottom: 1px solid transparent; }
+      .card-footer.card-more-toggle:hover {
+        color: #50575c;
+        background-color: #eee; }
+      .card-footer.card-more-toggle:not(.collapsed) {
+        border-radius: 0;
+        border-bottom-color: #ddd; }
+      .card-footer.card-more-toggle .card-more-toggle-more {
+        display: none; }
+      .card-footer.card-more-toggle .card-more-toggle-less {
+        display: inline; }
+      .card-footer.card-more-toggle.collapsed .card-more-toggle-more {
+        display: inline; }
+      .card-footer.card-more-toggle.collapsed .card-more-toggle-less {
+        display: none; }
 
 .content-cards {
   -webkit-box-flex: 1;
