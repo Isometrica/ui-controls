@@ -1,0 +1,33 @@
+<div class="card-block">
+	<div class="customersegmentcanvas">
+		<!-- start: CUSTOMER SEGMENT CANVAS - TABS (HIDDEN) -->
+		<ul class="nav nav-tabs hidden-xs-up" id="myTab" role="tablist">
+		  <li class="nav-item">
+		    <a class="nav-link active" id="customersegment-canvas-tab" data-toggle="tab" href="#customersegment-canvas" role="tab" aria-controls="canvas" aria-selected="true">Canvas view</a>
+		  </li>
+		  <li class="nav-item">
+		    <a class="nav-link" id="customersegment-match-tab" data-toggle="tab" href="#customersegment-match" role="tab" aria-controls="match" aria-selected="false">Match view</a>
+		  </li>
+		</ul>
+		<!-- end: CUSTOMER SEGMENT CANVAS - TABS (HIDDEN) -->
+		<div class="tab-content">
+		  <div class="tab-pane fade in active" id="customersegment-canvas">
+				<!-- start: CUSTOMER SEGMENT CANVAS - CANVAS VIEW -->
+				<a class="btn btn-secondary btn-match">Match</a>				
+			  <div ng-include="'includes/subcards-edit/customersegment-pains.html'"></div>
+			  <div ng-include="'includes/subcards-edit/customersegment-gains.html'"></div>
+			  <div ng-include="'includes/subcards-edit/customersegment-jobs.html'"></div>			
+				<div class="valuepropositioncanvas-canvas">
+					<div ng-include="'includes/subcards-edit/customersegment-canvas.html'"></div>
+				</div>
+				<!-- end: CUSTOMER SEGMENT CANVAS - CANVAS VIEW -->							  
+		  </div>
+		  <div class="tab-pane fade" id="customersegment-match">
+			  <!-- start: CUSTOMER SEGMENT CANVAS - MATCH VIEW -->		
+			  <div ng-include="'includes/subcards-edit/valueproposition-match.html'"></div>
+			  <!-- end: CUSTOMER SEGMENT CANVAS - MATCH VIEW -->
+		  </div>
+		</div>
+		
+	</div>
+</div>
