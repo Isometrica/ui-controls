@@ -87,6 +87,7 @@ $canvas-section-padding: 1rem;
 		
 		@include not-mobile {
 			min-height: 200px;
+			max-height: 600px;
 			@include flex();
 			@include flexbox();
 			@include flex-direction(column);			
@@ -209,11 +210,32 @@ $canvas-section-padding: 1rem;
 			
 			&-labels {
 				@include flex();
+				
+				
+				/*
+				height: 100%;
+				position: relative;
+				padding: $canvas-section-padding;
+				
+				&-inner {
+					position: absolute;
+					left: 0;
+					right: 0;
+					top: 0;
+					bottom: 0;
+					overflow-y: hidden;
+					overflow-x: auto;
+					
+					> div {
+						white-space: nowrap;
+					}
+				}
+				*/
 			}
 			
 			a.label {
 				transition: background 0.4s ease;
-				font-size: 14px;
+				font-size: 12px;
 				
 				&:hover {
 					background: $blue-color;
