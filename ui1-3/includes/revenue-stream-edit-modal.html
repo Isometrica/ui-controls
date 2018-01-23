@@ -2,17 +2,12 @@
     <div class="modal-dialog">
       <div class="card">
         <div class="card-block card-heading">
-          <div class="card-heading-buttons pull-xs-left">
-      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
-      				Cancel
-      			</button>
-          </div>
           <div class="card-heading-buttons pull-xs-right">
             <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
       				<i class="fa fa-question-circle"></i>
       			</button>
       			<button type="button" class="btn btn-primary" data-dismiss="modal">
-      				Save
+      				Close
       			</button>
           </div>
           <h4 class="card-title">Revenue stream</h4>
@@ -108,7 +103,10 @@
 	          </div>
 	          <div class="card-block-collapse collapse">
 	            <div ng-include="'includes/subcards-edit/notify.html'"></div>
-	          </div>         
+	          </div> 
+	          <div class="card-block text-xs-center">
+            	<button type="button" class="btn btn-secondary">Delete</button>
+          	</div>        
           </div>
         </form>
       </div>
