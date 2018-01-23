@@ -1041,6 +1041,12 @@ legend {
   .card-block-collapse .card-block .card .card-block-collapse-toggle {
     border-top: 0;
     background: #f5f5f5; }
+    .card-block-collapse .card-block .card .card-block-collapse-toggle:first-of-type {
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px; }
+    .card-block-collapse .card-block .card .card-block-collapse-toggle:last-of-type {
+      border-bottom-left-radius: 3px;
+      border-bottom-right-radius: 3px; }
 
 .card {
   border-color: #ccc;
@@ -3374,8 +3380,10 @@ body.dragging, body.dragging * {
 .valuepropositioncanvas,
 .customersegmentcanvas {
   position: relative;
-  min-height: 330px;
-  overflow: hidden; }
+  min-height: 300px;
+  overflow: hidden;
+  margin: 0 -1.25rem;
+  padding: 0 1.25rem; }
   .valuepropositioncanvas .btn-match,
   .customersegmentcanvas .btn-match {
     position: absolute;
@@ -3416,7 +3424,7 @@ body.dragging, body.dragging * {
     position: absolute;
     left: 50%;
     margin-left: -150px;
-    top: 15px;
+    top: 0;
     transition: left 0.4s ease, margin-left 0.4s ease; }
   .valuepropositioncanvas.show-gains #customersegmentschart-gains,
   .customersegmentcanvas.show-gains #customersegmentschart-gains {
