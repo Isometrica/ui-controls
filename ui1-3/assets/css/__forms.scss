@@ -421,6 +421,28 @@ legend {
 /*
   COLORPICKER
 */
+
+.simplecolorpicker.picker {
+	max-width: 267px !important;
+}
+
+.simplecolorpicker.icon,
+.simplecolorpicker span.color {
+	width: 32px;
+	height: 32px;
+	border-radius: 3px;
+	outline: none !important;
+	float: left;
+}
+
+.simplecolorpicker.fontawesome span.color[data-selected]::after {
+	margin: 0;
+	line-height: 32px;
+	display: block;
+	text-align: center;
+}
+
+// Old colorpicker
 .colorpicker-component {
   width: 34px;
   

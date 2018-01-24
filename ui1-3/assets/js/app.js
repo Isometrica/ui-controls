@@ -660,6 +660,7 @@ $( document ).ready(function() {
   */
   
   $(document).on("shown.bs.collapse", "#response-sets", function() {
+    // Old colorpicker
     $('.colorpicker-component').colorpicker();
   });
   
