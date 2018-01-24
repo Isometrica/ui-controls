@@ -119,6 +119,7 @@ strong {
 		&-10 {
 			margin-left: 10px !important;
 		}
+		
 	}
 	
 	&-right {
@@ -156,6 +157,9 @@ strong {
 	&-left {
 		&-0 {
 			padding-left: 0 !important;
+		}
+		&-45 {
+			padding-left: 45px !important;
 		}
 	}
 }
