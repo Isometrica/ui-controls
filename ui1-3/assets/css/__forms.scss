@@ -422,25 +422,77 @@ legend {
   COLORPICKER
 */
 
-.simplecolorpicker.picker {
-	max-width: 267px !important;
+.simplecolorpicker {
+	&.picker {
+		max-width: 368px;
+		margin-left: 5px;
+		
+		@include mobile {
+			max-width: 288px;
+		}
+	}
+	
+	&.icon {
+		width: 33px;
+		height: 33px;
+		border-radius: 3px;
+		outline: none !important;
+		border: 1px solid #ccc;
+		position: relative;
+		overflow: hidden;
+		display: block;
+		transition: border-color 0.3s ease;
+		
+		&:before {
+			content: '';
+			position: absolute;
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 0;
+			border: 5px solid white;
+			transition: border-color 0.3s ease;
+		}
+		
+		&:hover {
+			border-color: #adadad;
+			&:before { border-color: #e6e6e6; }
+		}
+	}
+
+	$colorpicker-dropdown-icon-size: 40px;
+	$colorpicker-dropdown-icon-size-mobile: 30px;
+
+
+	span.color {
+		width: $colorpicker-dropdown-icon-size;
+		height: $colorpicker-dropdown-icon-size;
+		//border-radius: 3px;
+		float: left;
+		
+		@include mobile {
+			width: $colorpicker-dropdown-icon-size-mobile;
+			height: $colorpicker-dropdown-icon-size-mobile;			
+		}
+		
+		&:hover,
+		&[data-selected] {
+			border: 1px solid rgba(0,0,0,0.5);
+		}
+		
+		&[data-selected]::after {
+			margin: 0;
+			line-height: $colorpicker-dropdown-icon-size;
+			display: block;
+			text-align: center;
+			
+			@include mobile {
+				line-height: $colorpicker-dropdown-icon-size-mobile;
+			}
+		}
+	}
 }
 
-.simplecolorpicker.icon,
-.simplecolorpicker span.color {
-	width: 32px;
-	height: 32px;
-	border-radius: 3px;
-	outline: none !important;
-	float: left;
-}
-
-.simplecolorpicker.fontawesome span.color[data-selected]::after {
-	margin: 0;
-	line-height: 32px;
-	display: block;
-	text-align: center;
-}
 
 // Old colorpicker
 .colorpicker-component {

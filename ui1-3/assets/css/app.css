@@ -760,21 +760,55 @@ legend {
   COLORPICKER
 */
 .simplecolorpicker.picker {
-  max-width: 267px !important; }
+  max-width: 368px;
+  margin-left: 5px; }
+  @media (max-width: 767px) {
+    .simplecolorpicker.picker {
+      max-width: 288px; } }
 
-.simplecolorpicker.icon,
-.simplecolorpicker span.color {
-  width: 32px;
-  height: 32px;
+.simplecolorpicker.icon {
+  width: 33px;
+  height: 33px;
   border-radius: 3px;
   outline: none !important;
-  float: left; }
-
-.simplecolorpicker.fontawesome span.color[data-selected]::after {
-  margin: 0;
-  line-height: 32px;
+  border: 1px solid #ccc;
+  position: relative;
+  overflow: hidden;
   display: block;
-  text-align: center; }
+  transition: border-color 0.3s ease; }
+  .simplecolorpicker.icon:before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    border: 5px solid white;
+    transition: border-color 0.3s ease; }
+  .simplecolorpicker.icon:hover {
+    border-color: #adadad; }
+    .simplecolorpicker.icon:hover:before {
+      border-color: #e6e6e6; }
+
+.simplecolorpicker span.color {
+  width: 40px;
+  height: 40px;
+  float: left; }
+  @media (max-width: 767px) {
+    .simplecolorpicker span.color {
+      width: 30px;
+      height: 30px; } }
+  .simplecolorpicker span.color:hover,
+  .simplecolorpicker span.color[data-selected] {
+    border: 1px solid rgba(0, 0, 0, 0.5); }
+  .simplecolorpicker span.color[data-selected]::after {
+    margin: 0;
+    line-height: 40px;
+    display: block;
+    text-align: center; }
+    @media (max-width: 767px) {
+      .simplecolorpicker span.color[data-selected]::after {
+        line-height: 30px; } }
 
 .colorpicker-component {
   width: 34px; }
