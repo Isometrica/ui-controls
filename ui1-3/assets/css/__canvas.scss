@@ -3,19 +3,29 @@ $canvas-item-color-1: #FCCF31;
 $canvas-item-color-2: #94135E;
 $canvas-item-color-3: #F0889C;
 $canvas-section-padding: 1rem;
+$canvas-item-min-height: 240px;
 
 .canvas {
-	background: white;
-	border: 1px solid $canvas-border-color;
-	//min-height: 100%;
+	
+	//border: 1px solid $canvas-border-color;
+	min-height: 100%;
 	
 	@include not-mobile {
+		min-height: $canvas-item-min-height * 3;
+		@include flex();
+	}
+
+
+	@include desktop {
 		@include flexbox();
 		@include flex-direction(column);
-		@include flex();		
+			
 	}
 	
 	&-wrapper {
+		background: white;
+		width: 100%;
+		
 		@include not-mobile {
 			position: absolute;
 			top: 0;
@@ -83,14 +93,17 @@ $canvas-section-padding: 1rem;
 		transition: background-color 0.4s ease, border-color 0.4s ease;
 		margin: -1px;
 		z-index: 1;
-
 		
 		@include not-mobile {
-			min-height: 200px;
-			max-height: 600px;
 			@include flex();
 			@include flexbox();
-			@include flex-direction(column);			
+			@include flex-direction(column);		
+			min-height: $canvas-item-min-height;	
+		}
+
+	
+		@include tablet-portrait {
+			max-height: 400px; 
 		}
 
 		&.empty {
@@ -114,7 +127,7 @@ $canvas-section-padding: 1rem;
 		&-heading {
 			padding: $canvas-section-padding;
 			@include flexbox();
-			@include align-items(center);
+			@include align-items(flex-start);
 
 			h4 {
 				font-size: 18px;
@@ -136,8 +149,8 @@ $canvas-section-padding: 1rem;
 			font-size: 24px;
 			transition: color 0.4s ease;
 			color: #bbb;
-			margin: -10px;
-			margin-left: 10px;
+			margin: $canvas-section-padding * -1;;
+			margin-left: 5px;
 			
 			&:hover {
 				cursor: pointer;
@@ -206,11 +219,12 @@ $canvas-section-padding: 1rem;
 		&-footer {
 			padding: $canvas-section-padding;
 			@include flexbox();
-			@include align-items(center);
+			@include align-items(flex-end);
 			
 			&-labels {
 				@include flex();
-				padding-top: 4px;
+				//padding-top: 4px;
+				margin-bottom: -4px;
 				
 				/*
 				height: 100%;
@@ -231,6 +245,12 @@ $canvas-section-padding: 1rem;
 					}
 				}
 				*/
+			}
+			
+			a.btn-sm {
+				line-height: 1;
+				float: left;
+				margin: 0 0 4px 4px;
 			}
 			
 			a.label {

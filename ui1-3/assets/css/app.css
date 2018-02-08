@@ -3143,9 +3143,17 @@ legend {
   padding-left: 2.5rem !important; }
 
 .canvas {
-  background: white;
-  border: 1px solid #aaa; }
+  min-height: 100%; }
   @media (min-width: 768px) {
+    .canvas {
+      min-height: 720px;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; } }
+  @media (min-width: 992px) {
     .canvas {
       display: -webkit-box;
       display: -webkit-flex;
@@ -3157,31 +3165,28 @@ legend {
       -webkit-flex-direction: column;
       -moz-flex-direction: column;
       -ms-flex-direction: column;
-      flex-direction: column;
-      -webkit-box-flex: 1;
-      -webkit-flex: 1;
-      -moz-box-flex: 1;
-      -moz-flex: 1;
-      -ms-flex: 1;
-      flex: 1; } }
-  @media (min-width: 768px) {
-    .canvas-wrapper {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      display: -webkit-box;
-      display: -webkit-flex;
-      display: -moz-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-direction: normal;
-      -webkit-box-orient: vertical;
-      -webkit-flex-direction: column;
-      -moz-flex-direction: column;
-      -ms-flex-direction: column;
       flex-direction: column; } }
+  .canvas-wrapper {
+    background: white;
+    width: 100%; }
+    @media (min-width: 768px) {
+      .canvas-wrapper {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: -webkit-box;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-direction: normal;
+        -webkit-box-orient: vertical;
+        -webkit-flex-direction: column;
+        -moz-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column; } }
   @media (min-width: 768px) and (max-width: 991px) {
     .canvas-row {
       display: -webkit-box;
@@ -3290,8 +3295,6 @@ legend {
     z-index: 1; }
     @media (min-width: 768px) {
       .canvas-section {
-        min-height: 200px;
-        max-height: 600px;
         -webkit-box-flex: 1;
         -webkit-flex: 1;
         -moz-box-flex: 1;
@@ -3308,7 +3311,11 @@ legend {
         -webkit-flex-direction: column;
         -moz-flex-direction: column;
         -ms-flex-direction: column;
-        flex-direction: column; } }
+        flex-direction: column;
+        min-height: 240px; } }
+    @media (min-width: 768px) and (max-width: 991px) {
+      .canvas-section {
+        max-height: 400px; } }
     .canvas-section.empty .canvas-section-help {
       display: block; }
     .canvas-section.empty:hover {
@@ -3325,11 +3332,11 @@ legend {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      align-items: flex-start; }
       .canvas-section-heading h4 {
         font-size: 18px;
         line-height: 1.2;
@@ -3350,8 +3357,8 @@ legend {
       font-size: 24px;
       transition: color 0.4s ease;
       color: #bbb;
-      margin: -10px;
-      margin-left: 10px; }
+      margin: -1rem;
+      margin-left: 5px; }
       .canvas-section .btn-chart:hover,
       .canvas-section .btn-add:hover {
         cursor: pointer;
@@ -3404,11 +3411,11 @@ legend {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      -webkit-align-items: center;
-      -moz-align-items: center;
-      align-items: center; }
+      -webkit-box-align: end;
+      -ms-flex-align: end;
+      -webkit-align-items: flex-end;
+      -moz-align-items: flex-end;
+      align-items: flex-end; }
       .canvas-section-footer-labels {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
@@ -3416,7 +3423,7 @@ legend {
         -moz-flex: 1;
         -ms-flex: 1;
         flex: 1;
-        padding-top: 4px;
+        margin-bottom: -4px;
         /*
 				height: 100%;
 				position: relative;
@@ -3436,6 +3443,10 @@ legend {
 					}
 				}
 				*/ }
+      .canvas-section-footer a.btn-sm {
+        line-height: 1;
+        float: left;
+        margin: 0 0 4px 4px; }
       .canvas-section-footer a.label {
         transition: background 0.4s ease;
         font-size: 12px;
