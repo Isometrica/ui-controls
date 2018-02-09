@@ -167,6 +167,36 @@
   }
 }
 
+
+/*
+  Dropdowns - submenus
+*/
+
+.dropdown-menu-submenu {
+	position: relative;
+	
+	> a {
+		padding-right: 2.5rem; // Space for caret
+		
+		&:before {
+			content: "\f0da";
+			font-family: "FontAwesome";
+			position: absolute;
+			right: 1rem;
+			top: 50%;
+			line-height: 20px;
+			margin-top: -8px;
+		}
+	}
+	
+	> .dropdown-menu {
+		left: 100%;
+		top: 0;
+		margin-top: 0;
+		margin-left: 2px;
+	}
+}
+
 /*
   Form group nested layout - flex
 */

@@ -122,6 +122,9 @@ body {
       .content-cards-inner {
         padding: 30px 30px 0; } }
 
+.text-normal {
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif !important; }
+
 .flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -151,6 +154,9 @@ strong {
 
 .margin-bottom-none {
   margin-bottom: 0 !important; }
+
+.margin-left-0 {
+  margin-left: 0 !important; }
 
 .margin-left-10 {
   margin-left: 10px !important; }
@@ -587,6 +593,27 @@ i.margin-right {
 .dropdown .btn {
   display: block;
   margin: 0 7px 7px; }
+
+/*
+  Dropdowns - submenus
+*/
+.dropdown-menu-submenu {
+  position: relative; }
+  .dropdown-menu-submenu > a {
+    padding-right: 2.5rem; }
+    .dropdown-menu-submenu > a:before {
+      content: "\f0da";
+      font-family: "FontAwesome";
+      position: absolute;
+      right: 1rem;
+      top: 50%;
+      line-height: 20px;
+      margin-top: -8px; }
+  .dropdown-menu-submenu > .dropdown-menu {
+    left: 100%;
+    top: 0;
+    margin-top: 0;
+    margin-left: 2px; }
 
 /*
   Form group nested layout - flex

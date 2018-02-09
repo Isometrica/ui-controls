@@ -10,6 +10,7 @@ body {
   @include flex-direction(column);
   background: #f5f5f5;
   font-family: $font-regular;
+  //-webkit-font-smoothing: subpixel-antialiased;
 }
 
 .scroll {
@@ -86,6 +87,12 @@ body {
   }
 }
 
+.text {
+	&-normal {
+		font-family: $font-regular !important;
+	}
+}
+
 .flexbox {
 	@include flexbox();
 	&-fill {
@@ -116,6 +123,9 @@ strong {
 
 .margin {
 	&-left {
+		&-0 {
+			margin-left: 0 !important;
+		}
 		&-10 {
 			margin-left: 10px !important;
 		}

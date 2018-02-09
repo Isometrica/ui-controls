@@ -8,9 +8,19 @@ $( document ).ready(function() {
   
   $('[data-tooltip="true"]').tooltip();
   
-  
+  /*
+	  Dropdown submenus 
+	*/
 
-  
+	$(document).on("click", ".dropdown-menu-submenu > a", function(e) {
+    // Close any open sibling dropdowns
+    $(this).closest(".dropdown-menu-submenu").siblings().find(".dropdown-menu").hide();
+    
+    // Open this dropdown
+    $(this).next('.dropdown-menu').toggle();
+    e.stopPropagation();
+    e.preventDefault();
+  });
 
   /* 
     Platform Detection
@@ -667,7 +677,10 @@ $( document ).ready(function() {
   /*
 	  Autosize textareas
 	*/
-	autosize($('textarea.autosize'));
+	if ($('textarea.autosize').length > 0) {
+		autosize($('textarea.autosize'));
+	}
+	
   
   
 

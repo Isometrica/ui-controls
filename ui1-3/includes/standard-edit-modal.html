@@ -23,7 +23,7 @@
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">Title</label>
     	        <div class="col-sm-8 col-xs-12">
-    		        <input type="text" class="form-control" placeholder="Title" value="Inquiry handling">
+    		        <input type="text" class="form-control" placeholder="Title" value="Inquiry handling"/>
       			    <button type="button" class="btn btn-link clear-field">
     		          <i class="fa fa-times-circle"></i>
     		        </button>
@@ -91,7 +91,7 @@
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">Issue number</label>
     	        <div class="col-sm-2 col-xs-12">
-                <input type="number" class="form-control" placeholder="1" value="1">
+                <input type="number" class="form-control" placeholder="1" value="1"/>
     	        </div>
             </div>
             <div class="form-group row">
@@ -99,16 +99,16 @@
     	        <div class="col-sm-8 col-xs-12">
                 <div class="btn-group btn-group-nomargin" data-toggle="buttons">
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option1" autocomplete="off"> Issued
+                    <input type="radio" name="options" id="option1" autocomplete="off"/> Issued
                   </label>
                   <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Draft
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked="" /> Draft
                   </label>
                 </div>
     	        </div>
             </div>
             <div class="form-group row">
-    	        <label class="form-control-label col-sm-4 col-xs-12">Department(s)</label>
+    	        <label class="form-control-label col-sm-4 col-xs-12">Categorize</label>
     	        <div class="col-sm-8 col-xs-12">
       	        <div class="btn-group">
         	        <button type="button" class="btn btn-secondary" disabled="">Client Services</button>
@@ -118,8 +118,16 @@
         	        <button type="button" class="btn btn-secondary" disabled="">Sales</button>
         	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
       	        </div>
-                <div class="dropdown">
-                  <input type="text" class="form-control" value="" placeholder="Add a department" data-toggle="dropdown"/>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled="">In vivo validation</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled="">Finish UI design</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+                <div class="dropdown margin-bottom-5">
+                  <input type="text" class="form-control" value="" placeholder="Add department" data-toggle="dropdown"/>
                   <div class="dropdown-menu dropdown-menu-full">
                     <a class="dropdown-item" href="#">Administration</a>
                     <a class="dropdown-item" href="#">Compliance</a>
@@ -133,24 +141,177 @@
                     <a class="btn btn-primary" href="#"><strong>Add new department</strong></a>
                   </div>
                 </div>
+                <div class="dropdown margin-bottom-5">
+                  <input type="text" class="form-control" value="" placeholder="Add canvas item" data-toggle="dropdown"/>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item" href="#">Key partners</a>
+                    	<div class="dropdown-menu">
+		                    <a class="dropdown-item" href="#">Boult (international patent lawyers)</a>
+		                    <a class="dropdown-item" href="#">Clinical &amp; research collaborators</a>
+		                    <a class="dropdown-item" href="#">Jackson Laboratory</a>
+		                    <a class="dropdown-item" href="#">Total Scientific Ltd</a>
+                    	</div>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item" href="#">Key activities</a>
+                    	<div class="dropdown-menu">
+		                    <a class="dropdown-item" href="#">In vitro target characterisation</a>
+		                    <a class="dropdown-item" href="#">In vivo validation</a>
+		                    <a class="dropdown-item" href="#">mtDNA profiling (per disease)</a>
+		                    <a class="dropdown-item" href="#">Patent filing</a>
+		                    <a class="dropdown-item" href="#">Promotion to influencers &amp; investors</a>
+                    	</div>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Key resources</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Value propositions</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Customer relationships</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Channels</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Customer segments</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Cost structure</a>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item disabled" href="#">Revenue streams</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="dropdown">
+                  <input type="text" class="form-control" value="" placeholder="Add key goal" data-toggle="dropdown"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Close New York office</a>
+                    <a class="dropdown-item" href="#">Evaluate business case for Y</a>
+                    <a class="dropdown-item" href="#">Finish UI design</a>
+                    <a class="dropdown-item" href="#">Get new website live</a>
+                    <a class="dropdown-item" href="#">Launch Product X</a>
+                  </div>
+                </div>
     	        </div>
             </div>   
-            <hr>
+            <div class="form-group row">
+    	        <label class="form-control-label col-sm-4 col-xs-12">Categorize</label>
+    	        <div class="col-sm-8 col-xs-12">
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled=""><span class="text-muted text-normal">Dept:</span> Client Services</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled=""><span class="text-muted text-normal">Dept:</span> Sales</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled=""><span class="text-muted text-normal">Canvas:</span> In vivo validation</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+      	        <div class="btn-group">
+        	        <button type="button" class="btn btn-secondary" disabled=""><span class="text-muted text-normal">KG123:</span> Finish UI design</button>
+        	        <button type="button" class="btn btn-secondary"><i class="fa fa-times-circle"></i></button>
+      	        </div>
+                <div class="dropdown">
+                  <button type="button" class="btn btn-primary margin-left-0" data-toggle="dropdown">
+                  	Add category <i class="fa fa-caret-down"></i>
+                  </button>
+                  <div class="dropdown-menu">
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item" href="#">Department</a>
+                    	<div class="dropdown-menu">
+		                    <a class="dropdown-item" href="#">Administration</a>
+		                    <a class="dropdown-item" href="#">Compliance</a>
+		                    <a class="dropdown-item" href="#">Client Services</a>
+		                    <a class="dropdown-item" href="#">Finance</a>
+		                    <a class="dropdown-item" href="#">Marketing</a>
+		                    <a class="dropdown-item" href="#">Operations</a>
+		                    <a class="dropdown-item" href="#">R&amp;D</a>
+		                    <a class="dropdown-item" href="#">Sales</a>
+		                    <div class="dropdown-divider"></div>
+		                    <a class="btn btn-primary" href="#">Add new department</a>
+                    	</div>
+                    </div>
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item" href="#">Canvas items</a>
+                    	<div class="dropdown-menu">
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item" href="#">Key partners</a>
+		                    	<div class="dropdown-menu">
+				                    <a class="dropdown-item" href="#">Boult (international patent lawyers)</a>
+				                    <a class="dropdown-item" href="#">Clinical &amp; research collaborators</a>
+				                    <a class="dropdown-item" href="#">Jackson Laboratory</a>
+				                    <a class="dropdown-item" href="#">Total Scientific Ltd</a>
+		                    	</div>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item" href="#">Key activities</a>
+		                    	<div class="dropdown-menu">
+				                    <a class="dropdown-item" href="#">In vitro target characterisation</a>
+				                    <a class="dropdown-item" href="#">In vivo validation</a>
+				                    <a class="dropdown-item" href="#">mtDNA profiling (per disease)</a>
+				                    <a class="dropdown-item" href="#">Patent filing</a>
+				                    <a class="dropdown-item" href="#">Promotion to influencers &amp; investors</a>
+		                    	</div>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Key resources</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Value propositions</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Customer relationships</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Channels</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Customer segments</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Cost structure</a>
+		                    </div>
+		                    <div class="dropdown-menu-submenu">
+		                    	<a class="dropdown-item disabled" href="#">Revenue streams</a>
+		                    </div>
+                    	</div>
+                    </div>            
+                    <div class="dropdown-menu-submenu">
+                    	<a class="dropdown-item" href="#">Department</a>
+                    	<div class="dropdown-menu">
+		                    <a class="dropdown-item" href="#">Close New York office</a>
+		                    <a class="dropdown-item" href="#">Evaluate business case for Y</a>
+		                    <a class="dropdown-item" href="#">Finish UI design</a>
+		                    <a class="dropdown-item" href="#">Get new website live</a>
+		                    <a class="dropdown-item" href="#">Launch Product X</a>
+                    	</div>
+                    </div>
+                  </div>   
+                </div>
+    	        </div>
+            </div>   
+            <hr/>
             <div class="form-group row">
     	        <label class="form-control-label col-sm-4 col-xs-12">Source document/video 1</label>
     	        <div class="col-sm-8 col-xs-12">
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option1" autocomplete="off" checked> URL link
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked=""/> URL link
                   </label>
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option2" autocomplete="off"> Attachment
+                    <input type="radio" name="options" id="option2" autocomplete="off"/> Attachment
                   </label>
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Video
+                    <input type="radio" name="options" id="option3" autocomplete="off"/> Video
                   </label>
                 </div>
-                <input type="text" class="form-control" placeholder="URL link" value="http://www.clifton-asset.co.uk/example/12345">
+                <input type="text" class="form-control" placeholder="URL link" value="http://www.clifton-asset.co.uk/example/12345"/>
     	        </div>
             </div>
             <div class="form-group row">
@@ -158,13 +319,13 @@
     	        <div class="col-sm-8 col-xs-12">
                 <div class="btn-group" data-toggle="buttons">
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option1" autocomplete="off"> URL link
+                    <input type="radio" name="options" id="option1" autocomplete="off"/> URL link
                   </label>
                   <label class="btn btn-secondary active">
-                    <input type="radio" name="options" id="option2" autocomplete="off" checked> Attachment
+                    <input type="radio" name="options" id="option2" autocomplete="off" checked=""/> Attachment
                   </label>
                   <label class="btn btn-secondary">
-                    <input type="radio" name="options" id="option3" autocomplete="off"> Video
+                    <input type="radio" name="options" id="option3" autocomplete="off"/> Video
                   </label>
                 </div>
                 <div class="btn-group">
@@ -179,22 +340,22 @@
               </div>
             </div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#notify" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Notify</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">2</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="notify">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/notify.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformities" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Non-conformities</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="nonconformities">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/nonconformities.html'"></div>
           </div>
           <div class="card-block card-block-collapse-toggle collapsed" href="#corrective-actions" data-toggle="collapse">
@@ -204,31 +365,34 @@
               <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="corrective-actions">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#preventative-actions" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Preventative actions</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">1</span>
               <span class="label label-warning label-status-indicator"></span> 
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="preventative-actions">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/preventative-actions.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#improvement-plan" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Improvement plan</h4>
             <i class="fa fa-align-left disclosure-indicator pull-right"></i>
           </div>
-          <div class="card-block-collapse collapse" id="improvement-plan">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/improvement-plan.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#lessons" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Lessons learned</h4>
-            <i class="fa fa-align-left disclosure-indicator pull-right"></i>
+            <h4 class="card-title pull-xs-right">
+              <span class="text-muted">1</span>
+              <span class="label label-warning label-status-indicator"></span> 
+            </h4>
           </div>
-          <div class="card-block-collapse collapse" id="lessons">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/lessons.html'"></div>
           </div> 
           <div class="card-block text-xs-center">
