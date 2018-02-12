@@ -13,11 +13,17 @@ $( document ).ready(function() {
 	*/
 
 	$(document).on("click", ".dropdown-menu-submenu > a", function(e) {
-    // Close any open sibling dropdowns
-    $(this).closest(".dropdown-menu-submenu").siblings().find(".dropdown-menu").hide();
+    var myDropdown = $(this).parent(".dropdown-menu-submenu");
+    // Get sibling dropdowns
+    var otherDropdowns = myDropdown.siblings(".dropdown-menu-submenu");
+    // Close their menus
+    otherDropdowns.find(".dropdown-menu").hide();
+    // Remove .open class
+    otherDropdowns.removeClass("open");
     
-    // Open this dropdown
+    // Open/close this dropdown
     $(this).next('.dropdown-menu').toggle();
+    myDropdown.toggleClass("open");
     e.stopPropagation();
     e.preventDefault();
   });
