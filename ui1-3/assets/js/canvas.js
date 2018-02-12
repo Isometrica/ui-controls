@@ -93,6 +93,7 @@ $( document ).ready(function() {
 	/* 
 		KEY PARTNERS CHART
 	*/
+		
 	
 	$(document).on("shown.bs.modal", "#key-partners-chart-modal", function() { 
     showKeyPartnersChart();
@@ -109,9 +110,9 @@ $( document ).ready(function() {
           pointRadius: 10,
           pointHoverRadius: 12,
           pointBorderWidth: 0,
-          borderColor: "#F0889C",
-          backgroundColor: "#F0889C",
-          pointBackgroundColor: "#F0889C",
+          borderColor: "#F06292",
+          backgroundColor: "#F06292",
+          pointBackgroundColor: "#F06292",
           data: [{
             x: 900000,
             y: 60
@@ -122,9 +123,9 @@ $( document ).ready(function() {
 	        pointRadius: 10,
 	        pointHoverRadius: 12,
           pointBorderWidth: 0,
-          borderColor: "#FCCF31",
-          backgroundColor: "#FCCF31",
-          pointBackgroundColor: "#FCCF31",
+          borderColor: "#9C27B0",
+          backgroundColor: "#9C27B0",
+          pointBackgroundColor: "#9C27B0",
           data: [{
             x: 600000,
             y: 75
@@ -135,9 +136,9 @@ $( document ).ready(function() {
 	        pointRadius: 10,
 	        pointHoverRadius: 12,
           pointBorderWidth: 0,
-          borderColor: "#94135E",
-          backgroundColor: "#94135E",
-          pointBackgroundColor: "#94135E",
+          borderColor: "#673AB7",
+          backgroundColor: "#673AB7",
+          pointBackgroundColor: "#673AB7",
           data: [{
             x: 400000,
             y: 25
@@ -148,9 +149,9 @@ $( document ).ready(function() {
 	        pointRadius: 10,
 	        pointHoverRadius: 12,
           pointBorderWidth: 0,
-          borderColor: "#00BCF2",
-          backgroundColor: "#00BCF2",
-          pointBackgroundColor: "#00BCF2",
+          borderColor: "#3F51B5",
+          backgroundColor: "#3F51B5",
+          pointBackgroundColor: "#3F51B5",
           data: [{
             x: 100000,
             y: 10
@@ -159,6 +160,7 @@ $( document ).ready(function() {
         ]
 	    },
 	    options: {
+		    
         scales: {
           xAxes: [{
 	          type: 'linear',
@@ -252,14 +254,24 @@ $( document ).ready(function() {
 					label:"My First Dataset",
 					data:[41,29,18,12],
 					backgroundColor:[
-						"#F0889C",
-						"#FCCF31",
-						"#94135E",
-						"#00BCF2"],
+						"#F06292",
+						"#9C27B0",
+						"#673AB7",
+						"#3F51B5"],
 					borderColor: "transparent"
 				}]
 			},
 			options: {
+				/*
+				title: {
+			    display: true,
+			    text: '% of total costs',
+			    fontColor: "#373a3c",
+			    fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+			    fontSize: 20,
+			    fontStyle: "normal",
+		    },
+		    */
 				tooltips: {
 	        custom: function(tooltip) {
 		        if (!tooltip) return;
@@ -295,16 +307,94 @@ $( document ).ready(function() {
 	}
 	
 	
+  /* 
+		REVENUE STREAMS PIE CHART
+	*/
+	
+	$(document).on("shown.bs.modal", "#revenue-streams-chart-modal", function() { 
+    showRevenueStreamsChart();
+  });
+	
+	function showRevenueStreamsChart() {
+		var ctx = $("#revenue-streams-chart-modal .chart-wrapper canvas");
+
+		new Chart(ctx,{
+			type:"doughnut",
+			data:{
+				labels:[
+					"Diagnostic IP licensing fees (early stage)",
+					"Drug target IP licensing fees (early stage)",
+					"Compassionate use drug revenue (mid stage)",
+					"Drug molecule IP licensing fees (later stage)",
+					"Research grants"],
+				datasets:[{
+					label:"My First Dataset",
+					data:[41,29,18,12,8],
+					backgroundColor:[
+						"#F06292",
+						"#9C27B0",
+						"#673AB7",
+						"#3F51B5",
+						"#2196F3"],
+					borderColor: "transparent"
+				}]
+			},
+			options: {
+				/*
+				title: {
+			    display: true,
+			    text: '% of total costs',
+			    fontColor: "#373a3c",
+			    fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+			    fontSize: 20,
+			    fontStyle: "normal",
+		    },
+		    */
+				tooltips: {
+	        custom: function(tooltip) {
+		        if (!tooltip) return;
+		        // disable displaying the color box;
+		        tooltip.displayColors = false;
+		      },
+	        callbacks: {
+            title: function(tooltipItem, data) {
+	            var index = tooltipItem[0].index;
+	            var title = data.labels[index];
+              return title;
+            },
+            label: function(tooltipItem, data) {
+	            var index = tooltipItem.index;
+	            return data.datasets[0].data[index] + "% of total costs";
+            },
+            afterLabel: function(tooltipItem, data) {
+				      //return "Spend: $" + tooltipItem.xLabel;
+				    }
+	        }
+        },
+				legend: {
+	        position: 'bottom',
+	        display: true,
+	        labels: {
+		        fontFamily: '"Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+		        padding: 20,
+		        usePointStyle: true
+	        }
+        },
+			}
+		});	
+	}	
+	
+	
 	
 	/* 
 		CUSTOMER SEGMENTS PIE CHART
 	*/
 	
 	$(document).on("shown.bs.modal", "#customer-segments-chart-modal", function() { 
-    showCostStructureChart();
+    showCustomerSegmentsChart();
   });
 	
-	function showCostStructureChart() {
+	function showCustomerSegmentsChart() {
 		var ctx = $("#customer-segments-chart-modal .chart-wrapper canvas");
 
 		new Chart(ctx,{
@@ -319,14 +409,22 @@ $( document ).ready(function() {
 					label:"My First Dataset",
 					data:[41,29,18,12],
 					backgroundColor:[
-						"#F0889C",
-						"#FCCF31",
-						"#94135E",
-						"#00BCF2"],
+						"#F06292",
+						"#9C27B0",
+						"#673AB7",
+						"#3F51B5"],
 					borderColor: "transparent"
 				}]
 			},
 			options: {
+				title: {
+			    display: true,
+			    text: '% of market',
+			    fontColor: "#373a3c",
+			    fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+			    fontSize: 20,
+			    fontStyle: "normal",
+		    },
 				tooltips: {
 	        custom: function(tooltip) {
 		        if (!tooltip) return;
