@@ -3,7 +3,7 @@
       <div class="card">
         <div class="card-block card-heading">
           <div class="card-heading-buttons pull-xs-left">
-            <button type="button" class="btn btn-link btn-icon guidance-panel-open collapsed">
+            <button type="button" class="btn btn-link text-muted btn-icon guidance-panel-open collapsed">
       				<i class="fa fa-question-circle"></i>
       			</button>
           </div>
@@ -14,7 +14,7 @@
           </div>
           <h4 class="card-title">Revenue stream</h4>
         </div>
-        <div ng-include="'includes/guidance-panel.html'"></div>
+        <div ng-include="'includes/guidance-panel-canvas.html'"></div>
         <form>
           <div class="card-block">
             <div class="form-group row">
@@ -54,6 +54,15 @@
                 	<span class="input-group-addon">%</span>
 	              </div>
               </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">% of profit</label>
+              <div class="col-sm-8 col-xs-12">
+	              <div class="input-group" style="max-width: 95px">
+                	<input type="number" class="form-control" placeholder="" value=""/>
+                	<span class="input-group-addon">%</span>
+	              </div>
+              </div>
             </div>         
             <div class="form-group row margin-bottom-0">
               <label class="form-control-label col-sm-4 col-xs-12">Notes</label>
@@ -67,15 +76,6 @@
           	<span class="card-more-toggle-less">Less</span>
           </div>
           <div class="collapse card-more">
-	          <div class="card-block card-block-collapse-toggle collapsed">
-	            <h4 class="card-title pull-xs-left">Questions to ask</h4>
-	            <h4 class="card-title pull-xs-right">
-	              <span class="text-muted">3</span>
-	            </h4>
-	          </div>
-	          <div class="card-block-collapse collapse">
-	            <div ng-include="'includes/subcards-edit/questions.html'"></div>
-	          </div>
 	          <div class="card-block card-block-collapse-toggle collapsed">
 	            <h4 class="card-title">Actively manage</h4>
 	            <p class="card-subtitle text-muted margin-top-5">Only by actively managing your canvas will you be able to translate your business design into better business performance.</p>

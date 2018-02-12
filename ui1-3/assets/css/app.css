@@ -289,6 +289,10 @@ i.margin-right {
       border-color: #d00f1f; }
   .btn-link {
     color: #0078d7; }
+    .btn-link.text-muted {
+      color: #818a91; }
+      .btn-link.text-muted:hover {
+        color: #0078d7; }
   .btn:disabled {
     opacity: 1; }
 
@@ -1811,7 +1815,7 @@ legend {
     position: relative;
     top: -1px; }
 
-.guidance-panel .card-block {
+.guidance-panel > .card-block {
   border-bottom: 1px solid #ddd; }
 
 .guidance-panel-open i {
@@ -3381,7 +3385,7 @@ legend {
       background: #f5f5f5;
       border-color: #0078d7;
       z-index: 2; }
-      .canvas-section.empty:hover i {
+      .canvas-section.empty:hover .btn-add {
         color: #0078d7; }
     .canvas-section-heading {
       padding: 1rem;
@@ -3409,7 +3413,13 @@ legend {
     .canvas-section-help {
       display: none;
       padding: 0px 1rem;
-      margin: 0 0 0.5rem; }
+      margin: 0 0 0.5rem;
+      -webkit-box-flex: 1;
+      -webkit-flex: 1;
+      -moz-box-flex: 1;
+      -moz-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
     .canvas-section .btn-chart,
     .canvas-section .btn-add {
       font-size: 24px;
@@ -3421,6 +3431,11 @@ legend {
       .canvas-section .btn-add:hover {
         cursor: pointer;
         color: #0078d7; }
+      .canvas-section .btn-chart[disabled],
+      .canvas-section .btn-add[disabled] {
+        cursor: default;
+        color: #bbb;
+        opacity: 0.3; }
     .canvas-section-items {
       list-style: none;
       margin: 0;
@@ -3449,16 +3464,19 @@ legend {
         .canvas-section-items li.placeholder:before {
           position: absolute;
           /** Define arrowhead **/ }
-        .canvas-section-items li i {
+        .canvas-section-items li .fa-square {
           float: left;
           margin-right: 8px;
           margin-top: 4px; }
-          .canvas-section-items li i.canvas-item-color-1 {
+          .canvas-section-items li .fa-square.canvas-item-color-1 {
             color: #FCCF31; }
-          .canvas-section-items li i.canvas-item-color-2 {
+          .canvas-section-items li .fa-square.canvas-item-color-2 {
             color: #94135E; }
-          .canvas-section-items li i.canvas-item-color-3 {
+          .canvas-section-items li .fa-square.canvas-item-color-3 {
             color: #F0889C; }
+        .canvas-section-items li .fa-link {
+          color: #0078d7;
+          cursor: pointer; }
         .canvas-section-items li span {
           overflow: hidden;
           display: block; }

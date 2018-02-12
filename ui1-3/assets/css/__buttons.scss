@@ -53,6 +53,13 @@
   
   &-link {
     color: $blue-color;
+    
+    &.text-muted {
+	    color: $muted-color;
+	    &:hover {
+		    color: $blue-color;
+	    }
+    }
   }
   
   &:disabled {

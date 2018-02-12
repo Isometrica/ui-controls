@@ -117,9 +117,8 @@ $canvas-item-min-height: 240px;
 				border-color: $blue-color;
 				z-index: 2;
 				
-				i {
+				.btn-add {
 					color: $blue-color;
-					
 				}
 			}			
 		}
@@ -142,7 +141,9 @@ $canvas-item-min-height: 240px;
 			display: none;
 			padding: 0px $canvas-section-padding;
 			margin: 0 0 .5rem;
+			@include flex();
 		}
+		
 		
 		.btn-chart,
 		.btn-add {
@@ -155,7 +156,13 @@ $canvas-item-min-height: 240px;
 			&:hover {
 				cursor: pointer;
 				color: $blue-color;
-			}				
+			}			
+			
+			&[disabled] {
+				cursor: default;
+				color: #bbb;
+				opacity: 0.3;
+			}	
 		}
 
 		&-items {
@@ -189,7 +196,7 @@ $canvas-item-min-height: 240px;
 				  /** Define arrowhead **/
 				}
 				
-				i {
+				.fa-square {
 					float: left;
 					margin-right: 8px;
 					margin-top: 4px;
@@ -207,6 +214,11 @@ $canvas-item-min-height: 240px;
 							}
 						}
 					}
+				}
+				
+				.fa-link {
+					color: $blue-color;
+					cursor: pointer;
 				}
 				
 				span {

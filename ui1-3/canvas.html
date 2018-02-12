@@ -272,7 +272,6 @@
 									<a class="btn btn-sm btn-secondary">RK10</a>
 									<a class="btn btn-sm btn-secondary">NC6</a>
 								</div>
-								<a href="#" class="btn btn-link btn-chart"><i class="fa fa-th-large canvas-section-icon-chart" data-toggle="modal" data-target="#key-partners-chart-modal"></i></a>
 							</div>							
 						</div>
 						<div class="canvas-section empty" data-target="#key-resource-edit-modal">
@@ -286,7 +285,7 @@
 						</div>
 					</div>
 					<div class="canvas-col-md">
-						<div class="canvas-section empty" data-target="#value-proposition-edit-modal">
+						<div class="canvas-section" data-target="#value-proposition-edit-modal">
 							<div class="canvas-section-heading">
 								<h4>Value propositions</h4>
 								<a href="#" class="btn btn-link btn-add"><i class="fa fa-plus canvas-section-icon-add"></i></a>
@@ -295,6 +294,23 @@
 								<p>Which of our customer's problems are we helping to solve?</p>
 								<p>What does a winning value proposition look like, vs today's?</p>
 							</div>
+							<ul class="canvas-section-items">
+								<li>
+									<i class="fa fa-square canvas-item-color-2"></i>
+									<span>Compassionate drug use (rare mitochondrial diseases)</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-2"></i> 
+									<span>
+										Novel drug molecule for age-related diseases
+										<i class="fa fa-link" data-tooltip="true" title="Linked to the customer segment 'Pharmaceutical firms''"></i>
+									</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-1"></i>
+									<span>Novel mitochondrial diagnostic test (to use with drug or independently)</span>
+								</li>
+							</ul>
 						</div>
 					</div>
 					<div class="canvas-col-md">
@@ -320,7 +336,7 @@
 						</div>
 					</div>
 					<div class="canvas-col-md">
-						<div class="canvas-section empty" data-target="#customer-segment-edit-modal">
+						<div class="canvas-section" data-target="#customer-segment-edit-modal">
 							<div class="canvas-section-heading">
 								<h4>Customer segments</h4>
 								<a href="#" class="btn btn-link btn-add"><i class="fa fa-plus canvas-section-icon-add"></i></a>
@@ -328,6 +344,31 @@
 							<div class="canvas-section-help text-muted">
 								<p>For whom are we creating value?</p>
 								<p>Who are our most important customers?</p>
+							</div>
+							<ul class="canvas-section-items">
+								<li>
+									<i class="fa fa-square canvas-item-color-3"></i>
+									<span>
+										Pharmaceutical firms 
+										<i class="fa fa-link" data-tooltip="true" title="Linked to the value proposition 'Novel drug molecule for age-related diseases'"></i>
+									</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-1"></i> 
+									<span>Biotechnology firms</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-2"></i>
+									<span>Genome diagnostic firms (23andme - licensing)</span>
+								</li>
+								<li>
+									<i class="fa fa-square canvas-item-color-2"></i>
+									<span>Mitochondrial disease clinicians</span>
+								</li>
+							</ul>
+							<div class="canvas-section-footer">
+								<div class="canvas-section-footer-labels"></div>
+								<a href="#" class="btn btn-link btn-chart"><i class="fa fa-pie-chart canvas-section-icon-chart" data-toggle="modal" data-target="#customer-segments-chart-modal"></i></a>
 							</div>
 						</div>
 					</div>
@@ -376,6 +417,10 @@
 								<p>From which channels and segments?</p>
 								<p>How much does each contribute to overall revenue?</p> 
 							</div>
+							<div class="canvas-section-footer">
+								<div class="canvas-section-footer-labels"></div>
+								<button type="button" class="btn btn-link btn-chart" disabled=""><i class="fa fa-pie-chart canvas-section-icon-chart" data-toggle="modal" data-target="#revenue-streams-chart-modal"></i></button>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -385,6 +430,7 @@
 
 	<!-- Chart Modals -->
   <div ng-include="'includes/key-partners-chart-modal.html'"></div>
+  <div ng-include="'includes/customer-segments-chart-modal.html'"></div>
   <div ng-include="'includes/cost-structure-chart-modal.html'"></div>
   
   <!-- Edit Modals -->

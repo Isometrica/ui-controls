@@ -292,7 +292,74 @@ $( document ).ready(function() {
         },
 			}
 		});	
-		
 	}
+	
+	
+	
+	/* 
+		CUSTOMER SEGMENTS PIE CHART
+	*/
+	
+	$(document).on("shown.bs.modal", "#customer-segments-chart-modal", function() { 
+    showCostStructureChart();
+  });
+	
+	function showCostStructureChart() {
+		var ctx = $("#customer-segments-chart-modal .chart-wrapper canvas");
+
+		new Chart(ctx,{
+			type:"doughnut",
+			data:{
+				labels:[
+					"Pharmaceutical firms",
+					"Biotechnology firms",
+					"Genome diagnostic firms (23andme - licensing)",
+					"Mitochondrial disease clinicians"],
+				datasets:[{
+					label:"My First Dataset",
+					data:[41,29,18,12],
+					backgroundColor:[
+						"#F0889C",
+						"#FCCF31",
+						"#94135E",
+						"#00BCF2"],
+					borderColor: "transparent"
+				}]
+			},
+			options: {
+				tooltips: {
+	        custom: function(tooltip) {
+		        if (!tooltip) return;
+		        // disable displaying the color box;
+		        tooltip.displayColors = false;
+		      },
+	        callbacks: {
+            title: function(tooltipItem, data) {
+	            var index = tooltipItem[0].index;
+	            var title = data.labels[index];
+              return title;
+            },
+            label: function(tooltipItem, data) {
+	            var index = tooltipItem.index;
+	            return data.datasets[0].data[index] + "% market size";
+            },
+            afterLabel: function(tooltipItem, data) {
+				      //return "Spend: $" + tooltipItem.xLabel;
+				    }
+	        }
+        },
+				legend: {
+	        position: 'bottom',
+	        display: true,
+	        labels: {
+		        fontFamily: '"Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
+		        padding: 20,
+		        usePointStyle: true
+	        }
+        },
+			}
+		});	
+	}
+	
 	
 });
