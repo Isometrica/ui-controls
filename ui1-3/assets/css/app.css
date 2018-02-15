@@ -125,6 +125,15 @@ body {
 .text-normal {
   font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif !important; }
 
+.text-left {
+  text-align: left !important; }
+
+.text-center {
+  text-align: center !important; }
+
+.text-right {
+  text-align: right !important; }
+
 .flexbox {
   display: -webkit-box;
   display: -webkit-flex;
@@ -166,6 +175,9 @@ strong {
 
 .margin-left-10 {
   margin-left: 10px !important; }
+
+.margin-right-5 {
+  margin-right: 5px !important; }
 
 .margin-right-10 {
   margin-right: 10px !important; }
@@ -1388,7 +1400,7 @@ legend {
   .modal-dialog > .card > .card-heading {
     border-radius: 4px 4px 0 0; }
     .modal-dialog > .card > .card-heading .card-title {
-      text-align: center !important;
+      text-align: center;
       font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
   .modal-dialog > .card .card-block:not(:first-child) {
     border-top: 1px solid #ddd; }
@@ -1822,7 +1834,7 @@ legend {
   font-size: 24px; }
 
 .guidance-panel-open:not(.collapsed) {
-  display: none; }
+  color: #0078d7; }
 
 .guidance-panel .btn-group .btn:first-child {
   padding-left: 0; }
@@ -3474,9 +3486,6 @@ legend {
             color: #94135E; }
           .canvas-section-items li .fa-square.canvas-item-color-3 {
             color: #F0889C; }
-        .canvas-section-items li .fa-link {
-          color: #0078d7;
-          cursor: pointer; }
         .canvas-section-items li span {
           overflow: hidden;
           display: block; }
@@ -3708,69 +3717,10 @@ body.dragging, body.dragging * {
       fill: #eee;
       transition: all 0.4s ease; }
 
-/* HTML/CSS version
-.valuepropositioncanvas {
-	padding-bottom: 50%;
-	height: 0;
-	overflow: hidden;
-	position: relative;
-	
-	&-valueproposition {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 50%;
-		height: 100%;
-		border: 2px solid black;
-		border-radius: 2px;
-		overflow: hidden;
-		
-		&-gaincreators {
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				height: 50%;
-				border-bottom: 2px solid black;				
-			}
-		}
-		
-		&-painrelievers {
-			&:before {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 50%;
-			}
-		}
-		
-		&-products {
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -70.25%;
-				height: 100%;
-				width: 100%;
-				border: 2px solid black;
-				transform: rotate(45deg);
-				background: white;
-			}
-		}
-	}
-	
-	&-customersegment {
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 50%;
-		height: 100%;
-		border: 2px solid black;
-		border-radius: 50%;
-	}
-}
+/* 
+	Matching view 
 */
+.btn-canvas .fa-angle-left {
+  font-size: 19px;
+  top: 1px;
+  position: relative; }

@@ -91,6 +91,15 @@ body {
 	&-normal {
 		font-family: $font-regular !important;
 	}
+	&-left {
+		text-align: left !important;
+	}
+	&-center {
+		text-align: center !important;
+	}
+	&-right {
+		text-align: right !important;
+	}
 }
 
 .flexbox {
@@ -140,6 +149,9 @@ strong {
 	}
 	
 	&-right {
+		&-5 {
+			margin-right: 5px !important;
+		}
 		&-10 {
 			margin-right: 10px !important;
 		}

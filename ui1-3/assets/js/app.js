@@ -578,9 +578,9 @@ $( document ).ready(function() {
     $( ".guidance-panel-open" ).click(function() {
       console.log("Open guidance panel");
       // Expand panel
-      $(this).closest('.card').find('.guidance-panel').collapse('show');
+      $(this).closest('.card').find('.guidance-panel').collapse('toggle');
       // Hide toggle
-      $(this).removeClass("collapsed");
+      $(this).toggleClass("collapsed");
     });      
   }
   

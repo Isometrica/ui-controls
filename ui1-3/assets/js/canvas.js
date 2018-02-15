@@ -262,7 +262,6 @@ $( document ).ready(function() {
 				}]
 			},
 			options: {
-				/*
 				title: {
 			    display: true,
 			    text: '% of total costs',
@@ -271,7 +270,6 @@ $( document ).ready(function() {
 			    fontSize: 20,
 			    fontStyle: "normal",
 		    },
-		    */
 				tooltips: {
 	        custom: function(tooltip) {
 		        if (!tooltip) return;

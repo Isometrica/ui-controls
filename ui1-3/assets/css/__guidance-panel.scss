@@ -10,7 +10,8 @@
     }
     
     &:not(.collapsed) {
-      display: none;
+      //display: none;
+      color: $blue-color;
     }
   }
   

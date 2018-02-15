@@ -217,8 +217,8 @@ $canvas-item-min-height: 240px;
 				}
 				
 				.fa-link {
-					color: $blue-color;
-					cursor: pointer;
+					//color: $blue-color;
+					//cursor: pointer;
 				}
 				
 				span {
@@ -413,69 +413,12 @@ body.dragging, body.dragging * {
 	}
 }
 
-/* HTML/CSS version
-.valuepropositioncanvas {
-	padding-bottom: 50%;
-	height: 0;
-	overflow: hidden;
-	position: relative;
-	
-	&-valueproposition {
-		position: absolute;
-		left: 0;
-		top: 0;
-		width: 50%;
-		height: 100%;
-		border: 2px solid black;
-		border-radius: 2px;
-		overflow: hidden;
-		
-		&-gaincreators {
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: 0;
-				right: 0;
-				height: 50%;
-				border-bottom: 2px solid black;				
-			}
-		}
-		
-		&-painrelievers {
-			&:before {
-				content: '';
-				position: absolute;
-				bottom: 0;
-				left: 0;
-				right: 0;
-				height: 50%;
-			}
-		}
-		
-		&-products {
-			&:before {
-				content: '';
-				position: absolute;
-				top: 0;
-				left: -70.25%;
-				height: 100%;
-				width: 100%;
-				border: 2px solid black;
-				transform: rotate(45deg);
-				background: white;
-			}
-		}
-	}
-	
-	&-customersegment {
-		position: absolute;
-		right: 0;
-		top: 0;
-		width: 50%;
-		height: 100%;
-		border: 2px solid black;
-		border-radius: 50%;
-	}
-}
+/* 
+	Matching view 
 */
+
+.btn-canvas .fa-angle-left {
+	font-size: 19px;
+	top: 1px;
+	position: relative;
+}
