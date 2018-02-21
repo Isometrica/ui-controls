@@ -322,19 +322,45 @@ body.dragging, body.dragging * {
 
 .valuepropositioncanvas,
 .customersegmentcanvas {
-	position: relative;
-	min-height: 300px;
-	overflow: hidden;
-	margin: 0 -1.25rem;
-	padding: 0 1.25rem;
 	
-	.btn-match {
-		position: absolute;
-		right: 1.25rem;
-		bottom: 1.25rem;
-		opacity: 1;
-		transition: opacity 0.4s ease;
+
+	
+	@include not-mobile {
+		position: relative;
+		min-height: 300px;
+		overflow: hidden;
+		margin: 0 -1.25rem;
+		padding: 0 1.25rem;		
 	}
+	
+	.btn-match {		
+		@include not-mobile {
+			position: absolute;
+			right: 1.25rem;
+			bottom: 1.25rem;
+			opacity: 1;
+			transition: opacity 0.4s ease;			
+		}
+	}
+	
+	.customersegmentcanvas-canvas,
+	.valuepropositioncanvas-canvas {
+		@include mobile {
+			width: 200px;
+			margin: 0 auto 1rem;
+		}		
+	}
+	
+	.card { 
+		z-index: 1;
+		position: relative;
+		
+		@include mobile { // Remove side padding on mobile
+			margin-left: -1.25rem;
+			margin-right: -1.25rem;
+			border-top: 1px solid #ddd;
+		}
+	}	
 	
 	#gains, 
 	#pains, 
@@ -348,64 +374,73 @@ body.dragging, body.dragging * {
 	#gains,
 	#pains,
 	#productsAndServices {
-		margin-right: 170px;		
+		@include not-mobile {
+			margin-right: 170px;
+		}		
 	}
 	
 	#jobs,
 	#painRelievers,
 	#gainCreators {
-		margin-left: 170px;
+		@include not-mobile {
+			margin-left: 170px;
+		}
 	}
 	
 	&-canvas {
-		width: 300px;
-		position: absolute;
-		left: 50%;
-		margin-left: -150px;
-		top: 0;
-		transition: left .4s ease, margin-left .4s ease;
+		@include not-mobile {
+			z-index: 2;
+			width: 300px;
+			position: absolute;
+			left: 50%;
+			margin-left: -150px;
+			top: 0;
+			transition: left .4s ease, margin-left .4s ease;			
+		}
 	}
+	
+
 	
 	&.show-gains {
 		#customersegmentschart-gains { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }}
 		#gains { display: block !important;}
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 
 	
 	&.show-pains {
 		#customersegmentschart-pains { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }}
 		#pains { display: block !important; }
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 
 	
 	&.show-customerJobs {
 		#customersegmentschart-customerJobs { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 0%; margin-left: -130px; }	
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 0%; margin-left: -130px; }}
 		#jobs { display: block !important;  }
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 
 	
 	&.show-gainCreators {
 		#valuepropositionchart-gainCreators { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }}
 		#gainCreators { display: block !important;}
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 
 	
 	&.show-painRelievers {
 		#valuepropositionchart-painRelievers { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }}
 		#painRelievers { display: block !important; }
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 
 	
 	&.show-productsAndServices {
 		#valuepropositionchart-productsAndServices { fill: #eee; }
-		.valuepropositioncanvas-canvas { left: 100%; margin-left: -160px; }	
+		@include not-mobile {.valuepropositioncanvas-canvas { left: 100%; margin-left: -160px; }}
 		#productsAndServices { display: block !important;  }
-		.btn-match { opacity: 0; }
+		.btn-match { opacity: 0; @include mobile { display: none; } }
 	} 	
 	
 	
