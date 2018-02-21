@@ -2,27 +2,39 @@
   font-family: $font-semibold;
   font-weight: normal;
   @include transition(all .3s ease);
-  
 
-  
+
+
   &-primary {
     background: $blue-color;
     border-color: $blue-color;
     &:hover {
       background: darken($blue-color,5%);
-      border-color: darken($blue-color,5%);    
+      border-color: darken($blue-color,5%);
     }
   }
+
+  &-muted {
+    color: #373a3c;
+    background-color: #f5f5f5;
+    border-color: #ccc;
+    
+    &:not(:disabled):hover {
+      background: white;
+      border-color: darken(#ccc,5%);
+    }
+  }
+
   &-info {
     background: $light-blue-color;
     border-color: $light-blue-color;
     &:hover {
       background: darken($light-blue-color,5%);
-      border-color: darken($light-blue-color,5%);    
+      border-color: darken($light-blue-color,5%);
     }
     &:disabled:hover {
       background: $light-blue-color;
-      border-color: $light-blue-color;      
+      border-color: $light-blue-color;
     }
   }
   &-success {
@@ -30,7 +42,7 @@
     border-color: $green-color;
     &:hover {
       background: darken($green-color,5%);
-      border-color: darken($green-color,5%);    
+      border-color: darken($green-color,5%);
     }
   }
   &-warning {
@@ -38,7 +50,7 @@
     border-color: $amber-color;
     &:hover {
       background: darken($amber-color,5%);
-      border-color: darken($amber-color,5%);    
+      border-color: darken($amber-color,5%);
     }
   }
   &-danger {
@@ -46,14 +58,14 @@
     border-color: $red-color;
     &:hover {
       background: darken($red-color,5%);
-      border-color: darken($red-color,5%);    
+      border-color: darken($red-color,5%);
     }
   }
-  
-  
+
+
   &-link {
     color: $blue-color;
-    
+
     &.text-muted {
 	    color: $muted-color;
 	    &:hover {
@@ -61,7 +73,7 @@
 	    }
     }
   }
-  
+
   &:disabled {
     opacity: 1;
   }
@@ -72,7 +84,7 @@
   padding-left: 0;
   padding-right: 0;
   text-align: center;
-  
+
   i {
     font-size: 20px;
     line-height: 18px;
@@ -86,7 +98,7 @@
 .btn-group {
   &-nomargin {
     margin-bottom: 0 !important;
-    
+
     .btn {
       margin-bottom: 0 !important;
     }
@@ -99,7 +111,7 @@
     background: $light-blue-color;
     border-color: $light-blue-color;
     color: white;
-  }  
+  }
 }
 
 
@@ -124,7 +136,7 @@
 .btn-file {
   position: relative;
   overflow: hidden;
-  
+
   input[type=file] {
     position: absolute;
     top: 0;
@@ -150,14 +162,14 @@
   &-label {
     &-show {
       display: none;
-      
+
       .collapsed & {
         display: inline
       }
     }
     &-hide {
       display: inline;
-      
+
       .collapsed & {
         display: none;
       }

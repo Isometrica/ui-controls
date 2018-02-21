@@ -275,6 +275,13 @@ i.margin-right {
     .btn-primary:hover {
       background: #006abe;
       border-color: #006abe; }
+  .btn-muted {
+    color: #373a3c;
+    background-color: #f5f5f5;
+    border-color: #ccc; }
+    .btn-muted:not(:disabled):hover {
+      background: white;
+      border-color: #bfbfbf; }
   .btn-info {
     background: #00BCF2;
     border-color: #00BCF2; }
