@@ -1,0 +1,170 @@
+  <div class="modal fade" id="key-goal-edit-modal">
+    <div class="modal-dialog">
+      <div class="card">
+        <div class="card-block card-heading">
+          <div class="card-heading-buttons pull-xs-left">
+            <button type="button" class="btn btn-link text-muted btn-icon guidance-panel-open collapsed">
+      				<i class="fa fa-question-circle"></i>
+      			</button>
+          </div>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-primary" data-dismiss="modal">
+      				Close
+      			</button>
+          </div>
+          <h4 class="card-title">Key goal</h4>
+        </div>
+        <div ng-include="'includes/guidance-panel.html'"></div>
+        <form>
+          <div class="card-block">
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Key goal name</label>
+              <div class="col-sm-8 col-xs-12">
+                <input type="text" class="form-control" placeholder="Key goal name" value="Finish UI design"/>
+                <button type="button" class="btn btn-link clear-field">
+				          <i class="fa fa-times-circle"></i>
+				        </button>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Owner</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="dropdown">
+                  <input class="form-control" data-toggle="dropdown" placeholder="Created by" value="Stephen Ives"/>
+                  <div class="dropdown-menu dropdown-menu-full">
+                    <a class="dropdown-item" href="#">Jack Herbert</a>
+                    <a class="dropdown-item active" href="#">Stephen Ives</a>
+                    <a class="dropdown-item" href="#">Mark Leusink</a>
+                    <a class="dropdown-item" href="#">Steve Saunders</a>
+                    <a class="dropdown-item" href="#">Mike Smith</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#"><strong>Add new user</strong></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group row">
+			        <label class="form-control-label col-sm-4 col-xs-12">Start date</label>
+			        <div class="col-sm-8 col-xs-12">
+				        <input type="text" class="form-control" value="3 Mar 2017" placeholder="Start date">
+				        <button type="button" class="btn btn-link clear-field">
+				          <i class="fa fa-times-circle"></i>
+				        </button>
+			        </div>
+		        </div>
+		        <div class="form-group row">
+			        <label class="form-control-label col-sm-4 col-xs-12">End date</label>
+			        <div class="col-sm-8 col-xs-12">
+				        <input type="text" class="form-control" value="30 Jun 2017" placeholder="End date">
+				        <button type="button" class="btn btn-link clear-field">
+				          <i class="fa fa-times-circle"></i>
+				        </button>
+			        </div>
+		        </div>
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Priority</label>
+              <div class="col-sm-8 col-xs-12">
+                <div class="btn-group margin-bottom-0" data-toggle="buttons">
+                  <label class="btn btn-secondary margin-bottom-0 active">
+                    <input type="radio" name="options" id="option1" autocomplete="off" checked=""/> Minor
+                  </label>
+                  <label class="btn btn-secondary margin-bottom-0">
+                    <input type="radio" name="options" id="option2" autocomplete="off"/> Major
+                  </label>
+                  <label class="btn btn-secondary margin-bottom-0">
+                    <input type="radio" name="options" id="option2" autocomplete="off"/> Critical
+                  </label>
+                </div>
+              </div>
+            </div>	
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Status</label>
+              <div class="col-sm-8 col-xs-12">
+                <p class="form-control-static">
+	                <i class="fa fa-circle text-warning margin-right-5"></i>
+	                Open - awaiting completion
+	              </p>
+              </div>
+            </div>	
+		        <div class="form-group row">
+			        <label class="form-control-label col-sm-4 col-xs-12">Status description</label>
+			        <div class="col-sm-8 col-xs-12">
+			          <textarea class="form-control autosize" rows="3" placeholder="Description"></textarea>
+			        </div>
+		        </div>            	        
+            <div class="form-group row">
+              <label class="form-control-label col-sm-4 col-xs-12">Color</label>
+              <div class="col-sm-8 col-xs-12">
+								<div ng-include="'includes/color-picker.html'"></div>
+              </div>
+            </div>           
+          </div>
+          <div class="card-footer card-more-toggle collapsed">
+          	<span class="card-more-toggle-more">More</span>
+          	<span class="card-more-toggle-less">Less</span>
+          </div>
+          <div class="collapse card-more">
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Actions</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/corrective-actions.html'"></div>
+	          </div>
+						<div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Milestones</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+            	<div ng-include="'includes/subcards-edit/milestones.html'"></div>
+	          </div>
+            <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Risks</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+            	<div ng-include="'includes/subcards-edit/risks.html'"></div>
+	          </div>
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Notify changes</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/notify.html'"></div>
+	          </div> 
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Lessons learned</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+            	<div ng-include="'includes/subcards-edit/lessons.html'"></div>
+	          </div>
+	          <div class="card-block card-block-collapse-toggle collapsed">
+	            <h4 class="card-title pull-xs-left">Files</h4>
+	            <h4 class="card-title pull-xs-right">
+	              <span class="text-muted">2</span>
+	            </h4>
+	          </div>
+	          <div class="card-block-collapse collapse">
+	            <div ng-include="'includes/subcards-edit/files.html'"></div>
+	          </div> 
+	          
+	          <div class="card-block text-xs-center">
+            	<button type="button" class="btn btn-secondary">Delete</button>
+          	</div>    
+          	<div ng-include="'includes/card-footer-changelog.html'"></div>     
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>

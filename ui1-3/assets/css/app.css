@@ -148,6 +148,13 @@ body {
     -ms-flex: 1;
     flex: 1; }
 
+.rotate-45 {
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
 strong {
   font-weight: normal;
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
@@ -1944,11 +1951,11 @@ legend {
       z-index: 1;
       background: #777; }
       .goal-custom-color-1 .goal-markers:after {
-        background: #FCCF31; }
+        background: #CE93D8; }
       .goal-custom-color-2 .goal-markers:after {
-        background: #94135E; }
+        background: #90CAF9; }
       .goal-custom-color-3 .goal-markers:after {
-        background: #F0889C; }
+        background: #80CBC4; }
   .goal-marker {
     position: absolute;
     top: 50%;
@@ -1970,11 +1977,11 @@ legend {
       z-index: 2;
       background: white; }
       .goal-custom-color-1 .goal-marker-toggle {
-        border-color: #FCCF31; }
+        border-color: #CE93D8; }
       .goal-custom-color-2 .goal-marker-toggle {
-        border-color: #94135E; }
+        border-color: #90CAF9; }
       .goal-custom-color-3 .goal-marker-toggle {
-        border-color: #F0889C; }
+        border-color: #80CBC4; }
       .goal-marker-toggle:after {
         display: none; }
     .goal-marker.start {
@@ -1987,11 +1994,11 @@ legend {
     .goal-marker:hover .dropdown-toggle {
       border-color: #515151; }
       .goal-custom-color-1 .goal-marker:hover .dropdown-toggle {
-        border-color: #ddad03; }
+        border-color: #b55bc4; }
       .goal-custom-color-2 .goal-marker:hover .dropdown-toggle {
-        border-color: #500a33; }
+        border-color: #47a7f5; }
       .goal-custom-color-3 .goal-marker:hover .dropdown-toggle {
-        border-color: #e74463; }
+        border-color: #4ab5ab; }
     .goal-marker.start .dropdown-toggle,
     .goal-marker.finish .dropdown-toggle,
     .goal-marker.completed .dropdown-toggle {
@@ -1999,15 +2006,15 @@ legend {
       .goal-custom-color-1 .goal-marker.start .dropdown-toggle,
       .goal-custom-color-1 .goal-marker.finish .dropdown-toggle,
       .goal-custom-color-1 .goal-marker.completed .dropdown-toggle {
-        background: #FCCF31; }
+        background: #CE93D8; }
       .goal-custom-color-2 .goal-marker.start .dropdown-toggle,
       .goal-custom-color-2 .goal-marker.finish .dropdown-toggle,
       .goal-custom-color-2 .goal-marker.completed .dropdown-toggle {
-        background: #94135E; }
+        background: #90CAF9; }
       .goal-custom-color-3 .goal-marker.start .dropdown-toggle,
       .goal-custom-color-3 .goal-marker.finish .dropdown-toggle,
       .goal-custom-color-3 .goal-marker.completed .dropdown-toggle {
-        background: #F0889C; }
+        background: #80CBC4; }
       .goal-marker.start .dropdown-toggle:hover,
       .goal-marker.finish .dropdown-toggle:hover,
       .goal-marker.completed .dropdown-toggle:hover {
@@ -2015,15 +2022,15 @@ legend {
         .goal-custom-color-1 .goal-marker.start .dropdown-toggle:hover,
         .goal-custom-color-1 .goal-marker.finish .dropdown-toggle:hover,
         .goal-custom-color-1 .goal-marker.completed .dropdown-toggle:hover {
-          background: #ddad03; }
+          background: #b55bc4; }
         .goal-custom-color-2 .goal-marker.start .dropdown-toggle:hover,
         .goal-custom-color-2 .goal-marker.finish .dropdown-toggle:hover,
         .goal-custom-color-2 .goal-marker.completed .dropdown-toggle:hover {
-          background: #500a33; }
+          background: #47a7f5; }
         .goal-custom-color-3 .goal-marker.start .dropdown-toggle:hover,
         .goal-custom-color-3 .goal-marker.finish .dropdown-toggle:hover,
         .goal-custom-color-3 .goal-marker.completed .dropdown-toggle:hover {
-          background: #e74463; }
+          background: #4ab5ab; }
     .goal-marker.start.arrow .dropdown-toggle,
     .goal-marker.finish.arrow .dropdown-toggle,
     .goal-marker.completed.arrow .dropdown-toggle {
@@ -2085,6 +2092,32 @@ legend {
       overflow: hidden; }
       .goal-tasks li > span span {
         white-space: nowrap; }
+
+/*
+	ICONS USED ELSEWHERE
+*/
+.goal-marker-icon {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  border: 3px solid #777;
+  background: white; }
+  .goal-marker-icon.goal-custom-color-1 {
+    border-color: #CE93D8; }
+  .goal-marker-icon.goal-custom-color-2 {
+    border-color: #90CAF9; }
+  .goal-marker-icon.goal-custom-color-3 {
+    border-color: #80CBC4; }
+  .goal-marker-icon.completed {
+    background: #777; }
+    .goal-marker-icon.completed.goal-custom-color-1 {
+      background: #CE93D8; }
+    .goal-marker-icon.completed.goal-custom-color-2 {
+      background: #90CAF9; }
+    .goal-marker-icon.completed.goal-custom-color-3 {
+      background: #80CBC4; }
+  .goal-marker-icon.milestone {
+    transform: rotate(45deg); }
 
 /* 
   SCREENS

@@ -6,20 +6,7 @@ $( document ).ready(function() {
 	// Sortable lists for items 
   $('.canvas-section-items').sortable();
 	
-	$(document).on("show.bs.modal", ".modal", function() {
-		// Colorpicker
-		$('select[name="colorpicker"]').simplecolorpicker({picker: true, theme: 'fontawesome'});
-		// Old colorpicker
-    $('.colorpicker-component').colorpicker();
-    // Autosize
-    autosize($('.autosize'));
-  });
-  
-	$(document).on("shown.bs.collapse", ".collapse", function() {
-    // Autosize
-    autosize($('.autosize'));
-    autosize.update($('.autosize'));
-  });
+
   
   // Clicking canvas section Add button launches modal
   

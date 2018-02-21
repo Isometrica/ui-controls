@@ -1,6 +1,22 @@
 var app = angular.module('plio', []);
 
 $( document ).ready(function() {
+
+	$(document).on("show.bs.modal", ".modal", function() {
+		// Colorpicker
+		$('select[name="colorpicker"]').simplecolorpicker({picker: true, theme: 'fontawesome'});
+		// Old colorpicker
+    $('.colorpicker-component').colorpicker();
+    // Autosize
+    autosize($('.autosize'));
+  });
+  
+	$(document).on("shown.bs.collapse", ".collapse", function() {
+    // Autosize
+    autosize($('.autosize'));
+    autosize.update($('.autosize'));
+  });
+
   
   /*
     Tooltips
