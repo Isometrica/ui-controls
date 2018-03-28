@@ -122,7 +122,8 @@ $( document ).ready(function() {
 	*/
 	
 	$(document).on("click", ".goal-title", function() {
-		$(this).closest(".goal").find(".goal-tasks").collapse("toggle");
+		$(this).toggleClass("collapsed").closest(".goal").find(".goal-tasks").collapse("toggle");
+		return false;
 	});
 	
   

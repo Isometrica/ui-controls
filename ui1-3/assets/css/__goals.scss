@@ -37,6 +37,17 @@ $marker-color-custom-3: #80CBC4;
 	
 	&-collapse {
 		overflow: hidden;
+		
+		&-toggle {
+			i {
+				transition: all .4s ease;
+			}
+			&.collapsed {
+				i {
+					transform: rotate(-90deg);
+				}
+			}
+		}
 	}
 }
 
@@ -102,13 +113,13 @@ $marker-color-custom-3: #80CBC4;
 			text-align: center;
 			border: $marker-border-size solid $marker-color-default;
 			transition: background-color 0.4s ease, border-color 0.4s ease;
+			cursor: pointer;
+			z-index: 2;
+			background: white;
 			
 			.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
 			.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
 			.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
-			cursor: pointer;
-			z-index: 2;
-			background: white;
 			
 			&:after {
 				display: none;
@@ -190,7 +201,7 @@ $marker-color-custom-3: #80CBC4;
 		position: relative;
 		height: 20px;
 		text-align: center;
-		margin: 0 0 .5rem;
+		margin: 0;
 		//left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
@@ -206,6 +217,8 @@ $marker-color-custom-3: #80CBC4;
 	
 	&-title {
 		font-family: $font-semibold;
+		color: $body-color;
+		cursor: pointer;
 		@include flex(1);
 		white-space: nowrap;
 		overflow: hidden;
@@ -213,22 +226,38 @@ $marker-color-custom-3: #80CBC4;
 		margin: 0 .5rem;
 		//font-weight: bold;
 		
+		i {
+			transition: all .4s ease;
+			margin-left: 4px;
+		}
+		
+		&.collapsed {
+			i {
+				transform: rotate(-90deg);
+			}
+		}
+		
 
 	}
 	
 	&-tasks {
-		list-style: none;
-		padding: 0;
-		margin: 0;
-		left: $marker-size * -0.5;
+		margin-left: -10px;
 		position: relative;
 		z-index: 2;
 		overflow: hidden;
+		
+		ul {
+			list-style: none;
+			padding: 0;
+			margin: .5rem 0 0;			
+		}
 		
 		li {
 			i {
 				float: left;
 				margin-top: 4px;
+				margin-left: 5px;
+				margin-right: 10px;
 			}
 			> span {
 				display: block;
@@ -269,6 +298,8 @@ $marker-icon-border-size: 3px;
 	}
 
 	&.milestone {
+		width: $marker-icon-size * 0.9;
+		height: $marker-icon-size * 0.9;
 		transform: rotate(45deg);			
 	}
 }
