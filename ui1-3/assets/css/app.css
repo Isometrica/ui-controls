@@ -160,7 +160,8 @@ strong {
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
 
 .tooltip {
-  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif; }
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+  z-index: 1039; }
 
 .margin-top {
   margin-top: 5px !important; }
@@ -1950,13 +1951,24 @@ legend {
       height: 4px;
       margin-top: -2px;
       z-index: 1;
-      background: #777; }
+      background: #777;
+      transition: background 0.4s ease; }
       .goal-custom-color-1 .goal-markers:after {
         background: #CE93D8; }
       .goal-custom-color-2 .goal-markers:after {
         background: #90CAF9; }
       .goal-custom-color-3 .goal-markers:after {
         background: #80CBC4; }
+    .goal-markers:hover {
+      cursor: pointer; }
+    .goal-markers:hover:after {
+      background: #515151; }
+      .goal-custom-color-1 .goal-markers:hover:after {
+        background: #b55bc4; }
+      .goal-custom-color-2 .goal-markers:hover:after {
+        background: #47a7f5; }
+      .goal-custom-color-3 .goal-markers:hover:after {
+        background: #4ab5ab; }
   .goal-marker {
     position: absolute;
     top: 50%;

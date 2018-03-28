@@ -101,6 +101,30 @@ $( document ).ready(function() {
 		}
 	});
 	
+	/*
+		DASHBOARD - Clicking goal line launches Key Goal modal
+	*/
+	
+	$(document).on("click", ".goal-markers", function() {
+		$("#key-goal-edit-modal").modal("show");
+	});
+	
+	/*
+		DASHBOARD - Clicking on marker dropdown *doesn't* launch Key Goal modal
+	*/
+	
+	$(document).on("click", ".goal-markers .dropdown-menu", function(e) {
+		e.stopPropagation();
+	});
+	
+	/*
+		DASHBOARD - Clicking goal title toggles tasks
+	*/
+	
+	$(document).on("click", ".goal-title", function() {
+		$(this).closest(".goal").find(".goal-tasks").collapse("toggle");
+	});
+	
   
   /*
     STANDARDS SIDEBAR - collapse

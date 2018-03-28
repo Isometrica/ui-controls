@@ -6,7 +6,13 @@ $( document ).ready(function() {
 	// Sortable lists for items 
   $('.canvas-section-items').sortable();
 	
-
+	// Custom select dropdowns
+	/*
+	$('.selectpicker').selectpicker();
+	$(document).on("shown.bs.modal", ".modal", function() { 
+    $('.selectpicker').selectpicker();
+  });
+  */
   
   // Clicking canvas section Add button launches modal
   

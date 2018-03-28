@@ -40,10 +40,7 @@ $marker-color-custom-3: #80CBC4;
 	}
 }
 
-.goal {
-
-
-		
+.goal {	
 	margin-bottom: 1.25rem;
 	position: relative;
 	padding: 0 $marker-size/2;
@@ -68,9 +65,21 @@ $marker-color-custom-3: #80CBC4;
 			margin-top: -2px;
 			z-index: 1;
 			background: $marker-color-default;
+			transition: background .4s ease;
 			.goal-custom-color-1 & { background: $marker-color-custom-1; }
 			.goal-custom-color-2 & { background: $marker-color-custom-2; }
 			.goal-custom-color-3 & { background: $marker-color-custom-3; }
+		}
+		
+		&:hover {
+			cursor: pointer;
+		}
+
+		&:hover:after {
+			background: darken($marker-color-default, 15%);
+			.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
+			.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
+			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }	
 		}
 
 	}

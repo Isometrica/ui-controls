@@ -1,0 +1,26 @@
+html, body {
+  overflow: hidden !important;
+  height: auto !important;
+  display: block !important;
+  color: black !important; }
+
+.content {
+  overflow: hidden !important;
+  display: block !important; }
+
+.canvas-wrapper {
+  position: static !important;
+  overflow: hidden !important;
+  display: block !important; }
+
+.canvas-col-md {
+  display: flex !important; }
+
+.canvas-section {
+  flex: 1 !important; }
+  .canvas-section .btn-chart,
+  .canvas-section .btn-add {
+    display: none !important; }
+  .canvas-section-items li {
+    display: inline-block;
+    margin-right: 15px; }

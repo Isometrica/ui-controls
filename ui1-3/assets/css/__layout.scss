@@ -122,6 +122,7 @@ strong {
 
 .tooltip {
 	font-family: $font-regular;
+	z-index: 1039; // Disply underneath modals
 }
 
 .margin-top {
