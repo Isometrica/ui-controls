@@ -268,22 +268,22 @@
 		        		<div class="goal">
 			        		<ol class="goal-markers" style="left:0%;width:75%">
 				        		<li class="goal-marker start" data-tooltip="true" title="Start">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 				        		<li style="left:10%" class="goal-marker milestone completed" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
 				        		<li style="left:20%" class="goal-marker action completed" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Start campaign on Medium">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
 				        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Another task title">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 		        			</ol>
 		        			<div class="goal-dates" style="left:0%;width:75%">
@@ -309,26 +309,25 @@
 				        				<i class="goal-marker-icon action outstanding"></i>
 				        				<span>Another task title <span class="text-muted">Jane Jones, 11 Apr 2017</span></span>
 				        			</li>
-				        			<li>
-				        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add task</a>
-				        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
-				        			</li>
-			        			</ul>			        			
+			        			</ul>		
+			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
+		        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
+		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>	        			
 		        			</div>
 		        		</div>
 		        		<div class="goal goal-custom-color-1">
 			        		<ol class="goal-markers" style="left:5%;width:60%">
 				        		<li class="goal-marker start" data-tooltip="true" title="Start">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 				        		<li class="goal-marker milestone outstanding" style="left:40%" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker action outstanding" style="left:60%" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 		        			</ol>
 		        			<div class="goal-dates" style="left:5%;width:60%">
@@ -346,26 +345,25 @@
 				        				<i class="goal-marker-icon action outstanding goal-custom-color-1"></i>
 				        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
 				        			</li>
-				        			<li>
-				        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add task</a>
-				        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
-				        			</li>
 			        			</ul>
+			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
+		        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
+		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 		        			</div>
 		        		</div>
 		        		<div class="goal"> 
 			        		<ol class="goal-markers" style="left:20%;width:30%">
 				        		<li class="goal-marker start" data-tooltip="true" title="Start">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 				        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
 				        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
-				        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 		        			</ol>
 		        			<div class="goal-dates" style="left:20%;width:30%">
@@ -383,11 +381,10 @@
 			        					<i class="goal-marker-icon action outstanding"></i>
 				        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
 				        			</li>
-				        			<li>
-				        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add task</a>
-				        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
-				        			</li>
-			        			</ul>				        			
+			        			</ul>		
+			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
+		        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
+		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>			        			
 		        			</div>
 		        		</div>		        		
 		        		<div class="collapse goals-collapse">
@@ -395,16 +392,16 @@
 			        		<div class="goal goal-custom-color-2"> 
 				        		<ol class="goal-markers" style="left:40%;width:60%">
 					        		<li class="goal-marker start" data-tooltip="true" title="Start">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
 					        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        		</li>
 					        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        		</li>
 					        		<li class="goal-marker finish arrow" data-tooltip="true" title="Target end">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
 			        			</ol>
 			        			<div class="goal-dates" style="left:40%;width:60%">
@@ -422,26 +419,25 @@
 				        					<i class="goal-marker-icon action outstanding goal-custom-color-2"></i>
 					        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
 					        			</li>
-					        			<li>
-					        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add task</a>
-					        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
-					        			</li>
-				        			</ul>				        							        			
+				        			</ul>	
+				        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
+			        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
+			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>				        							        			
 			        			</div>
 			        		</div>
 			        		<div class="goal goal-custom-color-3"> 
 				        		<ol class="goal-markers" style="left:70%;width:30%">
 					        		<li class="goal-marker start" data-tooltip="true" title="Start">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
 					        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        		</li>
 					        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        		</li>
 					        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
-					        			<div ng-include="'includes/dashboard-goal-dropdown.html'"></div>
+					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
 			        			</ol>
 			        			<div class="goal-dates" style="left:70%;width:30%">
@@ -459,11 +455,10 @@
 				        					<i class="goal-marker-icon action outstanding goal-custom-color-3"></i>
 					        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
 					        			</li>
-					        			<li>
-					        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add task</a>
-					        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
-					        			</li>
-				        			</ul>				        			
+				        			</ul>		
+		        					<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
+			        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
+			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>		        			
 			        			</div>
 
 			        		</div>
@@ -589,6 +584,7 @@
   <div ng-include="'includes/nonconformity-edit-modal.html'"></div>
   <div ng-include="'includes/key-goal-edit-modal.html'"></div>
   <div ng-include="'includes/milestone-edit-modal.html'"></div>
+  <div ng-include="'includes/action-edit-modal.html'"></div>
   <div ng-include="'includes/org-settings-modal.html'"></div>
 
 

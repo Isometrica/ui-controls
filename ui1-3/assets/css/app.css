@@ -2108,10 +2108,10 @@ legend {
     .goal-tasks ul {
       list-style: none;
       padding: 0;
-      margin: .5rem 0 0; }
+      margin: .5rem 0; }
     .goal-tasks li i {
       float: left;
-      margin-top: 4px;
+      margin-top: 5px;
       margin-left: 5px;
       margin-right: 10px; }
     .goal-tasks li > span {
