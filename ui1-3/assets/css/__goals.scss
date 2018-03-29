@@ -253,6 +253,10 @@ $marker-color-custom-3: #80CBC4;
 		}
 		
 		li {
+			&:hover {
+				cursor: pointer;
+				color: darken($body-color, 20%);
+			}
 			i {
 				float: left;
 				margin-top: 5px;

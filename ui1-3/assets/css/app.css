@@ -2109,6 +2109,9 @@ legend {
       list-style: none;
       padding: 0;
       margin: .5rem 0; }
+    .goal-tasks li:hover {
+      cursor: pointer;
+      color: #060707; }
     .goal-tasks li i {
       float: left;
       margin-top: 5px;
