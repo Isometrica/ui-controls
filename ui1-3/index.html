@@ -271,16 +271,20 @@
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
 				        		<li style="left:10%" class="goal-marker milestone completed" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
 				        		<li style="left:20%" class="goal-marker action completed" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
-				        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Start campaign on Medium">
-				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+				        		<li style="left:40%" class="goal-marker milestone outstanding overdue" data-tooltip="true" title="Start campaign on Medium">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
-				        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Another task title">
-				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+				        		<li style="left:60%" class="goal-marker action outstanding due-today" data-tooltip="true" title="Another task title">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -293,21 +297,25 @@
 		        			</div>
 		        			<div class="goal-tasks collapse" style="left:0%">
 			        			<ul>
-				        			<li href="#milestone-edit-modal" data-toggle="modal">
+				        			<li class="dropdown">
 				        				<i class="goal-marker-icon milestone completed"></i>
-				        				<span>Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        			</li>
-				        			<li href="#action-edit-modal" data-toggle="modal">
+				        			<li class="dropdown">
 				        				<i class="goal-marker-icon action completed"></i>
-				        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
-				        			<li href="#milestone-edit-modal" data-toggle="modal">
-				        				<i class="goal-marker-icon milestone outstanding"></i>
-				        				<span>Start campaign on Medium <span class="text-muted">Jane Jones, 9 Apr 2017</span></span>
+				        			<li class="dropdown">
+				        				<i class="goal-marker-icon milestone outstanding overdue"></i>
+				        				<span data-toggle="dropdown">Start campaign on Medium <span class="text-muted">Jane Jones, 9 Apr 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        			</li>
-				        			<li href="#action-edit-modal" data-toggle="modal">
-				        				<i class="goal-marker-icon action outstanding"></i>
-				        				<span>Another task title <span class="text-muted">Jane Jones, 11 Apr 2017</span></span>
+				        			<li class="dropdown">
+				        				<i class="goal-marker-icon action outstanding due-today"></i>
+				        				<span data-toggle="dropdown">Another task title <span class="text-muted">Jane Jones, 11 Apr 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
 			        			</ul>		
 			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
@@ -320,11 +328,13 @@
 				        		<li class="goal-marker start" data-tooltip="true" title="Start">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
-				        		<li class="goal-marker milestone outstanding" style="left:40%" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+				        		<li class="goal-marker milestone outstanding in-progress" style="left:40%" data-tooltip="true" title="Find someone to run ad campaign">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
-				        		<li class="goal-marker action outstanding" style="left:60%" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+				        		<li class="goal-marker action outstanding due-today" style="left:60%" data-tooltip="true" title="Get introduction from Kathy Weeks">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -337,13 +347,15 @@
 		        			</div>
 		        			<div class="goal-tasks collapse" style="left:5%">
 						        <ul>
-				        			<li href="#milestone-edit-modal" data-toggle="modal">
-				        				<i class="goal-marker-icon milestone outstanding goal-custom-color-1"></i>
-				        				<span>Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        			<li class="dropdown">
+				        				<i class="goal-marker-icon milestone outstanding in-progress goal-custom-color-1"></i>
+				        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        			</li>
-				        			<li href="#action-edit-modal" data-toggle="modal">
-				        				<i class="goal-marker-icon action outstanding goal-custom-color-1"></i>
-				        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        			<li class="dropdown">
+				        				<i class="goal-marker-icon action outstanding due-today goal-custom-color-1"></i>
+				        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
 			        			</ul>
 			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
@@ -356,11 +368,13 @@
 				        		<li class="goal-marker start" data-tooltip="true" title="Start">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
 				        		</li>
-				        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-				        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+				        		<li style="left:40%" class="goal-marker milestone outstanding overdue" data-tooltip="true" title="Find someone to run ad campaign">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        		</li>
-				        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-				        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+				        		<li style="left:60%" class="goal-marker action outstanding in-progress" data-tooltip="true" title="Get introduction from Kathy Weeks">
+				        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+				        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        		</li>
 				        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -373,13 +387,15 @@
 		        			</div>
 		        			<div class="goal-tasks collapse" style="left:20%">
 			        			<ul>
-				        			<li href="#milestone-edit-modal" data-toggle="modal">
-			        					<i class="goal-marker-icon milestone outstanding"></i>
-				        				<span>Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        			<li class="dropdown">
+			        					<i class="goal-marker-icon milestone overdue outstanding"></i>
+				        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 				        			</li>
-				        			<li href="#action-edit-modal" data-toggle="modal">
-			        					<i class="goal-marker-icon action outstanding"></i>
-				        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        			<li class="dropdown">
+			        					<i class="goal-marker-icon action outstanding in-progress"></i>
+				        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
 			        			</ul>		
 			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
@@ -394,11 +410,13 @@
 					        		<li class="goal-marker start" data-tooltip="true" title="Start">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
-					        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-					        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+					        		<li style="left:40%" class="goal-marker milestone outstanding overdue" data-tooltip="true" title="Find someone to run ad campaign">
+					        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+					        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        		</li>
-					        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-					        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+					        		<li style="left:60%" class="goal-marker action outstanding in-progress" data-tooltip="true" title="Get introduction from Kathy Weeks">
+					        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+					        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        		</li>
 					        		<li class="goal-marker finish arrow" data-tooltip="true" title="Target end">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -411,13 +429,15 @@
 			        			</div>
 			        			<div class="goal-tasks collapse" style="left:40%">
 				        			<ul>
-					        			<li href="#milestone-edit-modal" data-toggle="modal">
-				        					<i class="goal-marker-icon milestone outstanding goal-custom-color-2"></i>
-					        				<span>Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+					        			<li class="dropdown">
+				        					<i class="goal-marker-icon milestone outstanding overdue goal-custom-color-2"></i>
+					        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        			</li>
-					        			<li href="#action-edit-modal" data-toggle="modal">
-				        					<i class="goal-marker-icon action outstanding goal-custom-color-2"></i>
-					        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+					        			<li class="dropdown">
+				        					<i class="goal-marker-icon action outstanding in-progress goal-custom-color-2"></i>
+					        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        			</li>
 				        			</ul>	
 				        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
@@ -430,11 +450,13 @@
 					        		<li class="goal-marker start" data-tooltip="true" title="Start">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
 					        		</li>
-					        		<li style="left:40%" class="goal-marker milestone outstanding" data-tooltip="true" title="Find someone to run ad campaign">
-					        			<div ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
+					        		<li style="left:40%" class="goal-marker milestone outstanding in-progress" data-tooltip="true" title="Find someone to run ad campaign">
+					        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+					        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        		</li>
-					        		<li style="left:60%" class="goal-marker action outstanding" data-tooltip="true" title="Get introduction from Kathy Weeks">
-					        			<div ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
+					        		<li style="left:60%" class="goal-marker action outstanding due-today" data-tooltip="true" title="Get introduction from Kathy Weeks">
+					        			<a class="dropdown-toggle goal-marker-toggle" data-toggle="dropdown" data-boundary=".goals"></a>
+					        			<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        		</li>
 					        		<li class="goal-marker finish" data-tooltip="true" title="Target end">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -447,13 +469,15 @@
 			        			</div>
 			        			<div class="goal-tasks collapse" style="left:70%">
 				        			<ul>
-					        			<li href="#milestone-edit-modal" data-toggle="modal">
-				        					<i class="goal-marker-icon milestone outstanding goal-custom-color-3"></i>
-					        				<span>Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+					        			<li class="dropdown">
+				        					<i class="goal-marker-icon milestone outstanding in-progress goal-custom-color-3"></i>
+					        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span></span>
+					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        			</li>
 					        			<li>
-				        					<i class="goal-marker-icon action outstanding goal-custom-color-3"></i>
-					        				<span>Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+				        					<i class="goal-marker-icon action outstanding due-today goal-custom-color-3"></i>
+					        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span></span>
+					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        			</li>
 				        			</ul>		
 		        					<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
