@@ -491,6 +491,7 @@ legend {
 .simplecolorpicker {
 	&.picker {
 		max-width: 368px;
+		max-width: 278px;
 		margin-left: 5px;
 		
 		@include mobile {

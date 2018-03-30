@@ -3,7 +3,7 @@ $marker-border-size: 4px;
 $marker-color-default: #777;
 $marker-color-custom-1: #CE93D8;
 $marker-color-custom-2: #90CAF9;
-$marker-color-custom-3: #80CBC4;
+$marker-color-custom-3: #80DEEA;
 
 .goals {
 	//overflow-x: auto;
@@ -15,6 +15,7 @@ $marker-color-custom-3: #80CBC4;
 	}
 	
 	&-timeline {
+		//z-index: 0;
 		&-dates {
 			list-style: none;
 			padding: 0;
@@ -32,11 +33,12 @@ $marker-color-custom-3: #80CBC4;
 			top: 0;
 			bottom: 0;
 			background: #ddd;
+			z-index: -1;
 		}
 	}
 	
 	&-collapse {
-		overflow: hidden;
+		//overflow: hidden;
 		
 		&-toggle {
 			i {
@@ -52,20 +54,34 @@ $marker-color-custom-3: #80CBC4;
 }
 
 .goal {	
-	margin-bottom: 1.25rem;
 	position: relative;
-	padding: 0 $marker-size/2;
+	padding: 10px $marker-size/2;
+	//z-index: 1;
 	
 	&-markers {
 		list-style: none;
 		padding: 0;
 		position: relative;
-		z-index: 1;
+		//z-index: 1;
 		height: $marker-size + 6;
+		height: 4px;
 		margin: 0;
 		padding: 0;
-		margin-bottom: .25rem;
+		background: $marker-color-default;
+		transition: background .4s ease;
+		cursor: pointer;
+		.goal-custom-color-1 & { background: $marker-color-custom-1; }
+		.goal-custom-color-2 & { background: $marker-color-custom-2; }
+		.goal-custom-color-3 & { background: $marker-color-custom-3; }
+
+		&:hover {
+			background: darken($marker-color-default, 15%);
+			.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
+			.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
+			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }	
+		}
 		
+		/*
 		&:after {
 			content: '';
 			display: block;
@@ -75,7 +91,7 @@ $marker-color-custom-3: #80CBC4;
 			top: 50%;
 			height: 4px;
 			margin-top: -2px;
-			z-index: 1;
+			//z-index: 1;
 			background: $marker-color-default;
 			transition: background .4s ease;
 			.goal-custom-color-1 & { background: $marker-color-custom-1; }
@@ -93,6 +109,7 @@ $marker-color-custom-3: #80CBC4;
 			.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
 			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }	
 		}
+		*/
 
 	}
 	
@@ -112,15 +129,15 @@ $marker-color-custom-3: #80CBC4;
 			top: 0;
 			display: block;
 			text-align: center;
-			border: $marker-border-size solid $marker-color-default;
+			
 			transition: background-color 0.4s ease, border-color 0.4s ease;
 			cursor: pointer;
-			z-index: 2;
+			//z-index: 2;
 			background: white;
-			
-			.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
-			.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
-			.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
+			//border: $marker-border-size solid $marker-color-default;
+			//.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
+			//.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
+			//.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
 			
 			&:after {
 				display: none;
@@ -139,15 +156,6 @@ $marker-color-custom-3: #80CBC4;
 		&.finish {
 			.dropdown-toggle {
 				border-radius: 50%;
-			}
-		}
-
-		&:hover {
-			.dropdown-toggle {
-				border-color: darken($marker-color-default, 15%);
-				.goal-custom-color-1 & { border-color: darken($marker-color-custom-1, 15%); }
-				.goal-custom-color-2 & { border-color: darken($marker-color-custom-2, 15%); }
-				.goal-custom-color-3 & { border-color: darken($marker-color-custom-3, 15%); }
 			}
 		}
 		
@@ -170,16 +178,29 @@ $marker-color-custom-3: #80CBC4;
 			
 			&.arrow {
 				.dropdown-toggle {
-					background: transparent !important;
+					border-style: solid;
 					border-left-color: transparent !important;
 					border-bottom-color: transparent !important;
 					border-width: $marker-size/2;
-					border-radius: 0 !important;
+					border-radius: 0 !important;	
+					border-color: $marker-color-default;				
+					.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
+					.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
+					.goal-custom-color-3 & { border-color: $marker-color-custom-3; }					
+					background: transparent !important;
 					transform: rotate(45deg);
 					width: 0;
 					height: 0;
 					right: $marker-size/2;
 					left: auto;
+					margin-right: -3px;
+	
+					&:hover {
+						border-color: darken($marker-color-default, 15%);
+						.goal-custom-color-1 & { border-color: darken($marker-color-custom-1, 15%); }
+						.goal-custom-color-2 & { border-color: darken($marker-color-custom-2, 15%); }
+						.goal-custom-color-3 & { border-color: darken($marker-color-custom-3, 15%); }		
+					}
 					
 				}
 			}
@@ -190,10 +211,6 @@ $marker-color-custom-3: #80CBC4;
 		}
 		
 		&.outstanding.in-progress .dropdown-toggle {
-			background: $green-color !important;
-		}
-		
-		&.outstanding.due-today .dropdown-toggle {
 			background: $amber-color !important;
 		}
 		
@@ -218,7 +235,7 @@ $marker-color-custom-3: #80CBC4;
 		position: relative;
 		height: 20px;
 		text-align: center;
-		margin: 0;
+		margin: 10px 0 0;
 		//left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
@@ -260,7 +277,7 @@ $marker-color-custom-3: #80CBC4;
 	&-tasks {
 		margin-left: -10px;
 		position: relative;
-		z-index: 2;
+		//z-index: 2;
 		//overflow: hidden;
 		
 		ul {
@@ -292,7 +309,7 @@ $marker-color-custom-3: #80CBC4;
 			}
 			.dropdown-menu {
 				//position: static !important;
-				z-index: 99;
+				//z-index: 99;
 			}
 		}
 	}
@@ -310,12 +327,12 @@ $marker-icon-border-size: 3px;
 	width: $marker-icon-size;
 	height: $marker-icon-size;
 	display: inline-block;
-	border: $marker-icon-border-size solid $marker-color-default;
+	//border: $marker-icon-border-size solid $marker-color-default;
 	background: white;
 		
-	&.goal-custom-color-1 { border-color: $marker-color-custom-1; }
-	&.goal-custom-color-2 { border-color: $marker-color-custom-2; }
-	&.goal-custom-color-3 { border-color: $marker-color-custom-3; }
+	//&.goal-custom-color-1 { border-color: $marker-color-custom-1; }
+	//&.goal-custom-color-2 { border-color: $marker-color-custom-2; }
+	//&.goal-custom-color-3 { border-color: $marker-color-custom-3; }
 
 	&.completed {
 		background: $marker-color-default;
