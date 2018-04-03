@@ -2007,7 +2007,13 @@ legend {
       text-align: center;
       transition: background-color 0.4s ease, border-color 0.4s ease;
       cursor: pointer;
-      background: white; }
+      background: #777; }
+      .goal-custom-color-1 .goal-marker-toggle {
+        background: #CE93D8; }
+      .goal-custom-color-2 .goal-marker-toggle {
+        background: #90CAF9; }
+      .goal-custom-color-3 .goal-marker-toggle {
+        background: #80DEEA; }
       .goal-marker-toggle:after {
         display: none; }
     .goal-marker.start {
@@ -2093,9 +2099,7 @@ legend {
         .goal-custom-color-3 .goal-marker.finish.arrow .dropdown-toggle:hover,
         .goal-custom-color-3 .goal-marker.completed.arrow .dropdown-toggle:hover {
           border-color: #3ecddf; }
-    .goal-marker.completed .dropdown-toggle {
-      background: #16a916 !important; }
-    .goal-marker.outstanding.in-progress .dropdown-toggle {
+    .goal-marker.outstanding .dropdown-toggle {
       background: #FF8C00 !important; }
     .goal-marker.outstanding.overdue .dropdown-toggle {
       background: #E81123 !important; }
@@ -2150,11 +2154,13 @@ legend {
       .goal-tasks li:hover {
         cursor: pointer;
         color: #060707; }
-      .goal-tasks li i {
+      .goal-tasks li .goal-marker-icon {
         float: left;
-        margin-top: 5px;
+        margin-top: 6px;
         margin-left: 5px;
         margin-right: 10px; }
+      .goal-tasks li .fa-angle-down {
+        margin-left: 7px; }
       .goal-tasks li > span {
         display: block;
         overflow: hidden; }
@@ -2167,8 +2173,7 @@ legend {
 .goal-marker-icon {
   width: 12px;
   height: 12px;
-  display: inline-block;
-  background: white; }
+  display: inline-block; }
   .goal-marker-icon.completed {
     background: #777; }
     .goal-marker-icon.completed.goal-custom-color-1 {
@@ -2181,11 +2186,7 @@ legend {
     width: 10.8px;
     height: 10.8px;
     transform: rotate(45deg); }
-  .goal-marker-icon.completed {
-    background: #16a916 !important; }
-  .goal-marker-icon.outstanding.in-progress {
-    background: #16a916 !important; }
-  .goal-marker-icon.outstanding.due-today {
+  .goal-marker-icon.outstanding {
     background: #FF8C00 !important; }
   .goal-marker-icon.outstanding.overdue {
     background: #E81123 !important; }

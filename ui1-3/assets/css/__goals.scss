@@ -133,11 +133,11 @@ $marker-color-custom-3: #80DEEA;
 			transition: background-color 0.4s ease, border-color 0.4s ease;
 			cursor: pointer;
 			//z-index: 2;
-			background: white;
+			background: $marker-color-default;
 			//border: $marker-border-size solid $marker-color-default;
-			//.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
-			//.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
-			//.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
+			.goal-custom-color-1 & { background: $marker-color-custom-1; }
+			.goal-custom-color-2 & { background: $marker-color-custom-2; }
+			.goal-custom-color-3 & { background: $marker-color-custom-3; }
 			
 			&:after {
 				display: none;
@@ -207,10 +207,10 @@ $marker-color-custom-3: #80DEEA;
 		}
 		
 		&.completed .dropdown-toggle {
-			background: $green-color !important;
+			//background: $green-color !important;
 		}
 		
-		&.outstanding.in-progress .dropdown-toggle {
+		&.outstanding .dropdown-toggle {
 			background: $amber-color !important;
 		}
 		
@@ -293,11 +293,14 @@ $marker-color-custom-3: #80DEEA;
 				cursor: pointer;
 				color: darken($body-color, 20%);
 			}
-			i {
+			.goal-marker-icon {
 				float: left;
-				margin-top: 5px;
+				margin-top: 6px;
 				margin-left: 5px;
 				margin-right: 10px;
+			}
+			.fa-angle-down {
+				margin-left: 7px;
 			}
 			> span {
 				display: block;
@@ -305,6 +308,7 @@ $marker-color-custom-3: #80DEEA;
 				
 				span {
 					white-space: nowrap;
+					//display: block;
 				}
 			}
 			.dropdown-menu {
@@ -328,12 +332,7 @@ $marker-icon-border-size: 3px;
 	height: $marker-icon-size;
 	display: inline-block;
 	//border: $marker-icon-border-size solid $marker-color-default;
-	background: white;
-		
-	//&.goal-custom-color-1 { border-color: $marker-color-custom-1; }
-	//&.goal-custom-color-2 { border-color: $marker-color-custom-2; }
-	//&.goal-custom-color-3 { border-color: $marker-color-custom-3; }
-
+	
 	&.completed {
 		background: $marker-color-default;
 		&.goal-custom-color-1 { background: $marker-color-custom-1; }
@@ -346,16 +345,8 @@ $marker-icon-border-size: 3px;
 		height: $marker-icon-size * 0.9;
 		transform: rotate(45deg);			
 	}
-	
-	&.completed {
-		background: $green-color !important;
-	}
-	
-	&.outstanding.in-progress {
-		background: $green-color !important;
-	}
-	
-	&.outstanding.due-today {
+
+	&.outstanding {
 		background: $amber-color !important;
 	}
 	
