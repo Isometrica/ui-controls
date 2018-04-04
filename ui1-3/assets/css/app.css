@@ -2108,7 +2108,7 @@ legend {
     position: relative;
     height: 20px;
     text-align: center;
-    margin: 10px 0 0;
+    margin: 10px -10px 0;
     display: -webkit-box;
     display: -webkit-flex;
     display: -moz-flex;
@@ -2149,10 +2149,11 @@ legend {
       padding: 0;
       margin: .5rem 0; }
     .goal-tasks li {
-      clear: left; }
+      clear: left;
+      margin: 5px 0; }
       .goal-tasks li:hover {
         cursor: pointer;
-        color: #060707; }
+        color: #0078d7; }
       .goal-tasks li .goal-marker-icon {
         float: left;
         margin-top: 6px;

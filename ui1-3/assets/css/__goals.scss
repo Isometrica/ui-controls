@@ -235,7 +235,7 @@ $marker-color-custom-3: #80DEEA;
 		position: relative;
 		height: 20px;
 		text-align: center;
-		margin: 10px 0 0;
+		margin: 10px -10px 0;
 		//left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
@@ -289,9 +289,11 @@ $marker-color-custom-3: #80DEEA;
 		
 		li {
 			clear: left;
+			margin: 5px 0;
+			
 			&:hover {
 				cursor: pointer;
-				color: darken($body-color, 20%);
+				color: $blue-color;
 			}
 			.goal-marker-icon {
 				float: left;
