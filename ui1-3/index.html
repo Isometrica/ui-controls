@@ -30,15 +30,15 @@
     <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item dropdown">
 	      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-	        Southwind Capital <span class="text-muted">Operations view</span>
+	        Southwind Capital <span class="text-muted">Business operations view</span>
 	      </a>
 	      <div class="dropdown-menu">
 	        <a class="dropdown-item checked" href="#">Southwind Capital</a>
 	        <a class="dropdown-item" href="#">Shift Bioscience</a>
 	        <a class="dropdown-item" href="#">Organisation 3</a>
 	        <div class="dropdown-divider"></div>
-	        <a class="dropdown-item" href="canvas.html">Design view</a>
-	        <a class="dropdown-item checked" href="index.html">Operations view</a>
+	        <a class="dropdown-item" href="canvas.html">Business design view</a>
+	        <a class="dropdown-item checked" href="index.html">Business operations view</a>
 	        <div class="dropdown-divider"></div>
 	        <a class="dropdown-item" href="#">Org Settings</a>
 	        <a class="dropdown-item" href="#">Create new Plio organisation</a>
@@ -487,23 +487,47 @@
 		      		<hr/>
 	        		<h4 class="dashboard-stats-title">
 		        		<a href="#deletedGoals" class="collapsed" data-toggle="collapse">
-		        		  4 deleted goals
+		        		  4 completed or deleted goals
 		        		  <i class="fa fa-angle-down"></i>
 		        		</a>
 	        		</h4>
 	        		<div class="collapse" id="deletedGoals">
-		        		<a href="actions.html" class="dashboard-stats-action">
-		          		<span class="label label-default">KG4</span> Pricing working group <span class="text-muted">(deleted 12 Jun 2017)</span>
-		        		</a>
-		        		<a href="actions.html" class="dashboard-stats-action">
-		          		<span class="label label-default">KG3</span> Design form for preliminary clearance <span class="text-muted">(deleted 30 Sep 2017)</span>
-		        		</a>
-		        		<a href="actions.html" class="dashboard-stats-action">
-		          		<span class="label label-default">KG2</span> Launch insurance products <span class="text-muted">(deleted 5 May 2016)</span>
-		        		</a>
-		        		<a href="actions.html" class="dashboard-stats-action">
-		          		<span class="label label-default">KG1</span> Investigate fraud prevention <span class="text-muted">(deleted 4 Jun 2016)</span>
-		        		</a>		        		
+		        		<div class="dropdown">
+			        		<a href="#" class="dashboard-stats-action" data-toggle="dropdown">
+			          		<span class="label label-default">KG4</span> Pricing working group <span class="text-muted">(deleted 12 Jun 2017)</span>
+			        		</a>
+			        		<div class="dropdown-menu">
+				        		<a href="#" class="dropdown-item">Restore key goal</a>
+				        		<a href="#" class="dropdown-item">Delete permanently</a>
+			        		</div>
+		        		</div>
+		        		<div class="dropdown">
+			        		<a href="#" class="dashboard-stats-action" data-toggle="dropdown">
+			          		<span class="label label-default">KG3</span> Design form for preliminary clearance <span class="text-muted">(deleted 30 Sep 2017)</span>
+			        		</a>
+			        		<div class="dropdown-menu">
+				        		<a href="#" class="dropdown-item">Restore key goal</a>
+				        		<a href="#" class="dropdown-item">Delete permanently</a>
+			        		</div>
+		        		</div>
+		        		<div class="dropdown">
+			        		<a href="#" class="dashboard-stats-action" data-toggle="dropdown">
+			          		<span class="label label-default">KG2</span> Launch insurance products <span class="text-muted">(deleted 5 May 2016)</span>
+			        		</a>
+			        		<div class="dropdown-menu">
+				        		<a href="#" class="dropdown-item">Restore key goal</a>
+				        		<a href="#" class="dropdown-item">Delete permanently</a>
+			        		</div>
+		        		</div>
+		        		<div class="dropdown">
+			        		<a href="#" class="dashboard-stats-action" data-toggle="dropdown">
+			          		<span class="label label-default">KG1</span> Investigate fraud prevention <span class="text-muted">(deleted 4 Jun 2016)</span>
+			        		</a>	
+			        		<div class="dropdown-menu">
+				        		<a href="#" class="dropdown-item">Restore key goal</a>
+				        		<a href="#" class="dropdown-item">Delete permanently</a>
+			        		</div>	        		
+		        		</div>
 	        		</div>
 
 	      		</div>        		
@@ -547,11 +571,7 @@
           -->
           <div class="dashboard-stats">
         		<h4 class="dashboard-stats-title">
-	        		<a href="#" class="btn btn-secondary btn-sm btn-add">
-		        		<i class="fa fa-plus"></i>
-	        		</a>
         		  2 overdue actions
-        		  <!--<a href="#"><i class="fa fa-times-circle"></i></a>-->
         		</h4>
         		<a href="actions.html" class="dashboard-stats-action">
           		<span class="label label-danger">CA157</span> Speed up registration <label class="text-danger">5 days past due</label>

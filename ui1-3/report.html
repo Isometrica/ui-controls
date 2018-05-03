@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="mobile-web-app-capable" content="yes" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no">
+  <title>Report</title>
+	<!-- CSS -->
+	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/app.css">
+	<link rel="stylesheet" href="assets/css/report.css">
+
+</head>
+<body ng-app="plio">	
+	
+		<!-- CANVAS -->
+	  <section>	 
+		  <div class="container"> 
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Business model canvas</span></h1>
+			  <div ng-include="'includes/canvas.html'"></div>
+			  <div class="text-right margin-top-5">
+				  <i class="fab fa-creative-commons"></i>
+				  Canvas by Strategyzer.com
+			  </div>		  
+		  </div>
+	  </section>
+	  <!-- end of CANVAS -->
+
+	  
+	  <!-- CHARTS -->
+	  <section class="report-section">
+		  <div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Canvas charts</span></h1>
+			  <hr>
+			  <div class="row">
+				  <div class="col-xs-4">
+					  <h5 class="text-center margin-bottom-5"><strong>Customer segments</strong></h5>
+					  <p class="text-center text-muted">% of market</p>
+	          <div class="report-chart-wrapper">
+	            <canvas height="1500" width="3000" id="customerSegmentsChart"></canvas>
+	          </div>
+	          <div class="report-chart-legend" id="customerSegmentsChartLegend"></div>
+				  </div>
+				  <div class="col-xs-4">
+					  <h5 class="text-center margin-bottom-5"><strong>Revenue streams</strong></h5>
+					  <p class="text-center text-muted">% of revenue</p>
+	          <div class="report-chart-wrapper">
+	            <canvas height="1500" width="3000" id="revenueStreamsChart"></canvas>
+	          </div>
+	          <div class="report-chart-legend" id="revenueStreamsChartLegend"></div>
+				  </div>
+				  <div class="col-xs-4">
+					  <h5 class="text-center margin-bottom-5"><strong>Profit streams</strong></h5>
+					  <p class="text-center text-muted">% of profit</p>
+	          <div class="report-chart-wrapper">
+	            <canvas height="1500" width="3000" id="profitStreamsChart"></canvas>
+	          </div>
+	          <div class="report-chart-legend" id="profitStreamsChartLegend"></div>
+				  </div>
+			  </div>
+			  <hr>
+			  <div class="row">
+				  <div class="col-xs-4">
+					  <h5 class="text-center margin-bottom-5"><strong>Key partners</strong></h5>
+					  <p class="text-center text-muted">criticality vs spend</p>
+	          <div class="report-chart-wrapper">
+	            <canvas height="1500" width="2000" id="keyPartnersChart"></canvas>
+	          </div>
+	          <div class="report-chart-legend" id="keyPartnersChartLegend"></div>
+				  </div>
+				  <div class="col-xs-4">
+					  <h5 class="text-center margin-bottom-5"><strong>Cost structure</strong></h5>
+					  <p class="text-center text-muted">% of total costs</p>
+	          <div class="report-chart-wrapper">
+	            <canvas height="1500" width="3000" id="costStructureChart"></canvas>
+	          </div>
+	          <div class="report-chart-legend" id="costStructureChartLegend"></div>
+				  </div>
+			  </div>
+		  </div>
+	  </section>
+	  <!-- end of CHARTS -->
+
+    
+		<!-- CUSTOMER INSIGHTS -->
+  	<section class="report-section">
+	  	<div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Customer insights</span></h1>
+		  	<hr>
+		  	<div class="row">
+			  	<div class="col-xs-6">
+					  <h6>Customer segment:</h6>
+						<h5>Pharmaceutical firms</h5>
+						<p class="report-linkage">
+							<i class="fas fa-long-arrow-alt-right"></i>
+							<span>Linked to value proposition: Novel drug molecule for age-related diseases</span>
+						</p>
+						<h6>Needs:</h6>
+						<ul class="list-unstyled">
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
+							<li>Maximum acquisition price of £10m <span class="text-muted">(NE2)</span></li>
+							<li>Proven safe in Phase I trial <span class="text-muted">(NE3)</span></li>
+						</ul>
+						<h6>Wants:</h6>
+						<ul class="list-unstyled">
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
+							<li>Global rights <span class="text-muted">(WA2)</span></li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-6">
+					  <h6>Customer segment:</h6>
+						<h5>Biotechnology firms</h5>
+						<h6>Needs:</h6>
+						<ul class="list-unstyled">
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
+							<li>Maximum acquisition price of £5m <span class="text-muted">(NE4)</span></li>
+							<li>Proven safe in Phase I trial <span class="text-muted">(NE3)</span></li>
+						</ul>
+						<h6>Wants:</h6>
+						<ul class="list-unstyled">
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
+							<li>Valuation-enhancing investor story <span class="text-muted">(WA3)</span></li>
+							<li>Regional rights <span class="text-muted">(WA4)</span></li>
+						</ul>		  	
+			  	</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row">
+			  	<div class="col-xs-6">
+					  <h6>Customer segment:</h6>
+						<h5>Genome diagnostic firms</h5>
+						<h6>Needs:</h6>
+						<ul class="list-unstyled">
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
+							<li>Maximum acquisition price of £1m <span class="text-muted">(NE5)</span></li>
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(NE6)</span></li>
+						</ul>
+						<h6>Wants:</h6>
+						<ul class="list-unstyled">
+							<li>Valuation-enhancing investor story <span class="text-muted">(WA3)</span></li>
+							<li>Regional rights <span class="text-muted">(WA4)</span></li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-6">
+					  <h6>Customer segment:</h6>
+						<h5>Mitochondrial disease clinicians</h5>
+						<h6>Needs:</h6>
+						<ul class="list-unstyled">
+							<li>New therapies for patients with incurable mitochondrial diseases <span class="text-muted">(NE7)</span></li>
+							<li>Access to sufficient drug for patient trials <span class="text-muted">(NE8)</span></li>
+							<li>Endorsement by reputable clinician or scientist <span class="text-muted">(NE9)</span></li>
+						</ul>
+						<h6>Wants:</h6>
+						<ul class="list-unstyled">
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
+							<li>Publication rights <span class="text-muted">(WA5)</span></li>
+						</ul>		  	
+			  	</div>
+		  	</div>
+	  	</div>
+  	</section>
+  	<!-- end of CUSTOMER INSIGHTS -->
+  	
+  	
+  	
+  	<!-- VALUE COMPONENTS -->
+  	<section class="report-section">
+	  	<div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Value components</span></h1>
+		  	<hr>
+		  	<div class="row">
+			  	<div class="col-xs-6">
+					  <h6>Value proposition:</h6>
+						<h5>Novel drug therapy for age-related diseases</h5>
+						<p class="report-linkage">
+							<i class="fas fa-long-arrow-alt-right"></i>
+							<span>Linked to customer segment: Pharmaceutical firms</span>
+						</p>
+						<h6>Features:</h6>
+						<ul class="list-unstyled">
+							<li>Small molecule <span class="text-muted">(FE1)</span></li>
+							<li>Low toxicity <span class="text-muted">(FE2)</span></li>
+							<li>Optimal formulation for ALS <span class="text-muted">(FE3)</span></li>
+						</ul>
+						<h6>Benefits:</h6>
+						<ul class="list-unstyled">
+							<li>Convenient for patient <span class="text-muted">(BE1)</span></li>
+							<li>Few side effects <span class="text-muted">(BE2)</span></li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-6">
+					  <h6>Value proposition:</h6>
+						<h5>Novel mitochondrial diagnostic test (to use with drug or independently)</h5>
+						<h6>Features:</h6>
+						<ul class="list-unstyled">
+							<li>Easy-to-use consumer kit <span class="text-muted">(FE6)</span></li>
+							<li>Test can be done in 10 mins <span class="text-muted">(FE7)</span></li>
+							<li>Accurate <span class="text-muted">(FE8)</span></li>
+						</ul>
+						<h6>Benefits:</h6>
+						<ul class="list-unstyled">
+							<li>High return rates <span class="text-muted">(BE5)</span></li>
+							<li>Trustworthy results <span class="text-muted">(BE6)</span></li>
+						</ul>		  	
+			  	</div>
+		  	</div>
+		  	<hr>
+		  	<div class="row">
+			  	<div class="col-xs-6">
+					  <h6>Value proposition:</h6>
+						<h5>Compassionate drug use (rare mitochondrial diseases)</h5>
+						<h6>Features:</h6>
+						<ul class="list-unstyled">
+							<li>Small molecule <span class="text-muted">(FE1)</span></li>
+							<li>Low toxicity <span class="text-muted">(FE2)</span></li>
+						</ul>
+						<h6>Benefits:</h6>
+						<ul class="list-unstyled">
+							<li>Convenient for patient <span class="text-muted">(BE1)</span></li>
+							<li>Few side effects <span class="text-muted">(BE2)</span></li>
+						</ul>	  	
+			  	</div>
+		  	</div>
+	  	</div>
+  	</section>
+  	<!-- end of VALUE COMPONENTS -->
+  	
+  	
+  	
+  	<!-- PRODUCT/MARKET FIT -->
+  	<section class="report-section">
+	  	<div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Product/market fit</span></h1>
+		  	<hr>
+		  	<div class="row">
+			  	<div class="col-xs-6">
+					  <h6>Value proposition:</h6>
+						<h5>Novel drug therapy for age-related diseases <i class="fa fa-arrows-alt-h product-market-fit-arrows"></i></h5>
+						<p class="report-linkage">
+							<i class="fas fa-long-arrow-alt-right"></i>
+							<span>Linked to customer segment: Pharmaceutical firms</span>
+						</p>
+						<h6>Features:</h6>
+						<ul class="list-unstyled">
+							<li>
+								Small molecule <span class="text-muted">(FE1)</span>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Candidate drug molecule for age-related diseases (NE1)</span>
+								</p>	
+							</li>
+							<li>
+								Low toxicity <span class="text-muted">(FE2)</span>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Maximum acquisition price of £10m (NE2)</span>
+								</p>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Efficacy shown in Phase II trial (WA1)</span>
+								</p>	
+							</li>
+							<li>
+								Optimal formulation for ALS <span class="text-muted">(FE3)</span>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Global rights (WA2)</span>
+								</p>	
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-6">
+					  <h6>Customer segment:</h6>
+						<h5>Pharmaceutical firms</h5>
+						<h6>Benefits:</h6>
+						<ul class="list-unstyled">
+							<li>
+								Convenient for patient <span class="text-muted">(BE1)</span>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Valuation-enhancing investor story (WA3)</span>
+								</p>							
+							</li>
+							<li>
+								Few side effects <span class="text-muted">(BE2)</span>
+								<p class="report-linkage">
+									<i class="fas fa-long-arrow-alt-right"></i>
+									<span>matched to Maximum acquisition price of £1m (NE5)</span>
+								</p>	
+							</li>
+						</ul>		  	
+			  	</div>
+		  	</div>
+	  	</div>
+  	</section>
+  	<!-- end of PRODUCT/MARKET FIT -->
+  	
+  	
+  	
+  	<!-- OPERATIONAL ELEMENTS -->
+  	<section class="report-section">
+	  	<div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Operational elements</span></h1>
+		  	<hr>
+		  	<h5>Customer segments</h5>
+		  	<div class="row">
+			  	<div class="col-xs-3">
+					  <h6>Key goals:</h6>
+						<ul class="list-unstyled">
+							<li>
+								KG1. Finish UI design
+							</li>
+							<li>
+								KG2. Get new website live
+							</li>
+							<li>
+								KG3. Close New York office
+							</li>
+							<li>
+								KG4. Launch Product X
+							</li>
+							<li>
+								KG5. Evaluate business case for Y
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Standards:</h6>
+						<ul class="list-unstyled">
+							<li>
+								1. Client feedback
+							</li>
+							<li>
+								1.1. Inquiry handling
+							</li>
+							<li>
+								2. Client onboarding
+							</li>
+							<li>
+								2.1. Identification of needs
+							</li>
+							<li>
+								2.2. Verification of ID
+							</li>
+							<li>
+								2.2.1.1. Due diligence
+							</li>
+							<li>
+								3. Client deal execution
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Risks:</h6>
+						<ul class="list-unstyled">
+							<li>
+								RK1. Industrial accidents
+							</li>
+							<li>
+								RK2. Strike or stoppage
+							</li>
+							<li>
+								RK3. Explosion of binder
+							</li>
+							<li>
+								RK4. Spillage of solvent
+							</li>
+							<li>
+								RK5. Severe weather
+							</li>
+							<li>
+								RK6. Transport accident
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>NCs &amp; gains:</h6>
+						<ul class="list-unstyled">
+							<li>
+								NC1. Data file lost
+							</li>
+							<li>
+								NC2. Inquiry not recorded
+							</li>
+							<li>
+								NC3. Brackets getting corroded
+							</li>
+							<li>
+								NC4. Mouldings are wrong color
+							</li>
+							<li>
+								NC5. Extrusion failed in service
+							</li>
+							<li>
+								NC6. Supplier X delivered late
+							</li>
+							<li>
+								NC7. Supplier Y failed to replace item
+							</li>
+						</ul>		  	
+			  	</div>
+			  	
+		  	</div>
+		  	<hr>
+		  	<h5>Key partners</h5>
+		  	<div class="row">
+			  	<div class="col-xs-3">
+					  <h6>Key goals:</h6>
+						<ul class="list-unstyled">
+							<li>
+								KG1. Finish UI design
+							</li>
+							<li>
+								KG2. Get new website live
+							</li>
+							<li>
+								KG5. Evaluate business case for Y
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Standards:</h6>
+						<ul class="list-unstyled">
+							<li>
+								1. Client feedback
+							</li>
+							<li>
+								1.1. Inquiry handling
+							</li>
+							<li>
+								2. Client onboarding
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Risks:</h6>
+						<ul class="list-unstyled">
+							<li>
+								RK5. Severe weather
+							</li>
+							<li>
+								RK6. Transport accident
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>NCs &amp; gains:</h6>
+						<ul class="list-unstyled">
+							<li>
+								NC6. Supplier X delivered late
+							</li>
+							<li>
+								NC7. Supplier Y failed to replace item
+							</li>
+						</ul>		  	
+			  	</div>
+			  	
+		  	</div>
+		  	<hr>
+		  	<h5>Key activities</h5>
+		  	<div class="row">
+			  	<div class="col-xs-3">
+					  <h6>Key goals:</h6>
+						<ul class="list-unstyled">
+							<li>
+								KG1. Finish UI design
+							</li>
+							<li>
+								KG2. Get new website live
+							</li>
+							<li>
+								KG3. Close New York office
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Standards:</h6>
+						<ul class="list-unstyled">
+							<li>
+								2.2. Verification of ID
+							</li>
+							<li>
+								2.2.1.1. Due diligence
+							</li>
+							<li>
+								3. Client deal execution
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>Risks:</h6>
+						<ul class="list-unstyled">
+							<li>
+								RK1. Industrial accidents
+							</li>
+							<li>
+								RK2. Strike or stoppage
+							</li>
+							<li>
+								RK3. Explosion of binder
+							</li>
+							<li>
+								RK4. Spillage of solvent
+							</li>
+						</ul>		  	
+			  	</div>
+			  	<div class="col-xs-3">
+					  <h6>NCs &amp; gains:</h6>
+						<ul class="list-unstyled">
+							<li>
+								NC1. Data file lost
+							</li>
+							<li>
+								NC2. Inquiry not recorded
+							</li>
+							<li>
+								NC3. Brackets getting corroded
+							</li>
+							<li>
+								NC4. Mouldings are wrong color
+							</li>
+						</ul>		  	
+			  	</div>
+			  	
+		  	</div>
+	  	</div>
+  	</section>
+  	<!-- end of OPERATIONAL ELEMENTS -->
+
+
+
+	</div>
+
+	<!-- JS -->
+	<script src="assets/libs/angular/angular.min.js"></script>
+	<script src="assets/libs/jquery/dist/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.3.5/jspdf.min.js"></script>
+	<script src="assets/js/report.js"></script>
+
+</body>
+</html>

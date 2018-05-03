@@ -1,14 +1,23 @@
   <div class="modal fade" id="export-design-modal">
-    <div class="modal-dialog">
-      <div class="card">
+    <div class="modal-dialog modal-xl">
+	    
+	    <div class="card">
         <div class="card-block card-heading">
-	        <!--
-          <div class="card-heading-buttons pull-xs-left">
-            <button type="button" class="btn btn-link text-muted btn-icon guidance-panel-open collapsed">
-      				<i class="fa fa-question-circle"></i>
+          <div class="card-heading-buttons pull-xs-right">
+      			<button type="button" class="btn btn-secondary" data-dismiss="modal">
+      				Close
       			</button>
           </div>
-          -->
+          <h4 class="card-title text-left">Report</h4>
+        </div>
+        <div class="report-wrapper">
+	        <iframe src="report.html"></iframe> 
+        </div>
+      </div>
+	    
+	    <!-- OLD 
+      <div class="card">
+        <div class="card-block card-heading">
           <div class="card-heading-buttons pull-xs-right">
       			<button type="button" class="btn btn-secondary" data-dismiss="modal">
       				Close
@@ -16,7 +25,6 @@
           </div>
           <h4 class="card-title text-left">Export design as PDF</h4>
         </div>
-        <!--<div ng-include="'includes/guidance-panel.html'"></div>-->
         <div class="card-block">
         	<div class="checkbox">
 	        	<label>
@@ -55,5 +63,6 @@
         	</button>
         </div> 
       </div>
+      -->
     </div>
   </div>

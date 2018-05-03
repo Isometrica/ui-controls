@@ -33,32 +33,24 @@ $( document ).ready(function() {
 	  CUSTOMER SEGMENTS CHART
 	*/
 	
-	$(document).on("click", "#customersegmentschart-pains", function() {
-		$(this).closest(".customersegmentcanvas").removeClass("show-gains").removeClass("show-customerJobs").toggleClass("show-pains");
+	$(document).on("click", "#customersegmentschart-wants", function() {
+		$(this).closest(".customersegmentcanvas").removeClass("show-needs").toggleClass("show-wants");
 	});
 	
-	$(document).on("click", "#customersegmentschart-gains", function() {
-		$(this).closest(".customersegmentcanvas").removeClass("show-pains").removeClass("show-customerJobs").toggleClass("show-gains");
-	});
-	
-	$(document).on("click", "#customersegmentschart-customerJobs", function() {
-		$(this).closest(".customersegmentcanvas").removeClass("show-pains").removeClass("show-gains").toggleClass("show-customerJobs");
+	$(document).on("click", "#customersegmentschart-needs", function() {
+		$(this).closest(".customersegmentcanvas").removeClass("show-wants").toggleClass("show-needs");
 	});
 	
 	/*
 	  VALUE PROPOSITION CHART
 	*/
 	
-	$(document).on("click", "#valuepropositionchart-painRelievers", function() {
-		$(this).closest(".valuepropositioncanvas").removeClass("show-gainCreators").removeClass("show-productsAndServices").toggleClass("show-painRelievers");
+	$(document).on("click", "#valuepropositionchart-benefits", function() {
+		$(this).closest(".valuepropositioncanvas").removeClass("show-features").toggleClass("show-benefits");
 	});
 	
-	$(document).on("click", "#valuepropositionchart-gainCreators", function() {
-		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-productsAndServices").toggleClass("show-gainCreators");
-	});
-	
-	$(document).on("click", "#valuepropositionchart-productsAndServices", function() {
-		$(this).closest(".valuepropositioncanvas").removeClass("show-painRelievers").removeClass("show-gainCreators").toggleClass("show-productsAndServices");
+	$(document).on("click", "#valuepropositionchart-features", function() {
+		$(this).closest(".valuepropositioncanvas").removeClass("show-benefits").toggleClass("show-features");
 	});
 	
 	// Switch views: Match/Canvas

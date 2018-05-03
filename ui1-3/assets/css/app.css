@@ -1402,6 +1402,13 @@ legend {
       width: auto !important;
       margin: 10px; } }
 
+.modal-xl {
+  width: 1200px; }
+  @media (max-width: 1220px) {
+    .modal-xl {
+      width: auto !important;
+      margin: 10px; } }
+
 @media (max-width: 600px) {
   .modal-dialog {
     width: auto;
@@ -1453,6 +1460,20 @@ legend {
 
 #verify-modal .card-block:last-child {
   border-top: 0; }
+
+#export-design-modal .report-wrapper {
+  position: relative;
+  height: 0;
+  padding-bottom: 70%; }
+  #export-design-modal .report-wrapper iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+    width: 100%;
+    height: 100%; }
 
 .timeline {
   background: #bee2ff;
@@ -2790,7 +2811,8 @@ legend {
 
 .dashboard-stats-title {
   font-family: "Segoe UI Light WestEuropean", "Segoe UI Light", "Segoe WP Light", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
-  margin: 0 0 10px; }
+  margin: 0;
+  padding: 0 0 10px; }
   .dashboard-stats-title a {
     text-decoration: none !important;
     color: #373a3c; }
@@ -2840,11 +2862,14 @@ legend {
 .dashboard-stats-action {
   padding: 5px 0;
   cursor: pointer;
-  display: block; }
+  display: block;
+  color: #373a3c;
+  text-decoration: none !important; }
+  .dashboard-stats-action:hover {
+    color: #0078d7; }
   .dashboard-stats-action .label {
-    font-size: 14px;
-    position: relative;
-    top: -1px;
+    font-size: 13px;
+    line-height: 16px;
     margin-right: 5px; }
   .dashboard-stats-action .text-danger {
     margin-left: 5px; }
@@ -3540,6 +3565,8 @@ legend {
         -moz-flex: 1;
         -ms-flex: 1;
         flex: 1; }
+    .canvas-section-print-icon {
+      display: none; }
     .canvas-section-help {
       display: none;
       padding: 0px 1rem;
@@ -3693,15 +3720,6 @@ body.dragging, body.dragging * {
     margin: 0 -1.25rem;
     padding: 0 1.25rem; } }
 
-@media (min-width: 768px) {
-  .valuepropositioncanvas .btn-match,
-  .customersegmentcanvas .btn-match {
-    position: absolute;
-    right: 1.25rem;
-    bottom: 1.25rem;
-    opacity: 1;
-    transition: opacity 0.4s ease; } }
-
 @media (max-width: 767px) {
   .valuepropositioncanvas .customersegmentcanvas-canvas,
   .valuepropositioncanvas .valuepropositioncanvas-canvas,
@@ -3709,6 +3727,27 @@ body.dragging, body.dragging * {
   .customersegmentcanvas .valuepropositioncanvas-canvas {
     width: 200px;
     margin: 0 auto 1rem; } }
+
+@media (min-width: 768px) {
+  .valuepropositioncanvas .btn-match,
+  .customersegmentcanvas .btn-match {
+    position: absolute;
+    opacity: 1;
+    transition: opacity 0.4s ease;
+    top: 50%;
+    margin-top: -26px; } }
+
+@media (min-width: 768px) {
+  .valuepropositioncanvas #customersegment-canvas .btn-match,
+  .customersegmentcanvas #customersegment-canvas .btn-match {
+    right: 50%;
+    margin-right: 160px; } }
+
+@media (min-width: 768px) {
+  .valuepropositioncanvas #valueproposition-canvas .btn-match,
+  .customersegmentcanvas #valueproposition-canvas .btn-match {
+    left: 50%;
+    margin-left: 160px; } }
 
 .valuepropositioncanvas .card,
 .customersegmentcanvas .card {
@@ -3721,36 +3760,28 @@ body.dragging, body.dragging * {
       margin-right: -1.25rem;
       border-top: 1px solid #ddd; } }
 
-.valuepropositioncanvas #gains,
-.valuepropositioncanvas #pains,
-.valuepropositioncanvas #jobs,
-.valuepropositioncanvas #painRelievers,
-.valuepropositioncanvas #gainCreators,
-.valuepropositioncanvas #productsAndServices,
-.customersegmentcanvas #gains,
-.customersegmentcanvas #pains,
-.customersegmentcanvas #jobs,
-.customersegmentcanvas #painRelievers,
-.customersegmentcanvas #gainCreators,
-.customersegmentcanvas #productsAndServices {
+.valuepropositioncanvas #wants,
+.valuepropositioncanvas #needs,
+.valuepropositioncanvas #benefits,
+.valuepropositioncanvas #features,
+.customersegmentcanvas #wants,
+.customersegmentcanvas #needs,
+.customersegmentcanvas #benefits,
+.customersegmentcanvas #features {
   display: none !important; }
 
 @media (min-width: 768px) {
-  .valuepropositioncanvas #gains,
-  .valuepropositioncanvas #pains,
-  .valuepropositioncanvas #productsAndServices,
-  .customersegmentcanvas #gains,
-  .customersegmentcanvas #pains,
-  .customersegmentcanvas #productsAndServices {
+  .valuepropositioncanvas #needs,
+  .valuepropositioncanvas #benefits,
+  .customersegmentcanvas #needs,
+  .customersegmentcanvas #benefits {
     margin-right: 170px; } }
 
 @media (min-width: 768px) {
-  .valuepropositioncanvas #jobs,
-  .valuepropositioncanvas #painRelievers,
-  .valuepropositioncanvas #gainCreators,
-  .customersegmentcanvas #jobs,
-  .customersegmentcanvas #painRelievers,
-  .customersegmentcanvas #gainCreators {
+  .valuepropositioncanvas #wants,
+  .valuepropositioncanvas #features,
+  .customersegmentcanvas #wants,
+  .customersegmentcanvas #features {
     margin-left: 170px; } }
 
 @media (min-width: 768px) {
@@ -3764,136 +3795,92 @@ body.dragging, body.dragging * {
     top: 0;
     transition: left 0.4s ease, margin-left 0.4s ease; } }
 
-.valuepropositioncanvas.show-gains #customersegmentschart-gains,
-.customersegmentcanvas.show-gains #customersegmentschart-gains {
+.valuepropositioncanvas.show-wants #customersegmentschart-wants,
+.customersegmentcanvas.show-wants #customersegmentschart-wants {
   fill: #eee; }
 
 @media (min-width: 768px) {
-  .valuepropositioncanvas.show-gains .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-gains .valuepropositioncanvas-canvas {
-    left: 100%;
-    margin-left: -170px; } }
-
-.valuepropositioncanvas.show-gains #gains,
-.customersegmentcanvas.show-gains #gains {
-  display: block !important; }
-
-.valuepropositioncanvas.show-gains .btn-match,
-.customersegmentcanvas.show-gains .btn-match {
-  opacity: 0; }
-  @media (max-width: 767px) {
-    .valuepropositioncanvas.show-gains .btn-match,
-    .customersegmentcanvas.show-gains .btn-match {
-      display: none; } }
-
-.valuepropositioncanvas.show-pains #customersegmentschart-pains,
-.customersegmentcanvas.show-pains #customersegmentschart-pains {
-  fill: #eee; }
-
-@media (min-width: 768px) {
-  .valuepropositioncanvas.show-pains .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-pains .valuepropositioncanvas-canvas {
-    left: 100%;
-    margin-left: -170px; } }
-
-.valuepropositioncanvas.show-pains #pains,
-.customersegmentcanvas.show-pains #pains {
-  display: block !important; }
-
-.valuepropositioncanvas.show-pains .btn-match,
-.customersegmentcanvas.show-pains .btn-match {
-  opacity: 0; }
-  @media (max-width: 767px) {
-    .valuepropositioncanvas.show-pains .btn-match,
-    .customersegmentcanvas.show-pains .btn-match {
-      display: none; } }
-
-.valuepropositioncanvas.show-customerJobs #customersegmentschart-customerJobs,
-.customersegmentcanvas.show-customerJobs #customersegmentschart-customerJobs {
-  fill: #eee; }
-
-@media (min-width: 768px) {
-  .valuepropositioncanvas.show-customerJobs .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-customerJobs .valuepropositioncanvas-canvas {
+  .valuepropositioncanvas.show-wants .valuepropositioncanvas-canvas,
+  .customersegmentcanvas.show-wants .valuepropositioncanvas-canvas {
     left: 0%;
     margin-left: -130px; } }
 
-.valuepropositioncanvas.show-customerJobs #jobs,
-.customersegmentcanvas.show-customerJobs #jobs {
+.valuepropositioncanvas.show-wants #wants,
+.customersegmentcanvas.show-wants #wants {
   display: block !important; }
 
-.valuepropositioncanvas.show-customerJobs .btn-match,
-.customersegmentcanvas.show-customerJobs .btn-match {
+.valuepropositioncanvas.show-wants .btn-match,
+.customersegmentcanvas.show-wants .btn-match {
   opacity: 0; }
   @media (max-width: 767px) {
-    .valuepropositioncanvas.show-customerJobs .btn-match,
-    .customersegmentcanvas.show-customerJobs .btn-match {
+    .valuepropositioncanvas.show-wants .btn-match,
+    .customersegmentcanvas.show-wants .btn-match {
       display: none; } }
 
-.valuepropositioncanvas.show-gainCreators #valuepropositionchart-gainCreators,
-.customersegmentcanvas.show-gainCreators #valuepropositionchart-gainCreators {
+.valuepropositioncanvas.show-needs #customersegmentschart-needs,
+.customersegmentcanvas.show-needs #customersegmentschart-needs {
   fill: #eee; }
 
 @media (min-width: 768px) {
-  .valuepropositioncanvas.show-gainCreators .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-gainCreators .valuepropositioncanvas-canvas {
-    left: 0%;
-    margin-left: -120px; } }
+  .valuepropositioncanvas.show-needs .valuepropositioncanvas-canvas,
+  .customersegmentcanvas.show-needs .valuepropositioncanvas-canvas {
+    left: 100%;
+    margin-left: -170px; } }
 
-.valuepropositioncanvas.show-gainCreators #gainCreators,
-.customersegmentcanvas.show-gainCreators #gainCreators {
+.valuepropositioncanvas.show-needs #needs,
+.customersegmentcanvas.show-needs #needs {
   display: block !important; }
 
-.valuepropositioncanvas.show-gainCreators .btn-match,
-.customersegmentcanvas.show-gainCreators .btn-match {
+.valuepropositioncanvas.show-needs .btn-match,
+.customersegmentcanvas.show-needs .btn-match {
   opacity: 0; }
   @media (max-width: 767px) {
-    .valuepropositioncanvas.show-gainCreators .btn-match,
-    .customersegmentcanvas.show-gainCreators .btn-match {
+    .valuepropositioncanvas.show-needs .btn-match,
+    .customersegmentcanvas.show-needs .btn-match {
       display: none; } }
 
-.valuepropositioncanvas.show-painRelievers #valuepropositionchart-painRelievers,
-.customersegmentcanvas.show-painRelievers #valuepropositionchart-painRelievers {
+.valuepropositioncanvas.show-benefits #valuepropositionchart-benefits,
+.customersegmentcanvas.show-benefits #valuepropositionchart-benefits {
   fill: #eee; }
 
 @media (min-width: 768px) {
-  .valuepropositioncanvas.show-painRelievers .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-painRelievers .valuepropositioncanvas-canvas {
-    left: 0%;
-    margin-left: -120px; } }
-
-.valuepropositioncanvas.show-painRelievers #painRelievers,
-.customersegmentcanvas.show-painRelievers #painRelievers {
-  display: block !important; }
-
-.valuepropositioncanvas.show-painRelievers .btn-match,
-.customersegmentcanvas.show-painRelievers .btn-match {
-  opacity: 0; }
-  @media (max-width: 767px) {
-    .valuepropositioncanvas.show-painRelievers .btn-match,
-    .customersegmentcanvas.show-painRelievers .btn-match {
-      display: none; } }
-
-.valuepropositioncanvas.show-productsAndServices #valuepropositionchart-productsAndServices,
-.customersegmentcanvas.show-productsAndServices #valuepropositionchart-productsAndServices {
-  fill: #eee; }
-
-@media (min-width: 768px) {
-  .valuepropositioncanvas.show-productsAndServices .valuepropositioncanvas-canvas,
-  .customersegmentcanvas.show-productsAndServices .valuepropositioncanvas-canvas {
+  .valuepropositioncanvas.show-benefits .valuepropositioncanvas-canvas,
+  .customersegmentcanvas.show-benefits .valuepropositioncanvas-canvas {
     left: 100%;
     margin-left: -160px; } }
 
-.valuepropositioncanvas.show-productsAndServices #productsAndServices,
-.customersegmentcanvas.show-productsAndServices #productsAndServices {
+.valuepropositioncanvas.show-benefits #benefits,
+.customersegmentcanvas.show-benefits #benefits {
   display: block !important; }
 
-.valuepropositioncanvas.show-productsAndServices .btn-match,
-.customersegmentcanvas.show-productsAndServices .btn-match {
+.valuepropositioncanvas.show-benefits .btn-match,
+.customersegmentcanvas.show-benefits .btn-match {
   opacity: 0; }
   @media (max-width: 767px) {
-    .valuepropositioncanvas.show-productsAndServices .btn-match,
-    .customersegmentcanvas.show-productsAndServices .btn-match {
+    .valuepropositioncanvas.show-benefits .btn-match,
+    .customersegmentcanvas.show-benefits .btn-match {
+      display: none; } }
+
+.valuepropositioncanvas.show-features #valuepropositionchart-features,
+.customersegmentcanvas.show-features #valuepropositionchart-features {
+  fill: #eee; }
+
+@media (min-width: 768px) {
+  .valuepropositioncanvas.show-features .valuepropositioncanvas-canvas,
+  .customersegmentcanvas.show-features .valuepropositioncanvas-canvas {
+    left: 0%;
+    margin-left: -120px; } }
+
+.valuepropositioncanvas.show-features #features,
+.customersegmentcanvas.show-features #features {
+  display: block !important; }
+
+.valuepropositioncanvas.show-features .btn-match,
+.customersegmentcanvas.show-features .btn-match {
+  opacity: 0; }
+  @media (max-width: 767px) {
+    .valuepropositioncanvas.show-features .btn-match,
+    .customersegmentcanvas.show-features .btn-match {
       display: none; } }
 
 .valuepropositioncanvas text,
@@ -3901,31 +3888,23 @@ body.dragging, body.dragging * {
   font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif !important;
   pointer-events: none !important; }
 
-.valuepropositioncanvas #customersegmentschart-gains,
-.valuepropositioncanvas #customersegmentschart-pains,
-.valuepropositioncanvas #customersegmentschart-customerJobs,
-.valuepropositioncanvas #valuepropositionchart-gainCreators,
-.valuepropositioncanvas #valuepropositionchart-painRelievers,
-.valuepropositioncanvas #valuepropositionchart-productsAndServices,
-.customersegmentcanvas #customersegmentschart-gains,
-.customersegmentcanvas #customersegmentschart-pains,
-.customersegmentcanvas #customersegmentschart-customerJobs,
-.customersegmentcanvas #valuepropositionchart-gainCreators,
-.customersegmentcanvas #valuepropositionchart-painRelievers,
-.customersegmentcanvas #valuepropositionchart-productsAndServices {
+.valuepropositioncanvas #customersegmentschart-wants,
+.valuepropositioncanvas #customersegmentschart-needs,
+.valuepropositioncanvas #valuepropositionchart-benefits,
+.valuepropositioncanvas #valuepropositionchart-features,
+.customersegmentcanvas #customersegmentschart-wants,
+.customersegmentcanvas #customersegmentschart-needs,
+.customersegmentcanvas #valuepropositionchart-benefits,
+.customersegmentcanvas #valuepropositionchart-features {
   cursor: pointer; }
-  .valuepropositioncanvas #customersegmentschart-gains:hover,
-  .valuepropositioncanvas #customersegmentschart-pains:hover,
-  .valuepropositioncanvas #customersegmentschart-customerJobs:hover,
-  .valuepropositioncanvas #valuepropositionchart-gainCreators:hover,
-  .valuepropositioncanvas #valuepropositionchart-painRelievers:hover,
-  .valuepropositioncanvas #valuepropositionchart-productsAndServices:hover,
-  .customersegmentcanvas #customersegmentschart-gains:hover,
-  .customersegmentcanvas #customersegmentschart-pains:hover,
-  .customersegmentcanvas #customersegmentschart-customerJobs:hover,
-  .customersegmentcanvas #valuepropositionchart-gainCreators:hover,
-  .customersegmentcanvas #valuepropositionchart-painRelievers:hover,
-  .customersegmentcanvas #valuepropositionchart-productsAndServices:hover {
+  .valuepropositioncanvas #customersegmentschart-wants:hover,
+  .valuepropositioncanvas #customersegmentschart-needs:hover,
+  .valuepropositioncanvas #valuepropositionchart-benefits:hover,
+  .valuepropositioncanvas #valuepropositionchart-features:hover,
+  .customersegmentcanvas #customersegmentschart-wants:hover,
+  .customersegmentcanvas #customersegmentschart-needs:hover,
+  .customersegmentcanvas #valuepropositionchart-benefits:hover,
+  .customersegmentcanvas #valuepropositionchart-features:hover {
     fill: #eee;
     transition: all 0.4s ease; }
 

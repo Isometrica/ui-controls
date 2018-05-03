@@ -153,7 +153,8 @@
   
   &-title {
     font-family: $font-light;
-    margin: 0 0 10px;
+    margin: 0;
+    padding: 0 0 10px;
 
 
 
@@ -230,11 +231,16 @@
     padding: 5px 0;
     cursor: pointer;
     display: block;
+    color: $body-color;
+    text-decoration: none !important;
+    
+    &:hover {
+	    color: $blue-color;
+    }
     
     .label {
-      font-size: 14px;
-      position: relative;
-      top: -1px;
+      font-size: 13px;
+      line-height: 16px;
       margin-right: 5px;
     }
     
