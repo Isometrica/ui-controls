@@ -1,144 +1,190 @@
+	<!-- HEADINGS -->
 	<div class="row">
 		<div class="col-xs-6">
-			<legend>Value propositions</legend>
+			<legend>
+				Features &amp; benefits
+			</legend>
 		</div>
 		<div class="col-xs-6">
-			<legend>Customer segments</legend>
+			<legend>Customer needs &amp; wants</legend>
 		</div>
 	</div>
-	<div class="row">
+	
+	<!-- MATCHED -->
+	<div class="row matching-row">
 		<div class="col-xs-6">
-			<label class="form-control-label padding-left-0 margin-bottom-5">Gain creators matched to</label>
-		</div>
-		<div class="col-xs-6">
-			<label class="form-control-label padding-left-0 margin-bottom-5">Gains <span class="text-muted">(2 out of 3 matched)</span></label>
-		</div>
-	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select">
- 	      <option>Select gain creator</option>
-       <option selected="">Gain creator 1 title</option>
-        <option>Gain creator 2 title</option>
-        <option>Gain creator 3 title</option>
-        <option>Gain creator 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-success"></i></p>
+			<i class="fa fa-arrows-h pull-right matching-arrow text-success"></i>
+			<p class="form-control-static"><span class="text-muted">FE1</span> Small molecule</p>
 		</div>
 		<div class="col-xs-6">
-			<p class="form-control-static text-success">Gain A</p>
+			<div class="dropdown">
+				<button type="button" class="btn btn-secondary btn-block text-left" data-toggle="dropdown">
+					<span class="text-muted">NE1</span> Candidate drug molecule for age-related diseases
+				</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Unmatch</a>
+					<div class="dropdown-divider"></div>
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
 		</div>
 	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select">
-	      <option>Select gain creator</option>
-        <option>Gain creator 1 title</option>
-        <option selected="">Gain creator 2 title</option>
-        <option>Gain creator 3 title</option>
-        <option>Gain creator 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-success"></i></p>
-		</div>
-		<div class="col-xs-6">	
-			<p class="form-control-static text-success"> Gain B</p>
-		</div>
-	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select" title="Select gain creator">
-        <option selected="">Select gain creator</option>
-        <option>Gain creator 1 title</option>
-        <option>Gain creator 2 title</option>
-        <option>Gain creator 3 title</option>
-        <option>Gain creator 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-muted"></i></p>
-		</div>
-		<div class="col-xs-6">	
-			<p class="form-control-static">Gain C</p>
-		</div>
-	</div>
-	<div class="row">
+	<div class="row matching-row">
 		<div class="col-xs-6">
-			<label class="form-control-label padding-left-0 margin-bottom-5">Pain relievers matched to</label>
+			<i class="fa fa-arrows-h pull-right matching-arrow text-success"></i>
+			<p class="form-control-static"><span class="text-muted">FE2</span> Low toxicity</p>
 		</div>
 		<div class="col-xs-6">
-			<label class="form-control-label padding-left-0 margin-bottom-5">Pains <span class="text-muted">(3 out of 4 matched)</span></label>
+			<div class="dropdown">
+				<button type="button" class="btn btn-secondary btn-block text-left" data-toggle="dropdown">
+					<span class="text-muted">NE2</span> Maximum acquisition price of £10m
+				</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Unmatch</a>
+					<div class="dropdown-divider"></div>
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+			<div class="dropdown">
+				<button type="button" class="btn btn-secondary btn-block text-left" data-toggle="dropdown">
+					<span class="text-muted">WA1</span> Efficacy shown in Phase II trial
+				</button>
+				<div class="dropdown-menu">
+					<a href="#" class="dropdown-item">Unmatch</a>
+					<div class="dropdown-divider"></div>
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
 		</div>
 	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select">
- 	      <option>Select pain reliever</option>
-       <option selected="">Pain reliever title</option>
-        <option>Pain reliever 2 title</option>
-        <option>Pain reliever 3 title</option>
-        <option>Pain reliever 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-success"></i></p>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">FE3</span> Optimal formulation for ALS </p>
 		</div>
 		<div class="col-xs-6">
-			<p class="form-control-static text-success">Pain A</p>
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
 		</div>
 	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select">
-	      <option>Select pain reliever</option>
-        <option>Pain reliever 1 title</option>
-        <option selected="">Pain reliever 2 title</option>
-        <option>Pain reliever 3 title</option>
-        <option>Pain reliever 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-success"></i></p>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">FE4</span> Easy-to-use consumer kit </p>
 		</div>
-		<div class="col-xs-6">	
-			<p class="form-control-static text-success"> Pain B</p>
-		</div>
-	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select" title="Select Pain reliever">
-        <option selected="">Select pain reliever</option>
-        <option>Pain reliever 1 title</option>
-        <option>Pain reliever 2 title</option>
-        <option>Pain reliever 3 title</option>
-        <option>Pain reliever 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-muted"></i></p>
-		</div>
-		<div class="col-xs-6">	
-			<p class="form-control-static">Pain C</p>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
 		</div>
 	</div>
-	<div class="form-group row margin-bottom-5">
-		<div class="col-xs-5">
-      <select class="form-control c-select" title="Select Pain reliever">
-        <option selected="">Select pain reliever</option>
-        <option>Pain reliever 1 title</option>
-        <option>Pain reliever 2 title</option>
-        <option>Pain reliever 3 title</option>
-        <option>Pain reliever 4 title</option>
-      </select>	
-		</div>	
-		<div class="col-xs-1">
-			<p class="form-control-static"><i class="fa fa-lg fa-arrows-h text-muted"></i></p>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">FE5</span> Test can be done in 10 mins</p>
 		</div>
-		<div class="col-xs-6">	
-			<p class="form-control-static">Pain D</p>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
 		</div>
 	</div>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">FE6</span> Accurate</p>
+		</div>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">BE1</span> Convenient for patient</p>
+		</div>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">BE2</span> Few side effects</p>
+		</div>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">BE3</span> High return rates</p>
+		</div>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+		</div>
+	</div>
+	<div class="row matching-row">
+		<div class="col-xs-6">
+			<i class="fa fa-arrows-h pull-right matching-arrow text-very-muted"></i>
+			<p class="form-control-static"><span class="text-muted">BE4</span> Trustworthy results</p>
+		</div>
+		<div class="col-xs-6">
+			<div class="dropdown">
+				<button type="button" class="btn btn-link btn-block text-left text-very-muted" data-toggle="dropdown">
+					Select...
+				</button>
+				<div class="dropdown-menu">
+					<div ng-include="'includes/customer-needs-wants-dropdown-items.html'"></div>
+				</div>				
+			</div>
+		</div>
+	</div>
+
+	<!-- FOOTER -->
 	<a class="btn btn-secondary btn-canvas pull-right"><i class="fa fa-angle-left margin-right-10"></i>Back</a>

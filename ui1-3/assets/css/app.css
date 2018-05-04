@@ -241,6 +241,9 @@ strong {
 .text-default {
   color: #333 !important; }
 
+.text-very-muted {
+  color: #d3d6d8 !important; }
+
 a:hover {
   text-decoration: none; }
 
@@ -3722,7 +3725,6 @@ body.dragging, body.dragging * {
   .customersegmentcanvas {
     position: relative;
     min-height: 300px;
-    overflow: hidden;
     margin: 0 -1.25rem;
     padding: 0 1.25rem; } }
 
@@ -3740,20 +3742,21 @@ body.dragging, body.dragging * {
     position: absolute;
     opacity: 1;
     transition: opacity 0.4s ease;
-    top: 50%;
-    margin-top: -26px; } }
+    top: 50%; } }
 
 @media (min-width: 768px) {
   .valuepropositioncanvas #customersegment-canvas .btn-match,
   .customersegmentcanvas #customersegment-canvas .btn-match {
     right: 50%;
-    margin-right: 160px; } }
+    margin-right: 160px;
+    margin-top: -32px; } }
 
 @media (min-width: 768px) {
   .valuepropositioncanvas #valueproposition-canvas .btn-match,
   .customersegmentcanvas #valueproposition-canvas .btn-match {
     left: 50%;
-    margin-left: 160px; } }
+    margin-left: 160px;
+    margin-top: -32px; } }
 
 .valuepropositioncanvas .card,
 .customersegmentcanvas .card {
@@ -3921,3 +3924,27 @@ body.dragging, body.dragging * {
   font-size: 19px;
   top: 1px;
   position: relative; }
+
+.matching-arrow {
+  font-size: 28px;
+  margin: 3px 0 0; }
+
+.matching-row {
+  margin-bottom: 15px; }
+  .matching-row .btn {
+    margin: 0 !important;
+    white-space: normal !important;
+    font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif !important; }
+  .matching-row .dropdown:not(:last-child) {
+    margin-bottom: 5px; }
+  .matching-row .dropdown-menu {
+    right: 0;
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden; }
+  .matching-row .dropdown-item {
+    text-overflow: ellipsis;
+    max-width: 100%;
+    overflow: hidden; }
+  .matching-row .dropdown-divider {
+    margin: 0; }

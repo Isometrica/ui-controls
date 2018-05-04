@@ -330,7 +330,7 @@ body.dragging, body.dragging * {
 	@include not-mobile {
 		position: relative;
 		min-height: 300px;
-		overflow: hidden;
+		//overflow: hidden;
 		margin: 0 -1.25rem;
 		padding: 0 1.25rem;		
 	}
@@ -351,7 +351,7 @@ body.dragging, body.dragging * {
 			opacity: 1;
 			transition: opacity 0.4s ease;			
 			top: 50%;
-			margin-top: -26px;
+			
 		}
 	}
 	
@@ -359,6 +359,7 @@ body.dragging, body.dragging * {
 		@include not-mobile {
 			right: 50%;
 			margin-right: 160px;
+			margin-top: -32px;
 		}
 	}
 	
@@ -366,6 +367,7 @@ body.dragging, body.dragging * {
 		@include not-mobile {
 			left: 50%;
 			margin-left: 160px;
+			margin-top: -32px;
 		}
 	}
 	
@@ -471,4 +473,47 @@ body.dragging, body.dragging * {
 	font-size: 19px;
 	top: 1px;
 	position: relative;
+}
+
+.matching {
+	&-arrow {
+		font-size: 28px;
+		margin: 3px 0 0;
+	}
+	
+	&-row {
+		margin-bottom: 15px;
+
+		.btn {
+			margin: 0 !important;
+			white-space: normal !important;
+			font-family: $font-regular !important;
+		}
+		
+		.dropdown {
+			
+			&:not(:last-child) {
+				margin-bottom: 5px;
+			}
+
+			&-menu {
+				right: 0;
+				max-height: 200px;
+				overflow-y: auto;
+				overflow-x: hidden;
+			}
+
+			&-item {
+				text-overflow: ellipsis;
+				max-width: 100%;
+				overflow: hidden;
+			}
+			
+			&-divider {
+				margin: 0;
+			}
+		}
+	}
+	
+	
 }

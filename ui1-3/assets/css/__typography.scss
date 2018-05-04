@@ -11,6 +11,9 @@
   &-default {
     color: #333 !important;
   }
+  &-very-muted {
+	  color: lighten($muted-color,30%) !important;
+  }
 }
 
 a {
