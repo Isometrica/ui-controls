@@ -14,7 +14,9 @@ html, body {
   display: block !important; }
 
 .canvas-col-md {
-  display: flex !important; }
+  display: flex !important;
+  flex: 1 !important;
+  flex-direction: column !important; }
 
 .canvas-section {
   flex: 1 !important; }

@@ -8,7 +8,8 @@
   <title>Report</title>
 	<!-- CSS -->
 	<link rel="stylesheet" href="http://appsforoffice.microsoft.com/fabric/1.0/fabric.min.css">
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">
+	<!--<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.11/css/all.css" integrity="sha384-p2jx59pefphTFIpeqCcISO9MdVfIm4pNnsL08A6v5vaQc4owkQqxMV8kg4Yvhaw/" crossorigin="anonymous">-->
+	<link rel="stylesheet" href="assets/libs/font-awesome-4.5.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="assets/libs/bootstrap-4.0.0-alpha.2/dist/css/bootstrap.min.css">
 	<link rel="stylesheet" href="assets/css/app.css">
 	<link rel="stylesheet" href="assets/css/report.css">
@@ -21,8 +22,8 @@
 		  <div class="container"> 
 			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Business model canvas</span></h1>
 			  <div ng-include="'includes/canvas.html'"></div>
-			  <div class="text-right margin-top-5">
-				  <i class="fab fa-creative-commons"></i>
+			  <div class="text-right margin-top-10 text-muted">
+				  <i class="fa fa-creative-commons"></i>
 				  Canvas by Strategyzer.com
 			  </div>		  
 		  </div>
@@ -40,7 +41,7 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Customer segments</strong></h5>
 					  <p class="text-center text-muted">% of market</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1500" width="3000" id="customerSegmentsChart"></canvas>
+	            <canvas height="1000" width="3000" id="customerSegmentsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="customerSegmentsChartLegend"></div>
 				  </div>
@@ -48,7 +49,7 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Revenue streams</strong></h5>
 					  <p class="text-center text-muted">% of revenue</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1500" width="3000" id="revenueStreamsChart"></canvas>
+	            <canvas height="1000" width="3000" id="revenueStreamsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="revenueStreamsChartLegend"></div>
 				  </div>
@@ -56,7 +57,7 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Profit streams</strong></h5>
 					  <p class="text-center text-muted">% of profit</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1500" width="3000" id="profitStreamsChart"></canvas>
+	            <canvas height="1000" width="3000" id="profitStreamsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="profitStreamsChartLegend"></div>
 				  </div>
@@ -67,7 +68,7 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Key partners</strong></h5>
 					  <p class="text-center text-muted">criticality vs spend</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1500" width="2000" id="keyPartnersChart"></canvas>
+	            <canvas height="1000" width="2000" id="keyPartnersChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="keyPartnersChartLegend"></div>
 				  </div>
@@ -75,7 +76,7 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Cost structure</strong></h5>
 					  <p class="text-center text-muted">% of total costs</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1500" width="3000" id="costStructureChart"></canvas>
+	            <canvas height="1000" width="3000" id="costStructureChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="costStructureChartLegend"></div>
 				  </div>

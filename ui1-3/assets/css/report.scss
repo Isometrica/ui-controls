@@ -41,6 +41,8 @@ h1 {
 .canvas {
 	&-col-md {
 		display: flex !important;
+		flex: 1 !important;
+		flex-direction: column !important;
 	}
 	
 	.btn-add,

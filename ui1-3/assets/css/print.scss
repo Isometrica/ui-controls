@@ -21,6 +21,8 @@ html, body {
 	
 	&-col-md {
 		display: flex !important;
+		flex: 1 !important;
+		flex-direction: column !important;
 	}
 	
 	&-section {
