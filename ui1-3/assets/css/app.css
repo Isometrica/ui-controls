@@ -1955,7 +1955,7 @@ legend {
 
 .goal {
   position: relative;
-  padding: 10px 8px; }
+  padding: 15px 8px; }
   .goal-markers {
     list-style: none;
     padding: 0;
@@ -2127,7 +2127,6 @@ legend {
       transform: rotate(45deg); }
   .goal-dates {
     position: relative;
-    height: 20px;
     text-align: center;
     margin: 10px -10px 0;
     display: -webkit-box;
@@ -2144,6 +2143,7 @@ legend {
     .goal-dates-end {
       margin-right: -8px; }
   .goal-title {
+    font-size: 16px;
     font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
     color: #373a3c;
     cursor: pointer;
@@ -2171,7 +2171,7 @@ legend {
       margin: .5rem 0; }
     .goal-tasks li {
       clear: left;
-      margin: 5px 0; }
+      margin: 10px 0; }
       .goal-tasks li:hover {
         cursor: pointer;
         color: #0078d7; }

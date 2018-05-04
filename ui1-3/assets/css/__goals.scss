@@ -55,7 +55,7 @@ $marker-color-custom-3: #80DEEA;
 
 .goal {	
 	position: relative;
-	padding: 10px $marker-size/2;
+	padding: 15px $marker-size/2;
 	//z-index: 1;
 	
 	&-markers {
@@ -233,7 +233,7 @@ $marker-color-custom-3: #80DEEA;
 	
 	&-dates {
 		position: relative;
-		height: 20px;
+		//height: 24px;
 		text-align: center;
 		margin: 10px -10px 0;
 		//left: $marker-size * -0.5;
@@ -250,6 +250,7 @@ $marker-color-custom-3: #80DEEA;
 	}
 	
 	&-title {
+		font-size: 16px;
 		font-family: $font-semibold;
 		color: $body-color;
 		cursor: pointer;
@@ -289,7 +290,7 @@ $marker-color-custom-3: #80DEEA;
 		
 		li {
 			clear: left;
-			margin: 5px 0;
+			margin: 10px 0;
 			
 			&:hover {
 				cursor: pointer;
