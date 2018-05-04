@@ -1,3 +1,5 @@
+@import "__flexbox.scss";
+
 html, body {
 	height: auto;
 	overflow: auto !important;
@@ -36,33 +38,30 @@ h1 {
 	font-size: 24px;
 }
 
-
-
 .canvas {
-	&-col-md {
-		display: flex !important;
-		flex: 1 !important;
-		flex-direction: column !important;
+	&-row {
+		@include flexbox();
+		@include flex();
 	}
-	
-	.btn-add,
-	.btn-chart,
-	&-section-footer {
-		display: none !important;
-	}
-	
+
 	&-row-1third,
 	&-row-2thirds {
 		min-height: 0 !important;
 	}
-	
+
+	&-col-md {
+		@include flexbox();
+		@include flex-direction(column);
+		@include flex();
+	}
+
 	&-section {
 		min-height: 0 !important;
 		padding-bottom: 10px;
 		pointer-events: none !important;
-		flex: 1 !important;
-		display: flex !important;
-		flex-direction: column !important;
+		@include flex();
+		@include flexbox();
+		@include flex-direction(column);		
 
 		&-items li {
 			display: inline-block;
@@ -76,8 +75,11 @@ h1 {
 		}
 	}
 	
-
-	
+	.btn-add,
+	.btn-chart,
+	&-section-footer {
+		display: none !important;
+	}
 
 }
 
