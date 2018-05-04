@@ -43,7 +43,9 @@ h1 {
   min-height: 0 !important;
   padding-bottom: 10px;
   pointer-events: none !important;
-  flex: 1 !important; }
+  flex: 1 !important;
+  display: flex !important;
+  flex-direction: column !important; }
   .canvas-section-items li {
     display: inline-block;
     margin-right: 15px; }
