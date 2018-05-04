@@ -61,7 +61,8 @@ h1 {
 		pointer-events: none !important;
 		@include flex();
 		@include flexbox();
-		@include flex-direction(column);		
+		@include flex-direction(column);	
+		max-height: none !important;	
 
 		&-items li {
 			display: inline-block;

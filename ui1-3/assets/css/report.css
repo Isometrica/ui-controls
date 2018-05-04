@@ -81,7 +81,8 @@ h1 {
   -webkit-flex-direction: column;
   -moz-flex-direction: column;
   -ms-flex-direction: column;
-  flex-direction: column; }
+  flex-direction: column;
+  max-height: none !important; }
   .canvas-section-items li {
     display: inline-block;
     margin-right: 15px; }
