@@ -39,28 +39,42 @@ h1 {
 
 
 .canvas {
+	&-col-md {
+		display: flex !important;
+	}
+	
 	.btn-add,
 	.btn-chart,
-	.canvas-section-footer {
+	&-section-footer {
 		display: none !important;
 	}
 	
-	.canvas-row-1third,
-	.canvas-row-2thirds {
+	&-row-1third,
+	&-row-2thirds {
 		min-height: 0 !important;
 	}
 	
-	.canvas-section {
+	&-section {
 		min-height: 0 !important;
 		padding-bottom: 10px;
 		pointer-events: none !important;
+		flex: 1 !important;
+
+		&-items li {
+			display: inline-block;
+			margin-right: 15px;
+		}
+
+		&-print-icon {
+			font-size: 24px;
+			display: block;
+			margin-left: 10px;
+		}
 	}
 	
-	.canvas-section-print-icon {
-		font-size: 24px;
-		display: block;
-		margin-left: 10px;
-	}
+
+	
+
 }
 
 .report-section {
@@ -114,6 +128,7 @@ h1 {
 				text-align: center;		
 
 				span {
+					-webkit-print-color-adjust: exact; // Forces Chrome to print with background color
 					display: inline-block;
 					width: 12px;
 					height: 12px;

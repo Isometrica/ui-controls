@@ -25,24 +25,30 @@ h1 {
   margin: 0 0 30px;
   font-size: 24px; }
 
+.canvas-col-md {
+  display: flex !important; }
+
 .canvas .btn-add,
 .canvas .btn-chart,
-.canvas .canvas-section-footer {
+.canvas-section-footer {
   display: none !important; }
 
-.canvas .canvas-row-1third,
-.canvas .canvas-row-2thirds {
+.canvas-row-1third,
+.canvas-row-2thirds {
   min-height: 0 !important; }
 
-.canvas .canvas-section {
+.canvas-section {
   min-height: 0 !important;
   padding-bottom: 10px;
-  pointer-events: none !important; }
-
-.canvas .canvas-section-print-icon {
-  font-size: 24px;
-  display: block;
-  margin-left: 10px; }
+  pointer-events: none !important;
+  flex: 1 !important; }
+  .canvas-section-items li {
+    display: inline-block;
+    margin-right: 15px; }
+  .canvas-section-print-icon {
+    font-size: 24px;
+    display: block;
+    margin-left: 10px; }
 
 .report-section h5 {
   font-size: 20px;
@@ -83,6 +89,7 @@ h1 {
   .report-section .report-chart-legend ul li {
     text-align: center; }
     .report-section .report-chart-legend ul li span {
+      -webkit-print-color-adjust: exact;
       display: inline-block;
       width: 12px;
       height: 12px;
