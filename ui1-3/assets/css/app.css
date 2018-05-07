@@ -621,6 +621,9 @@ i.margin-right {
       left: 0;
       right: 0; } }
 
+.dropdown-header {
+  padding: 5px 15px; }
+
 .dropdown-item {
   padding: 10px 15px; }
   .dropdown-item.indent {
@@ -3930,7 +3933,13 @@ body.dragging, body.dragging * {
   margin: 3px 0 0; }
 
 .matching-row {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  position: relative; }
+  .matching-row > div {
+    position: static; }
+    .matching-row > div > .dropdown-menu {
+      left: 12px;
+      right: 12px; }
   .matching-row .btn {
     margin: 0 !important;
     white-space: normal !important;
