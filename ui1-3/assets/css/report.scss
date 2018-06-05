@@ -1,5 +1,9 @@
 @import "__flexbox.scss";
 
+@media print {
+	@page {size: landscape; }
+}
+
 html, body {
 	height: auto;
 	overflow: auto !important;
@@ -29,8 +33,10 @@ section {
 			border-top: 50px solid #f5f5f5;
 		}
 	}
-	
+}
 
+.page-break {
+	page-break-before: always;
 }
 
 h1 {
@@ -64,9 +70,27 @@ h1 {
 		@include flex-direction(column);	
 		max-height: none !important;	
 
+		&-items,
+		&-help,
+		&-heading {
+			padding-left: 0.75rem;
+			padding-right: 0.75rem;
+		}
+		
+		&-heading {
+			padding-top: 0.75rem;
+			padding-bottom: 0.75rem;
+		}
+
 		&-items li {
 			display: inline-block;
 			margin-right: 15px;
+			
+			i {
+				font-size: 10px;
+				line-height: inherit;
+				margin-right: 5px !important;
+			}
 		}
 
 		&-print-icon {

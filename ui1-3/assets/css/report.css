@@ -1,3 +1,7 @@
+@media print {
+  @page {
+    size: landscape; } }
+
 html, body {
   height: auto;
   overflow: auto !important; }
@@ -20,6 +24,9 @@ section {
     @media screen {
       section:not(:first-child) {
         border-top: 50px solid #f5f5f5; } }
+
+.page-break {
+  page-break-before: always; }
 
 h1 {
   margin: 0 0 30px;
@@ -83,9 +90,21 @@ h1 {
   -ms-flex-direction: column;
   flex-direction: column;
   max-height: none !important; }
+  .canvas-section-items,
+  .canvas-section-help,
+  .canvas-section-heading {
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+  .canvas-section-heading {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem; }
   .canvas-section-items li {
     display: inline-block;
     margin-right: 15px; }
+    .canvas-section-items li i {
+      font-size: 10px;
+      line-height: inherit;
+      margin-right: 5px !important; }
   .canvas-section-print-icon {
     font-size: 24px;
     display: block;
