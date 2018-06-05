@@ -92,7 +92,7 @@ $canvas-item-min-height: 240px;
 		border: 2px solid $canvas-border-color;
 		transition: background-color 0.4s ease, border-color 0.4s ease;
 		margin: -1px;
-		z-index: 1;
+		//z-index: 1;
 		
 		@include not-mobile {
 			@include flex();
@@ -280,9 +280,13 @@ $canvas-item-min-height: 240px;
 			
 			a.btn-sm {
 				//line-height: 1;
-				float: left;
-				margin: 0 0 4px 4px;
+				display: inline-block;
+				margin: 0 0 4px 0;
 				padding: .1rem .7rem .15rem;
+			}
+			
+			.dropup {
+				display: inline-block;
 			}
 			
 			a.label {

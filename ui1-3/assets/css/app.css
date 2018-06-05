@@ -3520,8 +3520,7 @@ legend {
   .canvas-section {
     border: 2px solid #aaa;
     transition: background-color 0.4s ease, border-color 0.4s ease;
-    margin: -1px;
-    z-index: 1; }
+    margin: -1px; }
     @media (min-width: 768px) {
       .canvas-section {
         -webkit-box-flex: 1;
@@ -3694,9 +3693,11 @@ legend {
 				}
 				*/ }
       .canvas-section-footer a.btn-sm {
-        float: left;
-        margin: 0 0 4px 4px;
+        display: inline-block;
+        margin: 0 0 4px 0;
         padding: 0.1rem 0.7rem 0.15rem; }
+      .canvas-section-footer .dropup {
+        display: inline-block; }
       .canvas-section-footer a.label {
         transition: background 0.4s ease;
         font-size: 12px;
