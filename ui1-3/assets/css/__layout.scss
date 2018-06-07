@@ -31,6 +31,13 @@ body {
   @include flex(1);
 }
 
+.d-inline-block {
+	display: inline-block;
+}
+
+.align-middle {
+	vertical-align: middle;
+}
 
 .content {
   overflow: hidden;
