@@ -32,6 +32,10 @@ h1 {
   margin: 0 0 30px;
   font-size: 24px; }
 
+@media print {
+  .btn {
+    display: none !important; } }
+
 .canvas-row {
   display: -webkit-box;
   display: -webkit-flex;
@@ -145,7 +149,20 @@ h1 {
 
 .report-section .report-chart-wrapper {
   max-width: 300px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  position: relative; }
+  .report-section .report-chart-wrapper i.fa {
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    font-size: 48px;
+    line-height: 1;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -24px;
+    margin-top: -24px;
+    color: #c5c7c9; }
 
 .report-section .report-chart-legend ul {
   list-style: none;

@@ -42,6 +42,14 @@ section {
 h1 {
 	margin: 0 0 30px;
 	font-size: 24px;
+	
+
+}
+
+.btn {
+	@media print {
+		display: none !important;
+	}
 }
 
 .canvas {
@@ -147,6 +155,23 @@ h1 {
 	.report-chart-wrapper {
 		max-width: 300px;
 		margin: 0 auto;
+		position: relative;
+		
+		i.fa {
+			$chartIconSize: 48px;
+			position: absolute;
+			width: $chartIconSize;
+			height: $chartIconSize;
+			font-size: $chartIconSize;
+			line-height: 1;
+			text-align: center;
+			left: 50%;
+			top: 50%;
+			margin-left: $chartIconSize/-2;
+			margin-top: $chartIconSize/-2;
+			color: #c5c7c9;
+			
+		}
 	}
 	
 	.report-chart-legend {

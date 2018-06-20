@@ -20,7 +20,10 @@
 		<!-- CANVAS -->
 	  <section>	 
 		  <div class="container"> 
-			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Business model canvas</span></h1>
+			  <h1>
+				  <strong>Shift Bioscience Ltd</strong> <span class="text-muted">Business model canvas</span>
+				  <button type="button" class="btn btn-primary pull-right">Download as PDF</button>
+				</h1>
 			  <div ng-include="'includes/canvas.html'"></div>
 			  <div class="text-right margin-top-10 text-muted">
 				  <i class="fa fa-creative-commons"></i>
@@ -34,14 +37,15 @@
 	  <!-- CHARTS -->
 	  <section class="report-section">
 		  <div class="container">
-			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Canvas charts</span></h1>
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Canvas charts (1)</span></h1>
 			  <hr>
 			  <div class="row">
 				  <div class="col-xs-4">
 					  <h5 class="text-center margin-bottom-5"><strong>Customer segments</strong></h5>
 					  <p class="text-center text-muted">% of market</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1200" width="3000" id="customerSegmentsChart"></canvas>
+		          <i class="fa fa-smile-o"></i>
+	            <canvas height="1200" width="1800" id="customerSegmentsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="customerSegmentsChartLegend"></div>
 				  </div>
@@ -49,7 +53,8 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Revenue streams</strong></h5>
 					  <p class="text-center text-muted">% of revenue</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1200" width="3000" id="revenueStreamsChart"></canvas>
+		          <i class="fa fa-usd"></i>
+	            <canvas height="1200" width="1800" id="revenueStreamsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="revenueStreamsChartLegend"></div>
 				  </div>
@@ -57,19 +62,28 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Profit streams</strong></h5>
 					  <p class="text-center text-muted">% of profit</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1200" width="3000" id="profitStreamsChart"></canvas>
+		          <i class="fa fa-usd"></i>
+	            <canvas height="1200" width="1800" id="profitStreamsChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="profitStreamsChartLegend"></div>
 				  </div>
 			  </div>
+		  </div>
+	  </section>
+	  <!-- end of CHARTS -->
+	  
+	  
+	  <!-- CHARTS -->
+	  <section class="report-section">
+		  <div class="container">
+			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Canvas charts (2)</span></h1>
 			  <hr>
-			  <div class="page-break"></div>
 			  <div class="row">
 				  <div class="col-xs-4">
 					  <h5 class="text-center margin-bottom-5"><strong>Key partners</strong></h5>
 					  <p class="text-center text-muted">criticality vs spend</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1200" width="2000" id="keyPartnersChart"></canvas>
+	            <canvas height="1200" width="1800" id="keyPartnersChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="keyPartnersChartLegend"></div>
 				  </div>
@@ -77,7 +91,8 @@
 					  <h5 class="text-center margin-bottom-5"><strong>Cost structure</strong></h5>
 					  <p class="text-center text-muted">% of total costs</p>
 	          <div class="report-chart-wrapper">
-	            <canvas height="1200" width="3000" id="costStructureChart"></canvas>
+		          <i class="fa fa-tags"></i>
+	            <canvas height="1200" width="1800" id="costStructureChart"></canvas>
 	          </div>
 	          <div class="report-chart-legend" id="costStructureChartLegend"></div>
 				  </div>
@@ -94,38 +109,38 @@
 		  	<hr>
 		  	<div class="row">
 			  	<div class="col-xs-6">
-					  <h6>Customer segment:</h6>
+					  <h6>CS1:</h6>
 						<h5>Pharmaceutical firms</h5>
 						<p class="report-linkage">
 							<i class="fa fa-long-arrow-right"></i>
-							<span>Linked to value proposition: Novel drug molecule for age-related diseases</span>
+							<span>Matched to VP1 Novel drug molecule for age-related diseases</span>
 						</p>
 						<h6>Needs:</h6>
 						<ul class="list-unstyled">
-							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
-							<li>Maximum acquisition price of £10m <span class="text-muted">(NE2)</span></li>
-							<li>Proven safe in Phase I trial <span class="text-muted">(NE3)</span></li>
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(CN1)</span></li>
+							<li>Maximum acquisition price of £10m <span class="text-muted">(CN2)</span></li>
+							<li>Proven safe in Phase I trial <span class="text-muted">(CN3)</span></li>
 						</ul>
 						<h6>Wants:</h6>
 						<ul class="list-unstyled">
-							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
-							<li>Global rights <span class="text-muted">(WA2)</span></li>
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(CW1)</span></li>
+							<li>Global rights <span class="text-muted">(CW2)</span></li>
 						</ul>		  	
 			  	</div>
 			  	<div class="col-xs-6">
-					  <h6>Customer segment:</h6>
+					  <h6>CS2:</h6>
 						<h5>Biotechnology firms</h5>
 						<h6>Needs:</h6>
 						<ul class="list-unstyled">
-							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
-							<li>Maximum acquisition price of £5m <span class="text-muted">(NE4)</span></li>
-							<li>Proven safe in Phase I trial <span class="text-muted">(NE3)</span></li>
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(CN1)</span></li>
+							<li>Maximum acquisition price of £5m <span class="text-muted">(CN4)</span></li>
+							<li>Proven safe in Phase I trial <span class="text-muted">(CN3)</span></li>
 						</ul>
 						<h6>Wants:</h6>
 						<ul class="list-unstyled">
-							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
-							<li>Valuation-enhancing investor story <span class="text-muted">(WA3)</span></li>
-							<li>Regional rights <span class="text-muted">(WA4)</span></li>
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(CW1)</span></li>
+							<li>Valuation-enhancing investor story <span class="text-muted">(CW3)</span></li>
+							<li>Regional rights <span class="text-muted">(CW4)</span></li>
 						</ul>		  	
 			  	</div>
 		  	</div>
@@ -133,33 +148,33 @@
 		  	<div class="page-break"></div>
 		  	<div class="row">
 			  	<div class="col-xs-6">
-					  <h6>Customer segment:</h6>
+					  <h6>CS3:</h6>
 						<h5>Genome diagnostic firms</h5>
 						<h6>Needs:</h6>
 						<ul class="list-unstyled">
-							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(NE1)</span></li>
-							<li>Maximum acquisition price of £1m <span class="text-muted">(NE5)</span></li>
-							<li>Efficacy shown in Phase II trial <span class="text-muted">(NE6)</span></li>
+							<li>Candidate drug molecule for age-related diseases <span class="text-muted">(CN1)</span></li>
+							<li>Maximum acquisition price of £1m <span class="text-muted">(CN5)</span></li>
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(CN6)</span></li>
 						</ul>
 						<h6>Wants:</h6>
 						<ul class="list-unstyled">
-							<li>Valuation-enhancing investor story <span class="text-muted">(WA3)</span></li>
-							<li>Regional rights <span class="text-muted">(WA4)</span></li>
+							<li>Valuation-enhancing investor story <span class="text-muted">(CW3)</span></li>
+							<li>Regional rights <span class="text-muted">(CW4)</span></li>
 						</ul>		  	
 			  	</div>
 			  	<div class="col-xs-6">
-					  <h6>Customer segment:</h6>
+					  <h6>CS4:</h6>
 						<h5>Mitochondrial disease clinicians</h5>
 						<h6>Needs:</h6>
 						<ul class="list-unstyled">
-							<li>New therapies for patients with incurable mitochondrial diseases <span class="text-muted">(NE7)</span></li>
-							<li>Access to sufficient drug for patient trials <span class="text-muted">(NE8)</span></li>
-							<li>Endorsement by reputable clinician or scientist <span class="text-muted">(NE9)</span></li>
+							<li>New therapies for patients with incurable mitochondrial diseases <span class="text-muted">(CN7)</span></li>
+							<li>Access to sufficient drug for patient trials <span class="text-muted">(CN8)</span></li>
+							<li>Endorsement by reputable clinician or scientist <span class="text-muted">(CN9)</span></li>
 						</ul>
 						<h6>Wants:</h6>
 						<ul class="list-unstyled">
-							<li>Efficacy shown in Phase II trial <span class="text-muted">(WA1)</span></li>
-							<li>Publication rights <span class="text-muted">(WA5)</span></li>
+							<li>Efficacy shown in Phase II trial <span class="text-muted">(CW1)</span></li>
+							<li>Publication rights <span class="text-muted">(CW5)</span></li>
 						</ul>		  	
 			  	</div>
 		  	</div>
@@ -176,37 +191,37 @@
 		  	<hr>
 		  	<div class="row">
 			  	<div class="col-xs-6">
-					  <h6>Value proposition:</h6>
+					  <h6>VP1:</h6>
 						<h5>Novel drug therapy for age-related diseases</h5>
 						<p class="report-linkage">
 							<i class="fa fa-long-arrow-right"></i>
-							<span>Linked to customer segment: Pharmaceutical firms</span>
+							<span>Matched to CS2 Pharmaceutical firms</span>
 						</p>
 						<h6>Features:</h6>
 						<ul class="list-unstyled">
-							<li>Small molecule <span class="text-muted">(FE1)</span></li>
-							<li>Low toxicity <span class="text-muted">(FE2)</span></li>
-							<li>Optimal formulation for ALS <span class="text-muted">(FE3)</span></li>
+							<li>Small molecule <span class="text-muted">(PF1)</span></li>
+							<li>Low toxicity <span class="text-muted">(PF2)</span></li>
+							<li>Optimal formulation for ALS <span class="text-muted">(PF3)</span></li>
 						</ul>
 						<h6>Benefits:</h6>
 						<ul class="list-unstyled">
-							<li>Convenient for patient <span class="text-muted">(BE1)</span></li>
-							<li>Few side effects <span class="text-muted">(BE2)</span></li>
+							<li>Convenient for patient <span class="text-muted">(PB1)</span></li>
+							<li>Few side effects <span class="text-muted">(PB2)</span></li>
 						</ul>		  	
 			  	</div>
 			  	<div class="col-xs-6">
-					  <h6>Value proposition:</h6>
+					  <h6>VP2:</h6>
 						<h5>Novel mitochondrial diagnostic test (to use with drug or independently)</h5>
 						<h6>Features:</h6>
 						<ul class="list-unstyled">
-							<li>Easy-to-use consumer kit <span class="text-muted">(FE6)</span></li>
-							<li>Test can be done in 10 mins <span class="text-muted">(FE7)</span></li>
-							<li>Accurate <span class="text-muted">(FE8)</span></li>
+							<li>Easy-to-use consumer kit <span class="text-muted">(PF6)</span></li>
+							<li>Test can be done in 10 mins <span class="text-muted">(PF7)</span></li>
+							<li>Accurate <span class="text-muted">(PF8)</span></li>
 						</ul>
 						<h6>Benefits:</h6>
 						<ul class="list-unstyled">
-							<li>High return rates <span class="text-muted">(BE5)</span></li>
-							<li>Trustworthy results <span class="text-muted">(BE6)</span></li>
+							<li>High return rates <span class="text-muted">(PB5)</span></li>
+							<li>Trustworthy results <span class="text-muted">(PB6)</span></li>
 						</ul>		  	
 			  	</div>
 		  	</div>
@@ -214,17 +229,17 @@
 		  	<div class="page-break"></div>
 		  	<div class="row">
 			  	<div class="col-xs-6">
-					  <h6>Value proposition:</h6>
+					  <h6>VP3:</h6>
 						<h5>Compassionate drug use (rare mitochondrial diseases)</h5>
 						<h6>Features:</h6>
 						<ul class="list-unstyled">
-							<li>Small molecule <span class="text-muted">(FE1)</span></li>
-							<li>Low toxicity <span class="text-muted">(FE2)</span></li>
+							<li>Small molecule <span class="text-muted">(PF1)</span></li>
+							<li>Low toxicity <span class="text-muted">(PF2)</span></li>
 						</ul>
 						<h6>Benefits:</h6>
 						<ul class="list-unstyled">
-							<li>Convenient for patient <span class="text-muted">(BE1)</span></li>
-							<li>Few side effects <span class="text-muted">(BE2)</span></li>
+							<li>Convenient for patient <span class="text-muted">(PB1)</span></li>
+							<li>Few side effects <span class="text-muted">(PB2)</span></li>
 						</ul>	  	
 			  	</div>
 		  	</div>
@@ -234,7 +249,7 @@
   	
   	
   	
-  	<!-- PRODUCT/MARKET FIT -->
+  	<!-- PRODUCT/MARKET FIT 
   	<section class="report-section">
 	  	<div class="container">
 			  <h1><strong>Shift Bioscience Ltd</strong> <span class="text-muted">Product/market fit</span></h1>
@@ -250,28 +265,28 @@
 						<h6>Features:</h6>
 						<ul class="list-unstyled">
 							<li>
-								Small molecule <span class="text-muted">(FE1)</span>
+								Small molecule <span class="text-muted">(PF1)</span>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Candidate drug molecule for age-related diseases (NE1)</span>
+									<span>matched to Candidate drug molecule for age-related diseases (CN1)</span>
 								</p>	
 							</li>
 							<li>
-								Low toxicity <span class="text-muted">(FE2)</span>
+								Low toxicity <span class="text-muted">(PF2)</span>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Maximum acquisition price of £10m (NE2)</span>
+									<span>matched to Maximum acquisition price of £10m (CN2)</span>
 								</p>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Efficacy shown in Phase II trial (WA1)</span>
+									<span>matched to Efficacy shown in Phase II trial (CW1)</span>
 								</p>	
 							</li>
 							<li>
-								Optimal formulation for ALS <span class="text-muted">(FE3)</span>
+								Optimal formulation for ALS <span class="text-muted">(PF3)</span>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Global rights (WA2)</span>
+									<span>matched to Global rights (CW2)</span>
 								</p>	
 							</li>
 						</ul>		  	
@@ -282,17 +297,17 @@
 						<h6>Benefits:</h6>
 						<ul class="list-unstyled">
 							<li>
-								Convenient for patient <span class="text-muted">(BE1)</span>
+								Convenient for patient <span class="text-muted">(PB1)</span>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Valuation-enhancing investor story (WA3)</span>
+									<span>matched to Valuation-enhancing investor story (CW3)</span>
 								</p>							
 							</li>
 							<li>
-								Few side effects <span class="text-muted">(BE2)</span>
+								Few side effects <span class="text-muted">(PB2)</span>
 								<p class="report-linkage">
 									<i class="fa fa-long-arrow-right"></i>
-									<span>matched to Maximum acquisition price of £1m (NE5)</span>
+									<span>matched to Maximum acquisition price of £1m (CN5)</span>
 								</p>	
 							</li>
 						</ul>		  	
@@ -335,25 +350,25 @@
 					  <h6>Standards:</h6>
 						<ul class="list-unstyled">
 							<li>
-								1. Client feedback
+								SOP1. Client feedback
 							</li>
 							<li>
-								1.1. Inquiry handling
+								SOP2. Inquiry handling
 							</li>
 							<li>
-								2. Client onboarding
+								SOP3. Client onboarding
 							</li>
 							<li>
-								2.1. Identification of needs
+								SOP4. Identification of needs
 							</li>
 							<li>
-								2.2. Verification of ID
+								SOP5. Verification of ID
 							</li>
 							<li>
-								2.2.1.1. Due diligence
+								SOP6. Due diligence
 							</li>
 							<li>
-								3. Client deal execution
+								SOP7. Client deal execution
 							</li>
 						</ul>		  	
 			  	</div>
@@ -430,13 +445,13 @@
 					  <h6>Standards:</h6>
 						<ul class="list-unstyled">
 							<li>
-								1. Client feedback
+								SOP1. Client feedback
 							</li>
 							<li>
-								1.1. Inquiry handling
+								SOP2. Inquiry handling
 							</li>
 							<li>
-								2. Client onboarding
+								SOP3. Client onboarding
 							</li>
 						</ul>		  	
 			  	</div>
@@ -485,13 +500,13 @@
 					  <h6>Standards:</h6>
 						<ul class="list-unstyled">
 							<li>
-								2.2. Verification of ID
+								SOP1. Verification of ID
 							</li>
 							<li>
-								2.2.1.1. Due diligence
+								SOP2. Due diligence
 							</li>
 							<li>
-								3. Client deal execution
+								SOP3. Client deal execution
 							</li>
 						</ul>		  	
 			  	</div>
