@@ -2,6 +2,30 @@ var app = angular.module('plio', []);
 
 $( document ).ready(function() {
 
+	function addCommas(nStr) {
+		nStr += '';
+		x = nStr.split('.');
+		x1 = x[0];
+		x2 = x.length > 1 ? '.' + x[1] : '';
+		var rgx = /(\d+)(\d{3})/;
+		while (rgx.test(x1)) {
+			x1 = x1.replace(rgx, '$1' + ',' + '$2');
+		}
+		return x1 + x2;
+	}
+
+
+	/*
+		SHARED CHART SETTINGS
+	*/
+	
+	Chart.defaults.global.legend.display = false;
+	Chart.defaults.global.tooltips.enabled = false;
+
+
+	Chart.defaults.scale.ticks.fontColor = "#818a91";
+	Chart.defaults.scale.scaleLabel.fontColor = "#818a91";
+
 	/* 
 		KEY PARTNERS CHART
 	*/
@@ -81,7 +105,10 @@ $( document ).ready(function() {
 		        	beginAtZero: true,
 		        	min:0,
 		        	max: 1000000,
-		        	maxTicksLimit: 4
+		        	maxTicksLimit: 4,
+		        	callback: function(label, index, labels) {
+			        	return '$'+addCommas(label);
+			        }
 		        }
           }],
           yAxes: [{
@@ -96,16 +123,42 @@ $( document ).ready(function() {
 		        	beginAtZero: true,
 		        	min: 0,
 		        	max: 100,
-		        	maxTicksLimit: 4
+		        	maxTicksLimit: 4,
+		        	callback: function(label, index, labels) {
+				        switch (label) {
+			            case 0:
+			                return 'None';
+			            case 50:
+			                return 'Low';
+			            case 100:
+			                return 'High';
+				        }
+					    }
 		        },
           }]
         },
-        legend: {
-					display: false,
-        },
-        tooltips: {
-	        enabled: false,
-        },
+        legendCallback: function(chart) {
+			    var text = [];
+			    text.push('<ul>');
+			    for (var i=0; i<chart.data.datasets.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<li>');
+			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[i].backgroundColor + '"></i>');
+			      var criticality = chart.data.datasets[i].data[0].y;
+			      if (criticality < 50) {
+				      criticalityString = "LOW";
+			      } else {
+				      criticalityString = "HIGH";
+			      }
+			      text.push('<span class="value">'+ criticalityString + "</span>");
+			      text.push('<span class="value">$'+ addCommas(chart.data.datasets[i].data[0].x) + "</span>");
+			      text.push(chart.data.datasets[i].label);
+			      text.push('</li>');
+			    }
+			    text.push('</ul>');
+			    return text.join("");
+        }
+        
 	    }
 		});
 		$("#keyPartnersChartLegend").html(myChart.generateLegend());
@@ -142,13 +195,21 @@ $( document ).ready(function() {
 				}]
 			},
 			options: {
-				tooltips: {
-	        enabled: false,
-        },
-				legend: {
-					display: false,
-        },
-			}
+        legendCallback: function(chart) {
+			    var text = [];
+			    text.push('<ul>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<li>');
+			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
+			      text.push(chart.data.labels[i]);
+			      text.push('</li>');
+			    }
+			    text.push('</ul>');
+			    return text.join("");
+        }
+    	}
 		});	
 		$("#costStructureChartLegend").html(myChart.generateLegend());
 	}
@@ -184,13 +245,20 @@ $( document ).ready(function() {
 				}]
 			},
 			options: {
-				tooltips: {
-	        enabled: false,
-        },
-				legend: {
-					display: false,
-        },
-			}
+        legendCallback: function(chart) {
+			    var text = [];
+			    text.push('<ul>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      text.push('<li>');
+			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
+			      text.push(chart.data.labels[i]);
+			      text.push('</li>');
+			    }
+			    text.push('</ul>');
+			    return text.join("");
+        }
+    	}
 		});	
 		$("#revenueStreamsChartLegend").html(myChart.generateLegend());
 	}	
@@ -226,13 +294,20 @@ $( document ).ready(function() {
 				}]
 			},
 			options: {
-				tooltips: {
-	        enabled: false,
-        },
-				legend: {
-					display: false,
-        },
-			}
+        legendCallback: function(chart) {
+			    var text = [];
+			    text.push('<ul>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      text.push('<li>');
+			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
+			      text.push(chart.data.labels[i]);
+			      text.push('</li>');
+			    }
+			    text.push('</ul>');
+			    return text.join("");
+        }
+    	}
 		});	
 		$("#profitStreamsChartLegend").html(myChart.generateLegend());
 	}	
@@ -256,7 +331,6 @@ $( document ).ready(function() {
 					"Genome diagnostic firms (23andme - licensing)",
 					"Mitochondrial disease clinicians"],
 				datasets:[{
-					label:"My First Dataset",
 					data:[41,29,18,12],
 					backgroundColor:[
 						"#F06292",
@@ -267,13 +341,21 @@ $( document ).ready(function() {
 				}]
 			},
 			options: {
-				tooltips: {
-	        enabled: false,
-        },
-        legend: {
-	        display: false,
+        legendCallback: function(chart) {
+			    var text = [];
+			    text.push('<ul>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      text.push('<li>');
+			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
+			      text.push(chart.data.labels[i]);
+			      text.push('</li>');
+			    }
+			    text.push('</ul>');
+			    return text.join("");
         }
-			}
+    	}
+			
 		});			
 		$("#customerSegmentsChartLegend").html(myChart.generateLegend());
 	}
