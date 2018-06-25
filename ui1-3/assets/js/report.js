@@ -145,6 +145,7 @@ $( document ).ready(function() {
         },
         legendCallback: function(chart) {
 			    var text = [];
+/*
 			    text.push('<ul>');
 			    for (var i=0; i<chart.data.datasets.length; i++) {
 			      console.log(chart.data.datasets[i]); // see what's inside the obj.
@@ -158,7 +159,6 @@ $( document ).ready(function() {
 			      } else {
 				      criticalityString = "High criticality";
 			      }
-			      text.push('<span class="value">'+ criticalityString + "</span>");
 			      var spend = chart.data.datasets[i].data[0].x;
 			      if (spend < 250000) {
 				      spendString = "Low spend";
@@ -167,11 +167,45 @@ $( document ).ready(function() {
 			      } else {
 				      spendString = "High spend";
 			      }
-			      text.push('<span class="value">'+ spendString + "</span>");
-			      text.push(chart.data.datasets[i].label);
+			      text.push('<span class="key">'+ chart.data.datasets[i].label+ "</span>");
+			      text.push('<span class="value">'+ criticalityString + ', '+ spendString + "</span>");
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
+*/
+			    text.push('<table>');
+			    text.push('<tr>');
+			    text.push('<th></th>');
+			    text.push('<th></th>');
+			    text.push('<th class="value">CRITICALITY</th>');
+			    text.push('<th class="value">SPEND</th>');
+			    text.push('</tr>');
+			    for (var i=0; i<chart.data.datasets.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<tr>');
+			      text.push('<td><i class="dot" style="background-color:' + chart.data.datasets[i].backgroundColor + '"></i></td>');
+			      var criticality = chart.data.datasets[i].data[0].y;
+			      if (criticality < 35) {
+				      criticalityString = "Low";
+			      } else if (criticality < 65) {
+				      criticalityString = "Medium";
+			      } else {
+				      criticalityString = "High";
+			      }
+			      var spend = chart.data.datasets[i].data[0].x;
+			      if (spend < 250000) {
+				      spendString = "Low";
+			      } else if (spend < 650000) {
+				      spendString = "Medium";
+			      } else {
+				      spendString = "High";
+			      }
+			      text.push('<td class="key">'+ chart.data.datasets[i].label+ "</td>");
+			      text.push('<td class="value">'+ criticalityString + '</td>');
+			      text.push('<td class="value">'+ spendString + '</td>');
+			      text.push('</tr>');
+			    }
+			    text.push('</table>');
 			    return text.join("");
         },
         plugins: [{
@@ -237,16 +271,28 @@ $( document ).ready(function() {
 			options: {
         legendCallback: function(chart) {
 			    var text = [];
+/*
 			    text.push('<ul>');
 			    for (var i=0; i<chart.data.labels.length; i++) {
 			      console.log(chart.data.datasets[i]); // see what's inside the obj.
 			      text.push('<li>');
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="key">'+chart.data.labels[i]+ "</span>");
 			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
-			      text.push(chart.data.labels[i]);
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
+*/
+					text.push('<table>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<tr>');
+			      text.push('<td><i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i></td>');
+			      text.push('<td class="key">'+chart.data.labels[i]+ "</td>");
+			      text.push('<td class="value">'+chart.data.datasets[0].data[i] + "%</td>");
+			      text.push('</tr>');
+			    }
+			    text.push('</table>');
 			    return text.join("");
         }
     	}
@@ -287,15 +333,28 @@ $( document ).ready(function() {
 			options: {
         legendCallback: function(chart) {
 			    var text = [];
+/*
 			    text.push('<ul>');
 			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
 			      text.push('<li>');
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="key">'+chart.data.labels[i]+ "</span>");
 			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
-			      text.push(chart.data.labels[i]);
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
+*/
+					text.push('<table>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<tr>');
+			      text.push('<td><i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i></td>');
+			      text.push('<td class="key">'+chart.data.labels[i]+ "</td>");
+			      text.push('<td class="value">'+chart.data.datasets[0].data[i] + "%</td>");
+			      text.push('</tr>');
+			    }
+			    text.push('</table>');
 			    return text.join("");
         }
     	}
@@ -336,15 +395,28 @@ $( document ).ready(function() {
 			options: {
         legendCallback: function(chart) {
 			    var text = [];
+/*
 			    text.push('<ul>');
 			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
 			      text.push('<li>');
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="key">'+chart.data.labels[i]+ "</span>");
 			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
-			      text.push(chart.data.labels[i]);
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
+*/
+					text.push('<table>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<tr>');
+			      text.push('<td><i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i></td>');
+			      text.push('<td class="key">'+chart.data.labels[i]+ "</td>");
+			      text.push('<td class="value">'+chart.data.datasets[0].data[i] + "%</td>");
+			      text.push('</tr>');
+			    }
+			    text.push('</table>');
 			    return text.join("");
         }
     	}
@@ -383,15 +455,28 @@ $( document ).ready(function() {
 			options: {
         legendCallback: function(chart) {
 			    var text = [];
+/*
 			    text.push('<ul>');
 			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
 			      text.push('<li>');
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i>');
+			      text.push('<span class="key">'+chart.data.labels[i]+ "</span>");
 			      text.push('<span class="value">'+chart.data.datasets[0].data[i] + "%</span>");
-			      text.push(chart.data.labels[i]);
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
+*/
+					text.push('<table>');
+			    for (var i=0; i<chart.data.labels.length; i++) {
+			      console.log(chart.data.datasets[i]); // see what's inside the obj.
+			      text.push('<tr>');
+			      text.push('<td><i class="dot" style="background-color:' + chart.data.datasets[0].backgroundColor[i] + '"></i></td>');
+			      text.push('<td class="key">'+chart.data.labels[i]+ "</td>");
+			      text.push('<td class="value">'+chart.data.datasets[0].data[i] + "%</td>");
+			      text.push('</tr>');
+			    }
+			    text.push('</table>');
 			    return text.join("");
         }
     	}
