@@ -128,18 +128,19 @@ h1 {
   font-weight: 500;
   color: #818a91;
   text-transform: uppercase;
-  margin: 15px 0 10px;
-  letter-spacing: 1px; }
+  margin: 0;
+  letter-spacing: 1.4px;
+  line-height: 21px; }
 
 .report-section p {
-  margin: 0 0 10px; }
+  margin: 0; }
 
 .report-section ul {
-  margin: 0 0 10px; }
+  margin: 0; }
 
 .report-section .report-linkage {
   color: #818a91;
-  margin-bottom: 0; }
+  margin-bottom: 10px; }
 
 .report-section .product-market-fit-arrows {
   float: right;
@@ -147,9 +148,17 @@ h1 {
   line-height: 1;
   color: #818a91; }
 
+.report-section .report-chart-heading {
+  margin-bottom: 5px;
+  text-align: center; }
+
+.report-section .report-chart-subheading {
+  margin-bottom: 15px;
+  text-align: center; }
+
 .report-section .report-chart-wrapper {
-  max-width: 300px;
-  margin: 0 auto;
+  max-width: 250px;
+  margin: 0 auto 15px;
   position: relative; }
   .report-section .report-chart-wrapper i.fa {
     position: absolute;

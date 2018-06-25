@@ -128,21 +128,22 @@ h1 {
 		font-weight: 500;
 		color: #818a91;
 		text-transform: uppercase;
-		margin: 15px 0 10px;
-		letter-spacing: 1px;
+		margin: 0;
+		letter-spacing: 1.4px;
+		line-height: 21px;
 	}
 	
 	p {
-		margin: 0 0 10px;
+		margin: 0;
 	}
 	
 	ul {
-		margin: 0 0 10px;
+		margin: 0;
 	}
 	
 	.report-linkage {
 		color: #818a91;
-		margin-bottom: 0;
+		margin-bottom: 10px;
 	}
 	
 	.product-market-fit-arrows {
@@ -152,64 +153,75 @@ h1 {
 		color: #818a91;
 	}
 	
-	.report-chart-wrapper {
-		max-width: 300px;
-		margin: 0 auto;
-		position: relative;
-		
-		i.fa {
-			$chartIconSize: 48px;
-			position: absolute;
-			width: $chartIconSize;
-			height: $chartIconSize;
-			font-size: $chartIconSize;
-			line-height: 1;
+	.report-chart {
+		&-heading {
+			margin-bottom: 5px;
 			text-align: center;
-			left: 50%;
-			top: 50%;
-			margin-left: $chartIconSize/-2;
-			margin-top: $chartIconSize/-2;
-			color: #c5c7c9;
-			
 		}
-	}
-	
-	.report-chart-legend {
-		max-width: 350px;
-    margin: 0 auto;
-    
-		ul {
-			list-style: none;
-			padding: 0;
-			margin-top: 10px;
-			//text-align: center;
 		
-			li {
-				//text-align: center;		
-				//display: inline-block;
-				//margin-right: 1rem;
-				position: relative;
-				padding-left: 20px;
+		&-subheading {
+			margin-bottom: 15px;
+			text-align: center;
+		}
 
-				.dot {
-					-webkit-print-color-adjust: exact; // Forces Chrome to print with background color
-					display: inline-block;
-					width: 12px;
-					height: 12px;
-					border-radius: 50%;
-					position: absolute;
-					left: 0;
-					top: 5px;
-					//margin-right: 5px;
-				}
+		&-wrapper {
+			max-width: 250px;
+			margin: 0 auto 15px;
+			position: relative;
+			
+			i.fa {
+				$chartIconSize: 48px;
+				position: absolute;
+				width: $chartIconSize;
+				height: $chartIconSize;
+				font-size: $chartIconSize;
+				line-height: 1;
+				text-align: center;
+				left: 50%;
+				top: 50%;
+				margin-left: $chartIconSize/-2;
+				margin-top: $chartIconSize/-2;
+				color: #c5c7c9;
 				
-				.value {
-					color: #818a91;
-					float: right;
-					margin-left: 10px;
+			}
+		}
+		
+		&-legend {
+			max-width: 350px;
+	    margin: 0 auto;
+	    
+			ul {
+				list-style: none;
+				padding: 0;
+				margin-top: 10px;
+				//text-align: center;
+			
+				li {
+					//text-align: center;		
+					//display: inline-block;
+					//margin-right: 1rem;
+					position: relative;
+					padding-left: 20px;
+	
+					.dot {
+						-webkit-print-color-adjust: exact; // Forces Chrome to print with background color
+						display: inline-block;
+						width: 12px;
+						height: 12px;
+						border-radius: 50%;
+						position: absolute;
+						left: 0;
+						top: 5px;
+						//margin-right: 5px;
+					}
+					
+					.value {
+						color: #818a91;
+						float: right;
+						margin-left: 10px;
+					}
 				}
 			}
 		}
-
 	}
 }

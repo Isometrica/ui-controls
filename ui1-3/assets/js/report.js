@@ -97,37 +97,43 @@ $( document ).ready(function() {
 	          type: 'linear',
 	          scaleLabel: {
 		          display: true,
-	            labelString: 'Spend',
+	            labelString: 'LOW       Spend       HIGH',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
 	            fontSize: 14        
 	          },
 	          ticks: {
+		          display: false,
 		        	beginAtZero: true,
 		        	min:0,
 		        	max: 1000000,
 		        	maxTicksLimit: 4,
 		        	callback: function(label, index, labels) {
-			        	return '$'+addCommas(label);
-			        }
+				        switch (label) {
+			            case 500000:
+			                return 'Low';
+			            case 1000000:
+			                return 'High';
+				        }
+					    }
 		        }
           }],
           yAxes: [{
+	          
 	          type: 'linear',
 	          scaleLabel: {
 		          display: true,
-	            labelString: 'Criticality',
+	            labelString: 'LOW    Criticality    HIGH',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
 	            fontSize: 14          
 	          },
 	          ticks: {
+		          display: false,
 		        	beginAtZero: true,
 		        	min: 0,
 		        	max: 100,
 		        	maxTicksLimit: 4,
 		        	callback: function(label, index, labels) {
 				        switch (label) {
-			            case 0:
-			                return 'None';
 			            case 50:
 			                return 'Low';
 			            case 100:
@@ -145,20 +151,54 @@ $( document ).ready(function() {
 			      text.push('<li>');
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[i].backgroundColor + '"></i>');
 			      var criticality = chart.data.datasets[i].data[0].y;
-			      if (criticality < 50) {
+			      if (criticality < 35) {
 				      criticalityString = "LOW";
+			      } else if (criticality < 65) {
+				      criticalityString = "MEDIUM";
 			      } else {
 				      criticalityString = "HIGH";
 			      }
 			      text.push('<span class="value">'+ criticalityString + "</span>");
-			      text.push('<span class="value">$'+ addCommas(chart.data.datasets[i].data[0].x) + "</span>");
+			      var spend = chart.data.datasets[i].data[0].x;
+			      if (spend < 250000) {
+				      spendString = "LOW";
+			      } else if (spend < 650000) {
+				      spendString = "MEDIUM";
+			      } else {
+				      spendString = "HIGH";
+			      }
+			      text.push('<span class="value">'+ spendString + "</span>");
 			      text.push(chart.data.datasets[i].label);
 			      text.push('</li>');
 			    }
 			    text.push('</ul>');
 			    return text.join("");
-        }
-        
+        },
+        plugins: [{
+				  beforeDraw: function(chart) {
+				      // hide original tick
+				      chart.scales['y-axis-0'].options.ticks.fontColor = 'transparent';
+				  },
+				  afterDraw: function(chart) {
+			      var ctx = chart.ctx;
+			      var yAxis = chart.scales['y-axis-0'];
+			      var tickGap = yAxis.getPixelForTick(1) - yAxis.getPixelForTick(0);
+			      // loop through ticks array
+			      Chart.helpers.each(yAxis.ticks, function(tick, index) {
+							if (index === yAxis.ticks.length - 1) return;
+							var xPos = yAxis.right;
+							var yPos = yAxis.getPixelForTick(index);
+							var xPadding = 10;
+							// draw tick
+							ctx.save();
+							ctx.textBaseline = 'middle';
+							ctx.textAlign = 'right';
+							ctx.fillStyle = 'rgba(0, 0, 0, 0.8)';
+							ctx.fillText(tick, xPos - xPadding, yPos + tickGap / 2);
+							ctx.restore();
+			      });
+				   }
+				}],
 	    }
 		});
 		$("#keyPartnersChartLegend").html(myChart.generateLegend());
