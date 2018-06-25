@@ -97,7 +97,7 @@ $( document ).ready(function() {
 	          type: 'linear',
 	          scaleLabel: {
 		          display: true,
-	            labelString: 'LOW       Spend       HIGH',
+	            labelString: 'Low      SPEND      High',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
 	            fontSize: 14        
 	          },
@@ -122,7 +122,7 @@ $( document ).ready(function() {
 	          type: 'linear',
 	          scaleLabel: {
 		          display: true,
-	            labelString: 'LOW    Criticality    HIGH',
+	            labelString: 'Low    CRITICALITY    High',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
 	            fontSize: 14          
 	          },
@@ -152,20 +152,20 @@ $( document ).ready(function() {
 			      text.push('<i class="dot" style="background-color:' + chart.data.datasets[i].backgroundColor + '"></i>');
 			      var criticality = chart.data.datasets[i].data[0].y;
 			      if (criticality < 35) {
-				      criticalityString = "LOW";
+				      criticalityString = "Low criticality";
 			      } else if (criticality < 65) {
-				      criticalityString = "MEDIUM";
+				      criticalityString = "Medium criticality";
 			      } else {
-				      criticalityString = "HIGH";
+				      criticalityString = "High criticality";
 			      }
 			      text.push('<span class="value">'+ criticalityString + "</span>");
 			      var spend = chart.data.datasets[i].data[0].x;
 			      if (spend < 250000) {
-				      spendString = "LOW";
+				      spendString = "Low spend";
 			      } else if (spend < 650000) {
-				      spendString = "MEDIUM";
+				      spendString = "Medium spend";
 			      } else {
-				      spendString = "HIGH";
+				      spendString = "High spend";
 			      }
 			      text.push('<span class="value">'+ spendString + "</span>");
 			      text.push(chart.data.datasets[i].label);
