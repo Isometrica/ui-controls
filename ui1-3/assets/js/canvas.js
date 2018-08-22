@@ -4,7 +4,9 @@ $( document ).ready(function() {
 	*/
 	
 	// Sortable lists for items 
-  $('.canvas-section-items').sortable();
+  $('.canvas-section-items').sortable({
+	  handle: 'i.fa-square'
+  });
 	
 
   // Clicking canvas section Add button launches modal

@@ -3627,8 +3627,7 @@ legend {
         margin: 0 -0.5rem 0.5rem;
         border-radius: 3px;
         transition: background 0.4s ease;
-        padding: 0 0.5rem;
-        cursor: move; }
+        padding: 0 0.5rem; }
         .canvas-section-items li:hover {
           background: #eee; }
         .canvas-section-items li.placeholder {
@@ -3642,13 +3641,32 @@ legend {
         .canvas-section-items li .fa-square {
           float: left;
           margin-right: 8px;
-          margin-top: 4px; }
+          margin-top: 4px;
+          position: relative;
+          cursor: row-resize; }
           .canvas-section-items li .fa-square.canvas-item-color-1 {
             color: #FCCF31; }
           .canvas-section-items li .fa-square.canvas-item-color-2 {
             color: #94135E; }
           .canvas-section-items li .fa-square.canvas-item-color-3 {
             color: #F0889C; }
+          .canvas-section-items li .fa-square:after {
+            content: "\f07d";
+            font-family: "FontAwesome";
+            color: white;
+            position: absolute;
+            top: 10%;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            font-size: 75%;
+            display: block;
+            text-align: center;
+            line-height: inherit;
+            opacity: 0;
+            transition: opacity 0.4s ease; }
+        .canvas-section-items li:hover .fa-square:after {
+          opacity: 1; }
         .canvas-section-items li .linked-item {
           color: #818a91;
           margin-top: 2px;

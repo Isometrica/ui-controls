@@ -182,7 +182,7 @@ $canvas-item-min-height: 240px;
 				border-radius: 3px;
 				transition: background 0.4s ease;
 				padding: 0 0.5rem;
-				cursor: move;
+				//cursor: move;
 				//line-height: 1.4;
 				
 				&:hover {
@@ -205,6 +205,8 @@ $canvas-item-min-height: 240px;
 					float: left;
 					margin-right: 8px;
 					margin-top: 4px;
+					position: relative;
+					cursor: row-resize;
 
 					&.canvas-item {
 						&-color {
@@ -218,6 +220,29 @@ $canvas-item-min-height: 240px;
 								color: $canvas-item-color-3;
 							}
 						}
+					}
+					
+					&:after {
+						content: "\f07d";
+						font-family: "FontAwesome";
+						color: white;
+						position: absolute;
+						top: 10%;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						font-size: 75%;
+						display: block;
+						text-align: center;
+						line-height: inherit;
+						opacity: 0;
+						transition: opacity .4s ease;
+					}
+				}
+				
+				&:hover {
+					.fa-square:after {
+						opacity: 1;
 					}
 				}
 				
