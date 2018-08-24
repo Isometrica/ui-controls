@@ -5,7 +5,7 @@ $( document ).ready(function() {
 	
 	// Sortable lists for items 
   $('.canvas-section-items').sortable({
-	  handle: 'i.fa-square'
+	  handle: '.canvas-item-handle'
   });
 	
 
