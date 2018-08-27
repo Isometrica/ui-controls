@@ -185,7 +185,7 @@ $canvas-item-min-height: 240px;
 				cursor: pointer;
 				overflow: hidden;
 				display: flex;
-				align-items: flex-start;
+				//align-items: flex-start;
 				
 				&:hover {
 					background: #eee;
@@ -230,6 +230,12 @@ $canvas-item-min-height: 240px;
 						color: white;
 						transition: background-color .4s ease;
 						
+						&:before {
+							font-size: 22px;
+							opacity: 0;
+							transition: opacity .4s ease;
+						}
+						
 						&.canvas-item-color-1 { 
 							background-color: $canvas-item-color-1; 
 							&:before { color: $canvas-item-color-1; }
@@ -246,6 +252,7 @@ $canvas-item-min-height: 240px;
 					
 					&:hover i {
 						background-color: transparent;
+						&:before { opacity: 1; }
 					}
 				}
 				
@@ -274,8 +281,10 @@ $canvas-item-min-height: 240px;
 		
 		&-footer {
 			padding: $canvas-section-padding;
+			padding-right: 40px; // Space for chart button
 			@include flexbox();
 			@include align-items(flex-end);
+			position: relative;
 			
 			&-labels {
 				@include flex();
@@ -325,6 +334,12 @@ $canvas-item-min-height: 240px;
 				&:hover {
 					background: $blue-color;
 				}
+			}
+			
+			.btn-chart {
+				position: absolute;
+				right: .75rem;
+				bottom: 1rem;
 			}
 		}
 	}

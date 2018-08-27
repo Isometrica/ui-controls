@@ -3630,8 +3630,7 @@ legend {
         padding: 0 0.5rem 0 0;
         cursor: pointer;
         overflow: hidden;
-        display: flex;
-        align-items: flex-start; }
+        display: flex; }
         .canvas-section-items li:hover {
           background: #eee; }
         .canvas-section-items li.placeholder {
@@ -3663,6 +3662,10 @@ legend {
             text-align: center;
             color: white;
             transition: background-color 0.4s ease; }
+            .canvas-section-items li .canvas-item-handle i:before {
+              font-size: 22px;
+              opacity: 0;
+              transition: opacity 0.4s ease; }
             .canvas-section-items li .canvas-item-handle i.canvas-item-color-1 {
               background-color: #FCCF31; }
               .canvas-section-items li .canvas-item-handle i.canvas-item-color-1:before {
@@ -3677,6 +3680,8 @@ legend {
                 color: #F0889C; }
           .canvas-section-items li .canvas-item-handle:hover i {
             background-color: transparent; }
+            .canvas-section-items li .canvas-item-handle:hover i:before {
+              opacity: 1; }
         .canvas-section-items li .linked-item {
           color: #818a91;
           margin-top: 2px;
@@ -3690,6 +3695,7 @@ legend {
           display: block; }
     .canvas-section-footer {
       padding: 1rem;
+      padding-right: 40px;
       display: -webkit-box;
       display: -webkit-flex;
       display: -moz-flex;
@@ -3699,7 +3705,8 @@ legend {
       -ms-flex-align: end;
       -webkit-align-items: flex-end;
       -moz-align-items: flex-end;
-      align-items: flex-end; }
+      align-items: flex-end;
+      position: relative; }
       .canvas-section-footer-labels {
         -webkit-box-flex: 1;
         -webkit-flex: 1;
@@ -3742,6 +3749,10 @@ legend {
         margin: 0 0 4px 4px; }
         .canvas-section-footer a.label:hover {
           background: #0078d7; }
+      .canvas-section-footer .btn-chart {
+        position: absolute;
+        right: .75rem;
+        bottom: 1rem; }
 
 /*
 	Sortable plugin CSS
