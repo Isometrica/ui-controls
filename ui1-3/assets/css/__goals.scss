@@ -1,3 +1,5 @@
+// main: app.scss
+
 $marker-size: 16px;
 $marker-border-size: 4px;
 $marker-color-default: #777;
@@ -9,11 +11,11 @@ $marker-color-custom-3: #80DEEA;
 	//overflow-x: auto;
 	//overflow-y: hidden;
 	position: relative;
-	
+
 	&-inner {
 		//width: 3000px;
 	}
-	
+
 	&-timeline {
 		//z-index: 0;
 		&-dates {
@@ -21,7 +23,7 @@ $marker-color-custom-3: #80DEEA;
 			padding: 0;
 			@include flexbox();
 			margin: 0;
-			
+
 			li {
 				@include flex(1);
 			}
@@ -36,10 +38,10 @@ $marker-color-custom-3: #80DEEA;
 			z-index: -1;
 		}
 	}
-	
+
 	&-collapse {
 		//overflow: hidden;
-		
+
 		&-toggle {
 			i {
 				transition: all .4s ease;
@@ -53,11 +55,11 @@ $marker-color-custom-3: #80DEEA;
 	}
 }
 
-.goal {	
+.goal {
 	position: relative;
 	padding: 15px $marker-size/2;
 	//z-index: 1;
-	
+
 	&-markers {
 		list-style: none;
 		padding: 0;
@@ -78,9 +80,9 @@ $marker-color-custom-3: #80DEEA;
 			background: darken($marker-color-default, 15%);
 			.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
 			.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
-			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }	
+			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }
 		}
-		
+
 		/*
 		&:after {
 			content: '';
@@ -98,7 +100,7 @@ $marker-color-custom-3: #80DEEA;
 			.goal-custom-color-2 & { background: $marker-color-custom-2; }
 			.goal-custom-color-3 & { background: $marker-color-custom-3; }
 		}
-		
+
 		&:hover {
 			cursor: pointer;
 		}
@@ -107,12 +109,12 @@ $marker-color-custom-3: #80DEEA;
 			background: darken($marker-color-default, 15%);
 			.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
 			.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
-			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }	
+			.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }
 		}
 		*/
 
 	}
-	
+
 	&-marker {
 		position: absolute;
 		top: 50%;
@@ -120,7 +122,7 @@ $marker-color-custom-3: #80DEEA;
 		height: $marker-size;
 		margin-top: $marker-size * -0.5;
 		margin-left: $marker-size * -0.5;
-		
+
 		&-toggle {
 			position: absolute;
 			left: 0;
@@ -129,7 +131,7 @@ $marker-color-custom-3: #80DEEA;
 			top: 0;
 			display: block;
 			text-align: center;
-			
+
 			transition: background-color 0.4s ease, border-color 0.4s ease;
 			cursor: pointer;
 			//z-index: 2;
@@ -138,27 +140,27 @@ $marker-color-custom-3: #80DEEA;
 			.goal-custom-color-1 & { background: $marker-color-custom-1; }
 			.goal-custom-color-2 & { background: $marker-color-custom-2; }
 			.goal-custom-color-3 & { background: $marker-color-custom-3; }
-			
+
 			&:after {
 				display: none;
-			}				
+			}
 		}
-		
+
 		&.start {
 			left: 0;
 		}
-		
+
 		&.finish {
 			left: 100%;
 		}
-		
+
 		&.start,
 		&.finish {
 			.dropdown-toggle {
 				border-radius: 50%;
 			}
 		}
-		
+
 		&.start,
 		&.finish,
 		&.completed {
@@ -167,26 +169,26 @@ $marker-color-custom-3: #80DEEA;
 				.goal-custom-color-1 & { background: $marker-color-custom-1; }
 				.goal-custom-color-2 & { background: $marker-color-custom-2; }
 				.goal-custom-color-3 & { background: $marker-color-custom-3; }
-	
+
 				&:hover {
 					background: darken($marker-color-default, 15%);
 					.goal-custom-color-1 & { background: darken($marker-color-custom-1, 15%); }
 					.goal-custom-color-2 & { background: darken($marker-color-custom-2, 15%); }
-					.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }					
+					.goal-custom-color-3 & { background: darken($marker-color-custom-3, 15%); }
 				}
 			}
-			
+
 			&.arrow {
 				.dropdown-toggle {
 					border-style: solid;
 					border-left-color: transparent !important;
 					border-bottom-color: transparent !important;
 					border-width: $marker-size/2;
-					border-radius: 0 !important;	
-					border-color: $marker-color-default;				
+					border-radius: 0 !important;
+					border-color: $marker-color-default;
 					.goal-custom-color-1 & { border-color: $marker-color-custom-1; }
 					.goal-custom-color-2 & { border-color: $marker-color-custom-2; }
-					.goal-custom-color-3 & { border-color: $marker-color-custom-3; }					
+					.goal-custom-color-3 & { border-color: $marker-color-custom-3; }
 					background: transparent !important;
 					transform: rotate(45deg);
 					width: 0;
@@ -194,43 +196,43 @@ $marker-color-custom-3: #80DEEA;
 					right: $marker-size/2;
 					left: auto;
 					margin-right: -3px;
-	
+
 					&:hover {
 						border-color: darken($marker-color-default, 15%);
 						.goal-custom-color-1 & { border-color: darken($marker-color-custom-1, 15%); }
 						.goal-custom-color-2 & { border-color: darken($marker-color-custom-2, 15%); }
-						.goal-custom-color-3 & { border-color: darken($marker-color-custom-3, 15%); }		
+						.goal-custom-color-3 & { border-color: darken($marker-color-custom-3, 15%); }
 					}
-					
+
 				}
 			}
 		}
-		
+
 		&.completed .dropdown-toggle {
 			//background: $green-color !important;
 		}
-		
+
 		&.outstanding .dropdown-toggle {
 			background: $amber-color !important;
 		}
-		
+
 		&.outstanding.overdue .dropdown-toggle {
 			background: $red-color !important;
 		}
-		
 
-		
+
+
 		&.milestone {
 			.dropdown-toggle {
 				//$milestone-marker-size:15px;
 				transform: rotate(45deg);
 				//width: $milestone-marker-size;
-				//height: $milestone-marker-size;				
+				//height: $milestone-marker-size;
 			}
 		}
 	}
 
-	
+
 	&-dates {
 		position: relative;
 		//height: 24px;
@@ -239,16 +241,16 @@ $marker-color-custom-3: #80DEEA;
 		//left: $marker-size * -0.5;
 		@include flexbox();
 		@include flex-wrap(no-wrap);
-		
+
 		&-start {
 			margin-left: $marker-size * -0.5;
 		}
-		
+
 		&-end {
 			margin-right: $marker-size * -0.5;
 		}
 	}
-	
+
 	&-title {
 		font-size: 16px;
 		font-family: $font-semibold;
@@ -260,38 +262,38 @@ $marker-color-custom-3: #80DEEA;
 		text-overflow: ellipsis;
 		margin: 0 .5rem;
 		//font-weight: bold;
-		
+
 		i {
 			transition: all .4s ease;
 			margin-left: 4px;
 		}
-		
+
 		&.collapsed {
 			i {
 				transform: rotate(-90deg);
 			}
 		}
-		
+
 
 	}
-	
+
 	&-tasks {
 		margin-left: -10px;
 		position: relative;
 		//z-index: 2;
 		//overflow: hidden;
-		
+
 		ul {
 			list-style: none;
 			padding: 0;
-			margin: .5rem 0;	
-			//overflow: hidden;		
+			margin: .5rem 0;
+			//overflow: hidden;
 		}
-		
+
 		li {
 			clear: left;
 			margin: 10px 0;
-			
+
 			&:hover {
 				cursor: pointer;
 				color: $blue-color;
@@ -308,7 +310,7 @@ $marker-color-custom-3: #80DEEA;
 			> span {
 				display: block;
 				overflow: hidden;
-				
+
 				span {
 					white-space: nowrap;
 					//display: block;
@@ -335,7 +337,7 @@ $marker-icon-border-size: 3px;
 	height: $marker-icon-size;
 	display: inline-block;
 	//border: $marker-icon-border-size solid $marker-color-default;
-	
+
 	&.completed {
 		background: $marker-color-default;
 		&.goal-custom-color-1 { background: $marker-color-custom-1; }
@@ -346,13 +348,13 @@ $marker-icon-border-size: 3px;
 	&.milestone {
 		width: $marker-icon-size * 0.9;
 		height: $marker-icon-size * 0.9;
-		transform: rotate(45deg);			
+		transform: rotate(45deg);
 	}
 
 	&.outstanding {
 		background: $amber-color !important;
 	}
-	
+
 	&.outstanding.overdue {
 		background: $red-color !important;
 	}

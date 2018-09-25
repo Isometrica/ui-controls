@@ -1,3 +1,5 @@
+// main: app.scss
+
 .calendar-container {
   width: 100%;
 }
@@ -35,19 +37,19 @@
       color: #999;
       font-size: 14px;
     }
-    
+
     .btn {
       margin-left: 8px;
-      
+
       @media (min-width:768px) {
-        i { 
+        i {
           margin-right: 4px;
         }
       }
       @media (max-width: 767px) {
         span {
           display: none;
-        }        
+        }
       }
 
     }
@@ -65,14 +67,14 @@
       @media (max-width: 543px) { // Phone portrait
         min-width: 180px;
       }
-      
+
       @media (min-width: 544px) and (max-width: 767px) { // Phone landscape
         min-width: 250px;
       }
     }
-    
+
     &:not(:first-child) {
-      width: 6.6666%; 
+      width: 6.6666%;
     }
   }
 
@@ -86,10 +88,10 @@
       text-align: center;
       vertical-align: middle !important;
     }
-    
+
     .calendar-months {
       font-family: $font-semibold;
-      
+
       th {
         font-weight: normal !important;
       }
@@ -100,7 +102,7 @@
     padding: 8px !important;
     border-color: #ddd !important;
   }
-  
+
   td {
     position: relative;
   }
@@ -135,7 +137,7 @@
       line-height: 1;
       margin-top: -12px;
       color: $blue-color;
-      @include transition(all 0.3s ease);        
+      @include transition(all 0.3s ease);
     }
 
     &:not(.collapsed):before {
@@ -143,7 +145,7 @@
     }
 
   }
-  
+
   .calendar-timeline {
     background: #fafafa;
     background: lighten($light-blue-color,51%);
@@ -153,7 +155,7 @@
     bottom: 0;
     border-right: 2px solid lighten($light-blue-color,45%);
   }
-  
+
   .calendar-row {
     position: relative;
     height: 30px;
@@ -190,18 +192,18 @@
       font-size: 12px;
       margin-top: -6px;
     }
-    
+
     &:hover {
       color: darken($blue-color,20%);
     }
-    
+
     &.custom {
       color: $light-blue-color;
       &:hover {
         color: darken($light-blue-color,10%);
       }
     }
-    
+
     /*
     &.completed {
       color: #777;
@@ -210,7 +212,7 @@
       }
     }
     */
-    
+
     &.overdue {
       color: $red-color;
       &:hover {
@@ -224,7 +226,7 @@
     text-align: left;
     color: white;
     background: $blue-color;
-    
+
     &:hover {
       background: darken($blue-color,10%);
     }
@@ -232,14 +234,14 @@
     .date {
       color: #cde9f0;
     }
-    
+
     &.custom {
       background: $light-blue-color;
       &:hover {
         background: darken($light-blue-color,10%);
       }
     }
-    
+
     /*
     &.completed {
       background: #777;
@@ -251,7 +253,7 @@
       }
     }
     */
-    
+
     &.overdue {
       background: $red-color;
       &:hover {
@@ -269,7 +271,7 @@
       font-size: 14px;
       padding: 5px;
     }
-    
+
     th, td {
       background: white;
     }

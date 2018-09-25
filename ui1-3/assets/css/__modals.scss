@@ -1,46 +1,48 @@
+// main: app.scss
+
 .modal {
 
   &-lg {
     width: 900px;
-    
+
     @media (max-width: 899px) {
       width: auto !important;
       margin: 10px;
     }
   }
-  
+
   &-xl {
     width: 1200px;
-    
+
     @media (max-width: 1220px) {
       width: auto !important;
       margin: 10px;
     }
   }
-  
-  &-dialog {  
+
+  &-dialog {
     @media (max-width: 600px) {
       width: auto;
       margin: 0;
     }
-    
+
     #choose-add-type-modal & {
       width: auto;
-      
+
       @media (min-width:768px) {
         max-width: 400px;
       }
     }
-    
 
-    
+
+
     > .card {
       border: 0;
       margin-bottom: 0;
-      
+
       > .card-heading {
         border-radius: 4px 4px 0 0;
-        
+
         .card-title {
           text-align: center;
           font-family: $font-semibold;
@@ -51,16 +53,16 @@
         &:not(:first-child) {
           border-top: 1px solid #ddd;
         }
-      }   
-      
+      }
+
       .list-group {
         &-item {
           &:first-child {
             border-top: 0;
           }
         }
-      }    
-      
+      }
+
     }
 
 
@@ -72,7 +74,7 @@
     width: 34px;
     height: 34px;
   }
-  
+
   .card-block:last-child {
     border-top: 0 !important;
   }
@@ -84,13 +86,13 @@
       width: auto;
       margin: 20px;
     }
-  
+
     @media (min-width:1200px) {
       width: 1200px;
     }
   }
-  
-  
+
+
   .card-block:last-child {
     border-top: 0 !important;
   }
@@ -104,7 +106,7 @@
     border-width: 1px 0;
     margin-top: -1px;
   }
-  
+
   .card-block:last-child {
     border-top: 0;
   }
@@ -127,6 +129,6 @@
 			height: 100%;
 		}
 	}
-	
+
 
 }

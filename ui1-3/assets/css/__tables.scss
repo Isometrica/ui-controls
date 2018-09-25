@@ -1,9 +1,11 @@
+// main: app.scss
+
 .table {
   &-activity {
     td {
       border: 0;
     }
-    
+
     td, th {
       &:nth-child(3n+1) {
         border-right: 1px solid #ddd;

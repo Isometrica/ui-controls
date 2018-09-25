@@ -1,3 +1,5 @@
+// main: app.scss
+
 html,
 body {
 	height: 100%;
@@ -43,23 +45,23 @@ body {
   overflow: hidden;
   position: relative;
   @include flex(1);
-  
+
   &:not(.no-flex) {
     @include flexbox;
   }
-  
+
   > .container {
     @media (max-width:1200px) {
       max-width: none;
     }
   }
-  
+
   > .container,
   > .container-fluid {
     @include flex(1);
     @include flexbox();
     position: relative;
-    
+
     > .row {
       position: absolute;
       top: 0;
@@ -71,21 +73,21 @@ body {
       @include flexbox();
     }
   }
-  
+
   &-list {
     padding-top: 30px;
     height: 100%;
-    
+
     @include mobile {
       width: 100%;
       border: 0;
     }
   }
-  
+
   &-cards {
     height: 100%;
     padding: 0;
-    
+
     &-inner {
       @media (min-width: 768px) {
         padding: 30px 30px 0;
@@ -148,7 +150,7 @@ strong {
 	&-0 {
 		margin: 0 !important;
 	}
-	
+
 	&-left {
 		&-0 {
 			margin-left: 0 !important;
@@ -159,9 +161,9 @@ strong {
 		&-10 {
 			margin-left: 10px !important;
 		}
-		
+
 	}
-	
+
 	&-right {
 		&-5 {
 			margin-right: 5px !important;
@@ -173,7 +175,7 @@ strong {
 			margin-right: 15px !important;
 		}
 	}
-	
+
 	&-bottom {
 		&-0 {
 			margin-bottom: 0 !important;
@@ -188,7 +190,7 @@ strong {
 			margin-bottom: 15px !important;
 		}
 	}
-	
+
 	&-top {
 		&-4 {
 			margin-top: 4px !important;
@@ -214,7 +216,7 @@ strong {
 			padding-left: 45px !important;
 		}
 	}
-	
+
 	&-right {
 		&-0 {
 			padding-right: 0 !important;
@@ -224,5 +226,3 @@ strong {
 		}
 	}
 }
-
-

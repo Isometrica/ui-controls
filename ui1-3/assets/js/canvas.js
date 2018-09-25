@@ -2,54 +2,60 @@ $( document ).ready(function() {
   /*
 	  CANVAS
 	*/
-	
-	// Sortable lists for items 
+
+	// Sortable lists for items
   $('.canvas-section-items').sortable({
 	  handle: '.canvas-item-handle'
   });
-	
+
+	// Clicking on help text opens help modal
+	$(document).on("click", ".canvas-section-help p", function(e) {
+		e.preventDefault();
+		e.stopPropagation();
+	  $("#help-modal").modal("show");
+	});
 
   // Clicking canvas section Add button launches modal
-  
+
   $(document).on("click", ".canvas-section .btn-add", function() {
 	  var target = $(this).closest(".canvas-section").data("target");
 	  $(target).modal("show");
 	});
-	
+
 	// Clicking anywhere in *empty* canvas section launches modal
-  
+
   $(document).on("click", ".canvas-section.empty", function() {
 	  var target = $(this).data("target");
 	  $(target).modal("show");
 	});
-  
-  
+
+
   /*
 	  CUSTOMER SEGMENTS CHART
 	*/
-	
+
 	$(document).on("click", "#customersegmentschart-wants", function() {
 		$(this).closest(".customersegmentcanvas").removeClass("show-needs").toggleClass("show-wants");
 	});
-	
+
 	$(document).on("click", "#customersegmentschart-needs", function() {
 		$(this).closest(".customersegmentcanvas").removeClass("show-wants").toggleClass("show-needs");
 	});
-	
+
 	/*
 	  VALUE PROPOSITION CHART
 	*/
-	
+
 	$(document).on("click", "#valuepropositionchart-benefits", function() {
 		$(this).closest(".valuepropositioncanvas").removeClass("show-features").toggleClass("show-benefits");
 	});
-	
+
 	$(document).on("click", "#valuepropositionchart-features", function() {
 		$(this).closest(".valuepropositioncanvas").removeClass("show-benefits").toggleClass("show-features");
 	});
-	
+
 	// Switch views: Match/Canvas
-	
+
 	$(document).on("click", ".valuepropositioncanvas .btn-match", function(e) {
 		e.preventDefault();
 		$("#valueproposition-match-tab").tab('show');
@@ -70,15 +76,15 @@ $( document ).ready(function() {
 
 
 
-	/* 
+	/*
 		KEY PARTNERS CHART
 	*/
-		
-	
-	$(document).on("shown.bs.modal", "#key-partners-chart-modal", function() { 
+
+
+	$(document).on("shown.bs.modal", "#key-partners-chart-modal", function() {
     showKeyPartnersChart();
   });
-	
+
 	function showKeyPartnersChart() {
 		var ctx = $(".chart-wrapper canvas");
 		var scatterChart = new Chart(ctx, {
@@ -140,7 +146,7 @@ $( document ).ready(function() {
         ]
 	    },
 	    options: {
-		    
+
         scales: {
           xAxes: [{
 	          type: 'linear',
@@ -148,7 +154,7 @@ $( document ).ready(function() {
 		          display: true,
 	            labelString: 'Spend',
 	            fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
-	            fontSize: 16        
+	            fontSize: 16
 	          },
 	          ticks: {
 		        	//display: false,
@@ -164,7 +170,7 @@ $( document ).ready(function() {
 		          display: true,
 	            labelString: 'Criticality',
 	            fontFamily: '"Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif',
-	            fontSize: 16           
+	            fontSize: 16
 	          },
 	          ticks: {
 		        	//display: false,
@@ -207,18 +213,18 @@ $( document ).ready(function() {
 	    }
 		});
 	}
-	
 
-  
-  
-  /* 
+
+
+
+  /*
 		COST STRUCTURE CHART
 	*/
-	
-	$(document).on("shown.bs.modal", "#cost-structure-chart-modal", function() { 
+
+	$(document).on("shown.bs.modal", "#cost-structure-chart-modal", function() {
     showCostStructureChart();
   });
-	
+
 	function showCostStructureChart() {
 		var ctx = $("#cost-structure-chart-modal .chart-wrapper canvas");
 
@@ -281,18 +287,18 @@ $( document ).ready(function() {
 	        }
         },
 			}
-		});	
+		});
 	}
-	
-	
-  /* 
+
+
+  /*
 		REVENUE STREAMS PIE CHART
 	*/
-	
-	$(document).on("shown.bs.modal", "#revenue-streams-chart-modal", function() { 
+
+	$(document).on("shown.bs.modal", "#revenue-streams-chart-modal", function() {
     showRevenueStreamsChart();
   });
-	
+
 	function showRevenueStreamsChart() {
 		var ctx = $("#revenue-streams-chart-modal .chart-wrapper canvas");
 
@@ -359,19 +365,19 @@ $( document ).ready(function() {
 	        }
         },
 			}
-		});	
-	}	
-	
-	
-	
-	/* 
+		});
+	}
+
+
+
+	/*
 		CUSTOMER SEGMENTS PIE CHART
 	*/
-	
-	$(document).on("shown.bs.modal", "#customer-segments-chart-modal", function() { 
+
+	$(document).on("shown.bs.modal", "#customer-segments-chart-modal", function() {
     showCustomerSegmentsChart();
   });
-	
+
 	function showCustomerSegmentsChart() {
 		var ctx = $("#customer-segments-chart-modal .chart-wrapper canvas");
 
@@ -434,8 +440,8 @@ $( document ).ready(function() {
 	        }
         },
 			}
-		});	
+		});
 	}
-	
-	
+
+
 });

@@ -1,15 +1,30 @@
+// main: app.scss
+
 $canvas-border-color: #aaa;
 $canvas-item-color-1: #FCCF31;
-$canvas-item-color-2: #94135E;
-$canvas-item-color-3: #F0889C;
+$canvas-item-color-2: #757575;
+$canvas-item-color-3: #607D8B;
+$canvas-item-color-4: #9C27B0;
+$canvas-item-color-5: #673AB7;
+$canvas-item-color-6: #3F51B5;
+$canvas-item-color-7: #2196F3;
+$canvas-item-color-8: #00BCD4;
+$canvas-item-color-9: #FFEF81;
+$canvas-item-color-10: #BDBDBD;
+$canvas-item-color-11: #B0BEC5;
+$canvas-item-color-12: #CE93D8;
+$canvas-item-color-13: #B39DDB;
+$canvas-item-color-14: #9FA8DA;
+$canvas-item-color-15: #90CAF9;
+$canvas-item-color-16: #80DEEA;
 $canvas-section-padding: 1rem;
 $canvas-item-min-height: 240px;
 
 .canvas {
-	
+
 	//border: 1px solid $canvas-border-color;
 	min-height: 100%;
-	
+
 	@include not-mobile {
 		min-height: $canvas-item-min-height * 3;
 		@include flex();
@@ -19,13 +34,13 @@ $canvas-item-min-height: 240px;
 	@include desktop {
 		@include flexbox();
 		@include flex-direction(column);
-			
+
 	}
-	
+
 	&-wrapper {
 		background: white;
 		width: 100%;
-		
+
 		@include not-mobile {
 			position: absolute;
 			top: 0;
@@ -33,96 +48,96 @@ $canvas-item-min-height: 240px;
 			left: 0;
 			right: 0;
 			@include flexbox();
-			@include flex-direction(column);		
+			@include flex-direction(column);
 		}
 	}
-	
+
 	&-row {
 		@include tablet-portrait {
 			@include flexbox();
 			@include flex();
 			@include flex-wrap(wrap);
 		}
-		
+
 		@include desktop {
 			@include flexbox();
 			@include flex();
-			
+
 			&-1third {
 				min-height: 33.33333%;
 			}
-			
+
 			&-2thirds {
 				min-height: 66.66666%;
 			}
 		}
 	}
-	
+
 	&-col {
 		@include flexbox();
 		@include flex-direction(column);
 		@include flex();
-		
+
 		&-sm {
 			width: 100%;
-			
+
 			@include not-mobile {
 				@include flexbox();
 				@include flex-direction(column);
 				@include flex();
-			}			
+			}
 		}
-		
+
 		&-md {
 			width: 100%;
-			
+
 			@include tablet-portrait {
 				@include flexbox();
 			}
-			
+
 			@include desktop {
 				@include flexbox();
 				@include flex();
 				@include flex-direction(column);
-			}			
+			}
 		}
 	}
-	
+
 	&-section {
 		border: 2px solid $canvas-border-color;
 		transition: background-color 0.4s ease, border-color 0.4s ease;
 		margin: -1px;
 		//z-index: 1;
-		
+
 		@include not-mobile {
 			@include flex();
 			@include flexbox();
-			@include flex-direction(column);		
-			min-height: $canvas-item-min-height;	
+			@include flex-direction(column);
+			min-height: $canvas-item-min-height;
 		}
 
-	
+
 		@include tablet-portrait {
-			max-height: 400px; 
+			max-height: 400px;
 		}
 
 		&.empty {
 			.canvas-section-help {
 				display: block;
 			}
-			
+
 			&:hover {
 				cursor: pointer;
 				background: #f5f5f5;
 				border-color: $blue-color;
 				z-index: 2;
-				
+
 				.btn-add {
 					color: $blue-color;
 				}
-			}			
+			}
 		}
-		
+
 		&-heading {
 			padding: $canvas-section-padding;
 			@include flexbox();
@@ -136,19 +151,25 @@ $canvas-item-min-height: 240px;
 				@include flex();
 			}
 		}
-		
+
 		&-print-icon {
 			display: none;
 		}
-		
+
 		&-help {
 			display: none;
 			padding: 0px $canvas-section-padding;
 			margin: 0 0 .5rem;
 			@include flex();
+
+			p {
+				&:hover {
+					color: $body-color;
+				}
+			}
 		}
-		
-		
+
+
 		.btn-chart,
 		.btn-add {
 			font-size: 24px;
@@ -156,17 +177,17 @@ $canvas-item-min-height: 240px;
 			color: #bbb;
 			margin: $canvas-section-padding * -1;;
 			margin-left: 5px;
-			
+
 			&:hover {
 				cursor: pointer;
 				color: $blue-color;
-			}			
-			
+			}
+
 			&[disabled] {
 				cursor: default;
 				color: #bbb;
 				opacity: 0.3;
-			}	
+			}
 		}
 
 		&-items {
@@ -176,7 +197,7 @@ $canvas-item-min-height: 240px;
 			@include flex();
 			overflow-x: hidden;
 			overflow-y: auto;
-					
+
 			li {
 				margin: 0 -0.5rem 0;
 				border-radius: 3px;
@@ -186,25 +207,25 @@ $canvas-item-min-height: 240px;
 				overflow: hidden;
 				display: flex;
 				//align-items: flex-start;
-				
+
 				&:hover {
 					background: #eee;
 				}
-				
+
 				&.placeholder {
 				  position: relative;
 				  height: 32px;
 				  border: 1px dashed #ddd;
-				  
+
 				  &:before {
 					  position: absolute;
 					}
 				}
-				
+
 				> span {
 					padding: 4px 0;
 				}
-				
+
 				.canvas-item-handle {
 					//float: left;
 					//height: 32px;
@@ -229,35 +250,35 @@ $canvas-item-min-height: 240px;
 						text-align: center;
 						color: white;
 						transition: background-color .4s ease;
-						
+
 						&:before {
 							font-size: 22px;
 							opacity: 0;
 							transition: opacity .4s ease;
 						}
-						
-						&.canvas-item-color-1 { 
-							background-color: $canvas-item-color-1; 
+
+						&.canvas-item-color-1 {
+							background-color: $canvas-item-color-1;
 							&:before { color: $canvas-item-color-1; }
 						}
-						&.canvas-item-color-2 { 
-							background-color: $canvas-item-color-2; 
+						&.canvas-item-color-2 {
+							background-color: $canvas-item-color-2;
 							&:before { color: $canvas-item-color-2; }
 						}
-						&.canvas-item-color-3 { 
-							background-color: $canvas-item-color-3; 
+						&.canvas-item-color-3 {
+							background-color: $canvas-item-color-3;
 							&:before { color: $canvas-item-color-3; }
-						}			
+						}
 					}
-					
+
 					&:hover i {
 						background-color: transparent;
 						&:before { opacity: 1; }
 					}
 				}
-				
 
-				
+
+
 				.linked-item {
 					color: $muted-color;
 					margin-top: 2px;
@@ -269,33 +290,33 @@ $canvas-item-min-height: 240px;
 						margin-right: 5px;
 					}
 				}
-				
 
-				
+
+
 				span {
 					overflow: hidden;
 					display: block;
 				}
 			}
 		}
-		
+
 		&-footer {
 			padding: $canvas-section-padding;
 			padding-right: 40px; // Space for chart button
 			@include flexbox();
 			@include align-items(flex-end);
 			position: relative;
-			
+
 			&-labels {
 				@include flex();
 				//padding-top: 4px;
 				margin-bottom: -4px;
-				
+
 				/*
 				height: 100%;
 				position: relative;
 				padding: $canvas-section-padding;
-				
+
 				&-inner {
 					position: absolute;
 					left: 0;
@@ -304,25 +325,25 @@ $canvas-item-min-height: 240px;
 					bottom: 0;
 					overflow-y: hidden;
 					overflow-x: auto;
-					
+
 					> div {
 						white-space: nowrap;
 					}
 				}
 				*/
 			}
-			
+
 			a.btn-sm {
 				//line-height: 1;
 				display: inline-block;
 				margin: 0 0 4px 0;
 				padding: .1rem .7rem .15rem;
 			}
-			
+
 			.dropup {
 				display: inline-block;
 			}
-			
+
 			a.label {
 				transition: background 0.4s ease;
 				font-size: 12px;
@@ -330,12 +351,12 @@ $canvas-item-min-height: 240px;
 				line-height: 16px;
 				float: left;
 				margin: 0 0 4px 4px;
-				
+
 				&:hover {
 					background: $blue-color;
 				}
 			}
-			
+
 			.btn-chart {
 				position: absolute;
 				right: .75rem;
@@ -351,7 +372,7 @@ $canvas-item-min-height: 240px;
 
 body.dragging, body.dragging * {
   cursor: move !important;
-  
+
   .canvas-section li {
 	  background: transparent !important;
   }
@@ -376,29 +397,29 @@ body.dragging, body.dragging * {
 		min-height: 300px;
 		//overflow: hidden;
 		margin: 0 -1.25rem;
-		padding: 0 1.25rem;		
+		padding: 0 1.25rem;
 	}
-	
+
 	.customersegmentcanvas-canvas,
 	.valuepropositioncanvas-canvas {
 		@include mobile {
 			width: 200px;
 			margin: 0 auto 1rem;
-		}		
+		}
 	}
-	
+
 	// Match button
-	
-	.btn-match {		
+
+	.btn-match {
 		@include not-mobile {
 			position: absolute;
 			opacity: 1;
-			transition: opacity 0.4s ease;			
+			transition: opacity 0.4s ease;
 			top: 50%;
-			
+
 		}
 	}
-	
+
 	#customersegment-canvas .btn-match {
 		@include not-mobile {
 			right: 50%;
@@ -406,7 +427,7 @@ body.dragging, body.dragging * {
 			margin-top: -32px;
 		}
 	}
-	
+
 	#valueproposition-canvas .btn-match {
 		@include not-mobile {
 			left: 50%;
@@ -414,41 +435,41 @@ body.dragging, body.dragging * {
 			margin-top: -32px;
 		}
 	}
-	
+
 	// Subcards
-	
-	.card { 
+
+	.card {
 		z-index: 1;
 		position: relative;
-		
+
 		@include mobile { // Remove side padding on mobile
 			margin-left: -1.25rem;
 			margin-right: -1.25rem;
 			border-top: 1px solid #ddd;
 		}
-	}	
-	
-	#wants, 
-	#needs, 
-	#benefits, 
+	}
+
+	#wants,
+	#needs,
+	#benefits,
 	#features {
 		display: none !important;
 	}
-	
+
 	#needs,
 	#benefits {
 		@include not-mobile {
 			margin-right: 170px;
-		}		
+		}
 	}
-	
+
 	#wants,
 	#features {
 		@include not-mobile {
 			margin-left: 170px;
 		}
 	}
-	
+
 	&-canvas {
 		@include not-mobile {
 			z-index: 2;
@@ -457,46 +478,46 @@ body.dragging, body.dragging * {
 			left: 50%;
 			margin-left: -150px;
 			top: 0;
-			transition: left .4s ease, margin-left .4s ease;			
+			transition: left .4s ease, margin-left .4s ease;
 		}
 	}
-	
 
-	
+
+
 	&.show-wants {
 		#customersegmentschart-wants { fill: #eee; }
 		@include not-mobile {.valuepropositioncanvas-canvas { left: 0%; margin-left: -130px; }}
 		#wants { display: block !important;}
 		.btn-match { opacity: 0; @include mobile { display: none; } }
-	} 
-	
+	}
+
 	&.show-needs {
 		#customersegmentschart-needs { fill: #eee; }
 		@include not-mobile {.valuepropositioncanvas-canvas { left: 100%; margin-left: -170px; }}
 		#needs { display: block !important;  }
 		.btn-match { opacity: 0; @include mobile { display: none; } }
-	} 
-	
+	}
+
 	&.show-benefits {
 		#valuepropositionchart-benefits { fill: #eee; }
 		@include not-mobile {.valuepropositioncanvas-canvas { left: 100%; margin-left: -160px; }}
 		#benefits { display: block !important;}
 		.btn-match { opacity: 0; @include mobile { display: none; } }
-	} 
+	}
 	&.show-features {
 		#valuepropositionchart-features { fill: #eee; }
 		@include not-mobile {.valuepropositioncanvas-canvas { left: 0%; margin-left: -120px; }}
 		#features { display: block !important;  }
 		.btn-match { opacity: 0; @include mobile { display: none; } }
-	} 	
-	
-	
-	
+	}
+
+
+
 	text {
 		font-family: $font-semibold !important;
 		pointer-events: none !important;
 	}
-	
+
 	#customersegmentschart-wants,
 	#customersegmentschart-needs,
 	#valuepropositionchart-benefits,
@@ -509,8 +530,8 @@ body.dragging, body.dragging * {
 	}
 }
 
-/* 
-	Matching view 
+/*
+	Matching view
 */
 
 .btn-canvas .fa-angle-left {
@@ -524,14 +545,14 @@ body.dragging, body.dragging * {
 		font-size: 28px;
 		margin: 3px 0 0;
 	}
-	
+
 	&-row {
 		margin-bottom: 15px;
 		position: relative;
-		
+
 		> div {
 			position: static;
-			
+
 			> .dropdown-menu {
 				left: 12px;
 				right: 12px;
@@ -543,9 +564,9 @@ body.dragging, body.dragging * {
 			white-space: normal !important;
 			font-family: $font-regular !important;
 		}
-		
+
 		.dropdown {
-			
+
 			&:not(:last-child) {
 				margin-bottom: 5px;
 			}
@@ -562,12 +583,12 @@ body.dragging, body.dragging * {
 				max-width: 100%;
 				overflow: hidden;
 			}
-			
+
 			&-divider {
 				margin: 0;
 			}
 		}
 	}
-	
-	
+
+
 }

@@ -1,20 +1,22 @@
+// main: app.scss
+
 .guidance-panel {
-  
+
   > .card-block {
     border-bottom: 1px solid #ddd;
   }
-  
+
   &-open {
     i {
       font-size: 24px;
     }
-    
+
     &:not(.collapsed) {
       //display: none;
       color: $blue-color;
     }
   }
-  
+
   .btn-group {
     .btn:first-child {
       padding-left: 0;

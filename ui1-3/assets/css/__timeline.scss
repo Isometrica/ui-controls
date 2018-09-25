@@ -1,15 +1,17 @@
+// main: app.scss
+
 $timeline-bg-color: lighten($blue-color,45%);
 $timeline-border-color: lighten($blue-color,30%);
 
-.timeline {  
+.timeline {
   background: $timeline-bg-color;
   border-bottom: 1px solid $timeline-border-color;
 
   &-inner {
     overflow-y: hidden;
-    overflow-x: auto; 
+    overflow-x: auto;
     position: relative;
-    padding: 15px;   
+    padding: 15px;
   }
 
   &-today {
@@ -18,8 +20,8 @@ $timeline-border-color: lighten($blue-color,30%);
     position: absolute;
     top: 0;
     bottom: 0;
-  }  
-  
+  }
+
 
   &-items {
     white-space: nowrap;
@@ -29,7 +31,7 @@ $timeline-border-color: lighten($blue-color,30%);
     @include flexbox;
     @include flex-wrap(nowrap);
   }
-  
+
   &-item {
     display: inline-block;
     text-align: center;
@@ -37,9 +39,9 @@ $timeline-border-color: lighten($blue-color,30%);
     @include flex(1);
     z-index: 1;
     position: relative;
-  
+
     // Lines
-    
+
     &:before {
       position: absolute;
       content: '';
@@ -50,29 +52,29 @@ $timeline-border-color: lighten($blue-color,30%);
       background: black;
       z-index: -1;
     }
-    
+
     &:first-child:before {
       left: 50%;
     }
-    
+
     &:last-child:before {
       right: 50%;
     }
-  
+
     &-date {
       display: block;
       margin-bottom: 10px;
     }
-    
+
     &-icon {
       display: inline-block;
       font-family: $font-semibold;
       margin-bottom: 10px;
-    
+
       $icon-background: white;
       $icon-border: 2px solid black;
       $icon-height: 50px;
-      
+
       &-rectangle {
         background: white;
         border: 2px solid black;
@@ -80,7 +82,7 @@ $timeline-border-color: lighten($blue-color,30%);
         line-height: $icon-height - 4;
         padding: 0 10px;
       }
-      
+
       &-stack {
         background: $icon-background;
         border: $icon-border;
@@ -90,7 +92,7 @@ $timeline-border-color: lighten($blue-color,30%);
         position: relative;
         left: -2px;
         top: -2px;
-        
+
         &:after {
           position: absolute;
           content: '';
@@ -101,14 +103,14 @@ $timeline-border-color: lighten($blue-color,30%);
           background: $icon-background;
           border: $icon-border;
           z-index: -1;
-        }      
+        }
       }
-      
+
       &-diamond {
         position: relative;
         height: 50px;
         line-height: 50px;
-        
+
         &:after {
           position: absolute;
           content: '';
@@ -124,35 +126,35 @@ $timeline-border-color: lighten($blue-color,30%);
           margin-top: ( $icon-height - 5 ) / -2;
         }
       }
-      
+
       &-rounded {
         width: $icon-height;
         height: $icon-height;
         background: $icon-background;
-        border: $icon-border;  
-        border-radius: 10px; 
-        line-height: 50px;    
+        border: $icon-border;
+        border-radius: 10px;
+        line-height: 50px;
       }
-      
+
       i {
         font-size: 24px;
         position: relative;
         top: 4px;
-        
+
         &.fa-flag-checkered {
           font-size: 30px;
         }
       }
     }
-    
+
     &-details {
       display: block;
-      
+
       span {
         display: block;
       }
     }
-    
+
     &-events {
       position: absolute;
       top: 27px;
@@ -160,15 +162,15 @@ $timeline-border-color: lighten($blue-color,30%);
       margin-left: 45px;
       line-height: 30px;
       text-align: left;
-      
+
       span {
         display: block;
-        
+
       }
     }
-    
+
   }
-  
+
   /*
   &-scale {
     position: absolute;
@@ -176,10 +178,10 @@ $timeline-border-color: lighten($blue-color,30%);
     top: 0;
     left: 0;
     right: 0;
-    
+
     @include flexbox;
     z-index: 1;
-    
+
     &-period {
       @include flex(1);
       text-align: center;
@@ -189,7 +191,7 @@ $timeline-border-color: lighten($blue-color,30%);
         border-left: 1px solid $timeline-border-color;
         border-left: 1px solid $timeline-border-color;
       }
-      
+
       &-label {
         position: absolute;
         bottom: 5px;
@@ -201,7 +203,7 @@ $timeline-border-color: lighten($blue-color,30%);
       }
     }
   }
-  
+
   &-mini {
     border-top: 1px solid $timeline-border-color;
     @include transition(all .3s ease);
@@ -216,17 +218,17 @@ $timeline-border-color: lighten($blue-color,30%);
       position: relative;
       z-index: 2;
       font-family: $font-semibold;
-  
+
       .label {
         font-size: 100%;
         margin-right: 3px;
-        
+
         &:not(:first-child) {
           margin-left: 10px;
         }
       }
     }
-    
+
     &-item {
       position: absolute;
       top: 0;
@@ -241,8 +243,8 @@ $timeline-border-color: lighten($blue-color,30%);
       border-color: lighten($timeline-border-color,5%);
 
       &-item {
-        background-color: lighten($timeline-border-color,10%);   
-      }    
+        background-color: lighten($timeline-border-color,10%);
+      }
     }
   }
   */
@@ -254,15 +256,15 @@ $timeline-border-color: lighten($blue-color,30%);
     background: transparent;
     @include transition(all .3s ease);
     width: 50px;
-    
+
     &.left {
       @include gradient-horizontal(rgba(0,0,0,.1), transparent);
     }
-    
+
     &.right {
       @include gradient-horizontal(transparent, rgba(0,0,0,.1));
     }
-    
+
     i {
       position: absolute;
       left: 0;
@@ -275,7 +277,7 @@ $timeline-border-color: lighten($blue-color,30%);
       text-shadow: none;
       @include transition(all .3s ease);
     }
-    
+
     &:hover {
       &.left {
         @include gradient-horizontal(rgba(0,0,0,.2), transparent);

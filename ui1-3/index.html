@@ -22,36 +22,31 @@
 
   <!-- NAVBAR -->
   <div class="navbar">
-	  <!--
-    <span class="navbar-title">
-      <img src="assets/img/plio-logo-white.png"/>   
-    </span>
-    -->
     <ul class="nav navbar-nav pull-xs-left">
       <li class="nav-item dropdown">
 	      <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-	        Southwind Capital <span class="text-muted">Business operations view</span>
+	        Southwind Capital <span class="text-muted">Operations view</span>
 	      </a>
 	      <div class="dropdown-menu">
 	        <a class="dropdown-item checked" href="#">Southwind Capital</a>
 	        <a class="dropdown-item" href="#">Shift Bioscience</a>
 	        <a class="dropdown-item" href="#">Organisation 3</a>
 	        <div class="dropdown-divider"></div>
-	        <a class="dropdown-item" href="canvas.html">Business design view</a>
-	        <a class="dropdown-item checked" href="index.html">Business operations view</a>
+	        <a class="dropdown-item" href="canvas.html">Canvas view</a>
+	        <a class="dropdown-item checked" href="index.html">Operations view</a>
 	        <div class="dropdown-divider"></div>
 	        <a class="dropdown-item" href="#">Org Settings</a>
 	        <a class="dropdown-item" href="#">Create new Plio organisation</a>
 	        <div class="dropdown-divider"></div>
 	        <a class="dropdown-item disabled" href="#">Plio version 5.0</a>
-	      </div> 
+	      </div>
       </li>
     </ul>
     <ul class="nav navbar-nav pull-xs-right">
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
         	<i class="fa fa-circle text-success label-status"></i>
-        	<span>Stephen Ives</span> 
+        	<span>Stephen Ives</span>
         </a>
         <div class="dropdown-menu dropdown-menu-right">
           <a class="dropdown-item active" href="#">
@@ -82,71 +77,17 @@
           <a class="dropdown-item" href="#">
             Logout
           </a>
-        </div> 
+        </div>
       </li>
-    </ul> 
-  </div>
-
-  <!-- NAVBAR 
-  <div class="navbar navbar-branded">
-    <ul class="nav navbar-nav pull-xs-left">
-      <li class="nav-item dropdown dropdown-company hidden-sm-down">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        	<span class="hidden-xs-down"><img src="assets/img/cliftonassetmanagement.png"></span>
-        	<i class="fa fa-building hidden-sm-up"></i>
+      <li class="nav-item hidden-sm-down">
+        <a class="btn btn-primary btn-invite" href="#invite-modal" data-toggle="modal">
+        	Invite users
         </a>
-        <div class="dropdown-menu">
-          <a class="dropdown-item active" href="#">Clifton Asset Management Plc</a>
-          <a class="dropdown-item " href="#">FE International Ltd</a>
-          <a class="dropdown-item" href="#">Ortus Technology</a>
-          <a class="dropdown-item" href="#">Teamstudio</a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#org-settings-modal" data-toggle="modal">Org settings</a>
-        </div> 
       </li>
     </ul>
-    <ul class="nav navbar-nav pull-xs-right">
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" data-toggle="dropdown">
-        	<i class="fa fa-circle text-success label-status"></i>
-        	<span>Stephen Ives</span> 
-        </a>
-        <div class="dropdown-menu dropdown-menu-right">
-          <a class="dropdown-item active" href="#">
-            <i class="fa fa-circle text-success label-status"></i>
-            Online
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-warning label-status"></i>
-            Away
-          </a>
-          <a class="dropdown-item" href="#">
-            <i class="fa fa-circle text-danger label-status"></i>
-            Offline
-          </a>
-          <div class="dropdown-divider"></div>
-          <a class="dropdown-item" href="#">
-            User preferences
-          </a>
-          <a class="dropdown-item" href="users.html">
-            User directory
-          </a>
-          <a class="dropdown-item" href="#invite-modal" data-toggle="modal">
-            Invite users
-          </a>
-          <a class="dropdown-item" href="subcards.html">
-            Standard subcards
-          </a>
-          <a class="dropdown-item" href="#">
-            Logout
-          </a>
-        </div> 
-      </li>
-    </ul>      
   </div>
-  -->
 
-  <div class="content no-flex scroll">
+  <div class="content dashboard-content no-flex scroll">
     <div class="container">
       <div class="row">
         <div class="content-cards col-sm-12">
@@ -210,7 +151,7 @@
     						</div>
     					</a>
     				</div>
-            
+
             <!--
             <div>
     					<a href="calendar.html" class="card dashboard-item">
@@ -316,10 +257,10 @@
 				        				<span data-toggle="dropdown">Another task title <span class="text-muted">Jane Jones, 11 Apr 2017</span><i class="fa fa-angle-down"></i></span>
 				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
-			        			</ul>		
+			        			</ul>
 			        			<a class="margin-right-15" href="#action-edit-modal" data-toggle="modal">Add action</a>
 		        				<a class="margin-right-15" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
-		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>	        			
+		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 		        			</div>
 		        		</div>
 		        		<div class="goal goal-custom-color-1">
@@ -360,7 +301,7 @@
 		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 		        			</div>
 		        		</div>
-		        		<div class="goal"> 
+		        		<div class="goal">
 			        		<ol class="goal-markers" style="left:20%;width:30%">
 				        		<li class="goal-marker start" data-tooltip="true" title="Starts 7 Apr 2018">
 				        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -392,15 +333,15 @@
 				        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span><i class="fa fa-angle-down"></i></span>
 				        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 				        			</li>
-			        			</ul>		
+			        			</ul>
 			        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
 		        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
-		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>			        			
+		        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 		        			</div>
-		        		</div>		        		
+		        		</div>
 		        		<div class="collapse goals-collapse">
 
-			        		<div class="goal goal-custom-color-2"> 
+			        		<div class="goal goal-custom-color-2">
 				        		<ol class="goal-markers" style="left:40%;width:60%">
 					        		<li class="goal-marker start" data-tooltip="true" title="Starts 7 Apr 2018">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -432,13 +373,13 @@
 					        				<span data-toggle="dropdown">Get introduction from Kathy Weeks <span class="text-muted">Mike Smith, 7 Apr 2017</span><i class="fa fa-angle-down"></i></span>
 					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-action-dropdown.html'"></div>
 					        			</li>
-				        			</ul>	
+				        			</ul>
 				        			<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
 			        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
-			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>				        							        			
+			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 			        			</div>
 			        		</div>
-			        		<div class="goal goal-custom-color-3"> 
+			        		<div class="goal goal-custom-color-3">
 				        		<ol class="goal-markers" style="left:90%;width:10%">
 					        		<li class="goal-marker start" data-tooltip="true" title="Starts 7 Apr 2018">
 					        			<span class="dropdown-toggle goal-marker-toggle"></span>
@@ -461,10 +402,10 @@
 					        				<span data-toggle="dropdown">Find someone to run ad campaign <span class="text-muted">Steve Ives, 21 Mar 2017</span><i class="fa fa-angle-down"></i></span>
 					        				<div class="dropdown-menu" ng-include="'includes/dashboard-goal-milestone-dropdown.html'"></div>
 					        			</li>
-				        			</ul>		
+				        			</ul>
 		        					<a class="margin-right-10" href="#action-edit-modal" data-toggle="modal">Add action</a>
 			        				<a class="margin-right-10" href="#milestone-edit-modal" data-toggle="modal">Add milestone</a>
-			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>		        			
+			        				<a href="#key-goal-edit-modal" data-toggle="modal">Edit key goal</a>
 			        			</div>
 
 			        		</div>
@@ -482,7 +423,7 @@
 		        		</div>
 	        		</div>
         		</div>
-        		
+
 	      		<div class="collapse goals-collapse">
 		      		<hr/>
 	        		<h4 class="dashboard-stats-title">
@@ -522,15 +463,15 @@
 		        		<div class="dropdown">
 			        		<a href="#" class="dashboard-stats-action" data-toggle="dropdown">
 			          		<span class="label label-default">KG1</span> Investigate fraud prevention <span class="text-muted">(deleted 4 Jun 2016)</span>
-			        		</a>	
+			        		</a>
 			        		<div class="dropdown-menu">
 				        		<a href="#" class="dropdown-item">Restore key goal</a>
 				        		<a href="#" class="dropdown-item">Delete permanently</a>
-			        		</div>	        		
+			        		</div>
 		        		</div>
 	        		</div>
 
-	      		</div>        		
+	      		</div>
       		</div>
 
       		<hr/>
@@ -562,7 +503,7 @@
         		</h4>
         		<a href="discussions.html" class="dashboard-stats-message">
           		<i class="fa fa-comment"></i>
-          		<strong>Mike Smith:</strong> 
+          		<strong>Mike Smith:</strong>
           		Hi Steve, can we discuss yesterday's NC?
           		<span class="text-muted">30 mins ago</span>
         		</a>
@@ -604,14 +545,14 @@
             </div>
             <div class="dashboard-footer-logo">
               <img src="assets/img/plio-logo.png"/>
-            </div>        		
+            </div>
       		</div>
         </div>
-      </div> 		
+      </div>
     </div>
   </div>
 
-  
+
   <div ng-include="'includes/invite-modal.html'"></div>
   <div ng-include="'includes/nonconformity-edit-modal.html'"></div>
   <div ng-include="'includes/key-goal-edit-modal.html'"></div>

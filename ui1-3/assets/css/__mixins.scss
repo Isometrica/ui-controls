@@ -1,4 +1,4 @@
-
+// main: app.scss
 
 /* TRANSFORM */
 
@@ -14,11 +14,11 @@
 @mixin rotate ($deg) {
   @include transform(rotate(#{$deg}deg));
 }
- 
+
 // scale
 @mixin scale($scale) {
 	 @include transform(scale($scale));
-} 
+}
 
 // translate
 @mixin translate ($x, $y) {
@@ -127,7 +127,7 @@
   overflow-x: hidden !important;
   overflow-y: auto !important;
   -webkit-overflow-scrolling: touch !important;
-  
+
 
 }
 
@@ -151,7 +151,7 @@
   &::-webkit-input-placeholder {@content}
   &:-moz-placeholder           {@content}
   &::-moz-placeholder          {@content}
-  &:-ms-input-placeholder      {@content}  
+  &:-ms-input-placeholder      {@content}
 }
 
 @mixin gradient-horizontal($start-color: #555, $end-color: #333, $start-percent: 0%, $end-percent: 100%) {

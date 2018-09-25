@@ -1,3 +1,5 @@
+// main: app.scss
+
 .navbar {
   background: $navbar-background;
   border-radius: 0;
@@ -22,19 +24,19 @@
     font-family: $font-semibold;
     font-weight: normal;
     font-size: 18px;
-    
+
     img {
 	    height: 21px;
 			position: relative;
 			top: -3px;
     }
-    
+
     .navbar-branded & {
       @media (min-width: 768px) {
         line-height: $navbar-height-branded;
       }
     }
-    
+
     > a {
       color: white;
       text-decoration: none;
@@ -54,33 +56,33 @@
     .nav-item {
       margin: 0;
     }
-    
+
     .nav-link {
-      position: relative;  
-      color: rgba(255, 255, 255, .75); 
+      position: relative;
+      color: rgba(255, 255, 255, .75);
       overflow: hidden;
       font-size: 16px;
       line-height: $navbar-height-standard;
       padding: 0 15px;
-    
+
       &:focus {
         outline: none !important;
       }
-      
+
       &:focus, &:hover {
-        color: rgba(255, 255, 255, .9); 
-      }   
-      
+        color: rgba(255, 255, 255, .9);
+      }
+
       i {
         font-size: 24px;
         float: left;
         line-height: inherit;
-        
+
         &.fa-angle-left {
           font-size: 36px;
         }
       }
-      
+
       .label {
         position: absolute;
         left: 50%;
@@ -89,15 +91,15 @@
         margin-left: 3px;
       }
     }
-    
+
     .nav-item.open .nav-link {
       color: white;
     }
   }
-  
-  .dropdown {      
+
+  .dropdown {
     &-toggle {
-	    
+
       &:after {
         content: "\f107";
         font-family: "FontAwesome";
@@ -108,23 +110,23 @@
         font-size: 18px;
         vertical-align: middle;
       }
-      
+
       .text-muted,
       &:after {
         @include transition(color .4s ease);
         color: $light-blue-color;
-      }         
+      }
     }
-    
+
     &.open,
     &-toggle:hover {
       .text-muted,
       &:after {
         color: lighten($light-blue-color,20%);
-      }        
+      }
     }
 
-    
+
     &-menu {
       border-top-left-radius: 0;
       border-top-right-radius: 0;
@@ -132,7 +134,7 @@
       border-top: 0;
       padding: 0;
       min-width: 100%;
-      
+
       @media (max-width: 767px) {
         width: auto !important;
         left: 0 !important;
@@ -142,53 +144,59 @@
         border-right: 0;
         border-radius: 0;
       }
-    }    
-    
+    }
+
     &-item {
       padding-right: 25px;
       @media (max-width: 767px) {
         text-align: center;
-        
+
         .nav.pull-xs-left & {
           text-align: left;
         }
       }
     }
   }
-  
+
   .pull-xs-left {
     .dropdown {
       @media (max-width: 767px) {
-        position: static;   
-      }      
+        position: static;
+      }
     }
-    
+
     .dropdown-menu {
       //left: 10px;
     }
   }
-  
+
   .pull-xs-right {
     .dropdown {
       @media (max-width: 767px) {
-        position: static;   
-      }      
+        position: static;
+      }
     }
-    
+
     .dropdown-menu {
       right: 10px;
     }
   }
-  
+
+  .btn-invite {
+    font-family: $font-regular;
+    margin: 7px 7px 0 0;
+    font-size: 16px;
+  }
+
   &-branded {
     @media (min-width: 768px) {
       min-height: $navbar-height-branded;
-      
+
       .nav-link,
       .navbar-title {
         line-height: $navbar-height-branded !important;
       }
-  
+
       .dropdown-company {
         img {
           height: $navbar-height-branded - 20px;
