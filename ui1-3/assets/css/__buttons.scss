@@ -5,24 +5,30 @@
   font-weight: normal;
   @include transition(all .3s ease);
 
-
-
   &-primary {
-    background: $blue-color;
-    border-color: $blue-color;
+    @include gradient($blue-color, darken($blue-color,10%));
+    border-color: darken($blue-color,10%);
     &:hover {
-      background: darken($blue-color,5%);
-      border-color: darken($blue-color,5%);
+      @include gradient(darken($blue-color,5%), darken($blue-color,15%));
+      border-color: darken($blue-color,15%);
+    }
+  }
+
+  &-secondary {
+    @include gradient(#FFFFFF, darken(#FFFFFF,5%));
+    &:hover {
+      @include gradient(darken(#FFFFFF,5%), darken(#FFFFFF,10%));
     }
   }
 
   &-muted {
     color: #373a3c;
-    background-color: #f5f5f5;
+    @include gradient(#f5f5f5, darken(#f5f5f5,10%))
+    //background-color: #f5f5f5;
     border-color: #ccc;
 
     &:not(:disabled):hover {
-      background: white;
+      @include gradient(darken(#f5f5f5,5%), darken(#f5f5f5,15%))
       border-color: darken(#ccc,5%);
     }
   }
@@ -40,27 +46,27 @@
     }
   }
   &-success {
-    background: $green-color;
-    border-color: $green-color;
+    @include gradient($green-color, darken($green-color,10%));
+    border-color: darken($green-color,10%);
     &:hover {
-      background: darken($green-color,5%);
-      border-color: darken($green-color,5%);
+      @include gradient(darken($green-color,5%), darken($green-color,15%));
+      border-color: darken($green-color,15%);
     }
   }
   &-warning {
-    background: $amber-color;
-    border-color: $amber-color;
+    @include gradient($amber-color, darken($amber-color,10%));
+    border-color: darken($amber-color,10%);
     &:hover {
-      background: darken($amber-color,5%);
-      border-color: darken($amber-color,5%);
+      @include gradient(darken($amber-color,5%), darken($amber-color,15%));
+      border-color: darken($amber-color,15%);
     }
   }
   &-danger {
-    background: $red-color;
-    border-color: $red-color;
+    @include gradient($red-color, darken($red-color,10%));
+    border-color: darken($red-color,10%);
     &:hover {
-      background: darken($red-color,5%);
-      border-color: darken($red-color,5%);
+      @include gradient(darken($red-color,5%), darken($red-color,15%));
+      border-color: darken($red-color,15%);
     }
   }
 
