@@ -21,11 +21,11 @@ body {
 
 section {
 	min-height: 500px;
-	
+
 	@media screen {
 		padding: 30px;
 	}
-	
+
 	&:not(:first-child) {
 		page-break-before: always;
 
@@ -42,7 +42,7 @@ section {
 h1 {
 	margin: 0 0 30px;
 	font-size: 24px;
-	
+
 
 }
 
@@ -75,8 +75,8 @@ h1 {
 		pointer-events: none !important;
 		@include flex();
 		@include flexbox();
-		@include flex-direction(column);	
-		max-height: none !important;	
+		@include flex-direction(column);
+		max-height: none !important;
 
 		&-items,
 		&-help,
@@ -84,16 +84,16 @@ h1 {
 			padding-left: 0.75rem;
 			padding-right: 0.75rem;
 		}
-		
+
 		&-heading {
 			padding-top: 0.75rem;
 			padding-bottom: 0.75rem;
 		}
 
 		&-items li {
-			display: inline-block;
-			margin-right: 15px;
-			
+			//display: inline-block;
+			//margin-right: 15px;
+
 			i {
 				font-size: 10px;
 				line-height: inherit;
@@ -107,7 +107,7 @@ h1 {
 			margin-left: 10px;
 		}
 	}
-	
+
 	.btn-add,
 	.btn-chart,
 	&-section-footer {
@@ -122,7 +122,7 @@ h1 {
 		font-size: 20px;
 		margin: 0 0 10px;
 	}
-	
+
 	h6 {
 		font-size: inherit;
 		font-weight: 500;
@@ -132,33 +132,33 @@ h1 {
 		letter-spacing: 1.4px;
 		line-height: 21px;
 	}
-	
+
 	p {
 		margin: 0;
 	}
-	
+
 	ul {
 		margin: 0;
 	}
-	
+
 	.report-linkage {
 		color: #818a91;
 		margin-bottom: 10px;
 	}
-	
+
 	.product-market-fit-arrows {
 		float: right;
 		font-size: 24px;
 		line-height: 1;
 		color: #818a91;
 	}
-	
+
 	.report-chart {
 		&-heading {
 			margin-bottom: 5px;
 			text-align: center;
 		}
-		
+
 		&-subheading {
 			margin-bottom: 15px;
 			text-align: center;
@@ -168,7 +168,7 @@ h1 {
 			max-width: 250px;
 			margin: 0 auto 15px;
 			position: relative;
-			
+
 			i.fa {
 				$chartIconSize: 48px;
 				position: absolute;
@@ -182,22 +182,22 @@ h1 {
 				margin-left: $chartIconSize/-2;
 				margin-top: $chartIconSize/-2;
 				color: #c5c7c9;
-				
+
 			}
 		}
-		
+
 		&-legend {
 			max-width: 360px;
 	    margin: 0 auto;
-	    
+
 			ul {
 				list-style: none;
 				padding: 0;
 				margin-top: 10px;
 				//text-align: center;
-			
+
 				li {
-					//text-align: center;		
+					//text-align: center;
 					//display: inline-block;
 					//margin-right: 1rem;
 					position: relative;
@@ -205,7 +205,7 @@ h1 {
 					display: flex;
 				}
 			}
-			
+
 			table {
 				width: 100%;
 				th {
@@ -221,10 +221,10 @@ h1 {
 						padding-right: 5px;
 						width: 1%;
 					}
-					
+
 				}
 			}
-			
+
 			.dot {
 				-webkit-print-color-adjust: exact; // Forces Chrome to print with background color
 				display: inline-block;
@@ -236,15 +236,15 @@ h1 {
 				//top: 5px;
 				//margin-right: 5px;
 			}
-			
+
 			.key {
 				flex: 1;
 			}
-			
+
 			.value {
 				color: #818a91;
 				text-align: right;
-			}			
+			}
 		}
 	}
 }
