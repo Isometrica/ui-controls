@@ -72,6 +72,10 @@ body {
   display: inline-block;
 }
 
+.align-items-center {
+  align-items: center;
+}
+
 .align-middle {
   vertical-align: middle;
 }
@@ -5067,30 +5071,16 @@ legend {
   flex: 1;
   overflow-x: hidden;
   overflow-y: auto;
+  vertical-align: top;
 }
 
 .canvas-section-items li {
-  margin: 0 -0.5rem 0;
+  margin: 0 -6px 0;
   border-radius: 3px;
   transition: background 0.4s ease;
   padding: 0 0.5rem 0 0;
-  cursor: pointer;
   overflow: hidden;
   display: flex;
-}
-
-.canvas-section-items li:hover {
-  background: #eee;
-}
-
-.canvas-section-items li.placeholder {
-  position: relative;
-  height: 32px;
-  border: 1px dashed #ddd;
-}
-
-.canvas-section-items li.placeholder:before {
-  position: absolute;
 }
 
 .canvas-section-items li > span {
@@ -5098,16 +5088,14 @@ legend {
 }
 
 .canvas-section-items li .canvas-item-handle {
-  min-height: 30px;
-  width: 32px;
+  width: 30px;
   position: relative;
-  cursor: row-resize;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   flex-shrink: 0;
-  padding: 8px;
+  padding: 7px;
 }
 
 .canvas-section-items li .canvas-item-handle i {
@@ -5152,14 +5140,6 @@ legend {
   color: #607D8B;
 }
 
-.canvas-section-items li .canvas-item-handle:hover i {
-  background-color: transparent;
-}
-
-.canvas-section-items li .canvas-item-handle:hover i:before {
-  opacity: 1;
-}
-
 .canvas-section-items li .linked-item {
   color: #818a91;
   margin-top: 2px;
@@ -5175,6 +5155,36 @@ legend {
 .canvas-section-items li span {
   overflow: hidden;
   display: block;
+}
+
+.canvas-section-items.sortable li {
+  cursor: pointer;
+}
+
+.canvas-section-items.sortable li:hover {
+  background: #eee;
+}
+
+.canvas-section-items.sortable li.placeholder {
+  position: relative;
+  height: 30px;
+  border: 1px dashed #ddd;
+}
+
+.canvas-section-items.sortable li.placeholder:before {
+  position: absolute;
+}
+
+.canvas-section-items.sortable li .canvas-item-handle {
+  cursor: row-resize;
+}
+
+.canvas-section-items.sortable li .canvas-item-handle:hover i {
+  background-color: transparent;
+}
+
+.canvas-section-items.sortable li .canvas-item-handle:hover i:before {
+  opacity: 1;
 }
 
 .canvas-section-footer {

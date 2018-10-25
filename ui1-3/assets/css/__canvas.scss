@@ -197,48 +197,30 @@ $canvas-item-min-height: 240px;
 			@include flex();
 			overflow-x: hidden;
 			overflow-y: auto;
+			vertical-align: top;
 
 			li {
-				margin: 0 -0.5rem 0;
+				margin: 0 -6px 0;
 				border-radius: 3px;
 				transition: background 0.4s ease;
 				padding: 0 0.5rem 0 0;
-				cursor: pointer;
+
 				overflow: hidden;
 				display: flex;
-				//align-items: flex-start;
-
-				&:hover {
-					background: #eee;
-				}
-
-				&.placeholder {
-				  position: relative;
-				  height: 32px;
-				  border: 1px dashed #ddd;
-
-				  &:before {
-					  position: absolute;
-					}
-				}
 
 				> span {
 					padding: 4px 0;
 				}
 
 				.canvas-item-handle {
-					//float: left;
-					//height: 32px;
-					min-height: 30px;
-					width: 32px;
+					width: 30px;
 					position: relative;
-					cursor: row-resize;
 					display: flex;
 					flex-direction: column;
 					justify-content: flex-start;
 					align-items: center;
 					flex-shrink: 0;
-					padding: 8px;
+					padding: 7px;
 
 					i {
 						height: 16px;
@@ -271,13 +253,8 @@ $canvas-item-min-height: 240px;
 						}
 					}
 
-					&:hover i {
-						background-color: transparent;
-						&:before { opacity: 1; }
-					}
+
 				}
-
-
 
 				.linked-item {
 					color: $muted-color;
@@ -291,11 +268,37 @@ $canvas-item-min-height: 240px;
 					}
 				}
 
-
-
 				span {
 					overflow: hidden;
 					display: block;
+				}
+			}
+
+			&.sortable {
+				li {
+					cursor: pointer;
+					
+					&:hover {
+						background: #eee;
+					}
+
+					&.placeholder {
+					  position: relative;
+					  height: 30px;
+					  border: 1px dashed #ddd;
+
+					  &:before {
+						  position: absolute;
+						}
+					}
+
+					.canvas-item-handle {
+						cursor: row-resize;
+						&:hover i {
+							background-color: transparent;
+							&:before { opacity: 1; }
+						}
+					}
 				}
 			}
 		}

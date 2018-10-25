@@ -126,10 +126,15 @@ h1 {
   padding-bottom: 0.75rem;
 }
 
-.canvas-section-items li i {
-  font-size: 10px;
-  line-height: inherit;
-  margin-right: 5px !important;
+.canvas-section-items li {
+  display: inline-flex;
+  margin-right: 10px;
+  padding: 0;
+}
+
+.canvas-section-items li .canvas-item-handle {
+  display: block;
+  -webkit-print-color-adjust: exact;
 }
 
 .canvas-section-print-icon {
@@ -141,6 +146,59 @@ h1 {
 .canvas .btn-add,
 .canvas .btn-chart, .canvas-section-footer {
   display: none !important;
+}
+
+.report-canvas-items {
+  column-count: 4;
+}
+
+.report-canvas-items .canvas-section-heading {
+  padding: 0;
+  margin-bottom: .5rem;
+  align-items: flex-start;
+  column-break-after: avoid;
+}
+
+.report-canvas-items .canvas-section-heading h4 {
+  order: 2;
+}
+
+.report-canvas-items .canvas-section-heading .canvas-section-print-icon {
+  margin-right: 0;
+  margin-top: 3px;
+  width: 32px;
+  font-size: 17px;
+  text-align: center;
+  margin-left: -6px;
+}
+
+.report-canvas-items .canvas-section-items {
+  overflow: visible;
+  padding: 0;
+  margin-bottom: 2rem;
+}
+
+.report-canvas-items .canvas-section-items li {
+  display: flex;
+}
+
+.report-canvas-items .canvas-section-items li > span {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.report-canvas-items .canvas-section-items li .canvas-item-handle {
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.report-canvas-items p {
+  margin-bottom: 2rem !important;
+}
+
+.report-canvas-items .canvas-section-help {
+  padding: 0;
+  margin-bottom: 2rem;
 }
 
 .report-section h5 {
