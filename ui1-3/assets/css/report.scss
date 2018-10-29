@@ -1,3 +1,4 @@
+@import "__variables.scss";
 @import "__flexbox.scss";
 
 @media print {
@@ -95,6 +96,7 @@ h1 {
 			display: inline-flex;
 			margin-right: 10px;
 			padding: 0;
+			overflow: hidden;
 
 			.canvas-item-handle {
 				display: block;
@@ -118,25 +120,17 @@ h1 {
 }
 
 .report-canvas-items {
-	column-count: 4;
+
+
+	&:not(.horizontal) {
+		column-count: 4;
+	}
 
 	.canvas-section-heading {
 		padding: 0;
-		margin-bottom: .5rem;
-		align-items: flex-start;
-		column-break-after: avoid;
-
-		h4 {
-			order: 2;
-		}
+		margin-bottom: 0;
 
 		.canvas-section-print-icon {
-			margin-right: 0;
-			margin-top: 3px;
-			width: 32px;
-			font-size: 17px;
-			text-align: center;
-			margin-left: -6px;
 			display: none;
 		}
 	}
@@ -145,20 +139,43 @@ h1 {
 		letter-spacing: 1px;
 		font-size: 16px;
 		color: #818a91;
-		margin: 0 0 1.5rem;
+
+	}
+
+	h3, h4 {
+		overflow: hidden; /* fix for Firefox */
+		break-after: avoid-column;
+		-webkit-column-break-after: avoid;
+		margin: 0 0 1rem;
+	}
+
+	h4 {
+		span.text-muted {
+			font-size: 14px;
+			font-family: $font-regular;
+		}
 	}
 
 	ol {
 		list-style: decimal inside;
 		padding-left: 0;
-		margin-bottom: 1.5rem;
+		margin-bottom: 1rem;
 
 		li {
-			font-weight: bold;
+			font-family: $font-semibold;
 
 			span {
-				font-weight: normal;
+				font-family: $font-regular;
 			}
+		}
+	}
+
+	&.horizontal {
+
+
+		li {
+			display: inline-block;
+			margin-right: 15px;
 		}
 	}
 
@@ -168,7 +185,7 @@ h1 {
 		margin-bottom: 1.5rem;
 
 		li {
-			display: flex;
+			display: block;
 
 			> span {
 				padding-top: 0;
@@ -178,6 +195,7 @@ h1 {
 			.canvas-item-handle {
 				padding-top: 4px;
 				padding-bottom: 4px;
+				float: left;
 			}
 		}
 	}

@@ -130,6 +130,7 @@ h1 {
   display: inline-flex;
   margin-right: 10px;
   padding: 0;
+  overflow: hidden;
 }
 
 .canvas-section-items li .canvas-item-handle {
@@ -148,28 +149,16 @@ h1 {
   display: none !important;
 }
 
-.report-canvas-items {
+.report-canvas-items:not(.horizontal) {
   column-count: 4;
 }
 
 .report-canvas-items .canvas-section-heading {
   padding: 0;
-  margin-bottom: .5rem;
-  align-items: flex-start;
-  column-break-after: avoid;
-}
-
-.report-canvas-items .canvas-section-heading h4 {
-  order: 2;
+  margin-bottom: 0;
 }
 
 .report-canvas-items .canvas-section-heading .canvas-section-print-icon {
-  margin-right: 0;
-  margin-top: 3px;
-  width: 32px;
-  font-size: 17px;
-  text-align: center;
-  margin-left: -6px;
   display: none;
 }
 
@@ -177,21 +166,38 @@ h1 {
   letter-spacing: 1px;
   font-size: 16px;
   color: #818a91;
-  margin: 0 0 1.5rem;
+}
+
+.report-canvas-items h3, .report-canvas-items h4 {
+  overflow: hidden;
+  /* fix for Firefox */
+  break-after: avoid-column;
+  -webkit-column-break-after: avoid;
+  margin: 0 0 1rem;
+}
+
+.report-canvas-items h4 span.text-muted {
+  font-size: 14px;
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
 }
 
 .report-canvas-items ol {
   list-style: decimal inside;
   padding-left: 0;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 .report-canvas-items ol li {
-  font-weight: bold;
+  font-family: "Segoe UI Semibold WestEuropean", "Segoe UI Semibold", "Segoe WP Semibold", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
 }
 
 .report-canvas-items ol li span {
-  font-weight: normal;
+  font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
+}
+
+.report-canvas-items.horizontal li {
+  display: inline-block;
+  margin-right: 15px;
 }
 
 .report-canvas-items .canvas-section-items {
@@ -201,7 +207,7 @@ h1 {
 }
 
 .report-canvas-items .canvas-section-items li {
-  display: flex;
+  display: block;
 }
 
 .report-canvas-items .canvas-section-items li > span {
@@ -212,6 +218,7 @@ h1 {
 .report-canvas-items .canvas-section-items li .canvas-item-handle {
   padding-top: 4px;
   padding-bottom: 4px;
+  float: left;
 }
 
 .report-canvas-items p {
