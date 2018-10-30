@@ -172,10 +172,12 @@ h1 {
 
 	&.horizontal {
 
-
 		li {
 			display: inline-block;
-			margin-right: 15px;
+
+			&:not(:last-child):after {
+				content: " – ";
+			}
 		}
 	}
 
