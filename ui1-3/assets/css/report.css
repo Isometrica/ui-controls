@@ -1,4 +1,3 @@
-@charset "UTF-8";
 @media print {
   @page {
     size: landscape;
@@ -196,12 +195,13 @@ h1 {
   font-family: "Segoe UI Regular WestEuropean", "Segoe UI", "Segoe WP", Tahoma, Arial, sans-serif;
 }
 
-.report-canvas-items.horizontal li {
-  display: inline-block;
+.report-canvas-items.horizontal h4 {
+  margin-bottom: 0;
 }
 
-.report-canvas-items.horizontal li:not(:last-child):after {
-  content: " – ";
+.report-canvas-items.horizontal li {
+  display: inline-block;
+  margin-right: 10px;
 }
 
 .report-canvas-items .canvas-section-items {

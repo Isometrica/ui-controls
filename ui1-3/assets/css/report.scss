@@ -171,13 +171,16 @@ h1 {
 	}
 
 	&.horizontal {
-
+		h4 {
+			margin-bottom: 0;
+		}
 		li {
 			display: inline-block;
+			margin-right: 10px;
 
-			&:not(:last-child):after {
-				content: " – ";
-			}
+			// &:not(:last-child):after {
+			// 	content: " – ";
+			// }
 		}
 	}
 
