@@ -92,6 +92,19 @@ $( document ).ready(function() {
 	});
 
 	/*
+		STANDARD - NOTIFY - show/hide users dropdown depending if All Users is selected
+	*/
+
+	$(document).on("click", "#standardNotifySelected", function() {
+		$("#standardNotifyChooseUsers").collapse("show");
+	});
+
+	$(document).on("click", "#standardNotifyAll", function() {
+		$("#standardNotifyChooseUsers").collapse("hide");
+	});
+
+
+	/*
 		DASHBOARD - Goals collapse
 	*/
 

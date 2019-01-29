@@ -3,7 +3,7 @@
 .btn {
   font-family: $font-semibold;
   font-weight: normal;
-  @include transition(all .3s ease);
+  //@include transition(all .3s ease);
 
   &-primary {
     @include gradient($blue-color, darken($blue-color,10%));

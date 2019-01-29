@@ -141,7 +141,10 @@
                   <div class="col-sm-6">
                     <div class="list-group-item">
                       <p class="list-group-item-text">Terms &amp; conditions</p>
-                      <h4 class="list-group-item-heading">Agreed 14 Jun 2018 <a class="margin-left-5" href="#">Read terms</a></h4>
+                      <h4 class="list-group-item-heading">
+                        <span class="margin-right-5">Agreed 14 Jun 2018</span>
+                        <a data-toggle="modal" href="#terms-modal">Show terms</a>
+                      </h4>
                     </div>
                   </div>
                 </div>
@@ -277,6 +280,9 @@
 
   <!-- Invite users modal -->
   <div ng-include="'includes/invite-modal.html'"></div>
+
+  <!-- Terms modal -->
+  <div ng-include="'includes/terms-modal.html'"></div>
 
 
 	<!-- JS -->
