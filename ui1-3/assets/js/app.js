@@ -4,9 +4,12 @@ $( document ).ready(function() {
 
 	$(document).on("show.bs.modal", ".modal", function() {
 		// Colorpicker
-		$('select[name="colorpicker"]').simplecolorpicker({picker: true, theme: 'fontawesome'});
+		var colorpicker = $('select[name="colorpicker"]')
+		if (colorpicker.length > 0) {
+			colorpicker.simplecolorpicker({picker: true, theme: 'fontawesome'});
+		}
 		// Old colorpicker
-    $('.colorpicker-component').colorpicker();
+    // $('.colorpicker-component').colorpicker();
     // Autosize
     autosize($('.autosize'));
   });
