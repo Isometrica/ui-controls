@@ -136,12 +136,14 @@
     				<div class="card">
     					<div class="card-block card-heading">
     						<div class="card-heading-buttons pull-xs-right">
+                  <a href="#mark-as-read-modal" data-toggle="modal" class="btn btn-success">
+                    Mark as read
+                  </a>
     							<a class="btn btn-secondary" href="standard-discussion.html">
-    								<i class="fa fa-comments"></i>
-    								<span class="label label-danger label-chat-count">6</span>
+    								Discuss
+    								<!-- <span class="label label-danger label-chat-count">6</span> -->
     							</a>
     							<a class="btn btn-primary" data-toggle="modal" data-target="#standard-edit-modal">
-    								<i class="fa fa-pencil"></i>
     								Edit
     							</a>
     						</div>
@@ -160,6 +162,9 @@
 
   <!-- Standard Edit Modal -->
   <div ng-include="'includes/standard-edit-modal.html'"></div>
+
+  <!-- Mark as read Modal -->
+  <div ng-include="'includes/mark-as-read-modal.html'"></div>
 
 
   <!-- Add Type Modal -->

@@ -1,81 +1,207 @@
 <div>
-              <div class="list-group">
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Title</p>
-                  <h4 class="list-group-item-heading">2.2.1 Inquiry handling <span class="label label-danger">Draft</span></h4>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Description</p>
-                  <h4 class="list-group-item-heading">This is the company standard for dealing with client enquiries</h4>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Issue number</p>
-                      <h4 class="list-group-item-heading">1</h4>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Book section</p>
-                      <h4 class="list-group-item-heading">2. Client onboarding</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="row">
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Type</p>
-                      <h4 class="list-group-item-heading">Procedure</h4>
-                    </div>
-                  </div>
-                  <div class="col-sm-6">
-                    <div class="list-group-item">
-                      <p class="list-group-item-text">Owner</p>
-                      <h4 class="list-group-item-heading">Mike Smith</h4>
-                    </div>
-                  </div>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Categories</p>
-                  <h4 class="list-group-item-heading">
-	                  Client Services <small class="text-muted">(DEP)</small>,
-	                  Finish UI design <small class="text-muted">(KG)</small>,
-	                  Value propositions <small class="text-muted">(BMS)</small>
-	                </h4>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Source document/video 1</p>
-                  <h4 class="list-group-item-heading"><a href="#">http://www.clifton-asset.co.uk/example/12345</a></h4>
-                </div>
-                <div class="list-group-item">
-                  <p class="list-group-item-text">Source document/video 2</p>
-                  <h4 class="list-group-item-heading"><a href="#"><i class="fa fa-file-word-o margin-right"></i> source document filename</a></h4>
-                </div>
-              </div>
-              <div class="card-block card-subheading">
-	              <h4 class="card-title">Notify</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/notify.html'"></div>
-              <div class="card-block card-subheading">
-                <h4 class="card-title">Nonconformities</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/nonconformities.html'"></div>
-              <div class="card-block card-subheading">
-                <h4 class="card-title">Corrective actions</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/corrective-actions.html'"></div>
-              <div class="card-block card-subheading">
-                <h4 class="card-title">Preventative actions</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/preventative-actions.html'"></div>
-              <div class="card-block card-subheading">
-                <h4 class="card-title">Improvement plan</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/improvement-plan.html'"></div>
-              <div class="card-block card-subheading">
-                <h4 class="card-title">Lessons learned</h4>
-              </div>
-              <div ng-include="'includes/subcards-read/lessons.html'"></div>
-              <div ng-include="'includes/card-footer-changelog.html'"></div>    
+  <div class="card-block card-block-collapse-toggle collapsed">
+    2.2.1 Inquiry handling
+  </div>
+  <div class="card-block-collapse collapse">
+    <ul class="list-group">
+      <div class="row">
+        <div class="col col-sm-6">
+          <li class="list-group-item">
+            <p class="list-group-item-text">Issue number</p>
+            <h4 class="list-group-item-heading">1</h4>
+          </li>
+        </div>
+        <div class="col col-sm-6">
+          <li class="list-group-item">
+            <p class="list-group-item-text">Section</p>
+            <h4 class="list-group-item-heading">2. Client onboarding</h4>
+          </li>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col col-sm-6">
+          <li class="list-group-item">
+            <p class="list-group-item-text">Type</p>
+            <h4 class="list-group-item-heading">Policy (POL)</h4>
+          </li>
+        </div>
+        <div class="col col-sm-6">
+          <li class="list-group-item">
+            <p class="list-group-item-text">Owner</p>
+            <h4 class="list-group-item-heading">Steve Ives</h4>
+          </li>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Source file</p>
+        <h4 class="list-group-item-heading">
+          <div class="file-item-read">
+            <a href="https://plio.s3-eu-west-1.amazonaws.com/uploads/SS4LXPgcyytw55j8e/standard-files/BJ8zvbwMDocFuKo9t/xELJkLR9ZHpZSuxQQ-1.1%20The%20compliance%20culture%20at%20Southwind.docx" class="btn btn-secondary btn-md file-label text-xs-left uploaded">
+              <span><i class="fa-lg fa fa-file-docx-o margin-right"></i></span>
+              <span>1.1 The compliance culture at Southwind.docx</span>
+            </a>
+          </div>
+        </h4>
+      </div>
+    </ul>
+    <div>
+      <div>
+        <div class="card-subheading card-block card-body">
+          <h4 class="card-title">Improvement Plan</h4>
+        </div>
+        <ul class="list-group">
+          <li class="list-group-item">
+            <p class="list-group-item-text">Statement of desired outcome</p>
+            <h4 class="list-group-item-heading">Updated policy</h4>
+          </li>
+          <li class="list-group-item">
+            <p class="list-group-item-text">Target date for desired outcome</p>
+            <h4 class="list-group-item-heading">16 Feb 2017</h4>
+          </li>
+          <li class="list-group-item">
+            <p class="list-group-item-text">Improvement plan review dates</p>
+            <h4 class="list-group-item-heading">14 Feb 2017</h4>
+          </li>
+          <li class="list-group-item">
+            <p class="list-group-item-text">Owner</p>
+            <h4 class="list-group-item-heading">Steve Ives</h4>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div>
+      <div class="card-subheading card-block card-body">
+        <h4 class="card-title">Reviews</h4>
+      </div>
+      <ul class="list-group">
+        <div>
+          <li class="list-group-item">
+            <h4 class="list-group-item-heading"><span>Document reviewed</span><span> by Steve Ives</span><span> on 09 May 2017</span></h4>
+          </li>
+        </div>
+      </ul>
+    </div>
+    <div>
+      <div class="card-subheading card-block card-body">
+        <h4 class="card-title">Notify changes</h4>
+      </div>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <h4 class="list-group-item-heading">Steve Ives</h4>
+        </li>
+      </ul>
+    </div>
+  </div>
+    <!-- <div class="list-group">
+      <div class="list-group-item">
+        <p class="list-group-item-text">Title</p>
+        <h4 class="list-group-item-heading">2.2.1 Inquiry handling <span class="label label-danger">Draft</span></h4>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Description</p>
+        <h4 class="list-group-item-heading">This is the company standard for dealing with client enquiries</h4>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="list-group-item">
+            <p class="list-group-item-text">Issue number</p>
+            <h4 class="list-group-item-heading">1</h4>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="list-group-item">
+            <p class="list-group-item-text">Book section</p>
+            <h4 class="list-group-item-heading">2. Client onboarding</h4>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-6">
+          <div class="list-group-item">
+            <p class="list-group-item-text">Type</p>
+            <h4 class="list-group-item-heading">Procedure</h4>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="list-group-item">
+            <p class="list-group-item-text">Owner</p>
+            <h4 class="list-group-item-heading">Mike Smith</h4>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Categories</p>
+        <h4 class="list-group-item-heading">
+          Client Services <small class="text-muted">(DEP)</small>,
+          Finish UI design <small class="text-muted">(KG)</small>,
+          Value propositions <small class="text-muted">(BMS)</small>
+        </h4>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Source document/video 1</p>
+        <h4 class="list-group-item-heading"><a href="#">http://www.clifton-asset.co.uk/example/12345</a></h4>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Source document/video 2</p>
+        <h4 class="list-group-item-heading"><a href="#"><i class="fa fa-file-word-o margin-right"></i> source document filename</a></h4>
+      </div>
+    </div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Notify</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/notify.html'"></div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Nonconformities</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/nonconformities.html'"></div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Corrective actions</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/corrective-actions.html'"></div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Preventative actions</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/preventative-actions.html'"></div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Improvement plan</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/improvement-plan.html'"></div>
+    <div class="card-block card-subheading">
+      <h4 class="card-title">Lessons learned</h4>
+    </div>
+    <div ng-include="'includes/subcards-read/lessons.html'"></div>
+  </div> -->
+
+  <div class="source-document-item">
+    <div class="word-document iframe-wrapper">
+      <div class="iframe-placeholder"></div>
+      <div class="source-document-preview-wrapper __web-inspector-hide-shortcut__">
+        <div class="source-document-preview"><iframe src="https://plio.s3.amazonaws.com/uploads/SS4LXPgcyytw55j8e/undefined/BJ8zvbwMDocFuKo9t/MjZBfdt7iMp6GRCSj-1.1%20The%20compliance%20culture%20at%20Southwind.docx.html" frameborder="0" allowfullscreen=""></iframe></div>
+      </div>
+    </div>
+    <div class="list-group-item">
+      <h4 class="list-group-item-heading">
+        <div class="file-item-read">
+          <a href="https://plio.s3-eu-west-1.amazonaws.com/uploads/SS4LXPgcyytw55j8e/standard-files/BJ8zvbwMDocFuKo9t/xELJkLR9ZHpZSuxQQ-1.1%20The%20compliance%20culture%20at%20Southwind.docx" class="btn btn-secondary btn-md file-label text-xs-left uploaded">
+            <span>Download</span>
+          </a>
+          <a href="#mark-as-read-modal" data-toggle="modal" class="btn btn-success margin-left-5">Mark as read</a>
+        </div>
+      </h4>
+    </div>
+  </div>
+  <div ng-include="'includes/card-footer-changelog.html'"></div>
 </div>
+
+<style>
+  .source-document-item {
+    border-bottom: 1px solid #ddd;
+  }
+  .source-document-item iframe {
+    width: 100%;
+    height: 100%;
+    border: 0;
+    overflow: auto;
+    min-height: 70vh;
+  }
+</style>
