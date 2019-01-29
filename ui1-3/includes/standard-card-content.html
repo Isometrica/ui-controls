@@ -8,15 +8,20 @@
         <div class="col col-sm-6">
           <li class="list-group-item">
             <p class="list-group-item-text">Issue number</p>
-            <h4 class="list-group-item-heading">1</h4>
+            <h4 class="list-group-item-heading">2</h4>
           </li>
         </div>
+
         <div class="col col-sm-6">
           <li class="list-group-item">
             <p class="list-group-item-text">Section</p>
             <h4 class="list-group-item-heading">2. Client onboarding</h4>
           </li>
         </div>
+      </div>
+      <div class="list-group-item">
+        <p class="list-group-item-text">Key changes since last issue</p>
+        <h4 class="list-group-item-heading">Updated inquiry handling workflow</h4>
       </div>
       <div class="row">
         <div class="col col-sm-6">
@@ -147,7 +152,7 @@
       </div>
     </div>
     <div class="card-block card-subheading">
-      <h4 class="card-title">Notify</h4>
+      <h4 class="card-title">Notify change</h4>
     </div>
     <div ng-include="'includes/subcards-read/notify.html'"></div>
     <div class="card-block card-subheading">
@@ -190,10 +195,29 @@
       </h4>
     </div>
   </div>
+  <div class="card-block card-block-collapse-toggle collapsed">
+    Read by 3 users
+  </div>
+  <div class="card-block-collapse collapse">
+    <div class="card-block">
+      <p>Jack Herbert <span class="text-muted">on 10 Dec 2018</span></p>
+      <p>Steve Ives <span class="text-muted">on 9 Dec 2018</span></p>
+      <p>Steve Saunders <span class="text-muted">on 12 Dec 2018</span></p>
+    </div>
+  </div>
+  <div class="card-block card-block-collapse-toggle collapsed">
+    Not read by 2 users
+  </div>
+  <div class="card-block-collapse collapse">
+    <div class="card-block">
+      <p>Mark Leusink</p>
+      <p>Mike Smith</p>
+    </div>
+  </div>
   <div ng-include="'includes/card-footer-changelog.html'"></div>
 </div>
 
-<style>
+<style type="text/css">
   .source-document-item {
     border-bottom: 1px solid #ddd;
   }

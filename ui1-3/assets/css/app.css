@@ -1950,6 +1950,10 @@ legend {
   border-top: 0;
 }
 
+.content-cards .card .card-block-collapse > .card-block {
+  border-bottom: 1px solid #ddd;
+}
+
 .content-cards .card-subheading {
   padding-bottom: 0;
   border-bottom: 0;
@@ -2035,11 +2039,6 @@ legend {
 .card-changelog-toggle {
   cursor: pointer;
   border-top: 0;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
   font-size: 12px;
   line-height: 22px;
   color: #777;

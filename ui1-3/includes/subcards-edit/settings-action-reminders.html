@@ -1,86 +1,319 @@
-            <div class="card-block">
-              <legend>Minor non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="1">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">day</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="2">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-              <legend>Major non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="2">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hours</a>
-                      <a href="#" class="dropdown-item active">days</a>
-                      <a href="#" class="dropdown-item">weeks</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="4">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-              <legend>Critical non-conformity</legend>
-              <div class="form-group form-group-inline">
-                <label class="form-control-label">Remind every</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="3">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hours</a>
-                      <a href="#" class="dropdown-item active">days</a>
-                      <a href="#" class="dropdown-item">weeks</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">until</label>
-                <div class="input-group margin-right">
-                  <input type="text" class="form-control" value="6">
-                  <span class="input-group-btn dropdown">
-                    <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown">days</button>
-                    <div class="dropdown-menu dropdown-menu-right">
-                      <a href="#" class="dropdown-item">hour</a>
-                      <a href="#" class="dropdown-item active">day</a>
-                      <a href="#" class="dropdown-item">week</a>
-                    </div>
-                  </span>
-                </div>
-                <label class="form-control-label">past due</label>
-              </div>
-            </div>
+<div class="card-block">
+  <legend>Minor nonconformities/risks</legend>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Start reminding</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4730">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4731">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4732">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4733">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">before due</label>
+  </div>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Then every</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4734">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4735">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4736">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4737">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">until</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="2" b-id="4738">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4739">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4740">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4741">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">past due</label>
+  </div>
+
+  <br>
+
+  <legend>Major nonconformities/risks</legend>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Start reminding</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4742">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4743">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4744">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4745">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">before due</label>
+  </div>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Then every</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4746">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4747">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4748">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4749">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">until</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4750">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4751">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4752">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4753">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">past due</label>
+  </div>
+
+  <br>
+
+  <legend>Critical nonconformities/risks</legend>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Start reminding</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4754">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4755">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4756">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4757">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">before due</label>
+  </div>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Then every</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4758">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4759">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4760">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4761">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">until</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4762">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4763">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4764">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4765">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">past due</label>
+  </div>
+
+  <br>
+
+  <legend>Improvement plans</legend>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Start reminding</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4766">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4767">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4768">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4769">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">before due</label>
+  </div>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Then every</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4770">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4771">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4772">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4773">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">until</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4774">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4775">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4776">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4777">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">past due</label>
+  </div>
+
+  <br>
+
+  <legend>Standards - read reminders</legend>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Start reminding</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4766">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4767">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4768">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4769">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">after new Standard created</label>
+  </div>
+  <div class="form-group form-group-inline">
+    <label class="form-control-label">Then every</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4770">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4771">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4772">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4773">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">until</label>
+    <div class="input-group margin-right" style="width:125px;">
+      <input type="number" class="form-control" min="1" value="1" b-id="4774">
+      <span class="input-group-btn dropdown">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" b-id="4775">days</button>
+        <div class="dropdown-menu dropdown-menu-right">
+
+          <a class="dropdown-item active" b-id="4776">
+            days
+          </a>
+
+          <a class="dropdown-item" b-id="4777">
+            weeks
+          </a>
+
+        </div>
+      </span>
+    </div>
+    <label class="form-control-label">after new Standard created</label>
+  </div>
+</div>

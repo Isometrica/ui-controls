@@ -61,13 +61,13 @@
 
           </div>
 
-          <div class="card-block card-block-collapse-toggle collapsed" href="#departments" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Departments</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">8</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="departments">
+          <div class="card-block-collapse collapse">
             <div class="card-block">
               <div class="form-group">
                 <div class="form-group form-group-flex">
@@ -152,22 +152,22 @@
               <button class="btn btn-primary" type="button">Add department</button>
             </div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#standards-types" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Standards types</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">8</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="standards-types">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/settings-selection-list.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#standards-book-sections" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Standards book sections</h4>
+          <div class="card-block card-block-collapse-toggle collapsed">
+            <h4 class="card-title pull-xs-left">Standards sections</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">4</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="standards-book-sections">
+          <div class="card-block-collapse collapse">
             <div class="card-block">
               <div class="form-group form-group-flex">
                 <div class="form-group-flex-flex">
@@ -204,31 +204,74 @@
               <button class="btn btn-primary" type="button">Add section</button>
             </div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#workflow-defaults" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
+            <h4 class="card-title pull-xs-left">Standard acceptance</h4>
+          </div>
+          <div class="card-block-collapse collapse">
+            <div class="card-block">
+              <div class="form-group">
+                <label class="form-control-label">Statement after clicking "Mark as read" button</label>
+                <textarea class="form-control" rows="2">I confirm that I have read this document</textarea>
+              </div>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed">
+            <h4 class="card-title pull-xs-left">Training types</h4>
+          </div>
+          <div class="card-block-collapse collapse">
+            <div class="card-block">
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Title" value="Classroom"/>
+                </div>
+                <button type="button" class="btn btn-secondary btn-icon margin-left">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Title" value="Online"/>
+                </div>
+                <button type="button" class="btn btn-secondary btn-icon margin-left">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+              <div class="form-group form-group-flex">
+                <div class="form-group-flex-flex">
+                  <input type="text" class="form-control" placeholder="Title" value="Mentoring"/>
+                </div>
+                <button type="button" class="btn btn-secondary btn-icon margin-left">
+                  <i class="fa fa-times-circle"></i>
+                </button>
+              </div>
+              <button class="btn btn-primary" type="button">Add training type</button>
+            </div>
+          </div>
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Workflow defaults</h4>
           </div>
-          <div class="card-block-collapse collapse" id="workflow-defaults">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/settings-workflow-defaults.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#reminders" data-toggle="collapse">
-            <h4 class="card-title pull-xs-left">Reminders</h4>
+          <div class="card-block card-block-collapse-toggle collapsed">
+            <h4 class="card-title pull-xs-left">Workflow reminders</h4>
           </div>
-          <div class="card-block-collapse collapse" id="reminders">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/settings-action-reminders.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#nonconformity-guidelines" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Non-conformity guidelines</h4>
           </div>
-          <div class="card-block-collapse collapse" id="nonconformity-guidelines">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/settings-nonconformity-guidelines.html'"></div>
           </div>
-          <div class="card-block card-block-collapse-toggle collapsed" href="#response-sets" data-toggle="collapse">
+          <div class="card-block card-block-collapse-toggle collapsed">
             <h4 class="card-title pull-xs-left">Response sets</h4>
             <h4 class="card-title pull-xs-right">
               <span class="text-muted">4</span>
             </h4>
           </div>
-          <div class="card-block-collapse collapse" id="response-sets">
+          <div class="card-block-collapse collapse">
             <div ng-include="'includes/subcards-edit/settings-response-sets.html'"></div>
           </div>
         </form>

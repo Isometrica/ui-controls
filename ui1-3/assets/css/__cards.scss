@@ -144,6 +144,10 @@
     border-top: 0;
   }
 
+  .card .card-block-collapse > .card-block {
+    border-bottom: 1px solid #ddd;
+  }
+
   .card {
     &-subheading {
       padding-bottom: 0;
@@ -239,7 +243,7 @@
   &-toggle {
     cursor: pointer;
     border-top: 0;
-    @include flexbox;
+    // @include flexbox;
     font-size: 12px;
     line-height: 22px;
     color: #777;
