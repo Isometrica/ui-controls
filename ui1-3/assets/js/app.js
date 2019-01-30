@@ -4,14 +4,17 @@ $( document ).ready(function() {
 
 	$(document).on("show.bs.modal", ".modal", function() {
 		// Colorpicker
-		var colorpicker = $('select[name="colorpicker"]')
+		var colorpicker = $('select[name="colorpicker"]');
 		if (colorpicker.length > 0) {
 			colorpicker.simplecolorpicker({picker: true, theme: 'fontawesome'});
 		}
 		// Old colorpicker
     // $('.colorpicker-component').colorpicker();
     // Autosize
-    autosize($('.autosize'));
+		var autosizeFields = $('.autosize');
+		if (autosizeFields.length > 0) {
+    	autosize($('.autosize'));
+		}
   });
 
 	$(document).on("shown.bs.collapse", ".collapse", function() {
