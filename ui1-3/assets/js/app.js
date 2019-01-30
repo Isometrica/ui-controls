@@ -92,15 +92,29 @@ $( document ).ready(function() {
 	});
 
 	/*
-		STANDARD - NOTIFY - show/hide users dropdown depending if All Users is selected
+		USER SELECT - show/hide users dropdown depending if All Users is selected
 	*/
 
-	$(document).on("click", "#standardNotifySelected", function() {
-		$("#standardNotifyChooseUsers").collapse("show");
+	$(document).on("click", ".user-select-toggle-selected", function() {
+		$(this).parent().next(".user-select-users").collapse("show");
 	});
 
-	$(document).on("click", "#standardNotifyAll", function() {
-		$("#standardNotifyChooseUsers").collapse("hide");
+	$(document).on("click", ".user-select-toggle-all", function() {
+		$(this).parent().next(".user-select-users").collapse("hide");
+	});
+
+
+	/*
+		STANDARD - MARK AS READ - show/hide details dropdown depending if any training type is selected
+	*/
+
+	$(document).on("click", "#requestTrainingTypes .btn", function() {
+		var selectedTypes = $("#requestTrainingTypes .btn.active");
+		if ( selectedTypes.length > 0 ) {
+			$("#requestTrainingDetails").collapse("show");
+		} else {
+			$("#requestTrainingDetails").collapse("hide");
+		}
 	});
 
 

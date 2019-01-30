@@ -33,12 +33,40 @@ body {
   @include flex(1);
 }
 
-.d-inline-block {
-	display: inline-block;
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.d {
+	&-block {
+		display: block;
+	}
+	&-inline-block {
+		display: inline-block;
+	}
+	&-flex {
+		@include flexbox;
+	}
+}
+
+.m {
+	&-0 { margin: 0; }
+}
+
+.ml {
+	&-auto { margin-left: auto; }
+}
+
+.mr {
+	&-auto { margin-right: auto; }
+}
+
+.mb {
+	&-0 { margin-bottom: 0; }
 }
 
 .align-items-center {
-	align-items: center;
+	@include align-items(center);
 }
 
 .align-middle {
