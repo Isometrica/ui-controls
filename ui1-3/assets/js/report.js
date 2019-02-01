@@ -18,7 +18,7 @@ $( document ).ready(function() {
 	/*
 		SHARED CHART SETTINGS
 	*/
-	
+
 	Chart.defaults.global.legend.display = false;
 	Chart.defaults.global.tooltips.enabled = false;
 
@@ -26,10 +26,10 @@ $( document ).ready(function() {
 	Chart.defaults.scale.ticks.fontColor = "#818a91";
 	Chart.defaults.scale.scaleLabel.fontColor = "#818a91";
 
-	/* 
+	/*
 		KEY PARTNERS CHART
 	*/
-		
+
 	showKeyPartnersChart();
 	function showKeyPartnersChart() {
 		var ctx = $("#keyPartnersChart");
@@ -81,9 +81,9 @@ $( document ).ready(function() {
 	        pointRadius: 8,
 	        pointHoverRadius: 8,
           pointBorderWidth: 0,
-          borderColor: "#3F51B5",
-          backgroundColor: "#3F51B5",
-          pointBackgroundColor: "#3F51B5",
+          borderColor: "#446EC2",
+          backgroundColor: "#446EC2",
+          pointBackgroundColor: "#446EC2",
           data: [{
             x: 100000,
             y: 10
@@ -91,7 +91,7 @@ $( document ).ready(function() {
         }
         ]
 	    },
-	    options: {	
+	    options: {
         scales: {
           xAxes: [{
 	          type: 'linear',
@@ -99,7 +99,7 @@ $( document ).ready(function() {
 		          display: true,
 	            labelString: 'Low      SPEND      High',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
-	            fontSize: 14        
+	            fontSize: 14
 	          },
 	          ticks: {
 		          display: false,
@@ -118,13 +118,13 @@ $( document ).ready(function() {
 		        }
           }],
           yAxes: [{
-	          
+
 	          type: 'linear',
 	          scaleLabel: {
 		          display: true,
 	            labelString: 'Low    CRITICALITY    High',
 	            fontFamily: "'Segoe UI Regular WestEuropean', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif",
-	            fontSize: 14          
+	            fontSize: 14
 	          },
 	          ticks: {
 		          display: false,
@@ -237,14 +237,14 @@ $( document ).ready(function() {
 		});
 		$("#keyPartnersChartLegend").html(myChart.generateLegend());
 	}
-	
 
-  
-  
-  /* 
+
+
+
+  /*
 		COST STRUCTURE CHART
 	*/
-	
+
   showCostStructureChart();
 	function showCostStructureChart() {
 		var ctx = $("#costStructureChart");
@@ -264,7 +264,7 @@ $( document ).ready(function() {
 						"#F06292",
 						"#9C27B0",
 						"#673AB7",
-						"#3F51B5"],
+						"#446EC2"],
 					borderColor: "transparent"
 				}]
 			},
@@ -296,15 +296,15 @@ $( document ).ready(function() {
 			    return text.join("");
         }
     	}
-		});	
+		});
 		$("#costStructureChartLegend").html(myChart.generateLegend());
 	}
-	
-	
-  /* 
+
+
+  /*
 		REVENUE STREAMS PIE CHART
 	*/
-	
+
   showRevenueStreamsChart();
 	function showRevenueStreamsChart() {
 		var ctx = $("#revenueStreamsChart");
@@ -325,7 +325,7 @@ $( document ).ready(function() {
 						"#F06292",
 						"#9C27B0",
 						"#673AB7",
-						"#3F51B5",
+						"#446EC2",
 						"#2196F3"],
 					borderColor: "transparent"
 				}]
@@ -358,15 +358,15 @@ $( document ).ready(function() {
 			    return text.join("");
         }
     	}
-		});	
+		});
 		$("#revenueStreamsChartLegend").html(myChart.generateLegend());
-	}	
-	
-	
-	/* 
+	}
+
+
+	/*
 		PROFIT STREAMS PIE CHART
 	*/
-	
+
   showProfitStreamsChart();
 	function showProfitStreamsChart() {
 		var ctx = $("#profitStreamsChart");
@@ -387,7 +387,7 @@ $( document ).ready(function() {
 						"#F06292",
 						"#9C27B0",
 						"#673AB7",
-						"#3F51B5",
+						"#446EC2",
 						"#2196F3"],
 					borderColor: "transparent"
 				}]
@@ -420,17 +420,17 @@ $( document ).ready(function() {
 			    return text.join("");
         }
     	}
-		});	
+		});
 		$("#profitStreamsChartLegend").html(myChart.generateLegend());
-	}	
-	
-	
-	
-	/* 
+	}
+
+
+
+	/*
 		CUSTOMER SEGMENTS PIE CHART
 	*/
-	
-	
+
+
   showCustomerSegmentsChart();
 	function showCustomerSegmentsChart() {
 		var ctx = $("#customerSegmentsChart");
@@ -448,7 +448,7 @@ $( document ).ready(function() {
 						"#F06292",
 						"#9C27B0",
 						"#673AB7",
-						"#3F51B5"],
+						"#446EC2"],
 					borderColor: "transparent"
 				}]
 			},
@@ -480,17 +480,10 @@ $( document ).ready(function() {
 			    return text.join("");
         }
     	}
-			
-		});			
+
+		});
 		$("#customerSegmentsChartLegend").html(myChart.generateLegend());
 	}
 
 
 });
-
-
-
-
-
-
-
